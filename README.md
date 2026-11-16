@@ -84,6 +84,9 @@ every printed total in the PDF.
 - **Electricity supplier** (City vs Eskom) comes from the City's load-shedding areas, because the
   City's supply-authority layer is incomplete. Power figures are hidden where Eskom supplies most
   residents.
+- **Crime** is per police precinct (SAPS), linked to wards by where residents live. The precinct
+  boundaries themselves are kept out of the repo (SAPS terms); to rebuild the ward table,
+  download them from SAPS into `raw/saps/` and run `wardmap pin crime`.
 - **Party donations** are those declared to the IEC since April 2021; smaller donations and money
   given to party-linked companies aren't covered.
 - **"What kind of place"** comes from zoning: what land may be used for, not what is on it. Place

@@ -308,6 +308,15 @@ strong { font-weight: 650; }
 .compare-list { list-style: none; margin: 10px 0; padding: 0; display: grid; gap: 12px; }
 .compare-party { font-weight: 650; font-size: 13.5px; display: inline-block; margin-bottom: 2px; }
 
+.crime-station + .crime-station { margin-top: 12px; }
+.crime-table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+.crime-table th, .crime-table td { padding: 3px 6px 3px 0; border-bottom: 1px solid var(--border); text-align: left; white-space: nowrap; }
+.crime-table thead th { color: var(--ink-3); font-weight: 600; }
+.crime-table tbody th { font-weight: 400; white-space: normal; }
+.crime-table .num { text-align: right; }
+.trend rect { fill: var(--dot); }
+.trend rect.trend-last { fill: var(--ink-2); }
+
 .timeline { flex-basis: 100%; min-width: 0; max-width: 100%; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; border-top: 1px solid var(--border); padding-top: 8px; }
 .timeline-label { font-size: 12px; font-weight: 650; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink-3); white-space: nowrap; }
 .timeline-track { list-style: none; margin: 0; padding: 0; display: flex; gap: 0; flex: 1; min-width: 0; overflow-x: auto; }

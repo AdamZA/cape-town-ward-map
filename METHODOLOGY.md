@@ -262,6 +262,29 @@ policing and crime; housing and land; and immigration.
 - The Cape Coloured Congress renamed itself the National Coloured Congress in 2023; both
   elections show it under the new name.
 
+## Crime
+
+Crime figures are the police's own: SAPS publishes reported crimes per police station every
+quarter. We add the four quarters of each financial year (April to March) together, giving five
+years per station, and show a headline set of categories.
+
+A ward is linked to the police precinct(s) covering it. SAPS's precinct boundaries can't be
+republished (its download terms forbid passing them on), so they're kept out of this repository.
+We use them once to work out what share of each ward's residents lives in each precinct, using the
+same population grid as the population estimates, and publish only that table.
+
+- **Precinct figures, not ward figures.** A precinct's crimes are never split between wards; that
+  would assume crime is spread like population. The ward panel shows each covering precinct's
+  figures.
+- **Rates per 100,000 residents** use each precinct's estimated residents. Precincts with many
+  visitors or workers (the city centre, beachfronts) look worse than their residents experience.
+  No rate is given for precincts with under 5,000 residents or that reach past the population data.
+  The map colour for a ward is the covering precincts' rate, weighted by where the ward's residents
+  live.
+- **Reported crime only.** Many crimes go unreported, and reporting differs between communities.
+  Drug-related crime mostly measures police activity. SAPS revises figures in later releases.
+- Year-on-year percentage changes are left out where the earlier year had fewer than 10 crimes.
+
 ## Ward allocations
 
 Each year the City budgets a fixed amount per ward (R1 million in 2024/25) for projects proposed

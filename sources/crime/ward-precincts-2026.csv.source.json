@@ -1,0 +1,10 @@
+{
+  "licence": "Derived table; the SAPS boundaries themselves are not redistributed",
+  "method": "manual",
+  "notes": "SAPS station boundaries version 1.4.2, downloaded by hand under SAPS terms and kept out of the repository. share_of_ward = share of the ward's residents (GHSL 2025 grid, scaled to the City's estimate) living in the precinct. precinct_population = the precinct's residents (same grid, inside or outside the metro); precinct_in_grid = share of the precinct's area inside the grid's box (18.2, -34.4, 19.1, -33.4) (below 1, the population is undercounted).",
+  "publisher": "Derived by Cape Town Ward Map from SAPS police station boundaries",
+  "retrieved_at": "2026-11-17",
+  "sha256": "7756e948b0378f83f8bd3b3e1055e8d359b65f4bf6fe66a4d043b2aa049d7213",
+  "title": "Police precincts covering each 2026 ward (derived)",
+  "url": "https://www.saps.gov.za/services/boundary.php"
+}

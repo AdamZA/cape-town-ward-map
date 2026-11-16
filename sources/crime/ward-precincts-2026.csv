@@ -1,0 +1,235 @@
+ward_no,station,share_of_ward,precinct_population,precinct_in_grid
+1,Parow,0.6656,87900,1.0
+1,Goodwood,0.2933,62500,1.0
+1,Bothasig,0.0404,39100,1.0
+2,Parow,0.6948,87900,1.0
+2,Bellville,0.3052,95000,1.0
+3,Bellville,0.9967,95000,1.0
+4,Milnerton,0.9946,122700,1.0
+5,Bothasig,0.8847,39100,1.0
+5,Goodwood,0.1153,62500,1.0
+6,Kraaifontein,0.9541,237600,1.0
+6,Brackenfell,0.0459,71300,1.0
+7,Kraaifontein,0.8157,237600,1.0
+7,Brackenfell,0.1839,71300,1.0
+8,Brackenfell,1.0,71300,1.0
+9,Bellville South,0.9158,41900,1.0
+9,Bellville,0.0548,95000,1.0
+9,Kuilsrivier,0.024,102900,1.0
+9,Belhar,0.0051,80500,1.0
+10,Ravensmead,0.4527,86900,1.0
+10,Parow,0.2752,87900,1.0
+10,Bellville,0.2606,95000,1.0
+10,Bellville South,0.0109,41900,1.0
+11,Kuilsrivier,0.9068,102900,1.0
+11,Brackenfell,0.0932,71300,1.0
+12,Belhar,0.7241,80500,1.0
+12,Delft,0.2759,219900,1.0
+13,Durbanville,0.5236,102000,1.0
+13,Bothasig,0.2688,39100,1.0
+13,Philadelphia,0.1084,8500,1.0
+13,Parow,0.0993,87900,1.0
+14,Kuilsrivier,0.4033,102900,1.0
+14,Kleinvlei,0.2913,137800,1.0
+14,Mfuleni,0.2864,166400,1.0
+14,Stellenbosch,0.0191,108600,1.0
+15,Somerset West,1.0,83900,1.0
+16,Kleinvlei,0.9998,137800,1.0
+17,Kleinvlei,0.9689,137800,1.0
+17,Mfuleni,0.0311,166400,1.0
+18,Khayelitsha,0.9889,220600,1.0
+18,Lentegeur,0.0108,124600,1.0
+19,Kuilsrivier,0.8217,102900,1.0
+19,Mfuleni,0.1782,166400,1.0
+20,Delft,0.9966,219900,1.0
+21,Durbanville,0.7838,102000,1.0
+21,Bellville,0.2162,95000,1.0
+22,Belhar,0.6838,80500,1.0
+22,Bishop Lavis,0.1682,148000,1.0
+22,Ravensmead,0.094,86900,1.0
+22,Delft,0.0513,219900,1.0
+23,Melkbosstrand,0.6354,16100,1.0
+23,Table View,0.31,109000,1.0
+23,Philadelphia,0.054,8500,1.0
+24,Delft,0.9998,219900,1.0
+25,Ravensmead,0.9974,86900,1.0
+26,Elsies River,0.3915,100800,1.0
+26,Parow,0.3899,87900,1.0
+26,Goodwood,0.2186,62500,1.0
+27,Goodwood,0.9834,62500,1.0
+27,Kensington,0.0108,36300,1.0
+27,Parow,0.0056,87900,1.0
+28,Elsies River,0.992,100800,1.0
+29,Atlantis,1.0,97200,1.0
+30,Manenberg,1.0,120200,1.0
+31,Bishop Lavis,0.992,148000,1.0
+31,Gugulethu,0.006,179100,1.0
+32,Atlantis,0.9635,97200,1.0
+32,Philadelphia,0.0348,8500,1.0
+33,Samora Machel,0.9388,85600,1.0
+33,Nyanga,0.0612,200200,1.0
+34,Nyanga,1.0,200200,1.0
+35,Philippi East,0.9956,81400,1.0
+36,Nyanga,0.9994,200200,1.0
+37,Nyanga,0.9349,200200,1.0
+37,Gugulethu,0.0651,179100,1.0
+38,Gugulethu,0.8952,179100,1.0
+38,Nyanga,0.1048,200200,1.0
+39,Gugulethu,0.9994,179100,1.0
+40,Gugulethu,0.9532,179100,1.0
+40,Nyanga,0.0468,200200,1.0
+41,Gugulethu,0.9762,179100,1.0
+41,Manenberg,0.0233,120200,1.0
+42,Bishop Lavis,0.6196,148000,1.0
+42,Elsies River,0.3804,100800,1.0
+43,Strandfontein,0.7272,40300,1.0
+43,Philippi,0.2625,76600,1.0
+43,Samora Machel,0.0055,85600,1.0
+44,Manenberg,0.6492,120200,1.0
+44,Gugulethu,0.3508,179100,1.0
+45,Muizenberg,0.9811,83400,1.0
+45,Steenberg,0.0189,88200,1.0
+46,Manenberg,0.646,120200,1.0
+46,Athlone,0.354,88600,1.0
+47,Philippi,1.0,76600,1.0
+48,Athlone,0.4731,88600,1.0
+48,Lansdowne,0.3439,68700,1.0
+48,Philippi,0.1831,76600,1.0
+49,Athlone,0.9988,88600,1.0
+50,Bishop Lavis,0.9993,148000,1.0
+51,Langa,0.9991,74900,1.0
+52,Langa,0.9941,74900,1.0
+52,Bishop Lavis,0.0059,148000,1.0
+53,Pinelands,0.8074,28900,1.0
+53,Maitland,0.1884,27400,1.0
+54,Sea Point,0.747,35400,1.0
+54,Camps Bay,0.2481,7900,1.0
+55,Milnerton,0.7775,122700,1.0
+55,Maitland,0.2213,27400,1.0
+56,Kensington,0.763,36300,1.0
+56,Maitland,0.2164,27400,1.0
+56,Goodwood,0.0186,62500,1.0
+57,Rondebosch,0.5247,20800,1.0
+57,Mowbray,0.4744,14600,1.0
+58,Claremont,0.7043,44100,1.0
+58,Wynberg,0.1536,35700,1.0
+58,Rondebosch,0.14,20800,1.0
+59,Claremont,0.7206,44100,1.0
+59,Wynberg,0.1428,35700,1.0
+59,Rondebosch,0.1366,20800,1.0
+60,Lansdowne,0.8012,68700,1.0
+60,Athlone,0.134,88600,1.0
+60,Mowbray,0.0578,14600,1.0
+60,Wynberg,0.0069,35700,1.0
+61,Ocean View,0.5609,57900,1.0
+61,Simon'S Town,0.4353,18500,1.0
+62,Wynberg,0.6318,35700,1.0
+62,Claremont,0.1973,44100,1.0
+62,Dieprivier,0.1257,55200,1.0
+62,Kirstenhof,0.0449,43600,1.0
+63,Dieprivier,0.6273,55200,1.0
+63,Wynberg,0.2707,35700,1.0
+63,Grassy Park,0.1017,127400,1.0
+64,Fish Hoek,0.5208,28400,1.0
+64,Muizenberg,0.477,83400,1.0
+65,Grassy Park,1.0,127400,1.0
+66,Grassy Park,0.6102,127400,1.0
+66,Lansdowne,0.3898,68700,1.0
+67,Grassy Park,0.9493,127400,1.0
+67,Muizenberg,0.0448,83400,1.0
+67,Steenberg,0.0059,88200,1.0
+68,Steenberg,0.7809,88200,1.0
+68,Muizenberg,0.2177,83400,1.0
+69,Ocean View,0.6958,57900,1.0
+69,Fish Hoek,0.3041,28400,1.0
+70,Bellville,0.6619,95000,1.0
+70,Durbanville,0.3379,102000,1.0
+71,Kirstenhof,0.9364,43600,1.0
+71,Muizenberg,0.0609,83400,1.0
+72,Steenberg,0.7601,88200,1.0
+72,Dieprivier,0.1973,55200,1.0
+72,Kirstenhof,0.0381,43600,1.0
+73,Dieprivier,0.6714,55200,1.0
+73,Kirstenhof,0.3286,43600,1.0
+74,Hout Bay,0.9999,47700,1.0
+75,Mitchells Plain,0.5952,278800,1.0
+75,Lentegeur,0.4018,124600,1.0
+76,Lentegeur,1.0,124600,1.0
+77,Cape Town Central,0.9999,50100,1.0
+78,Lentegeur,0.9967,124600,1.0
+79,Mitchells Plain,1.0,278800,1.0
+80,Nyanga,1.0,200200,1.0
+81,Mitchells Plain,0.9969,278800,1.0
+82,Mitchells Plain,1.0,278800,1.0
+83,Strand,0.8591,71900,1.0
+83,Somerset West,0.1409,83900,1.0
+84,Somerset West,0.9994,83900,1.0
+85,Lwandle,0.6605,91900,1.0
+85,Strand,0.3395,71900,1.0
+86,Lwandle,0.9605,91900,1.0
+86,Strand,0.0395,71900,1.0
+87,Khayelitsha,0.8693,220600,1.0
+87,Lingelethu-West,0.1307,91500,1.0
+88,Samora Machel,0.5323,85600,1.0
+88,Philippi East,0.4452,81400,1.0
+88,Nyanga,0.0225,200200,1.0
+89,Khayelitsha,1.0,220600,1.0
+90,Somerset West,0.7368,83900,1.0
+90,Macassar,0.2631,50500,1.0
+91,Khayelitsha,1.0,220600,1.0
+92,Woodstock,0.9209,39500,1.0
+92,Cape Town Central,0.0623,50100,1.0
+92,Maitland,0.0156,27400,1.0
+93,Khayelitsha,0.5683,220600,1.0
+93,Makhaza,0.2169,97900,1.0
+93,Lingelethu-West,0.2149,91500,1.0
+94,Lingelethu-West,1.0,91500,1.0
+95,Harare,0.9235,148600,1.0
+95,Makhaza,0.0665,97900,1.0
+95,Macassar,0.01,50500,1.0
+96,Makhaza,1.0,97900,1.0
+97,Makhaza,0.5203,97900,1.0
+97,Harare,0.4797,148600,1.0
+98,Harare,0.6189,148600,1.0
+98,Lingelethu-West,0.3811,91500,1.0
+99,Harare,0.849,148600,1.0
+99,Lingelethu-West,0.1444,91500,1.0
+99,Khayelitsha,0.0066,220600,1.0
+100,Strand,0.507,71900,1.0
+100,Gordons Bay,0.4756,24400,1.0
+100,Lwandle,0.0167,91900,1.0
+101,Kraaifontein,1.0,237600,1.0
+102,Kraaifontein,0.9963,237600,1.0
+103,Brackenfell,0.4711,71300,1.0
+103,Durbanville,0.3715,102000,1.0
+103,Kraaifontein,0.1573,237600,1.0
+104,Milnerton,0.7961,122700,1.0
+104,Table View,0.1757,109000,1.0
+104,Bothasig,0.0282,39100,1.0
+105,Kraaifontein,0.4573,237600,1.0
+105,Durbanville,0.4323,102000,1.0
+105,Philadelphia,0.0883,8500,1.0
+105,Klapmuts,0.014,19400,1.0
+105,Paarl,0.0077,71500,0.824
+106,Delft,1.0,219900,1.0
+107,Table View,1.0,109000,1.0
+108,Mfuleni,0.9885,166400,1.0
+108,Delft,0.0114,219900,1.0
+109,Macassar,0.9969,50500,1.0
+110,Steenberg,0.7357,88200,1.0
+110,Grassy Park,0.2643,127400,1.0
+111,Kraaifontein,0.7843,237600,1.0
+111,Brackenfell,0.2156,71300,1.0
+112,Durbanville,0.947,102000,1.0
+112,Kraaifontein,0.053,237600,1.0
+113,Table View,0.9648,109000,1.0
+113,Milnerton,0.035,122700,1.0
+114,Mfuleni,1.0,166400,1.0
+115,Cape Town Central,0.5243,50100,1.0
+115,Sea Point,0.3908,35400,1.0
+115,Table Bay Harbour,0.0848,3300,0.818
+116,Mitchells Plain,0.9913,278800,1.0
+116,Lentegeur,0.0087,124600,1.0
+117,Table View,1.0,109000,1.0
+118,Mfuleni,0.7983,166400,1.0
+118,Kleinvlei,0.1997,137800,1.0

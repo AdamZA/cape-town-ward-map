@@ -9,12 +9,14 @@ Politeness rules (every request goes through `client()`, so they apply to every 
 
 from __future__ import annotations
 
+import ssl
 import threading
 import time
 from pathlib import Path
 from typing import Any
 
 import httpx
+import truststore
 
 USER_AGENT = "cape-town-ward-map ETL (+https://github.com/AdamZA/cape-town-ward-map)"
 _client: httpx.Client | None = None
@@ -51,7 +53,11 @@ def _throttle(request: httpx.Request) -> None:
 def client() -> httpx.Client:
     global _client
     if _client is None:
+        # The OS trust store (not just certifi): some government servers, like SAPS's, send an
+        # incomplete certificate chain that the OS can complete. Verification stays on.
+        ctx = truststore.SSLContext(ssl.PROTOCOL_TLS_CLIENT)
         _client = httpx.Client(
+            verify=ctx,
             headers={"User-Agent": USER_AGENT},
             timeout=httpx.Timeout(120, connect=30),
             follow_redirects=True,

@@ -1,6 +1,7 @@
 // Loads the published data contract. index.json is the only filename hard-coded here.
 import type { FeatureCollection, MultiPolygon, Polygon } from "geojson";
 import type { AllocationsEnvelope } from "./generated/allocations";
+import type { CrimeEnvelope } from "./generated/crime";
 import type { CrosswalkEnvelope } from "./generated/crosswalk";
 import type { DonationsEnvelope } from "./generated/donations";
 import type { PartiesEnvelope } from "./generated/parties";
@@ -36,6 +37,8 @@ export interface AppData {
   donations: DonationsEnvelope | null;
   /** Party profiles (stated priorities and positions), when published. */
   parties: PartiesEnvelope | null;
+  /** Reported crime per police precinct, and the precincts covering each ward. */
+  crime: CrimeEnvelope | null;
 }
 
 const base = `${import.meta.env.BASE_URL}data/`;
@@ -60,7 +63,8 @@ export async function loadAll(): Promise<AppData> {
   const all = (dataset: string) => index.datasets.filter((d) => d.dataset === dataset);
   const donationsEntry = index.datasets.find((d) => d.dataset === "donations");
   const partiesEntry = index.datasets.find((d) => d.dataset === "parties");
-  const [boundaries, wards, serviceRequests, outages, places, landmarks, landUse, allocations, elections, electionWards, crosswalk, donations, parties] = await Promise.all([
+  const crimeEntry = index.datasets.find((d) => d.dataset === "crime" && d.ward_vintage === vintage);
+  const [boundaries, wards, serviceRequests, outages, places, landmarks, landUse, allocations, elections, electionWards, crosswalk, donations, parties, crime] = await Promise.all([
     get<WardFeatures>(boundary!.file),
     get<WardsEnvelope>(one("wards")),
     get<ServiceRequestsEnvelope>(one("service_requests")),
@@ -74,11 +78,12 @@ export async function loadAll(): Promise<AppData> {
     crosswalkEntry ? get<CrosswalkEnvelope>(crosswalkEntry.file) : Promise.resolve(null),
     donationsEntry ? get<DonationsEnvelope>(donationsEntry.file) : Promise.resolve(null),
     partiesEntry ? get<PartiesEnvelope>(partiesEntry.file) : Promise.resolve(null),
+    crimeEntry ? get<CrimeEnvelope>(crimeEntry.file) : Promise.resolve(null),
   ]);
   allocations.sort((a, b) => b.budget_year.localeCompare(a.budget_year));
   elections.sort((a, b) => b.year - a.year);
   electionWards.sort((a, b) => b.year - a.year);
-  return { index, boundaries, wards, serviceRequests, outages, places, landmarks, landUse, allocations, elections, electionWards, crosswalk, donations, parties };
+  return { index, boundaries, wards, serviceRequests, outages, places, landmarks, landUse, allocations, elections, electionWards, crosswalk, donations, parties, crime };
 }
 
 const boundaryCache = new Map<number, Promise<WardFeatures>>();

@@ -13,6 +13,7 @@ def _pin(args) -> None:
         allocations,
         boundaries,
         councillors,
+        crime,
         donations,
         elections,
         electricity,
@@ -31,6 +32,7 @@ def _pin(args) -> None:
         "landmarks": landmarks.pin,
         "allocations": lambda: allocations.pin(args.year, local=args.local),
         "donations": donations.pin,
+        "crime": lambda: (crime.pin_stats(), crime.pin_lookup(CURRENT_VINTAGE)),
         "councillors": lambda: councillors.pin(args.election or max(LGE)),
         "elections": lambda: _pin_elections(
             elections, [args.election] if args.election else sorted(LGE)
@@ -107,6 +109,7 @@ def main(argv: list[str] | None = None) -> None:
             "elections",
             "councillors",
             "donations",
+            "crime",
             "all",
         ],
     )

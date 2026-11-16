@@ -452,7 +452,48 @@ class PartiesEnvelope(Strict):
     parties: list[PartyProfile]
 
 
+# ---- crime --------------------------------------------------------------------------------------
+
+
+class CrimeCategory(Strict):
+    key: str
+    label: str
+    note: str | None = None
+
+
+class StationCrime(Strict):
+    station: str
+    population: int | None = Field(
+        description="Residents of the precinct (estimate); null where a rate would mislead"
+    )
+    counts: dict[str, dict[str, int]] = Field(description="category -> financial year -> count")
+
+
+class WardPrecinct(Strict):
+    station: str
+    share: float = Field(description="Share of the ward's residents living in this precinct")
+
+
+class CrimeWardRow(Strict):
+    ward_no: int
+    precincts: list[WardPrecinct] = Field(description="Largest share first")
+    rates: dict[str, float | None] = Field(
+        description="category -> crimes per 100,000 residents in the covering precinct(s), "
+        "weighted by where the ward's residents live; latest financial year"
+    )
+
+
+class CrimeEnvelope(EnvelopeBase):
+    dataset: Literal["crime"] = "crime"
+    financial_year: str
+    years: list[str]
+    categories: list[CrimeCategory]
+    stations: list[StationCrime]
+    rows: list[CrimeWardRow]
+
+
 ENVELOPES: dict[str, type[BaseModel]] = {
+    "crime": CrimeEnvelope,
     "parties": PartiesEnvelope,
     "donations": DonationsEnvelope,
     "elections": ElectionsEnvelope,

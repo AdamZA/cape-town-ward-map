@@ -1,0 +1,8083 @@
+{
+ "as_of": "2026-11-17",
+ "categories": [
+  {
+   "key": "murder",
+   "label": "Murder",
+   "note": null
+  },
+  {
+   "key": "attempted_murder",
+   "label": "Attempted murder",
+   "note": null
+  },
+  {
+   "key": "sexual_offences",
+   "label": "Sexual offences",
+   "note": "Includes rape and sexual assault"
+  },
+  {
+   "key": "contact",
+   "label": "Contact crime",
+   "note": "Violent crime against a person: murder, assault, sexual offences, robbery"
+  },
+  {
+   "key": "robbery_aggravated",
+   "label": "Robbery with a weapon or violence",
+   "note": null
+  },
+  {
+   "key": "carjacking",
+   "label": "Carjacking",
+   "note": null
+  },
+  {
+   "key": "burglary_home",
+   "label": "Home burglary",
+   "note": null
+  },
+  {
+   "key": "vehicle_theft",
+   "label": "Vehicle theft",
+   "note": null
+  },
+  {
+   "key": "property",
+   "label": "Property crime",
+   "note": "Burglary, theft of and from vehicles, stock theft"
+  },
+  {
+   "key": "drugs",
+   "label": "Drug-related crime",
+   "note": "Mostly reflects police activity (arrests), not how common drugs are"
+  }
+ ],
+ "dataset": "crime",
+ "fields": {
+  "counts": {
+   "description": null,
+   "label": "Reported crimes",
+   "method": "crime",
+   "source": "stats",
+   "unit": null
+  },
+  "rates": {
+   "description": "Crimes reported at the police station(s) covering the ward, per 100,000 residents of those precincts, weighted by where the ward's residents live. Not crimes counted inside the ward.",
+   "label": "Per 100,000 residents (police precinct)",
+   "method": "crime",
+   "source": "stats",
+   "unit": "per 100,000"
+  }
+ },
+ "financial_year": "2025/26",
+ "gaps": [
+  {
+   "code": "reported_only",
+   "message": "Reported crimes only: many crimes go unreported, and reporting differs between communities and crime types.",
+   "ward_no": null
+  },
+  {
+   "code": "precinct_not_ward",
+   "message": "Police precincts don't follow ward boundaries. Figures are for the precinct(s) covering the ward, not crimes inside the ward itself.",
+   "ward_no": null
+  },
+  {
+   "code": "residents_not_visitors",
+   "message": "Rates divide by residents. Precincts with many visitors or workers (the city centre, beachfronts, shopping areas) show higher rates than their residents experience. No rate is given for precincts with very few residents or that reach past the population data.",
+   "ward_no": null
+  }
+ ],
+ "period": {
+  "from": "2025-04",
+  "to": "2026-03"
+ },
+ "rows": [
+  {
+   "precincts": [
+    {
+     "share": 0.6656,
+     "station": "Parow"
+    },
+    {
+     "share": 0.2933,
+     "station": "Goodwood"
+    },
+    {
+     "share": 0.0404,
+     "station": "Bothasig"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 17.4,
+    "burglary_home": 222.1,
+    "carjacking": 26.9,
+    "contact": 1130.9,
+    "drugs": 1052.4,
+    "murder": 12.6,
+    "property": 987.6,
+    "robbery_aggravated": 349.2,
+    "sexual_offences": 44.6,
+    "vehicle_theft": 136.1
+   },
+   "ward_no": 1
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.6948,
+     "station": "Parow"
+    },
+    {
+     "share": 0.3052,
+     "station": "Bellville"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 10.0,
+    "burglary_home": 265.5,
+    "carjacking": 25.9,
+    "contact": 1079.6,
+    "drugs": 1199.5,
+    "murder": 9.9,
+    "property": 1071.2,
+    "robbery_aggravated": 360.8,
+    "sexual_offences": 52.2,
+    "vehicle_theft": 124.5
+   },
+   "ward_no": 2
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9967,
+     "station": "Bellville"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 9.5,
+    "burglary_home": 338.9,
+    "carjacking": 25.3,
+    "contact": 1043.2,
+    "drugs": 1192.6,
+    "murder": 11.6,
+    "property": 1308.4,
+    "robbery_aggravated": 366.3,
+    "sexual_offences": 72.6,
+    "vehicle_theft": 117.9
+   },
+   "ward_no": 3
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9946,
+     "station": "Milnerton"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 41.6,
+    "burglary_home": 264.1,
+    "carjacking": 22.8,
+    "contact": 1575.4,
+    "drugs": 617.0,
+    "murder": 75.0,
+    "property": 743.3,
+    "robbery_aggravated": 505.3,
+    "sexual_offences": 83.1,
+    "vehicle_theft": 105.9
+   },
+   "ward_no": 4
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.8847,
+     "station": "Bothasig"
+    },
+    {
+     "share": 0.1153,
+     "station": "Goodwood"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 39.7,
+    "burglary_home": 219.5,
+    "carjacking": 14.8,
+    "contact": 724.2,
+    "drugs": 314.3,
+    "murder": 2.6,
+    "property": 614.9,
+    "robbery_aggravated": 187.8,
+    "sexual_offences": 44.0,
+    "vehicle_theft": 82.3
+   },
+   "ward_no": 5
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9541,
+     "station": "Kraaifontein"
+    },
+    {
+     "share": 0.0459,
+     "station": "Brackenfell"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 44.7,
+    "burglary_home": 181.1,
+    "carjacking": 13.9,
+    "contact": 1345.2,
+    "drugs": 894.8,
+    "murder": 74.6,
+    "property": 354.7,
+    "robbery_aggravated": 373.3,
+    "sexual_offences": 89.1,
+    "vehicle_theft": 39.2
+   },
+   "ward_no": 6
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.8157,
+     "station": "Kraaifontein"
+    },
+    {
+     "share": 0.1839,
+     "station": "Brackenfell"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 39.8,
+    "burglary_home": 187.8,
+    "carjacking": 13.9,
+    "contact": 1212.7,
+    "drugs": 779.8,
+    "murder": 64.6,
+    "property": 414.0,
+    "robbery_aggravated": 333.9,
+    "sexual_offences": 82.5,
+    "vehicle_theft": 45.7
+   },
+   "ward_no": 7
+  },
+  {
+   "precincts": [
+    {
+     "share": 1.0,
+     "station": "Brackenfell"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 11.2,
+    "burglary_home": 227.2,
+    "carjacking": 14.0,
+    "contact": 429.2,
+    "drugs": 99.6,
+    "murder": 5.6,
+    "property": 764.4,
+    "robbery_aggravated": 101.0,
+    "sexual_offences": 43.5,
+    "vehicle_theft": 84.2
+   },
+   "ward_no": 8
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9158,
+     "station": "Bellville South"
+    },
+    {
+     "share": 0.0548,
+     "station": "Bellville"
+    },
+    {
+     "share": 0.024,
+     "station": "Kuilsrivier"
+    },
+    {
+     "share": 0.0051,
+     "station": "Belhar"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 44.9,
+    "burglary_home": 178.1,
+    "carjacking": 10.5,
+    "contact": 1225.3,
+    "drugs": 429.3,
+    "murder": 25.6,
+    "property": 540.8,
+    "robbery_aggravated": 298.0,
+    "sexual_offences": 95.6,
+    "vehicle_theft": 30.0
+   },
+   "ward_no": 9
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.4527,
+     "station": "Ravensmead"
+    },
+    {
+     "share": 0.2752,
+     "station": "Parow"
+    },
+    {
+     "share": 0.2606,
+     "station": "Bellville"
+    },
+    {
+     "share": 0.0109,
+     "station": "Bellville South"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 59.0,
+    "burglary_home": 202.4,
+    "carjacking": 18.6,
+    "contact": 1167.4,
+    "drugs": 1127.8,
+    "murder": 46.0,
+    "property": 798.4,
+    "robbery_aggravated": 260.0,
+    "sexual_offences": 57.9,
+    "vehicle_theft": 81.2
+   },
+   "ward_no": 10
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9068,
+     "station": "Kuilsrivier"
+    },
+    {
+     "share": 0.0932,
+     "station": "Brackenfell"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 100.6,
+    "burglary_home": 327.9,
+    "carjacking": 13.6,
+    "contact": 1116.0,
+    "drugs": 731.9,
+    "murder": 27.0,
+    "property": 806.2,
+    "robbery_aggravated": 235.0,
+    "sexual_offences": 65.7,
+    "vehicle_theft": 60.7
+   },
+   "ward_no": 11
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.7241,
+     "station": "Belhar"
+    },
+    {
+     "share": 0.2759,
+     "station": "Delft"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 55.9,
+    "burglary_home": 143.1,
+    "carjacking": 48.4,
+    "contact": 1164.2,
+    "drugs": 1029.9,
+    "murder": 57.0,
+    "property": 308.1,
+    "robbery_aggravated": 249.1,
+    "sexual_offences": 77.0,
+    "vehicle_theft": 45.4
+   },
+   "ward_no": 12
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.5236,
+     "station": "Durbanville"
+    },
+    {
+     "share": 0.2688,
+     "station": "Bothasig"
+    },
+    {
+     "share": 0.1084,
+     "station": "Philadelphia"
+    },
+    {
+     "share": 0.0993,
+     "station": "Parow"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 36.1,
+    "burglary_home": 255.2,
+    "carjacking": 15.2,
+    "contact": 735.8,
+    "drugs": 693.0,
+    "murder": 19.4,
+    "property": 734.7,
+    "robbery_aggravated": 166.9,
+    "sexual_offences": 46.0,
+    "vehicle_theft": 69.3
+   },
+   "ward_no": 13
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.4033,
+     "station": "Kuilsrivier"
+    },
+    {
+     "share": 0.2913,
+     "station": "Kleinvlei"
+    },
+    {
+     "share": 0.2864,
+     "station": "Mfuleni"
+    },
+    {
+     "share": 0.0191,
+     "station": "Stellenbosch"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 94.4,
+    "burglary_home": 299.8,
+    "carjacking": 53.1,
+    "contact": 1780.1,
+    "drugs": 1089.0,
+    "murder": 77.2,
+    "property": 625.1,
+    "robbery_aggravated": 397.3,
+    "sexual_offences": 90.3,
+    "vehicle_theft": 69.8
+   },
+   "ward_no": 14
+  },
+  {
+   "precincts": [
+    {
+     "share": 1.0,
+     "station": "Somerset West"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 4.8,
+    "burglary_home": 352.8,
+    "carjacking": 3.6,
+    "contact": 939.2,
+    "drugs": 461.3,
+    "murder": 11.9,
+    "property": 766.4,
+    "robbery_aggravated": 189.5,
+    "sexual_offences": 63.2,
+    "vehicle_theft": 64.4
+   },
+   "ward_no": 15
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9998,
+     "station": "Kleinvlei"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 80.6,
+    "burglary_home": 231.5,
+    "carjacking": 63.9,
+    "contact": 1701.7,
+    "drugs": 1687.2,
+    "murder": 53.7,
+    "property": 425.3,
+    "robbery_aggravated": 327.3,
+    "sexual_offences": 77.6,
+    "vehicle_theft": 68.2
+   },
+   "ward_no": 16
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9689,
+     "station": "Kleinvlei"
+    },
+    {
+     "share": 0.0311,
+     "station": "Mfuleni"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 80.8,
+    "burglary_home": 233.9,
+    "carjacking": 65.0,
+    "contact": 1733.0,
+    "drugs": 1663.0,
+    "murder": 57.3,
+    "property": 428.1,
+    "robbery_aggravated": 338.1,
+    "sexual_offences": 79.4,
+    "vehicle_theft": 68.7
+   },
+   "ward_no": 17
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9889,
+     "station": "Khayelitsha"
+    },
+    {
+     "share": 0.0108,
+     "station": "Lentegeur"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 54.7,
+    "burglary_home": 88.2,
+    "carjacking": 55.6,
+    "contact": 1255.8,
+    "drugs": 846.4,
+    "murder": 84.4,
+    "property": 139.9,
+    "robbery_aggravated": 345.1,
+    "sexual_offences": 73.2,
+    "vehicle_theft": 25.5
+   },
+   "ward_no": 18
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.8217,
+     "station": "Kuilsrivier"
+    },
+    {
+     "share": 0.1782,
+     "station": "Mfuleni"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 106.0,
+    "burglary_home": 332.7,
+    "carjacking": 29.1,
+    "contact": 1457.8,
+    "drugs": 817.1,
+    "murder": 54.4,
+    "property": 757.6,
+    "robbery_aggravated": 324.8,
+    "sexual_offences": 79.8,
+    "vehicle_theft": 62.9
+   },
+   "ward_no": 19
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9966,
+     "station": "Delft"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 62.3,
+    "burglary_home": 231.9,
+    "carjacking": 110.5,
+    "contact": 1693.0,
+    "drugs": 1786.7,
+    "murder": 108.7,
+    "property": 389.7,
+    "robbery_aggravated": 433.4,
+    "sexual_offences": 135.5,
+    "vehicle_theft": 60.0
+   },
+   "ward_no": 20
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.7838,
+     "station": "Durbanville"
+    },
+    {
+     "share": 0.2162,
+     "station": "Bellville"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 30.5,
+    "burglary_home": 285.4,
+    "carjacking": 11.6,
+    "contact": 716.6,
+    "drugs": 959.4,
+    "murder": 22.5,
+    "property": 913.8,
+    "robbery_aggravated": 189.9,
+    "sexual_offences": 47.2,
+    "vehicle_theft": 70.1
+   },
+   "ward_no": 21
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.6838,
+     "station": "Belhar"
+    },
+    {
+     "share": 0.1682,
+     "station": "Bishop Lavis"
+    },
+    {
+     "share": 0.094,
+     "station": "Ravensmead"
+    },
+    {
+     "share": 0.0513,
+     "station": "Delft"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 69.8,
+    "burglary_home": 111.8,
+    "carjacking": 27.0,
+    "contact": 1108.5,
+    "drugs": 917.2,
+    "murder": 55.5,
+    "property": 308.1,
+    "robbery_aggravated": 185.5,
+    "sexual_offences": 55.0,
+    "vehicle_theft": 37.0
+   },
+   "ward_no": 22
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.6354,
+     "station": "Melkbosstrand"
+    },
+    {
+     "share": 0.31,
+     "station": "Table View"
+    },
+    {
+     "share": 0.054,
+     "station": "Philadelphia"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 11.7,
+    "burglary_home": 259.5,
+    "carjacking": 5.1,
+    "contact": 685.5,
+    "drugs": 347.8,
+    "murder": 21.5,
+    "property": 635.0,
+    "robbery_aggravated": 98.7,
+    "sexual_offences": 63.6,
+    "vehicle_theft": 38.1
+   },
+   "ward_no": 23
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9998,
+     "station": "Delft"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 62.3,
+    "burglary_home": 231.9,
+    "carjacking": 110.5,
+    "contact": 1693.0,
+    "drugs": 1786.7,
+    "murder": 108.7,
+    "property": 389.7,
+    "robbery_aggravated": 433.4,
+    "sexual_offences": 135.5,
+    "vehicle_theft": 60.0
+   },
+   "ward_no": 24
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9974,
+     "station": "Ravensmead"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 117.4,
+    "burglary_home": 105.9,
+    "carjacking": 10.4,
+    "contact": 1280.8,
+    "drugs": 1063.3,
+    "murder": 88.6,
+    "property": 409.7,
+    "robbery_aggravated": 138.1,
+    "sexual_offences": 57.5,
+    "vehicle_theft": 33.4
+   },
+   "ward_no": 25
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.3915,
+     "station": "Elsies River"
+    },
+    {
+     "share": 0.3899,
+     "station": "Parow"
+    },
+    {
+     "share": 0.2186,
+     "station": "Goodwood"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 55.7,
+    "burglary_home": 174.3,
+    "carjacking": 25.0,
+    "contact": 1411.2,
+    "drugs": 1090.2,
+    "murder": 37.2,
+    "property": 758.0,
+    "robbery_aggravated": 310.3,
+    "sexual_offences": 40.1,
+    "vehicle_theft": 106.7
+   },
+   "ward_no": 26
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9834,
+     "station": "Goodwood"
+    },
+    {
+     "share": 0.0108,
+     "station": "Kensington"
+    },
+    {
+     "share": 0.0056,
+     "station": "Parow"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 31.0,
+    "burglary_home": 195.9,
+    "carjacking": 30.1,
+    "contact": 1271.5,
+    "drugs": 833.6,
+    "murder": 22.5,
+    "property": 1086.0,
+    "robbery_aggravated": 351.6,
+    "sexual_offences": 48.1,
+    "vehicle_theft": 163.6
+   },
+   "ward_no": 27
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.992,
+     "station": "Elsies River"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 115.1,
+    "burglary_home": 103.2,
+    "carjacking": 20.8,
+    "contact": 1800.6,
+    "drugs": 1128.0,
+    "murder": 73.4,
+    "property": 362.1,
+    "robbery_aggravated": 238.1,
+    "sexual_offences": 32.7,
+    "vehicle_theft": 53.6
+   },
+   "ward_no": 28
+  },
+  {
+   "precincts": [
+    {
+     "share": 1.0,
+     "station": "Atlantis"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 60.7,
+    "burglary_home": 211.9,
+    "carjacking": 1.0,
+    "contact": 1757.2,
+    "drugs": 3066.9,
+    "murder": 39.1,
+    "property": 469.1,
+    "robbery_aggravated": 130.7,
+    "sexual_offences": 102.9,
+    "vehicle_theft": 10.3
+   },
+   "ward_no": 29
+  },
+  {
+   "precincts": [
+    {
+     "share": 1.0,
+     "station": "Manenberg"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 94.0,
+    "burglary_home": 138.9,
+    "carjacking": 15.0,
+    "contact": 1131.4,
+    "drugs": 1430.9,
+    "murder": 74.9,
+    "property": 286.2,
+    "robbery_aggravated": 125.6,
+    "sexual_offences": 65.7,
+    "vehicle_theft": 27.5
+   },
+   "ward_no": 30
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.992,
+     "station": "Bishop Lavis"
+    },
+    {
+     "share": 0.006,
+     "station": "Gugulethu"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 111.9,
+    "burglary_home": 88.6,
+    "carjacking": 19.9,
+    "contact": 1424.7,
+    "drugs": 1282.8,
+    "murder": 94.7,
+    "property": 351.6,
+    "robbery_aggravated": 164.2,
+    "sexual_offences": 30.8,
+    "vehicle_theft": 20.9
+   },
+   "ward_no": 31
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9635,
+     "station": "Atlantis"
+    },
+    {
+     "share": 0.0348,
+     "station": "Philadelphia"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 60.2,
+    "burglary_home": 214.4,
+    "carjacking": 2.6,
+    "contact": 1735.7,
+    "drugs": 2972.3,
+    "murder": 39.4,
+    "property": 474.9,
+    "robbery_aggravated": 130.2,
+    "sexual_offences": 102.2,
+    "vehicle_theft": 12.4
+   },
+   "ward_no": 32
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9388,
+     "station": "Samora Machel"
+    },
+    {
+     "share": 0.0612,
+     "station": "Nyanga"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 75.9,
+    "burglary_home": 49.3,
+    "carjacking": 73.8,
+    "contact": 1276.0,
+    "drugs": 334.9,
+    "murder": 128.5,
+    "property": 105.8,
+    "robbery_aggravated": 427.5,
+    "sexual_offences": 79.2,
+    "vehicle_theft": 27.9
+   },
+   "ward_no": 33
+  },
+  {
+   "precincts": [
+    {
+     "share": 1.0,
+     "station": "Nyanga"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 57.9,
+    "burglary_home": 106.4,
+    "carjacking": 95.4,
+    "contact": 1872.6,
+    "drugs": 794.7,
+    "murder": 109.9,
+    "property": 170.8,
+    "robbery_aggravated": 570.4,
+    "sexual_offences": 111.9,
+    "vehicle_theft": 27.0
+   },
+   "ward_no": 34
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9956,
+     "station": "Philippi East"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 141.3,
+    "burglary_home": 81.1,
+    "carjacking": 100.7,
+    "contact": 2389.4,
+    "drugs": 879.6,
+    "murder": 242.0,
+    "property": 146.2,
+    "robbery_aggravated": 788.7,
+    "sexual_offences": 109.3,
+    "vehicle_theft": 31.9
+   },
+   "ward_no": 35
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9994,
+     "station": "Nyanga"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 57.9,
+    "burglary_home": 106.4,
+    "carjacking": 95.4,
+    "contact": 1872.6,
+    "drugs": 794.7,
+    "murder": 109.9,
+    "property": 170.8,
+    "robbery_aggravated": 570.4,
+    "sexual_offences": 111.9,
+    "vehicle_theft": 27.0
+   },
+   "ward_no": 36
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9349,
+     "station": "Nyanga"
+    },
+    {
+     "share": 0.0651,
+     "station": "Gugulethu"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 57.7,
+    "burglary_home": 106.4,
+    "carjacking": 93.5,
+    "contact": 1824.8,
+    "drugs": 808.5,
+    "murder": 110.5,
+    "property": 170.8,
+    "robbery_aggravated": 551.0,
+    "sexual_offences": 111.3,
+    "vehicle_theft": 26.4
+   },
+   "ward_no": 37
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.8952,
+     "station": "Gugulethu"
+    },
+    {
+     "share": 0.1048,
+     "station": "Nyanga"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 55.6,
+    "burglary_home": 106.1,
+    "carjacking": 69.4,
+    "contact": 1215.9,
+    "drugs": 983.9,
+    "murder": 118.0,
+    "property": 170.9,
+    "robbery_aggravated": 304.2,
+    "sexual_offences": 104.2,
+    "vehicle_theft": 18.9
+   },
+   "ward_no": 38
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9994,
+     "station": "Gugulethu"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 55.3,
+    "burglary_home": 106.1,
+    "carjacking": 66.4,
+    "contact": 1139.0,
+    "drugs": 1006.1,
+    "murder": 118.9,
+    "property": 170.9,
+    "robbery_aggravated": 273.0,
+    "sexual_offences": 103.3,
+    "vehicle_theft": 17.9
+   },
+   "ward_no": 39
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9532,
+     "station": "Gugulethu"
+    },
+    {
+     "share": 0.0468,
+     "station": "Nyanga"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 55.4,
+    "burglary_home": 106.1,
+    "carjacking": 67.8,
+    "contact": 1173.3,
+    "drugs": 996.2,
+    "murder": 118.5,
+    "property": 170.9,
+    "robbery_aggravated": 286.9,
+    "sexual_offences": 103.7,
+    "vehicle_theft": 18.3
+   },
+   "ward_no": 40
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9762,
+     "station": "Gugulethu"
+    },
+    {
+     "share": 0.0233,
+     "station": "Manenberg"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 56.2,
+    "burglary_home": 106.9,
+    "carjacking": 65.2,
+    "contact": 1138.8,
+    "drugs": 1016.0,
+    "murder": 117.9,
+    "property": 173.6,
+    "robbery_aggravated": 269.6,
+    "sexual_offences": 102.4,
+    "vehicle_theft": 18.1
+   },
+   "ward_no": 41
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.6196,
+     "station": "Bishop Lavis"
+    },
+    {
+     "share": 0.3804,
+     "station": "Elsies River"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 113.3,
+    "burglary_home": 94.1,
+    "carjacking": 20.1,
+    "contact": 1568.7,
+    "drugs": 1225.0,
+    "murder": 86.5,
+    "property": 356.3,
+    "robbery_aggravated": 191.9,
+    "sexual_offences": 31.3,
+    "vehicle_theft": 33.3
+   },
+   "ward_no": 42
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.7272,
+     "station": "Strandfontein"
+    },
+    {
+     "share": 0.2625,
+     "station": "Philippi"
+    },
+    {
+     "share": 0.0055,
+     "station": "Samora Machel"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 39.6,
+    "burglary_home": 139.4,
+    "carjacking": 21.1,
+    "contact": 761.7,
+    "drugs": 957.6,
+    "murder": 38.7,
+    "property": 289.0,
+    "robbery_aggravated": 134.8,
+    "sexual_offences": 59.5,
+    "vehicle_theft": 42.1
+   },
+   "ward_no": 43
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.6492,
+     "station": "Manenberg"
+    },
+    {
+     "share": 0.3508,
+     "station": "Gugulethu"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 80.4,
+    "burglary_home": 127.4,
+    "carjacking": 33.0,
+    "contact": 1134.1,
+    "drugs": 1281.9,
+    "murder": 90.3,
+    "property": 245.8,
+    "robbery_aggravated": 177.3,
+    "sexual_offences": 78.9,
+    "vehicle_theft": 24.1
+   },
+   "ward_no": 44
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9811,
+     "station": "Muizenberg"
+    },
+    {
+     "share": 0.0189,
+     "station": "Steenberg"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 74.3,
+    "burglary_home": 152.7,
+    "carjacking": 19.0,
+    "contact": 1096.2,
+    "drugs": 1017.8,
+    "murder": 103.5,
+    "property": 480.7,
+    "robbery_aggravated": 249.0,
+    "sexual_offences": 47.9,
+    "vehicle_theft": 101.4
+   },
+   "ward_no": 45
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.646,
+     "station": "Manenberg"
+    },
+    {
+     "share": 0.354,
+     "station": "Athlone"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 90.7,
+    "burglary_home": 138.5,
+    "carjacking": 22.5,
+    "contact": 1262.3,
+    "drugs": 1394.6,
+    "murder": 64.0,
+    "property": 419.8,
+    "robbery_aggravated": 212.6,
+    "sexual_offences": 62.8,
+    "vehicle_theft": 62.1
+   },
+   "ward_no": 46
+  },
+  {
+   "precincts": [
+    {
+     "share": 1.0,
+     "station": "Philippi"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 127.9,
+    "burglary_home": 135.8,
+    "carjacking": 50.9,
+    "contact": 1459.5,
+    "drugs": 1658.0,
+    "murder": 109.7,
+    "property": 296.3,
+    "robbery_aggravated": 248.0,
+    "sexual_offences": 79.6,
+    "vehicle_theft": 35.2
+   },
+   "ward_no": 47
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.4731,
+     "station": "Athlone"
+    },
+    {
+     "share": 0.3439,
+     "station": "Lansdowne"
+    },
+    {
+     "share": 0.1831,
+     "station": "Philippi"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 72.0,
+    "burglary_home": 134.1,
+    "carjacking": 36.4,
+    "contact": 1157.0,
+    "drugs": 1034.0,
+    "murder": 46.9,
+    "property": 506.3,
+    "robbery_aggravated": 278.1,
+    "sexual_offences": 52.3,
+    "vehicle_theft": 83.7
+   },
+   "ward_no": 48
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9988,
+     "station": "Athlone"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 84.7,
+    "burglary_home": 137.7,
+    "carjacking": 36.1,
+    "contact": 1501.1,
+    "drugs": 1328.4,
+    "murder": 44.0,
+    "property": 663.7,
+    "robbery_aggravated": 371.3,
+    "sexual_offences": 57.6,
+    "vehicle_theft": 125.3
+   },
+   "ward_no": 49
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9993,
+     "station": "Bishop Lavis"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 112.2,
+    "burglary_home": 88.5,
+    "carjacking": 19.6,
+    "contact": 1426.4,
+    "drugs": 1284.5,
+    "murder": 94.6,
+    "property": 352.7,
+    "robbery_aggravated": 163.5,
+    "sexual_offences": 30.4,
+    "vehicle_theft": 20.9
+   },
+   "ward_no": 50
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9991,
+     "station": "Langa"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 40.1,
+    "burglary_home": 247.0,
+    "carjacking": 86.8,
+    "contact": 1763.7,
+    "drugs": 634.2,
+    "murder": 90.8,
+    "property": 375.2,
+    "robbery_aggravated": 420.6,
+    "sexual_offences": 66.8,
+    "vehicle_theft": 37.4
+   },
+   "ward_no": 51
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9941,
+     "station": "Langa"
+    },
+    {
+     "share": 0.0059,
+     "station": "Bishop Lavis"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 40.5,
+    "burglary_home": 246.1,
+    "carjacking": 86.4,
+    "contact": 1761.7,
+    "drugs": 638.0,
+    "murder": 90.8,
+    "property": 375.1,
+    "robbery_aggravated": 419.1,
+    "sexual_offences": 66.6,
+    "vehicle_theft": 37.3
+   },
+   "ward_no": 52
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.8074,
+     "station": "Pinelands"
+    },
+    {
+     "share": 0.1884,
+     "station": "Maitland"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 9.7,
+    "burglary_home": 255.9,
+    "carjacking": 25.8,
+    "contact": 990.8,
+    "drugs": 216.2,
+    "murder": 13.9,
+    "property": 1270.4,
+    "robbery_aggravated": 308.3,
+    "sexual_offences": 46.6,
+    "vehicle_theft": 115.9
+   },
+   "ward_no": 53
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.747,
+     "station": "Sea Point"
+    },
+    {
+     "share": 0.2481,
+     "station": "Camps Bay"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 3.2,
+    "burglary_home": 358.2,
+    "carjacking": 2.1,
+    "contact": 930.3,
+    "drugs": 1390.6,
+    "murder": 5.3,
+    "property": 2949.0,
+    "robbery_aggravated": 153.5,
+    "sexual_offences": 69.7,
+    "vehicle_theft": 135.6
+   },
+   "ward_no": 54
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.7775,
+     "station": "Milnerton"
+    },
+    {
+     "share": 0.2213,
+     "station": "Maitland"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 37.2,
+    "burglary_home": 265.4,
+    "carjacking": 28.3,
+    "contact": 1716.4,
+    "drugs": 572.5,
+    "murder": 71.3,
+    "property": 1028.2,
+    "robbery_aggravated": 573.7,
+    "sexual_offences": 89.7,
+    "vehicle_theft": 122.9
+   },
+   "ward_no": 55
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.763,
+     "station": "Kensington"
+    },
+    {
+     "share": 0.2164,
+     "station": "Maitland"
+    },
+    {
+     "share": 0.0186,
+     "station": "Goodwood"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 77.0,
+    "burglary_home": 133.9,
+    "carjacking": 17.2,
+    "contact": 1179.4,
+    "drugs": 1377.7,
+    "murder": 44.7,
+    "property": 755.3,
+    "robbery_aggravated": 309.4,
+    "sexual_offences": 69.7,
+    "vehicle_theft": 99.5
+   },
+   "ward_no": 56
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.5247,
+     "station": "Rondebosch"
+    },
+    {
+     "share": 0.4744,
+     "station": "Mowbray"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 0.0,
+    "burglary_home": 402.6,
+    "carjacking": 17.3,
+    "contact": 698.0,
+    "drugs": 233.8,
+    "murder": 3.2,
+    "property": 1896.8,
+    "robbery_aggravated": 239.4,
+    "sexual_offences": 38.6,
+    "vehicle_theft": 328.5
+   },
+   "ward_no": 57
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.7043,
+     "station": "Claremont"
+    },
+    {
+     "share": 0.1536,
+     "station": "Wynberg"
+    },
+    {
+     "share": 0.14,
+     "station": "Rondebosch"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 8.6,
+    "burglary_home": 263.3,
+    "carjacking": 17.3,
+    "contact": 747.5,
+    "drugs": 1069.7,
+    "murder": 1.3,
+    "property": 1348.9,
+    "robbery_aggravated": 216.5,
+    "sexual_offences": 43.7,
+    "vehicle_theft": 186.7
+   },
+   "ward_no": 58
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.7206,
+     "station": "Claremont"
+    },
+    {
+     "share": 0.1428,
+     "station": "Wynberg"
+    },
+    {
+     "share": 0.1366,
+     "station": "Rondebosch"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 8.6,
+    "burglary_home": 262.6,
+    "carjacking": 17.5,
+    "contact": 741.6,
+    "drugs": 1022.0,
+    "murder": 1.2,
+    "property": 1348.5,
+    "robbery_aggravated": 214.8,
+    "sexual_offences": 43.3,
+    "vehicle_theft": 187.1
+   },
+   "ward_no": 59
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.8012,
+     "station": "Lansdowne"
+    },
+    {
+     "share": 0.134,
+     "station": "Athlone"
+    },
+    {
+     "share": 0.0578,
+     "station": "Mowbray"
+    },
+    {
+     "share": 0.0069,
+     "station": "Wynberg"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 31.2,
+    "burglary_home": 148.2,
+    "carjacking": 29.4,
+    "contact": 677.2,
+    "drugs": 476.5,
+    "murder": 20.4,
+    "property": 536.1,
+    "robbery_aggravated": 201.3,
+    "sexual_offences": 33.0,
+    "vehicle_theft": 78.9
+   },
+   "ward_no": 60
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.5609,
+     "station": "Ocean View"
+    },
+    {
+     "share": 0.4353,
+     "station": "Simon'S Town"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 16.9,
+    "burglary_home": 220.1,
+    "carjacking": 0.0,
+    "contact": 665.8,
+    "drugs": 93.2,
+    "murder": 26.7,
+    "property": 489.5,
+    "robbery_aggravated": 94.9,
+    "sexual_offences": 58.2,
+    "vehicle_theft": 47.7
+   },
+   "ward_no": 61
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.6318,
+     "station": "Wynberg"
+    },
+    {
+     "share": 0.1973,
+     "station": "Claremont"
+    },
+    {
+     "share": 0.1257,
+     "station": "Dieprivier"
+    },
+    {
+     "share": 0.0449,
+     "station": "Kirstenhof"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 12.2,
+    "burglary_home": 245.2,
+    "carjacking": 9.7,
+    "contact": 1000.7,
+    "drugs": 3208.3,
+    "murder": 6.2,
+    "property": 1115.8,
+    "robbery_aggravated": 276.5,
+    "sexual_offences": 47.5,
+    "vehicle_theft": 105.7
+   },
+   "ward_no": 62
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.6273,
+     "station": "Dieprivier"
+    },
+    {
+     "share": 0.2707,
+     "station": "Wynberg"
+    },
+    {
+     "share": 0.1017,
+     "station": "Grassy Park"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 11.0,
+    "burglary_home": 214.1,
+    "carjacking": 11.4,
+    "contact": 746.5,
+    "drugs": 1631.8,
+    "murder": 10.3,
+    "property": 808.5,
+    "robbery_aggravated": 215.8,
+    "sexual_offences": 32.6,
+    "vehicle_theft": 60.0
+   },
+   "ward_no": 63
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.5208,
+     "station": "Fish Hoek"
+    },
+    {
+     "share": 0.477,
+     "station": "Muizenberg"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 35.5,
+    "burglary_home": 281.1,
+    "carjacking": 9.2,
+    "contact": 827.5,
+    "drugs": 598.0,
+    "murder": 51.7,
+    "property": 708.2,
+    "robbery_aggravated": 168.1,
+    "sexual_offences": 50.5,
+    "vehicle_theft": 117.3
+   },
+   "ward_no": 64
+  },
+  {
+   "precincts": [
+    {
+     "share": 1.0,
+     "station": "Grassy Park"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 48.7,
+    "burglary_home": 171.1,
+    "carjacking": 29.8,
+    "contact": 1029.0,
+    "drugs": 1744.1,
+    "murder": 45.5,
+    "property": 431.7,
+    "robbery_aggravated": 236.3,
+    "sexual_offences": 59.7,
+    "vehicle_theft": 49.5
+   },
+   "ward_no": 65
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.6102,
+     "station": "Grassy Park"
+    },
+    {
+     "share": 0.3898,
+     "station": "Lansdowne"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 39.3,
+    "burglary_home": 154.3,
+    "carjacking": 29.5,
+    "contact": 831.6,
+    "drugs": 1180.0,
+    "murder": 34.6,
+    "property": 420.0,
+    "robbery_aggravated": 208.9,
+    "sexual_offences": 48.4,
+    "vehicle_theft": 50.6
+   },
+   "ward_no": 66
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9493,
+     "station": "Grassy Park"
+    },
+    {
+     "share": 0.0448,
+     "station": "Muizenberg"
+    },
+    {
+     "share": 0.0059,
+     "station": "Steenberg"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 50.0,
+    "burglary_home": 170.0,
+    "carjacking": 29.2,
+    "contact": 1030.3,
+    "drugs": 1715.7,
+    "murder": 48.2,
+    "property": 432.9,
+    "robbery_aggravated": 236.2,
+    "sexual_offences": 59.1,
+    "vehicle_theft": 51.7
+   },
+   "ward_no": 67
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.7809,
+     "station": "Steenberg"
+    },
+    {
+     "share": 0.2177,
+     "station": "Muizenberg"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 75.6,
+    "burglary_home": 120.3,
+    "carjacking": 11.3,
+    "contact": 769.1,
+    "drugs": 2319.7,
+    "murder": 69.7,
+    "property": 281.4,
+    "robbery_aggravated": 135.6,
+    "sexual_offences": 44.2,
+    "vehicle_theft": 32.3
+   },
+   "ward_no": 68
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.6958,
+     "station": "Ocean View"
+    },
+    {
+     "share": 0.3041,
+     "station": "Fish Hoek"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 18.0,
+    "burglary_home": 200.3,
+    "carjacking": 0.0,
+    "contact": 761.0,
+    "drugs": 162.8,
+    "murder": 31.1,
+    "property": 444.4,
+    "robbery_aggravated": 107.2,
+    "sexual_offences": 61.7,
+    "vehicle_theft": 57.7
+   },
+   "ward_no": 69
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.6619,
+     "station": "Bellville"
+    },
+    {
+     "share": 0.3379,
+     "station": "Durbanville"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 18.6,
+    "burglary_home": 315.8,
+    "carjacking": 19.4,
+    "contact": 902.4,
+    "drugs": 1092.1,
+    "murder": 16.3,
+    "property": 1138.2,
+    "robbery_aggravated": 290.2,
+    "sexual_offences": 61.6,
+    "vehicle_theft": 97.3
+   },
+   "ward_no": 70
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9364,
+     "station": "Kirstenhof"
+    },
+    {
+     "share": 0.0609,
+     "station": "Muizenberg"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 28.2,
+    "burglary_home": 164.4,
+    "carjacking": 16.3,
+    "contact": 523.9,
+    "drugs": 260.5,
+    "murder": 10.7,
+    "property": 606.8,
+    "robbery_aggravated": 103.6,
+    "sexual_offences": 58.9,
+    "vehicle_theft": 62.3
+   },
+   "ward_no": 71
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.7601,
+     "station": "Steenberg"
+    },
+    {
+     "share": 0.1973,
+     "station": "Dieprivier"
+    },
+    {
+     "share": 0.0381,
+     "station": "Kirstenhof"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 59.7,
+    "burglary_home": 131.0,
+    "carjacking": 9.7,
+    "contact": 631.1,
+    "drugs": 2105.3,
+    "murder": 47.1,
+    "property": 336.1,
+    "robbery_aggravated": 114.0,
+    "sexual_offences": 38.8,
+    "vehicle_theft": 20.8
+   },
+   "ward_no": 72
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.6714,
+     "station": "Dieprivier"
+    },
+    {
+     "share": 0.3286,
+     "station": "Kirstenhof"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 10.7,
+    "burglary_home": 189.3,
+    "carjacking": 12.6,
+    "contact": 486.9,
+    "drugs": 212.4,
+    "murder": 5.1,
+    "property": 680.0,
+    "robbery_aggravated": 137.9,
+    "sexual_offences": 31.7,
+    "vehicle_theft": 50.0
+   },
+   "ward_no": 73
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9999,
+     "station": "Hout Bay"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 41.9,
+    "burglary_home": 272.5,
+    "carjacking": 0.0,
+    "contact": 1423.5,
+    "drugs": 142.6,
+    "murder": 75.5,
+    "property": 484.3,
+    "robbery_aggravated": 134.2,
+    "sexual_offences": 69.2,
+    "vehicle_theft": 12.6
+   },
+   "ward_no": 74
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.5952,
+     "station": "Mitchells Plain"
+    },
+    {
+     "share": 0.4018,
+     "station": "Lentegeur"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 48.4,
+    "burglary_home": 119.5,
+    "carjacking": 27.1,
+    "contact": 1169.7,
+    "drugs": 2283.7,
+    "murder": 51.9,
+    "property": 272.3,
+    "robbery_aggravated": 200.7,
+    "sexual_offences": 53.4,
+    "vehicle_theft": 38.7
+   },
+   "ward_no": 75
+  },
+  {
+   "precincts": [
+    {
+     "share": 1.0,
+     "station": "Lentegeur"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 34.5,
+    "burglary_home": 111.6,
+    "carjacking": 38.5,
+    "contact": 1146.9,
+    "drugs": 2298.6,
+    "murder": 46.5,
+    "property": 249.6,
+    "robbery_aggravated": 237.6,
+    "sexual_offences": 53.8,
+    "vehicle_theft": 33.7
+   },
+   "ward_no": 76
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9999,
+     "station": "Cape Town Central"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 35.9,
+    "burglary_home": 411.2,
+    "carjacking": 31.9,
+    "contact": 5662.7,
+    "drugs": 11656.7,
+    "murder": 14.0,
+    "property": 4640.7,
+    "robbery_aggravated": 1029.9,
+    "sexual_offences": 213.6,
+    "vehicle_theft": 309.4
+   },
+   "ward_no": 77
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9967,
+     "station": "Lentegeur"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 34.5,
+    "burglary_home": 111.6,
+    "carjacking": 38.5,
+    "contact": 1146.9,
+    "drugs": 2298.6,
+    "murder": 46.5,
+    "property": 249.6,
+    "robbery_aggravated": 237.6,
+    "sexual_offences": 53.8,
+    "vehicle_theft": 33.7
+   },
+   "ward_no": 78
+  },
+  {
+   "precincts": [
+    {
+     "share": 1.0,
+     "station": "Mitchells Plain"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 57.7,
+    "burglary_home": 124.8,
+    "carjacking": 19.4,
+    "contact": 1185.1,
+    "drugs": 2273.7,
+    "murder": 55.6,
+    "property": 287.7,
+    "robbery_aggravated": 175.8,
+    "sexual_offences": 53.1,
+    "vehicle_theft": 42.0
+   },
+   "ward_no": 79
+  },
+  {
+   "precincts": [
+    {
+     "share": 1.0,
+     "station": "Nyanga"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 57.9,
+    "burglary_home": 106.4,
+    "carjacking": 95.4,
+    "contact": 1872.6,
+    "drugs": 794.7,
+    "murder": 109.9,
+    "property": 170.8,
+    "robbery_aggravated": 570.4,
+    "sexual_offences": 111.9,
+    "vehicle_theft": 27.0
+   },
+   "ward_no": 80
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9969,
+     "station": "Mitchells Plain"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 57.7,
+    "burglary_home": 124.8,
+    "carjacking": 19.4,
+    "contact": 1185.1,
+    "drugs": 2273.7,
+    "murder": 55.6,
+    "property": 287.7,
+    "robbery_aggravated": 175.8,
+    "sexual_offences": 53.1,
+    "vehicle_theft": 42.0
+   },
+   "ward_no": 81
+  },
+  {
+   "precincts": [
+    {
+     "share": 1.0,
+     "station": "Mitchells Plain"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 57.7,
+    "burglary_home": 124.8,
+    "carjacking": 19.4,
+    "contact": 1185.1,
+    "drugs": 2273.7,
+    "murder": 55.6,
+    "property": 287.7,
+    "robbery_aggravated": 175.8,
+    "sexual_offences": 53.1,
+    "vehicle_theft": 42.0
+   },
+   "ward_no": 82
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.8591,
+     "station": "Strand"
+    },
+    {
+     "share": 0.1409,
+     "station": "Somerset West"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 25.8,
+    "burglary_home": 315.0,
+    "carjacking": 2.9,
+    "contact": 1094.2,
+    "drugs": 2330.4,
+    "murder": 17.2,
+    "property": 908.5,
+    "robbery_aggravated": 182.0,
+    "sexual_offences": 75.8,
+    "vehicle_theft": 91.5
+   },
+   "ward_no": 83
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9994,
+     "station": "Somerset West"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 4.8,
+    "burglary_home": 352.8,
+    "carjacking": 3.6,
+    "contact": 939.2,
+    "drugs": 461.3,
+    "murder": 11.9,
+    "property": 766.4,
+    "robbery_aggravated": 189.5,
+    "sexual_offences": 63.2,
+    "vehicle_theft": 64.4
+   },
+   "ward_no": 84
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.6605,
+     "station": "Lwandle"
+    },
+    {
+     "share": 0.3395,
+     "station": "Strand"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 53.8,
+    "burglary_home": 230.6,
+    "carjacking": 18.2,
+    "contact": 1375.5,
+    "drugs": 1225.8,
+    "murder": 72.3,
+    "property": 560.0,
+    "robbery_aggravated": 351.0,
+    "sexual_offences": 109.1,
+    "vehicle_theft": 87.9
+   },
+   "ward_no": 85
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9605,
+     "station": "Lwandle"
+    },
+    {
+     "share": 0.0395,
+     "station": "Strand"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 64.9,
+    "burglary_home": 195.1,
+    "carjacking": 25.2,
+    "contact": 1491.8,
+    "drugs": 584.9,
+    "murder": 96.9,
+    "property": 391.1,
+    "robbery_aggravated": 428.3,
+    "sexual_offences": 123.2,
+    "vehicle_theft": 84.3
+   },
+   "ward_no": 86
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.8693,
+     "station": "Khayelitsha"
+    },
+    {
+     "share": 0.1307,
+     "station": "Lingelethu-West"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 54.2,
+    "burglary_home": 103.4,
+    "carjacking": 82.6,
+    "contact": 1365.5,
+    "drugs": 798.5,
+    "murder": 87.7,
+    "property": 178.1,
+    "robbery_aggravated": 395.3,
+    "sexual_offences": 79.1,
+    "vehicle_theft": 34.1
+   },
+   "ward_no": 87
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.5323,
+     "station": "Samora Machel"
+    },
+    {
+     "share": 0.4452,
+     "station": "Philippi East"
+    },
+    {
+     "share": 0.0225,
+     "station": "Nyanga"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 105.2,
+    "burglary_home": 62.8,
+    "carjacking": 85.5,
+    "contact": 1764.4,
+    "drugs": 571.8,
+    "murder": 179.3,
+    "property": 123.0,
+    "robbery_aggravated": 586.6,
+    "sexual_offences": 92.2,
+    "vehicle_theft": 29.7
+   },
+   "ward_no": 88
+  },
+  {
+   "precincts": [
+    {
+     "share": 1.0,
+     "station": "Khayelitsha"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 54.9,
+    "burglary_home": 87.9,
+    "carjacking": 55.8,
+    "contact": 1257.0,
+    "drugs": 830.5,
+    "murder": 84.8,
+    "property": 138.7,
+    "robbery_aggravated": 346.3,
+    "sexual_offences": 73.4,
+    "vehicle_theft": 25.4
+   },
+   "ward_no": 89
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.7368,
+     "station": "Somerset West"
+    },
+    {
+     "share": 0.2631,
+     "station": "Macassar"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 9.8,
+    "burglary_home": 354.3,
+    "carjacking": 4.7,
+    "contact": 1238.6,
+    "drugs": 411.3,
+    "murder": 18.7,
+    "property": 736.7,
+    "robbery_aggravated": 189.1,
+    "sexual_offences": 62.2,
+    "vehicle_theft": 55.8
+   },
+   "ward_no": 90
+  },
+  {
+   "precincts": [
+    {
+     "share": 1.0,
+     "station": "Khayelitsha"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 54.9,
+    "burglary_home": 87.9,
+    "carjacking": 55.8,
+    "contact": 1257.0,
+    "drugs": 830.5,
+    "murder": 84.8,
+    "property": 138.7,
+    "robbery_aggravated": 346.3,
+    "sexual_offences": 73.4,
+    "vehicle_theft": 25.4
+   },
+   "ward_no": 91
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9209,
+     "station": "Woodstock"
+    },
+    {
+     "share": 0.0623,
+     "station": "Cape Town Central"
+    },
+    {
+     "share": 0.0156,
+     "station": "Maitland"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 46.9,
+    "burglary_home": 289.0,
+    "carjacking": 56.4,
+    "contact": 2154.8,
+    "drugs": 1746.6,
+    "murder": 27.4,
+    "property": 2445.3,
+    "robbery_aggravated": 595.1,
+    "sexual_offences": 106.1,
+    "vehicle_theft": 419.0
+   },
+   "ward_no": 92
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.5683,
+     "station": "Khayelitsha"
+    },
+    {
+     "share": 0.2169,
+     "station": "Makhaza"
+    },
+    {
+     "share": 0.2149,
+     "station": "Lingelethu-West"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 49.5,
+    "burglary_home": 132.0,
+    "carjacking": 112.0,
+    "contact": 1538.1,
+    "drugs": 683.3,
+    "murder": 89.6,
+    "property": 238.8,
+    "robbery_aggravated": 489.6,
+    "sexual_offences": 87.6,
+    "vehicle_theft": 47.7
+   },
+   "ward_no": 93
+  },
+  {
+   "precincts": [
+    {
+     "share": 1.0,
+     "station": "Lingelethu-West"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 49.2,
+    "burglary_home": 206.6,
+    "carjacking": 261.2,
+    "contact": 2087.4,
+    "drugs": 585.8,
+    "murder": 107.1,
+    "property": 440.4,
+    "robbery_aggravated": 721.3,
+    "sexual_offences": 116.9,
+    "vehicle_theft": 91.8
+   },
+   "ward_no": 94
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9235,
+     "station": "Harare"
+    },
+    {
+     "share": 0.0665,
+     "station": "Makhaza"
+    },
+    {
+     "share": 0.01,
+     "station": "Macassar"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 30.6,
+    "burglary_home": 148.1,
+    "carjacking": 115.0,
+    "contact": 1434.7,
+    "drugs": 576.5,
+    "murder": 117.9,
+    "property": 226.7,
+    "robbery_aggravated": 426.9,
+    "sexual_offences": 135.0,
+    "vehicle_theft": 49.8
+   },
+   "ward_no": 95
+  },
+  {
+   "precincts": [
+    {
+     "share": 1.0,
+     "station": "Makhaza"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 35.8,
+    "burglary_home": 173.6,
+    "carjacking": 111.3,
+    "contact": 1730.3,
+    "drugs": 394.3,
+    "murder": 84.8,
+    "property": 301.3,
+    "robbery_aggravated": 635.3,
+    "sexual_offences": 96.0,
+    "vehicle_theft": 62.3
+   },
+   "ward_no": 96
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.5203,
+     "station": "Makhaza"
+    },
+    {
+     "share": 0.4797,
+     "station": "Harare"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 33.2,
+    "burglary_home": 159.4,
+    "carjacking": 113.7,
+    "contact": 1575.0,
+    "drugs": 489.6,
+    "murder": 102.2,
+    "property": 260.7,
+    "robbery_aggravated": 529.4,
+    "sexual_offences": 116.4,
+    "vehicle_theft": 56.0
+   },
+   "ward_no": 97
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.6189,
+     "station": "Harare"
+    },
+    {
+     "share": 0.3811,
+     "station": "Lingelethu-West"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 37.5,
+    "burglary_home": 167.9,
+    "carjacking": 171.6,
+    "contact": 1666.0,
+    "drugs": 590.2,
+    "murder": 115.8,
+    "property": 302.0,
+    "robbery_aggravated": 531.4,
+    "sexual_offences": 130.3,
+    "vehicle_theft": 65.4
+   },
+   "ward_no": 98
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.849,
+     "station": "Harare"
+    },
+    {
+     "share": 0.1444,
+     "station": "Lingelethu-West"
+    },
+    {
+     "share": 0.0066,
+     "station": "Khayelitsha"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 33.2,
+    "burglary_home": 152.7,
+    "carjacking": 136.9,
+    "contact": 1503.8,
+    "drugs": 593.4,
+    "murder": 118.8,
+    "property": 248.5,
+    "robbery_aggravated": 458.4,
+    "sexual_offences": 135.0,
+    "vehicle_theft": 55.1
+   },
+   "ward_no": 99
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.507,
+     "station": "Strand"
+    },
+    {
+     "share": 0.4756,
+     "station": "Gordons Bay"
+    },
+    {
+     "share": 0.0167,
+     "station": "Lwandle"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 15.9,
+    "burglary_home": 335.4,
+    "carjacking": 1.9,
+    "contact": 991.1,
+    "drugs": 1627.2,
+    "murder": 16.7,
+    "property": 927.5,
+    "robbery_aggravated": 153.7,
+    "sexual_offences": 82.6,
+    "vehicle_theft": 93.0
+   },
+   "ward_no": 100
+  },
+  {
+   "precincts": [
+    {
+     "share": 1.0,
+     "station": "Kraaifontein"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 46.3,
+    "burglary_home": 178.9,
+    "carjacking": 13.9,
+    "contact": 1389.3,
+    "drugs": 933.1,
+    "murder": 77.9,
+    "property": 335.0,
+    "robbery_aggravated": 386.4,
+    "sexual_offences": 91.3,
+    "vehicle_theft": 37.0
+   },
+   "ward_no": 101
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9963,
+     "station": "Kraaifontein"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 46.3,
+    "burglary_home": 178.9,
+    "carjacking": 13.9,
+    "contact": 1389.3,
+    "drugs": 933.1,
+    "murder": 77.9,
+    "property": 335.0,
+    "robbery_aggravated": 386.4,
+    "sexual_offences": 91.3,
+    "vehicle_theft": 37.0
+   },
+   "ward_no": 102
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.4711,
+     "station": "Brackenfell"
+    },
+    {
+     "share": 0.3715,
+     "station": "Durbanville"
+    },
+    {
+     "share": 0.1573,
+     "station": "Kraaifontein"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 26.0,
+    "burglary_home": 235.7,
+    "carjacking": 11.7,
+    "contact": 653.5,
+    "drugs": 526.3,
+    "murder": 24.4,
+    "property": 711.9,
+    "robbery_aggravated": 160.8,
+    "sexual_offences": 49.8,
+    "vehicle_theft": 66.6
+   },
+   "ward_no": 103
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.7961,
+     "station": "Milnerton"
+    },
+    {
+     "share": 0.1757,
+     "station": "Table View"
+    },
+    {
+     "share": 0.0282,
+     "station": "Bothasig"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 39.4,
+    "burglary_home": 283.3,
+    "carjacking": 20.0,
+    "contact": 1482.8,
+    "drugs": 579.3,
+    "murder": 66.0,
+    "property": 764.2,
+    "robbery_aggravated": 450.3,
+    "sexual_offences": 78.5,
+    "vehicle_theft": 96.8
+   },
+   "ward_no": 104
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.4573,
+     "station": "Kraaifontein"
+    },
+    {
+     "share": 0.4323,
+     "station": "Durbanville"
+    },
+    {
+     "share": 0.0883,
+     "station": "Philadelphia"
+    },
+    {
+     "share": 0.014,
+     "station": "Klapmuts"
+    },
+    {
+     "share": 0.0077,
+     "station": "Paarl"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 42.0,
+    "burglary_home": 232.5,
+    "carjacking": 14.2,
+    "contact": 1043.7,
+    "drugs": 863.9,
+    "murder": 51.6,
+    "property": 575.0,
+    "robbery_aggravated": 253.0,
+    "sexual_offences": 69.3,
+    "vehicle_theft": 48.5
+   },
+   "ward_no": 105
+  },
+  {
+   "precincts": [
+    {
+     "share": 1.0,
+     "station": "Delft"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 62.3,
+    "burglary_home": 231.9,
+    "carjacking": 110.5,
+    "contact": 1693.0,
+    "drugs": 1786.7,
+    "murder": 108.7,
+    "property": 389.7,
+    "robbery_aggravated": 433.4,
+    "sexual_offences": 135.5,
+    "vehicle_theft": 60.0
+   },
+   "ward_no": 106
+  },
+  {
+   "precincts": [
+    {
+     "share": 1.0,
+     "station": "Table View"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 29.4,
+    "burglary_home": 379.8,
+    "carjacking": 8.3,
+    "contact": 1196.3,
+    "drugs": 461.5,
+    "murder": 35.8,
+    "property": 892.7,
+    "robbery_aggravated": 246.8,
+    "sexual_offences": 63.3,
+    "vehicle_theft": 59.6
+   },
+   "ward_no": 107
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9885,
+     "station": "Mfuleni"
+    },
+    {
+     "share": 0.0114,
+     "station": "Delft"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 88.0,
+    "burglary_home": 306.2,
+    "carjacking": 100.5,
+    "contact": 2696.9,
+    "drugs": 920.5,
+    "murder": 170.0,
+    "property": 512.4,
+    "robbery_aggravated": 672.7,
+    "sexual_offences": 134.0,
+    "vehicle_theft": 83.8
+   },
+   "ward_no": 108
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9969,
+     "station": "Macassar"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 23.8,
+    "burglary_home": 358.4,
+    "carjacking": 7.9,
+    "contact": 2077.2,
+    "drugs": 271.3,
+    "murder": 37.6,
+    "property": 653.5,
+    "robbery_aggravated": 188.1,
+    "sexual_offences": 59.4,
+    "vehicle_theft": 31.7
+   },
+   "ward_no": 109
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.7357,
+     "station": "Steenberg"
+    },
+    {
+     "share": 0.2643,
+     "station": "Grassy Park"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 68.8,
+    "burglary_home": 127.0,
+    "carjacking": 14.6,
+    "contact": 769.1,
+    "drugs": 2441.2,
+    "murder": 56.2,
+    "property": 279.3,
+    "robbery_aggravated": 138.4,
+    "sexual_offences": 47.5,
+    "vehicle_theft": 22.3
+   },
+   "ward_no": 110
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.7843,
+     "station": "Kraaifontein"
+    },
+    {
+     "share": 0.2156,
+     "station": "Brackenfell"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 38.7,
+    "burglary_home": 189.3,
+    "carjacking": 13.9,
+    "contact": 1182.3,
+    "drugs": 753.4,
+    "murder": 62.3,
+    "property": 427.6,
+    "robbery_aggravated": 324.9,
+    "sexual_offences": 81.0,
+    "vehicle_theft": 47.2
+   },
+   "ward_no": 111
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.947,
+     "station": "Durbanville"
+    },
+    {
+     "share": 0.053,
+     "station": "Kraaifontein"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 36.8,
+    "burglary_home": 265.7,
+    "carjacking": 8.1,
+    "contact": 666.9,
+    "drugs": 897.1,
+    "murder": 28.3,
+    "property": 780.0,
+    "robbery_aggravated": 154.2,
+    "sexual_offences": 42.9,
+    "vehicle_theft": 55.8
+   },
+   "ward_no": 112
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9648,
+     "station": "Table View"
+    },
+    {
+     "share": 0.035,
+     "station": "Milnerton"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 29.8,
+    "burglary_home": 375.7,
+    "carjacking": 8.8,
+    "contact": 1209.6,
+    "drugs": 466.9,
+    "murder": 37.2,
+    "property": 887.5,
+    "robbery_aggravated": 255.8,
+    "sexual_offences": 64.0,
+    "vehicle_theft": 61.2
+   },
+   "ward_no": 113
+  },
+  {
+   "precincts": [
+    {
+     "share": 1.0,
+     "station": "Mfuleni"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 88.3,
+    "burglary_home": 307.1,
+    "carjacking": 100.4,
+    "contact": 2708.5,
+    "drugs": 910.5,
+    "murder": 170.7,
+    "property": 513.8,
+    "robbery_aggravated": 675.5,
+    "sexual_offences": 134.0,
+    "vehicle_theft": 84.1
+   },
+   "ward_no": 114
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.5243,
+     "station": "Cape Town Central"
+    },
+    {
+     "share": 0.3908,
+     "station": "Sea Point"
+    },
+    {
+     "share": 0.0848,
+     "station": "Table Bay Harbour"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 20.6,
+    "burglary_home": 351.4,
+    "carjacking": 19.5,
+    "contact": 3649.8,
+    "drugs": 7437.4,
+    "murder": 9.2,
+    "property": 4058.2,
+    "robbery_aggravated": 657.6,
+    "sexual_offences": 144.1,
+    "vehicle_theft": 243.6
+   },
+   "ward_no": 115
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.9913,
+     "station": "Mitchells Plain"
+    },
+    {
+     "share": 0.0087,
+     "station": "Lentegeur"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 57.5,
+    "burglary_home": 124.7,
+    "carjacking": 19.6,
+    "contact": 1184.8,
+    "drugs": 2273.9,
+    "murder": 55.5,
+    "property": 287.4,
+    "robbery_aggravated": 176.3,
+    "sexual_offences": 53.1,
+    "vehicle_theft": 41.9
+   },
+   "ward_no": 116
+  },
+  {
+   "precincts": [
+    {
+     "share": 1.0,
+     "station": "Table View"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 29.4,
+    "burglary_home": 379.8,
+    "carjacking": 8.3,
+    "contact": 1196.3,
+    "drugs": 461.5,
+    "murder": 35.8,
+    "property": 892.7,
+    "robbery_aggravated": 246.8,
+    "sexual_offences": 63.3,
+    "vehicle_theft": 59.6
+   },
+   "ward_no": 117
+  },
+  {
+   "precincts": [
+    {
+     "share": 0.7983,
+     "station": "Mfuleni"
+    },
+    {
+     "share": 0.1997,
+     "station": "Kleinvlei"
+    }
+   ],
+   "rates": {
+    "attempted_murder": 86.8,
+    "burglary_home": 292.0,
+    "carjacking": 93.1,
+    "contact": 2507.0,
+    "drugs": 1065.9,
+    "murder": 147.3,
+    "property": 496.1,
+    "robbery_aggravated": 605.8,
+    "sexual_offences": 122.7,
+    "vehicle_theft": 80.9
+   },
+   "ward_no": 118
+  }
+ ],
+ "schema_version": 1,
+ "sources": {
+  "precincts": {
+   "licence": "Derived table; the SAPS boundaries themselves are not redistributed",
+   "notes": "SAPS station boundaries version 1.4.2, downloaded by hand under SAPS terms and kept out of the repository. share_of_ward = share of the ward's residents (GHSL 2025 grid, scaled to the City's estimate) living in the precinct. precinct_population = the precinct's residents (same grid, inside or outside the metro); precinct_in_grid = share of the precinct's area inside the grid's box (18.2, -34.4, 19.1, -33.4) (below 1, the population is undercounted).",
+   "publisher": "Derived by Cape Town Ward Map from SAPS police station boundaries",
+   "retrieved_at": "2026-11-17",
+   "title": "Police precincts covering each 2026 ward (derived)",
+   "url": "https://www.saps.gov.za/services/boundary.php"
+  },
+  "stats": {
+   "licence": "SAPS copyright (https://www.saps.gov.za/copyright.php); counts reproduced with attribution",
+   "notes": "Station-level rows of the four quarterly workbooks for 2025/26 (2025/2025-2026_-_1st_Quarter_WEB.xlsx, 2025/2025-2026_-_2nd_Quarter_WEB.xlsx, 2025/2025-2026_-_3rd_Quarter_WEB.xlsx, 2025/2025-2026_-_4th_Quarter_WEB.xlsx), summed to financial years (April to March). Reported crimes; SAPS revises figures in later releases.",
+   "publisher": "South African Police Service (SAPS)",
+   "retrieved_at": "2026-11-17",
+   "title": "Crime statistics per police station, financial years to 2025/26",
+   "url": "https://www.saps.gov.za/services/crimestats.php"
+  }
+ },
+ "stations": [
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 52,
+     "2022/23": 52,
+     "2023/24": 57,
+     "2024/25": 55,
+     "2025/26": 75
+    },
+    "burglary_home": {
+     "2021/22": 147,
+     "2022/23": 217,
+     "2023/24": 167,
+     "2024/25": 136,
+     "2025/26": 122
+    },
+    "carjacking": {
+     "2021/22": 22,
+     "2022/23": 39,
+     "2023/24": 54,
+     "2024/25": 35,
+     "2025/26": 32
+    },
+    "contact": {
+     "2021/22": 1165,
+     "2022/23": 1306,
+     "2023/24": 1453,
+     "2024/25": 1442,
+     "2025/26": 1330
+    },
+    "drugs": {
+     "2021/22": 1090,
+     "2022/23": 1141,
+     "2023/24": 924,
+     "2024/25": 976,
+     "2025/26": 1177
+    },
+    "murder": {
+     "2021/22": 19,
+     "2022/23": 32,
+     "2023/24": 36,
+     "2024/25": 48,
+     "2025/26": 39
+    },
+    "property": {
+     "2021/22": 683,
+     "2022/23": 827,
+     "2023/24": 912,
+     "2024/25": 656,
+     "2025/26": 588
+    },
+    "robbery_aggravated": {
+     "2021/22": 269,
+     "2022/23": 350,
+     "2023/24": 434,
+     "2024/25": 405,
+     "2025/26": 329
+    },
+    "sexual_offences": {
+     "2021/22": 60,
+     "2022/23": 65,
+     "2023/24": 50,
+     "2024/25": 61,
+     "2025/26": 51
+    },
+    "vehicle_theft": {
+     "2021/22": 147,
+     "2022/23": 144,
+     "2023/24": 114,
+     "2024/25": 99,
+     "2025/26": 111
+    }
+   },
+   "population": 88600,
+   "station": "Athlone"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 75,
+     "2022/23": 48,
+     "2023/24": 61,
+     "2024/25": 89,
+     "2025/26": 59
+    },
+    "burglary_home": {
+     "2021/22": 246,
+     "2022/23": 257,
+     "2023/24": 229,
+     "2024/25": 250,
+     "2025/26": 206
+    },
+    "carjacking": {
+     "2021/22": 3,
+     "2022/23": 6,
+     "2023/24": 4,
+     "2024/25": 4,
+     "2025/26": 1
+    },
+    "contact": {
+     "2021/22": 1307,
+     "2022/23": 1474,
+     "2023/24": 1680,
+     "2024/25": 1777,
+     "2025/26": 1708
+    },
+    "drugs": {
+     "2021/22": 2156,
+     "2022/23": 2164,
+     "2023/24": 2184,
+     "2024/25": 2276,
+     "2025/26": 2981
+    },
+    "murder": {
+     "2021/22": 64,
+     "2022/23": 44,
+     "2023/24": 42,
+     "2024/25": 68,
+     "2025/26": 38
+    },
+    "property": {
+     "2021/22": 516,
+     "2022/23": 509,
+     "2023/24": 474,
+     "2024/25": 508,
+     "2025/26": 456
+    },
+    "robbery_aggravated": {
+     "2021/22": 120,
+     "2022/23": 107,
+     "2023/24": 154,
+     "2024/25": 171,
+     "2025/26": 127
+    },
+    "sexual_offences": {
+     "2021/22": 93,
+     "2022/23": 115,
+     "2023/24": 101,
+     "2024/25": 103,
+     "2025/26": 100
+    },
+    "vehicle_theft": {
+     "2021/22": 18,
+     "2022/23": 14,
+     "2023/24": 25,
+     "2024/25": 17,
+     "2025/26": 10
+    }
+   },
+   "population": 97200,
+   "station": "Atlantis"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 76,
+     "2022/23": 35,
+     "2023/24": 47,
+     "2024/25": 26,
+     "2025/26": 43
+    },
+    "burglary_home": {
+     "2021/22": 144,
+     "2022/23": 126,
+     "2023/24": 133,
+     "2024/25": 110,
+     "2025/26": 88
+    },
+    "carjacking": {
+     "2021/22": 13,
+     "2022/23": 19,
+     "2023/24": 19,
+     "2024/25": 20,
+     "2025/26": 20
+    },
+    "contact": {
+     "2021/22": 745,
+     "2022/23": 829,
+     "2023/24": 867,
+     "2024/25": 814,
+     "2025/26": 775
+    },
+    "drugs": {
+     "2021/22": 589,
+     "2022/23": 311,
+     "2023/24": 364,
+     "2024/25": 480,
+     "2025/26": 597
+    },
+    "murder": {
+     "2021/22": 47,
+     "2022/23": 39,
+     "2023/24": 39,
+     "2024/25": 18,
+     "2025/26": 30
+    },
+    "property": {
+     "2021/22": 353,
+     "2022/23": 280,
+     "2023/24": 263,
+     "2024/25": 227,
+     "2025/26": 223
+    },
+    "robbery_aggravated": {
+     "2021/22": 134,
+     "2022/23": 187,
+     "2023/24": 179,
+     "2024/25": 191,
+     "2025/26": 144
+    },
+    "sexual_offences": {
+     "2021/22": 42,
+     "2022/23": 52,
+     "2023/24": 41,
+     "2024/25": 42,
+     "2025/26": 44
+    },
+    "vehicle_theft": {
+     "2021/22": 49,
+     "2022/23": 42,
+     "2023/24": 25,
+     "2024/25": 30,
+     "2025/26": 32
+    }
+   },
+   "population": 80500,
+   "station": "Belhar"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 17,
+     "2022/23": 26,
+     "2023/24": 18,
+     "2024/25": 12,
+     "2025/26": 9
+    },
+    "burglary_home": {
+     "2021/22": 487,
+     "2022/23": 448,
+     "2023/24": 460,
+     "2024/25": 348,
+     "2025/26": 322
+    },
+    "carjacking": {
+     "2021/22": 17,
+     "2022/23": 30,
+     "2023/24": 40,
+     "2024/25": 27,
+     "2025/26": 24
+    },
+    "contact": {
+     "2021/22": 929,
+     "2022/23": 1140,
+     "2023/24": 1185,
+     "2024/25": 1119,
+     "2025/26": 991
+    },
+    "drugs": {
+     "2021/22": 771,
+     "2022/23": 703,
+     "2023/24": 710,
+     "2024/25": 924,
+     "2025/26": 1133
+    },
+    "murder": {
+     "2021/22": 18,
+     "2022/23": 9,
+     "2023/24": 8,
+     "2024/25": 16,
+     "2025/26": 11
+    },
+    "property": {
+     "2021/22": 1561,
+     "2022/23": 1645,
+     "2023/24": 1715,
+     "2024/25": 1319,
+     "2025/26": 1243
+    },
+    "robbery_aggravated": {
+     "2021/22": 327,
+     "2022/23": 454,
+     "2023/24": 519,
+     "2024/25": 387,
+     "2025/26": 348
+    },
+    "sexual_offences": {
+     "2021/22": 48,
+     "2022/23": 68,
+     "2023/24": 52,
+     "2024/25": 59,
+     "2025/26": 69
+    },
+    "vehicle_theft": {
+     "2021/22": 142,
+     "2022/23": 164,
+     "2023/24": 176,
+     "2024/25": 141,
+     "2025/26": 112
+    }
+   },
+   "population": 95000,
+   "station": "Bellville"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 15,
+     "2022/23": 14,
+     "2023/24": 10,
+     "2024/25": 34,
+     "2025/26": 19
+    },
+    "burglary_home": {
+     "2021/22": 83,
+     "2022/23": 105,
+     "2023/24": 102,
+     "2024/25": 81,
+     "2025/26": 69
+    },
+    "carjacking": {
+     "2021/22": 7,
+     "2022/23": 11,
+     "2023/24": 6,
+     "2024/25": 3,
+     "2025/26": 4
+    },
+    "contact": {
+     "2021/22": 448,
+     "2022/23": 544,
+     "2023/24": 439,
+     "2024/25": 508,
+     "2025/26": 519
+    },
+    "drugs": {
+     "2021/22": 279,
+     "2022/23": 231,
+     "2023/24": 190,
+     "2024/25": 157,
+     "2025/26": 156
+    },
+    "murder": {
+     "2021/22": 13,
+     "2022/23": 3,
+     "2023/24": 9,
+     "2024/25": 14,
+     "2025/26": 11
+    },
+    "property": {
+     "2021/22": 289,
+     "2022/23": 316,
+     "2023/24": 251,
+     "2024/25": 275,
+     "2025/26": 205
+    },
+    "robbery_aggravated": {
+     "2021/22": 92,
+     "2022/23": 139,
+     "2023/24": 108,
+     "2024/25": 103,
+     "2025/26": 124
+    },
+    "sexual_offences": {
+     "2021/22": 39,
+     "2022/23": 32,
+     "2023/24": 23,
+     "2024/25": 34,
+     "2025/26": 41
+    },
+    "vehicle_theft": {
+     "2021/22": 14,
+     "2022/23": 8,
+     "2023/24": 12,
+     "2024/25": 16,
+     "2025/26": 10
+    }
+   },
+   "population": 41900,
+   "station": "Bellville South"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 71,
+     "2022/23": 74,
+     "2023/24": 119,
+     "2024/25": 115,
+     "2025/26": 166
+    },
+    "burglary_home": {
+     "2021/22": 173,
+     "2022/23": 192,
+     "2023/24": 174,
+     "2024/25": 140,
+     "2025/26": 131
+    },
+    "carjacking": {
+     "2021/22": 23,
+     "2022/23": 28,
+     "2023/24": 29,
+     "2024/25": 30,
+     "2025/26": 29
+    },
+    "contact": {
+     "2021/22": 1470,
+     "2022/23": 1484,
+     "2023/24": 1879,
+     "2024/25": 2273,
+     "2025/26": 2111
+    },
+    "drugs": {
+     "2021/22": 1354,
+     "2022/23": 1394,
+     "2023/24": 1628,
+     "2024/25": 1463,
+     "2025/26": 1901
+    },
+    "murder": {
+     "2021/22": 70,
+     "2022/23": 65,
+     "2023/24": 108,
+     "2024/25": 106,
+     "2025/26": 140
+    },
+    "property": {
+     "2021/22": 771,
+     "2022/23": 757,
+     "2023/24": 602,
+     "2024/25": 389,
+     "2025/26": 522
+    },
+    "robbery_aggravated": {
+     "2021/22": 251,
+     "2022/23": 221,
+     "2023/24": 264,
+     "2024/25": 259,
+     "2025/26": 242
+    },
+    "sexual_offences": {
+     "2021/22": 75,
+     "2022/23": 81,
+     "2023/24": 79,
+     "2024/25": 58,
+     "2025/26": 45
+    },
+    "vehicle_theft": {
+     "2021/22": 53,
+     "2022/23": 30,
+     "2023/24": 35,
+     "2024/25": 20,
+     "2025/26": 31
+    }
+   },
+   "population": 148000,
+   "station": "Bishop Lavis"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 3,
+     "2022/23": 1,
+     "2023/24": 8,
+     "2024/25": 14,
+     "2025/26": 16
+    },
+    "burglary_home": {
+     "2021/22": 129,
+     "2022/23": 115,
+     "2023/24": 145,
+     "2024/25": 92,
+     "2025/26": 87
+    },
+    "carjacking": {
+     "2021/22": 3,
+     "2022/23": 3,
+     "2023/24": 2,
+     "2024/25": 7,
+     "2025/26": 5
+    },
+    "contact": {
+     "2021/22": 190,
+     "2022/23": 262,
+     "2023/24": 270,
+     "2024/25": 251,
+     "2025/26": 255
+    },
+    "drugs": {
+     "2021/22": 112,
+     "2022/23": 68,
+     "2023/24": 43,
+     "2024/25": 61,
+     "2025/26": 97
+    },
+    "murder": {
+     "2021/22": 2,
+     "2022/23": 2,
+     "2023/24": 1,
+     "2024/25": 3,
+     "2025/26": 0
+    },
+    "property": {
+     "2021/22": 263,
+     "2022/23": 247,
+     "2023/24": 280,
+     "2024/25": 190,
+     "2025/26": 216
+    },
+    "robbery_aggravated": {
+     "2021/22": 50,
+     "2022/23": 89,
+     "2023/24": 81,
+     "2024/25": 61,
+     "2025/26": 65
+    },
+    "sexual_offences": {
+     "2021/22": 17,
+     "2022/23": 9,
+     "2023/24": 10,
+     "2024/25": 12,
+     "2025/26": 17
+    },
+    "vehicle_theft": {
+     "2021/22": 26,
+     "2022/23": 29,
+     "2023/24": 25,
+     "2024/25": 20,
+     "2025/26": 28
+    }
+   },
+   "population": 39100,
+   "station": "Bothasig"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 10,
+     "2022/23": 6,
+     "2023/24": 4,
+     "2024/25": 7,
+     "2025/26": 8
+    },
+    "burglary_home": {
+     "2021/22": 232,
+     "2022/23": 234,
+     "2023/24": 157,
+     "2024/25": 157,
+     "2025/26": 162
+    },
+    "carjacking": {
+     "2021/22": 12,
+     "2022/23": 9,
+     "2023/24": 5,
+     "2024/25": 4,
+     "2025/26": 10
+    },
+    "contact": {
+     "2021/22": 398,
+     "2022/23": 371,
+     "2023/24": 352,
+     "2024/25": 350,
+     "2025/26": 306
+    },
+    "drugs": {
+     "2021/22": 61,
+     "2022/23": 75,
+     "2023/24": 40,
+     "2024/25": 39,
+     "2025/26": 71
+    },
+    "murder": {
+     "2021/22": 7,
+     "2022/23": 4,
+     "2023/24": 8,
+     "2024/25": 6,
+     "2025/26": 4
+    },
+    "property": {
+     "2021/22": 646,
+     "2022/23": 705,
+     "2023/24": 604,
+     "2024/25": 553,
+     "2025/26": 545
+    },
+    "robbery_aggravated": {
+     "2021/22": 92,
+     "2022/23": 77,
+     "2023/24": 78,
+     "2024/25": 74,
+     "2025/26": 72
+    },
+    "sexual_offences": {
+     "2021/22": 29,
+     "2022/23": 29,
+     "2023/24": 35,
+     "2024/25": 25,
+     "2025/26": 31
+    },
+    "vehicle_theft": {
+     "2021/22": 77,
+     "2022/23": 125,
+     "2023/24": 88,
+     "2024/25": 97,
+     "2025/26": 60
+    }
+   },
+   "population": 71300,
+   "station": "Brackenfell"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 0,
+     "2022/23": 0,
+     "2023/24": 2,
+     "2024/25": 0,
+     "2025/26": 1
+    },
+    "burglary_home": {
+     "2021/22": 104,
+     "2022/23": 107,
+     "2023/24": 134,
+     "2024/25": 90,
+     "2025/26": 49
+    },
+    "carjacking": {
+     "2021/22": 0,
+     "2022/23": 0,
+     "2023/24": 0,
+     "2024/25": 0,
+     "2025/26": 0
+    },
+    "contact": {
+     "2021/22": 85,
+     "2022/23": 90,
+     "2023/24": 82,
+     "2024/25": 72,
+     "2025/26": 69
+    },
+    "drugs": {
+     "2021/22": 36,
+     "2022/23": 75,
+     "2023/24": 35,
+     "2024/25": 43,
+     "2025/26": 18
+    },
+    "murder": {
+     "2021/22": 0,
+     "2022/23": 1,
+     "2023/24": 0,
+     "2024/25": 0,
+     "2025/26": 1
+    },
+    "property": {
+     "2021/22": 180,
+     "2022/23": 238,
+     "2023/24": 241,
+     "2024/25": 177,
+     "2025/26": 155
+    },
+    "robbery_aggravated": {
+     "2021/22": 22,
+     "2022/23": 20,
+     "2023/24": 29,
+     "2024/25": 16,
+     "2025/26": 11
+    },
+    "sexual_offences": {
+     "2021/22": 8,
+     "2022/23": 6,
+     "2023/24": 11,
+     "2024/25": 7,
+     "2025/26": 10
+    },
+    "vehicle_theft": {
+     "2021/22": 13,
+     "2022/23": 10,
+     "2023/24": 17,
+     "2024/25": 7,
+     "2025/26": 6
+    }
+   },
+   "population": 7900,
+   "station": "Camps Bay"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 8,
+     "2022/23": 8,
+     "2023/24": 11,
+     "2024/25": 8,
+     "2025/26": 18
+    },
+    "burglary_home": {
+     "2021/22": 434,
+     "2022/23": 437,
+     "2023/24": 517,
+     "2024/25": 330,
+     "2025/26": 206
+    },
+    "carjacking": {
+     "2021/22": 9,
+     "2022/23": 13,
+     "2023/24": 14,
+     "2024/25": 23,
+     "2025/26": 16
+    },
+    "contact": {
+     "2021/22": 1794,
+     "2022/23": 2703,
+     "2023/24": 3038,
+     "2024/25": 3102,
+     "2025/26": 2837
+    },
+    "drugs": {
+     "2021/22": 1800,
+     "2022/23": 1403,
+     "2023/24": 2586,
+     "2024/25": 4216,
+     "2025/26": 5840
+    },
+    "murder": {
+     "2021/22": 12,
+     "2022/23": 12,
+     "2023/24": 8,
+     "2024/25": 11,
+     "2025/26": 7
+    },
+    "property": {
+     "2021/22": 2637,
+     "2022/23": 3183,
+     "2023/24": 3723,
+     "2024/25": 3112,
+     "2025/26": 2325
+    },
+    "robbery_aggravated": {
+     "2021/22": 389,
+     "2022/23": 665,
+     "2023/24": 765,
+     "2024/25": 733,
+     "2025/26": 516
+    },
+    "sexual_offences": {
+     "2021/22": 71,
+     "2022/23": 104,
+     "2023/24": 78,
+     "2024/25": 86,
+     "2025/26": 107
+    },
+    "vehicle_theft": {
+     "2021/22": 130,
+     "2022/23": 168,
+     "2023/24": 213,
+     "2024/25": 168,
+     "2025/26": 155
+    }
+   },
+   "population": 50100,
+   "station": "Cape Town Central"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 1,
+     "2022/23": 2,
+     "2023/24": 6,
+     "2024/25": 2,
+     "2025/26": 4
+    },
+    "burglary_home": {
+     "2021/22": 281,
+     "2022/23": 284,
+     "2023/24": 344,
+     "2024/25": 153,
+     "2025/26": 107
+    },
+    "carjacking": {
+     "2021/22": 8,
+     "2022/23": 8,
+     "2023/24": 10,
+     "2024/25": 2,
+     "2025/26": 9
+    },
+    "contact": {
+     "2021/22": 304,
+     "2022/23": 402,
+     "2023/24": 426,
+     "2024/25": 354,
+     "2025/26": 298
+    },
+    "drugs": {
+     "2021/22": 126,
+     "2022/23": 154,
+     "2023/24": 161,
+     "2024/25": 240,
+     "2025/26": 197
+    },
+    "murder": {
+     "2021/22": 2,
+     "2022/23": 1,
+     "2023/24": 1,
+     "2024/25": 4,
+     "2025/26": 0
+    },
+    "property": {
+     "2021/22": 1046,
+     "2022/23": 1034,
+     "2023/24": 1042,
+     "2024/25": 671,
+     "2025/26": 574
+    },
+    "robbery_aggravated": {
+     "2021/22": 139,
+     "2022/23": 140,
+     "2023/24": 154,
+     "2024/25": 106,
+     "2025/26": 85
+    },
+    "sexual_offences": {
+     "2021/22": 13,
+     "2022/23": 17,
+     "2023/24": 16,
+     "2024/25": 15,
+     "2025/26": 16
+    },
+    "vehicle_theft": {
+     "2021/22": 95,
+     "2022/23": 125,
+     "2023/24": 105,
+     "2024/25": 61,
+     "2025/26": 79
+    }
+   },
+   "population": 44100,
+   "station": "Claremont"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 171,
+     "2022/23": 163,
+     "2023/24": 179,
+     "2024/25": 180,
+     "2025/26": 137
+    },
+    "burglary_home": {
+     "2021/22": 576,
+     "2022/23": 635,
+     "2023/24": 584,
+     "2024/25": 516,
+     "2025/26": 510
+    },
+    "carjacking": {
+     "2021/22": 152,
+     "2022/23": 161,
+     "2023/24": 203,
+     "2024/25": 268,
+     "2025/26": 243
+    },
+    "contact": {
+     "2021/22": 3460,
+     "2022/23": 3305,
+     "2023/24": 3758,
+     "2024/25": 3770,
+     "2025/26": 3723
+    },
+    "drugs": {
+     "2021/22": 2385,
+     "2022/23": 2550,
+     "2023/24": 2935,
+     "2024/25": 3669,
+     "2025/26": 3929
+    },
+    "murder": {
+     "2021/22": 267,
+     "2022/23": 277,
+     "2023/24": 274,
+     "2024/25": 267,
+     "2025/26": 239
+    },
+    "property": {
+     "2021/22": 899,
+     "2022/23": 953,
+     "2023/24": 883,
+     "2024/25": 826,
+     "2025/26": 857
+    },
+    "robbery_aggravated": {
+     "2021/22": 721,
+     "2022/23": 745,
+     "2023/24": 967,
+     "2024/25": 1004,
+     "2025/26": 953
+    },
+    "sexual_offences": {
+     "2021/22": 358,
+     "2022/23": 293,
+     "2023/24": 255,
+     "2024/25": 254,
+     "2025/26": 298
+    },
+    "vehicle_theft": {
+     "2021/22": 97,
+     "2022/23": 116,
+     "2023/24": 119,
+     "2024/25": 90,
+     "2025/26": 132
+    }
+   },
+   "population": 219900,
+   "station": "Delft"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 6,
+     "2022/23": 2,
+     "2023/24": 1,
+     "2024/25": 4,
+     "2025/26": 2
+    },
+    "burglary_home": {
+     "2021/22": 157,
+     "2022/23": 202,
+     "2023/24": 248,
+     "2024/25": 206,
+     "2025/26": 111
+    },
+    "carjacking": {
+     "2021/22": 6,
+     "2022/23": 10,
+     "2023/24": 9,
+     "2024/25": 9,
+     "2025/26": 6
+    },
+    "contact": {
+     "2021/22": 310,
+     "2022/23": 350,
+     "2023/24": 348,
+     "2024/25": 357,
+     "2025/26": 269
+    },
+    "drugs": {
+     "2021/22": 48,
+     "2022/23": 54,
+     "2023/24": 66,
+     "2024/25": 80,
+     "2025/26": 117
+    },
+    "murder": {
+     "2021/22": 5,
+     "2022/23": 1,
+     "2023/24": 2,
+     "2024/25": 1,
+     "2025/26": 3
+    },
+    "property": {
+     "2021/22": 508,
+     "2022/23": 667,
+     "2023/24": 685,
+     "2024/25": 592,
+     "2025/26": 393
+    },
+    "robbery_aggravated": {
+     "2021/22": 91,
+     "2022/23": 137,
+     "2023/24": 93,
+     "2024/25": 119,
+     "2025/26": 88
+    },
+    "sexual_offences": {
+     "2021/22": 20,
+     "2022/23": 14,
+     "2023/24": 18,
+     "2024/25": 9,
+     "2025/26": 10
+    },
+    "vehicle_theft": {
+     "2021/22": 55,
+     "2022/23": 56,
+     "2023/24": 57,
+     "2024/25": 50,
+     "2025/26": 25
+    }
+   },
+   "population": 55200,
+   "station": "Dieprivier"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 9,
+     "2022/23": 23,
+     "2023/24": 22,
+     "2024/25": 25,
+     "2025/26": 37
+    },
+    "burglary_home": {
+     "2021/22": 427,
+     "2022/23": 466,
+     "2023/24": 489,
+     "2024/25": 341,
+     "2025/26": 276
+    },
+    "carjacking": {
+     "2021/22": 8,
+     "2022/23": 9,
+     "2023/24": 4,
+     "2024/25": 16,
+     "2025/26": 8
+    },
+    "contact": {
+     "2021/22": 642,
+     "2022/23": 714,
+     "2023/24": 788,
+     "2024/25": 675,
+     "2025/26": 639
+    },
+    "drugs": {
+     "2021/22": 816,
+     "2022/23": 761,
+     "2023/24": 579,
+     "2024/25": 747,
+     "2025/26": 913
+    },
+    "murder": {
+     "2021/22": 24,
+     "2022/23": 20,
+     "2023/24": 25,
+     "2024/25": 23,
+     "2025/26": 26
+    },
+    "property": {
+     "2021/22": 915,
+     "2022/23": 1145,
+     "2023/24": 1218,
+     "2024/25": 1022,
+     "2025/26": 821
+    },
+    "robbery_aggravated": {
+     "2021/22": 175,
+     "2022/23": 150,
+     "2023/24": 221,
+     "2024/25": 201,
+     "2025/26": 144
+    },
+    "sexual_offences": {
+     "2021/22": 52,
+     "2022/23": 45,
+     "2023/24": 43,
+     "2024/25": 42,
+     "2025/26": 41
+    },
+    "vehicle_theft": {
+     "2021/22": 56,
+     "2022/23": 94,
+     "2023/24": 88,
+     "2024/25": 82,
+     "2025/26": 58
+    }
+   },
+   "population": 102000,
+   "station": "Durbanville"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 95,
+     "2022/23": 81,
+     "2023/24": 80,
+     "2024/25": 121,
+     "2025/26": 116
+    },
+    "burglary_home": {
+     "2021/22": 143,
+     "2022/23": 188,
+     "2023/24": 188,
+     "2024/25": 97,
+     "2025/26": 104
+    },
+    "carjacking": {
+     "2021/22": 17,
+     "2022/23": 14,
+     "2023/24": 26,
+     "2024/25": 26,
+     "2025/26": 21
+    },
+    "contact": {
+     "2021/22": 1313,
+     "2022/23": 1578,
+     "2023/24": 1741,
+     "2024/25": 1678,
+     "2025/26": 1815
+    },
+    "drugs": {
+     "2021/22": 525,
+     "2022/23": 599,
+     "2023/24": 708,
+     "2024/25": 778,
+     "2025/26": 1137
+    },
+    "murder": {
+     "2021/22": 57,
+     "2022/23": 37,
+     "2023/24": 48,
+     "2024/25": 92,
+     "2025/26": 74
+    },
+    "property": {
+     "2021/22": 583,
+     "2022/23": 624,
+     "2023/24": 683,
+     "2024/25": 405,
+     "2025/26": 365
+    },
+    "robbery_aggravated": {
+     "2021/22": 191,
+     "2022/23": 222,
+     "2023/24": 264,
+     "2024/25": 260,
+     "2025/26": 240
+    },
+    "sexual_offences": {
+     "2021/22": 73,
+     "2022/23": 71,
+     "2023/24": 76,
+     "2024/25": 36,
+     "2025/26": 33
+    },
+    "vehicle_theft": {
+     "2021/22": 41,
+     "2022/23": 49,
+     "2023/24": 67,
+     "2024/25": 52,
+     "2025/26": 54
+    }
+   },
+   "population": 100800,
+   "station": "Elsies River"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 2,
+     "2022/23": 0,
+     "2023/24": 0,
+     "2024/25": 2,
+     "2025/26": 0
+    },
+    "burglary_home": {
+     "2021/22": 147,
+     "2022/23": 172,
+     "2023/24": 190,
+     "2024/25": 165,
+     "2025/26": 113
+    },
+    "carjacking": {
+     "2021/22": 1,
+     "2022/23": 1,
+     "2023/24": 0,
+     "2024/25": 1,
+     "2025/26": 0
+    },
+    "contact": {
+     "2021/22": 167,
+     "2022/23": 184,
+     "2023/24": 153,
+     "2024/25": 143,
+     "2025/26": 163
+    },
+    "drugs": {
+     "2021/22": 48,
+     "2022/23": 83,
+     "2023/24": 65,
+     "2024/25": 77,
+     "2025/26": 69
+    },
+    "murder": {
+     "2021/22": 0,
+     "2022/23": 2,
+     "2023/24": 1,
+     "2024/25": 1,
+     "2025/26": 1
+    },
+    "property": {
+     "2021/22": 311,
+     "2022/23": 379,
+     "2023/24": 422,
+     "2024/25": 407,
+     "2025/26": 259
+    },
+    "robbery_aggravated": {
+     "2021/22": 42,
+     "2022/23": 42,
+     "2023/24": 45,
+     "2024/25": 31,
+     "2025/26": 26
+    },
+    "sexual_offences": {
+     "2021/22": 15,
+     "2022/23": 13,
+     "2023/24": 6,
+     "2024/25": 12,
+     "2025/26": 15
+    },
+    "vehicle_theft": {
+     "2021/22": 28,
+     "2022/23": 37,
+     "2023/24": 71,
+     "2024/25": 78,
+     "2025/26": 37
+    }
+   },
+   "population": 28400,
+   "station": "Fish Hoek"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 10,
+     "2022/23": 9,
+     "2023/24": 16,
+     "2024/25": 10,
+     "2025/26": 19
+    },
+    "burglary_home": {
+     "2021/22": 235,
+     "2022/23": 273,
+     "2023/24": 186,
+     "2024/25": 177,
+     "2025/26": 123
+    },
+    "carjacking": {
+     "2021/22": 10,
+     "2022/23": 21,
+     "2023/24": 30,
+     "2024/25": 22,
+     "2025/26": 19
+    },
+    "contact": {
+     "2021/22": 735,
+     "2022/23": 821,
+     "2023/24": 1029,
+     "2024/25": 889,
+     "2025/26": 798
+    },
+    "drugs": {
+     "2021/22": 305,
+     "2022/23": 407,
+     "2023/24": 274,
+     "2024/25": 380,
+     "2025/26": 514
+    },
+    "murder": {
+     "2021/22": 5,
+     "2022/23": 7,
+     "2023/24": 7,
+     "2024/25": 7,
+     "2025/26": 14
+    },
+    "property": {
+     "2021/22": 722,
+     "2022/23": 811,
+     "2023/24": 893,
+     "2024/25": 789,
+     "2025/26": 684
+    },
+    "robbery_aggravated": {
+     "2021/22": 212,
+     "2022/23": 214,
+     "2023/24": 285,
+     "2024/25": 238,
+     "2025/26": 221
+    },
+    "sexual_offences": {
+     "2021/22": 42,
+     "2022/23": 44,
+     "2023/24": 43,
+     "2024/25": 32,
+     "2025/26": 30
+    },
+    "vehicle_theft": {
+     "2021/22": 96,
+     "2022/23": 120,
+     "2023/24": 157,
+     "2024/25": 114,
+     "2025/26": 103
+    }
+   },
+   "population": 62500,
+   "station": "Goodwood"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 1,
+     "2022/23": 2,
+     "2023/24": 0,
+     "2024/25": 1,
+     "2025/26": 0
+    },
+    "burglary_home": {
+     "2021/22": 158,
+     "2022/23": 105,
+     "2023/24": 169,
+     "2024/25": 162,
+     "2025/26": 90
+    },
+    "carjacking": {
+     "2021/22": 0,
+     "2022/23": 2,
+     "2023/24": 1,
+     "2024/25": 2,
+     "2025/26": 0
+    },
+    "contact": {
+     "2021/22": 206,
+     "2022/23": 251,
+     "2023/24": 221,
+     "2024/25": 189,
+     "2025/26": 204
+    },
+    "drugs": {
+     "2021/22": 44,
+     "2022/23": 114,
+     "2023/24": 111,
+     "2024/25": 113,
+     "2025/26": 144
+    },
+    "murder": {
+     "2021/22": 1,
+     "2022/23": 0,
+     "2023/24": 1,
+     "2024/25": 1,
+     "2025/26": 3
+    },
+    "property": {
+     "2021/22": 360,
+     "2022/23": 257,
+     "2023/24": 343,
+     "2024/25": 302,
+     "2025/26": 230
+    },
+    "robbery_aggravated": {
+     "2021/22": 45,
+     "2022/23": 47,
+     "2023/24": 52,
+     "2024/25": 43,
+     "2025/26": 28
+    },
+    "sexual_offences": {
+     "2021/22": 15,
+     "2022/23": 19,
+     "2023/24": 17,
+     "2024/25": 10,
+     "2025/26": 21
+    },
+    "vehicle_theft": {
+     "2021/22": 24,
+     "2022/23": 24,
+     "2023/24": 39,
+     "2024/25": 27,
+     "2025/26": 22
+    }
+   },
+   "population": 24400,
+   "station": "Gordons Bay"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 64,
+     "2022/23": 50,
+     "2023/24": 74,
+     "2024/25": 101,
+     "2025/26": 62
+    },
+    "burglary_home": {
+     "2021/22": 343,
+     "2022/23": 369,
+     "2023/24": 371,
+     "2024/25": 337,
+     "2025/26": 218
+    },
+    "carjacking": {
+     "2021/22": 33,
+     "2022/23": 18,
+     "2023/24": 31,
+     "2024/25": 57,
+     "2025/26": 38
+    },
+    "contact": {
+     "2021/22": 1313,
+     "2022/23": 1247,
+     "2023/24": 1417,
+     "2024/25": 1422,
+     "2025/26": 1311
+    },
+    "drugs": {
+     "2021/22": 1034,
+     "2022/23": 1170,
+     "2023/24": 1408,
+     "2024/25": 1644,
+     "2025/26": 2222
+    },
+    "murder": {
+     "2021/22": 53,
+     "2022/23": 38,
+     "2023/24": 51,
+     "2024/25": 55,
+     "2025/26": 58
+    },
+    "property": {
+     "2021/22": 852,
+     "2022/23": 831,
+     "2023/24": 842,
+     "2024/25": 717,
+     "2025/26": 550
+    },
+    "robbery_aggravated": {
+     "2021/22": 252,
+     "2022/23": 220,
+     "2023/24": 275,
+     "2024/25": 339,
+     "2025/26": 301
+    },
+    "sexual_offences": {
+     "2021/22": 76,
+     "2022/23": 89,
+     "2023/24": 82,
+     "2024/25": 55,
+     "2025/26": 76
+    },
+    "vehicle_theft": {
+     "2021/22": 98,
+     "2022/23": 106,
+     "2023/24": 91,
+     "2024/25": 80,
+     "2025/26": 63
+    }
+   },
+   "population": 127400,
+   "station": "Grassy Park"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 85,
+     "2022/23": 76,
+     "2023/24": 124,
+     "2024/25": 92,
+     "2025/26": 99
+    },
+    "burglary_home": {
+     "2021/22": 210,
+     "2022/23": 189,
+     "2023/24": 170,
+     "2024/25": 183,
+     "2025/26": 190
+    },
+    "carjacking": {
+     "2021/22": 141,
+     "2022/23": 155,
+     "2023/24": 124,
+     "2024/25": 148,
+     "2025/26": 119
+    },
+    "contact": {
+     "2021/22": 2155,
+     "2022/23": 2161,
+     "2023/24": 2252,
+     "2024/25": 2273,
+     "2025/26": 2040
+    },
+    "drugs": {
+     "2021/22": 971,
+     "2022/23": 844,
+     "2023/24": 968,
+     "2024/25": 1651,
+     "2025/26": 1802
+    },
+    "murder": {
+     "2021/22": 164,
+     "2022/23": 164,
+     "2023/24": 256,
+     "2024/25": 199,
+     "2025/26": 213
+    },
+    "property": {
+     "2021/22": 397,
+     "2022/23": 368,
+     "2023/24": 339,
+     "2024/25": 366,
+     "2025/26": 306
+    },
+    "robbery_aggravated": {
+     "2021/22": 515,
+     "2022/23": 597,
+     "2023/24": 600,
+     "2024/25": 655,
+     "2025/26": 489
+    },
+    "sexual_offences": {
+     "2021/22": 209,
+     "2022/23": 193,
+     "2023/24": 158,
+     "2024/25": 167,
+     "2025/26": 185
+    },
+    "vehicle_theft": {
+     "2021/22": 36,
+     "2022/23": 42,
+     "2023/24": 38,
+     "2024/25": 36,
+     "2025/26": 32
+    }
+   },
+   "population": 179100,
+   "station": "Gugulethu"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 93,
+     "2022/23": 83,
+     "2023/24": 102,
+     "2024/25": 71,
+     "2025/26": 45
+    },
+    "burglary_home": {
+     "2021/22": 319,
+     "2022/23": 403,
+     "2023/24": 334,
+     "2024/25": 191,
+     "2025/26": 214
+    },
+    "carjacking": {
+     "2021/22": 361,
+     "2022/23": 355,
+     "2023/24": 386,
+     "2024/25": 223,
+     "2025/26": 173
+    },
+    "contact": {
+     "2021/22": 2997,
+     "2022/23": 3241,
+     "2023/24": 3497,
+     "2024/25": 2325,
+     "2025/26": 2090
+    },
+    "drugs": {
+     "2021/22": 620,
+     "2022/23": 757,
+     "2023/24": 1036,
+     "2024/25": 669,
+     "2025/26": 881
+    },
+    "murder": {
+     "2021/22": 219,
+     "2022/23": 202,
+     "2023/24": 227,
+     "2024/25": 189,
+     "2025/26": 180
+    },
+    "property": {
+     "2021/22": 597,
+     "2022/23": 658,
+     "2023/24": 638,
+     "2024/25": 317,
+     "2025/26": 322
+    },
+    "robbery_aggravated": {
+     "2021/22": 878,
+     "2022/23": 960,
+     "2023/24": 1303,
+     "2024/25": 806,
+     "2025/26": 616
+    },
+    "sexual_offences": {
+     "2021/22": 261,
+     "2022/23": 279,
+     "2023/24": 274,
+     "2024/25": 198,
+     "2025/26": 206
+    },
+    "vehicle_theft": {
+     "2021/22": 152,
+     "2022/23": 132,
+     "2023/24": 133,
+     "2024/25": 71,
+     "2025/26": 73
+    }
+   },
+   "population": 148600,
+   "station": "Harare"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 4,
+     "2022/23": 13,
+     "2023/24": 23,
+     "2024/25": 22,
+     "2025/26": 20
+    },
+    "burglary_home": {
+     "2021/22": 137,
+     "2022/23": 141,
+     "2023/24": 171,
+     "2024/25": 150,
+     "2025/26": 130
+    },
+    "carjacking": {
+     "2021/22": 2,
+     "2022/23": 2,
+     "2023/24": 5,
+     "2024/25": 6,
+     "2025/26": 0
+    },
+    "contact": {
+     "2021/22": 703,
+     "2022/23": 618,
+     "2023/24": 766,
+     "2024/25": 742,
+     "2025/26": 679
+    },
+    "drugs": {
+     "2021/22": 27,
+     "2022/23": 26,
+     "2023/24": 31,
+     "2024/25": 46,
+     "2025/26": 68
+    },
+    "murder": {
+     "2021/22": 16,
+     "2022/23": 31,
+     "2023/24": 40,
+     "2024/25": 34,
+     "2025/26": 36
+    },
+    "property": {
+     "2021/22": 289,
+     "2022/23": 272,
+     "2023/24": 335,
+     "2024/25": 324,
+     "2025/26": 231
+    },
+    "robbery_aggravated": {
+     "2021/22": 89,
+     "2022/23": 87,
+     "2023/24": 138,
+     "2024/25": 134,
+     "2025/26": 64
+    },
+    "sexual_offences": {
+     "2021/22": 49,
+     "2022/23": 43,
+     "2023/24": 36,
+     "2024/25": 37,
+     "2025/26": 33
+    },
+    "vehicle_theft": {
+     "2021/22": 32,
+     "2022/23": 19,
+     "2023/24": 19,
+     "2024/25": 22,
+     "2025/26": 6
+    }
+   },
+   "population": 47700,
+   "station": "Hout Bay"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 10,
+     "2022/23": 17,
+     "2023/24": 4,
+     "2024/25": 21,
+     "2025/26": 34
+    },
+    "burglary_home": {
+     "2021/22": 46,
+     "2022/23": 58,
+     "2023/24": 73,
+     "2024/25": 57,
+     "2025/26": 34
+    },
+    "carjacking": {
+     "2021/22": 6,
+     "2022/23": 4,
+     "2023/24": 8,
+     "2024/25": 2,
+     "2025/26": 3
+    },
+    "contact": {
+     "2021/22": 321,
+     "2022/23": 348,
+     "2023/24": 419,
+     "2024/25": 382,
+     "2025/26": 321
+    },
+    "drugs": {
+     "2021/22": 126,
+     "2022/23": 205,
+     "2023/24": 265,
+     "2024/25": 374,
+     "2025/26": 604
+    },
+    "murder": {
+     "2021/22": 10,
+     "2022/23": 5,
+     "2023/24": 2,
+     "2024/25": 6,
+     "2025/26": 15
+    },
+    "property": {
+     "2021/22": 165,
+     "2022/23": 273,
+     "2023/24": 251,
+     "2024/25": 213,
+     "2025/26": 140
+    },
+    "robbery_aggravated": {
+     "2021/22": 61,
+     "2022/23": 81,
+     "2023/24": 92,
+     "2024/25": 73,
+     "2025/26": 60
+    },
+    "sexual_offences": {
+     "2021/22": 18,
+     "2022/23": 28,
+     "2023/24": 34,
+     "2024/25": 21,
+     "2025/26": 21
+    },
+    "vehicle_theft": {
+     "2021/22": 21,
+     "2022/23": 18,
+     "2023/24": 21,
+     "2024/25": 14,
+     "2025/26": 27
+    }
+   },
+   "population": 36300,
+   "station": "Kensington"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 119,
+     "2022/23": 103,
+     "2023/24": 141,
+     "2024/25": 183,
+     "2025/26": 121
+    },
+    "burglary_home": {
+     "2021/22": 221,
+     "2022/23": 239,
+     "2023/24": 241,
+     "2024/25": 253,
+     "2025/26": 194
+    },
+    "carjacking": {
+     "2021/22": 115,
+     "2022/23": 149,
+     "2023/24": 173,
+     "2024/25": 164,
+     "2025/26": 123
+    },
+    "contact": {
+     "2021/22": 2931,
+     "2022/23": 2909,
+     "2023/24": 3030,
+     "2024/25": 3384,
+     "2025/26": 2773
+    },
+    "drugs": {
+     "2021/22": 496,
+     "2022/23": 948,
+     "2023/24": 1226,
+     "2024/25": 1815,
+     "2025/26": 1832
+    },
+    "murder": {
+     "2021/22": 196,
+     "2022/23": 166,
+     "2023/24": 208,
+     "2024/25": 201,
+     "2025/26": 187
+    },
+    "property": {
+     "2021/22": 399,
+     "2022/23": 376,
+     "2023/24": 377,
+     "2024/25": 392,
+     "2025/26": 306
+    },
+    "robbery_aggravated": {
+     "2021/22": 1037,
+     "2022/23": 1122,
+     "2023/24": 1110,
+     "2024/25": 1158,
+     "2025/26": 764
+    },
+    "sexual_offences": {
+     "2021/22": 146,
+     "2022/23": 178,
+     "2023/24": 169,
+     "2024/25": 165,
+     "2025/26": 162
+    },
+    "vehicle_theft": {
+     "2021/22": 46,
+     "2022/23": 35,
+     "2023/24": 36,
+     "2024/25": 46,
+     "2025/26": 56
+    }
+   },
+   "population": 220600,
+   "station": "Khayelitsha"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 2,
+     "2022/23": 4,
+     "2023/24": 1,
+     "2024/25": 4,
+     "2025/26": 11
+    },
+    "burglary_home": {
+     "2021/22": 130,
+     "2022/23": 104,
+     "2023/24": 113,
+     "2024/25": 103,
+     "2025/26": 72
+    },
+    "carjacking": {
+     "2021/22": 6,
+     "2022/23": 4,
+     "2023/24": 2,
+     "2024/25": 4,
+     "2025/26": 7
+    },
+    "contact": {
+     "2021/22": 275,
+     "2022/23": 240,
+     "2023/24": 205,
+     "2024/25": 225,
+     "2025/26": 212
+    },
+    "drugs": {
+     "2021/22": 108,
+     "2022/23": 66,
+     "2023/24": 63,
+     "2024/25": 76,
+     "2025/26": 93
+    },
+    "murder": {
+     "2021/22": 2,
+     "2022/23": 4,
+     "2023/24": 8,
+     "2024/25": 3,
+     "2025/26": 2
+    },
+    "property": {
+     "2021/22": 342,
+     "2022/23": 339,
+     "2023/24": 362,
+     "2024/25": 312,
+     "2025/26": 268
+    },
+    "robbery_aggravated": {
+     "2021/22": 66,
+     "2022/23": 61,
+     "2023/24": 51,
+     "2024/25": 60,
+     "2025/26": 41
+    },
+    "sexual_offences": {
+     "2021/22": 26,
+     "2022/23": 26,
+     "2023/24": 22,
+     "2024/25": 23,
+     "2025/26": 26
+    },
+    "vehicle_theft": {
+     "2021/22": 23,
+     "2022/23": 37,
+     "2023/24": 39,
+     "2024/25": 24,
+     "2025/26": 26
+    }
+   },
+   "population": 43600,
+   "station": "Kirstenhof"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 11,
+     "2022/23": 13,
+     "2023/24": 27,
+     "2024/25": 11,
+     "2025/26": 9
+    },
+    "burglary_home": {
+     "2021/22": 74,
+     "2022/23": 91,
+     "2023/24": 109,
+     "2024/25": 64,
+     "2025/26": 96
+    },
+    "carjacking": {
+     "2021/22": 3,
+     "2022/23": 5,
+     "2023/24": 2,
+     "2024/25": 4,
+     "2025/26": 3
+    },
+    "contact": {
+     "2021/22": 393,
+     "2022/23": 490,
+     "2023/24": 447,
+     "2024/25": 466,
+     "2025/26": 392
+    },
+    "drugs": {
+     "2021/22": 101,
+     "2022/23": 129,
+     "2023/24": 82,
+     "2024/25": 109,
+     "2025/26": 167
+    },
+    "murder": {
+     "2021/22": 11,
+     "2022/23": 15,
+     "2023/24": 10,
+     "2024/25": 8,
+     "2025/26": 5
+    },
+    "property": {
+     "2021/22": 188,
+     "2022/23": 191,
+     "2023/24": 225,
+     "2024/25": 160,
+     "2025/26": 181
+    },
+    "robbery_aggravated": {
+     "2021/22": 42,
+     "2022/23": 62,
+     "2023/24": 60,
+     "2024/25": 63,
+     "2025/26": 39
+    },
+    "sexual_offences": {
+     "2021/22": 33,
+     "2022/23": 31,
+     "2023/24": 29,
+     "2024/25": 33,
+     "2025/26": 32
+    },
+    "vehicle_theft": {
+     "2021/22": 3,
+     "2022/23": 1,
+     "2023/24": 8,
+     "2024/25": 4,
+     "2025/26": 5
+    }
+   },
+   "population": 19400,
+   "station": "Klapmuts"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 87,
+     "2022/23": 84,
+     "2023/24": 114,
+     "2024/25": 126,
+     "2025/26": 111
+    },
+    "burglary_home": {
+     "2021/22": 351,
+     "2022/23": 372,
+     "2023/24": 397,
+     "2024/25": 324,
+     "2025/26": 319
+    },
+    "carjacking": {
+     "2021/22": 43,
+     "2022/23": 73,
+     "2023/24": 94,
+     "2024/25": 93,
+     "2025/26": 88
+    },
+    "contact": {
+     "2021/22": 1885,
+     "2022/23": 2155,
+     "2023/24": 2385,
+     "2024/25": 2387,
+     "2025/26": 2345
+    },
+    "drugs": {
+     "2021/22": 1690,
+     "2022/23": 1864,
+     "2023/24": 1673,
+     "2024/25": 1927,
+     "2025/26": 2325
+    },
+    "murder": {
+     "2021/22": 68,
+     "2022/23": 62,
+     "2023/24": 98,
+     "2024/25": 103,
+     "2025/26": 74
+    },
+    "property": {
+     "2021/22": 697,
+     "2022/23": 677,
+     "2023/24": 706,
+     "2024/25": 590,
+     "2025/26": 586
+    },
+    "robbery_aggravated": {
+     "2021/22": 349,
+     "2022/23": 459,
+     "2023/24": 526,
+     "2024/25": 515,
+     "2025/26": 451
+    },
+    "sexual_offences": {
+     "2021/22": 95,
+     "2022/23": 82,
+     "2023/24": 129,
+     "2024/25": 108,
+     "2025/26": 107
+    },
+    "vehicle_theft": {
+     "2021/22": 76,
+     "2022/23": 61,
+     "2023/24": 78,
+     "2024/25": 98,
+     "2025/26": 94
+    }
+   },
+   "population": 137800,
+   "station": "Kleinvlei"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 142,
+     "2022/23": 117,
+     "2023/24": 128,
+     "2024/25": 129,
+     "2025/26": 110
+    },
+    "burglary_home": {
+     "2021/22": 649,
+     "2022/23": 623,
+     "2023/24": 681,
+     "2024/25": 498,
+     "2025/26": 425
+    },
+    "carjacking": {
+     "2021/22": 75,
+     "2022/23": 46,
+     "2023/24": 59,
+     "2024/25": 52,
+     "2025/26": 33
+    },
+    "contact": {
+     "2021/22": 2654,
+     "2022/23": 2851,
+     "2023/24": 3226,
+     "2024/25": 3259,
+     "2025/26": 3301
+    },
+    "drugs": {
+     "2021/22": 2630,
+     "2022/23": 3201,
+     "2023/24": 3182,
+     "2024/25": 2351,
+     "2025/26": 2217
+    },
+    "murder": {
+     "2021/22": 235,
+     "2022/23": 210,
+     "2023/24": 165,
+     "2024/25": 216,
+     "2025/26": 185
+    },
+    "property": {
+     "2021/22": 1222,
+     "2022/23": 1267,
+     "2023/24": 1296,
+     "2024/25": 1029,
+     "2025/26": 796
+    },
+    "robbery_aggravated": {
+     "2021/22": 645,
+     "2022/23": 600,
+     "2023/24": 780,
+     "2024/25": 900,
+     "2025/26": 918
+    },
+    "sexual_offences": {
+     "2021/22": 189,
+     "2022/23": 223,
+     "2023/24": 227,
+     "2024/25": 224,
+     "2025/26": 217
+    },
+    "vehicle_theft": {
+     "2021/22": 128,
+     "2022/23": 137,
+     "2023/24": 158,
+     "2024/25": 134,
+     "2025/26": 88
+    }
+   },
+   "population": 237600,
+   "station": "Kraaifontein"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 47,
+     "2022/23": 58,
+     "2023/24": 82,
+     "2024/25": 86,
+     "2025/26": 113
+    },
+    "burglary_home": {
+     "2021/22": 382,
+     "2022/23": 377,
+     "2023/24": 411,
+     "2024/25": 386,
+     "2025/26": 348
+    },
+    "carjacking": {
+     "2021/22": 22,
+     "2022/23": 19,
+     "2023/24": 23,
+     "2024/25": 33,
+     "2025/26": 14
+    },
+    "contact": {
+     "2021/22": 1119,
+     "2022/23": 1188,
+     "2023/24": 1327,
+     "2024/25": 1291,
+     "2025/26": 1221
+    },
+    "drugs": {
+     "2021/22": 595,
+     "2022/23": 567,
+     "2023/24": 789,
+     "2024/25": 811,
+     "2025/26": 820
+    },
+    "murder": {
+     "2021/22": 34,
+     "2022/23": 28,
+     "2023/24": 26,
+     "2024/25": 20,
+     "2025/26": 30
+    },
+    "property": {
+     "2021/22": 854,
+     "2022/23": 824,
+     "2023/24": 880,
+     "2024/25": 882,
+     "2025/26": 834
+    },
+    "robbery_aggravated": {
+     "2021/22": 238,
+     "2022/23": 313,
+     "2023/24": 329,
+     "2024/25": 307,
+     "2025/26": 256
+    },
+    "sexual_offences": {
+     "2021/22": 60,
+     "2022/23": 53,
+     "2023/24": 80,
+     "2024/25": 75,
+     "2025/26": 70
+    },
+    "vehicle_theft": {
+     "2021/22": 68,
+     "2022/23": 86,
+     "2023/24": 80,
+     "2024/25": 69,
+     "2025/26": 60
+    }
+   },
+   "population": 102900,
+   "station": "Kuilsrivier"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 43,
+     "2022/23": 19,
+     "2023/24": 30,
+     "2024/25": 42,
+     "2025/26": 30
+    },
+    "burglary_home": {
+     "2021/22": 153,
+     "2022/23": 202,
+     "2023/24": 271,
+     "2024/25": 259,
+     "2025/26": 185
+    },
+    "carjacking": {
+     "2021/22": 37,
+     "2022/23": 54,
+     "2023/24": 49,
+     "2024/25": 46,
+     "2025/26": 65
+    },
+    "contact": {
+     "2021/22": 1036,
+     "2022/23": 1021,
+     "2023/24": 1442,
+     "2024/25": 1246,
+     "2025/26": 1321
+    },
+    "drugs": {
+     "2021/22": 218,
+     "2022/23": 191,
+     "2023/24": 241,
+     "2024/25": 391,
+     "2025/26": 475
+    },
+    "murder": {
+     "2021/22": 80,
+     "2022/23": 64,
+     "2023/24": 72,
+     "2024/25": 71,
+     "2025/26": 68
+    },
+    "property": {
+     "2021/22": 258,
+     "2022/23": 293,
+     "2023/24": 372,
+     "2024/25": 364,
+     "2025/26": 281
+    },
+    "robbery_aggravated": {
+     "2021/22": 217,
+     "2022/23": 286,
+     "2023/24": 464,
+     "2024/25": 318,
+     "2025/26": 315
+    },
+    "sexual_offences": {
+     "2021/22": 67,
+     "2022/23": 70,
+     "2023/24": 69,
+     "2024/25": 63,
+     "2025/26": 50
+    },
+    "vehicle_theft": {
+     "2021/22": 28,
+     "2022/23": 21,
+     "2023/24": 34,
+     "2024/25": 27,
+     "2025/26": 28
+    }
+   },
+   "population": 74900,
+   "station": "Langa"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 9,
+     "2022/23": 12,
+     "2023/24": 15,
+     "2024/25": 13,
+     "2025/26": 17
+    },
+    "burglary_home": {
+     "2021/22": 99,
+     "2022/23": 164,
+     "2023/24": 159,
+     "2024/25": 115,
+     "2025/26": 88
+    },
+    "carjacking": {
+     "2021/22": 12,
+     "2022/23": 13,
+     "2023/24": 19,
+     "2024/25": 15,
+     "2025/26": 20
+    },
+    "contact": {
+     "2021/22": 356,
+     "2022/23": 433,
+     "2023/24": 435,
+     "2024/25": 470,
+     "2025/26": 359
+    },
+    "drugs": {
+     "2021/22": 507,
+     "2022/23": 512,
+     "2023/24": 164,
+     "2024/25": 182,
+     "2025/26": 204
+    },
+    "murder": {
+     "2021/22": 6,
+     "2022/23": 11,
+     "2023/24": 7,
+     "2024/25": 5,
+     "2025/26": 12
+    },
+    "property": {
+     "2021/22": 377,
+     "2022/23": 427,
+     "2023/24": 449,
+     "2024/25": 358,
+     "2025/26": 276
+    },
+    "robbery_aggravated": {
+     "2021/22": 116,
+     "2022/23": 129,
+     "2023/24": 137,
+     "2024/25": 190,
+     "2025/26": 114
+    },
+    "sexual_offences": {
+     "2021/22": 20,
+     "2022/23": 26,
+     "2023/24": 25,
+     "2024/25": 10,
+     "2025/26": 21
+    },
+    "vehicle_theft": {
+     "2021/22": 66,
+     "2022/23": 63,
+     "2023/24": 41,
+     "2024/25": 43,
+     "2025/26": 36
+    }
+   },
+   "population": 68700,
+   "station": "Lansdowne"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 61,
+     "2022/23": 54,
+     "2023/24": 45,
+     "2024/25": 73,
+     "2025/26": 43
+    },
+    "burglary_home": {
+     "2021/22": 205,
+     "2022/23": 208,
+     "2023/24": 264,
+     "2024/25": 182,
+     "2025/26": 139
+    },
+    "carjacking": {
+     "2021/22": 50,
+     "2022/23": 64,
+     "2023/24": 107,
+     "2024/25": 89,
+     "2025/26": 48
+    },
+    "contact": {
+     "2021/22": 1420,
+     "2022/23": 1577,
+     "2023/24": 1578,
+     "2024/25": 1590,
+     "2025/26": 1429
+    },
+    "drugs": {
+     "2021/22": 2323,
+     "2022/23": 2479,
+     "2023/24": 2653,
+     "2024/25": 2729,
+     "2025/26": 2864
+    },
+    "murder": {
+     "2021/22": 49,
+     "2022/23": 47,
+     "2023/24": 31,
+     "2024/25": 47,
+     "2025/26": 58
+    },
+    "property": {
+     "2021/22": 488,
+     "2022/23": 506,
+     "2023/24": 537,
+     "2024/25": 381,
+     "2025/26": 311
+    },
+    "robbery_aggravated": {
+     "2021/22": 332,
+     "2022/23": 370,
+     "2023/24": 466,
+     "2024/25": 366,
+     "2025/26": 296
+    },
+    "sexual_offences": {
+     "2021/22": 88,
+     "2022/23": 102,
+     "2023/24": 82,
+     "2024/25": 53,
+     "2025/26": 67
+    },
+    "vehicle_theft": {
+     "2021/22": 111,
+     "2022/23": 91,
+     "2023/24": 64,
+     "2024/25": 63,
+     "2025/26": 42
+    }
+   },
+   "population": 124600,
+   "station": "Lentegeur"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 48,
+     "2022/23": 53,
+     "2023/24": 65,
+     "2024/25": 65,
+     "2025/26": 45
+    },
+    "burglary_home": {
+     "2021/22": 181,
+     "2022/23": 205,
+     "2023/24": 208,
+     "2024/25": 196,
+     "2025/26": 189
+    },
+    "carjacking": {
+     "2021/22": 135,
+     "2022/23": 164,
+     "2023/24": 215,
+     "2024/25": 243,
+     "2025/26": 239
+    },
+    "contact": {
+     "2021/22": 1551,
+     "2022/23": 1873,
+     "2023/24": 2007,
+     "2024/25": 1939,
+     "2025/26": 1910
+    },
+    "drugs": {
+     "2021/22": 144,
+     "2022/23": 285,
+     "2023/24": 376,
+     "2024/25": 275,
+     "2025/26": 536
+    },
+    "murder": {
+     "2021/22": 98,
+     "2022/23": 107,
+     "2023/24": 108,
+     "2024/25": 79,
+     "2025/26": 98
+    },
+    "property": {
+     "2021/22": 389,
+     "2022/23": 424,
+     "2023/24": 454,
+     "2024/25": 358,
+     "2025/26": 403
+    },
+    "robbery_aggravated": {
+     "2021/22": 496,
+     "2022/23": 651,
+     "2023/24": 758,
+     "2024/25": 737,
+     "2025/26": 660
+    },
+    "sexual_offences": {
+     "2021/22": 114,
+     "2022/23": 134,
+     "2023/24": 118,
+     "2024/25": 130,
+     "2025/26": 107
+    },
+    "vehicle_theft": {
+     "2021/22": 70,
+     "2022/23": 62,
+     "2023/24": 72,
+     "2024/25": 50,
+     "2025/26": 84
+    }
+   },
+   "population": 91500,
+   "station": "Lingelethu-West"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 42,
+     "2022/23": 52,
+     "2023/24": 52,
+     "2024/25": 70,
+     "2025/26": 61
+    },
+    "burglary_home": {
+     "2021/22": 192,
+     "2022/23": 197,
+     "2023/24": 167,
+     "2024/25": 147,
+     "2025/26": 175
+    },
+    "carjacking": {
+     "2021/22": 31,
+     "2022/23": 38,
+     "2023/24": 35,
+     "2024/25": 26,
+     "2025/26": 24
+    },
+    "contact": {
+     "2021/22": 1141,
+     "2022/23": 1384,
+     "2023/24": 1507,
+     "2024/25": 1356,
+     "2025/26": 1385
+    },
+    "drugs": {
+     "2021/22": 135,
+     "2022/23": 274,
+     "2023/24": 174,
+     "2024/25": 250,
+     "2025/26": 460
+    },
+    "murder": {
+     "2021/22": 96,
+     "2022/23": 94,
+     "2023/24": 88,
+     "2024/25": 108,
+     "2025/26": 92
+    },
+    "property": {
+     "2021/22": 368,
+     "2022/23": 336,
+     "2023/24": 355,
+     "2024/25": 297,
+     "2025/26": 339
+    },
+    "robbery_aggravated": {
+     "2021/22": 226,
+     "2022/23": 376,
+     "2023/24": 382,
+     "2024/25": 394,
+     "2025/26": 403
+    },
+    "sexual_offences": {
+     "2021/22": 116,
+     "2022/23": 114,
+     "2023/24": 112,
+     "2024/25": 95,
+     "2025/26": 115
+    },
+    "vehicle_theft": {
+     "2021/22": 65,
+     "2022/23": 43,
+     "2023/24": 71,
+     "2024/25": 57,
+     "2025/26": 77
+    }
+   },
+   "population": 91900,
+   "station": "Lwandle"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 9,
+     "2022/23": 16,
+     "2023/24": 19,
+     "2024/25": 13,
+     "2025/26": 12
+    },
+    "burglary_home": {
+     "2021/22": 192,
+     "2022/23": 168,
+     "2023/24": 214,
+     "2024/25": 155,
+     "2025/26": 181
+    },
+    "carjacking": {
+     "2021/22": 13,
+     "2022/23": 16,
+     "2023/24": 14,
+     "2024/25": 16,
+     "2025/26": 4
+    },
+    "contact": {
+     "2021/22": 808,
+     "2022/23": 980,
+     "2023/24": 1075,
+     "2024/25": 1183,
+     "2025/26": 1049
+    },
+    "drugs": {
+     "2021/22": 212,
+     "2022/23": 214,
+     "2023/24": 111,
+     "2024/25": 110,
+     "2025/26": 137
+    },
+    "murder": {
+     "2021/22": 18,
+     "2022/23": 19,
+     "2023/24": 20,
+     "2024/25": 19,
+     "2025/26": 19
+    },
+    "property": {
+     "2021/22": 298,
+     "2022/23": 300,
+     "2023/24": 345,
+     "2024/25": 312,
+     "2025/26": 330
+    },
+    "robbery_aggravated": {
+     "2021/22": 108,
+     "2022/23": 132,
+     "2023/24": 137,
+     "2024/25": 101,
+     "2025/26": 95
+    },
+    "sexual_offences": {
+     "2021/22": 45,
+     "2022/23": 56,
+     "2023/24": 63,
+     "2024/25": 51,
+     "2025/26": 30
+    },
+    "vehicle_theft": {
+     "2021/22": 13,
+     "2022/23": 16,
+     "2023/24": 8,
+     "2024/25": 18,
+     "2025/26": 16
+    }
+   },
+   "population": 50500,
+   "station": "Macassar"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 6,
+     "2022/23": 15,
+     "2023/24": 10,
+     "2024/25": 10,
+     "2025/26": 6
+    },
+    "burglary_home": {
+     "2021/22": 99,
+     "2022/23": 86,
+     "2023/24": 76,
+     "2024/25": 52,
+     "2025/26": 74
+    },
+    "carjacking": {
+     "2021/22": 19,
+     "2022/23": 40,
+     "2023/24": 38,
+     "2024/25": 20,
+     "2025/26": 13
+    },
+    "contact": {
+     "2021/22": 480,
+     "2022/23": 596,
+     "2023/24": 789,
+     "2024/25": 598,
+     "2025/26": 606
+    },
+    "drugs": {
+     "2021/22": 129,
+     "2022/23": 67,
+     "2023/24": 88,
+     "2024/25": 68,
+     "2025/26": 114
+    },
+    "murder": {
+     "2021/22": 4,
+     "2022/23": 7,
+     "2023/24": 7,
+     "2024/25": 4,
+     "2025/26": 16
+    },
+    "property": {
+     "2021/22": 584,
+     "2022/23": 552,
+     "2023/24": 653,
+     "2024/25": 523,
+     "2025/26": 556
+    },
+    "robbery_aggravated": {
+     "2021/22": 144,
+     "2022/23": 240,
+     "2023/24": 340,
+     "2024/25": 225,
+     "2025/26": 223
+    },
+    "sexual_offences": {
+     "2021/22": 34,
+     "2022/23": 26,
+     "2023/24": 37,
+     "2024/25": 22,
+     "2025/26": 31
+    },
+    "vehicle_theft": {
+     "2021/22": 73,
+     "2022/23": 62,
+     "2023/24": 78,
+     "2024/25": 49,
+     "2025/26": 50
+    }
+   },
+   "population": 27400,
+   "station": "Maitland"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 0,
+     "2022/23": 0,
+     "2023/24": 0,
+     "2024/25": 32,
+     "2025/26": 35
+    },
+    "burglary_home": {
+     "2021/22": 0,
+     "2022/23": 0,
+     "2023/24": 0,
+     "2024/25": 129,
+     "2025/26": 170
+    },
+    "carjacking": {
+     "2021/22": 0,
+     "2022/23": 0,
+     "2023/24": 0,
+     "2024/25": 123,
+     "2025/26": 109
+    },
+    "contact": {
+     "2021/22": 0,
+     "2022/23": 0,
+     "2023/24": 0,
+     "2024/25": 1471,
+     "2025/26": 1694
+    },
+    "drugs": {
+     "2021/22": 0,
+     "2022/23": 0,
+     "2023/24": 0,
+     "2024/25": 307,
+     "2025/26": 386
+    },
+    "murder": {
+     "2021/22": 0,
+     "2022/23": 0,
+     "2023/24": 0,
+     "2024/25": 71,
+     "2025/26": 83
+    },
+    "property": {
+     "2021/22": 0,
+     "2022/23": 0,
+     "2023/24": 0,
+     "2024/25": 210,
+     "2025/26": 295
+    },
+    "robbery_aggravated": {
+     "2021/22": 0,
+     "2022/23": 0,
+     "2023/24": 0,
+     "2024/25": 451,
+     "2025/26": 622
+    },
+    "sexual_offences": {
+     "2021/22": 0,
+     "2022/23": 0,
+     "2023/24": 0,
+     "2024/25": 104,
+     "2025/26": 94
+    },
+    "vehicle_theft": {
+     "2021/22": 0,
+     "2022/23": 0,
+     "2023/24": 0,
+     "2024/25": 31,
+     "2025/26": 61
+    }
+   },
+   "population": 97900,
+   "station": "Makhaza"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 133,
+     "2022/23": 121,
+     "2023/24": 145,
+     "2024/25": 154,
+     "2025/26": 113
+    },
+    "burglary_home": {
+     "2021/22": 235,
+     "2022/23": 312,
+     "2023/24": 266,
+     "2024/25": 195,
+     "2025/26": 167
+    },
+    "carjacking": {
+     "2021/22": 24,
+     "2022/23": 15,
+     "2023/24": 38,
+     "2024/25": 27,
+     "2025/26": 18
+    },
+    "contact": {
+     "2021/22": 1427,
+     "2022/23": 1573,
+     "2023/24": 1460,
+     "2024/25": 1408,
+     "2025/26": 1360
+    },
+    "drugs": {
+     "2021/22": 1351,
+     "2022/23": 1845,
+     "2023/24": 1867,
+     "2024/25": 1448,
+     "2025/26": 1720
+    },
+    "murder": {
+     "2021/22": 83,
+     "2022/23": 80,
+     "2023/24": 108,
+     "2024/25": 82,
+     "2025/26": 90
+    },
+    "property": {
+     "2021/22": 519,
+     "2022/23": 604,
+     "2023/24": 536,
+     "2024/25": 354,
+     "2025/26": 344
+    },
+    "robbery_aggravated": {
+     "2021/22": 233,
+     "2022/23": 223,
+     "2023/24": 252,
+     "2024/25": 179,
+     "2025/26": 151
+    },
+    "sexual_offences": {
+     "2021/22": 118,
+     "2022/23": 120,
+     "2023/24": 80,
+     "2024/25": 79,
+     "2025/26": 79
+    },
+    "vehicle_theft": {
+     "2021/22": 78,
+     "2022/23": 49,
+     "2023/24": 47,
+     "2024/25": 19,
+     "2025/26": 33
+    }
+   },
+   "population": 120200,
+   "station": "Manenberg"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 0,
+     "2022/23": 2,
+     "2023/24": 0,
+     "2024/25": 1,
+     "2025/26": 0
+    },
+    "burglary_home": {
+     "2021/22": 40,
+     "2022/23": 56,
+     "2023/24": 36,
+     "2024/25": 57,
+     "2025/26": 32
+    },
+    "carjacking": {
+     "2021/22": 0,
+     "2022/23": 1,
+     "2023/24": 0,
+     "2024/25": 0,
+     "2025/26": 0
+    },
+    "contact": {
+     "2021/22": 53,
+     "2022/23": 49,
+     "2023/24": 66,
+     "2024/25": 96,
+     "2025/26": 64
+    },
+    "drugs": {
+     "2021/22": 12,
+     "2022/23": 14,
+     "2023/24": 16,
+     "2024/25": 27,
+     "2025/26": 47
+    },
+    "murder": {
+     "2021/22": 1,
+     "2022/23": 0,
+     "2023/24": 0,
+     "2024/25": 2,
+     "2025/26": 2
+    },
+    "property": {
+     "2021/22": 95,
+     "2022/23": 105,
+     "2023/24": 102,
+     "2024/25": 117,
+     "2025/26": 82
+    },
+    "robbery_aggravated": {
+     "2021/22": 4,
+     "2022/23": 9,
+     "2023/24": 6,
+     "2024/25": 8,
+     "2025/26": 4
+    },
+    "sexual_offences": {
+     "2021/22": 6,
+     "2022/23": 3,
+     "2023/24": 4,
+     "2024/25": 5,
+     "2025/26": 10
+    },
+    "vehicle_theft": {
+     "2021/22": 5,
+     "2022/23": 2,
+     "2023/24": 8,
+     "2024/25": 4,
+     "2025/26": 4
+    }
+   },
+   "population": 16100,
+   "station": "Melkbosstrand"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 156,
+     "2022/23": 120,
+     "2023/24": 155,
+     "2024/25": 131,
+     "2025/26": 147
+    },
+    "burglary_home": {
+     "2021/22": 396,
+     "2022/23": 537,
+     "2023/24": 452,
+     "2024/25": 459,
+     "2025/26": 511
+    },
+    "carjacking": {
+     "2021/22": 139,
+     "2022/23": 209,
+     "2023/24": 203,
+     "2024/25": 189,
+     "2025/26": 167
+    },
+    "contact": {
+     "2021/22": 3248,
+     "2022/23": 3827,
+     "2023/24": 4340,
+     "2024/25": 4365,
+     "2025/26": 4507
+    },
+    "drugs": {
+     "2021/22": 816,
+     "2022/23": 1188,
+     "2023/24": 1390,
+     "2024/25": 1201,
+     "2025/26": 1515
+    },
+    "murder": {
+     "2021/22": 231,
+     "2022/23": 222,
+     "2023/24": 256,
+     "2024/25": 254,
+     "2025/26": 284
+    },
+    "property": {
+     "2021/22": 800,
+     "2022/23": 911,
+     "2023/24": 823,
+     "2024/25": 801,
+     "2025/26": 855
+    },
+    "robbery_aggravated": {
+     "2021/22": 747,
+     "2022/23": 956,
+     "2023/24": 1116,
+     "2024/25": 1100,
+     "2025/26": 1124
+    },
+    "sexual_offences": {
+     "2021/22": 217,
+     "2022/23": 213,
+     "2023/24": 269,
+     "2024/25": 263,
+     "2025/26": 223
+    },
+    "vehicle_theft": {
+     "2021/22": 208,
+     "2022/23": 139,
+     "2023/24": 123,
+     "2024/25": 140,
+     "2025/26": 140
+    }
+   },
+   "population": 166400,
+   "station": "Mfuleni"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 46,
+     "2022/23": 45,
+     "2023/24": 39,
+     "2024/25": 64,
+     "2025/26": 51
+    },
+    "burglary_home": {
+     "2021/22": 274,
+     "2022/23": 375,
+     "2023/24": 365,
+     "2024/25": 339,
+     "2025/26": 324
+    },
+    "carjacking": {
+     "2021/22": 47,
+     "2022/23": 59,
+     "2023/24": 62,
+     "2024/25": 45,
+     "2025/26": 28
+    },
+    "contact": {
+     "2021/22": 1512,
+     "2022/23": 1802,
+     "2023/24": 1831,
+     "2024/25": 1817,
+     "2025/26": 1933
+    },
+    "drugs": {
+     "2021/22": 713,
+     "2022/23": 445,
+     "2023/24": 491,
+     "2024/25": 546,
+     "2025/26": 757
+    },
+    "murder": {
+     "2021/22": 63,
+     "2022/23": 66,
+     "2023/24": 82,
+     "2024/25": 70,
+     "2025/26": 92
+    },
+    "property": {
+     "2021/22": 944,
+     "2022/23": 1053,
+     "2023/24": 1044,
+     "2024/25": 957,
+     "2025/26": 912
+    },
+    "robbery_aggravated": {
+     "2021/22": 423,
+     "2022/23": 576,
+     "2023/24": 642,
+     "2024/25": 598,
+     "2025/26": 620
+    },
+    "sexual_offences": {
+     "2021/22": 102,
+     "2022/23": 118,
+     "2023/24": 121,
+     "2024/25": 118,
+     "2025/26": 102
+    },
+    "vehicle_theft": {
+     "2021/22": 180,
+     "2022/23": 162,
+     "2023/24": 166,
+     "2024/25": 145,
+     "2025/26": 130
+    }
+   },
+   "population": 122700,
+   "station": "Milnerton"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 138,
+     "2022/23": 179,
+     "2023/24": 267,
+     "2024/25": 203,
+     "2025/26": 161
+    },
+    "burglary_home": {
+     "2021/22": 401,
+     "2022/23": 543,
+     "2023/24": 487,
+     "2024/25": 392,
+     "2025/26": 348
+    },
+    "carjacking": {
+     "2021/22": 42,
+     "2022/23": 54,
+     "2023/24": 67,
+     "2024/25": 45,
+     "2025/26": 54
+    },
+    "contact": {
+     "2021/22": 2849,
+     "2022/23": 3428,
+     "2023/24": 3659,
+     "2024/25": 3425,
+     "2025/26": 3304
+    },
+    "drugs": {
+     "2021/22": 4277,
+     "2022/23": 4480,
+     "2023/24": 4874,
+     "2024/25": 5541,
+     "2025/26": 6339
+    },
+    "murder": {
+     "2021/22": 101,
+     "2022/23": 124,
+     "2023/24": 145,
+     "2024/25": 154,
+     "2025/26": 155
+    },
+    "property": {
+     "2021/22": 1174,
+     "2022/23": 1440,
+     "2023/24": 1390,
+     "2024/25": 932,
+     "2025/26": 802
+    },
+    "robbery_aggravated": {
+     "2021/22": 459,
+     "2022/23": 594,
+     "2023/24": 673,
+     "2024/25": 555,
+     "2025/26": 490
+    },
+    "sexual_offences": {
+     "2021/22": 167,
+     "2022/23": 182,
+     "2023/24": 171,
+     "2024/25": 145,
+     "2025/26": 148
+    },
+    "vehicle_theft": {
+     "2021/22": 153,
+     "2022/23": 147,
+     "2023/24": 139,
+     "2024/25": 82,
+     "2025/26": 117
+    }
+   },
+   "population": 278800,
+   "station": "Mitchells Plain"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 3,
+     "2022/23": 4,
+     "2023/24": 1,
+     "2024/25": 2,
+     "2025/26": 0
+    },
+    "burglary_home": {
+     "2021/22": 141,
+     "2022/23": 187,
+     "2023/24": 143,
+     "2024/25": 120,
+     "2025/26": 64
+    },
+    "carjacking": {
+     "2021/22": 3,
+     "2022/23": 6,
+     "2023/24": 10,
+     "2024/25": 9,
+     "2025/26": 3
+    },
+    "contact": {
+     "2021/22": 178,
+     "2022/23": 232,
+     "2023/24": 209,
+     "2024/25": 182,
+     "2025/26": 123
+    },
+    "drugs": {
+     "2021/22": 48,
+     "2022/23": 55,
+     "2023/24": 85,
+     "2024/25": 76,
+     "2025/26": 68
+    },
+    "murder": {
+     "2021/22": 1,
+     "2022/23": 1,
+     "2023/24": 2,
+     "2024/25": 3,
+     "2025/26": 1
+    },
+    "property": {
+     "2021/22": 397,
+     "2022/23": 490,
+     "2023/24": 384,
+     "2024/25": 337,
+     "2025/26": 296
+    },
+    "robbery_aggravated": {
+     "2021/22": 90,
+     "2022/23": 109,
+     "2023/24": 93,
+     "2024/25": 74,
+     "2025/26": 41
+    },
+    "sexual_offences": {
+     "2021/22": 6,
+     "2022/23": 12,
+     "2023/24": 4,
+     "2024/25": 13,
+     "2025/26": 1
+    },
+    "vehicle_theft": {
+     "2021/22": 49,
+     "2022/23": 63,
+     "2023/24": 49,
+     "2024/25": 31,
+     "2025/26": 49
+    }
+   },
+   "population": 14600,
+   "station": "Mowbray"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 24,
+     "2022/23": 48,
+     "2023/24": 27,
+     "2024/25": 41,
+     "2025/26": 62
+    },
+    "burglary_home": {
+     "2021/22": 244,
+     "2022/23": 274,
+     "2023/24": 289,
+     "2024/25": 191,
+     "2025/26": 128
+    },
+    "carjacking": {
+     "2021/22": 8,
+     "2022/23": 11,
+     "2023/24": 11,
+     "2024/25": 13,
+     "2025/26": 16
+    },
+    "contact": {
+     "2021/22": 840,
+     "2022/23": 895,
+     "2023/24": 822,
+     "2024/25": 924,
+     "2025/26": 921
+    },
+    "drugs": {
+     "2021/22": 321,
+     "2022/23": 322,
+     "2023/24": 374,
+     "2024/25": 373,
+     "2025/26": 822
+    },
+    "murder": {
+     "2021/22": 36,
+     "2022/23": 53,
+     "2023/24": 36,
+     "2024/25": 51,
+     "2025/26": 87
+    },
+    "property": {
+     "2021/22": 568,
+     "2022/23": 667,
+     "2023/24": 748,
+     "2024/25": 547,
+     "2025/26": 405
+    },
+    "robbery_aggravated": {
+     "2021/22": 165,
+     "2022/23": 189,
+     "2023/24": 158,
+     "2024/25": 218,
+     "2025/26": 210
+    },
+    "sexual_offences": {
+     "2021/22": 66,
+     "2022/23": 53,
+     "2023/24": 59,
+     "2024/25": 62,
+     "2025/26": 40
+    },
+    "vehicle_theft": {
+     "2021/22": 79,
+     "2022/23": 103,
+     "2023/24": 151,
+     "2024/25": 107,
+     "2025/26": 86
+    }
+   },
+   "population": 83400,
+   "station": "Muizenberg"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 110,
+     "2022/23": 109,
+     "2023/24": 122,
+     "2024/25": 106,
+     "2025/26": 116
+    },
+    "burglary_home": {
+     "2021/22": 245,
+     "2022/23": 271,
+     "2023/24": 212,
+     "2024/25": 279,
+     "2025/26": 213
+    },
+    "carjacking": {
+     "2021/22": 312,
+     "2022/23": 504,
+     "2023/24": 339,
+     "2024/25": 269,
+     "2025/26": 191
+    },
+    "contact": {
+     "2021/22": 3430,
+     "2022/23": 4045,
+     "2023/24": 4041,
+     "2024/25": 3750,
+     "2025/26": 3749
+    },
+    "drugs": {
+     "2021/22": 960,
+     "2022/23": 1399,
+     "2023/24": 1480,
+     "2024/25": 1443,
+     "2025/26": 1591
+    },
+    "murder": {
+     "2021/22": 161,
+     "2022/23": 233,
+     "2023/24": 264,
+     "2024/25": 260,
+     "2025/26": 220
+    },
+    "property": {
+     "2021/22": 590,
+     "2022/23": 553,
+     "2023/24": 416,
+     "2024/25": 408,
+     "2025/26": 342
+    },
+    "robbery_aggravated": {
+     "2021/22": 1247,
+     "2022/23": 1528,
+     "2023/24": 1402,
+     "2024/25": 1243,
+     "2025/26": 1142
+    },
+    "sexual_offences": {
+     "2021/22": 196,
+     "2022/23": 198,
+     "2023/24": 184,
+     "2024/25": 171,
+     "2025/26": 224
+    },
+    "vehicle_theft": {
+     "2021/22": 69,
+     "2022/23": 83,
+     "2023/24": 62,
+     "2024/25": 44,
+     "2025/26": 54
+    }
+   },
+   "population": 200200,
+   "station": "Nyanga"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 22,
+     "2022/23": 30,
+     "2023/24": 26,
+     "2024/25": 9,
+     "2025/26": 15
+    },
+    "burglary_home": {
+     "2021/22": 72,
+     "2022/23": 133,
+     "2023/24": 68,
+     "2024/25": 84,
+     "2025/26": 66
+    },
+    "carjacking": {
+     "2021/22": 4,
+     "2022/23": 3,
+     "2023/24": 4,
+     "2024/25": 3,
+     "2025/26": 0
+    },
+    "contact": {
+     "2021/22": 582,
+     "2022/23": 596,
+     "2023/24": 516,
+     "2024/25": 515,
+     "2025/26": 488
+    },
+    "drugs": {
+     "2021/22": 136,
+     "2022/23": 113,
+     "2023/24": 114,
+     "2024/25": 73,
+     "2025/26": 74
+    },
+    "murder": {
+     "2021/22": 26,
+     "2022/23": 39,
+     "2023/24": 39,
+     "2024/25": 35,
+     "2025/26": 25
+    },
+    "property": {
+     "2021/22": 197,
+     "2022/23": 296,
+     "2023/24": 177,
+     "2024/25": 180,
+     "2025/26": 139
+    },
+    "robbery_aggravated": {
+     "2021/22": 78,
+     "2022/23": 89,
+     "2023/24": 84,
+     "2024/25": 73,
+     "2025/26": 66
+    },
+    "sexual_offences": {
+     "2021/22": 59,
+     "2022/23": 60,
+     "2023/24": 52,
+     "2024/25": 39,
+     "2025/26": 38
+    },
+    "vehicle_theft": {
+     "2021/22": 40,
+     "2022/23": 29,
+     "2023/24": 34,
+     "2024/25": 21,
+     "2025/26": 15
+    }
+   },
+   "population": 57900,
+   "station": "Ocean View"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 35,
+     "2022/23": 43,
+     "2023/24": 71,
+     "2024/25": 80,
+     "2025/26": 45
+    },
+    "burglary_home": {
+     "2021/22": 329,
+     "2022/23": 304,
+     "2023/24": 309,
+     "2024/25": 220,
+     "2025/26": 181
+    },
+    "carjacking": {
+     "2021/22": 3,
+     "2022/23": 3,
+     "2023/24": 6,
+     "2024/25": 4,
+     "2025/26": 4
+    },
+    "contact": {
+     "2021/22": 809,
+     "2022/23": 845,
+     "2023/24": 904,
+     "2024/25": 862,
+     "2025/26": 728
+    },
+    "drugs": {
+     "2021/22": 740,
+     "2022/23": 718,
+     "2023/24": 646,
+     "2024/25": 737,
+     "2025/26": 785
+    },
+    "murder": {
+     "2021/22": 11,
+     "2022/23": 6,
+     "2023/24": 8,
+     "2024/25": 7,
+     "2025/26": 7
+    },
+    "property": {
+     "2021/22": 1182,
+     "2022/23": 1254,
+     "2023/24": 1352,
+     "2024/25": 986,
+     "2025/26": 804
+    },
+    "robbery_aggravated": {
+     "2021/22": 107,
+     "2022/23": 128,
+     "2023/24": 162,
+     "2024/25": 112,
+     "2025/26": 128
+    },
+    "sexual_offences": {
+     "2021/22": 53,
+     "2022/23": 57,
+     "2023/24": 58,
+     "2024/25": 66,
+     "2025/26": 44
+    },
+    "vehicle_theft": {
+     "2021/22": 35,
+     "2022/23": 65,
+     "2023/24": 70,
+     "2024/25": 49,
+     "2025/26": 26
+    }
+   },
+   "population": null,
+   "station": "Paarl"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 18,
+     "2022/23": 20,
+     "2023/24": 22,
+     "2024/25": 12,
+     "2025/26": 9
+    },
+    "burglary_home": {
+     "2021/22": 381,
+     "2022/23": 382,
+     "2023/24": 311,
+     "2024/25": 245,
+     "2025/26": 205
+    },
+    "carjacking": {
+     "2021/22": 18,
+     "2022/23": 29,
+     "2023/24": 34,
+     "2024/25": 23,
+     "2025/26": 23
+    },
+    "contact": {
+     "2021/22": 1158,
+     "2022/23": 1343,
+     "2023/24": 1202,
+     "2024/25": 1021,
+     "2025/26": 963
+    },
+    "drugs": {
+     "2021/22": 946,
+     "2022/23": 1018,
+     "2023/24": 888,
+     "2024/25": 932,
+     "2025/26": 1057
+    },
+    "murder": {
+     "2021/22": 16,
+     "2022/23": 23,
+     "2023/24": 14,
+     "2024/25": 16,
+     "2025/26": 8
+    },
+    "property": {
+     "2021/22": 1131,
+     "2022/23": 1199,
+     "2023/24": 1148,
+     "2024/25": 915,
+     "2025/26": 850
+    },
+    "robbery_aggravated": {
+     "2021/22": 417,
+     "2022/23": 468,
+     "2023/24": 419,
+     "2024/25": 393,
+     "2025/26": 315
+    },
+    "sexual_offences": {
+     "2021/22": 44,
+     "2022/23": 48,
+     "2023/24": 41,
+     "2024/25": 42,
+     "2025/26": 38
+    },
+    "vehicle_theft": {
+     "2021/22": 126,
+     "2022/23": 156,
+     "2023/24": 177,
+     "2024/25": 163,
+     "2025/26": 112
+    }
+   },
+   "population": 87900,
+   "station": "Parow"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 0,
+     "2022/23": 1,
+     "2023/24": 3,
+     "2024/25": 3,
+     "2025/26": 4
+    },
+    "burglary_home": {
+     "2021/22": 33,
+     "2022/23": 36,
+     "2023/24": 35,
+     "2024/25": 60,
+     "2025/26": 24
+    },
+    "carjacking": {
+     "2021/22": 0,
+     "2022/23": 2,
+     "2023/24": 0,
+     "2024/25": 1,
+     "2025/26": 4
+    },
+    "contact": {
+     "2021/22": 94,
+     "2022/23": 94,
+     "2023/24": 107,
+     "2024/25": 124,
+     "2025/26": 97
+    },
+    "drugs": {
+     "2021/22": 10,
+     "2022/23": 13,
+     "2023/24": 34,
+     "2024/25": 23,
+     "2025/26": 30
+    },
+    "murder": {
+     "2021/22": 4,
+     "2022/23": 4,
+     "2023/24": 3,
+     "2024/25": 2,
+     "2025/26": 4
+    },
+    "property": {
+     "2021/22": 62,
+     "2022/23": 66,
+     "2023/24": 70,
+     "2024/25": 89,
+     "2025/26": 54
+    },
+    "robbery_aggravated": {
+     "2021/22": 13,
+     "2022/23": 13,
+     "2023/24": 19,
+     "2024/25": 22,
+     "2025/26": 10
+    },
+    "sexual_offences": {
+     "2021/22": 10,
+     "2022/23": 10,
+     "2023/24": 8,
+     "2024/25": 10,
+     "2025/26": 7
+    },
+    "vehicle_theft": {
+     "2021/22": 0,
+     "2022/23": 1,
+     "2023/24": 8,
+     "2024/25": 6,
+     "2025/26": 6
+    }
+   },
+   "population": 8500,
+   "station": "Philadelphia"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 73,
+     "2022/23": 98,
+     "2023/24": 145,
+     "2024/25": 104,
+     "2025/26": 98
+    },
+    "burglary_home": {
+     "2021/22": 125,
+     "2022/23": 142,
+     "2023/24": 147,
+     "2024/25": 138,
+     "2025/26": 104
+    },
+    "carjacking": {
+     "2021/22": 23,
+     "2022/23": 30,
+     "2023/24": 37,
+     "2024/25": 40,
+     "2025/26": 39
+    },
+    "contact": {
+     "2021/22": 835,
+     "2022/23": 993,
+     "2023/24": 1098,
+     "2024/25": 1071,
+     "2025/26": 1118
+    },
+    "drugs": {
+     "2021/22": 1137,
+     "2022/23": 1123,
+     "2023/24": 1083,
+     "2024/25": 1224,
+     "2025/26": 1270
+    },
+    "murder": {
+     "2021/22": 63,
+     "2022/23": 81,
+     "2023/24": 110,
+     "2024/25": 69,
+     "2025/26": 84
+    },
+    "property": {
+     "2021/22": 347,
+     "2022/23": 335,
+     "2023/24": 342,
+     "2024/25": 282,
+     "2025/26": 227
+    },
+    "robbery_aggravated": {
+     "2021/22": 152,
+     "2022/23": 147,
+     "2023/24": 221,
+     "2024/25": 219,
+     "2025/26": 190
+    },
+    "sexual_offences": {
+     "2021/22": 55,
+     "2022/23": 55,
+     "2023/24": 48,
+     "2024/25": 55,
+     "2025/26": 61
+    },
+    "vehicle_theft": {
+     "2021/22": 41,
+     "2022/23": 44,
+     "2023/24": 29,
+     "2024/25": 23,
+     "2025/26": 27
+    }
+   },
+   "population": 76600,
+   "station": "Philippi"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 66,
+     "2022/23": 75,
+     "2023/24": 77,
+     "2024/25": 115,
+     "2025/26": 115
+    },
+    "burglary_home": {
+     "2021/22": 139,
+     "2022/23": 114,
+     "2023/24": 101,
+     "2024/25": 84,
+     "2025/26": 66
+    },
+    "carjacking": {
+     "2021/22": 283,
+     "2022/23": 274,
+     "2023/24": 299,
+     "2024/25": 255,
+     "2025/26": 82
+    },
+    "contact": {
+     "2021/22": 1789,
+     "2022/23": 2020,
+     "2023/24": 2048,
+     "2024/25": 2147,
+     "2025/26": 1945
+    },
+    "drugs": {
+     "2021/22": 178,
+     "2022/23": 359,
+     "2023/24": 311,
+     "2024/25": 657,
+     "2025/26": 716
+    },
+    "murder": {
+     "2021/22": 108,
+     "2022/23": 160,
+     "2023/24": 165,
+     "2024/25": 231,
+     "2025/26": 197
+    },
+    "property": {
+     "2021/22": 269,
+     "2022/23": 218,
+     "2023/24": 199,
+     "2024/25": 164,
+     "2025/26": 119
+    },
+    "robbery_aggravated": {
+     "2021/22": 827,
+     "2022/23": 879,
+     "2023/24": 923,
+     "2024/25": 864,
+     "2025/26": 642
+    },
+    "sexual_offences": {
+     "2021/22": 121,
+     "2022/23": 114,
+     "2023/24": 103,
+     "2024/25": 78,
+     "2025/26": 89
+    },
+    "vehicle_theft": {
+     "2021/22": 71,
+     "2022/23": 51,
+     "2023/24": 35,
+     "2024/25": 30,
+     "2025/26": 26
+    }
+   },
+   "population": 81400,
+   "station": "Philippi East"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 2,
+     "2022/23": 3,
+     "2023/24": 2,
+     "2024/25": 1,
+     "2025/26": 2
+    },
+    "burglary_home": {
+     "2021/22": 135,
+     "2022/23": 159,
+     "2023/24": 152,
+     "2024/25": 113,
+     "2025/26": 73
+    },
+    "carjacking": {
+     "2021/22": 1,
+     "2022/23": 10,
+     "2023/24": 5,
+     "2024/25": 6,
+     "2025/26": 6
+    },
+    "contact": {
+     "2021/22": 160,
+     "2022/23": 207,
+     "2023/24": 213,
+     "2024/25": 236,
+     "2025/26": 204
+    },
+    "drugs": {
+     "2021/22": 73,
+     "2022/23": 48,
+     "2023/24": 49,
+     "2024/25": 37,
+     "2025/26": 49
+    },
+    "murder": {
+     "2021/22": 5,
+     "2022/23": 3,
+     "2023/24": 3,
+     "2024/25": 3,
+     "2025/26": 1
+    },
+    "property": {
+     "2021/22": 453,
+     "2022/23": 520,
+     "2023/24": 480,
+     "2024/25": 385,
+     "2025/26": 316
+    },
+    "robbery_aggravated": {
+     "2021/22": 63,
+     "2022/23": 81,
+     "2023/24": 76,
+     "2024/25": 66,
+     "2025/26": 55
+    },
+    "sexual_offences": {
+     "2021/22": 7,
+     "2022/23": 6,
+     "2023/24": 15,
+     "2024/25": 16,
+     "2025/26": 9
+    },
+    "vehicle_theft": {
+     "2021/22": 48,
+     "2022/23": 54,
+     "2023/24": 64,
+     "2024/25": 37,
+     "2025/26": 29
+    }
+   },
+   "population": 28900,
+   "station": "Pinelands"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 71,
+     "2022/23": 89,
+     "2023/24": 76,
+     "2024/25": 93,
+     "2025/26": 102
+    },
+    "burglary_home": {
+     "2021/22": 102,
+     "2022/23": 121,
+     "2023/24": 105,
+     "2024/25": 116,
+     "2025/26": 92
+    },
+    "carjacking": {
+     "2021/22": 17,
+     "2022/23": 17,
+     "2023/24": 17,
+     "2024/25": 7,
+     "2025/26": 9
+    },
+    "contact": {
+     "2021/22": 1051,
+     "2022/23": 1145,
+     "2023/24": 999,
+     "2024/25": 1146,
+     "2025/26": 1113
+    },
+    "drugs": {
+     "2021/22": 369,
+     "2022/23": 440,
+     "2023/24": 475,
+     "2024/25": 575,
+     "2025/26": 924
+    },
+    "murder": {
+     "2021/22": 39,
+     "2022/23": 58,
+     "2023/24": 64,
+     "2024/25": 66,
+     "2025/26": 77
+    },
+    "property": {
+     "2021/22": 335,
+     "2022/23": 427,
+     "2023/24": 438,
+     "2024/25": 359,
+     "2025/26": 356
+    },
+    "robbery_aggravated": {
+     "2021/22": 141,
+     "2022/23": 147,
+     "2023/24": 172,
+     "2024/25": 143,
+     "2025/26": 120
+    },
+    "sexual_offences": {
+     "2021/22": 58,
+     "2022/23": 56,
+     "2023/24": 33,
+     "2024/25": 41,
+     "2025/26": 50
+    },
+    "vehicle_theft": {
+     "2021/22": 24,
+     "2022/23": 32,
+     "2023/24": 45,
+     "2024/25": 38,
+     "2025/26": 29
+    }
+   },
+   "population": 86900,
+   "station": "Ravensmead"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 2,
+     "2022/23": 1,
+     "2023/24": 2,
+     "2024/25": 1,
+     "2025/26": 0
+    },
+    "burglary_home": {
+     "2021/22": 212,
+     "2022/23": 203,
+     "2023/24": 154,
+     "2024/25": 96,
+     "2025/26": 77
+    },
+    "carjacking": {
+     "2021/22": 4,
+     "2022/23": 4,
+     "2023/24": 4,
+     "2024/25": 2,
+     "2025/26": 3
+    },
+    "contact": {
+     "2021/22": 150,
+     "2022/23": 186,
+     "2023/24": 172,
+     "2024/25": 147,
+     "2025/26": 118
+    },
+    "drugs": {
+     "2021/22": 6,
+     "2022/23": 15,
+     "2023/24": 11,
+     "2024/25": 37,
+     "2025/26": 5
+    },
+    "murder": {
+     "2021/22": 2,
+     "2022/23": 1,
+     "2023/24": 1,
+     "2024/25": 0,
+     "2025/26": 0
+    },
+    "property": {
+     "2021/22": 548,
+     "2022/23": 633,
+     "2023/24": 639,
+     "2024/25": 488,
+     "2025/26": 370
+    },
+    "robbery_aggravated": {
+     "2021/22": 72,
+     "2022/23": 89,
+     "2023/24": 83,
+     "2024/25": 63,
+     "2025/26": 42
+    },
+    "sexual_offences": {
+     "2021/22": 7,
+     "2022/23": 9,
+     "2023/24": 7,
+     "2024/25": 8,
+     "2025/26": 14
+    },
+    "vehicle_theft": {
+     "2021/22": 50,
+     "2022/23": 77,
+     "2023/24": 146,
+     "2024/25": 77,
+     "2025/26": 67
+    }
+   },
+   "population": 20800,
+   "station": "Rondebosch"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 64,
+     "2022/23": 60,
+     "2023/24": 52,
+     "2024/25": 31,
+     "2025/26": 66
+    },
+    "burglary_home": {
+     "2021/22": 99,
+     "2022/23": 109,
+     "2023/24": 90,
+     "2024/25": 93,
+     "2025/26": 39
+    },
+    "carjacking": {
+     "2021/22": 100,
+     "2022/23": 147,
+     "2023/24": 133,
+     "2024/25": 79,
+     "2025/26": 62
+    },
+    "contact": {
+     "2021/22": 1161,
+     "2022/23": 1133,
+     "2023/24": 1136,
+     "2024/25": 1120,
+     "2025/26": 1059
+    },
+    "drugs": {
+     "2021/22": 244,
+     "2022/23": 435,
+     "2023/24": 527,
+     "2024/25": 277,
+     "2025/26": 261
+    },
+    "murder": {
+     "2021/22": 130,
+     "2022/23": 129,
+     "2023/24": 108,
+     "2024/25": 125,
+     "2025/26": 111
+    },
+    "property": {
+     "2021/22": 177,
+     "2022/23": 166,
+     "2023/24": 135,
+     "2024/25": 139,
+     "2025/26": 87
+    },
+    "robbery_aggravated": {
+     "2021/22": 380,
+     "2022/23": 415,
+     "2023/24": 473,
+     "2024/25": 443,
+     "2025/26": 358
+    },
+    "sexual_offences": {
+     "2021/22": 116,
+     "2022/23": 107,
+     "2023/24": 96,
+     "2024/25": 79,
+     "2025/26": 66
+    },
+    "vehicle_theft": {
+     "2021/22": 34,
+     "2022/23": 24,
+     "2023/24": 15,
+     "2024/25": 17,
+     "2025/26": 24
+    }
+   },
+   "population": 85600,
+   "station": "Samora Machel"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 1,
+     "2022/23": 1,
+     "2023/24": 2,
+     "2024/25": 1,
+     "2025/26": 0
+    },
+    "burglary_home": {
+     "2021/22": 183,
+     "2022/23": 248,
+     "2023/24": 220,
+     "2024/25": 113,
+     "2025/26": 96
+    },
+    "carjacking": {
+     "2021/22": 0,
+     "2022/23": 1,
+     "2023/24": 1,
+     "2024/25": 1,
+     "2025/26": 1
+    },
+    "contact": {
+     "2021/22": 258,
+     "2022/23": 375,
+     "2023/24": 362,
+     "2024/25": 329,
+     "2025/26": 336
+    },
+    "drugs": {
+     "2021/22": 1402,
+     "2022/23": 1130,
+     "2023/24": 895,
+     "2024/25": 449,
+     "2025/26": 629
+    },
+    "murder": {
+     "2021/22": 1,
+     "2022/23": 6,
+     "2023/24": 1,
+     "2024/25": 0,
+     "2025/26": 1
+    },
+    "property": {
+     "2021/22": 905,
+     "2022/23": 1231,
+     "2023/24": 1384,
+     "2024/25": 1043,
+     "2025/26": 1160
+    },
+    "robbery_aggravated": {
+     "2021/22": 53,
+     "2022/23": 59,
+     "2023/24": 71,
+     "2024/25": 57,
+     "2025/26": 56
+    },
+    "sexual_offences": {
+     "2021/22": 15,
+     "2022/23": 41,
+     "2023/24": 19,
+     "2024/25": 27,
+     "2025/26": 18
+    },
+    "vehicle_theft": {
+     "2021/22": 43,
+     "2022/23": 63,
+     "2023/24": 80,
+     "2024/25": 81,
+     "2025/26": 55
+    }
+   },
+   "population": 35400,
+   "station": "Sea Point"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 2,
+     "2022/23": 3,
+     "2023/24": 2,
+     "2024/25": 1,
+     "2025/26": 1
+    },
+    "burglary_home": {
+     "2021/22": 59,
+     "2022/23": 81,
+     "2023/24": 100,
+     "2024/25": 110,
+     "2025/26": 66
+    },
+    "carjacking": {
+     "2021/22": 1,
+     "2022/23": 0,
+     "2023/24": 1,
+     "2024/25": 0,
+     "2025/26": 0
+    },
+    "contact": {
+     "2021/22": 102,
+     "2022/23": 81,
+     "2023/24": 98,
+     "2024/25": 89,
+     "2025/26": 81
+    },
+    "drugs": {
+     "2021/22": 5,
+     "2022/23": 6,
+     "2023/24": 11,
+     "2024/25": 22,
+     "2025/26": 9
+    },
+    "murder": {
+     "2021/22": 1,
+     "2022/23": 0,
+     "2023/24": 5,
+     "2024/25": 2,
+     "2025/26": 1
+    },
+    "property": {
+     "2021/22": 121,
+     "2022/23": 150,
+     "2023/24": 186,
+     "2024/25": 192,
+     "2025/26": 150
+    },
+    "robbery_aggravated": {
+     "2021/22": 19,
+     "2022/23": 15,
+     "2023/24": 10,
+     "2024/25": 9,
+     "2025/26": 13
+    },
+    "sexual_offences": {
+     "2021/22": 12,
+     "2022/23": 7,
+     "2023/24": 11,
+     "2024/25": 6,
+     "2025/26": 9
+    },
+    "vehicle_theft": {
+     "2021/22": 11,
+     "2022/23": 15,
+     "2023/24": 26,
+     "2024/25": 14,
+     "2025/26": 14
+    }
+   },
+   "population": 18500,
+   "station": "Simon'S Town"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 2,
+     "2022/23": 11,
+     "2023/24": 9,
+     "2024/25": 10,
+     "2025/26": 4
+    },
+    "burglary_home": {
+     "2021/22": 418,
+     "2022/23": 335,
+     "2023/24": 407,
+     "2024/25": 371,
+     "2025/26": 296
+    },
+    "carjacking": {
+     "2021/22": 5,
+     "2022/23": 2,
+     "2023/24": 6,
+     "2024/25": 2,
+     "2025/26": 3
+    },
+    "contact": {
+     "2021/22": 646,
+     "2022/23": 811,
+     "2023/24": 785,
+     "2024/25": 791,
+     "2025/26": 788
+    },
+    "drugs": {
+     "2021/22": 362,
+     "2022/23": 416,
+     "2023/24": 362,
+     "2024/25": 374,
+     "2025/26": 387
+    },
+    "murder": {
+     "2021/22": 10,
+     "2022/23": 10,
+     "2023/24": 6,
+     "2024/25": 5,
+     "2025/26": 10
+    },
+    "property": {
+     "2021/22": 909,
+     "2022/23": 957,
+     "2023/24": 999,
+     "2024/25": 922,
+     "2025/26": 643
+    },
+    "robbery_aggravated": {
+     "2021/22": 128,
+     "2022/23": 142,
+     "2023/24": 178,
+     "2024/25": 179,
+     "2025/26": 159
+    },
+    "sexual_offences": {
+     "2021/22": 38,
+     "2022/23": 62,
+     "2023/24": 46,
+     "2024/25": 48,
+     "2025/26": 53
+    },
+    "vehicle_theft": {
+     "2021/22": 71,
+     "2022/23": 92,
+     "2023/24": 97,
+     "2024/25": 121,
+     "2025/26": 54
+    }
+   },
+   "population": 83900,
+   "station": "Somerset West"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 60,
+     "2022/23": 49,
+     "2023/24": 36,
+     "2024/25": 50,
+     "2025/26": 67
+    },
+    "burglary_home": {
+     "2021/22": 130,
+     "2022/23": 213,
+     "2023/24": 140,
+     "2024/25": 110,
+     "2025/26": 98
+    },
+    "carjacking": {
+     "2021/22": 14,
+     "2022/23": 11,
+     "2023/24": 11,
+     "2024/25": 10,
+     "2025/26": 8
+    },
+    "contact": {
+     "2021/22": 733,
+     "2022/23": 798,
+     "2023/24": 685,
+     "2024/25": 678,
+     "2025/26": 596
+    },
+    "drugs": {
+     "2021/22": 1294,
+     "2022/23": 1417,
+     "2023/24": 1927,
+     "2024/25": 2053,
+     "2025/26": 2374
+    },
+    "murder": {
+     "2021/22": 37,
+     "2022/23": 46,
+     "2023/24": 41,
+     "2024/25": 58,
+     "2025/26": 53
+    },
+    "property": {
+     "2021/22": 277,
+     "2022/23": 405,
+     "2023/24": 297,
+     "2024/25": 247,
+     "2025/26": 198
+    },
+    "robbery_aggravated": {
+     "2021/22": 164,
+     "2022/23": 151,
+     "2023/24": 75,
+     "2024/25": 100,
+     "2025/26": 91
+    },
+    "sexual_offences": {
+     "2021/22": 54,
+     "2022/23": 60,
+     "2023/24": 62,
+     "2024/25": 45,
+     "2025/26": 38
+    },
+    "vehicle_theft": {
+     "2021/22": 26,
+     "2022/23": 29,
+     "2023/24": 14,
+     "2024/25": 29,
+     "2025/26": 11
+    }
+   },
+   "population": 88200,
+   "station": "Steenberg"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 39,
+     "2022/23": 32,
+     "2023/24": 88,
+     "2024/25": 122,
+     "2025/26": 77
+    },
+    "burglary_home": {
+     "2021/22": 501,
+     "2022/23": 440,
+     "2023/24": 560,
+     "2024/25": 439,
+     "2025/26": 456
+    },
+    "carjacking": {
+     "2021/22": 12,
+     "2022/23": 6,
+     "2023/24": 11,
+     "2024/25": 9,
+     "2025/26": 12
+    },
+    "contact": {
+     "2021/22": 1464,
+     "2022/23": 1677,
+     "2023/24": 1669,
+     "2024/25": 1756,
+     "2025/26": 1722
+    },
+    "drugs": {
+     "2021/22": 371,
+     "2022/23": 682,
+     "2023/24": 650,
+     "2024/25": 768,
+     "2025/26": 882
+    },
+    "murder": {
+     "2021/22": 41,
+     "2022/23": 31,
+     "2023/24": 26,
+     "2024/25": 35,
+     "2025/26": 49
+    },
+    "property": {
+     "2021/22": 1781,
+     "2022/23": 2129,
+     "2023/24": 2326,
+     "2024/25": 1931,
+     "2025/26": 1550
+    },
+    "robbery_aggravated": {
+     "2021/22": 337,
+     "2022/23": 424,
+     "2023/24": 379,
+     "2024/25": 419,
+     "2025/26": 465
+    },
+    "sexual_offences": {
+     "2021/22": 121,
+     "2022/23": 101,
+     "2023/24": 122,
+     "2024/25": 119,
+     "2025/26": 109
+    },
+    "vehicle_theft": {
+     "2021/22": 99,
+     "2022/23": 121,
+     "2023/24": 196,
+     "2024/25": 170,
+     "2025/26": 133
+    }
+   },
+   "population": 108600,
+   "station": "Stellenbosch"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 53,
+     "2022/23": 56,
+     "2023/24": 43,
+     "2024/25": 20,
+     "2025/26": 21
+    },
+    "burglary_home": {
+     "2021/22": 345,
+     "2022/23": 280,
+     "2023/24": 278,
+     "2024/25": 263,
+     "2025/26": 222
+    },
+    "carjacking": {
+     "2021/22": 5,
+     "2022/23": 6,
+     "2023/24": 3,
+     "2024/25": 5,
+     "2025/26": 2
+    },
+    "contact": {
+     "2021/22": 752,
+     "2022/23": 973,
+     "2023/24": 1066,
+     "2024/25": 896,
+     "2025/26": 805
+    },
+    "drugs": {
+     "2021/22": 654,
+     "2022/23": 1381,
+     "2023/24": 1558,
+     "2024/25": 1804,
+     "2025/26": 1896
+    },
+    "murder": {
+     "2021/22": 19,
+     "2022/23": 21,
+     "2023/24": 22,
+     "2024/25": 14,
+     "2025/26": 13
+    },
+    "property": {
+     "2021/22": 887,
+     "2022/23": 791,
+     "2023/24": 799,
+     "2024/25": 762,
+     "2025/26": 670
+    },
+    "robbery_aggravated": {
+     "2021/22": 174,
+     "2022/23": 217,
+     "2023/24": 254,
+     "2024/25": 201,
+     "2025/26": 130
+    },
+    "sexual_offences": {
+     "2021/22": 55,
+     "2022/23": 67,
+     "2023/24": 50,
+     "2024/25": 47,
+     "2025/26": 56
+    },
+    "vehicle_theft": {
+     "2021/22": 109,
+     "2022/23": 145,
+     "2023/24": 149,
+     "2024/25": 142,
+     "2025/26": 69
+    }
+   },
+   "population": 71900,
+   "station": "Strand"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 6,
+     "2022/23": 2,
+     "2023/24": 6,
+     "2024/25": 5,
+     "2025/26": 3
+    },
+    "burglary_home": {
+     "2021/22": 101,
+     "2022/23": 93,
+     "2023/24": 85,
+     "2024/25": 84,
+     "2025/26": 57
+    },
+    "carjacking": {
+     "2021/22": 11,
+     "2022/23": 7,
+     "2023/24": 3,
+     "2024/25": 4,
+     "2025/26": 4
+    },
+    "contact": {
+     "2021/22": 263,
+     "2022/23": 240,
+     "2023/24": 212,
+     "2024/25": 227,
+     "2025/26": 204
+    },
+    "drugs": {
+     "2021/22": 276,
+     "2022/23": 108,
+     "2023/24": 215,
+     "2024/25": 275,
+     "2025/26": 286
+    },
+    "murder": {
+     "2021/22": 6,
+     "2022/23": 1,
+     "2023/24": 4,
+     "2024/25": 5,
+     "2025/26": 5
+    },
+    "property": {
+     "2021/22": 200,
+     "2022/23": 207,
+     "2023/24": 182,
+     "2024/25": 173,
+     "2025/26": 116
+    },
+    "robbery_aggravated": {
+     "2021/22": 83,
+     "2022/23": 58,
+     "2023/24": 47,
+     "2024/25": 50,
+     "2025/26": 37
+    },
+    "sexual_offences": {
+     "2021/22": 21,
+     "2022/23": 21,
+     "2023/24": 17,
+     "2024/25": 11,
+     "2025/26": 21
+    },
+    "vehicle_theft": {
+     "2021/22": 48,
+     "2022/23": 35,
+     "2023/24": 46,
+     "2024/25": 23,
+     "2025/26": 18
+    }
+   },
+   "population": 40300,
+   "station": "Strandfontein"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 0,
+     "2022/23": 1,
+     "2023/24": 2,
+     "2024/25": 0,
+     "2025/26": 2
+    },
+    "burglary_home": {
+     "2021/22": 1,
+     "2022/23": 0,
+     "2023/24": 3,
+     "2024/25": 1,
+     "2025/26": 1
+    },
+    "carjacking": {
+     "2021/22": 0,
+     "2022/23": 0,
+     "2023/24": 0,
+     "2024/25": 0,
+     "2025/26": 0
+    },
+    "contact": {
+     "2021/22": 36,
+     "2022/23": 45,
+     "2023/24": 60,
+     "2024/25": 44,
+     "2025/26": 40
+    },
+    "drugs": {
+     "2021/22": 86,
+     "2022/23": 38,
+     "2023/24": 5,
+     "2024/25": 7,
+     "2025/26": 6
+    },
+    "murder": {
+     "2021/22": 0,
+     "2022/23": 2,
+     "2023/24": 0,
+     "2024/25": 1,
+     "2025/26": 0
+    },
+    "property": {
+     "2021/22": 29,
+     "2022/23": 44,
+     "2023/24": 36,
+     "2024/25": 28,
+     "2025/26": 32
+    },
+    "robbery_aggravated": {
+     "2021/22": 4,
+     "2022/23": 1,
+     "2023/24": 2,
+     "2024/25": 0,
+     "2025/26": 1
+    },
+    "sexual_offences": {
+     "2021/22": 2,
+     "2022/23": 4,
+     "2023/24": 5,
+     "2024/25": 3,
+     "2025/26": 0
+    },
+    "vehicle_theft": {
+     "2021/22": 3,
+     "2022/23": 2,
+     "2023/24": 8,
+     "2024/25": 3,
+     "2025/26": 3
+    }
+   },
+   "population": null,
+   "station": "Table Bay Harbour"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 17,
+     "2022/23": 27,
+     "2023/24": 29,
+     "2024/25": 31,
+     "2025/26": 32
+    },
+    "burglary_home": {
+     "2021/22": 352,
+     "2022/23": 483,
+     "2023/24": 389,
+     "2024/25": 386,
+     "2025/26": 414
+    },
+    "carjacking": {
+     "2021/22": 13,
+     "2022/23": 9,
+     "2023/24": 18,
+     "2024/25": 5,
+     "2025/26": 9
+    },
+    "contact": {
+     "2021/22": 1040,
+     "2022/23": 1269,
+     "2023/24": 1273,
+     "2024/25": 1079,
+     "2025/26": 1304
+    },
+    "drugs": {
+     "2021/22": 519,
+     "2022/23": 315,
+     "2023/24": 364,
+     "2024/25": 428,
+     "2025/26": 503
+    },
+    "murder": {
+     "2021/22": 21,
+     "2022/23": 25,
+     "2023/24": 38,
+     "2024/25": 24,
+     "2025/26": 39
+    },
+    "property": {
+     "2021/22": 798,
+     "2022/23": 1099,
+     "2023/24": 1028,
+     "2024/25": 949,
+     "2025/26": 973
+    },
+    "robbery_aggravated": {
+     "2021/22": 185,
+     "2022/23": 269,
+     "2023/24": 289,
+     "2024/25": 192,
+     "2025/26": 269
+    },
+    "sexual_offences": {
+     "2021/22": 85,
+     "2022/23": 73,
+     "2023/24": 66,
+     "2024/25": 76,
+     "2025/26": 69
+    },
+    "vehicle_theft": {
+     "2021/22": 85,
+     "2022/23": 95,
+     "2023/24": 97,
+     "2024/25": 67,
+     "2025/26": 65
+    }
+   },
+   "population": 109000,
+   "station": "Table View"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 15,
+     "2022/23": 7,
+     "2023/24": 6,
+     "2024/25": 8,
+     "2025/26": 19
+    },
+    "burglary_home": {
+     "2021/22": 211,
+     "2022/23": 190,
+     "2023/24": 227,
+     "2024/25": 154,
+     "2025/26": 111
+    },
+    "carjacking": {
+     "2021/22": 2,
+     "2022/23": 10,
+     "2023/24": 5,
+     "2024/25": 13,
+     "2025/26": 23
+    },
+    "contact": {
+     "2021/22": 650,
+     "2022/23": 819,
+     "2023/24": 863,
+     "2024/25": 787,
+     "2025/26": 757
+    },
+    "drugs": {
+     "2021/22": 245,
+     "2022/23": 303,
+     "2023/24": 376,
+     "2024/25": 409,
+     "2025/26": 434
+    },
+    "murder": {
+     "2021/22": 13,
+     "2022/23": 4,
+     "2023/24": 6,
+     "2024/25": 11,
+     "2025/26": 11
+    },
+    "property": {
+     "2021/22": 959,
+     "2022/23": 1014,
+     "2023/24": 1023,
+     "2024/25": 840,
+     "2025/26": 910
+    },
+    "robbery_aggravated": {
+     "2021/22": 208,
+     "2022/23": 321,
+     "2023/24": 300,
+     "2024/25": 254,
+     "2025/26": 222
+    },
+    "sexual_offences": {
+     "2021/22": 36,
+     "2022/23": 40,
+     "2023/24": 46,
+     "2024/25": 46,
+     "2025/26": 39
+    },
+    "vehicle_theft": {
+     "2021/22": 133,
+     "2022/23": 161,
+     "2023/24": 191,
+     "2024/25": 112,
+     "2025/26": 170
+    }
+   },
+   "population": 39500,
+   "station": "Woodstock"
+  },
+  {
+   "counts": {
+    "attempted_murder": {
+     "2021/22": 5,
+     "2022/23": 5,
+     "2023/24": 16,
+     "2024/25": 3,
+     "2025/26": 5
+    },
+    "burglary_home": {
+     "2021/22": 172,
+     "2022/23": 191,
+     "2023/24": 233,
+     "2024/25": 115,
+     "2025/26": 93
+    },
+    "carjacking": {
+     "2021/22": 7,
+     "2022/23": 15,
+     "2023/24": 8,
+     "2024/25": 8,
+     "2025/26": 2
+    },
+    "contact": {
+     "2021/22": 467,
+     "2022/23": 546,
+     "2023/24": 616,
+     "2024/25": 523,
+     "2025/26": 443
+    },
+    "drugs": {
+     "2021/22": 512,
+     "2022/23": 602,
+     "2023/24": 533,
+     "2024/25": 1305,
+     "2025/26": 1742
+    },
+    "murder": {
+     "2021/22": 3,
+     "2022/23": 5,
+     "2023/24": 8,
+     "2024/25": 8,
+     "2025/26": 3
+    },
+    "property": {
+     "2021/22": 792,
+     "2022/23": 968,
+     "2023/24": 944,
+     "2024/25": 610,
+     "2025/26": 419
+    },
+    "robbery_aggravated": {
+     "2021/22": 170,
+     "2022/23": 209,
+     "2023/24": 221,
+     "2024/25": 169,
+     "2025/26": 121
+    },
+    "sexual_offences": {
+     "2021/22": 18,
+     "2022/23": 33,
+     "2023/24": 24,
+     "2024/25": 26,
+     "2025/26": 20
+    },
+    "vehicle_theft": {
+     "2021/22": 65,
+     "2022/23": 74,
+     "2023/24": 47,
+     "2024/25": 37,
+     "2025/26": 35
+    }
+   },
+   "population": 35700,
+   "station": "Wynberg"
+  }
+ ],
+ "ward_vintage": 2026,
+ "years": [
+  "2021/22",
+  "2022/23",
+  "2023/24",
+  "2024/25",
+  "2025/26"
+ ]
+}

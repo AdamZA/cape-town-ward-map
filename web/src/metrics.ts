@@ -16,7 +16,10 @@ export type MetricKey =
   | "power_days"
   | "turnout"
   | "winner_share"
-  | "allocation_total";
+  | "allocation_total"
+  | "murder_rate"
+  | "contact_rate"
+  | "burglary_rate";
 
 /** A council term, named by the election that started it. */
 export interface Term {
@@ -86,6 +89,13 @@ export function termElectionWards(d: AppData, t: Term) {
   return d.electionWards.find((e) => e.year === t.year) ?? null;
 }
 
+/** A crime rate for the ward's covering precinct(s); current wards only. */
+const crime = (key: string) => (d: AppData, t: Term) => {
+  const c = d.crime;
+  if (!c || !t.current) return null;
+  return { env: c, field: "rates", values: new Map(c.rows.map((r) => [r.ward_no, r.rates[key] ?? null])), city: null };
+};
+
 const SERVICE = "Service requests";
 const SUPPLY = "Water and electricity";
 
@@ -143,6 +153,27 @@ const DEFS: Record<MetricKey, Def> = {
       const e = termElectionWards(d, t);
       return e && { env: e, field: "parties", values: new Map(e.rows.map((r) => [r.ward_no, r.parties[0]?.share ?? null])), city: null };
     },
+  },
+  murder_rate: {
+    topic: "Crime",
+    label: "Murder per 100,000 (police precinct)",
+    unit: "per 100,000",
+    reading: "Murders reported at the police station(s) covering the ward, per 100,000 residents of those precincts, latest financial year. Not crimes inside the ward itself.",
+    build: crime("murder"),
+  },
+  contact_rate: {
+    topic: "Crime",
+    label: "Violent crime per 100,000 (police precinct)",
+    unit: "per 100,000",
+    reading: "Contact crime (murder, assault, sexual offences, robbery) reported in the covering precinct(s), per 100,000 residents. Busy centres show high rates because visitors aren't counted as residents.",
+    build: crime("contact"),
+  },
+  burglary_rate: {
+    topic: "Crime",
+    label: "Home burglary per 100,000 (police precinct)",
+    unit: "per 100,000",
+    reading: "Residential burglaries reported in the covering precinct(s), per 100,000 residents, latest financial year.",
+    build: crime("burglary_home"),
   },
   allocation_total: {
     topic: "Ward budgets",

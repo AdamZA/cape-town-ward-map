@@ -88,6 +88,12 @@
   },
   {
    "budget_year": null,
+   "dataset": "crime",
+   "file": "crime-2026.json",
+   "ward_vintage": 2026
+  },
+  {
+   "budget_year": null,
    "dataset": "parties",
    "file": "parties.json",
    "ward_vintage": 2026
