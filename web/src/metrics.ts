@@ -146,8 +146,9 @@ const DEFS: Record<MetricKey, Def> = {
   },
   allocation_total: {
     topic: "Ward budgets",
+    label: "Ward allocation budget",
     unit: "R",
-    reading: "Rand budgeted for the ward's allocation projects that year. Every ward gets the same amount; differences are rounding, later changes and unspent amounts moved.",
+    reading: "Rand budgeted for projects listed under the ward in that year's budget annexure. Projects shared by several wards are not included.",
     build: (d, t) => {
       const b = d.allocations.find((a) => a.ward_vintage === t.vintage);
       if (!b) return null;

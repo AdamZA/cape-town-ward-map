@@ -289,10 +289,10 @@ strong { font-weight: 650; }
 .place-popup .source { margin: 4px 0 0; color: #6b717a; }
 
 /* Council-term timeline: a full-width row in the header, one segment per term. */
-.timeline { flex-basis: 100%; display: flex; align-items: center; gap: 12px; border-top: 1px solid var(--border); padding-top: 8px; }
+.timeline { flex-basis: 100%; min-width: 0; max-width: 100%; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; border-top: 1px solid var(--border); padding-top: 8px; }
 .timeline-label { font-size: 12px; font-weight: 650; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink-3); white-space: nowrap; }
 .timeline-track { list-style: none; margin: 0; padding: 0; display: flex; gap: 0; flex: 1; min-width: 0; overflow-x: auto; }
-.timeline-track li { flex: 1 1 0; min-width: 11rem; }
+.timeline-track li { flex: 1 1 0; min-width: 9.5rem; }
 .term {
   width: 100%; display: flex; flex-direction: column; align-items: flex-start; gap: 1px;
   padding: 6px 12px; background: var(--surface-2); color: var(--ink);
@@ -308,6 +308,7 @@ strong { font-weight: 650; }
 .term-note { font-weight: 600; color: var(--ink); }
 
 @media (max-width: 760px) {
+  .timeline-track { flex-basis: 100%; }
   .layout, .layout.has-panel { grid-template-columns: 1fr; grid-template-rows: auto minmax(55dvh, 1fr) auto; height: auto; min-height: 100dvh; }
   .brand p { display: none; }
   .head-tools { width: 100%; }
