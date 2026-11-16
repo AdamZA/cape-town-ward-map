@@ -1,0 +1,1222 @@
+{
+ "as_of": "2026-11-16",
+ "dataset": "wards",
+ "fields": {
+  "area_km2": {
+   "description": null,
+   "label": "Area",
+   "method": null,
+   "source": "boundaries",
+   "unit": "km²"
+  },
+  "population": {
+   "description": "Modelled estimate, rounded to the nearest 100. Not a census count.",
+   "label": "Estimated population",
+   "method": "population",
+   "source": "population",
+   "unit": "people"
+  },
+  "subcouncil": {
+   "description": "Inferred from the budget annexure's ward list (see gaps).",
+   "label": "Subcouncil",
+   "method": "subcouncil",
+   "source": "subcouncils",
+   "unit": null
+  }
+ },
+ "gaps": [
+  {
+   "code": "councillors_missing",
+   "message": "Ward councillors elected in November 2026 are not yet included: there is no stable machine-readable source yet. They will be added from the City's councillor listing or the IEC's results.",
+   "ward_no": null
+  },
+  {
+   "code": "subcouncil_predates_delimitation",
+   "message": "Subcouncils are taken from the 2024/25 budget's ward list, which predates the November 2026 ward changes. Each ward is shown in the subcouncil of the old ward covering most of its area; the City may since have reassigned wards.",
+   "ward_no": null
+  }
+ ],
+ "period": null,
+ "rows": [
+  {
+   "area_km2": 19.69,
+   "councillor": null,
+   "flags": [],
+   "population": 33300,
+   "subcouncil": 3,
+   "subcouncil_share": 1.0,
+   "ward_no": 1
+  },
+  {
+   "area_km2": 9.4,
+   "councillor": null,
+   "flags": [],
+   "population": 45900,
+   "subcouncil": 6,
+   "subcouncil_share": 1.0,
+   "ward_no": 2
+  },
+  {
+   "area_km2": 10.9,
+   "councillor": null,
+   "flags": [],
+   "population": 36000,
+   "subcouncil": 6,
+   "subcouncil_share": 1.0,
+   "ward_no": 3
+  },
+  {
+   "area_km2": 12.76,
+   "councillor": null,
+   "flags": [],
+   "population": 47100,
+   "subcouncil": 3,
+   "subcouncil_share": 0.991,
+   "ward_no": 4
+  },
+  {
+   "area_km2": 8.86,
+   "councillor": null,
+   "flags": [],
+   "population": 35000,
+   "subcouncil": 3,
+   "subcouncil_share": 1.0,
+   "ward_no": 5
+  },
+  {
+   "area_km2": 6.63,
+   "councillor": null,
+   "flags": [],
+   "population": 47200,
+   "subcouncil": 2,
+   "subcouncil_share": 0.955,
+   "ward_no": 6
+  },
+  {
+   "area_km2": 8.44,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 52200,
+   "subcouncil": 2,
+   "subcouncil_share": 0.7,
+   "ward_no": 7
+  },
+  {
+   "area_km2": 8.67,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 27900,
+   "subcouncil": 2,
+   "subcouncil_share": 0.573,
+   "ward_no": 8
+  },
+  {
+   "area_km2": 11.13,
+   "councillor": null,
+   "flags": [],
+   "population": 45200,
+   "subcouncil": 6,
+   "subcouncil_share": 1.0,
+   "ward_no": 9
+  },
+  {
+   "area_km2": 13.3,
+   "councillor": null,
+   "flags": [],
+   "population": 46000,
+   "subcouncil": 6,
+   "subcouncil_share": 1.0,
+   "ward_no": 10
+  },
+  {
+   "area_km2": 16.2,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 35100,
+   "subcouncil": 2,
+   "subcouncil_share": 0.582,
+   "ward_no": 11
+  },
+  {
+   "area_km2": 4.79,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 70800,
+   "subcouncil": 5,
+   "subcouncil_share": 0.753,
+   "ward_no": 12
+  },
+  {
+   "area_km2": 215.64,
+   "councillor": null,
+   "flags": [],
+   "population": 19800,
+   "subcouncil": 7,
+   "subcouncil_share": 0.952,
+   "ward_no": 13
+  },
+  {
+   "area_km2": 33.71,
+   "councillor": null,
+   "flags": [],
+   "population": 46900,
+   "subcouncil": 21,
+   "subcouncil_share": 0.945,
+   "ward_no": 14
+  },
+  {
+   "area_km2": 52.07,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 24700,
+   "subcouncil": 8,
+   "subcouncil_share": 0.771,
+   "ward_no": 15
+  },
+  {
+   "area_km2": 6.92,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 68000,
+   "subcouncil": 21,
+   "subcouncil_share": 0.713,
+   "ward_no": 16
+  },
+  {
+   "area_km2": 8.11,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 49700,
+   "subcouncil": 21,
+   "subcouncil_share": 0.663,
+   "ward_no": 17
+  },
+  {
+   "area_km2": 1.99,
+   "councillor": null,
+   "flags": [],
+   "population": 36900,
+   "subcouncil": 9,
+   "subcouncil_share": 1.0,
+   "ward_no": 18
+  },
+  {
+   "area_km2": 10.57,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 61900,
+   "subcouncil": 21,
+   "subcouncil_share": 0.627,
+   "ward_no": 19
+  },
+  {
+   "area_km2": 3.84,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 59400,
+   "subcouncil": 5,
+   "subcouncil_share": 0.643,
+   "ward_no": 20
+  },
+  {
+   "area_km2": 11.06,
+   "councillor": null,
+   "flags": [],
+   "population": 31400,
+   "subcouncil": 7,
+   "subcouncil_share": 1.0,
+   "ward_no": 21
+  },
+  {
+   "area_km2": 16.9,
+   "councillor": null,
+   "flags": [],
+   "population": 42100,
+   "subcouncil": 5,
+   "subcouncil_share": 0.951,
+   "ward_no": 22
+  },
+  {
+   "area_km2": 115.05,
+   "councillor": null,
+   "flags": [],
+   "population": 25000,
+   "subcouncil": 1,
+   "subcouncil_share": 0.993,
+   "ward_no": 23
+  },
+  {
+   "area_km2": 4.43,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 64400,
+   "subcouncil": 5,
+   "subcouncil_share": 0.818,
+   "ward_no": 24
+  },
+  {
+   "area_km2": 3.62,
+   "councillor": null,
+   "flags": [],
+   "population": 62100,
+   "subcouncil": 4,
+   "subcouncil_share": 1.0,
+   "ward_no": 25
+  },
+  {
+   "area_km2": 7.19,
+   "councillor": null,
+   "flags": [],
+   "population": 48400,
+   "subcouncil": 4,
+   "subcouncil_share": 0.924,
+   "ward_no": 26
+  },
+  {
+   "area_km2": 9.52,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 37600,
+   "subcouncil": 4,
+   "subcouncil_share": 0.716,
+   "ward_no": 27
+  },
+  {
+   "area_km2": 9.78,
+   "councillor": null,
+   "flags": [],
+   "population": 62700,
+   "subcouncil": 4,
+   "subcouncil_share": 0.978,
+   "ward_no": 28
+  },
+  {
+   "area_km2": 173.11,
+   "councillor": null,
+   "flags": [],
+   "population": 53100,
+   "subcouncil": 1,
+   "subcouncil_share": 0.991,
+   "ward_no": 29
+  },
+  {
+   "area_km2": 4.26,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 57700,
+   "subcouncil": 14,
+   "subcouncil_share": 0.881,
+   "ward_no": 30
+  },
+  {
+   "area_km2": 6.66,
+   "councillor": null,
+   "flags": [],
+   "population": 58800,
+   "subcouncil": 15,
+   "subcouncil_share": 1.0,
+   "ward_no": 31
+  },
+  {
+   "area_km2": 199.07,
+   "councillor": null,
+   "flags": [],
+   "population": 45700,
+   "subcouncil": 1,
+   "subcouncil_share": 0.998,
+   "ward_no": 32
+  },
+  {
+   "area_km2": 1.96,
+   "councillor": null,
+   "flags": [],
+   "population": 55600,
+   "subcouncil": 17,
+   "subcouncil_share": 0.932,
+   "ward_no": 33
+  },
+  {
+   "area_km2": 1.58,
+   "councillor": null,
+   "flags": [],
+   "population": 47900,
+   "subcouncil": 13,
+   "subcouncil_share": 0.992,
+   "ward_no": 34
+  },
+  {
+   "area_km2": 4.52,
+   "councillor": null,
+   "flags": [],
+   "population": 54200,
+   "subcouncil": 12,
+   "subcouncil_share": 1.0,
+   "ward_no": 35
+  },
+  {
+   "area_km2": 2.63,
+   "councillor": null,
+   "flags": [],
+   "population": 49400,
+   "subcouncil": 13,
+   "subcouncil_share": 1.0,
+   "ward_no": 36
+  },
+  {
+   "area_km2": 1.67,
+   "councillor": null,
+   "flags": [],
+   "population": 40800,
+   "subcouncil": 13,
+   "subcouncil_share": 1.0,
+   "ward_no": 37
+  },
+  {
+   "area_km2": 1.76,
+   "councillor": null,
+   "flags": [],
+   "population": 44500,
+   "subcouncil": 13,
+   "subcouncil_share": 1.0,
+   "ward_no": 38
+  },
+  {
+   "area_km2": 2.22,
+   "councillor": null,
+   "flags": [],
+   "population": 37900,
+   "subcouncil": 13,
+   "subcouncil_share": 1.0,
+   "ward_no": 39
+  },
+  {
+   "area_km2": 1.76,
+   "councillor": null,
+   "flags": [],
+   "population": 45600,
+   "subcouncil": 14,
+   "subcouncil_share": 1.0,
+   "ward_no": 40
+  },
+  {
+   "area_km2": 1.65,
+   "councillor": null,
+   "flags": [],
+   "population": 39200,
+   "subcouncil": 13,
+   "subcouncil_share": 0.902,
+   "ward_no": 41
+  },
+  {
+   "area_km2": 3.32,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 51800,
+   "subcouncil": 4,
+   "subcouncil_share": 0.877,
+   "ward_no": 42
+  },
+  {
+   "area_km2": 46.39,
+   "councillor": null,
+   "flags": [],
+   "population": 55300,
+   "subcouncil": 17,
+   "subcouncil_share": 0.993,
+   "ward_no": 43
+  },
+  {
+   "area_km2": 3.3,
+   "councillor": null,
+   "flags": [],
+   "population": 47500,
+   "subcouncil": 14,
+   "subcouncil_share": 0.944,
+   "ward_no": 44
+  },
+  {
+   "area_km2": 9.34,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 60500,
+   "subcouncil": 19,
+   "subcouncil_share": 0.672,
+   "ward_no": 45
+  },
+  {
+   "area_km2": 5.15,
+   "councillor": null,
+   "flags": [],
+   "population": 47300,
+   "subcouncil": 14,
+   "subcouncil_share": 0.976,
+   "ward_no": 46
+  },
+  {
+   "area_km2": 2.92,
+   "councillor": null,
+   "flags": [],
+   "population": 54400,
+   "subcouncil": 11,
+   "subcouncil_share": 1.0,
+   "ward_no": 47
+  },
+  {
+   "area_km2": 5.23,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 42200,
+   "subcouncil": 11,
+   "subcouncil_share": 0.804,
+   "ward_no": 48
+  },
+  {
+   "area_km2": 5.46,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 45800,
+   "subcouncil": 14,
+   "subcouncil_share": 0.847,
+   "ward_no": 49
+  },
+  {
+   "area_km2": 2.61,
+   "councillor": null,
+   "flags": [],
+   "population": 50000,
+   "subcouncil": 15,
+   "subcouncil_share": 1.0,
+   "ward_no": 50
+  },
+  {
+   "area_km2": 2.5,
+   "councillor": null,
+   "flags": [],
+   "population": 36600,
+   "subcouncil": 15,
+   "subcouncil_share": 1.0,
+   "ward_no": 51
+  },
+  {
+   "area_km2": 1.13,
+   "councillor": null,
+   "flags": [],
+   "population": 38500,
+   "subcouncil": 15,
+   "subcouncil_share": 1.0,
+   "ward_no": 52
+  },
+  {
+   "area_km2": 14.82,
+   "councillor": null,
+   "flags": [],
+   "population": 35700,
+   "subcouncil": 15,
+   "subcouncil_share": 1.0,
+   "ward_no": 53
+  },
+  {
+   "area_km2": 35.41,
+   "councillor": null,
+   "flags": [],
+   "population": 31500,
+   "subcouncil": 16,
+   "subcouncil_share": 0.989,
+   "ward_no": 54
+  },
+  {
+   "area_km2": 14.54,
+   "councillor": null,
+   "flags": [],
+   "population": 44400,
+   "subcouncil": 16,
+   "subcouncil_share": 0.987,
+   "ward_no": 55
+  },
+  {
+   "area_km2": 9.16,
+   "councillor": null,
+   "flags": [],
+   "population": 47000,
+   "subcouncil": 15,
+   "subcouncil_share": 1.0,
+   "ward_no": 56
+  },
+  {
+   "area_km2": 8.92,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 25100,
+   "subcouncil": 11,
+   "subcouncil_share": 0.373,
+   "ward_no": 57
+  },
+  {
+   "area_km2": 8.06,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 34500,
+   "subcouncil": 11,
+   "subcouncil_share": 0.863,
+   "ward_no": 58
+  },
+  {
+   "area_km2": 6.26,
+   "councillor": null,
+   "flags": [],
+   "population": 20600,
+   "subcouncil": 11,
+   "subcouncil_share": 0.917,
+   "ward_no": 59
+  },
+  {
+   "area_km2": 7.8,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 45500,
+   "subcouncil": 11,
+   "subcouncil_share": 0.862,
+   "ward_no": 60
+  },
+  {
+   "area_km2": 166.61,
+   "councillor": null,
+   "flags": [],
+   "population": 41400,
+   "subcouncil": 19,
+   "subcouncil_share": 0.995,
+   "ward_no": 61
+  },
+  {
+   "area_km2": 35.39,
+   "councillor": null,
+   "flags": [],
+   "population": 25100,
+   "subcouncil": 20,
+   "subcouncil_share": 1.0,
+   "ward_no": 62
+  },
+  {
+   "area_km2": 8.68,
+   "councillor": null,
+   "flags": [],
+   "population": 41600,
+   "subcouncil": 20,
+   "subcouncil_share": 0.951,
+   "ward_no": 63
+  },
+  {
+   "area_km2": 16.26,
+   "councillor": null,
+   "flags": [],
+   "population": 25500,
+   "subcouncil": 19,
+   "subcouncil_share": 0.993,
+   "ward_no": 64
+  },
+  {
+   "area_km2": 4.28,
+   "councillor": null,
+   "flags": [],
+   "population": 49200,
+   "subcouncil": 18,
+   "subcouncil_share": 1.0,
+   "ward_no": 65
+  },
+  {
+   "area_km2": 8.05,
+   "councillor": null,
+   "flags": [],
+   "population": 45300,
+   "subcouncil": 18,
+   "subcouncil_share": 1.0,
+   "ward_no": 66
+  },
+  {
+   "area_km2": 20.57,
+   "councillor": null,
+   "flags": [],
+   "population": 37600,
+   "subcouncil": 18,
+   "subcouncil_share": 0.989,
+   "ward_no": 67
+  },
+  {
+   "area_km2": 3.38,
+   "councillor": null,
+   "flags": [],
+   "population": 37200,
+   "subcouncil": 18,
+   "subcouncil_share": 1.0,
+   "ward_no": 68
+  },
+  {
+   "area_km2": 41.71,
+   "councillor": null,
+   "flags": [],
+   "population": 49700,
+   "subcouncil": 19,
+   "subcouncil_share": 0.975,
+   "ward_no": 69
+  },
+  {
+   "area_km2": 28.5,
+   "councillor": null,
+   "flags": [],
+   "population": 36000,
+   "subcouncil": 7,
+   "subcouncil_share": 1.0,
+   "ward_no": 70
+  },
+  {
+   "area_km2": 56.03,
+   "councillor": null,
+   "flags": [],
+   "population": 34100,
+   "subcouncil": 20,
+   "subcouncil_share": 1.0,
+   "ward_no": 71
+  },
+  {
+   "area_km2": 7.04,
+   "councillor": null,
+   "flags": [],
+   "population": 37600,
+   "subcouncil": 18,
+   "subcouncil_share": 0.918,
+   "ward_no": 72
+  },
+  {
+   "area_km2": 8.64,
+   "councillor": null,
+   "flags": [],
+   "population": 27400,
+   "subcouncil": 20,
+   "subcouncil_share": 1.0,
+   "ward_no": 73
+  },
+  {
+   "area_km2": 32.69,
+   "councillor": null,
+   "flags": [],
+   "population": 47600,
+   "subcouncil": 20,
+   "subcouncil_share": 0.988,
+   "ward_no": 74
+  },
+  {
+   "area_km2": 6.26,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 62000,
+   "subcouncil": 17,
+   "subcouncil_share": 0.5,
+   "ward_no": 75
+  },
+  {
+   "area_km2": 5.69,
+   "councillor": null,
+   "flags": [],
+   "population": 51100,
+   "subcouncil": 12,
+   "subcouncil_share": 1.0,
+   "ward_no": 76
+  },
+  {
+   "area_km2": 18.95,
+   "councillor": null,
+   "flags": [],
+   "population": 32000,
+   "subcouncil": 16,
+   "subcouncil_share": 0.977,
+   "ward_no": 77
+  },
+  {
+   "area_km2": 3.48,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 47600,
+   "subcouncil": 17,
+   "subcouncil_share": 0.662,
+   "ward_no": 78
+  },
+  {
+   "area_km2": 4.72,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 51000,
+   "subcouncil": 17,
+   "subcouncil_share": 0.482,
+   "ward_no": 79
+  },
+  {
+   "area_km2": 1.77,
+   "councillor": null,
+   "flags": [],
+   "population": 52800,
+   "subcouncil": 13,
+   "subcouncil_share": 1.0,
+   "ward_no": 80
+  },
+  {
+   "area_km2": 3.8,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 48900,
+   "subcouncil": 17,
+   "subcouncil_share": 0.383,
+   "ward_no": 81
+  },
+  {
+   "area_km2": 5.77,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 75900,
+   "subcouncil": 12,
+   "subcouncil_share": 0.597,
+   "ward_no": 82
+  },
+  {
+   "area_km2": 17.48,
+   "councillor": null,
+   "flags": [],
+   "population": 26700,
+   "subcouncil": 8,
+   "subcouncil_share": 0.999,
+   "ward_no": 83
+  },
+  {
+   "area_km2": 103.02,
+   "councillor": null,
+   "flags": [],
+   "population": 37300,
+   "subcouncil": 8,
+   "subcouncil_share": 0.945,
+   "ward_no": 84
+  },
+  {
+   "area_km2": 5.03,
+   "councillor": null,
+   "flags": [],
+   "population": 61500,
+   "subcouncil": 8,
+   "subcouncil_share": 0.983,
+   "ward_no": 85
+  },
+  {
+   "area_km2": 2.51,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 52500,
+   "subcouncil": 8,
+   "subcouncil_share": 0.698,
+   "ward_no": 86
+  },
+  {
+   "area_km2": 1.24,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 45700,
+   "subcouncil": 9,
+   "subcouncil_share": 0.843,
+   "ward_no": 87
+  },
+  {
+   "area_km2": 2.63,
+   "councillor": null,
+   "flags": [],
+   "population": 61400,
+   "subcouncil": 17,
+   "subcouncil_share": 1.0,
+   "ward_no": 88
+  },
+  {
+   "area_km2": 1.31,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 54800,
+   "subcouncil": 9,
+   "subcouncil_share": 0.607,
+   "ward_no": 89
+  },
+  {
+   "area_km2": 17.73,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 18700,
+   "subcouncil": 21,
+   "subcouncil_share": 0.506,
+   "ward_no": 90
+  },
+  {
+   "area_km2": 1.16,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 56900,
+   "subcouncil": 9,
+   "subcouncil_share": 0.663,
+   "ward_no": 91
+  },
+  {
+   "area_km2": 11.18,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 42900,
+   "subcouncil": 16,
+   "subcouncil_share": 0.674,
+   "ward_no": 92
+  },
+  {
+   "area_km2": 4.54,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 56800,
+   "subcouncil": 9,
+   "subcouncil_share": 0.857,
+   "ward_no": 93
+  },
+  {
+   "area_km2": 4.11,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 47100,
+   "subcouncil": 10,
+   "subcouncil_share": 0.745,
+   "ward_no": 94
+  },
+  {
+   "area_km2": 7.54,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 49800,
+   "subcouncil": 10,
+   "subcouncil_share": 0.892,
+   "ward_no": 95
+  },
+  {
+   "area_km2": 4.19,
+   "councillor": null,
+   "flags": [],
+   "population": 52700,
+   "subcouncil": 10,
+   "subcouncil_share": 1.0,
+   "ward_no": 96
+  },
+  {
+   "area_km2": 3.32,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 56900,
+   "subcouncil": 10,
+   "subcouncil_share": 0.598,
+   "ward_no": 97
+  },
+  {
+   "area_km2": 2.9,
+   "councillor": null,
+   "flags": [],
+   "population": 48900,
+   "subcouncil": 10,
+   "subcouncil_share": 1.0,
+   "ward_no": 98
+  },
+  {
+   "area_km2": 11.6,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 53100,
+   "subcouncil": 10,
+   "subcouncil_share": 0.501,
+   "ward_no": 99
+  },
+  {
+   "area_km2": 112.64,
+   "councillor": null,
+   "flags": [],
+   "population": 51000,
+   "subcouncil": 8,
+   "subcouncil_share": 0.994,
+   "ward_no": 100
+  },
+  {
+   "area_km2": 4.71,
+   "councillor": null,
+   "flags": [],
+   "population": 56000,
+   "subcouncil": 2,
+   "subcouncil_share": 0.937,
+   "ward_no": 101
+  },
+  {
+   "area_km2": 44.18,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 28700,
+   "subcouncil": 2,
+   "subcouncil_share": 0.779,
+   "ward_no": 102
+  },
+  {
+   "area_km2": 9.24,
+   "councillor": null,
+   "flags": [],
+   "population": 33000,
+   "subcouncil": 7,
+   "subcouncil_share": 0.925,
+   "ward_no": 103
+  },
+  {
+   "area_km2": 4.8,
+   "councillor": null,
+   "flags": [],
+   "population": 50600,
+   "subcouncil": 3,
+   "subcouncil_share": 1.0,
+   "ward_no": 104
+  },
+  {
+   "area_km2": 228.26,
+   "councillor": null,
+   "flags": [],
+   "population": 38700,
+   "subcouncil": 7,
+   "subcouncil_share": 1.0,
+   "ward_no": 105
+  },
+  {
+   "area_km2": 5.85,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 74000,
+   "subcouncil": 5,
+   "subcouncil_share": 0.472,
+   "ward_no": 106
+  },
+  {
+   "area_km2": 6.12,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 40400,
+   "subcouncil": 1,
+   "subcouncil_share": 0.771,
+   "ward_no": 107
+  },
+  {
+   "area_km2": 8.31,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 50500,
+   "subcouncil": 9,
+   "subcouncil_share": 0.53,
+   "ward_no": 108
+  },
+  {
+   "area_km2": 20.57,
+   "councillor": null,
+   "flags": [],
+   "population": 45200,
+   "subcouncil": 21,
+   "subcouncil_share": 0.998,
+   "ward_no": 109
+  },
+  {
+   "area_km2": 2.83,
+   "councillor": null,
+   "flags": [],
+   "population": 39600,
+   "subcouncil": 18,
+   "subcouncil_share": 1.0,
+   "ward_no": 110
+  },
+  {
+   "area_km2": 8.31,
+   "councillor": null,
+   "flags": [],
+   "population": 48700,
+   "subcouncil": 2,
+   "subcouncil_share": 1.0,
+   "ward_no": 111
+  },
+  {
+   "area_km2": 11.58,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 27300,
+   "subcouncil": 7,
+   "subcouncil_share": 0.703,
+   "ward_no": 112
+  },
+  {
+   "area_km2": 16.53,
+   "councillor": null,
+   "flags": [],
+   "population": 30400,
+   "subcouncil": 3,
+   "subcouncil_share": 0.974,
+   "ward_no": 113
+  },
+  {
+   "area_km2": 2.84,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 58700,
+   "subcouncil": 21,
+   "subcouncil_share": 0.677,
+   "ward_no": 114
+  },
+  {
+   "area_km2": 10.86,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 29400,
+   "subcouncil": 16,
+   "subcouncil_share": 0.756,
+   "ward_no": 115
+  },
+  {
+   "area_km2": 2.85,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 66500,
+   "subcouncil": 12,
+   "subcouncil_share": 0.657,
+   "ward_no": 116
+  },
+  {
+   "area_km2": 10.46,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 22500,
+   "subcouncil": 1,
+   "subcouncil_share": 0.695,
+   "ward_no": 117
+  },
+  {
+   "area_km2": 15.16,
+   "councillor": null,
+   "flags": [
+    "subcouncil_split"
+   ],
+   "population": 39800,
+   "subcouncil": 9,
+   "subcouncil_share": 0.534,
+   "ward_no": 118
+  }
+ ],
+ "schema_version": 1,
+ "sources": {
+  "boundaries": {
+   "licence": "City of Cape Town Open Data Licence",
+   "notes": "Layer metadata still describes 2016 wards, but every feature has WARD_YEAR=2026 and there are 118 wards. Cross-checked against the Municipal Demarcation Board 2026 layer: per-ward intersection-over-union min 0.9746.",
+   "publisher": "City of Cape Town",
+   "retrieved_at": "2026-11-16",
+   "title": "Wards (2026 delimitation)",
+   "url": "https://citymaps.capetown.gov.za/agsext/rest/services/Theme_Based/ODP_SPLIT_5/FeatureServer/6"
+  },
+  "population": {
+   "licence": "CC BY 4.0 (GHSL); City of Cape Town Open Data Licence",
+   "notes": "Schiavina M., Freire S., Carioli A., MacManus K. (2023): GHS-POP R2023A - GHS population grid multitemporal (1975-2030). European Commission, Joint Research Centre (JRC). doi:10.2905/2FF68A52-5B5B-4A22-8F40-C41DA8332CFE City total from https://services6.arcgis.com/nyYfO9SxHU2ChQd9/arcgis/rest/services/Population_Estimates_2026_(Suburb_Level)/FeatureServer/0.",
+   "publisher": "Derived: EU JRC GHS-POP 2025 grid, scaled to City of Cape Town 2025 estimate",
+   "retrieved_at": "2026-11-16",
+   "title": "Modelled ward population (2025)",
+   "url": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2025_GLOBE_R2023A_4326_3ss/V1-0/tiles/GHS_POP_E2025_GLOBE_R2023A_4326_3ss_V1_0_R13_C20.zip"
+  },
+  "subcouncils": {
+   "licence": "Public budget document",
+   "notes": "City document server unreachable; retrieved from the Internet Archive's copy of the same URL (checksum recorded).",
+   "publisher": "City of Cape Town",
+   "retrieved_at": "2026-11-16",
+   "title": "Annexure 25: Operating- and capital ward allocation projects supported by Subcouncils, 2024/25 Budget (May 2024)",
+   "url": "https://resource.capetown.gov.za/documentcentre/Documents/Financial%20documents/Budget2425_Ann25_Oper-capitalwardallocationprojects.pdf"
+  }
+ },
+ "ward_vintage": 2026
+}

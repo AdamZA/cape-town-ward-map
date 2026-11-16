@@ -1,0 +1,34 @@
+name: Annual budget reminder
+
+# The City adopts its budget in late May. A new ward-allocation annexure needs a human to pin
+# the PDF and check the layout, so this opens a checklist issue rather than automating it.
+
+on:
+  schedule:
+    - cron: "0 6 15 6 *" # 15 June
+  workflow_dispatch:
+
+permissions:
+  issues: write
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          y=$(date -u +%Y); n=$((y + 1))
+          gh issue create -R "${{ github.repository }}" \
+            --title "Add the ${y}/${n: -2} ward allocation annexure" \
+            --body "$(cat <<EOF
+          The ${y}/${n: -2} budget should now be adopted. To add its ward allocation projects:
+
+          - [ ] Find the annexure on resource.capetown.gov.za (search \"ward allocation projects\" in the budget annexures).
+          - [ ] Copy \`sources/annexures/<previous>.toml\` to \`sources/annexures/${y}-${n: -2}.toml\`; update url, title, published, years, ward_vintage (2026 wards from this budget on).
+          - [ ] \`uv run wardmap pin allocations --year ${y}-${n: -2}\` (or place the PDF by hand and add \`--local\`).
+          - [ ] \`uv run wardmap annexure-inspect sources/annexures/${y}-${n: -2}.pdf\` if parsing fails; a new layout gets a new module.
+          - [ ] \`uv run wardmap build && uv run wardmap check\`; every printed total must match.
+          - [ ] Open a PR.
+          EOF
+          )"

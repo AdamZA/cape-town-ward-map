@@ -1,0 +1,139 @@
+# Methodology
+
+How every figure on the map is produced, and what it can and can't tell you. The aim is to show
+public data neutrally: no rankings, no judgements, sources beside every number, and gaps stated
+plainly.
+
+## Wards
+
+The map shows the **118 wards of the 2026 delimitation**, which took effect after the
+November 2026 local government elections. Boundaries come from the City of Cape Town's open data
+service. The layer's description text still says "2016 wards", but every feature is tagged
+`WARD_YEAR = 2026`. Before using it we check that there are exactly 118 wards and compare each
+one with the Municipal Demarcation Board's 2026 ward layer; the lowest per-ward
+intersection-over-union was 0.975.
+
+Older datasets use the **2021 delimitation (116 wards)**, taken from the Municipal Demarcation
+Board. Ward numbers do not mean the same place across the two.
+
+## Crosswalk
+
+To relate 2021 wards to 2026 wards we overlay the two boundary sets and record, for each pair
+that overlaps, the share of each ward's area in the overlap. The crosswalk is used to:
+
+- list the budget projects of the older wards that overlap a current ward (projects are never
+  split or reassigned);
+- infer subcouncils (see below).
+
+The 2021 and 2026 boundaries come from different publishers and differ slightly at the edge of the
+metro. Where more than 2% of a 2026 ward lies outside every 2021 ward, this is recorded as a gap.
+
+## Subcouncil
+
+There is no published ward-to-subcouncil list for the 2026 wards yet. The City's subcouncil map
+layer ("as at September 2024") has only 20 of the 21 subcouncils, so we don't use it. Instead, the
+latest budget annexure lists every ward under its subcouncil. Each 2026 ward is shown in the
+subcouncil of the 2021 ward covering most of its area. Wards formed from several older wards are
+flagged, and the City may have reassigned wards since.
+
+## Population
+
+Stats SA has not released Census 2022 results at ward level. The City publishes modelled 2025
+population estimates for about 190 named areas, but without boundaries. So ward population is
+**modelled**:
+
+1. Take the GHSL GHS-POP 2025 population grid (European Commission JRC, about 100 m cells,
+   CC BY 4.0).
+2. Assign each cell to the ward containing its centre and add them up.
+3. Scale every ward by the same factor (about 1.035) so the metro total matches the City's 2025
+   estimate (5.32 million).
+
+Figures are rounded to the nearest 100 and always labelled as estimates. They are good enough to
+put request counts on a per-resident basis. They are not good enough to compare wards whose
+populations differ by a few percent.
+
+## Service requests
+
+Source: the City's *Service Requests Jan 2023 to Present* open dataset: every service request
+(C3 notification) logged with the City, with its creation, last-change and completion dates.
+
+We keep a local mirror of the full table, about 4.5 million requests, in SQLite:
+
+- **Bootstrap:** from the open-data hub's bulk CSV export.
+- **Monthly updates:** fetch only rows changed since the last update, with a 7-day overlap.
+- **Reconciliation:** after each update, the number of requests per creation year (and month,
+  where they differ) is compared with the live dataset. Missing months are re-fetched. Any other
+  mismatch stops the update for a person to look at.
+- **Duplicates:** the City's table contains some exact duplicate rows (same notification number).
+  Each notification is counted once.
+
+Each request is placed in a 2026 ward **by its coordinates**. The table's own `Ward` field uses
+the previous ward boundaries, so it is not used.
+
+**Cohort.** Figures cover requests *created* during a 12-month window that ends 90 days before
+the date of the data. Every request in it has therefore had at least 90 days to be resolved.
+
+**Requests per 1,000 residents** = requests in the cohort ÷ modelled ward population × 1,000.
+This reflects how readily people report problems as well as how many problems there are, and
+it should not be read as a measure of performance.
+
+## Resolution time
+
+- **Resolved within 30 days**: share of cohort requests with a completion date no more than 30
+  days after creation. This is the default map colour because it varies meaningfully between
+  wards.
+- **Median days to resolve**: half of the ward's requests were resolved within this many days.
+  Requests with no completion date count as *not yet resolved*; they are not dropped, which
+  would flatter wards with large backlogs. If fewer than half have a completion date, the median
+  is shown as "more than 90 days". Dates are recorded to the day, so most wards fall between 1
+  and 3 days.
+- **Days to resolve 80% of requests**: the same calculation for the 80th percentile.
+- **No completion date recorded**: share of cohort requests with no completion date. These may be
+  open, or closed without a date being recorded; the data doesn't say which.
+
+Wards with fewer than 30 located requests in the cohort show "Too few requests to report".
+
+Wards differ in the *mix* of requests (an electricity outage and a missed refuse collection are
+resolved very differently), so differences between wards are not necessarily differences in
+service.
+
+## Location coverage
+
+Roughly a third of requests have no usable coordinates (missing, `0,0`, or outside the metro), so
+they can't be placed in a ward. They are concentrated in particular request types and areas. For
+each ward we estimate the share of its requests that *could* be placed:
+
+1. Unlocated requests still carry a suburb name.
+2. Each suburb's unlocated requests are attributed to wards in the same proportions as that
+   suburb's located requests.
+3. Coverage = located ÷ (located + attributed unlocated).
+
+Wards under 60% coverage are flagged: their figures describe only part of their requests, and
+their request rate is understated.
+
+## Ward allocations
+
+Each year the City budgets a fixed amount per ward (R1 million in 2024/25) for projects proposed
+by the ward councillor and approved by the subcouncil. These are published as a budget annexure
+PDF. We parse it with a per-year configuration and check the parse against **every printed
+total**: each ward, each subcouncil's multi-ward block, each subcouncil, and the grand total. A
+single mismatch stops the build.
+
+These are **budgeted allocations as adopted**, not what was actually spent. Later adjustment
+budgets may have changed them. The 2024/25 budget uses the 2021 wards, so the map lists the
+projects of each older ward that overlaps the selected ward, with how much of it overlaps.
+Multi-ward and unallocated amounts are shown separately because they can't be attributed to one
+ward.
+
+## Colour
+
+Wards are coloured on a single-hue scale in five quantile classes: darker means a higher value,
+with no colour meaning "good" or "bad". The scale is checked for colour-blind legibility and
+contrast. Grey means there is not enough data.
+
+## Provenance
+
+Every published file records its sources, the date each was retrieved, and the period the
+figures describe. Every pinned input file in `sources/` has a sidecar with its original URL,
+retrieval date and SHA-256. Where a City document server was unreachable, the file came from the
+Internet Archive's copy of the same URL, and the sidecar says so.

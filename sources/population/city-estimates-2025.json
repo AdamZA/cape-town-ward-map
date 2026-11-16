@@ -1,0 +1,762 @@
+[
+ {
+  "name": "Acacia Park",
+  "population": 918.291
+ },
+ {
+  "name": "Athlone",
+  "population": 39486.02
+ },
+ {
+  "name": "Atlantis",
+  "population": 95879.91
+ },
+ {
+  "name": "Atlantis Non Urban",
+  "population": 2118.943
+ },
+ {
+  "name": "Belhar",
+  "population": 55414.68
+ },
+ {
+  "name": "Bellville",
+  "population": 55958.45
+ },
+ {
+  "name": "Bellville Non Urban",
+  "population": 35022.75
+ },
+ {
+  "name": "Bellville Park",
+  "population": 3.85328
+ },
+ {
+  "name": "Bellville South",
+  "population": 32020.63
+ },
+ {
+  "name": "Bellville Teachers' Training College",
+  "population": 5.945979e-05
+ },
+ {
+  "name": "Bergvliet",
+  "population": 9500.307
+ },
+ {
+  "name": "Bishop Lavis",
+  "population": 63948.88
+ },
+ {
+  "name": "Bishopscourt",
+  "population": 3676.165
+ },
+ {
+  "name": "Blackheath",
+  "population": 105474.3
+ },
+ {
+  "name": "Bloekombos",
+  "population": 73403.51
+ },
+ {
+  "name": "Bloubergstrand",
+  "population": 19853.04
+ },
+ {
+  "name": "Blue Downs",
+  "population": 87980.52
+ },
+ {
+  "name": "Bonteheuwel",
+  "population": 52044.23
+ },
+ {
+  "name": "Bothasig",
+  "population": 22237.49
+ },
+ {
+  "name": "Brackenfell",
+  "population": 85124.86
+ },
+ {
+  "name": "Brooklyn",
+  "population": 10150
+ },
+ {
+  "name": "Camps Bay",
+  "population": 12603.18
+ },
+ {
+  "name": "Cape Peninsula National Park",
+  "population": 394.3329
+ },
+ {
+  "name": "Cape Town CBD",
+  "population": 3680.729
+ },
+ {
+  "name": "Cape Town International Airport",
+  "population": 7579.937
+ },
+ {
+  "name": "Capri",
+  "population": 4331.04
+ },
+ {
+  "name": "Capricorn",
+  "population": 6585.042
+ },
+ {
+  "name": "Castle Rock",
+  "population": 104.8858
+ },
+ {
+  "name": "Century City",
+  "population": 3949.477
+ },
+ {
+  "name": "Claremont",
+  "population": 29161.71
+ },
+ {
+  "name": "Clifton",
+  "population": 1200.092
+ },
+ {
+  "name": "Clovelly",
+  "population": 1390.547
+ },
+ {
+  "name": "Coniston Park",
+  "population": 1424.008
+ },
+ {
+  "name": "Constantia",
+  "population": 25251.54
+ },
+ {
+  "name": "Crossroads",
+  "population": 47829.45
+ },
+ {
+  "name": "Croydon",
+  "population": 4698.18
+ },
+ {
+  "name": "Da Gama Park",
+  "population": 1546.327
+ },
+ {
+  "name": "Delft",
+  "population": 258413.6
+ },
+ {
+  "name": "Diep River",
+  "population": 3399.334
+ },
+ {
+  "name": "Doornbach",
+  "population": 8710.853
+ },
+ {
+  "name": "Dreyersdal",
+  "population": 2841.099
+ },
+ {
+  "name": "Dunoon",
+  "population": 73414.3
+ },
+ {
+  "name": "Durbanville",
+  "population": 62609.26
+ },
+ {
+  "name": "Edgemead",
+  "population": 17293.1
+ },
+ {
+  "name": "Eersterivier",
+  "population": 77084.24
+ },
+ {
+  "name": "Elsies River",
+  "population": 97939.36
+ },
+ {
+  "name": "Epping Industria",
+  "population": 98.84914
+ },
+ {
+  "name": "Erinvale Golf Estate",
+  "population": 2194.763
+ },
+ {
+  "name": "Eversdal",
+  "population": 27377.5
+ },
+ {
+  "name": "Fairways",
+  "population": 4421.302
+ },
+ {
+  "name": "Firgrove",
+  "population": 2128.875
+ },
+ {
+  "name": "Firgrove Rural",
+  "population": 2740.913
+ },
+ {
+  "name": "Fisantekraal",
+  "population": 17561.24
+ },
+ {
+  "name": "Fish Hoek",
+  "population": 15036.87
+ },
+ {
+  "name": "Foreshore",
+  "population": 212.968
+ },
+ {
+  "name": "Freedom Park Airport",
+  "population": 5729.911
+ },
+ {
+  "name": "Gardens",
+  "population": 9866.429
+ },
+ {
+  "name": "Glencairn",
+  "population": 3416.049
+ },
+ {
+  "name": "Goodwood",
+  "population": 37396.99
+ },
+ {
+  "name": "Gordons Bay",
+  "population": 20298.87
+ },
+ {
+  "name": "Grassy Park",
+  "population": 16700.05
+ },
+ {
+  "name": "Green Point",
+  "population": 10693.25
+ },
+ {
+  "name": "Gugulethu",
+  "population": 151710.2
+ },
+ {
+  "name": "Hanover Park",
+  "population": 23664.38
+ },
+ {
+  "name": "Hazendal",
+  "population": 5714.232
+ },
+ {
+  "name": "Heathfield",
+  "population": 10097.29
+ },
+ {
+  "name": "Heideveld",
+  "population": 26902.13
+ },
+ {
+  "name": "Helderberg Small Holdings",
+  "population": 992.8557
+ },
+ {
+  "name": "Hout Bay",
+  "population": 37090.87
+ },
+ {
+  "name": "Imizamo Yethu",
+  "population": 25896.24
+ },
+ {
+  "name": "Joe Slovo Park",
+  "population": 18090.06
+ },
+ {
+  "name": "Kalk Bay",
+  "population": 899.0845
+ },
+ {
+  "name": "Kenilworth",
+  "population": 12059.19
+ },
+ {
+  "name": "Kenridge",
+  "population": 5314.86
+ },
+ {
+  "name": "Kensington",
+  "population": 24782.18
+ },
+ {
+  "name": "Khayelitsha",
+  "population": 631517.9
+ },
+ {
+  "name": "Killarney Gardens",
+  "population": 26.04251
+ },
+ {
+  "name": "Kirstenhof",
+  "population": 5640.986
+ },
+ {
+  "name": "Kleine Zout Rivier Small Holdings",
+  "population": 64.42419
+ },
+ {
+  "name": "Klipheuwel",
+  "population": 4015.579
+ },
+ {
+  "name": "Knole Park",
+  "population": 3996.854
+ },
+ {
+  "name": "Kommetjie",
+  "population": 5397.615
+ },
+ {
+  "name": "Kraaifontein",
+  "population": 93114.7
+ },
+ {
+  "name": "Kraaifontein Small Holdings",
+  "population": 14861.26
+ },
+ {
+  "name": "Kuils River",
+  "population": 85625.2
+ },
+ {
+  "name": "Kuils River Small Holdings",
+  "population": 1307.79
+ },
+ {
+  "name": "Lakeside",
+  "population": 4594.478
+ },
+ {
+  "name": "Langa",
+  "population": 76312.94
+ },
+ {
+  "name": "Lansdowne",
+  "population": 19710.89
+ },
+ {
+  "name": "Lavender Hill",
+  "population": 33649.95
+ },
+ {
+  "name": "Llandudno",
+  "population": 2660.826
+ },
+ {
+  "name": "Lotus River",
+  "population": 32088.85
+ },
+ {
+  "name": "Macassar",
+  "population": 51388.79
+ },
+ {
+  "name": "Maitland",
+  "population": 4120.69
+ },
+ {
+  "name": "Maitland Garden Village",
+  "population": 2223.524
+ },
+ {
+  "name": "Mamre",
+  "population": 13248.55
+ },
+ {
+  "name": "Manenberg",
+  "population": 35525.91
+ },
+ {
+  "name": "Marconi Beam",
+  "population": 5.019519
+ },
+ {
+  "name": "Marina da Gama",
+  "population": 4786.256
+ },
+ {
+  "name": "Masiphumelele",
+  "population": 19603.29
+ },
+ {
+  "name": "Meadowridge",
+  "population": 6485.244
+ },
+ {
+  "name": "Melkbosstrand",
+  "population": 13285.64
+ },
+ {
+  "name": "Mfuleni",
+  "population": 159627
+ },
+ {
+  "name": "Milnerton",
+  "population": 16372.6
+ },
+ {
+  "name": "Milnerton Non Urban",
+  "population": 25654.36
+ },
+ {
+  "name": "Mitchells Plain",
+  "population": 366482.8
+ },
+ {
+  "name": "Montague Gardens",
+  "population": 0.0001634101
+ },
+ {
+  "name": "Monte Vista",
+  "population": 8958.63
+ },
+ {
+  "name": "Montevideo",
+  "population": 421.2566
+ },
+ {
+  "name": "Morning Star Small Holdings",
+  "population": 9.752978e-06
+ },
+ {
+  "name": "Mowbray",
+  "population": 5300.763
+ },
+ {
+  "name": "Muizenberg",
+  "population": 5228.829
+ },
+ {
+  "name": "Ndabeni",
+  "population": 950.6791
+ },
+ {
+  "name": "Newlands",
+  "population": 13564.71
+ },
+ {
+  "name": "Noordhoek",
+  "population": 10612.62
+ },
+ {
+  "name": "Nyanga",
+  "population": 74454.47
+ },
+ {
+  "name": "Observatory",
+  "population": 9795.293
+ },
+ {
+  "name": "Ocean View",
+  "population": 15474.2
+ },
+ {
+  "name": "Oranjezicht",
+  "population": 5377.245
+ },
+ {
+  "name": "Ottery",
+  "population": 15872.39
+ },
+ {
+  "name": "Oude Molen Village",
+  "population": 7.959125
+ },
+ {
+  "name": "Paarden Eiland",
+  "population": 6.673762e-05
+ },
+ {
+  "name": "Panorama",
+  "population": 6262.497
+ },
+ {
+  "name": "Parklands",
+  "population": 31859.03
+ },
+ {
+  "name": "Parkwood",
+  "population": 3488.069
+ },
+ {
+  "name": "Parow",
+  "population": 75941.17
+ },
+ {
+  "name": "Pelikan Park",
+  "population": 34149.33
+ },
+ {
+  "name": "Pella",
+  "population": 1617.394
+ },
+ {
+  "name": "Philadelphia",
+  "population": 653.4455
+ },
+ {
+  "name": "Philippi",
+  "population": 281189.2
+ },
+ {
+  "name": "Philippi Small Holdings",
+  "population": 14114.44
+ },
+ {
+  "name": "Phoenix",
+  "population": 2975.906
+ },
+ {
+  "name": "Pinelands",
+  "population": 21373.17
+ },
+ {
+  "name": "Plattekloof",
+  "population": 8508.636
+ },
+ {
+  "name": "Plumstead",
+  "population": 23867.42
+ },
+ {
+  "name": "Pollsmoor",
+  "population": 0.0004696116
+ },
+ {
+  "name": "Red Hill",
+  "population": 705.5754
+ },
+ {
+  "name": "Retreat",
+  "population": 45789.82
+ },
+ {
+  "name": "Richwood",
+  "population": 5714.225
+ },
+ {
+  "name": "Robben Island",
+  "population": 0
+ },
+ {
+  "name": "Rondebosch/Rosebank",
+  "population": 26842.58
+ },
+ {
+  "name": "Rugby",
+  "population": 4039.709
+ },
+ {
+  "name": "Ruyterwacht",
+  "population": 8977.76
+ },
+ {
+  "name": "Salt River",
+  "population": 4704.496
+ },
+ {
+  "name": "Scarborough",
+  "population": 2287.347
+ },
+ {
+  "name": "Schotschekloof",
+  "population": 5230.352
+ },
+ {
+  "name": "Scottsdene",
+  "population": 25332.1
+ },
+ {
+  "name": "Sea Point",
+  "population": 15374.28
+ },
+ {
+  "name": "Sheraton Park",
+  "population": 1656.942
+ },
+ {
+  "name": "Silvermine",
+  "population": 58.46173
+ },
+ {
+  "name": "Silvertown",
+  "population": 23958.08
+ },
+ {
+  "name": "Simons Town",
+  "population": 5040.407
+ },
+ {
+  "name": "Sir Lowry's Pass",
+  "population": 12891.81
+ },
+ {
+  "name": "Somerset West",
+  "population": 76362.82
+ },
+ {
+  "name": "Somerset West Non Urban",
+  "population": 1706.281
+ },
+ {
+  "name": "Southfield",
+  "population": 7558.866
+ },
+ {
+  "name": "St James",
+  "population": 1285.47
+ },
+ {
+  "name": "Steenberg",
+  "population": 8018.813
+ },
+ {
+  "name": "Steenberg Estate",
+  "population": 2350.48
+ },
+ {
+  "name": "Stikland Hospital",
+  "population": 0.0001404957
+ },
+ {
+  "name": "Stonehurst Mountain Estate",
+  "population": 1884.628
+ },
+ {
+  "name": "Strand",
+  "population": 221933.8
+ },
+ {
+  "name": "Summer Greens",
+  "population": 4576.286
+ },
+ {
+  "name": "Sun Valley",
+  "population": 6245.778
+ },
+ {
+  "name": "Sunningdale",
+  "population": 8915.891
+ },
+ {
+  "name": "Sybrand Park",
+  "population": 1799.283
+ },
+ {
+  "name": "Table Mountain Nature Reserve",
+  "population": 67.85264
+ },
+ {
+  "name": "Table View",
+  "population": 35856.59
+ },
+ {
+  "name": "Tamboerskloof",
+  "population": 4477.212
+ },
+ {
+  "name": "Thornton",
+  "population": 7815.573
+ },
+ {
+  "name": "Tijgerhof/Sanddrift",
+  "population": 9428.272
+ },
+ {
+  "name": "Tokai",
+  "population": 5964.132
+ },
+ {
+  "name": "Tygerberg Hospital",
+  "population": 1.157589e-05
+ },
+ {
+  "name": "University of Cape Town",
+  "population": 7.991101
+ },
+ {
+  "name": "University of the Western Cape/ Peninsula Technikon",
+  "population": 9.109904e-11
+ },
+ {
+  "name": "V & A Waterfront",
+  "population": 24.35787
+ },
+ {
+  "name": "Vissershok",
+  "population": 4.098367e-06
+ },
+ {
+  "name": "Vredehoek",
+  "population": 7385.737
+ },
+ {
+  "name": "Vrygrond",
+  "population": 20433.76
+ },
+ {
+  "name": "Wallacedene",
+  "population": 77257.43
+ },
+ {
+  "name": "Welgelegen",
+  "population": 6863.718
+ },
+ {
+  "name": "Welgemoed",
+  "population": 32152.83
+ },
+ {
+  "name": "Westlake",
+  "population": 11260.01
+ },
+ {
+  "name": "Wingfield",
+  "population": 823.7872
+ },
+ {
+  "name": "Woodstock",
+  "population": 20858.17
+ },
+ {
+  "name": "Wynberg",
+  "population": 14088.42
+ },
+ {
+  "name": "Youngsfield",
+  "population": 938.6357
+ },
+ {
+  "name": "Ysterplaat Airbase",
+  "population": 0.0001364689
+ },
+ {
+  "name": "Zeekoei Vlei",
+  "population": 533.4659
+ },
+ {
+  "name": "Zonnebloem",
+  "population": 3305.658
+ }
+]

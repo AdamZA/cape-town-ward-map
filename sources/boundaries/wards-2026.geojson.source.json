@@ -1,0 +1,10 @@
+{
+  "licence": "City of Cape Town Open Data Licence",
+  "method": "download",
+  "notes": "Layer metadata still describes 2016 wards, but every feature has WARD_YEAR=2026 and there are 118 wards. Cross-checked against the Municipal Demarcation Board 2026 layer: per-ward intersection-over-union min 0.9746.",
+  "publisher": "City of Cape Town",
+  "retrieved_at": "2026-11-16",
+  "sha256": "ac957c38a7e70a242aee7107d692b6f2fc0460a93f0b4c3f7f52089e3bd0a463",
+  "title": "Wards (2026 delimitation)",
+  "url": "https://citymaps.capetown.gov.za/agsext/rest/services/Theme_Based/ODP_SPLIT_5/FeatureServer/6"
+}

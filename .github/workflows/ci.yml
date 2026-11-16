@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  etl:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: etl
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+      - run: uv sync --frozen
+      - run: uv run ruff check src tests
+      - run: uv run ruff format --check src tests
+      - run: uv run pytest -q
+      # data/ must be reproducible from sources/ (the service-request aggregate needs the DB,
+      # which CI doesn't have, so build keeps the committed file).
+      - run: uv run wardmap build
+      - run: uv run wardmap schemas
+      - name: data/ and schemas/ are up to date
+        run: git diff --exit-code -- ../data ../schemas
+      - run: uv run wardmap check
+
+  web:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - run: npm ci
+      - run: npm run gen:types
+      - name: generated types match schemas/
+        run: git diff --exit-code -- src/generated
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build

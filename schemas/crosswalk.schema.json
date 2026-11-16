@@ -1,0 +1,275 @@
+{
+  "$defs": {
+    "CrosswalkRow": {
+      "additionalProperties": false,
+      "properties": {
+        "from_ward": {
+          "title": "From Ward",
+          "type": "integer"
+        },
+        "share_of_from": {
+          "title": "Share Of From",
+          "type": "number"
+        },
+        "share_of_to": {
+          "title": "Share Of To",
+          "type": "number"
+        },
+        "to_ward": {
+          "title": "To Ward",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "from_ward",
+        "to_ward",
+        "share_of_from",
+        "share_of_to"
+      ],
+      "title": "CrosswalkRow",
+      "type": "object"
+    },
+    "FieldMeta": {
+      "additionalProperties": false,
+      "properties": {
+        "description": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Description"
+        },
+        "label": {
+          "title": "Label",
+          "type": "string"
+        },
+        "method": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Anchor in METHODOLOGY.md",
+          "title": "Method"
+        },
+        "source": {
+          "description": "Key into the envelope's `sources`",
+          "title": "Source",
+          "type": "string"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Unit"
+        }
+      },
+      "required": [
+        "label",
+        "unit",
+        "source",
+        "method",
+        "description"
+      ],
+      "title": "FieldMeta",
+      "type": "object"
+    },
+    "Gap": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        },
+        "ward_no": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Null for gaps that apply to the whole dataset",
+          "title": "Ward No"
+        }
+      },
+      "required": [
+        "code",
+        "message",
+        "ward_no"
+      ],
+      "title": "Gap",
+      "type": "object"
+    },
+    "Period": {
+      "additionalProperties": false,
+      "properties": {
+        "from": {
+          "title": "From",
+          "type": "string"
+        },
+        "to": {
+          "title": "To",
+          "type": "string"
+        }
+      },
+      "required": [
+        "from",
+        "to"
+      ],
+      "title": "Period",
+      "type": "object"
+    },
+    "Source": {
+      "additionalProperties": false,
+      "properties": {
+        "licence": {
+          "title": "Licence",
+          "type": "string"
+        },
+        "notes": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Notes"
+        },
+        "publisher": {
+          "title": "Publisher",
+          "type": "string"
+        },
+        "retrieved_at": {
+          "description": "ISO date the data was retrieved",
+          "title": "Retrieved At",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "publisher",
+        "url",
+        "retrieved_at",
+        "licence",
+        "notes"
+      ],
+      "title": "Source",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "as_of": {
+      "description": "ISO date (or year-month) the figures describe, not when the file was built",
+      "title": "As Of",
+      "type": "string"
+    },
+    "dataset": {
+      "const": "crosswalk",
+      "default": "crosswalk",
+      "title": "Dataset",
+      "type": "string"
+    },
+    "fields": {
+      "additionalProperties": {
+        "$ref": "#/$defs/FieldMeta"
+      },
+      "title": "Fields",
+      "type": "object"
+    },
+    "from_vintage": {
+      "title": "From Vintage",
+      "type": "integer"
+    },
+    "gaps": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/Gap"
+      },
+      "title": "Gaps",
+      "type": "array"
+    },
+    "period": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Period"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "rows": {
+      "items": {
+        "$ref": "#/$defs/CrosswalkRow"
+      },
+      "title": "Rows",
+      "type": "array"
+    },
+    "schema_version": {
+      "default": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "sources": {
+      "additionalProperties": {
+        "$ref": "#/$defs/Source"
+      },
+      "title": "Sources",
+      "type": "object"
+    },
+    "ward_vintage": {
+      "description": "Year the ward delimitation took effect (2021, 2026)",
+      "title": "Ward Vintage",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "dataset",
+    "schema_version",
+    "ward_vintage",
+    "as_of",
+    "period",
+    "sources",
+    "fields",
+    "gaps",
+    "from_vintage",
+    "rows"
+  ],
+  "title": "CrosswalkEnvelope",
+  "type": "object"
+}

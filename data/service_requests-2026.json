@@ -1,0 +1,1827 @@
+{
+ "as_of": "2026-11-13",
+ "citywide": {
+  "flags": [],
+  "median_censored": false,
+  "median_days": 2,
+  "p80_censored": true,
+  "p80_days": 90,
+  "pct_closed_30d": 73.8,
+  "pct_located": 63.1,
+  "pct_no_completion": 24.5,
+  "per_1000": 131.7,
+  "requests": 700550,
+  "ward_no": 0
+ },
+ "dataset": "service_requests",
+ "fields": {
+  "median_days": {
+   "description": null,
+   "label": "Median days to resolve",
+   "method": "resolution-time",
+   "source": "sr",
+   "unit": "days"
+  },
+  "p80_days": {
+   "description": null,
+   "label": "Days to resolve 80% of requests",
+   "method": "resolution-time",
+   "source": "sr",
+   "unit": "days"
+  },
+  "pct_closed_30d": {
+   "description": null,
+   "label": "Resolved within 30 days",
+   "method": "resolution-time",
+   "source": "sr",
+   "unit": "%"
+  },
+  "pct_located": {
+   "description": "Where this is low, the ward's figures describe only part of its requests.",
+   "label": "Requests with a usable location (est.)",
+   "method": "location-coverage",
+   "source": "sr",
+   "unit": "%"
+  },
+  "pct_no_completion": {
+   "description": "May include requests closed without a completion date.",
+   "label": "No completion date recorded",
+   "method": "resolution-time",
+   "source": "sr",
+   "unit": "%"
+  },
+  "per_1000": {
+   "description": "Uses modelled ward population (see population).",
+   "label": "Requests per 1,000 residents",
+   "method": "service-requests",
+   "source": "sr",
+   "unit": "per 1,000 per year"
+  },
+  "requests": {
+   "description": null,
+   "label": "Requests logged",
+   "method": "service-requests",
+   "source": "sr",
+   "unit": "requests"
+  }
+ },
+ "gaps": [
+  {
+   "code": "unlocated",
+   "message": "37% of requests in this period (409,489 of 1,110,039) have no usable location and are not counted in any ward (402,194 have no coordinates). They are not evenly spread: the most common types among them are SEW: Blocked/Overflow (28,677), Suspect Tampering (19,093), Stolen Bins - 240L (16,389).",
+   "ward_no": null
+  },
+  {
+   "code": "complaint_mix",
+   "message": "Wards differ in the mix of request types (e.g. electricity faults vs. refuse), and some types take longer to resolve than others. Compare wards with that in mind.",
+   "ward_no": null
+  },
+  {
+   "code": "negative_duration",
+   "message": "1 requests have a completion date before their creation date; they are treated as unresolved.",
+   "ward_no": null
+  },
+  {
+   "code": "low_location_coverage",
+   "message": "Only about 59% of requests from this area have a usable location, so the figures here cover only part of its requests and the request rate is understated.",
+   "ward_no": 18
+  },
+  {
+   "code": "low_location_coverage",
+   "message": "Only about 60% of requests from this area have a usable location, so the figures here cover only part of its requests and the request rate is understated.",
+   "ward_no": 20
+  },
+  {
+   "code": "low_location_coverage",
+   "message": "Only about 51% of requests from this area have a usable location, so the figures here cover only part of its requests and the request rate is understated.",
+   "ward_no": 22
+  },
+  {
+   "code": "low_location_coverage",
+   "message": "Only about 59% of requests from this area have a usable location, so the figures here cover only part of its requests and the request rate is understated.",
+   "ward_no": 25
+  },
+  {
+   "code": "low_location_coverage",
+   "message": "Only about 57% of requests from this area have a usable location, so the figures here cover only part of its requests and the request rate is understated.",
+   "ward_no": 28
+  },
+  {
+   "code": "low_location_coverage",
+   "message": "Only about 49% of requests from this area have a usable location, so the figures here cover only part of its requests and the request rate is understated.",
+   "ward_no": 30
+  },
+  {
+   "code": "low_location_coverage",
+   "message": "Only about 57% of requests from this area have a usable location, so the figures here cover only part of its requests and the request rate is understated.",
+   "ward_no": 36
+  },
+  {
+   "code": "low_location_coverage",
+   "message": "Only about 49% of requests from this area have a usable location, so the figures here cover only part of its requests and the request rate is understated.",
+   "ward_no": 37
+  },
+  {
+   "code": "low_location_coverage",
+   "message": "Only about 50% of requests from this area have a usable location, so the figures here cover only part of its requests and the request rate is understated.",
+   "ward_no": 38
+  },
+  {
+   "code": "low_location_coverage",
+   "message": "Only about 53% of requests from this area have a usable location, so the figures here cover only part of its requests and the request rate is understated.",
+   "ward_no": 39
+  },
+  {
+   "code": "low_location_coverage",
+   "message": "Only about 54% of requests from this area have a usable location, so the figures here cover only part of its requests and the request rate is understated.",
+   "ward_no": 40
+  },
+  {
+   "code": "low_location_coverage",
+   "message": "Only about 54% of requests from this area have a usable location, so the figures here cover only part of its requests and the request rate is understated.",
+   "ward_no": 41
+  },
+  {
+   "code": "low_location_coverage",
+   "message": "Only about 50% of requests from this area have a usable location, so the figures here cover only part of its requests and the request rate is understated.",
+   "ward_no": 47
+  },
+  {
+   "code": "low_location_coverage",
+   "message": "Only about 57% of requests from this area have a usable location, so the figures here cover only part of its requests and the request rate is understated.",
+   "ward_no": 51
+  },
+  {
+   "code": "low_location_coverage",
+   "message": "Only about 59% of requests from this area have a usable location, so the figures here cover only part of its requests and the request rate is understated.",
+   "ward_no": 52
+  },
+  {
+   "code": "low_location_coverage",
+   "message": "Only about 59% of requests from this area have a usable location, so the figures here cover only part of its requests and the request rate is understated.",
+   "ward_no": 65
+  },
+  {
+   "code": "low_location_coverage",
+   "message": "Only about 55% of requests from this area have a usable location, so the figures here cover only part of its requests and the request rate is understated.",
+   "ward_no": 76
+  },
+  {
+   "code": "low_location_coverage",
+   "message": "Only about 58% of requests from this area have a usable location, so the figures here cover only part of its requests and the request rate is understated.",
+   "ward_no": 84
+  },
+  {
+   "code": "low_location_coverage",
+   "message": "Only about 57% of requests from this area have a usable location, so the figures here cover only part of its requests and the request rate is understated.",
+   "ward_no": 89
+  },
+  {
+   "code": "low_location_coverage",
+   "message": "Only about 57% of requests from this area have a usable location, so the figures here cover only part of its requests and the request rate is understated.",
+   "ward_no": 93
+  },
+  {
+   "code": "low_location_coverage",
+   "message": "Only about 55% of requests from this area have a usable location, so the figures here cover only part of its requests and the request rate is understated.",
+   "ward_no": 98
+  },
+  {
+   "code": "low_location_coverage",
+   "message": "Only about 41% of requests from this area have a usable location, so the figures here cover only part of its requests and the request rate is understated.",
+   "ward_no": 99
+  },
+  {
+   "code": "low_location_coverage",
+   "message": "Only about 55% of requests from this area have a usable location, so the figures here cover only part of its requests and the request rate is understated.",
+   "ward_no": 102
+  },
+  {
+   "code": "low_location_coverage",
+   "message": "Only about 57% of requests from this area have a usable location, so the figures here cover only part of its requests and the request rate is understated.",
+   "ward_no": 106
+  },
+  {
+   "code": "low_location_coverage",
+   "message": "Only about 55% of requests from this area have a usable location, so the figures here cover only part of its requests and the request rate is understated.",
+   "ward_no": 109
+  },
+  {
+   "code": "low_location_coverage",
+   "message": "Only about 42% of requests from this area have a usable location, so the figures here cover only part of its requests and the request rate is understated.",
+   "ward_no": 110
+  }
+ ],
+ "period": {
+  "from": "2025-08-15",
+  "to": "2026-08-14"
+ },
+ "rows": [
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 3,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 68.8,
+   "pct_located": 82.2,
+   "pct_no_completion": 28.4,
+   "per_1000": 221.9,
+   "requests": 7384,
+   "ward_no": 1
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 69.5,
+   "pct_located": 78.5,
+   "pct_no_completion": 28.7,
+   "per_1000": 220.1,
+   "requests": 10095,
+   "ward_no": 2
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 68.5,
+   "pct_located": 79.7,
+   "pct_no_completion": 30.5,
+   "per_1000": 229.0,
+   "requests": 8246,
+   "ward_no": 3
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 1,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 78.3,
+   "pct_located": 76.1,
+   "pct_no_completion": 20.0,
+   "per_1000": 147.6,
+   "requests": 6958,
+   "ward_no": 4
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 3,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 73.4,
+   "pct_located": 82.7,
+   "pct_no_completion": 25.2,
+   "per_1000": 214.2,
+   "requests": 7507,
+   "ward_no": 5
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 4,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 70.8,
+   "pct_located": 75.3,
+   "pct_no_completion": 27.6,
+   "per_1000": 32.8,
+   "requests": 1550,
+   "ward_no": 6
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 3,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 68.0,
+   "pct_located": 79.6,
+   "pct_no_completion": 29.8,
+   "per_1000": 120.1,
+   "requests": 6269,
+   "ward_no": 7
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 73.7,
+   "pct_located": 73.9,
+   "pct_no_completion": 24.7,
+   "per_1000": 157.4,
+   "requests": 4392,
+   "ward_no": 8
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 70.8,
+   "pct_located": 76.5,
+   "pct_no_completion": 27.3,
+   "per_1000": 186.6,
+   "requests": 8428,
+   "ward_no": 9
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 72.1,
+   "pct_located": 72.2,
+   "pct_no_completion": 25.7,
+   "per_1000": 221.5,
+   "requests": 10181,
+   "ward_no": 10
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 73.7,
+   "pct_located": 81.8,
+   "pct_no_completion": 24.4,
+   "per_1000": 206.6,
+   "requests": 7251,
+   "ward_no": 11
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 76.2,
+   "pct_located": 62.8,
+   "pct_no_completion": 21.4,
+   "per_1000": 74.4,
+   "requests": 5267,
+   "ward_no": 12
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 3,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 73.3,
+   "pct_located": 76.2,
+   "pct_no_completion": 24.9,
+   "per_1000": 145.2,
+   "requests": 2873,
+   "ward_no": 13
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 3,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 71.3,
+   "pct_located": 71.3,
+   "pct_no_completion": 26.6,
+   "per_1000": 131.9,
+   "requests": 6188,
+   "ward_no": 14
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 75.3,
+   "pct_located": 74.2,
+   "pct_no_completion": 23.5,
+   "per_1000": 261.1,
+   "requests": 6451,
+   "ward_no": 15
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 74.9,
+   "pct_located": 66.8,
+   "pct_no_completion": 22.4,
+   "per_1000": 80.7,
+   "requests": 5492,
+   "ward_no": 16
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 75.0,
+   "pct_located": 65.0,
+   "pct_no_completion": 22.5,
+   "per_1000": 104.2,
+   "requests": 5182,
+   "ward_no": 17
+  },
+  {
+   "flags": [
+    "low_location_coverage"
+   ],
+   "median_censored": false,
+   "median_days": 5,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 65.5,
+   "pct_located": 59.0,
+   "pct_no_completion": 33.7,
+   "per_1000": 10.9,
+   "requests": 403,
+   "ward_no": 18
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 72.7,
+   "pct_located": 71.7,
+   "pct_no_completion": 25.5,
+   "per_1000": 144.1,
+   "requests": 8928,
+   "ward_no": 19
+  },
+  {
+   "flags": [
+    "low_location_coverage"
+   ],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 75.2,
+   "pct_located": 59.8,
+   "pct_no_completion": 22.7,
+   "per_1000": 63.3,
+   "requests": 3759,
+   "ward_no": 20
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 69.3,
+   "pct_located": 79.5,
+   "pct_no_completion": 29.2,
+   "per_1000": 228.0,
+   "requests": 7151,
+   "ward_no": 21
+  },
+  {
+   "flags": [
+    "low_location_coverage"
+   ],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 74.6,
+   "pct_located": 50.8,
+   "pct_no_completion": 23.5,
+   "per_1000": 99.1,
+   "requests": 4173,
+   "ward_no": 22
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 76.6,
+   "pct_located": 71.8,
+   "pct_no_completion": 21.3,
+   "per_1000": 215.3,
+   "requests": 5377,
+   "ward_no": 23
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 3,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 75.1,
+   "pct_located": 65.0,
+   "pct_no_completion": 22.7,
+   "per_1000": 49.2,
+   "requests": 3171,
+   "ward_no": 24
+  },
+  {
+   "flags": [
+    "low_location_coverage"
+   ],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 76.9,
+   "pct_located": 59.0,
+   "pct_no_completion": 20.8,
+   "per_1000": 90.0,
+   "requests": 5588,
+   "ward_no": 25
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 73.2,
+   "pct_located": 65.7,
+   "pct_no_completion": 24.7,
+   "per_1000": 207.8,
+   "requests": 10051,
+   "ward_no": 26
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 72.0,
+   "pct_located": 77.2,
+   "pct_no_completion": 26.0,
+   "per_1000": 192.9,
+   "requests": 7251,
+   "ward_no": 27
+  },
+  {
+   "flags": [
+    "low_location_coverage"
+   ],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 76.0,
+   "pct_located": 56.6,
+   "pct_no_completion": 22.2,
+   "per_1000": 124.7,
+   "requests": 7813,
+   "ward_no": 28
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": false,
+   "p80_days": 178,
+   "pct_closed_30d": 78.3,
+   "pct_located": 66.1,
+   "pct_no_completion": 19.5,
+   "per_1000": 99.4,
+   "requests": 5283,
+   "ward_no": 29
+  },
+  {
+   "flags": [
+    "low_location_coverage"
+   ],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 73.4,
+   "pct_located": 49.4,
+   "pct_no_completion": 25.3,
+   "per_1000": 96.0,
+   "requests": 5540,
+   "ward_no": 30
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 3,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 72.0,
+   "pct_located": 64.1,
+   "pct_no_completion": 26.0,
+   "per_1000": 127.8,
+   "requests": 7508,
+   "ward_no": 31
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 3,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 72.5,
+   "pct_located": 60.5,
+   "pct_no_completion": 24.8,
+   "per_1000": 113.2,
+   "requests": 5172,
+   "ward_no": 32
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 5,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 64.4,
+   "pct_located": 72.7,
+   "pct_no_completion": 34.2,
+   "per_1000": 79.5,
+   "requests": 4422,
+   "ward_no": 33
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 4,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 67.1,
+   "pct_located": 72.7,
+   "pct_no_completion": 31.5,
+   "per_1000": 70.1,
+   "requests": 3356,
+   "ward_no": 34
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 4,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 70.4,
+   "pct_located": 72.7,
+   "pct_no_completion": 28.2,
+   "per_1000": 57.7,
+   "requests": 3130,
+   "ward_no": 35
+  },
+  {
+   "flags": [
+    "low_location_coverage"
+   ],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 72.7,
+   "pct_located": 56.6,
+   "pct_no_completion": 25.9,
+   "per_1000": 18.8,
+   "requests": 929,
+   "ward_no": 36
+  },
+  {
+   "flags": [
+    "low_location_coverage"
+   ],
+   "median_censored": false,
+   "median_days": 4,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 64.7,
+   "pct_located": 49.2,
+   "pct_no_completion": 33.8,
+   "per_1000": 60.8,
+   "requests": 2483,
+   "ward_no": 37
+  },
+  {
+   "flags": [
+    "low_location_coverage"
+   ],
+   "median_censored": false,
+   "median_days": 3,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 67.8,
+   "pct_located": 49.5,
+   "pct_no_completion": 30.7,
+   "per_1000": 73.7,
+   "requests": 3280,
+   "ward_no": 38
+  },
+  {
+   "flags": [
+    "low_location_coverage"
+   ],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 71.0,
+   "pct_located": 53.4,
+   "pct_no_completion": 27.1,
+   "per_1000": 103.9,
+   "requests": 3941,
+   "ward_no": 39
+  },
+  {
+   "flags": [
+    "low_location_coverage"
+   ],
+   "median_censored": false,
+   "median_days": 5,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 60.9,
+   "pct_located": 53.5,
+   "pct_no_completion": 38.5,
+   "per_1000": 71.6,
+   "requests": 3270,
+   "ward_no": 40
+  },
+  {
+   "flags": [
+    "low_location_coverage"
+   ],
+   "median_censored": false,
+   "median_days": 3,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 66.2,
+   "pct_located": 53.5,
+   "pct_no_completion": 32.1,
+   "per_1000": 77.1,
+   "requests": 3019,
+   "ward_no": 41
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 73.4,
+   "pct_located": 64.6,
+   "pct_no_completion": 24.4,
+   "per_1000": 80.0,
+   "requests": 4146,
+   "ward_no": 42
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 76.8,
+   "pct_located": 74.5,
+   "pct_no_completion": 21.3,
+   "per_1000": 230.0,
+   "requests": 12728,
+   "ward_no": 43
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 73.1,
+   "pct_located": 64.4,
+   "pct_no_completion": 25.3,
+   "per_1000": 119.7,
+   "requests": 5684,
+   "ward_no": 44
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 1,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 74.9,
+   "pct_located": 80.6,
+   "pct_no_completion": 23.3,
+   "per_1000": 132.4,
+   "requests": 8005,
+   "ward_no": 45
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 74.8,
+   "pct_located": 68.6,
+   "pct_no_completion": 23.7,
+   "per_1000": 158.4,
+   "requests": 7495,
+   "ward_no": 46
+  },
+  {
+   "flags": [
+    "low_location_coverage"
+   ],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 74.1,
+   "pct_located": 49.9,
+   "pct_no_completion": 24.3,
+   "per_1000": 100.7,
+   "requests": 5471,
+   "ward_no": 47
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 1,
+   "p80_censored": false,
+   "p80_days": 35,
+   "pct_closed_30d": 79.8,
+   "pct_located": 78.3,
+   "pct_no_completion": 18.8,
+   "per_1000": 244.0,
+   "requests": 10300,
+   "ward_no": 48
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 1,
+   "p80_censored": false,
+   "p80_days": 148,
+   "pct_closed_30d": 79.1,
+   "pct_located": 66.7,
+   "pct_no_completion": 19.2,
+   "per_1000": 119.1,
+   "requests": 5455,
+   "ward_no": 49
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 1,
+   "p80_censored": false,
+   "p80_days": 20,
+   "pct_closed_30d": 80.7,
+   "pct_located": 65.4,
+   "pct_no_completion": 18.0,
+   "per_1000": 87.7,
+   "requests": 4389,
+   "ward_no": 50
+  },
+  {
+   "flags": [
+    "low_location_coverage"
+   ],
+   "median_censored": false,
+   "median_days": 1,
+   "p80_censored": false,
+   "p80_days": 37,
+   "pct_closed_30d": 79.8,
+   "pct_located": 57.0,
+   "pct_no_completion": 19.1,
+   "per_1000": 98.0,
+   "requests": 3588,
+   "ward_no": 51
+  },
+  {
+   "flags": [
+    "low_location_coverage"
+   ],
+   "median_censored": false,
+   "median_days": 1,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 77.2,
+   "pct_located": 59.1,
+   "pct_no_completion": 21.0,
+   "per_1000": 67.0,
+   "requests": 2577,
+   "ward_no": 52
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 77.7,
+   "pct_located": 78.6,
+   "pct_no_completion": 20.9,
+   "per_1000": 262.4,
+   "requests": 9359,
+   "ward_no": 53
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 1,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 76.7,
+   "pct_located": 77.1,
+   "pct_no_completion": 21.5,
+   "per_1000": 323.6,
+   "requests": 10179,
+   "ward_no": 54
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 1,
+   "p80_censored": false,
+   "p80_days": 180,
+   "pct_closed_30d": 78.4,
+   "pct_located": 79.5,
+   "pct_no_completion": 19.8,
+   "per_1000": 276.2,
+   "requests": 12258,
+   "ward_no": 55
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 1,
+   "p80_censored": false,
+   "p80_days": 92,
+   "pct_closed_30d": 79.3,
+   "pct_located": 64.9,
+   "pct_no_completion": 18.8,
+   "per_1000": 204.9,
+   "requests": 9633,
+   "ward_no": 56
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 76.1,
+   "pct_located": 77.6,
+   "pct_no_completion": 22.3,
+   "per_1000": 351.4,
+   "requests": 8805,
+   "ward_no": 57
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 72.4,
+   "pct_located": 82.2,
+   "pct_no_completion": 26.1,
+   "per_1000": 312.8,
+   "requests": 10795,
+   "ward_no": 58
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 68.4,
+   "pct_located": 82.5,
+   "pct_no_completion": 30.2,
+   "per_1000": 420.2,
+   "requests": 8673,
+   "ward_no": 59
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 1,
+   "p80_censored": false,
+   "p80_days": 178,
+   "pct_closed_30d": 78.6,
+   "pct_located": 82.4,
+   "pct_no_completion": 19.7,
+   "per_1000": 308.6,
+   "requests": 14032,
+   "ward_no": 60
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 76.8,
+   "pct_located": 70.6,
+   "pct_no_completion": 21.7,
+   "per_1000": 238.0,
+   "requests": 9864,
+   "ward_no": 61
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 70.9,
+   "pct_located": 82.5,
+   "pct_no_completion": 27.3,
+   "per_1000": 371.1,
+   "requests": 9316,
+   "ward_no": 62
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 1,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 77.2,
+   "pct_located": 81.1,
+   "pct_no_completion": 21.2,
+   "per_1000": 266.6,
+   "requests": 11098,
+   "ward_no": 63
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 1,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 76.7,
+   "pct_located": 74.1,
+   "pct_no_completion": 22.1,
+   "per_1000": 298.3,
+   "requests": 7609,
+   "ward_no": 64
+  },
+  {
+   "flags": [
+    "low_location_coverage"
+   ],
+   "median_censored": false,
+   "median_days": 1,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 78.2,
+   "pct_located": 58.7,
+   "pct_no_completion": 20.1,
+   "per_1000": 135.9,
+   "requests": 6692,
+   "ward_no": 65
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 75.9,
+   "pct_located": 79.1,
+   "pct_no_completion": 22.5,
+   "per_1000": 180.6,
+   "requests": 8191,
+   "ward_no": 66
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 1,
+   "p80_censored": false,
+   "p80_days": 178,
+   "pct_closed_30d": 78.7,
+   "pct_located": 74.5,
+   "pct_no_completion": 19.4,
+   "per_1000": 264.7,
+   "requests": 9946,
+   "ward_no": 67
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 1,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 78.0,
+   "pct_located": 65.4,
+   "pct_no_completion": 20.3,
+   "per_1000": 116.3,
+   "requests": 4328,
+   "ward_no": 68
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 1,
+   "p80_censored": false,
+   "p80_days": 243,
+   "pct_closed_30d": 78.3,
+   "pct_located": 80.3,
+   "pct_no_completion": 20.0,
+   "per_1000": 129.1,
+   "requests": 6423,
+   "ward_no": 69
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 4,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 64.4,
+   "pct_located": 81.2,
+   "pct_no_completion": 33.9,
+   "per_1000": 235.1,
+   "requests": 8457,
+   "ward_no": 70
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 72.7,
+   "pct_located": 81.7,
+   "pct_no_completion": 25.9,
+   "per_1000": 205.5,
+   "requests": 7011,
+   "ward_no": 71
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 74.8,
+   "pct_located": 71.0,
+   "pct_no_completion": 23.4,
+   "per_1000": 174.3,
+   "requests": 6553,
+   "ward_no": 72
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 1,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 72.6,
+   "pct_located": 84.2,
+   "pct_no_completion": 25.7,
+   "per_1000": 349.8,
+   "requests": 9580,
+   "ward_no": 73
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 1,
+   "p80_censored": false,
+   "p80_days": 149,
+   "pct_closed_30d": 78.9,
+   "pct_located": 64.1,
+   "pct_no_completion": 19.6,
+   "per_1000": 156.2,
+   "requests": 7440,
+   "ward_no": 74
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 74.0,
+   "pct_located": 76.4,
+   "pct_no_completion": 23.8,
+   "per_1000": 141.5,
+   "requests": 8776,
+   "ward_no": 75
+  },
+  {
+   "flags": [
+    "low_location_coverage"
+   ],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 74.8,
+   "pct_located": 55.4,
+   "pct_no_completion": 23.7,
+   "per_1000": 98.0,
+   "requests": 5007,
+   "ward_no": 76
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 72.8,
+   "pct_located": 83.0,
+   "pct_no_completion": 25.3,
+   "per_1000": 358.9,
+   "requests": 11487,
+   "ward_no": 77
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 73.3,
+   "pct_located": 65.0,
+   "pct_no_completion": 25.3,
+   "per_1000": 104.8,
+   "requests": 4989,
+   "ward_no": 78
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 3,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 73.3,
+   "pct_located": 77.2,
+   "pct_no_completion": 25.0,
+   "per_1000": 139.8,
+   "requests": 7133,
+   "ward_no": 79
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 4,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 65.2,
+   "pct_located": 72.7,
+   "pct_no_completion": 33.5,
+   "per_1000": 60.1,
+   "requests": 3171,
+   "ward_no": 80
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 76.5,
+   "pct_located": 66.5,
+   "pct_no_completion": 21.9,
+   "per_1000": 114.2,
+   "requests": 5589,
+   "ward_no": 81
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 75.4,
+   "pct_located": 83.8,
+   "pct_no_completion": 22.5,
+   "per_1000": 103.9,
+   "requests": 7887,
+   "ward_no": 82
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 71.8,
+   "pct_located": 63.2,
+   "pct_no_completion": 27.0,
+   "per_1000": 290.2,
+   "requests": 7757,
+   "ward_no": 83
+  },
+  {
+   "flags": [
+    "low_location_coverage"
+   ],
+   "median_censored": false,
+   "median_days": 3,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 72.1,
+   "pct_located": 58.2,
+   "pct_no_completion": 26.5,
+   "per_1000": 164.7,
+   "requests": 6139,
+   "ward_no": 84
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 72.3,
+   "pct_located": 63.6,
+   "pct_no_completion": 25.8,
+   "per_1000": 127.7,
+   "requests": 7851,
+   "ward_no": 85
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 1,
+   "p80_censored": false,
+   "p80_days": 14,
+   "pct_closed_30d": 82.0,
+   "pct_located": 64.9,
+   "pct_no_completion": 16.5,
+   "per_1000": 63.8,
+   "requests": 3352,
+   "ward_no": 86
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 6,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 62.0,
+   "pct_located": 77.1,
+   "pct_no_completion": 35.7,
+   "per_1000": 5.6,
+   "requests": 258,
+   "ward_no": 87
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 5,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 65.0,
+   "pct_located": 70.4,
+   "pct_no_completion": 33.5,
+   "per_1000": 41.1,
+   "requests": 2525,
+   "ward_no": 88
+  },
+  {
+   "flags": [
+    "low_location_coverage"
+   ],
+   "median_censored": false,
+   "median_days": 26,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 50.4,
+   "pct_located": 57.1,
+   "pct_no_completion": 47.4,
+   "per_1000": 16.2,
+   "requests": 887,
+   "ward_no": 89
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 74.7,
+   "pct_located": 70.6,
+   "pct_no_completion": 23.8,
+   "per_1000": 204.9,
+   "requests": 3838,
+   "ward_no": 90
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 11,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 54.4,
+   "pct_located": 66.7,
+   "pct_no_completion": 44.2,
+   "per_1000": 14.5,
+   "requests": 826,
+   "ward_no": 91
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 1,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 74.6,
+   "pct_located": 68.6,
+   "pct_no_completion": 24.0,
+   "per_1000": 331.7,
+   "requests": 14221,
+   "ward_no": 92
+  },
+  {
+   "flags": [
+    "low_location_coverage"
+   ],
+   "median_censored": false,
+   "median_days": 7,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 60.5,
+   "pct_located": 57.4,
+   "pct_no_completion": 37.4,
+   "per_1000": 7.6,
+   "requests": 430,
+   "ward_no": 93
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 7,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 59.5,
+   "pct_located": 63.4,
+   "pct_no_completion": 39.1,
+   "per_1000": 46.7,
+   "requests": 2198,
+   "ward_no": 94
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 6,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 63.4,
+   "pct_located": 69.5,
+   "pct_no_completion": 35.4,
+   "per_1000": 21.7,
+   "requests": 1082,
+   "ward_no": 95
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 5,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 64.9,
+   "pct_located": 69.0,
+   "pct_no_completion": 33.7,
+   "per_1000": 16.1,
+   "requests": 849,
+   "ward_no": 96
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 5,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 62.9,
+   "pct_located": 63.8,
+   "pct_no_completion": 35.6,
+   "per_1000": 34.6,
+   "requests": 1968,
+   "ward_no": 97
+  },
+  {
+   "flags": [
+    "low_location_coverage"
+   ],
+   "median_censored": false,
+   "median_days": 5,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 65.4,
+   "pct_located": 55.1,
+   "pct_no_completion": 33.1,
+   "per_1000": 41.0,
+   "requests": 2005,
+   "ward_no": 98
+  },
+  {
+   "flags": [
+    "low_location_coverage"
+   ],
+   "median_censored": false,
+   "median_days": 4,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 64.8,
+   "pct_located": 41.1,
+   "pct_no_completion": 34.0,
+   "per_1000": 40.5,
+   "requests": 2150,
+   "ward_no": 99
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 76.7,
+   "pct_located": 68.9,
+   "pct_no_completion": 21.8,
+   "per_1000": 193.5,
+   "requests": 9879,
+   "ward_no": 100
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 3,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 72.6,
+   "pct_located": 70.5,
+   "pct_no_completion": 25.4,
+   "per_1000": 37.4,
+   "requests": 2095,
+   "ward_no": 101
+  },
+  {
+   "flags": [
+    "low_location_coverage"
+   ],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 72.6,
+   "pct_located": 55.2,
+   "pct_no_completion": 25.6,
+   "per_1000": 130.1,
+   "requests": 3730,
+   "ward_no": 102
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 73.8,
+   "pct_located": 80.9,
+   "pct_no_completion": 24.2,
+   "per_1000": 145.8,
+   "requests": 4817,
+   "ward_no": 103
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 3,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 75.2,
+   "pct_located": 73.2,
+   "pct_no_completion": 22.7,
+   "per_1000": 29.4,
+   "requests": 1490,
+   "ward_no": 104
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 74.5,
+   "pct_located": 70.7,
+   "pct_no_completion": 24.0,
+   "per_1000": 101.9,
+   "requests": 3942,
+   "ward_no": 105
+  },
+  {
+   "flags": [
+    "low_location_coverage"
+   ],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 75.0,
+   "pct_located": 56.7,
+   "pct_no_completion": 22.3,
+   "per_1000": 49.6,
+   "requests": 3670,
+   "ward_no": 106
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 4,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 69.6,
+   "pct_located": 80.1,
+   "pct_no_completion": 29.0,
+   "per_1000": 152.8,
+   "requests": 6179,
+   "ward_no": 107
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 3,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 74.1,
+   "pct_located": 73.5,
+   "pct_no_completion": 23.8,
+   "per_1000": 66.7,
+   "requests": 3365,
+   "ward_no": 108
+  },
+  {
+   "flags": [
+    "low_location_coverage"
+   ],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 74.2,
+   "pct_located": 55.1,
+   "pct_no_completion": 23.7,
+   "per_1000": 105.8,
+   "requests": 4784,
+   "ward_no": 109
+  },
+  {
+   "flags": [
+    "low_location_coverage"
+   ],
+   "median_censored": false,
+   "median_days": 1,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 77.1,
+   "pct_located": 41.9,
+   "pct_no_completion": 21.5,
+   "per_1000": 93.9,
+   "requests": 3720,
+   "ward_no": 110
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 74.5,
+   "pct_located": 81.1,
+   "pct_no_completion": 23.6,
+   "per_1000": 128.9,
+   "requests": 6280,
+   "ward_no": 111
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 74.3,
+   "pct_located": 74.1,
+   "pct_no_completion": 23.7,
+   "per_1000": 219.1,
+   "requests": 5976,
+   "ward_no": 112
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 4,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 67.3,
+   "pct_located": 78.2,
+   "pct_no_completion": 30.9,
+   "per_1000": 215.2,
+   "requests": 6539,
+   "ward_no": 113
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 1,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 73.2,
+   "pct_located": 66.9,
+   "pct_no_completion": 24.3,
+   "per_1000": 89.3,
+   "requests": 5243,
+   "ward_no": 114
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 72.8,
+   "pct_located": 76.1,
+   "pct_no_completion": 25.4,
+   "per_1000": 229.8,
+   "requests": 6744,
+   "ward_no": 115
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 2,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 74.9,
+   "pct_located": 66.5,
+   "pct_no_completion": 23.4,
+   "per_1000": 76.7,
+   "requests": 5101,
+   "ward_no": 116
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 4,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 69.1,
+   "pct_located": 76.6,
+   "pct_no_completion": 29.4,
+   "per_1000": 256.7,
+   "requests": 5787,
+   "ward_no": 117
+  },
+  {
+   "flags": [],
+   "median_censored": false,
+   "median_days": 1,
+   "p80_censored": true,
+   "p80_days": 90,
+   "pct_closed_30d": 76.5,
+   "pct_located": 69.6,
+   "pct_no_completion": 21.3,
+   "per_1000": 202.1,
+   "requests": 8042,
+   "ward_no": 118
+  }
+ ],
+ "schema_version": 1,
+ "sources": {
+  "population": {
+   "licence": "CC BY 4.0 (GHSL); City of Cape Town Open Data Licence",
+   "notes": "Schiavina M., Freire S., Carioli A., MacManus K. (2023): GHS-POP R2023A - GHS population grid multitemporal (1975-2030). European Commission, Joint Research Centre (JRC). doi:10.2905/2FF68A52-5B5B-4A22-8F40-C41DA8332CFE City total from https://services6.arcgis.com/nyYfO9SxHU2ChQd9/arcgis/rest/services/Population_Estimates_2026_(Suburb_Level)/FeatureServer/0.",
+   "publisher": "Derived: EU JRC GHS-POP 2025 grid, scaled to City of Cape Town 2025 estimate",
+   "retrieved_at": "2026-11-16",
+   "title": "Modelled ward population (2025)",
+   "url": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2025_GLOBE_R2023A_4326_3ss/V1-0/tiles/GHS_POP_E2025_GLOBE_R2023A_4326_3ss_V1_0_R13_C20.zip"
+  },
+  "sr": {
+   "licence": "City of Cape Town Open Data Licence",
+   "notes": "Mirrored locally and updated with deltas from https://services6.arcgis.com/nyYfO9SxHU2ChQd9/arcgis/rest/services/schema_jan2023_iso/FeatureServer/0. Requests are assigned to 2026 wards by their coordinates.",
+   "publisher": "City of Cape Town",
+   "retrieved_at": "2026-11-16",
+   "title": "Service Requests Jan 2023 to Present",
+   "url": "https://odp-cctegis.opendata.arcgis.com/datasets/da3b6d46845e4671bde500e8de7e1d3e"
+  }
+ },
+ "ward_vintage": 2026
+}

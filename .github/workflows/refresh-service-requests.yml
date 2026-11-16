@@ -1,0 +1,117 @@
+name: Refresh service requests
+
+# Monthly: pull changes from the City's live service-request layer into the SQLite mirror, rebuild
+# the per-ward aggregate, and open a PR for review. The mirror lives as a compressed asset on the
+# rolling `sr-db` release (Actions caches expire after 7 days unused, so they'd be lost monthly).
+
+on:
+  schedule:
+    - cron: "0 4 3 * *" # 04:00 UTC on the 3rd of each month
+  workflow_dispatch:
+    inputs:
+      full:
+        description: "Rebuild the mirror from scratch (bulk CSV + live layer)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: refresh-service-requests
+
+env:
+  DB: raw/db/service_requests.sqlite
+  ASSET: service_requests.sqlite.zst
+  GH_TOKEN: ${{ github.token }}
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+      - run: uv sync --frozen
+        working-directory: etl
+
+      - name: Fetch the mirror
+        id: fetch
+        run: |
+          mkdir -p raw/db
+          if [ "${{ inputs.full }}" != "true" ] && gh release download sr-db -p "$ASSET" -D raw/db; then
+            zstd -d --rm "raw/db/$ASSET" -o "$DB"
+            echo "mode=delta" >> "$GITHUB_OUTPUT"
+          else
+            echo "No mirror asset (or full rebuild requested): rebuilding from scratch."
+            echo "mode=full" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Sync
+        working-directory: etl
+        run: |
+          if [ "${{ steps.fetch.outputs.mode }}" = "full" ]; then
+            uv run wardmap sr sync --full
+          else
+            uv run wardmap sr sync
+          fi
+
+      - name: Rebuild and check
+        working-directory: etl
+        run: |
+          uv run wardmap build
+          uv run wardmap check
+
+      - name: Store the mirror
+        run: |
+          python3 -c "import sqlite3,sys; c=sqlite3.connect(sys.argv[1]); c.execute('PRAGMA wal_checkpoint(TRUNCATE)'); c.execute('VACUUM'); c.close()" "$DB"
+          zstd -T0 -10 -f "$DB" -o "raw/$ASSET"
+          gh release view sr-db >/dev/null 2>&1 || gh release create sr-db --title "Service-request mirror" \
+            --notes "Compressed SQLite mirror used by the refresh workflow. Not a release of the site." --latest=false
+          gh release upload sr-db "raw/$ASSET" --clobber
+
+      - name: Summarise changes
+        id: summary
+        run: |
+          python3 - <<'EOF' > raw/summary.md
+          import json, subprocess
+          new = json.load(open("data/service_requests-2026.json"))
+          try:
+              old = json.loads(subprocess.check_output(["git", "show", "HEAD:data/service_requests-2026.json"]))
+          except subprocess.CalledProcessError:
+              old = {"rows": [], "as_of": "none"}
+          o = {r["ward_no"]: r for r in old["rows"]}
+          print(f"Service requests as of **{new['as_of']}** (was {old.get('as_of')}); cohort {new['period']['from']} to {new['period']['to']}.\n")
+          moves = []
+          for r in new["rows"]:
+              a, b = o.get(r["ward_no"], {}).get("pct_closed_30d"), r.get("pct_closed_30d")
+              if a is not None and b is not None:
+                  moves.append((abs(b - a), r["ward_no"], a, b))
+          moves.sort(reverse=True)
+          if moves:
+              print("Largest changes in *resolved within 30 days*:\n")
+              print("| Ward | Before | After |\n|---|---|---|")
+              for _, w, a, b in moves[:8]:
+                  print(f"| {w} | {a}% | {b}% |")
+          EOF
+          cat raw/summary.md
+
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          branch: data/service-requests
+          commit-message: "data: refresh service requests"
+          title: "Data: refresh service requests"
+          body-path: raw/summary.md
+          add-paths: |
+            data/
+          labels: data
+
+      - name: Report failure
+        if: failure()
+        run: |
+          gh issue create --title "Service-request refresh failed ($(date -u +%F))" \
+            --body "The scheduled refresh failed: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}. The site keeps its last good data. If the log says the schema changed or the mirror drifted, see README > Service requests."

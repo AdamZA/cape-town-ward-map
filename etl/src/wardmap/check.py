@@ -1,0 +1,89 @@
+"""Validate data/ against the contracts and cross-file invariants. Returns a process exit code.
+
+This is the main safety net: CI runs it on every change, and refresh workflows run it before
+opening a PR.
+"""
+
+from __future__ import annotations
+
+import json
+
+from wardmap.config import DATA, VINTAGE_WARD_COUNT
+from wardmap.models import ENVELOPES, Index
+
+
+def run() -> int:
+    errors: list[str] = []
+
+    def err(msg: str) -> None:
+        errors.append(msg)
+
+    index = Index.model_validate_json((DATA / "index.json").read_text(encoding="utf-8"))
+    for b in index.boundaries:
+        fc = json.loads((DATA / b.file).read_text(encoding="utf-8"))
+        nos = sorted(f["properties"]["ward_no"] for f in fc["features"])
+        if nos != list(range(1, VINTAGE_WARD_COUNT[b.ward_vintage] + 1)):
+            err(f"{b.file}: ward set is not 1..{VINTAGE_WARD_COUNT[b.ward_vintage]}")
+
+    for entry in index.datasets:
+        path = DATA / entry.file
+        if not path.exists():
+            err(f"{entry.file}: listed in index.json but missing")
+            continue
+        model = ENVELOPES[entry.dataset]
+        try:
+            env = model.model_validate_json(path.read_text(encoding="utf-8"))
+        except Exception as e:  # noqa: BLE001
+            err(f"{entry.file}: does not match schema: {e}")
+            continue
+        if env.ward_vintage != entry.ward_vintage:
+            err(f"{entry.file}: vintage {env.ward_vintage} != index {entry.ward_vintage}")
+        expected = set(range(1, VINTAGE_WARD_COUNT[env.ward_vintage] + 1))
+
+        # Every field and gap must point at a declared source; no figure without provenance.
+        for name, fm in env.fields.items():
+            if fm.source not in env.sources:
+                err(f"{entry.file}: field {name!r} cites unknown source {fm.source!r}")
+
+        if entry.dataset in ("wards", "service_requests"):
+            nos = [r.ward_no for r in env.rows]
+            if sorted(nos) != sorted(expected):
+                err(f"{entry.file}: rows are not exactly wards 1..{len(expected)}")
+        if entry.dataset == "wards":
+            pops = [r.population for r in env.rows if r.population is not None]
+            if pops and not all(5_000 < p < 200_000 for p in pops):
+                err(f"{entry.file}: implausible ward population {min(pops)}..{max(pops)}")
+        if entry.dataset == "service_requests":
+            for r in [*env.rows, env.citywide]:
+                for f in ("pct_no_completion", "pct_closed_30d", "pct_located"):
+                    v = getattr(r, f)
+                    if v is not None and not 0 <= v <= 100:
+                        err(f"{entry.file}: ward {r.ward_no} {f}={v} out of range")
+                if r.median_days is not None and r.median_days < 0:
+                    err(f"{entry.file}: ward {r.ward_no} negative median")
+        if entry.dataset == "allocations":
+            wards = {r.ward_no for r in env.rows if r.ward_no is not None}
+            if wards != expected:
+                err(f"{entry.file}: wards differ from {env.ward_vintage} set")
+            for r in env.rows:
+                if set(r.amounts) != set(env.years):
+                    err(f"{entry.file}: row {r.wbs} has years {sorted(r.amounts)}")
+        if entry.dataset == "crosswalk":
+            to_share: dict[int, float] = {}
+            for r in env.rows:
+                to_share[r.to_ward] = to_share.get(r.to_ward, 0) + r.share_of_to
+            # Boundary sets from different publishers differ at the edges (reported as gaps),
+            # but a ward mostly uncovered means something is wrong.
+            bad = {w: s for w, s in to_share.items() if not 0.9 <= s <= 1.01}
+            if bad:
+                err(f"{entry.file}: shares don't sum to ~1 for wards {sorted(bad)[:10]}")
+            flagged = {g.ward_no for g in env.gaps if g.code == "edge_mismatch"}
+            missing = {w for w, s in to_share.items() if s < 0.98} - flagged
+            if missing:
+                err(f"{entry.file}: wards {sorted(missing)} under-covered but not flagged")
+
+    for e in errors:
+        print(f"CHECK FAILED: {e}")
+    if not errors:
+        print(f"check ok: {len(index.datasets)} datasets, {len(index.boundaries)} boundary files")
+    return 1 if errors else 0

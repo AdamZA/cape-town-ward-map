@@ -1,0 +1,56 @@
+{
+ "boundaries": [
+  {
+   "file": "boundaries-2021.geojson",
+   "source": {
+    "licence": "Municipal Demarcation Board public data",
+    "notes": "Service name says 2020; these are the wards used for the 2021 elections.",
+    "publisher": "Municipal Demarcation Board",
+    "retrieved_at": "2026-11-16",
+    "title": "Wards (2021 delimitation), City of Cape Town (CPT)",
+    "url": "https://services7.arcgis.com/oeoyTUJC8HEeYsRB/arcgis/rest/services/MDB_Wards_2020/FeatureServer/0"
+   },
+   "ward_vintage": 2021
+  },
+  {
+   "file": "boundaries-2026.geojson",
+   "source": {
+    "licence": "City of Cape Town Open Data Licence",
+    "notes": "Layer metadata still describes 2016 wards, but every feature has WARD_YEAR=2026 and there are 118 wards. Cross-checked against the Municipal Demarcation Board 2026 layer: per-ward intersection-over-union min 0.9746.",
+    "publisher": "City of Cape Town",
+    "retrieved_at": "2026-11-16",
+    "title": "Wards (2026 delimitation)",
+    "url": "https://citymaps.capetown.gov.za/agsext/rest/services/Theme_Based/ODP_SPLIT_5/FeatureServer/6"
+   },
+   "ward_vintage": 2026
+  }
+ ],
+ "datasets": [
+  {
+   "budget_year": null,
+   "dataset": "crosswalk",
+   "file": "crosswalk-2021-2026.json",
+   "ward_vintage": 2026
+  },
+  {
+   "budget_year": null,
+   "dataset": "wards",
+   "file": "wards-2026.json",
+   "ward_vintage": 2026
+  },
+  {
+   "budget_year": "2024/25",
+   "dataset": "allocations",
+   "file": "allocations-2024-25.json",
+   "ward_vintage": 2021
+  },
+  {
+   "budget_year": null,
+   "dataset": "service_requests",
+   "file": "service_requests-2026.json",
+   "ward_vintage": 2026
+  }
+ ],
+ "default_vintage": 2026,
+ "schema_version": 1
+}

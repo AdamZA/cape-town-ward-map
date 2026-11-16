@@ -1,0 +1,5 @@
+# LF everywhere: pinned sources are checksummed, and data/ diffs must match across OSes.
+* text=auto eol=lf
+*.pdf binary
+*.tif binary
+*.png binary

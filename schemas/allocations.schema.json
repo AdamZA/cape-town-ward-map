@@ -1,0 +1,334 @@
+{
+  "$defs": {
+    "AllocationRow": {
+      "additionalProperties": false,
+      "properties": {
+        "amounts": {
+          "additionalProperties": {
+            "type": "integer"
+          },
+          "description": "Rand allocation by financial year, e.g. '2024/25'",
+          "title": "Amounts",
+          "type": "object"
+        },
+        "department": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Department"
+        },
+        "description": {
+          "title": "Description",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "operating",
+            "capital",
+            "other"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "subcouncil": {
+          "title": "Subcouncil",
+          "type": "integer"
+        },
+        "ward_no": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Null for multi-ward projects in a subcouncil",
+          "title": "Ward No"
+        },
+        "wbs": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Wbs"
+        }
+      },
+      "required": [
+        "ward_no",
+        "subcouncil",
+        "wbs",
+        "description",
+        "department",
+        "kind",
+        "amounts"
+      ],
+      "title": "AllocationRow",
+      "type": "object"
+    },
+    "FieldMeta": {
+      "additionalProperties": false,
+      "properties": {
+        "description": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Description"
+        },
+        "label": {
+          "title": "Label",
+          "type": "string"
+        },
+        "method": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Anchor in METHODOLOGY.md",
+          "title": "Method"
+        },
+        "source": {
+          "description": "Key into the envelope's `sources`",
+          "title": "Source",
+          "type": "string"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Unit"
+        }
+      },
+      "required": [
+        "label",
+        "unit",
+        "source",
+        "method",
+        "description"
+      ],
+      "title": "FieldMeta",
+      "type": "object"
+    },
+    "Gap": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        },
+        "ward_no": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Null for gaps that apply to the whole dataset",
+          "title": "Ward No"
+        }
+      },
+      "required": [
+        "code",
+        "message",
+        "ward_no"
+      ],
+      "title": "Gap",
+      "type": "object"
+    },
+    "Period": {
+      "additionalProperties": false,
+      "properties": {
+        "from": {
+          "title": "From",
+          "type": "string"
+        },
+        "to": {
+          "title": "To",
+          "type": "string"
+        }
+      },
+      "required": [
+        "from",
+        "to"
+      ],
+      "title": "Period",
+      "type": "object"
+    },
+    "Source": {
+      "additionalProperties": false,
+      "properties": {
+        "licence": {
+          "title": "Licence",
+          "type": "string"
+        },
+        "notes": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Notes"
+        },
+        "publisher": {
+          "title": "Publisher",
+          "type": "string"
+        },
+        "retrieved_at": {
+          "description": "ISO date the data was retrieved",
+          "title": "Retrieved At",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "publisher",
+        "url",
+        "retrieved_at",
+        "licence",
+        "notes"
+      ],
+      "title": "Source",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "as_of": {
+      "description": "ISO date (or year-month) the figures describe, not when the file was built",
+      "title": "As Of",
+      "type": "string"
+    },
+    "budget_year": {
+      "description": "Financial year of the budget, e.g. '2024/25'",
+      "title": "Budget Year",
+      "type": "string"
+    },
+    "dataset": {
+      "const": "allocations",
+      "default": "allocations",
+      "title": "Dataset",
+      "type": "string"
+    },
+    "fields": {
+      "additionalProperties": {
+        "$ref": "#/$defs/FieldMeta"
+      },
+      "title": "Fields",
+      "type": "object"
+    },
+    "gaps": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/Gap"
+      },
+      "title": "Gaps",
+      "type": "array"
+    },
+    "period": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Period"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "rows": {
+      "items": {
+        "$ref": "#/$defs/AllocationRow"
+      },
+      "title": "Rows",
+      "type": "array"
+    },
+    "schema_version": {
+      "default": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "sources": {
+      "additionalProperties": {
+        "$ref": "#/$defs/Source"
+      },
+      "title": "Sources",
+      "type": "object"
+    },
+    "ward_vintage": {
+      "description": "Year the ward delimitation took effect (2021, 2026)",
+      "title": "Ward Vintage",
+      "type": "integer"
+    },
+    "years": {
+      "description": "Financial-year columns present in `amounts`",
+      "items": {
+        "type": "string"
+      },
+      "title": "Years",
+      "type": "array"
+    }
+  },
+  "required": [
+    "dataset",
+    "schema_version",
+    "ward_vintage",
+    "as_of",
+    "period",
+    "sources",
+    "fields",
+    "gaps",
+    "budget_year",
+    "years",
+    "rows"
+  ],
+  "title": "AllocationsEnvelope",
+  "type": "object"
+}

@@ -1,0 +1,11 @@
+# Ward allocation annexure for the 2024/25 budget. See etl/src/wardmap/datasets/allocations.py.
+budget_year = "2024/25"
+title = "Annexure 25: Operating- and capital ward allocation projects supported by Subcouncils, 2024/25 Budget (May 2024)"
+url = "https://resource.capetown.gov.za/documentcentre/Documents/Financial%20documents/Budget2425_Ann25_Oper-capitalwardallocationprojects.pdf"
+# As stated on the document ("2024/25 Budget (May 2024)"); ISO year-month.
+published = "2024-05"
+layout = "v1"
+first_page = 2
+# 116 wards, numbered 1-116: the 2021 delimitation in force when this budget was adopted.
+ward_vintage = 2021
+years = ["2024/25", "2025/26", "2026/27"]

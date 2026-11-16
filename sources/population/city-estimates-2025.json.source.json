@@ -1,0 +1,10 @@
+{
+  "licence": "City of Cape Town Open Data Licence",
+  "method": "download",
+  "notes": "Modelled annual planning estimates based on Census 2022; used for the metro total.",
+  "publisher": "City of Cape Town",
+  "retrieved_at": "2026-11-16",
+  "sha256": "e670bca8b2e6b11e5a1f722f45ced4e5a38a4ca887aaf1afb9a2007f2f5b711f",
+  "title": "Population Estimates 2025 (Suburb Level)",
+  "url": "https://services6.arcgis.com/nyYfO9SxHU2ChQd9/arcgis/rest/services/Population_Estimates_2026_(Suburb_Level)/FeatureServer/0"
+}
