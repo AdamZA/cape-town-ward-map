@@ -1,0 +1,10 @@
+{
+  "licence": "City of Cape Town Open Data Licence",
+  "method": "download",
+  "notes": "Upper-case names tidied to title case.",
+  "publisher": "City of Cape Town",
+  "retrieved_at": "2026-11-16",
+  "sha256": "f5d545ed661624b0b3d760e52600a1a8cd07fd8aaa3281218ca8a84fb0130f60",
+  "title": "Municipal Courts",
+  "url": "https://citymaps.capetown.gov.za/agsext/rest/services/Theme_Based/Community_Services/MapServer/3"
+}

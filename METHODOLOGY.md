@@ -146,6 +146,43 @@ Suburb search uses the City's official suburbs. A suburb is listed with every wa
 least 2% of its area, with the share, because suburbs and wards don't line up. "My location" uses
 the device's position and the ward boundaries directly; the position never leaves the browser.
 
+## Land use
+
+"What kind of place" comes from the City's zoning scheme: what each land parcel **may legally be
+used for**, not what is on it today (a parcel zoned for business may be empty; informal homes
+often sit on land zoned for something else). For each ward we add up parcel areas per zone and
+group the zones (houses, incremental housing, flats and group housing, business and mixed use,
+industrial, community, parks and conservation, farmland and rural, transport and utilities).
+Public roads, "limited use" holding land and parcels with no zoning recorded are left out of the
+shares and reported separately.
+
+The City's layer has about 850,000 parcels, so we don't download it. At pin time the City's
+server sums the areas of parcels wholly inside each ward, and we fetch only the parcels crossing
+the ward's edge and clip them to it. Requests are made one at a time.
+
+In a few wards most of the area isn't in any recorded land parcel (unsurveyed or informally
+settled land). Where recorded parcels cover less than 60% of the ward, the site says so and
+leaves the one-line description out of the summary.
+
+The one-line description ("Zoned mostly for houses (64%) ...") is generated from these shares by
+fixed rules, with the percentages shown; no wording is written by hand per ward.
+
+## Landmarks
+
+The map's place layers (police and fire stations, municipal courts, hospitals and clinics,
+schools, libraries, community centres, sports grounds, stadiums, pools, beaches and monuments)
+come from the City's facility registers. The City has no shopping-centre layer, so those come
+from OpenStreetMap (`shop=mall`, © OpenStreetMap contributors, ODbL). Names are tidied from the
+City's upper case; places are assigned to the ward containing them. Registers can be incomplete
+or out of date, and a place's absence from the map doesn't mean it isn't there.
+
+## Fetching politely
+
+Every request to an upstream service goes through one module (`etl/src/wardmap/fetch.py`),
+which sends requests to each host one at a time with a minimum gap (1.5 s for the City's own
+servers, 5 s for OpenStreetMap's Overpass API), backs off on errors and honours `Retry-After`.
+Monthly refreshes fetch only what changed since the last run.
+
 ## Ward allocations
 
 Each year the City budgets a fixed amount per ward (R1 million in 2024/25) for projects proposed

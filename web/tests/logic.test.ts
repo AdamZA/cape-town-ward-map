@@ -6,6 +6,7 @@ import { parseHash, toHash } from "../src/state";
 import { suggest } from "../src/search/Search";
 import { bbox, inPolygon } from "../src/geo";
 import { standing } from "../src/metrics";
+import { characterLine } from "../src/places/places";
 import type { AllocationsEnvelope } from "../src/generated/allocations";
 import type { CrosswalkEnvelope } from "../src/generated/crosswalk";
 
@@ -49,15 +50,20 @@ describe("format", () => {
 describe("hash state", () => {
   it("round-trips", () => {
     const s = parseHash("#ward=57&metric=median_days");
-    expect(s).toEqual({ ward: 57, metric: "median_days", city: false });
+    expect(s).toEqual({ ward: 57, metric: "median_days", city: false, layers: [] });
     expect(parseHash(toHash(s))).toEqual(s);
   });
   it("ignores junk", () => {
-    expect(parseHash("#ward=abc&metric=nope")).toEqual({ ward: null, metric: "pct_closed_30d", city: false });
+    expect(parseHash("#ward=abc&metric=nope")).toEqual({ ward: null, metric: "pct_closed_30d", city: false, layers: [] });
   });
   it("keeps the city overview only when no ward is open", () => {
-    expect(parseHash(toHash({ ward: null, metric: "water_days", city: true }))).toEqual({ ward: null, metric: "water_days", city: true });
-    expect(toHash({ ward: 3, metric: "pct_closed_30d", city: true })).toBe("#ward=3");
+    expect(parseHash(toHash({ ward: null, metric: "water_days", city: true, layers: [] }))).toEqual({ ward: null, metric: "water_days", city: true, layers: [] });
+    expect(toHash({ ward: 3, metric: "pct_closed_30d", city: true, layers: [] })).toBe("#ward=3");
+  });
+  it("keeps place layers, dropping junk", () => {
+    const s = parseHash("#layers=police,clinics,<b>");
+    expect(s.layers).toEqual(["police", "clinics"]);
+    expect(parseHash(toHash(s)).layers).toEqual(["police", "clinics"]);
   });
 });
 
@@ -118,5 +124,28 @@ describe("standing", () => {
     const v = new Map<number, number | null>([[1, 10], [2, 20], [3, 30], [4, null]]);
     expect(standing(v, 2)).toEqual({ lower: 1, higher: 1, n: 3, median: 20 });
     expect(standing(v, 4)).toBeNull();
+  });
+});
+
+describe("characterLine", () => {
+  const labels = { houses: "Houses", industrial: "Industrial", open_space: "Parks and conservation", business_mixed: "Business and mixed use", flats_group_housing: "Flats and group housing" };
+  const row = (shares: Record<string, number>) => ({ ward_no: 1, shares, zoned_km2: 2, excluded_km2: 0.5, parcel_coverage: 0.9 });
+  it("names a dominant use", () => {
+    expect(characterLine(row({ houses: 0.64, open_space: 0.18, industrial: 0.05 }), labels)).toBe(
+      "Zoned mostly for houses (64%), with parks and conservation (18%).",
+    );
+  });
+  it("calls a residential majority residential", () => {
+    expect(characterLine(row({ houses: 0.3, flats_group_housing: 0.25, industrial: 0.45 }), labels)).toBe(
+      "Mostly residential (55%: houses 30% and flats and group housing 25%), with industrial (45%).",
+    );
+  });
+  it("describes a mix", () => {
+    expect(characterLine(row({ industrial: 0.4, business_mixed: 0.35, open_space: 0.25 }), labels)).toBe(
+      "A mix: industrial (40%), business and mixed use (35%) and parks and conservation (25%).",
+    );
+  });
+  it("returns null with no zoned land", () => {
+    expect(characterLine({ ...row({}), zoned_km2: 0 }, labels)).toBeNull();
   });
 });

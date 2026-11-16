@@ -1,0 +1,10 @@
+{
+  "licence": "City of Cape Town Open Data Licence",
+  "method": "download",
+  "notes": "Upper-case names tidied to title case.",
+  "publisher": "City of Cape Town",
+  "retrieved_at": "2026-11-16",
+  "sha256": "3eb16d45b567a9547210134e3e611c55ec97059917a0bc81176f2b1f6d32b14e",
+  "title": "Community Centres",
+  "url": "https://citymaps.capetown.gov.za/agsext/rest/services/Theme_Based/Community_Services/MapServer/8"
+}

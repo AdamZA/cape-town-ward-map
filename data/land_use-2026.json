@@ -1,0 +1,2073 @@
+{
+ "as_of": "2026-11-16",
+ "dataset": "land_use",
+ "fields": {
+  "shares": {
+   "description": "Share of the ward's zoned land in each group. Zoning says what land may be used for, not what is on it today. Public roads, 'limited use' land and parcels with no zoning recorded are left out.",
+   "label": "Land by zoning",
+   "method": "land-use",
+   "source": "zoning",
+   "unit": "share"
+  }
+ },
+ "gaps": [],
+ "groups": [
+  {
+   "key": "houses",
+   "label": "Houses"
+  },
+  {
+   "key": "incremental_housing",
+   "label": "Incremental housing"
+  },
+  {
+   "key": "flats_group_housing",
+   "label": "Flats and group housing"
+  },
+  {
+   "key": "business_mixed",
+   "label": "Business and mixed use"
+  },
+  {
+   "key": "industrial",
+   "label": "Industrial"
+  },
+  {
+   "key": "community",
+   "label": "Community (schools, clinics, worship)"
+  },
+  {
+   "key": "open_space",
+   "label": "Parks and conservation"
+  },
+  {
+   "key": "agriculture_rural",
+   "label": "Farmland and rural"
+  },
+  {
+   "key": "transport_utility",
+   "label": "Transport and utilities"
+  }
+ ],
+ "period": null,
+ "rows": [
+  {
+   "excluded_km2": 2.38,
+   "parcel_coverage": 0.85,
+   "shares": {
+    "agriculture_rural": 0.384,
+    "business_mixed": 0.022,
+    "community": 0.019,
+    "flats_group_housing": 0.063,
+    "houses": 0.308,
+    "incremental_housing": 0.0,
+    "industrial": 0.0,
+    "open_space": 0.18,
+    "transport_utility": 0.025
+   },
+   "ward_no": 1,
+   "zoned_km2": 14.41
+  },
+  {
+   "excluded_km2": 1.84,
+   "parcel_coverage": 0.87,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.056,
+    "community": 0.109,
+    "flats_group_housing": 0.084,
+    "houses": 0.558,
+    "incremental_housing": 0.0,
+    "industrial": 0.015,
+    "open_space": 0.108,
+    "transport_utility": 0.071
+   },
+   "ward_no": 2,
+   "zoned_km2": 6.32
+  },
+  {
+   "excluded_km2": 2.11,
+   "parcel_coverage": 1.1,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.015,
+    "community": 0.336,
+    "flats_group_housing": 0.082,
+    "houses": 0.321,
+    "incremental_housing": 0.0,
+    "industrial": 0.141,
+    "open_space": 0.098,
+    "transport_utility": 0.008
+   },
+   "ward_no": 3,
+   "zoned_km2": 9.85
+  },
+  {
+   "excluded_km2": 1.93,
+   "parcel_coverage": 0.82,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.087,
+    "community": 0.019,
+    "flats_group_housing": 0.074,
+    "houses": 0.237,
+    "incremental_housing": 0.0,
+    "industrial": 0.437,
+    "open_space": 0.095,
+    "transport_utility": 0.05
+   },
+   "ward_no": 4,
+   "zoned_km2": 8.57
+  },
+  {
+   "excluded_km2": 2.0,
+   "parcel_coverage": 1.03,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.019,
+    "community": 0.078,
+    "flats_group_housing": 0.09,
+    "houses": 0.472,
+    "incremental_housing": 0.0,
+    "industrial": 0.0,
+    "open_space": 0.145,
+    "transport_utility": 0.196
+   },
+   "ward_no": 5,
+   "zoned_km2": 7.1
+  },
+  {
+   "excluded_km2": 0.66,
+   "parcel_coverage": 0.69,
+   "shares": {
+    "agriculture_rural": 0.661,
+    "business_mixed": 0.006,
+    "community": 0.049,
+    "flats_group_housing": 0.0,
+    "houses": 0.0,
+    "incremental_housing": 0.222,
+    "industrial": 0.0,
+    "open_space": 0.061,
+    "transport_utility": 0.001
+   },
+   "ward_no": 6,
+   "zoned_km2": 3.94
+  },
+  {
+   "excluded_km2": 2.04,
+   "parcel_coverage": 0.91,
+   "shares": {
+    "agriculture_rural": 0.014,
+    "business_mixed": 0.085,
+    "community": 0.091,
+    "flats_group_housing": 0.362,
+    "houses": 0.136,
+    "incremental_housing": 0.0,
+    "industrial": 0.211,
+    "open_space": 0.084,
+    "transport_utility": 0.017
+   },
+   "ward_no": 7,
+   "zoned_km2": 5.67
+  },
+  {
+   "excluded_km2": 1.41,
+   "parcel_coverage": 0.84,
+   "shares": {
+    "agriculture_rural": 0.183,
+    "business_mixed": 0.018,
+    "community": 0.026,
+    "flats_group_housing": 0.255,
+    "houses": 0.427,
+    "incremental_housing": 0.0,
+    "industrial": 0.0,
+    "open_space": 0.086,
+    "transport_utility": 0.005
+   },
+   "ward_no": 8,
+   "zoned_km2": 5.88
+  },
+  {
+   "excluded_km2": 1.64,
+   "parcel_coverage": 0.88,
+   "shares": {
+    "agriculture_rural": 0.001,
+    "business_mixed": 0.012,
+    "community": 0.293,
+    "flats_group_housing": 0.027,
+    "houses": 0.207,
+    "incremental_housing": 0.001,
+    "industrial": 0.352,
+    "open_space": 0.039,
+    "transport_utility": 0.068
+   },
+   "ward_no": 9,
+   "zoned_km2": 8.18
+  },
+  {
+   "excluded_km2": 2.04,
+   "parcel_coverage": 1.03,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.075,
+    "community": 0.196,
+    "flats_group_housing": 0.016,
+    "houses": 0.157,
+    "incremental_housing": 0.0,
+    "industrial": 0.215,
+    "open_space": 0.061,
+    "transport_utility": 0.28
+   },
+   "ward_no": 10,
+   "zoned_km2": 11.6
+  },
+  {
+   "excluded_km2": 4.2,
+   "parcel_coverage": 1.05,
+   "shares": {
+    "agriculture_rural": 0.154,
+    "business_mixed": 0.096,
+    "community": 0.069,
+    "flats_group_housing": 0.097,
+    "houses": 0.319,
+    "incremental_housing": 0.0,
+    "industrial": 0.113,
+    "open_space": 0.096,
+    "transport_utility": 0.056
+   },
+   "ward_no": 11,
+   "zoned_km2": 12.84
+  },
+  {
+   "excluded_km2": 1.56,
+   "parcel_coverage": 1.05,
+   "shares": {
+    "agriculture_rural": 0.003,
+    "business_mixed": 0.025,
+    "community": 0.2,
+    "flats_group_housing": 0.048,
+    "houses": 0.562,
+    "incremental_housing": 0.0,
+    "industrial": 0.0,
+    "open_space": 0.136,
+    "transport_utility": 0.027
+   },
+   "ward_no": 12,
+   "zoned_km2": 3.47
+  },
+  {
+   "excluded_km2": 28.2,
+   "parcel_coverage": 0.81,
+   "shares": {
+    "agriculture_rural": 0.939,
+    "business_mixed": 0.008,
+    "community": 0.002,
+    "flats_group_housing": 0.011,
+    "houses": 0.015,
+    "incremental_housing": 0.0,
+    "industrial": 0.012,
+    "open_space": 0.012,
+    "transport_utility": 0.0
+   },
+   "ward_no": 13,
+   "zoned_km2": 146.69
+  },
+  {
+   "excluded_km2": 6.98,
+   "parcel_coverage": 0.83,
+   "shares": {
+    "agriculture_rural": 0.455,
+    "business_mixed": 0.022,
+    "community": 0.01,
+    "flats_group_housing": 0.077,
+    "houses": 0.156,
+    "incremental_housing": 0.02,
+    "industrial": 0.146,
+    "open_space": 0.099,
+    "transport_utility": 0.016
+   },
+   "ward_no": 14,
+   "zoned_km2": 21.17
+  },
+  {
+   "excluded_km2": 1.83,
+   "parcel_coverage": 0.37,
+   "shares": {
+    "agriculture_rural": 0.121,
+    "business_mixed": 0.009,
+    "community": 0.092,
+    "flats_group_housing": 0.053,
+    "houses": 0.388,
+    "incremental_housing": 0.0,
+    "industrial": 0.0,
+    "open_space": 0.334,
+    "transport_utility": 0.003
+   },
+   "ward_no": 15,
+   "zoned_km2": 17.56
+  },
+  {
+   "excluded_km2": 1.6,
+   "parcel_coverage": 0.94,
+   "shares": {
+    "agriculture_rural": 0.032,
+    "business_mixed": 0.032,
+    "community": 0.117,
+    "flats_group_housing": 0.376,
+    "houses": 0.253,
+    "incremental_housing": 0.046,
+    "industrial": 0.01,
+    "open_space": 0.122,
+    "transport_utility": 0.012
+   },
+   "ward_no": 16,
+   "zoned_km2": 4.88
+  },
+  {
+   "excluded_km2": 5.03,
+   "parcel_coverage": 1.35,
+   "shares": {
+    "agriculture_rural": 0.109,
+    "business_mixed": 0.039,
+    "community": 0.165,
+    "flats_group_housing": 0.359,
+    "houses": 0.119,
+    "incremental_housing": 0.086,
+    "industrial": 0.0,
+    "open_space": 0.092,
+    "transport_utility": 0.032
+   },
+   "ward_no": 17,
+   "zoned_km2": 5.93
+  },
+  {
+   "excluded_km2": 0.85,
+   "parcel_coverage": 1.17,
+   "shares": {
+    "agriculture_rural": 0.225,
+    "business_mixed": 0.112,
+    "community": 0.12,
+    "flats_group_housing": 0.0,
+    "houses": 0.011,
+    "incremental_housing": 0.507,
+    "industrial": 0.003,
+    "open_space": 0.021,
+    "transport_utility": 0.001
+   },
+   "ward_no": 18,
+   "zoned_km2": 1.48
+  },
+  {
+   "excluded_km2": 2.71,
+   "parcel_coverage": 1.04,
+   "shares": {
+    "agriculture_rural": 0.367,
+    "business_mixed": 0.02,
+    "community": 0.094,
+    "flats_group_housing": 0.127,
+    "houses": 0.262,
+    "incremental_housing": 0.017,
+    "industrial": 0.008,
+    "open_space": 0.095,
+    "transport_utility": 0.01
+   },
+   "ward_no": 19,
+   "zoned_km2": 8.24
+  },
+  {
+   "excluded_km2": 0.94,
+   "parcel_coverage": 1.03,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.015,
+    "community": 0.137,
+    "flats_group_housing": 0.004,
+    "houses": 0.315,
+    "incremental_housing": 0.263,
+    "industrial": 0.0,
+    "open_space": 0.26,
+    "transport_utility": 0.006
+   },
+   "ward_no": 20,
+   "zoned_km2": 3.01
+  },
+  {
+   "excluded_km2": 2.49,
+   "parcel_coverage": 0.99,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.051,
+    "community": 0.064,
+    "flats_group_housing": 0.082,
+    "houses": 0.64,
+    "incremental_housing": 0.0,
+    "industrial": 0.0,
+    "open_space": 0.155,
+    "transport_utility": 0.009
+   },
+   "ward_no": 21,
+   "zoned_km2": 8.46
+  },
+  {
+   "excluded_km2": 2.05,
+   "parcel_coverage": 0.52,
+   "shares": {
+    "agriculture_rural": 0.026,
+    "business_mixed": 0.026,
+    "community": 0.135,
+    "flats_group_housing": 0.084,
+    "houses": 0.236,
+    "incremental_housing": 0.018,
+    "industrial": 0.15,
+    "open_space": 0.081,
+    "transport_utility": 0.244
+   },
+   "ward_no": 22,
+   "zoned_km2": 6.81
+  },
+  {
+   "excluded_km2": 27.35,
+   "parcel_coverage": 0.63,
+   "shares": {
+    "agriculture_rural": 0.764,
+    "business_mixed": 0.033,
+    "community": 0.012,
+    "flats_group_housing": 0.028,
+    "houses": 0.089,
+    "incremental_housing": 0.0,
+    "industrial": 0.001,
+    "open_space": 0.061,
+    "transport_utility": 0.013
+   },
+   "ward_no": 23,
+   "zoned_km2": 44.84
+  },
+  {
+   "excluded_km2": 2.53,
+   "parcel_coverage": 1.24,
+   "shares": {
+    "agriculture_rural": 0.059,
+    "business_mixed": 0.01,
+    "community": 0.093,
+    "flats_group_housing": 0.004,
+    "houses": 0.0,
+    "incremental_housing": 0.369,
+    "industrial": 0.002,
+    "open_space": 0.112,
+    "transport_utility": 0.35
+   },
+   "ward_no": 24,
+   "zoned_km2": 2.98
+  },
+  {
+   "excluded_km2": 1.09,
+   "parcel_coverage": 1.16,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.016,
+    "community": 0.207,
+    "flats_group_housing": 0.037,
+    "houses": 0.603,
+    "incremental_housing": 0.042,
+    "industrial": 0.006,
+    "open_space": 0.085,
+    "transport_utility": 0.003
+   },
+   "ward_no": 25,
+   "zoned_km2": 3.11
+  },
+  {
+   "excluded_km2": 0.88,
+   "parcel_coverage": 0.91,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.105,
+    "community": 0.097,
+    "flats_group_housing": 0.053,
+    "houses": 0.397,
+    "incremental_housing": 0.0,
+    "industrial": 0.274,
+    "open_space": 0.043,
+    "transport_utility": 0.03
+   },
+   "ward_no": 26,
+   "zoned_km2": 5.67
+  },
+  {
+   "excluded_km2": 1.8,
+   "parcel_coverage": 0.79,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.259,
+    "community": 0.06,
+    "flats_group_housing": 0.074,
+    "houses": 0.424,
+    "incremental_housing": 0.0,
+    "industrial": 0.0,
+    "open_space": 0.056,
+    "transport_utility": 0.127
+   },
+   "ward_no": 27,
+   "zoned_km2": 5.72
+  },
+  {
+   "excluded_km2": 1.8,
+   "parcel_coverage": 1.0,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.118,
+    "community": 0.099,
+    "flats_group_housing": 0.031,
+    "houses": 0.291,
+    "incremental_housing": 0.0,
+    "industrial": 0.349,
+    "open_space": 0.061,
+    "transport_utility": 0.05
+   },
+   "ward_no": 28,
+   "zoned_km2": 7.94
+  },
+  {
+   "excluded_km2": 68.66,
+   "parcel_coverage": 0.81,
+   "shares": {
+    "agriculture_rural": 0.918,
+    "business_mixed": 0.003,
+    "community": 0.016,
+    "flats_group_housing": 0.007,
+    "houses": 0.038,
+    "incremental_housing": 0.001,
+    "industrial": 0.007,
+    "open_space": 0.01,
+    "transport_utility": 0.001
+   },
+   "ward_no": 29,
+   "zoned_km2": 71.71
+  },
+  {
+   "excluded_km2": 1.76,
+   "parcel_coverage": 0.97,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.035,
+    "community": 0.2,
+    "flats_group_housing": 0.154,
+    "houses": 0.252,
+    "incremental_housing": 0.082,
+    "industrial": 0.146,
+    "open_space": 0.131,
+    "transport_utility": 0.001
+   },
+   "ward_no": 30,
+   "zoned_km2": 2.37
+  },
+  {
+   "excluded_km2": 1.13,
+   "parcel_coverage": 1.02,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.034,
+    "community": 0.082,
+    "flats_group_housing": 0.148,
+    "houses": 0.147,
+    "incremental_housing": 0.0,
+    "industrial": 0.334,
+    "open_space": 0.207,
+    "transport_utility": 0.048
+   },
+   "ward_no": 31,
+   "zoned_km2": 5.64
+  },
+  {
+   "excluded_km2": 36.51,
+   "parcel_coverage": 0.72,
+   "shares": {
+    "agriculture_rural": 0.87,
+    "business_mixed": 0.003,
+    "community": 0.005,
+    "flats_group_housing": 0.002,
+    "houses": 0.018,
+    "incremental_housing": 0.003,
+    "industrial": 0.086,
+    "open_space": 0.007,
+    "transport_utility": 0.007
+   },
+   "ward_no": 32,
+   "zoned_km2": 107.54
+  },
+  {
+   "excluded_km2": 0.4,
+   "parcel_coverage": 0.86,
+   "shares": {
+    "agriculture_rural": 0.264,
+    "business_mixed": 0.023,
+    "community": 0.113,
+    "flats_group_housing": 0.0,
+    "houses": 0.013,
+    "incremental_housing": 0.496,
+    "industrial": 0.0,
+    "open_space": 0.082,
+    "transport_utility": 0.009
+   },
+   "ward_no": 33,
+   "zoned_km2": 1.3
+  },
+  {
+   "excluded_km2": 0.49,
+   "parcel_coverage": 0.99,
+   "shares": {
+    "agriculture_rural": 0.003,
+    "business_mixed": 0.013,
+    "community": 0.144,
+    "flats_group_housing": 0.0,
+    "houses": 0.0,
+    "incremental_housing": 0.627,
+    "industrial": 0.0,
+    "open_space": 0.182,
+    "transport_utility": 0.031
+   },
+   "ward_no": 34,
+   "zoned_km2": 1.06
+  },
+  {
+   "excluded_km2": 1.01,
+   "parcel_coverage": 0.97,
+   "shares": {
+    "agriculture_rural": 0.138,
+    "business_mixed": 0.051,
+    "community": 0.073,
+    "flats_group_housing": 0.0,
+    "houses": 0.038,
+    "incremental_housing": 0.285,
+    "industrial": 0.358,
+    "open_space": 0.048,
+    "transport_utility": 0.009
+   },
+   "ward_no": 35,
+   "zoned_km2": 3.36
+  },
+  {
+   "excluded_km2": 0.65,
+   "parcel_coverage": 0.86,
+   "shares": {
+    "agriculture_rural": 0.225,
+    "business_mixed": 0.032,
+    "community": 0.136,
+    "flats_group_housing": 0.003,
+    "houses": 0.0,
+    "incremental_housing": 0.489,
+    "industrial": 0.067,
+    "open_space": 0.037,
+    "transport_utility": 0.01
+   },
+   "ward_no": 36,
+   "zoned_km2": 1.62
+  },
+  {
+   "excluded_km2": 0.45,
+   "parcel_coverage": 0.98,
+   "shares": {
+    "agriculture_rural": 0.022,
+    "business_mixed": 0.03,
+    "community": 0.133,
+    "flats_group_housing": 0.013,
+    "houses": 0.0,
+    "incremental_housing": 0.645,
+    "industrial": 0.0,
+    "open_space": 0.134,
+    "transport_utility": 0.023
+   },
+   "ward_no": 37,
+   "zoned_km2": 1.19
+  },
+  {
+   "excluded_km2": 0.99,
+   "parcel_coverage": 1.3,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.019,
+    "community": 0.067,
+    "flats_group_housing": 0.0,
+    "houses": 0.0,
+    "incremental_housing": 0.616,
+    "industrial": 0.001,
+    "open_space": 0.279,
+    "transport_utility": 0.019
+   },
+   "ward_no": 38,
+   "zoned_km2": 1.3
+  },
+  {
+   "excluded_km2": 0.2,
+   "parcel_coverage": 0.83,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.059,
+    "community": 0.186,
+    "flats_group_housing": 0.0,
+    "houses": 0.031,
+    "incremental_housing": 0.631,
+    "industrial": 0.001,
+    "open_space": 0.086,
+    "transport_utility": 0.005
+   },
+   "ward_no": 39,
+   "zoned_km2": 1.64
+  },
+  {
+   "excluded_km2": 0.85,
+   "parcel_coverage": 0.81,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.029,
+    "community": 0.138,
+    "flats_group_housing": 0.086,
+    "houses": 0.0,
+    "incremental_housing": 0.649,
+    "industrial": 0.0,
+    "open_space": 0.099,
+    "transport_utility": 0.0
+   },
+   "ward_no": 40,
+   "zoned_km2": 0.58
+  },
+  {
+   "excluded_km2": 0.2,
+   "parcel_coverage": 0.84,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.007,
+    "community": 0.164,
+    "flats_group_housing": 0.104,
+    "houses": 0.0,
+    "incremental_housing": 0.488,
+    "industrial": 0.002,
+    "open_space": 0.058,
+    "transport_utility": 0.179
+   },
+   "ward_no": 41,
+   "zoned_km2": 1.19
+  },
+  {
+   "excluded_km2": 0.59,
+   "parcel_coverage": 0.89,
+   "shares": {
+    "agriculture_rural": 0.005,
+    "business_mixed": 0.017,
+    "community": 0.173,
+    "flats_group_housing": 0.034,
+    "houses": 0.637,
+    "incremental_housing": 0.007,
+    "industrial": 0.0,
+    "open_space": 0.078,
+    "transport_utility": 0.05
+   },
+   "ward_no": 42,
+   "zoned_km2": 2.36
+  },
+  {
+   "excluded_km2": 3.37,
+   "parcel_coverage": 0.89,
+   "shares": {
+    "agriculture_rural": 0.875,
+    "business_mixed": 0.007,
+    "community": 0.012,
+    "flats_group_housing": 0.003,
+    "houses": 0.047,
+    "incremental_housing": 0.0,
+    "industrial": 0.022,
+    "open_space": 0.015,
+    "transport_utility": 0.018
+   },
+   "ward_no": 43,
+   "zoned_km2": 38.09
+  },
+  {
+   "excluded_km2": 0.73,
+   "parcel_coverage": 0.88,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.025,
+    "community": 0.147,
+    "flats_group_housing": 0.085,
+    "houses": 0.534,
+    "incremental_housing": 0.086,
+    "industrial": 0.0,
+    "open_space": 0.103,
+    "transport_utility": 0.021
+   },
+   "ward_no": 44,
+   "zoned_km2": 2.19
+  },
+  {
+   "excluded_km2": 4.33,
+   "parcel_coverage": 0.87,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.116,
+    "community": 0.087,
+    "flats_group_housing": 0.109,
+    "houses": 0.446,
+    "incremental_housing": 0.0,
+    "industrial": 0.0,
+    "open_space": 0.176,
+    "transport_utility": 0.067
+   },
+   "ward_no": 45,
+   "zoned_km2": 3.84
+  },
+  {
+   "excluded_km2": 0.95,
+   "parcel_coverage": 0.88,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.044,
+    "community": 0.105,
+    "flats_group_housing": 0.039,
+    "houses": 0.622,
+    "incremental_housing": 0.012,
+    "industrial": 0.055,
+    "open_space": 0.115,
+    "transport_utility": 0.008
+   },
+   "ward_no": 46,
+   "zoned_km2": 3.6
+  },
+  {
+   "excluded_km2": 0.93,
+   "parcel_coverage": 0.9,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.079,
+    "community": 0.1,
+    "flats_group_housing": 0.202,
+    "houses": 0.479,
+    "incremental_housing": 0.006,
+    "industrial": 0.023,
+    "open_space": 0.099,
+    "transport_utility": 0.012
+   },
+   "ward_no": 47,
+   "zoned_km2": 1.71
+  },
+  {
+   "excluded_km2": 1.35,
+   "parcel_coverage": 0.94,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.039,
+    "community": 0.099,
+    "flats_group_housing": 0.014,
+    "houses": 0.729,
+    "incremental_housing": 0.001,
+    "industrial": 0.034,
+    "open_space": 0.078,
+    "transport_utility": 0.006
+   },
+   "ward_no": 48,
+   "zoned_km2": 3.6
+  },
+  {
+   "excluded_km2": 2.55,
+   "parcel_coverage": 1.02,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.105,
+    "community": 0.167,
+    "flats_group_housing": 0.019,
+    "houses": 0.539,
+    "incremental_housing": 0.002,
+    "industrial": 0.0,
+    "open_space": 0.146,
+    "transport_utility": 0.022
+   },
+   "ward_no": 49,
+   "zoned_km2": 3.04
+  },
+  {
+   "excluded_km2": 0.47,
+   "parcel_coverage": 0.93,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.025,
+    "community": 0.183,
+    "flats_group_housing": 0.659,
+    "houses": 0.0,
+    "incremental_housing": 0.011,
+    "industrial": 0.0,
+    "open_space": 0.116,
+    "transport_utility": 0.007
+   },
+   "ward_no": 50,
+   "zoned_km2": 1.96
+  },
+  {
+   "excluded_km2": 0.91,
+   "parcel_coverage": 0.91,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.026,
+    "community": 0.367,
+    "flats_group_housing": 0.077,
+    "houses": 0.0,
+    "incremental_housing": 0.446,
+    "industrial": 0.005,
+    "open_space": 0.047,
+    "transport_utility": 0.031
+   },
+   "ward_no": 51,
+   "zoned_km2": 1.36
+  },
+  {
+   "excluded_km2": 0.26,
+   "parcel_coverage": 0.81,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.0,
+    "community": 0.127,
+    "flats_group_housing": 0.212,
+    "houses": 0.0,
+    "incremental_housing": 0.354,
+    "industrial": 0.0,
+    "open_space": 0.131,
+    "transport_utility": 0.175
+   },
+   "ward_no": 52,
+   "zoned_km2": 0.66
+  },
+  {
+   "excluded_km2": 6.38,
+   "parcel_coverage": 1.02,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.102,
+    "community": 0.075,
+    "flats_group_housing": 0.066,
+    "houses": 0.37,
+    "incremental_housing": 0.0,
+    "industrial": 0.203,
+    "open_space": 0.121,
+    "transport_utility": 0.064
+   },
+   "ward_no": 53,
+   "zoned_km2": 8.75
+  },
+  {
+   "excluded_km2": 3.29,
+   "parcel_coverage": 0.27,
+   "shares": {
+    "agriculture_rural": 0.04,
+    "business_mixed": 0.014,
+    "community": 0.005,
+    "flats_group_housing": 0.284,
+    "houses": 0.242,
+    "incremental_housing": 0.0,
+    "industrial": 0.0,
+    "open_space": 0.408,
+    "transport_utility": 0.008
+   },
+   "ward_no": 54,
+   "zoned_km2": 6.16
+  },
+  {
+   "excluded_km2": 2.56,
+   "parcel_coverage": 0.93,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.211,
+    "community": 0.054,
+    "flats_group_housing": 0.1,
+    "houses": 0.224,
+    "incremental_housing": 0.0,
+    "industrial": 0.114,
+    "open_space": 0.083,
+    "transport_utility": 0.213
+   },
+   "ward_no": 55,
+   "zoned_km2": 11.03
+  },
+  {
+   "excluded_km2": 3.01,
+   "parcel_coverage": 0.85,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.191,
+    "community": 0.065,
+    "flats_group_housing": 0.056,
+    "houses": 0.36,
+    "incremental_housing": 0.0,
+    "industrial": 0.0,
+    "open_space": 0.055,
+    "transport_utility": 0.273
+   },
+   "ward_no": 56,
+   "zoned_km2": 4.79
+  },
+  {
+   "excluded_km2": 4.64,
+   "parcel_coverage": 1.09,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.029,
+    "community": 0.305,
+    "flats_group_housing": 0.149,
+    "houses": 0.246,
+    "incremental_housing": 0.0,
+    "industrial": 0.0,
+    "open_space": 0.268,
+    "transport_utility": 0.004
+   },
+   "ward_no": 57,
+   "zoned_km2": 5.08
+  },
+  {
+   "excluded_km2": 2.87,
+   "parcel_coverage": 0.95,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.082,
+    "community": 0.065,
+    "flats_group_housing": 0.27,
+    "houses": 0.542,
+    "incremental_housing": 0.0,
+    "industrial": 0.023,
+    "open_space": 0.016,
+    "transport_utility": 0.002
+   },
+   "ward_no": 58,
+   "zoned_km2": 4.81
+  },
+  {
+   "excluded_km2": 1.86,
+   "parcel_coverage": 0.89,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.046,
+    "community": 0.078,
+    "flats_group_housing": 0.217,
+    "houses": 0.631,
+    "incremental_housing": 0.0,
+    "industrial": 0.0,
+    "open_space": 0.024,
+    "transport_utility": 0.005
+   },
+   "ward_no": 59,
+   "zoned_km2": 3.69
+  },
+  {
+   "excluded_km2": 1.57,
+   "parcel_coverage": 0.84,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.04,
+    "community": 0.1,
+    "flats_group_housing": 0.014,
+    "houses": 0.754,
+    "incremental_housing": 0.0,
+    "industrial": 0.04,
+    "open_space": 0.033,
+    "transport_utility": 0.018
+   },
+   "ward_no": 60,
+   "zoned_km2": 4.94
+  },
+  {
+   "excluded_km2": 60.3,
+   "parcel_coverage": 0.63,
+   "shares": {
+    "agriculture_rural": 0.876,
+    "business_mixed": 0.006,
+    "community": 0.009,
+    "flats_group_housing": 0.016,
+    "houses": 0.071,
+    "incremental_housing": 0.003,
+    "industrial": 0.0,
+    "open_space": 0.013,
+    "transport_utility": 0.004
+   },
+   "ward_no": 61,
+   "zoned_km2": 45.36
+  },
+  {
+   "excluded_km2": 10.87,
+   "parcel_coverage": 0.9,
+   "shares": {
+    "agriculture_rural": 0.293,
+    "business_mixed": 0.013,
+    "community": 0.023,
+    "flats_group_housing": 0.034,
+    "houses": 0.466,
+    "incremental_housing": 0.0,
+    "industrial": 0.0,
+    "open_space": 0.165,
+    "transport_utility": 0.006
+   },
+   "ward_no": 62,
+   "zoned_km2": 21.1
+  },
+  {
+   "excluded_km2": 2.38,
+   "parcel_coverage": 0.88,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.032,
+    "community": 0.105,
+    "flats_group_housing": 0.106,
+    "houses": 0.57,
+    "incremental_housing": 0.0,
+    "industrial": 0.002,
+    "open_space": 0.166,
+    "transport_utility": 0.019
+   },
+   "ward_no": 63,
+   "zoned_km2": 5.25
+  },
+  {
+   "excluded_km2": 3.33,
+   "parcel_coverage": 0.58,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.021,
+    "community": 0.057,
+    "flats_group_housing": 0.15,
+    "houses": 0.492,
+    "incremental_housing": 0.0,
+    "industrial": 0.0,
+    "open_space": 0.262,
+    "transport_utility": 0.017
+   },
+   "ward_no": 64,
+   "zoned_km2": 6.12
+  },
+  {
+   "excluded_km2": 0.85,
+   "parcel_coverage": 0.88,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.034,
+    "community": 0.187,
+    "flats_group_housing": 0.034,
+    "houses": 0.657,
+    "incremental_housing": 0.001,
+    "industrial": 0.0,
+    "open_space": 0.08,
+    "transport_utility": 0.007
+   },
+   "ward_no": 65,
+   "zoned_km2": 2.91
+  },
+  {
+   "excluded_km2": 2.95,
+   "parcel_coverage": 0.96,
+   "shares": {
+    "agriculture_rural": 0.034,
+    "business_mixed": 0.105,
+    "community": 0.097,
+    "flats_group_housing": 0.104,
+    "houses": 0.436,
+    "incremental_housing": 0.002,
+    "industrial": 0.087,
+    "open_space": 0.112,
+    "transport_utility": 0.024
+   },
+   "ward_no": 66,
+   "zoned_km2": 4.77
+  },
+  {
+   "excluded_km2": 5.98,
+   "parcel_coverage": 0.61,
+   "shares": {
+    "agriculture_rural": 0.066,
+    "business_mixed": 0.013,
+    "community": 0.154,
+    "flats_group_housing": 0.023,
+    "houses": 0.428,
+    "incremental_housing": 0.022,
+    "industrial": 0.0,
+    "open_space": 0.235,
+    "transport_utility": 0.061
+   },
+   "ward_no": 67,
+   "zoned_km2": 6.59
+  },
+  {
+   "excluded_km2": 1.02,
+   "parcel_coverage": 0.99,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.079,
+    "community": 0.076,
+    "flats_group_housing": 0.115,
+    "houses": 0.639,
+    "incremental_housing": 0.0,
+    "industrial": 0.0,
+    "open_space": 0.077,
+    "transport_utility": 0.013
+   },
+   "ward_no": 68,
+   "zoned_km2": 2.33
+  },
+  {
+   "excluded_km2": 13.04,
+   "parcel_coverage": 0.7,
+   "shares": {
+    "agriculture_rural": 0.388,
+    "business_mixed": 0.017,
+    "community": 0.009,
+    "flats_group_housing": 0.056,
+    "houses": 0.276,
+    "incremental_housing": 0.017,
+    "industrial": 0.012,
+    "open_space": 0.207,
+    "transport_utility": 0.019
+   },
+   "ward_no": 69,
+   "zoned_km2": 15.98
+  },
+  {
+   "excluded_km2": 3.99,
+   "parcel_coverage": 0.63,
+   "shares": {
+    "agriculture_rural": 0.145,
+    "business_mixed": 0.058,
+    "community": 0.089,
+    "flats_group_housing": 0.07,
+    "houses": 0.406,
+    "incremental_housing": 0.0,
+    "industrial": 0.0,
+    "open_space": 0.226,
+    "transport_utility": 0.005
+   },
+   "ward_no": 70,
+   "zoned_km2": 14.07
+  },
+  {
+   "excluded_km2": 4.47,
+   "parcel_coverage": 0.6,
+   "shares": {
+    "agriculture_rural": 0.512,
+    "business_mixed": 0.008,
+    "community": 0.039,
+    "flats_group_housing": 0.031,
+    "houses": 0.162,
+    "incremental_housing": 0.0,
+    "industrial": 0.015,
+    "open_space": 0.121,
+    "transport_utility": 0.113
+   },
+   "ward_no": 71,
+   "zoned_km2": 29.16
+  },
+  {
+   "excluded_km2": 2.71,
+   "parcel_coverage": 0.94,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.041,
+    "community": 0.068,
+    "flats_group_housing": 0.025,
+    "houses": 0.659,
+    "incremental_housing": 0.0,
+    "industrial": 0.081,
+    "open_space": 0.109,
+    "transport_utility": 0.016
+   },
+   "ward_no": 72,
+   "zoned_km2": 3.89
+  },
+  {
+   "excluded_km2": 2.23,
+   "parcel_coverage": 0.93,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.028,
+    "community": 0.085,
+    "flats_group_housing": 0.128,
+    "houses": 0.663,
+    "incremental_housing": 0.0,
+    "industrial": 0.0,
+    "open_space": 0.091,
+    "transport_utility": 0.005
+   },
+   "ward_no": 73,
+   "zoned_km2": 5.78
+  },
+  {
+   "excluded_km2": 4.4,
+   "parcel_coverage": 0.67,
+   "shares": {
+    "agriculture_rural": 0.418,
+    "business_mixed": 0.005,
+    "community": 0.014,
+    "flats_group_housing": 0.042,
+    "houses": 0.29,
+    "incremental_housing": 0.005,
+    "industrial": 0.003,
+    "open_space": 0.17,
+    "transport_utility": 0.052
+   },
+   "ward_no": 74,
+   "zoned_km2": 17.55
+  },
+  {
+   "excluded_km2": 1.28,
+   "parcel_coverage": 0.94,
+   "shares": {
+    "agriculture_rural": 0.141,
+    "business_mixed": 0.04,
+    "community": 0.115,
+    "flats_group_housing": 0.02,
+    "houses": 0.5,
+    "incremental_housing": 0.0,
+    "industrial": 0.0,
+    "open_space": 0.167,
+    "transport_utility": 0.016
+   },
+   "ward_no": 75,
+   "zoned_km2": 4.58
+  },
+  {
+   "excluded_km2": 1.56,
+   "parcel_coverage": 1.12,
+   "shares": {
+    "agriculture_rural": 0.029,
+    "business_mixed": 0.025,
+    "community": 0.309,
+    "flats_group_housing": 0.019,
+    "houses": 0.398,
+    "incremental_housing": 0.026,
+    "industrial": 0.0,
+    "open_space": 0.165,
+    "transport_utility": 0.028
+   },
+   "ward_no": 76,
+   "zoned_km2": 4.8
+  },
+  {
+   "excluded_km2": 4.63,
+   "parcel_coverage": 0.72,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.015,
+    "community": 0.024,
+    "flats_group_housing": 0.209,
+    "houses": 0.15,
+    "incremental_housing": 0.0,
+    "industrial": 0.0,
+    "open_space": 0.587,
+    "transport_utility": 0.015
+   },
+   "ward_no": 77,
+   "zoned_km2": 8.98
+  },
+  {
+   "excluded_km2": 0.94,
+   "parcel_coverage": 1.01,
+   "shares": {
+    "agriculture_rural": 0.042,
+    "business_mixed": 0.014,
+    "community": 0.18,
+    "flats_group_housing": 0.007,
+    "houses": 0.569,
+    "incremental_housing": 0.012,
+    "industrial": 0.0,
+    "open_space": 0.145,
+    "transport_utility": 0.031
+   },
+   "ward_no": 78,
+   "zoned_km2": 2.57
+  },
+  {
+   "excluded_km2": 1.15,
+   "parcel_coverage": 0.8,
+   "shares": {
+    "agriculture_rural": 0.002,
+    "business_mixed": 0.041,
+    "community": 0.285,
+    "flats_group_housing": 0.008,
+    "houses": 0.464,
+    "incremental_housing": 0.0,
+    "industrial": 0.0,
+    "open_space": 0.166,
+    "transport_utility": 0.034
+   },
+   "ward_no": 79,
+   "zoned_km2": 2.61
+  },
+  {
+   "excluded_km2": 0.71,
+   "parcel_coverage": 1.09,
+   "shares": {
+    "agriculture_rural": 0.11,
+    "business_mixed": 0.103,
+    "community": 0.066,
+    "flats_group_housing": 0.0,
+    "houses": 0.0,
+    "incremental_housing": 0.485,
+    "industrial": 0.175,
+    "open_space": 0.034,
+    "transport_utility": 0.027
+   },
+   "ward_no": 80,
+   "zoned_km2": 1.21
+  },
+  {
+   "excluded_km2": 1.2,
+   "parcel_coverage": 0.99,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.156,
+    "community": 0.174,
+    "flats_group_housing": 0.001,
+    "houses": 0.513,
+    "incremental_housing": 0.0,
+    "industrial": 0.0,
+    "open_space": 0.145,
+    "transport_utility": 0.012
+   },
+   "ward_no": 81,
+   "zoned_km2": 2.55
+  },
+  {
+   "excluded_km2": 2.73,
+   "parcel_coverage": 0.85,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.007,
+    "community": 0.139,
+    "flats_group_housing": 0.009,
+    "houses": 0.647,
+    "incremental_housing": 0.033,
+    "industrial": 0.0,
+    "open_space": 0.152,
+    "transport_utility": 0.014
+   },
+   "ward_no": 82,
+   "zoned_km2": 2.17
+  },
+  {
+   "excluded_km2": 2.19,
+   "parcel_coverage": 0.84,
+   "shares": {
+    "agriculture_rural": 0.001,
+    "business_mixed": 0.147,
+    "community": 0.028,
+    "flats_group_housing": 0.059,
+    "houses": 0.212,
+    "incremental_housing": 0.0,
+    "industrial": 0.444,
+    "open_space": 0.101,
+    "transport_utility": 0.008
+   },
+   "ward_no": 83,
+   "zoned_km2": 12.51
+  },
+  {
+   "excluded_km2": 19.16,
+   "parcel_coverage": 0.53,
+   "shares": {
+    "agriculture_rural": 0.723,
+    "business_mixed": 0.031,
+    "community": 0.015,
+    "flats_group_housing": 0.061,
+    "houses": 0.095,
+    "incremental_housing": 0.004,
+    "industrial": 0.0,
+    "open_space": 0.05,
+    "transport_utility": 0.02
+   },
+   "ward_no": 84,
+   "zoned_km2": 35.52
+  },
+  {
+   "excluded_km2": 0.84,
+   "parcel_coverage": 0.92,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.047,
+    "community": 0.086,
+    "flats_group_housing": 0.09,
+    "houses": 0.215,
+    "incremental_housing": 0.255,
+    "industrial": 0.101,
+    "open_space": 0.189,
+    "transport_utility": 0.015
+   },
+   "ward_no": 85,
+   "zoned_km2": 3.8
+  },
+  {
+   "excluded_km2": 1.13,
+   "parcel_coverage": 1.14,
+   "shares": {
+    "agriculture_rural": 0.011,
+    "business_mixed": 0.067,
+    "community": 0.108,
+    "flats_group_housing": 0.0,
+    "houses": 0.048,
+    "incremental_housing": 0.569,
+    "industrial": 0.125,
+    "open_space": 0.061,
+    "transport_utility": 0.013
+   },
+   "ward_no": 86,
+   "zoned_km2": 1.72
+  },
+  {
+   "excluded_km2": 0.7,
+   "parcel_coverage": 1.01,
+   "shares": {
+    "agriculture_rural": 0.121,
+    "business_mixed": 0.108,
+    "community": 0.074,
+    "flats_group_housing": 0.0,
+    "houses": 0.0,
+    "incremental_housing": 0.646,
+    "industrial": 0.028,
+    "open_space": 0.022,
+    "transport_utility": 0.0
+   },
+   "ward_no": 87,
+   "zoned_km2": 0.54
+  },
+  {
+   "excluded_km2": 0.65,
+   "parcel_coverage": 1.07,
+   "shares": {
+    "agriculture_rural": 0.363,
+    "business_mixed": 0.09,
+    "community": 0.047,
+    "flats_group_housing": 0.0,
+    "houses": 0.04,
+    "incremental_housing": 0.266,
+    "industrial": 0.014,
+    "open_space": 0.054,
+    "transport_utility": 0.126
+   },
+   "ward_no": 88,
+   "zoned_km2": 2.17
+  },
+  {
+   "excluded_km2": 0.35,
+   "parcel_coverage": 0.86,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.071,
+    "community": 0.23,
+    "flats_group_housing": 0.0,
+    "houses": 0.0,
+    "incremental_housing": 0.608,
+    "industrial": 0.014,
+    "open_space": 0.053,
+    "transport_utility": 0.024
+   },
+   "ward_no": 89,
+   "zoned_km2": 0.78
+  },
+  {
+   "excluded_km2": 2.22,
+   "parcel_coverage": 0.9,
+   "shares": {
+    "agriculture_rural": 0.182,
+    "business_mixed": 0.026,
+    "community": 0.018,
+    "flats_group_housing": 0.13,
+    "houses": 0.404,
+    "incremental_housing": 0.0,
+    "industrial": 0.007,
+    "open_space": 0.214,
+    "transport_utility": 0.018
+   },
+   "ward_no": 90,
+   "zoned_km2": 13.66
+  },
+  {
+   "excluded_km2": 0.22,
+   "parcel_coverage": 0.88,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.005,
+    "community": 0.253,
+    "flats_group_housing": 0.0,
+    "houses": 0.0,
+    "incremental_housing": 0.628,
+    "industrial": 0.0,
+    "open_space": 0.114,
+    "transport_utility": 0.001
+   },
+   "ward_no": 91,
+   "zoned_km2": 0.8
+  },
+  {
+   "excluded_km2": 2.93,
+   "parcel_coverage": 0.68,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.278,
+    "community": 0.125,
+    "flats_group_housing": 0.267,
+    "houses": 0.066,
+    "incremental_housing": 0.0,
+    "industrial": 0.054,
+    "open_space": 0.043,
+    "transport_utility": 0.167
+   },
+   "ward_no": 92,
+   "zoned_km2": 4.72
+  },
+  {
+   "excluded_km2": 2.47,
+   "parcel_coverage": 0.68,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.003,
+    "community": 0.229,
+    "flats_group_housing": 0.033,
+    "houses": 0.0,
+    "incremental_housing": 0.652,
+    "industrial": 0.041,
+    "open_space": 0.036,
+    "transport_utility": 0.007
+   },
+   "ward_no": 93,
+   "zoned_km2": 0.63
+  },
+  {
+   "excluded_km2": 0.94,
+   "parcel_coverage": 0.91,
+   "shares": {
+    "agriculture_rural": 0.032,
+    "business_mixed": 0.061,
+    "community": 0.218,
+    "flats_group_housing": 0.022,
+    "houses": 0.0,
+    "incremental_housing": 0.442,
+    "industrial": 0.06,
+    "open_space": 0.133,
+    "transport_utility": 0.034
+   },
+   "ward_no": 94,
+   "zoned_km2": 2.79
+  },
+  {
+   "excluded_km2": 0.32,
+   "parcel_coverage": 0.14,
+   "shares": {
+    "agriculture_rural": 0.021,
+    "business_mixed": 0.024,
+    "community": 0.196,
+    "flats_group_housing": 0.0,
+    "houses": 0.0,
+    "incremental_housing": 0.687,
+    "industrial": 0.0,
+    "open_space": 0.071,
+    "transport_utility": 0.002
+   },
+   "ward_no": 95,
+   "zoned_km2": 0.71
+  },
+  {
+   "excluded_km2": 1.26,
+   "parcel_coverage": 0.83,
+   "shares": {
+    "agriculture_rural": 0.299,
+    "business_mixed": 0.021,
+    "community": 0.148,
+    "flats_group_housing": 0.0,
+    "houses": 0.001,
+    "incremental_housing": 0.464,
+    "industrial": 0.003,
+    "open_space": 0.064,
+    "transport_utility": 0.001
+   },
+   "ward_no": 96,
+   "zoned_km2": 2.23
+  },
+  {
+   "excluded_km2": 1.08,
+   "parcel_coverage": 0.96,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.009,
+    "community": 0.302,
+    "flats_group_housing": 0.0,
+    "houses": 0.0,
+    "incremental_housing": 0.554,
+    "industrial": 0.011,
+    "open_space": 0.099,
+    "transport_utility": 0.025
+   },
+   "ward_no": 97,
+   "zoned_km2": 2.12
+  },
+  {
+   "excluded_km2": 0.46,
+   "parcel_coverage": 0.93,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.018,
+    "community": 0.22,
+    "flats_group_housing": 0.011,
+    "houses": 0.018,
+    "incremental_housing": 0.567,
+    "industrial": 0.003,
+    "open_space": 0.159,
+    "transport_utility": 0.004
+   },
+   "ward_no": 98,
+   "zoned_km2": 2.25
+  },
+  {
+   "excluded_km2": 1.31,
+   "parcel_coverage": 0.23,
+   "shares": {
+    "agriculture_rural": 0.353,
+    "business_mixed": 0.021,
+    "community": 0.192,
+    "flats_group_housing": 0.0,
+    "houses": 0.012,
+    "incremental_housing": 0.306,
+    "industrial": 0.0,
+    "open_space": 0.006,
+    "transport_utility": 0.11
+   },
+   "ward_no": 99,
+   "zoned_km2": 1.4
+  },
+  {
+   "excluded_km2": 3.51,
+   "parcel_coverage": 0.35,
+   "shares": {
+    "agriculture_rural": 0.482,
+    "business_mixed": 0.008,
+    "community": 0.007,
+    "flats_group_housing": 0.033,
+    "houses": 0.083,
+    "incremental_housing": 0.023,
+    "industrial": 0.033,
+    "open_space": 0.298,
+    "transport_utility": 0.034
+   },
+   "ward_no": 100,
+   "zoned_km2": 35.63
+  },
+  {
+   "excluded_km2": 0.78,
+   "parcel_coverage": 0.69,
+   "shares": {
+    "agriculture_rural": 0.153,
+    "business_mixed": 0.048,
+    "community": 0.1,
+    "flats_group_housing": 0.01,
+    "houses": 0.064,
+    "incremental_housing": 0.397,
+    "industrial": 0.126,
+    "open_space": 0.046,
+    "transport_utility": 0.057
+   },
+   "ward_no": 101,
+   "zoned_km2": 2.49
+  },
+  {
+   "excluded_km2": 5.14,
+   "parcel_coverage": 0.69,
+   "shares": {
+    "agriculture_rural": 0.734,
+    "business_mixed": 0.021,
+    "community": 0.009,
+    "flats_group_housing": 0.065,
+    "houses": 0.092,
+    "incremental_housing": 0.003,
+    "industrial": 0.007,
+    "open_space": 0.053,
+    "transport_utility": 0.016
+   },
+   "ward_no": 102,
+   "zoned_km2": 25.33
+  },
+  {
+   "excluded_km2": 2.1,
+   "parcel_coverage": 0.95,
+   "shares": {
+    "agriculture_rural": 0.141,
+    "business_mixed": 0.053,
+    "community": 0.023,
+    "flats_group_housing": 0.3,
+    "houses": 0.312,
+    "incremental_housing": 0.0,
+    "industrial": 0.0,
+    "open_space": 0.157,
+    "transport_utility": 0.015
+   },
+   "ward_no": 103,
+   "zoned_km2": 6.64
+  },
+  {
+   "excluded_km2": 1.39,
+   "parcel_coverage": 0.66,
+   "shares": {
+    "agriculture_rural": 0.188,
+    "business_mixed": 0.076,
+    "community": 0.048,
+    "flats_group_housing": 0.0,
+    "houses": 0.0,
+    "incremental_housing": 0.212,
+    "industrial": 0.437,
+    "open_space": 0.035,
+    "transport_utility": 0.005
+   },
+   "ward_no": 104,
+   "zoned_km2": 1.79
+  },
+  {
+   "excluded_km2": 14.85,
+   "parcel_coverage": 0.79,
+   "shares": {
+    "agriculture_rural": 0.952,
+    "business_mixed": 0.003,
+    "community": 0.003,
+    "flats_group_housing": 0.007,
+    "houses": 0.021,
+    "incremental_housing": 0.001,
+    "industrial": 0.003,
+    "open_space": 0.008,
+    "transport_utility": 0.002
+   },
+   "ward_no": 105,
+   "zoned_km2": 165.48
+  },
+  {
+   "excluded_km2": 0.95,
+   "parcel_coverage": 0.94,
+   "shares": {
+    "agriculture_rural": 0.057,
+    "business_mixed": 0.025,
+    "community": 0.066,
+    "flats_group_housing": 0.006,
+    "houses": 0.082,
+    "incremental_housing": 0.214,
+    "industrial": 0.004,
+    "open_space": 0.071,
+    "transport_utility": 0.475
+   },
+   "ward_no": 106,
+   "zoned_km2": 4.55
+  },
+  {
+   "excluded_km2": 0.63,
+   "parcel_coverage": 0.87,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.058,
+    "community": 0.036,
+    "flats_group_housing": 0.26,
+    "houses": 0.549,
+    "incremental_housing": 0.0,
+    "industrial": 0.0,
+    "open_space": 0.096,
+    "transport_utility": 0.002
+   },
+   "ward_no": 107,
+   "zoned_km2": 4.67
+  },
+  {
+   "excluded_km2": 1.0,
+   "parcel_coverage": 0.51,
+   "shares": {
+    "agriculture_rural": 0.434,
+    "business_mixed": 0.017,
+    "community": 0.083,
+    "flats_group_housing": 0.103,
+    "houses": 0.052,
+    "incremental_housing": 0.198,
+    "industrial": 0.066,
+    "open_space": 0.047,
+    "transport_utility": 0.0
+   },
+   "ward_no": 108,
+   "zoned_km2": 3.28
+  },
+  {
+   "excluded_km2": 9.14,
+   "parcel_coverage": 0.99,
+   "shares": {
+    "agriculture_rural": 0.475,
+    "business_mixed": 0.01,
+    "community": 0.051,
+    "flats_group_housing": 0.089,
+    "houses": 0.071,
+    "incremental_housing": 0.028,
+    "industrial": 0.048,
+    "open_space": 0.168,
+    "transport_utility": 0.06
+   },
+   "ward_no": 109,
+   "zoned_km2": 11.21
+  },
+  {
+   "excluded_km2": 0.75,
+   "parcel_coverage": 0.94,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.043,
+    "community": 0.141,
+    "flats_group_housing": 0.072,
+    "houses": 0.659,
+    "incremental_housing": 0.0,
+    "industrial": 0.014,
+    "open_space": 0.063,
+    "transport_utility": 0.007
+   },
+   "ward_no": 110,
+   "zoned_km2": 1.89
+  },
+  {
+   "excluded_km2": 1.15,
+   "parcel_coverage": 0.87,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.029,
+    "community": 0.111,
+    "flats_group_housing": 0.048,
+    "houses": 0.507,
+    "incremental_housing": 0.0,
+    "industrial": 0.186,
+    "open_space": 0.064,
+    "transport_utility": 0.054
+   },
+   "ward_no": 111,
+   "zoned_km2": 6.08
+  },
+  {
+   "excluded_km2": 1.37,
+   "parcel_coverage": 0.89,
+   "shares": {
+    "agriculture_rural": 0.005,
+    "business_mixed": 0.055,
+    "community": 0.052,
+    "flats_group_housing": 0.15,
+    "houses": 0.484,
+    "incremental_housing": 0.002,
+    "industrial": 0.0,
+    "open_space": 0.235,
+    "transport_utility": 0.018
+   },
+   "ward_no": 112,
+   "zoned_km2": 8.9
+  },
+  {
+   "excluded_km2": 2.71,
+   "parcel_coverage": 0.73,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.034,
+    "community": 0.082,
+    "flats_group_housing": 0.129,
+    "houses": 0.316,
+    "incremental_housing": 0.0,
+    "industrial": 0.087,
+    "open_space": 0.294,
+    "transport_utility": 0.058
+   },
+   "ward_no": 113,
+   "zoned_km2": 9.31
+  },
+  {
+   "excluded_km2": 1.28,
+   "parcel_coverage": 1.07,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.018,
+    "community": 0.116,
+    "flats_group_housing": 0.0,
+    "houses": 0.026,
+    "incremental_housing": 0.726,
+    "industrial": 0.0,
+    "open_space": 0.104,
+    "transport_utility": 0.009
+   },
+   "ward_no": 114,
+   "zoned_km2": 1.77
+  },
+  {
+   "excluded_km2": 3.29,
+   "parcel_coverage": 0.66,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.378,
+    "community": 0.03,
+    "flats_group_housing": 0.266,
+    "houses": 0.034,
+    "incremental_housing": 0.0,
+    "industrial": 0.0,
+    "open_space": 0.241,
+    "transport_utility": 0.051
+   },
+   "ward_no": 115,
+   "zoned_km2": 3.88
+  },
+  {
+   "excluded_km2": 1.32,
+   "parcel_coverage": 1.17,
+   "shares": {
+    "agriculture_rural": 0.0,
+    "business_mixed": 0.016,
+    "community": 0.204,
+    "flats_group_housing": 0.013,
+    "houses": 0.59,
+    "incremental_housing": 0.031,
+    "industrial": 0.0,
+    "open_space": 0.147,
+    "transport_utility": 0.0
+   },
+   "ward_no": 116,
+   "zoned_km2": 2.0
+  },
+  {
+   "excluded_km2": 2.08,
+   "parcel_coverage": 1.02,
+   "shares": {
+    "agriculture_rural": 0.247,
+    "business_mixed": 0.142,
+    "community": 0.008,
+    "flats_group_housing": 0.11,
+    "houses": 0.347,
+    "incremental_housing": 0.0,
+    "industrial": 0.0,
+    "open_space": 0.145,
+    "transport_utility": 0.002
+   },
+   "ward_no": 117,
+   "zoned_km2": 8.54
+  },
+  {
+   "excluded_km2": 4.67,
+   "parcel_coverage": 0.91,
+   "shares": {
+    "agriculture_rural": 0.229,
+    "business_mixed": 0.259,
+    "community": 0.044,
+    "flats_group_housing": 0.041,
+    "houses": 0.065,
+    "incremental_housing": 0.094,
+    "industrial": 0.005,
+    "open_space": 0.069,
+    "transport_utility": 0.194
+   },
+   "ward_no": 118,
+   "zoned_km2": 9.12
+  }
+ ],
+ "schema_version": 1,
+ "sources": {
+  "zoning": {
+   "licence": "City of Cape Town Open Data Licence",
+   "notes": "Square metres of each zone code per 2026 ward: parcel areas summed by the City's server for parcels inside the ward, plus parcels crossing the ward edge clipped to it. Ward outlines simplified to ~20 m for the query.",
+   "publisher": "City of Cape Town",
+   "retrieved_at": "2026-11-16",
+   "title": "Zoning (Integrated Zoning Scheme), summed per ward",
+   "url": "https://citymaps.capetown.gov.za/agsext/rest/services/Theme_Based/Land_Parcel_Zonning/MapServer/2"
+  }
+ },
+ "ward_vintage": 2026
+}

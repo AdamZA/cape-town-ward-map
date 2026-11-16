@@ -45,6 +45,18 @@
    "ward_vintage": 2026
   },
   {
+   "budget_year": null,
+   "dataset": "landmarks",
+   "file": "landmarks-2026.json",
+   "ward_vintage": 2026
+  },
+  {
+   "budget_year": null,
+   "dataset": "land_use",
+   "file": "land_use-2026.json",
+   "ward_vintage": 2026
+  },
+  {
    "budget_year": "2024/25",
    "dataset": "allocations",
    "file": "allocations-2024-25.json",

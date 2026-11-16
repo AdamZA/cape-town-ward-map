@@ -1,0 +1,10 @@
+{
+  "licence": "City of Cape Town Open Data Licence",
+  "method": "download",
+  "notes": "Upper-case names tidied to title case.",
+  "publisher": "City of Cape Town",
+  "retrieved_at": "2026-11-16",
+  "sha256": "3f1787921a942a9eba99138d68ae9ba3101d44a8e6336ff1fcee533f423c6032",
+  "title": "Schools",
+  "url": "https://citymaps.capetown.gov.za/agsext/rest/services/Theme_Based/Community_Services/MapServer/6"
+}

@@ -6,6 +6,9 @@ import { wardAt } from "./geo";
 import { basemapStyle, WardMap } from "./map/map";
 import { legendEntries, NO_DATA, quantileScale } from "./map/scales";
 import { buildMetrics, type MetricKey, topics } from "./metrics";
+import type { LandmarkRow } from "./generated/landmarks";
+import { Layers } from "./places/Layers";
+import { categoryMap } from "./places/places";
 import { CityOverview } from "./panel/CityOverview";
 import { SourceLine } from "./panel/Figure";
 import { WardPanel } from "./panel/WardPanel";
@@ -58,6 +61,21 @@ function Main({ data }: { data: AppData }) {
   useEffect(() => {
     map.current?.setClasses(new Map([...metric.values].map(([w, v]) => [w, scale.classOf(v)])));
   }, [metric, scale, mapReady]);
+
+  useEffect(() => {
+    if (!map.current) return;
+    const lm = data.landmarks;
+    map.current.setPlaces({
+      rows: lm.rows,
+      groupOf: Object.fromEntries(lm.categories.map((c) => [c.key, c.group])),
+      popup: (row) => placePopup(data, row, (w) => openWard(w)),
+    });
+  }, [mapReady]);
+
+  const layerKey = state.layers.join(",");
+  useEffect(() => {
+    map.current?.setVisiblePlaces(state.layers.filter((l) => data.landmarks.categories.some((c) => c.key === l)));
+  }, [layerKey, mapReady]);
 
   useEffect(() => {
     map.current?.setSelected(state.ward, true);
@@ -170,6 +188,7 @@ function Main({ data }: { data: AppData }) {
             )}
             <SourceLine env={metric.env} sourceKey={field.source} method={field.method} />
           </p>
+          <Layers env={data.landmarks} on={state.layers} onChange={(layers) => update({ layers })} />
         </div>
         {(place || notice) && (
           <div class="map-notice">
@@ -190,7 +209,14 @@ function Main({ data }: { data: AppData }) {
       {panel && (
         <aside class="panel" aria-live="polite">
           {panel === "ward" ? (
-            <WardPanel data={data} metrics={metrics} ward={state.ward!} onClose={() => update({ ward: null })} />
+            <WardPanel
+              data={data}
+              metrics={metrics}
+              ward={state.ward!}
+              layers={state.layers}
+              onShowLayer={(c) => update({ layers: [...state.layers, c] })}
+              onClose={() => update({ ward: null })}
+            />
           ) : (
             <CityOverview data={data} metrics={metrics} metric={state.metric} onWard={openWard} onClose={() => update({ city: false })} />
           )}
@@ -198,4 +224,28 @@ function Main({ data }: { data: AppData }) {
       )}
     </div>
   );
+}
+
+/** Popup for a place pin. Built as DOM (names come from data, never parsed as HTML). */
+function placePopup(data: AppData, row: LandmarkRow, onWard: (w: number) => void): HTMLElement {
+  const lm = data.landmarks;
+  const cat = categoryMap(lm).get(row.category);
+  const src = cat ? lm.sources[cat.source] : undefined;
+  const el = (tag: string, cls: string, text?: string) => {
+    const e = document.createElement(tag);
+    e.className = cls;
+    if (text) e.textContent = text;
+    return e;
+  };
+  const box = el("div", "place-popup");
+  box.append(el("strong", "", row.name), el("span", "place-popup-cat", cat?.label ?? row.category));
+  if (row.detail) box.append(el("p", "place-popup-detail", row.detail));
+  if (row.ward_no != null) {
+    const b = el("button", "link-btn", `Ward ${row.ward_no}`) as HTMLButtonElement;
+    b.type = "button";
+    b.onclick = () => onWard(row.ward_no!);
+    box.append(b);
+  }
+  if (src) box.append(el("p", "source", `Source: ${src.publisher}, ${src.title}`));
+  return box;
 }

@@ -1,0 +1,10 @@
+{
+  "licence": "City of Cape Town Open Data Licence",
+  "method": "download",
+  "notes": "Upper-case names tidied to title case.",
+  "publisher": "City of Cape Town",
+  "retrieved_at": "2026-11-16",
+  "sha256": "5b9269899a75f88f59496ad253e05097a75629610c2d6706f8ad8aa520b76e5f",
+  "title": "Monuments",
+  "url": "https://citymaps.capetown.gov.za/agsext/rest/services/Theme_Based/Community_Services/MapServer/0"
+}

@@ -5,16 +5,19 @@ import { fmtDate, fmtInt, fmtPct } from "../format";
 import { Allocations } from "./Allocations";
 import { Figure } from "./Figure";
 import { Gaps, gapsFor } from "./Gaps";
+import { WhatsHere } from "../places/WhatsHere";
 import { Summary } from "./Summary";
 
 interface Props {
   data: AppData;
   metrics: Record<MetricKey, Metric>;
   ward: number;
+  layers: string[];
+  onShowLayer: (category: string) => void;
   onClose: () => void;
 }
 
-export function WardPanel({ data, metrics, ward, onClose }: Props) {
+export function WardPanel({ data, metrics, ward, layers, onShowLayer, onClose }: Props) {
   const w = data.wards.rows.find((r) => r.ward_no === ward);
   const sr = data.serviceRequests;
   const s = sr.rows.find((r) => r.ward_no === ward);
@@ -76,6 +79,8 @@ export function WardPanel({ data, metrics, ward, onClose }: Props) {
         </dl>
         <Gaps gaps={gapsFor(data.wards.gaps, ward)} />
       </section>
+
+      <WhatsHere data={data} ward={ward} layers={layers} onShow={onShowLayer} />
 
       <section class="section">
         <h3>Service requests</h3>

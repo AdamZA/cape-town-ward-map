@@ -1,0 +1,10 @@
+{
+  "licence": "City of Cape Town Open Data Licence",
+  "method": "download",
+  "notes": "Upper-case names tidied to title case.",
+  "publisher": "City of Cape Town",
+  "retrieved_at": "2026-11-16",
+  "sha256": "b36757fdaf883f9ebfdba5c2788d9531cd3b2a224fc2cf49ac7cc2e9dd538ba6",
+  "title": "Beaches",
+  "url": "https://citymaps.capetown.gov.za/agsext/rest/services/Theme_Based/Community_Services/MapServer/17"
+}

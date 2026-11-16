@@ -8,7 +8,7 @@ from wardmap.publish import write_model
 
 
 def build_all() -> None:
-    from wardmap.datasets import allocations, boundaries, places, wards
+    from wardmap.datasets import allocations, boundaries, land_use, landmarks, places, wards
     from wardmap.datasets.service_requests import aggregate, outages
 
     boundary_entries = boundaries.build()
@@ -31,6 +31,15 @@ def build_all() -> None:
             dataset="places", file=f"places-{CURRENT_VINTAGE}.json", ward_vintage=CURRENT_VINTAGE
         )
     )
+
+    landmarks.build(CURRENT_VINTAGE)
+    land_use.build(CURRENT_VINTAGE)
+    for name in ("landmarks", "land_use"):
+        entries.append(
+            IndexEntry(
+                dataset=name, file=f"{name}-{CURRENT_VINTAGE}.json", ward_vintage=CURRENT_VINTAGE
+            )
+        )
 
     for year in allocations.years():
         allocations.build(year)

@@ -36,6 +36,12 @@ CCT_BSI_MIRROR = (
     "Basic_Services_Infrastructure/MapServer"
 )
 CCT_LOADSHEDDING_BLOCKS_LAYER = 5
+CCT_THEMES = "https://citymaps.capetown.gov.za/agsext/rest/services/Theme_Based"
+CCT_ZONING_LAYER = f"{CCT_THEMES}/Land_Parcel_Zonning/MapServer/2"  # (sic) the City's spelling
+
+# OpenStreetMap (malls only: the City publishes no shopping-centre layer).
+OVERPASS = "https://overpass-api.de/api/interpreter"
+OSM_LICENCE = "Open Database License (ODbL) 1.0, (c) OpenStreetMap contributors"
 
 # Municipal Demarcation Board ward layers on ArcGIS Online (CAT_B = 'CPT' for Cape Town).
 MDB_WARDS = {

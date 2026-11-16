@@ -3,6 +3,7 @@
 import type { AppData } from "../data";
 import { fmtInt, fmtRandShort, fmtUnit } from "../format";
 import { type Metric, type MetricKey, standing } from "../metrics";
+import { characterLine, labelsOf } from "../places/places";
 import { mainAllocation } from "./Allocations";
 import { Strip } from "./Strip";
 
@@ -16,6 +17,9 @@ export function Summary({ data, metrics, ward }: { data: AppData; metrics: Recor
   const densities = data.wards.rows.filter((r) => r.population != null).map((r) => r.population! / r.area_km2);
   const denser = density != null ? densities.filter((d) => d > density).length : 0;
   const sr = data.serviceRequests.rows.find((r) => r.ward_no === ward);
+  const lu = data.landUse.rows.find((r) => r.ward_no === ward);
+  // Skip the one-liner where most of the ward has no recorded parcels; "What's here" explains.
+  const character = lu && lu.parcel_coverage >= 0.6 ? characterLine(lu, labelsOf(data.landUse.groups)) : null;
   const lowLocation = sr?.flags.includes("low_location_coverage") && sr.pct_located != null;
 
   return (
@@ -30,6 +34,7 @@ export function Summary({ data, metrics, ward }: { data: AppData; metrics: Recor
             {density != null && <> — {densityWord(denser, densities.length)}</>}.{" "}
           </>
         )}
+        {character && <>{character} </>}
         {alloc && budget && (
           <>
             {alloc.sameVintage ? "This ward" : `Old ward ${alloc.ward}, which covers ${Math.round(alloc.share * 100)}% of it,`} had{" "}

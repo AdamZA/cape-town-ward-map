@@ -1,0 +1,10 @@
+{
+  "licence": "City of Cape Town Open Data Licence",
+  "method": "download",
+  "notes": "Upper-case names tidied to title case.",
+  "publisher": "City of Cape Town",
+  "retrieved_at": "2026-11-16",
+  "sha256": "6bf6df0e1ffac212f06c2cad47c0b0ff9287cc53aea08925fc2ffa62dab930e8",
+  "title": "Health Care Facilities",
+  "url": "https://citymaps.capetown.gov.za/agsext/rest/services/Theme_Based/Health/MapServer/1"
+}

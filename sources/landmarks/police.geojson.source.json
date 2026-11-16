@@ -1,0 +1,10 @@
+{
+  "licence": "City of Cape Town Open Data Licence",
+  "method": "download",
+  "notes": "Upper-case names tidied to title case.",
+  "publisher": "City of Cape Town",
+  "retrieved_at": "2026-11-16",
+  "sha256": "80415a17dc2845912f593c5f7976c61f3fbb25332b4e7e2a52e36e1c2c767a5b",
+  "title": "Police Stations",
+  "url": "https://citymaps.capetown.gov.za/agsext/rest/services/Theme_Based/Safety_Security/MapServer/7"
+}

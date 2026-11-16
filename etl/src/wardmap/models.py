@@ -226,7 +226,64 @@ class Index(Strict):
     datasets: list[IndexEntry]
 
 
+# ---- landmarks (map layers) ----------------------------------------------------------------------
+
+
+class LandmarkGroup(Strict):
+    key: str
+    label: str
+
+
+class LandmarkCategory(Strict):
+    key: str
+    label: str
+    group: str = Field(description="Key into the envelope's `groups`")
+    source: str = Field(description="Key into the envelope's `sources`")
+
+
+class LandmarkRow(Strict):
+    category: str
+    name: str
+    detail: str | None = Field(None, description="Facility type or what a monument commemorates")
+    lon: float
+    lat: float
+    ward_no: int | None = Field(None, description="Null when outside every ward (e.g. offshore)")
+
+
+class LandmarksEnvelope(EnvelopeBase):
+    dataset: Literal["landmarks"] = "landmarks"
+    groups: list[LandmarkGroup] = Field(description="In display order")
+    categories: list[LandmarkCategory] = Field(description="In display order")
+    rows: list[LandmarkRow]
+
+
+# ---- land use (zoning mix) ----------------------------------------------------------------------
+
+
+class LandUseRow(Strict):
+    ward_no: int
+    shares: dict[str, float] = Field(
+        description="Share of the ward's zoned land per group (keys of `groups`); sums to 1"
+    )
+    zoned_km2: float = Field(description="Land counted in the shares")
+    excluded_km2: float = Field(
+        description="Public roads, 'limited use' land and parcels with no zoning recorded"
+    )
+    parcel_coverage: float = Field(
+        description="Share of the ward's area covered by recorded land parcels (can exceed 1 "
+        "slightly where parcels overlap); low where land is unsurveyed or informally settled"
+    )
+
+
+class LandUseEnvelope(EnvelopeBase):
+    dataset: Literal["land_use"] = "land_use"
+    groups: list[LandmarkGroup] = Field(description="Land-use groups (keys of `shares`), in order")
+    rows: list[LandUseRow]
+
+
 ENVELOPES: dict[str, type[BaseModel]] = {
+    "landmarks": LandmarksEnvelope,
+    "land_use": LandUseEnvelope,
     "wards": WardsEnvelope,
     "service_requests": ServiceRequestsEnvelope,
     "allocations": AllocationsEnvelope,

@@ -83,8 +83,21 @@ every printed total in the PDF.
 - **Electricity supplier** (City vs Eskom) comes from the City's load-shedding areas, because the
   City's supply-authority layer is incomplete. Power figures are hidden where Eskom supplies most
   residents.
+- **"What kind of place"** comes from zoning: what land may be used for, not what is on it. Place
+  layers come from the City's facility registers (and OpenStreetMap for shopping centres) and can
+  be incomplete.
+
+## Fetching politely
+
+All network access goes through `etl/src/wardmap/fetch.py`, which limits each host to one request
+at a time with a minimum gap and backs off on errors. Don't add parallel fetching around it, and
+don't run two `pin` commands against the same server at once.
 
 ## Licence
 
 Code: MIT (see [LICENSE](LICENSE)). Data in `sources/` and `data/` remains under its publishers'
 terms, recorded in each file's provenance.
+
+Shopping-centre locations (`sources/landmarks/malls.geojson`, and their rows in
+`data/landmarks-*.json`) are © OpenStreetMap contributors, available under the
+[Open Database License](https://opendatacommons.org/licenses/odbl/).

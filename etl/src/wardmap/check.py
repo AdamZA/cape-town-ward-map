@@ -45,7 +45,7 @@ def run() -> int:
             if fm.source not in env.sources:
                 err(f"{entry.file}: field {name!r} cites unknown source {fm.source!r}")
 
-        if entry.dataset in ("wards", "service_requests"):
+        if entry.dataset in ("wards", "service_requests", "land_use"):
             nos = [r.ward_no for r in env.rows]
             if sorted(nos) != sorted(expected):
                 err(f"{entry.file}: rows are not exactly wards 1..{len(expected)}")
@@ -61,6 +61,20 @@ def run() -> int:
                         err(f"{entry.file}: ward {r.ward_no} {f}={v} out of range")
                 if r.median_days is not None and r.median_days < 0:
                     err(f"{entry.file}: ward {r.ward_no} negative median")
+        if entry.dataset == "land_use":
+            for r in env.rows:
+                total = sum(r.shares.values())
+                if r.zoned_km2 > 0 and abs(total - 1) > 0.01:
+                    err(f"{entry.file}: ward {r.ward_no} shares sum to {total:.3f}")
+        if entry.dataset == "landmarks":
+            bad = {r.category for r in env.rows} - {c.key for c in env.categories}
+            if bad:
+                err(f"{entry.file}: rows with unlabelled categories {sorted(bad)}")
+            stray = [
+                r.ward_no for r in env.rows if r.ward_no is not None and r.ward_no not in expected
+            ]
+            if stray:
+                err(f"{entry.file}: places in unknown wards {sorted(set(stray))[:10]}")
         if entry.dataset == "allocations":
             wards = {r.ward_no for r in env.rows if r.ward_no is not None}
             if wards != expected:

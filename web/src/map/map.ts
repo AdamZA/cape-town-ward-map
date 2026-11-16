@@ -1,11 +1,13 @@
 // The only module that touches MapLibre. Exposes a tiny imperative API to the app.
 //
 // Layer order (bottom -> top): basemap fills/roads, ward fill, ward borders, selection and
-// search outlines, basemap labels, ward numbers. Every line sits *under* the place names, so a
-// busy junction of borders never hides a name.
+// search outlines, basemap labels, ward numbers, place pins. Every line sits *under* the place
+// names, so a busy junction of borders never hides a name.
 import maplibregl, { type Map as MLMap, type StyleSpecification } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import type { WardFeatures } from "../data";
+import type { LandmarkRow } from "../generated/landmarks";
+import { drawIcon } from "../places/icons";
 import { bbox, type BBox } from "../geo";
 import { NO_DATA, RAMP } from "./scales";
 
@@ -39,8 +41,19 @@ export interface WardMapHandlers {
   onHover: (ward: number | null, point: { x: number; y: number } | null) => void;
 }
 
+/** Place pins: rows, their category -> group, and a builder for the click popup. */
+export interface PlaceLayer {
+  rows: LandmarkRow[];
+  groupOf: Record<string, string>;
+  popup: (row: LandmarkRow) => HTMLElement;
+}
+const PLACE_LAYERS = ["place-cluster", "place-pin"];
+
 export class WardMap {
   private map: MLMap;
+  private places: PlaceLayer | null = null;
+  private visible: string[] = [];
+  private popup: maplibregl.Popup | null = null;
   private ready: Promise<void>;
   private selected: number | null = null;
   private candidates: number[] = [];
@@ -70,11 +83,17 @@ export class WardMap {
     this.ready = new Promise((resolve) => this.map.on("load", () => resolve()));
     this.map.on("style.load", () => this.addLayers());
 
-    this.map.on("click", "ward-fill", (e) => handlers.onClick(wardOf(e.features?.[0])));
     this.map.on("click", (e) => {
+      const placeLayers = PLACE_LAYERS.filter((l) => this.map.getLayer(l));
+      const place = placeLayers.length ? this.map.queryRenderedFeatures(e.point, { layers: placeLayers })[0] : undefined;
+      if (place) return this.openPlace(place);
       const hit = this.map.queryRenderedFeatures(e.point, { layers: ["ward-fill"] });
-      if (!hit.length) handlers.onClick(null);
+      handlers.onClick(wardOf(hit[0]));
     });
+    for (const l of PLACE_LAYERS) {
+      this.map.on("mouseenter", l, () => (this.map.getCanvas().style.cursor = "pointer"));
+      this.map.on("mouseleave", l, () => (this.map.getCanvas().style.cursor = ""));
+    }
     this.map.on("mousemove", "ward-fill", (e) => {
       const w = wardOf(e.features?.[0]);
       this.setHovered(w);
@@ -167,8 +186,130 @@ export class WardMap {
         paint: { "text-color": INK, "text-halo-color": "#ffffff", "text-halo-width": 1.8 },
       });
     }
+    this.addPlaceLayers(style.glyphs != null);
     this.applyClasses();
     this.applySelection();
+  }
+
+  private addPlaceLayers(glyphs: boolean) {
+    this.map.addSource("places", {
+      type: "geojson",
+      data: this.placeData(),
+      cluster: true,
+      clusterMaxZoom: 12,
+      clusterRadius: 28,
+    });
+    this.map.addLayer({
+      id: "place-cluster",
+      type: "circle",
+      source: "places",
+      filter: ["has", "point_count"],
+      paint: {
+        // Dark discs, so clusters never read as the (plain-text) ward numbers.
+        "circle-color": INK,
+        "circle-opacity": 0.85,
+        "circle-stroke-color": "#ffffff",
+        "circle-stroke-width": 1.5,
+        "circle-radius": ["step", ["get", "point_count"], 11, 10, 14, 50, 18],
+      },
+    });
+    if (glyphs) {
+      this.map.addLayer({
+        id: "place-cluster-count",
+        type: "symbol",
+        source: "places",
+        filter: ["has", "point_count"],
+        layout: {
+          "text-field": ["get", "point_count_abbreviated"],
+          "text-font": ["Noto Sans Bold"],
+          "text-size": 11,
+          "text-allow-overlap": true,
+        },
+        paint: { "text-color": "#ffffff" },
+      });
+    }
+    this.map.addLayer({
+      id: "place-pin",
+      type: "symbol",
+      source: "places",
+      filter: ["!", ["has", "point_count"]],
+      layout: {
+        "icon-image": ["get", "category"],
+        "icon-allow-overlap": true,
+        ...(glyphs
+          ? {
+              "text-field": ["step", ["zoom"], "", 14, ["get", "name"]],
+              "text-font": ["Noto Sans Regular"],
+              "text-size": 11.5,
+              "text-offset": [0, 1.3],
+              "text-anchor": "top",
+              "text-optional": true,
+              "text-max-width": 9,
+            }
+          : {}),
+      },
+      paint: { "text-color": INK, "text-halo-color": "#ffffff", "text-halo-width": 1.5 },
+    });
+  }
+
+  private placeData(): GeoJSON.FeatureCollection {
+    const on = new Set(this.visible);
+    const rows = this.places?.rows ?? [];
+    return {
+      type: "FeatureCollection",
+      features: rows.flatMap((r, i) =>
+        on.has(r.category)
+          ? [{ type: "Feature", properties: { i, category: r.category, name: r.name }, geometry: { type: "Point", coordinates: [r.lon, r.lat] } }]
+          : [],
+      ),
+    };
+  }
+
+  /** Register place rows once; icons are drawn on first use. */
+  async setPlaces(places: PlaceLayer) {
+    this.places = places;
+    await this.ready;
+    for (const [cat, group] of Object.entries(places.groupOf)) {
+      if (this.map.hasImage(cat)) continue;
+      const c = drawIcon(cat, group);
+      const ctx = c?.getContext("2d");
+      if (c && ctx) this.map.addImage(cat, ctx.getImageData(0, 0, c.width, c.height), { pixelRatio: 2 });
+    }
+    this.refreshPlaces();
+  }
+
+  async setVisiblePlaces(categories: string[]) {
+    this.visible = categories;
+    await this.ready;
+    this.refreshPlaces();
+  }
+
+  private refreshPlaces() {
+    const src = this.map.getSource("places") as maplibregl.GeoJSONSource | undefined;
+    src?.setData(this.placeData());
+    if (this.popup && !this.visible.length) this.popup.remove();
+  }
+
+  private async openPlace(f: maplibregl.MapGeoJSONFeature) {
+    const geom = f.geometry as GeoJSON.Point;
+    const at = geom.coordinates as [number, number];
+    if (f.properties?.cluster_id != null) {
+      const src = this.map.getSource("places") as maplibregl.GeoJSONSource;
+      const zoom = await src.getClusterExpansionZoom(f.properties.cluster_id as number);
+      this.map.easeTo({ center: at, zoom });
+      return;
+    }
+    const row = this.places?.rows[f.properties?.i as number];
+    if (!row || !this.places) return;
+    this.popup?.remove();
+    this.popup = new maplibregl.Popup({ offset: 14, maxWidth: "280px", closeButton: true })
+      .setLngLat(at)
+      .setDOMContent(this.places.popup(row))
+      .addTo(this.map);
+  }
+
+  closePopup() {
+    this.popup?.remove();
   }
 
   async setClasses(classes: Map<number, number>) {

@@ -1,0 +1,10 @@
+{
+  "licence": "City of Cape Town Open Data Licence",
+  "method": "query",
+  "notes": "Square metres of each zone code per 2026 ward: parcel areas summed by the City's server for parcels inside the ward, plus parcels crossing the ward edge clipped to it. Ward outlines simplified to ~20 m for the query.",
+  "publisher": "City of Cape Town",
+  "retrieved_at": "2026-11-16",
+  "sha256": "14b328eefd05f5cbac9461d443082849c9be94aae3c425a1afd4a598d87b2ad9",
+  "title": "Zoning (Integrated Zoning Scheme), summed per ward",
+  "url": "https://citymaps.capetown.gov.za/agsext/rest/services/Theme_Based/Land_Parcel_Zonning/MapServer/2"
+}
