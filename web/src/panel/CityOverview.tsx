@@ -5,6 +5,7 @@ import type { AppData } from "../data";
 import { fmtDate, fmtInt, fmtUnit } from "../format";
 import { type MetricKey, type Metrics, METRIC_KEYS, median, type Term } from "../metrics";
 import { CouncilResults } from "../elections/Elections";
+import { CompareParties } from "../elections/Positions";
 import { Figure, METHODOLOGY_URL } from "./Figure";
 
 interface Props {
@@ -104,6 +105,8 @@ export function CityOverview({ data, metrics, metric, term, onWard, onClose }: P
       </section>}
 
       <CouncilResults data={data} code="CPT" year={term.year} />
+
+      <CompareParties data={data} />
 
       <section class="section">
         <h3>All wards</h3>

@@ -1,8 +1,9 @@
 // One party: its seats in Cape Town and nationally, and the donations it declared to the IEC.
-// (Stated priorities and positions are added from sources/parties when researched.)
+// Profiled parties also show their stated priorities and positions (sources/parties).
 import type { AppData } from "../data";
 import { fmtDate, fmtInt, fmtRandShort } from "../format";
 import { SourceLine } from "../panel/Figure";
+import { PartyProfileView, profileFor } from "./Positions";
 
 interface Props {
   data: AppData;
@@ -66,6 +67,10 @@ export function PartyPanel({ data, party, onClose }: Props) {
           </p>
         )}
       </section>
+
+      {data.parties && profileFor(data.parties, party) && (
+        <PartyProfileView env={data.parties} profile={profileFor(data.parties, party)!} />
+      )}
 
       {data.donations && (
         <section class="section" aria-labelledby="party-money">

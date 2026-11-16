@@ -392,7 +392,68 @@ class DonationsEnvelope(Strict):
     rows: list[DonationRow]
 
 
+# ---- party profiles ------------------------------------------------------------------------------
+
+
+class Position(Strict):
+    found: bool
+    summary: str | None = Field(None, description="Neutral paraphrase (max ~25 words)")
+    quote: str | None = Field(None, description="The party's own words, verbatim (max 30 words)")
+    url: str | None = None
+    date: str | None = Field(
+        None, description="Date of the statement or document (ISO, or YYYY-MM)"
+    )
+    source_type: str | None = Field(
+        None,
+        description="manifesto | policy_document | party_statement | leader_statement | parliament",
+    )
+    searched: str | None = Field(None, description="Where we looked, when nothing was found")
+
+
+class Manifesto(Strict):
+    title: str
+    url: str
+    date: str | None
+    election: str
+
+
+class SourcedText(Strict):
+    text: str
+    url: str
+
+
+class Economy(Strict):
+    summary: str
+    url: str
+    date: str | None
+
+
+class PartyProfile(Strict):
+    name: str
+    website: str | None
+    manifesto: Manifesto | None
+    priorities: list[SourcedText]
+    economy: Economy | None
+    positions: dict[str, Position] = Field(description="Keyed by the envelope's topic keys")
+
+
+class Topic(Strict):
+    key: str
+    label: str
+
+
+class PartiesEnvelope(Strict):
+    dataset: Literal["parties"] = "parties"
+    schema_version: int = SCHEMA_VERSION
+    as_of: str
+    sources: dict[str, Source]
+    gaps: list[Gap] = []
+    topics: list[Topic] = Field(description="Position topics, in display order")
+    parties: list[PartyProfile]
+
+
 ENVELOPES: dict[str, type[BaseModel]] = {
+    "parties": PartiesEnvelope,
     "donations": DonationsEnvelope,
     "elections": ElectionsEnvelope,
     "election_wards": ElectionWardsEnvelope,

@@ -87,6 +87,12 @@
    "ward_vintage": 2026
   },
   {
+   "budget_year": null,
+   "dataset": "parties",
+   "file": "parties.json",
+   "ward_vintage": 2026
+  },
+  {
    "budget_year": "2024/25",
    "dataset": "allocations",
    "file": "allocations-2024-25.json",

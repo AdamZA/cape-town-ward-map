@@ -1,0 +1,880 @@
+# Draft dataset: South African party priorities and positions, 2026 local government elections context.
+# Compiled 2026-11-17 (researched with an AI agent; every quote checked against its source text). Only the party's own words (manifesto, statements, leader/spokesperson quotes).
+# Polity.org.za article URLs host the party's own manifesto PDFs (download link on the page); they block
+# some automated fetchers but open normally in a browser.
+# Dates are document/statement dates. Where a manifesto launch date was not confirmed, the hosting/publication
+# date is used and flagged in a comment.
+
+parties:
+
+  - name: "Democratic Alliance"
+    website: "https://www.da.org.za"
+    manifesto:
+      title: "Getting South Africa Working for All: Local Government Manifesto 2026"
+      url: "https://www.da.org.za/policy/2026-local-government-manifesto"
+      date: "2026-08-08"   # national launch, Mary Fitzgerald Square, Johannesburg
+      election: "2026 local"
+    priorities:
+      - text: "End cadre deployment; appoint municipal staff on merit to build corruption-free, professional administrations."
+        url: "https://www.polity.org.za/article/da-local-government-manifesto-2026-2026-08-11"
+      - text: "Reinvest water revenue into water infrastructure, fix leaks, and use private-sector investment and expertise."
+        url: "https://www.polity.org.za/article/da-local-government-manifesto-2026-2026-08-11"
+      - text: "Reinvest electricity revenue into grids and let municipalities buy and sell their own power."
+        url: "https://www.polity.org.za/article/da-local-government-manifesto-2026-2026-08-11"
+      - text: "Bring policing closer to residents by devolving policing powers and budget to capable municipalities."
+        url: "https://www.polity.org.za/article/da-local-government-manifesto-2026-2026-08-11"
+      - text: "Restore neglected public spaces and waste collection, partnering with communities and the private sector."
+        url: "https://www.polity.org.za/article/da-local-government-manifesto-2026-2026-08-11"
+      - text: "Grow jobs by cutting red tape, supporting informal traders, releasing land and delivering title deeds."
+        url: "https://www.polity.org.za/article/da-local-government-manifesto-2026-2026-08-11"
+    economy:
+      summary: "Ring-fence and reinvest water and electricity revenue, use public-private partnerships for infrastructure, let municipalities buy/sell power, cost-reflective tariffs."
+      url: "https://www.polity.org.za/article/da-local-government-manifesto-2026-2026-08-11"
+      date: "2026-08-08"
+    positions:
+      lgbtq:
+        summary: "Called on government to show commitment to protecting LGBTQI+ people, including from homophobic attacks on visitors."
+        quote: "protecting the rights of all people, particularly vulnerable and minority groups like the LGBTQI+ community"
+        url: "https://www.da.org.za/2022/06/international-pride-month-time-for-the-government-to-focus-on-lgbtqi-tourism"
+        date: "2022-06-17"
+        source_type: "party_statement"
+      human_rights:
+        summary: "Opposed the Hate Crimes and Hate Speech Bill as drafted, saying it would chill freedom of speech."
+        quote: "If the issues identified in the Bill are not addressed during the legislative process, this Bill will have a chilling effect on freedom of speech."
+        url: "https://www.da.org.za/2021/10/hate-speech-bill-will-undermine-freedom-of-speech"
+        date: "2021-10-05"
+        source_type: "party_statement"
+      israel_palestine:
+        summary: "Supports a negotiated two-state solution with a sovereign Palestine beside a secure Israel; rejected Netanyahu's opposition to Palestinian statehood."
+        quote: "a two-state solution that results in the creation of a sovereign and unoccupied Palestine co-existing in peace next to a secure Israel"
+        url: "https://www.da.org.za/2024/01/the-da-rejects-netanyahus-recent-statements"
+        date: "2024-01-19"
+        source_type: "party_statement"
+      policing:
+        summary: "Wants policing powers, budget and investigative powers devolved to capable municipalities, plus more technology and partnerships."
+        quote: "We will make communities safer by bringing policing closer to the people."
+        url: "https://www.polity.org.za/article/da-local-government-manifesto-2026-2026-08-11"
+        date: "2026-08-08"
+        source_type: "manifesto"
+      housing_land:
+        summary: "Release unused state land for affordable, medium-density housing; deliver title deeds; overhaul housing allocation for transparency."
+        quote: "Releasing unutilised state-owned land parcels for housing developments."
+        url: "https://www.polity.org.za/article/da-local-government-manifesto-2026-2026-08-11"
+        date: "2026-08-08"
+        source_type: "manifesto"
+      immigration:
+        summary: "Backs the Home Affairs White Paper: first-safe-country asylum rule, points-based skilled immigration, tougher enforcement against illegal immigration."
+        quote: "make it easy for investors, tourists, and skilled individuals to enter legally, and hard for illegal immigration and abuse"
+        url: "https://www.da.org.za/2026/04/da-affirms-minister-schreibers-plan-to-end-illegal-immigration"
+        date: "2026-04-16"
+        source_type: "party_statement"
+
+  - name: "African National Congress"
+    website: "https://www.anc1912.org.za"
+    manifesto:
+      title: "ANC 2026 Local Government Manifesto: A Better Life for All - Let Us Continue Building Better Communities, Together"
+      url: "https://www.polity.org.za/article/anc-2026-local-government-manifesto-2026-08-24"
+      date: "2026-08-23"   # launch reported as scheduled for 23 Aug (Diepsloot); Polity posted 24 Aug. Confirm.
+      election: "2026 local"
+    priorities:
+      - text: "Reliable, quality and affordable basic services and infrastructure, including roads, water and human settlements."
+        url: "https://www.polity.org.za/article/anc-2026-local-government-manifesto-2026-08-24"
+      - text: "Economic development and jobs, prioritising South African workers and businesses in municipal opportunities."
+        url: "https://www.polity.org.za/article/anc-2026-local-government-manifesto-2026-08-24"
+      - text: "Safe, clean, healthy and resilient communities through Community Safety Forums and stronger by-law enforcement."
+        url: "https://www.polity.org.za/article/anc-2026-local-government-manifesto-2026-08-24"
+      - text: "Sustainable municipal finances: billing audits, fair tariffs, automatic indigent registration for grant recipients."
+        url: "https://www.polity.org.za/article/anc-2026-local-government-manifesto-2026-08-24"
+      - text: "Capable developmental local government with zero tolerance for corruption."
+        url: "https://www.polity.org.za/article/anc-2026-local-government-manifesto-2026-08-24"
+      - text: "Community participation, with councillors reporting regularly to residents against measurable targets."
+        url: "https://www.polity.org.za/article/anc-2026-local-government-manifesto-2026-08-24"
+    economy:
+      summary: "Keep tariffs fair and reduce reliance on above-inflation increases; protect free basic services; use DBSA and PPPs where appropriate."
+      url: "https://www.polity.org.za/article/anc-2026-local-government-manifesto-2026-08-24"
+      date: "2026-08-23"
+    positions:
+      lgbtq:
+        summary: "Manifesto names hate crimes against LGBTQI+ people as a safety threat and commits to protecting LGBTQI+ residents."
+        quote: "Protect older persons, persons with disabilities, LGBTQI+ and other vulnerable residents by ensuring municipal facilities, public spaces and pedestrian routes are safe and accessible"
+        url: "https://www.polity.org.za/article/anc-2026-local-government-manifesto-2026-08-24"
+        date: "2026-08-23"
+        source_type: "manifesto"
+      human_rights:
+        summary: "Welcomed the Hate Crimes and Hate Speech Act as strengthening acceptance of diversity."
+        quote: "This is an extremely important piece of legislation and one which will further strengthen acceptance of diversity in our country."
+        url: "https://politicsweb.co.za/opinion/presidents-assent-to-hate-crimes-act-welcomed--anc"
+        date: "2024-05-10"
+        source_type: "party_statement"
+      israel_palestine:
+        summary: "Celebrated the ICJ provisional measures in the genocide case against Israel; supports a free Palestine and a two-state solution."
+        quote: "The ICJ’s ruling on provisional measures is a significant victory for humanity and the Palestinian cause."
+        url: "https://www.anc1912.org.za/african-national-congress-is-delighted-by-the-icj-judgment-regarding-genocide-in-gaza/"
+        date: "2024-01-26"
+        source_type: "party_statement"
+      policing:
+        summary: "SAPS leads policing; municipalities strengthen by-law/metro enforcement, lighting and Community Safety Forums with SAPS and CPFs."
+        quote: "Policing remains primarily the responsibility of SAPS, but local government has a real role to play"
+        url: "https://www.polity.org.za/article/anc-2026-local-government-manifesto-2026-08-24"
+        date: "2026-08-23"
+        source_type: "manifesto"
+      housing_land:
+        summary: "Upgrade informal settlements, expand serviced sites, facilitate title deeds and social housing, reverse apartheid spatial patterns."
+        quote: "facilitating title deed transfers and supporting affordable and social housing"
+        url: "https://www.polity.org.za/article/anc-2026-local-government-manifesto-2026-08-24"
+        date: "2026-08-23"
+        source_type: "manifesto"
+      immigration:
+        summary: "Enforce immigration and labour laws with Home Affairs; subsidised housing for qualifying South Africans; regulate trading permits."
+        quote: "Government-subsidised housing will be allocated to qualifying South Africans in accordance with the law, while trading spaces and permits are properly regulated."
+        url: "https://www.polity.org.za/article/anc-2026-local-government-manifesto-2026-08-24"
+        date: "2026-08-23"
+        source_type: "manifesto"
+
+  - name: "Economic Freedom Fighters"
+    website: "https://effonline.org"
+    manifesto:
+      title: "EFF Local Government Elections Manifesto 2026 (Victory or Death!)"
+      url: "https://www.polity.org.za/article/eff-local-government-elections-manifesto-2026-2026-09-15"
+      date: "2026-07-25"   # launched Thohoyandou Stadium; also on effonline.org (blocks automated access)
+      election: "2026 local"
+    priorities:
+      - text: "Municipalities acquire land for residential, commercial and agricultural use; stop selling municipal land."
+        url: "https://www.polity.org.za/article/eff-local-government-elections-manifesto-2026-2026-09-15"
+      - text: "Insource security, cleaning, waste collection and maintenance to create permanent municipal jobs."
+        url: "https://www.polity.org.za/article/eff-local-government-elections-manifesto-2026-2026-09-15"
+      - text: "Increase free basic water and electricity allocations and introduce progressive tariff structures."
+        url: "https://www.polity.org.za/article/eff-local-government-elections-manifesto-2026-2026-09-15"
+      - text: "Fight crime and corruption with stronger municipal law enforcement and hotspot-based strategies with SAPS."
+        url: "https://www.polity.org.za/article/eff-local-government-elections-manifesto-2026-2026-09-15"
+      - text: "Gender equality, safety and social programmes, including protection for vulnerable groups."
+        url: "https://www.polity.org.za/article/eff-local-government-elections-manifesto-2026-2026-09-15"
+    economy:
+      summary: "Insourcing over outsourcing, progressive tariffs, larger free basic services, expropriation of abandoned land and no sale of municipal land."
+      url: "https://www.polity.org.za/article/eff-local-government-elections-manifesto-2026-2026-09-15"
+      date: "2026-07-25"
+    positions:
+      lgbtq:
+        summary: "Manifesto commits to protect the rights and dignity of LGBTQIA+ persons and sex workers through inclusive municipal services."
+        quote: "Protect the rights and dignity of vulnerable groups, including children, senior citizens, LGBTQIA+ persons, and sex workers, through inclusive municipal services and programmes."
+        url: "https://www.polity.org.za/article/eff-local-government-elections-manifesto-2026-2026-09-15"
+        date: "2026-07-25"
+        source_type: "manifesto"
+      human_rights:
+        found: false
+        searched: "2026 manifesto (no civil-liberties section); effonline.org blocks access; news search on EFF free expression/rule of law found only reporting, no checkable quote."
+      israel_palestine:
+        summary: "Calls for immediate closure of the Israeli embassy per Parliament's 2023 resolution; strongly backs the ICJ case."
+        quote: "We further commend the declaration of the Israeli diplomat and call for the president to adhere to the long-standing resolution of parliament to close the Israeli embassy with immediate effect"
+        url: "https://ewn.co.za/2026/02/04/eff-renews-call-for-immediate-closure-of-israeli-embassy"
+        date: "2026-02-04"
+        source_type: "leader_statement"
+      policing:
+        summary: "Strengthen municipal law enforcement staffing and training; develop hotspot-based crime prevention with SAPS."
+        quote: "Work with the South African Police Service and other stakeholders to develop integrated crime prevention strategies based on identified crime hotspots."
+        url: "https://www.polity.org.za/article/eff-local-government-elections-manifesto-2026-2026-09-15"
+        date: "2026-07-25"
+        source_type: "manifesto"
+      housing_land:
+        summary: "Use municipal expropriation powers on abandoned land and buildings; redistribute municipal land to black communities instead of selling it."
+        quote: "Use its expropriation powers to expropriate abandoned land and buildings in order to make these available for use by young people for agriculture and other business activities."
+        url: "https://www.polity.org.za/article/eff-local-government-elections-manifesto-2026-2026-09-15"
+        date: "2026-07-25"
+        source_type: "manifesto"
+      immigration:
+        summary: "Rejects xenophobia; blames state failure, not African migrants; denies door-to-door campaigns against foreign nationals."
+        quote: "We reject xenophobia in all its forms and have consistently maintained that the failures of the South African state cannot be blamed on poor African migrants seeking survival"
+        url: "https://allafrica.com/stories/202607030171.html"
+        date: "2026-07-02"
+        source_type: "party_statement"
+
+  - name: "uMkhonto weSizwe Party"
+    website: "https://mkparty.org.za"
+    manifesto:
+      title: "The People's Mandate: 2026 Local Government Election"
+      url: "https://www.polity.org.za/article/mkp-the-peoples-mandate-2026-local-government-election-2026-10-20"
+      date: "2026-10-20"   # Polity publication date; launch date not confirmed
+      election: "2026 local"
+    priorities:
+      - text: "Bind MK municipalities to a People's Contract with 100-day, 1,000-day and five-year targets."
+        url: "https://www.polity.org.za/article/mkp-the-peoples-mandate-2026-local-government-election-2026-10-20"
+      - text: "Keep water and electricity under public control; reject privatisation and the user-pay principle for basic services."
+        url: "https://www.polity.org.za/article/mkp-the-peoples-mandate-2026-local-government-election-2026-10-20"
+      - text: "Jobs, localisation and African ownership through municipal procurement and investment zones (PIIRZs)."
+        url: "https://www.polity.org.za/article/mkp-the-peoples-mandate-2026-local-government-election-2026-10-20"
+      - text: "Spatial justice: upgrade informal settlements first and release well-located land for mixed-income housing."
+        url: "https://www.polity.org.za/article/mkp-the-peoples-mandate-2026-local-government-election-2026-10-20"
+      - text: "Safe, clean communities: streetlights, municipal policing, by-law enforcement and immigration law enforcement."
+        url: "https://www.polity.org.za/article/mkp-the-peoples-mandate-2026-local-government-election-2026-10-20"
+      - text: "A Fair Fiscal Contract: protected indigent services, flat fee for working poor, firm collection from those able to pay."
+        url: "https://www.polity.org.za/article/mkp-the-peoples-mandate-2026-local-government-election-2026-10-20"
+    economy:
+      summary: "Rejects privatisation and user-pays for basic services; indigent protection, flat fee for working poor, wealthy and big business pay more; land value capture."
+      url: "https://www.polity.org.za/article/mkp-the-peoples-mandate-2026-local-government-election-2026-10-20"
+      date: "2026-10-20"
+    positions:
+      lgbtq:
+        summary: "Party leader Jacob Zuma criticised the legal recognition of same-sex relationships at an MK rally."
+        quote: "Who made the law that a man can date another man? Who will women be left with?"
+        url: "https://www.timeslive.co.za/politics/2024-02-26-listen-jacob-zumas-homophobic-remarks-at-mk-rally/"
+        date: "2024-02-25"
+        source_type: "leader_statement"
+      human_rights:
+        summary: "Manifesto says restoring public order must not compromise the rule of law or human dignity; calls basic services human rights."
+        quote: "MK municipalities will restore public order and rebuild shared spaces without compromising the rule of law or human dignity."
+        url: "https://www.polity.org.za/article/mkp-the-peoples-mandate-2026-local-government-election-2026-10-20"
+        date: "2026-10-20"
+        source_type: "manifesto"
+      israel_palestine:
+        summary: "Stands with Palestinians and Lebanese against what it calls Israeli expansionism; calls for ceasefire and pressure on Israel."
+        quote: "the MK Party stands in solidarity with the people of Lebanon and Palestine, who have long suffered under the brutal policies of Israeli expansionism"
+        url: "https://politicsweb.co.za/archive/planned-israeli-ground-invasion-of-lebanon-condemn"
+        date: "2024-09-29"
+        source_type: "party_statement"
+      policing:
+        summary: "Strengthen municipal policing, traffic and by-law enforcement; cooperate with SAPS against cable theft and construction disruption."
+        quote: "strengthen municipal policing, traffic enforcement and by-law enforcement."
+        url: "https://www.polity.org.za/article/mkp-the-peoples-mandate-2026-local-government-election-2026-10-20"
+        date: "2026-10-20"
+        source_type: "manifesto"
+      housing_land:
+        summary: "Change land ownership and contract beneficiaries; upgrade informal settlements in place; release well-located public land."
+        quote: "Radical economic transformation means changing who owns the land and who receives municipal contracts."
+        url: "https://www.polity.org.za/article/mkp-the-peoples-mandate-2026-local-government-election-2026-10-20"
+        date: "2026-10-20"
+        source_type: "manifesto"
+      immigration:
+        summary: "Enforce immigration and employment laws, act against employers of undocumented workers, reserve some service jobs for citizens."
+        quote: "MKP municipalities will enforce immigration and employment laws, act against employers who exploit undocumented workers, and reserve designated service-industry opportunities for South African citizens."
+        url: "https://www.polity.org.za/article/mkp-the-peoples-mandate-2026-local-government-election-2026-10-20"
+        date: "2026-10-20"
+        source_type: "manifesto"
+
+  - name: "Inkatha Freedom Party"
+    website: "https://www.ifp.org.za"
+    manifesto:
+      title: "Local Government Elections Manifesto 2026: Partner With Us to Build Stronger Municipalities - We Work For You"
+      url: "https://www.polity.org.za/article/ifp-local-government-elections-manifesto-2026-2026-10-06"
+      date: "2026-10-06"   # Polity publication date; launch date not confirmed
+      election: "2026 local"
+    priorities:
+      - text: "Trust us for jobs: local employment, spaza shops reserved for South Africans, protected livelihoods."
+        url: "https://www.polity.org.za/article/ifp-local-government-elections-manifesto-2026-2026-10-06"
+      - text: "Deliver basic services and working infrastructure, with maintenance before crisis and trackable fault reporting."
+        url: "https://www.polity.org.za/article/ifp-local-government-elections-manifesto-2026-2026-10-06"
+      - text: "Protect traditional and Khoi-San institutions, including constitutional amendments clarifying their powers."
+        url: "https://www.polity.org.za/article/ifp-local-government-elections-manifesto-2026-2026-10-06"
+      - text: "End corruption and make every rand count through merit appointments and financial discipline."
+        url: "https://www.polity.org.za/article/ifp-local-government-elections-manifesto-2026-2026-10-06"
+      - text: "Empower women, youth and persons with disabilities through bursaries, skills and GBV-focused budgets."
+        url: "https://www.polity.org.za/article/ifp-local-government-elections-manifesto-2026-2026-10-06"
+    economy:
+      summary: "Cut red tape and fund small businesses; reform local government funding to match responsibilities; merit-based financial management."
+      url: "https://www.polity.org.za/article/ifp-local-government-elections-manifesto-2026-2026-10-06"
+      date: "2026-10-06"
+    positions:
+      lgbtq:
+        found: false
+        searched: "2026 manifesto (no mention); ifp.org.za newsroom; news searches for IFP LGBTQI/Pride/hate-crime statements."
+      human_rights:
+        summary: "IFP KwaZulu-Natal said Human Rights Day should focus on service delivery and eradicating racism."
+        quote: "racism at all levels must be tackled with vigour to rid our society of all the remnants of the evil apartheid system."
+        url: "https://www.ifp.org.za/newsroom/human-rights-day-focus-service-delivery-eradication-racism/"
+        date: "2017-03-21"
+        source_type: "party_statement"
+      israel_palestine:
+        summary: "Advocates non-violence, negotiation and a two-state solution; urged all parties to lay down arms."
+        quote: "remains steadfast in our belief that a Two-State solution for Israel and Palestine could provide the peace, justice, and stability that the Middle East so desperately needs."
+        url: "https://polity.org.za/article/ifp-mkhuleko-hlengwa-address-by-ifp-mp-on-the-statement-by-the-minister-of-international-relations-and-cooperation-on-the-ongoing-israel-palestine-conflict-07112023-2023-11-08"
+        date: "2023-11-07"
+        source_type: "parliament"
+      policing:
+        summary: "Links crime to failed streetlights and weak by-law enforcement; commits to repairing streetlights and high-mast lighting."
+        quote: "IFP municipalities will maintain municipal electricity distribution infrastructure and repair streetlights and high-mast lighting to improve safety and support economic activity."
+        url: "https://www.polity.org.za/article/ifp-local-government-elections-manifesto-2026-2026-10-06"
+        date: "2026-10-06"
+        source_type: "manifesto"
+      housing_land:
+        summary: "Identify land for housing programmes, redevelop hostels and formalise informal settlements."
+        quote: "IFP municipalities will identify suitable land and improve municipal planning to continue rolling out housing programmes, to address housing backlogs, support the redevelopment of hostels"
+        url: "https://www.polity.org.za/article/ifp-local-government-elections-manifesto-2026-2026-10-06"
+        date: "2026-10-06"
+        source_type: "manifesto"
+      immigration:
+        summary: "Says illegal migration strains services; reserve spaza sector for South Africans; prosecute fronting for undocumented foreign nationals."
+        quote: "The IFP believes that the spaza-shop industry must be reserved for South Africans in every municipality"
+        url: "https://www.polity.org.za/article/ifp-local-government-elections-manifesto-2026-2026-10-06"
+        date: "2026-10-06"
+        source_type: "manifesto"
+
+  - name: "Patriotic Alliance"
+    website: "https://mypa.org.za"
+    manifesto:
+      title: "Turnaround Strategy 2024 (national election manifesto)"
+      url: "https://mypa.org.za/wp-content/uploads/2024/03/TURNAROUND-STRATEGY-2024-7.pdf"
+      date: "2024-04-22"   # text published by Politicsweb on this date; PDF is image-only
+      election: "2024 national (a 2026 local manifesto exists per press reports but no primary copy was found)"
+    priorities:
+      - text: "Place God first and reintroduce religious principles in education."
+        url: "https://politicsweb.co.za/documents/the-patriotic-alliances-2024-manifesto"
+      - text: "Zero tolerance for illegal immigration: mass deportation, detention, and a border wall."
+        url: "https://politicsweb.co.za/documents/the-patriotic-alliances-2024-manifesto"
+      - text: "Compulsory military or public service for youths not in education or employment."
+        url: "https://politicsweb.co.za/documents/the-patriotic-alliances-2024-manifesto"
+      - text: "Return of the death penalty for severe, proven murder cases."
+        url: "https://politicsweb.co.za/documents/the-patriotic-alliances-2024-manifesto"
+      - text: "Elevate royal and local leaders so communities benefit from mining on their land."
+        url: "https://politicsweb.co.za/documents/the-patriotic-alliances-2024-manifesto"
+      - text: "Return to a capable state, cutting reliance on consultants and private contractors."
+        url: "https://politicsweb.co.za/documents/the-patriotic-alliances-2024-manifesto"
+    economy:
+      summary: "The rich should bear the brunt of tax; grants for disabled, very poor and elderly; state bank to compete with private banks (2024 national manifesto)."
+      url: "https://politicsweb.co.za/documents/the-patriotic-alliances-2024-manifesto"
+      date: "2024-04-22"
+    positions:
+      lgbtq:
+        summary: "Leader formed an LGBTQIA+ league in the party and said members who do not accept LGBTQIA+ people must go."
+        quote: "the LGBTQIA+ community is us, they are part of the PA"
+        url: "https://www.dailymaverick.co.za/article/2023-04-10-patriotic-alliance-sets-up-lgbtqia-league-homophobes-will-have-to-find-a-new-political-home/"
+        date: "2023-04-10"
+        source_type: "leader_statement"
+      human_rights:
+        summary: "Manifesto argues human rights claims of illegal migrants should not override citizens' rights."
+        quote: "Human rights should not mean that citizenship rights and responsibilities are completely ignored."
+        url: "https://politicsweb.co.za/documents/the-patriotic-alliances-2024-manifesto"
+        date: "2024-04-22"
+        source_type: "manifesto"
+      israel_palestine:
+        summary: "National spokesperson said the PA backs a two-state solution, condemns Hamas and also supports a free Palestine."
+        quote: "We have never taken a side, except to push for a genuine two-state solution, which would bring the violence to an end."
+        url: "https://www.dailymaverick.co.za/article/2024-01-10-parties-weigh-up-sas-genocide-case-against-israel-newbies-change-starts-now-and-rise-mzansi-in-support-maimanes-bosa-says-its-a-misstep/"
+        date: "2024-01-10"
+        source_type: "party_statement"
+      policing:
+        summary: "Bring back the death penalty for certain murders; specialised police units, forensic investment and rape courts."
+        quote: "A PA government will reintroduce the death penalty in severe cases of murder where guilt has been proven beyond any reasonable doubt."
+        url: "https://politicsweb.co.za/documents/the-patriotic-alliances-2024-manifesto"
+        date: "2024-04-22"
+        source_type: "manifesto"
+      housing_land:
+        summary: "Revive past housing-finance subsidies such as the one-third subsidy scheme for people banks will not finance."
+        quote: "The PA will reinstitute finance policies that worked in the past, such as the thirty-three-and-a-third subsidy scheme"
+        url: "https://politicsweb.co.za/documents/the-patriotic-alliances-2024-manifesto"
+        date: "2024-04-22"
+        source_type: "manifesto"
+      immigration:
+        summary: "Mass deportation of illegal migrants, detention camps, audits of foreigners' papers and penalties for employers."
+        quote: "South Africa faces a migration crisis and illegal migrants must be mass deported."
+        url: "https://politicsweb.co.za/documents/the-patriotic-alliances-2024-manifesto"
+        date: "2024-04-22"
+        source_type: "manifesto"
+
+  - name: "Freedom Front Plus (Vryheidsfront Plus)"
+    website: "https://www.vfplus.org.za"
+    manifesto:
+      title: "VF Plus Municipal Elections Manifesto 2026 (It is our time / Green will get it done)"
+      url: "https://www.polity.org.za/article/vf-plus-municipal-elections-manifesto-2026-2026-09-15"
+      date: "2026-09-15"   # Polity publication date; launch date not confirmed
+      election: "2026 local"
+    priorities:
+      - text: "Devolve decision-making and power to communities over taxes, services, safety and heritage."
+        url: "https://www.polity.org.za/article/vf-plus-municipal-elections-manifesto-2026-2026-09-15"
+      - text: "Reinvest a substantial share of each ward's rates and levies in that ward."
+        url: "https://www.polity.org.za/article/vf-plus-municipal-elections-manifesto-2026-2026-09-15"
+      - text: "Fair rates and taxes: no tariff hikes above inflation, uniform tariffs, smart meters, accurate bills."
+        url: "https://www.polity.org.za/article/vf-plus-municipal-elections-manifesto-2026-2026-09-15"
+      - text: "Repair infrastructure: spend grants fully and at least 8% of asset book value on maintenance."
+        url: "https://www.polity.org.za/article/vf-plus-municipal-elections-manifesto-2026-2026-09-15"
+      - text: "Merit-only appointments regardless of skin colour or political affiliation; more engineers and tradesmen."
+        url: "https://www.polity.org.za/article/vf-plus-municipal-elections-manifesto-2026-2026-09-15"
+      - text: "Govern on Christian values and act as a stable, principled coalition partner."
+        url: "https://www.polity.org.za/article/vf-plus-municipal-elections-manifesto-2026-2026-09-15"
+    economy:
+      summary: "Cap rates and tariff increases at inflation, ring-fence rates to wards, protect property rights, drop BEE-based contracting, favour private-sector growth."
+      url: "https://www.polity.org.za/article/vf-plus-municipal-elections-manifesto-2026-2026-09-15"
+      date: "2026-09-15"
+    positions:
+      lgbtq:
+        found: false
+        searched: "2026 manifesto (no mention); news searches for FF Plus statements on LGBTQ/same-sex/gender identity."
+      human_rights:
+        summary: "Calls for governments based on Christian values and a dispensation of equal rights for all groups and communities."
+        quote: "Establish proper and accountable governments based on Christian values; and usher in a dispensation where all groups and communities enjoy equal rights."
+        url: "https://www.polity.org.za/article/vf-plus-municipal-elections-manifesto-2026-2026-09-15"
+        date: "2026-09-15"
+        source_type: "manifesto"
+      israel_palestine:
+        summary: "Condemned Hamas's 7 October attack, supports Israel's right to self-defence; later called SA's ICJ case a political stunt."
+        quote: "The FF Plus reiterates its support for the state of Israel, and recognises Israel’s right to defend itself and its civilians by all means necessary."
+        url: "https://politicsweb.co.za/opinion/anc-shows-true-colours-by-openly-siding-with-attac"
+        date: "2023-10-10"
+        source_type: "party_statement"
+      policing:
+        summary: "Consistent by-law enforcement after review; coordinate police, CPFs, neighbourhood watches, rural safety and private security; CCTV and streetlights."
+        quote: "It is essential to consistently police and enforce municipal by-laws."
+        url: "https://www.polity.org.za/article/vf-plus-municipal-elections-manifesto-2026-2026-09-15"
+        date: "2026-09-15"
+        source_type: "manifesto"
+      housing_land:
+        summary: "Protect property rights and property values; orderly urban expansion; address unfair rates on agricultural land."
+        quote: "PROTECT PROPERTY RIGHTS AND RESPECT PROPERTY OWNERS' LAWFUL INTERESTS."
+        url: "https://www.polity.org.za/article/vf-plus-municipal-elections-manifesto-2026-2026-09-15"
+        date: "2026-09-15"
+        source_type: "manifesto"
+      immigration:
+        found: false
+        searched: "2026 manifesto (no immigration section); news and site searches for FF Plus immigration statements (only a minister's prisons repatriation remark, not a party statement)."
+
+  - name: "ActionSA"
+    website: "https://www.actionsa.org.za"
+    manifesto:
+      title: "Let's Fix South Africa: ActionSA 2026 Local Government Election Manifesto"
+      url: "https://www.polity.org.za/article/actionsa-2026-local-government-manifesto-2026-10-13"
+      date: "2026-09-26"   # launch at Johannesburg City Hall per EWN; Polity posted 13 Oct
+      election: "2026 local"
+    priorities:
+      - text: "Fix what matters most: reliable water, electricity, roads, refuse removal and infrastructure."
+        url: "https://www.polity.org.za/article/actionsa-2026-local-government-manifesto-2026-10-13"
+      - text: "Respect residents' money: financial discipline and rates/tariff increases capped at inflation unless justified."
+        url: "https://www.polity.org.za/article/actionsa-2026-local-government-manifesto-2026-10-13"
+      - text: "Professional, merit-based municipalities that insource where it makes sense."
+        url: "https://www.polity.org.za/article/actionsa-2026-local-government-manifesto-2026-10-13"
+      - text: "Safe communities under the rule of law: more law enforcement, by-law enforcement, action on illegal immigration."
+        url: "https://www.polity.org.za/article/actionsa-2026-local-government-manifesto-2026-10-13"
+      - text: "Help businesses flourish by cutting red tape and attracting investment."
+        url: "https://www.polity.org.za/article/actionsa-2026-local-government-manifesto-2026-10-13"
+      - text: "Leave no community behind: expand services, housing and transport progressively."
+        url: "https://www.polity.org.za/article/actionsa-2026-local-government-manifesto-2026-10-13"
+    economy:
+      summary: "Limit rates and tariff increases to inflation unless justified; those who can pay must pay; insource where practical and affordable."
+      url: "https://www.polity.org.za/article/actionsa-2026-local-government-manifesto-2026-10-13"
+      date: "2026-09-26"
+    positions:
+      lgbtq:
+        summary: "Party president declared unconditional support for LGBTQI+ equality, saying it does not undermine family values."
+        quote: "ActionSA came out in full support of the South African LGBTQI+ community and their right to equality as part of an inclusive society."
+        url: "https://www.actionsa.org.za/?p=3004"
+        date: "2021-06-06"
+        source_type: "leader_statement"
+      human_rights:
+        summary: "Manifesto says by-law enforcement must be fair and must not criminalise poverty; vulnerable residents treated with dignity."
+        quote: "Restoring order must never mean criminalising poverty."
+        url: "https://www.polity.org.za/article/actionsa-2026-local-government-manifesto-2026-10-13"
+        date: "2026-09-26"
+        source_type: "manifesto"
+      israel_palestine:
+        summary: "Called for de-escalation and protection of civilians on all sides; no stated position on the ICJ case found."
+        quote: "ActionSA’s policy on this and other global conflicts is grounded in a shared sense of global humanity and a responsibility to protect the vulnerable"
+        url: "https://www.actionsa.org.za/?p=1018672"
+        date: "2023-11-21"
+        source_type: "party_statement"
+      policing:
+        summary: "Grow and train municipal law enforcement, specialised units for infrastructure theft and drugs, stronger municipal courts."
+        quote: "We will progressively increase municipal law-enforcement capacity according to population, local enforcement needs and what each municipality can sustainably afford."
+        url: "https://www.polity.org.za/article/actionsa-2026-local-government-manifesto-2026-10-13"
+        date: "2026-09-26"
+        source_type: "manifesto"
+      housing_land:
+        summary: "In-situ informal settlement upgrades, site-and-service and affordable housing, act on hijacked buildings, faster title deeds."
+        quote: "Where land is safe and suitable, we will support progressive in-situ upgrading and improve basic services while longer-term development continues."
+        url: "https://www.polity.org.za/article/actionsa-2026-local-government-manifesto-2026-10-13"
+        date: "2026-09-26"
+        source_type: "manifesto"
+      immigration:
+        summary: "Immigration is a national competence, but municipalities should use all lawful powers and refer violations to Home Affairs and SAPS."
+        quote: "We will use every lawful municipal power available to us and work closely with the Department of Home Affairs, SAPS and other responsible authorities"
+        url: "https://www.polity.org.za/article/actionsa-2026-local-government-manifesto-2026-10-13"
+        date: "2026-09-26"
+        source_type: "manifesto"
+
+  - name: "Al Jama-ah"
+    website: "https://www.aljama.co.za"
+    manifesto:
+      title: "Al Jama-ah's National Manifesto 2026 (12 key priorities)"
+      url: "https://www.aljama.co.za/al-jama-ahs-national-manifesto-2026/"
+      date: "2026-10"   # PDF uploaded Oct 2026 (image-only); exact launch date (Soweto) not confirmed
+      election: "2026 local"
+    priorities:
+      - text: "Sewer, water and road recovery with ward-based rapid repair teams and smart meters."
+        url: "https://www.aljama.co.za/al-jama-ahs-national-manifesto-2026/"
+      - text: "Unbundle tenders for local contractors; 30% procurement for women, youth and persons with disabilities."
+        url: "https://www.aljama.co.za/al-jama-ahs-national-manifesto-2026/"
+      - text: "Insource EPWP workers into permanent ward-based maintenance, waste and security teams."
+        url: "https://www.aljama.co.za/al-jama-ahs-national-manifesto-2026/"
+      - text: "Fast-track title deeds and move informal settlement residents to formal tenure and serviced stands."
+        url: "https://www.aljama.co.za/al-jama-ahs-national-manifesto-2026/"
+      - text: "Integrate minibus taxis, BRT, buses and rail into unified transit networks."
+        url: "https://www.aljama.co.za/al-jama-ahs-national-manifesto-2026/"
+      - text: "Zero tolerance for corruption: councillor scorecards, livestreamed bid adjudication, public contract dashboards."
+        url: "https://www.aljama.co.za/al-jama-ahs-national-manifesto-2026/"
+    economy:
+      summary: "Unbundle municipal tenders, set-aside procurement quotas, local labour targets, insourcing, pensioner utility rebates and expanded free basic allocations."
+      url: "https://www.aljama.co.za/al-jama-ahs-national-manifesto-2026/"
+      date: "2026-10"
+    positions:
+      lgbtq:
+        summary: "Urged government to exclude LGBTQI+ proposals from the family White Paper; opposed LGBTQI+ content in schools."
+        quote: "Al Jama-ah calls on government to dismiss any proposals by LGBTQI+ community from being included in the revised White Paper on Family Life"
+        url: "https://www.aljama.co.za/wp-content/uploads/2023/06/PRESS-RELEASE-ON-LGBTQ-ONSLAUGHT-.pdf"
+        date: "2023-06-07"
+        source_type: "party_statement"
+      human_rights:
+        summary: "Describes itself as promoting a human rights-centred society, including freedom from mass surveillance and torture."
+        quote: "Protecting the Right to be free from mass surveillance."
+        url: "https://www.aljama.co.za/manifesto/"
+        date: null   # undated page tied to the 2024 manifesto
+        source_type: "policy_document"
+      israel_palestine:
+        summary: "Calls Gaza a genocide, stands in solidarity with Palestine, urges voters to reject 'zionist affiliated' parties."
+        quote: "Do not vote for any zionist affiliated parties or parties toning down for votes whilst a genocide rages on and directly impacts on the people of Cape Town."
+        url: "https://www.aljama.co.za/palestine-lives-remembering-3-years-of-genocide/"
+        date: "2026-10-27"
+        source_type: "party_statement"
+      policing:
+        summary: "Prevention-led safety: lighting, municipal law enforcement within mandate, partnerships with SAPS, CPFs and neighbourhood watches."
+        quote: "strengthen municipal law enforcement within its legal mandate; work with SAPS, Community Policing Forums, Neighbourhood Watch Committees, Schools and Community organisations"
+        url: "https://www.aljama.co.za/al-jama-ahs-national-manifesto-2026/"
+        date: "2026-10"
+        source_type: "manifesto"
+      housing_land:
+        summary: "Fast-track title deeds with public tracking; formal tenure and serviced stands for informal settlement residents."
+        quote: "Fast-track title deed issuance with published quarterly targets and public digital tracking."
+        url: "https://www.aljama.co.za/al-jama-ahs-national-manifesto-2026/"
+        date: "2026-10"
+        source_type: "manifesto"
+      immigration:
+        found: false
+        searched: "2026 manifesto page (no mention); aljama.co.za; news search (only a journalist's characterisation of the Joburg candidate's stance, no direct quote)."
+
+  - name: "GOOD"
+    website: "https://forgood.org.za"
+    manifesto:
+      title: "The GOOD Way Forward: Cape Town plan (summary); separate Western Cape towns manifesto"
+      url: "https://forgood.org.za/wp-content/uploads/2026/10/CPTPlanSummary.pdf"
+      date: "2026-10"   # upload month; contested jointly with RISE Mzansi under a cooperation framework
+      election: "2026 local"
+    priorities:
+      - text: "An affordable city: income-sensitive rates, higher rates-relief threshold, protect prepaid electricity, free off-peak transport."
+        url: "https://forgood.org.za/wp-content/uploads/2026/10/CPTPlanSummary.pdf"
+      - text: "A working city: insource cleaning, security and maintenance; support cooperatives and small traders."
+        url: "https://forgood.org.za/wp-content/uploads/2026/10/CPTPlanSummary.pdf"
+      - text: "An equitable city: one service standard for every community, ending the 'tale of two cities'."
+        url: "https://forgood.org.za/wp-content/uploads/2026/10/CPTPlanSummary.pdf"
+      - text: "A housed city: end spatial apartheid; build City-owned, rent-stabilised flats on public land."
+        url: "https://forgood.org.za/wp-content/uploads/2026/10/CPTPlanSummary.pdf"
+      - text: "A trusted city: real powers for sub-councils, ward participatory budgeting, open bid committees."
+        url: "https://forgood.org.za/wp-content/uploads/2026/10/CPTPlanSummary.pdf"
+      - text: "A safer city: demilitarised, rights-driven law enforcement, GBV focus, investment in youth and public spaces."
+        url: "https://forgood.org.za/wp-content/uploads/2026/10/CPTPlanSummary.pdf"
+    economy:
+      summary: "Rates that consider income, higher relief thresholds, rental fairness compact, insourcing and local worker-focused procurement."
+      url: "https://forgood.org.za/wp-content/uploads/2026/10/CPTPlanSummary.pdf"
+      date: "2026-10"
+    positions:
+      lgbtq:
+        summary: "Says LGBTQIA+ rights are human rights and part of social justice; had an LGBTQIA+ rights policy in its founding manifesto."
+        quote: "We recognise that LGBTQIA+ rights are integral to the broader fight for social justice and equality"
+        url: "https://forgood.org.za/?p=29136"
+        date: "2024-10-31"
+        source_type: "party_statement"
+      human_rights:
+        summary: "Welcomed a ruling that Operation Dudula's clinic blockades were unlawful, citing constitutional and international human rights obligations."
+        quote: "Our courts have repeatedly affirmed the right of immigrants to emergency healthcare, recognising that denying this right would breach South Africa’s international human rights commitments"
+        url: "https://forgood.org.za/high-court-rules-operation-dudula-actions-xenophobic-and-unlawful/"
+        date: "2025-11-04"
+        source_type: "party_statement"
+      israel_palestine:
+        summary: "Supported South Africa's ICJ case; later challenged MPs who visited Israel over Gaza famine and genocide findings."
+        quote: "welcome attempt to deliver justice to Palestinian civilians who are being unjustly collectively punished for Hamas’ attack on Israel on 7 October 2023"
+        url: "https://www.dailymaverick.co.za/article/2024-01-10-parties-weigh-up-sas-genocide-case-against-israel-newbies-change-starts-now-and-rise-mzansi-in-support-maimanes-bosa-says-its-a-misstep/"
+        date: "2024-01-10"
+        source_type: "party_statement"
+      policing:
+        summary: "Says more boots on the ground won't solve violent crime; wants demilitarised, community-centred law enforcement and social investment."
+        quote: "Professionalise & demilitarise law enforcement - trained, community-centred, rights-driven."
+        url: "https://forgood.org.za/wp-content/uploads/2026/10/CPTPlanSummary.pdf"
+        date: "2026-10"
+        source_type: "manifesto"
+      housing_land:
+        summary: "End spatial apartheid; use public land for City-owned rent-stabilised flats; make land release produce affordable housing."
+        quote: "Build City-owned, rent-stabilised flats on public land"
+        url: "https://forgood.org.za/wp-content/uploads/2026/10/CPTPlanSummary.pdf"
+        date: "2026-10"
+        source_type: "manifesto"
+      immigration:
+        summary: "Condemns xenophobic vigilantism such as clinic blockades; says immigrants are not to blame for the health system's state."
+        quote: "We have consistently condemned the blocking of hospitals and clinics by members of Operation Dudula as not in line with our Constitution or our legal framework."
+        url: "https://forgood.org.za/high-court-rules-operation-dudula-actions-xenophobic-and-unlawful/"
+        date: "2025-11-04"
+        source_type: "party_statement"
+
+  - name: "National Coloured Congress"
+    website: "https://www.nationalcolouredcongress.co.za"   # appears to be a member portal only
+    manifesto: null   # 2024 national manifesto (13 policies) was launched 2024-04-27 per Cape Argus, but no copy found online; no 2026 document found
+    priorities: []
+    economy: null
+    positions:
+      lgbtq:
+        found: false
+        searched: "Party portal site; news searches for NCC/Fadiel Adams LGBTQ statements."
+      human_rights:
+        summary: "Leader framed equal citizenship and dignity for descendants of indigenous peoples as the party's core demand."
+        quote: "the descendants of the indigenous peoples to take up our rightful place as equal citizens of South Africa"
+        url: "https://iol.co.za/capeargus/news/2024-04-29-national-coloured-congress-finally-launches-its-manifesto-dubbed-the-blueprint-for-a-brighter-future/"
+        date: "2024-04-27"
+        source_type: "leader_statement"
+      israel_palestine:
+        found: false
+        searched: "News and Parliament searches for Fadiel Adams/NCC on Israel, Palestine or Gaza."
+      policing:
+        found: false
+        searched: "Briefly (27 Oct 2026) reports Adams on drug outlets and crime prevention, but only in paraphrase; no direct quote on policing."
+      housing_land:
+        summary: "Leader says an NCC-led Cape Town would reverse evictions of NGOs and community projects from council flats."
+        quote: "The city evicts NGOs, people that try to start libraries from the council flats. We're saying we're going to reverse that thing"
+        url: "https://briefly.co.za/south-africa/257195-fadiel-adams-vows-return-land-displaced-coloured-people-ncc-takes-power-cape-town/"
+        date: "2026-10-27"
+        source_type: "leader_statement"
+      immigration:
+        found: false
+        searched: "News searches for NCC/Fadiel Adams immigration statements."
+
+  - name: "United Democratic Movement"
+    website: "https://udm.org.za"
+    manifesto:
+      title: "UDM Manifesto 2026: Consistent. Present. Accountable."
+      url: "https://udm.org.za/photos/campagins/pdf/1782546401_2026_Manifesto_A5%20(final).pdf"
+      date: "2026-06-27"   # launched at 6th National Congress, East London
+      election: "2026 local"
+    priorities:
+      - text: "Reliable basic services with maintenance at the centre: fix existing infrastructure before new projects."
+        url: "https://udm.org.za/photos/campagins/pdf/1782546401_2026_Manifesto_A5%20(final).pdf"
+      - text: "Clean governance: merit appointments, action on Auditor-General findings, whistle-blower protection."
+        url: "https://udm.org.za/photos/campagins/pdf/1782546401_2026_Manifesto_A5%20(final).pdf"
+      - text: "Fair tariffs linked to ability to pay and service levels, with credible indigent registers."
+        url: "https://udm.org.za/photos/campagins/pdf/1782546401_2026_Manifesto_A5%20(final).pdf"
+      - text: "Local economic development favouring South African-owned small businesses, cooperatives and informal traders."
+        url: "https://udm.org.za/photos/campagins/pdf/1782546401_2026_Manifesto_A5%20(final).pdf"
+      - text: "Fair housing allocation, well-located land release, informal settlement upgrades, action against hijacked buildings."
+        url: "https://udm.org.za/photos/campagins/pdf/1782546401_2026_Manifesto_A5%20(final).pdf"
+      - text: "Written, publicly disclosed coalition agreements tied to service delivery outcomes."
+        url: "https://udm.org.za/photos/campagins/pdf/1782546401_2026_Manifesto_A5%20(final).pdf"
+    economy:
+      summary: "Fair rates and tariffs linked to local conditions and service actually delivered; protect indigent households; cut waste before raising charges."
+      url: "https://udm.org.za/photos/campagins/pdf/1782546401_2026_Manifesto_A5%20(final).pdf"
+      date: "2026-06-27"
+    positions:
+      lgbtq:
+        summary: "Condemned anti-LGBTQIA+ remarks by Ngizwe Mchunu as hate speech; a UDM member laid an SAHRC complaint."
+        quote: "Your existence is not up for debate. Your right to live free from fear is non-negotiable."
+        url: "https://dailynews.co.za/news/politics/2025-10-02-udm-files-hate-speech-complaint-against-ngizwe-mchunu-over-homophobic-remarks"
+        date: "2025-10-02"
+        source_type: "party_statement"
+      human_rights:
+        summary: "Manifesto commits to constitutional democracy, rule of law and rights of all residents, including in dealings with traditional leaders."
+        quote: "municipalities must engage them constructively while upholding constitutional democracy, the rule of law, and the rights of all residents."
+        url: "https://udm.org.za/photos/campagins/pdf/1782546401_2026_Manifesto_A5%20(final).pdf"
+        date: "2026-06-27"
+        source_type: "manifesto"
+      israel_palestine:
+        summary: "Welcomed the ICJ Rafah order; supports Palestinian statehood and a negotiated settlement involving all parties."
+        quote: "The UDM believes and supports a Palestinian statehood."
+        url: "https://www.polity.org.za/article/udm-welcomes-icj-ruling-on-israel-government-military-offensive-in-rafah-2024-05-27"
+        date: "2024-05-27"
+        source_type: "party_statement"
+      policing:
+        summary: "SAPS leads, but municipalities must act: by-law enforcement, municipal policing capacity, lighting, CCTV, support for CPFs."
+        quote: "The South African Police Service (SAPS) carries the primary policing mandate, but municipalities cannot wash their hands of community safety."
+        url: "https://udm.org.za/photos/campagins/pdf/1782546401_2026_Manifesto_A5%20(final).pdf"
+        date: "2026-06-27"
+        source_type: "manifesto"
+      housing_land:
+        summary: "Corruption-free allocation, release well-located land, upgrade informal settlements, act against building hijacking, tenure security."
+        quote: "Release of well-located land for integrated human settlements where possible."
+        url: "https://udm.org.za/photos/campagins/pdf/1782546401_2026_Manifesto_A5%20(final).pdf"
+        date: "2026-06-27"
+        source_type: "manifesto"
+      immigration:
+        summary: "Deputy president told Parliament the UDM backs lawful enforcement of immigration laws, framing it as economic not racial."
+        quote: "We stand with South Africans who are calling for the lawful enforcement of our immigration laws"
+        url: "https://www.timeslive.co.za/politics/2026-06-03-listen-udms-kwankwa-argues-immigration-issue-not-about-race/"
+        date: "2026-06-02"
+        source_type: "parliament"
+
+  - name: "African Christian Democratic Party"
+    website: "https://www.acdp.org.za"
+    manifesto:
+      title: "ACDP Manifesto 2026 Local Government Elections: Vote for the South Africa You Deserve"
+      url: "https://acdp.org.za//2026ManifestoENGLISH-download.pdf"
+      date: "2026-08-15"   # launch in Benoni reported mid-August; Polity posted 29 Oct. Confirm.
+      election: "2026 local"
+    priorities:
+      - text: "Merit-based, accountable municipal management; prosecute and personally recover losses from corrupt officials."
+        url: "https://acdp.org.za//2026ManifestoENGLISH-download.pdf"
+      - text: "Reliable, affordable energy, including clean coal baseload and more competition and renewables."
+        url: "https://acdp.org.za//2026ManifestoENGLISH-download.pdf"
+      - text: "Boost small businesses and township economies; cut red tape; even-handed enforcement of trading by-laws."
+        url: "https://acdp.org.za//2026ManifestoENGLISH-download.pdf"
+      - text: "Housing: title deeds, release state land, eradicate informal settlements with permanent housing."
+        url: "https://acdp.org.za//2026ManifestoENGLISH-download.pdf"
+      - text: "Community safety: more police funding, devolved policing, roadblocks, prevent land invasions."
+        url: "https://acdp.org.za//2026ManifestoENGLISH-download.pdf"
+      - text: "Partner with churches and faith-based organisations in health and social services."
+        url: "https://acdp.org.za//2026ManifestoENGLISH-download.pdf"
+    economy:
+      summary: "Ring-fence water and electricity revenue, PPPs and private investment, reasonable tariff benchmarks, oppose expropriation without compensation."
+      url: "https://acdp.org.za//2026ManifestoENGLISH-download.pdf"
+      date: "2026-08-15"
+    positions:
+      lgbtq:
+        summary: "Opposes same-sex marriage on biblical grounds; leader says an ACDP government would serve and not segregate against anyone."
+        quote: "the ACDP will not change their position on same sex marriage"
+        url: "https://citizen.co.za/news/acdp-stands-firm-on-biblical-values-but-welcomes-lgbtq-votes"
+        date: "2024-03-04"
+        source_type: "leader_statement"
+      human_rights:
+        summary: "Opposes state vetting or licensing of churches as a breach of freedom of religion and association."
+        quote: "This is in conflict with the right to freedom of religion (section 15) and the right of freedom of association (section 18) afforded by the Constitution."
+        url: "https://acdp.org.za//2026ManifestoENGLISH-download.pdf"
+        date: "2026-08-15"
+        source_type: "manifesto"
+      israel_palestine:
+        summary: "Opposed the ICJ case, saying SA took sides and lost its role as peace-broker; doubted genocidal intent could be proven."
+        quote: "Regrettably, by now taking sides by lodging this court case with the ICJ, it can no longer play a role as an honest peace-broker"
+        url: "https://www.dailymaverick.co.za/article/2024-01-10-parties-weigh-up-sas-genocide-case-against-israel-newbies-change-starts-now-and-rise-mzansi-in-support-maimanes-bosa-says-its-a-misstep/"
+        date: "2024-01-10"
+        source_type: "leader_statement"
+      policing:
+        summary: "Raise SAPS and metro police budgets, devolve policing, more visibility, roadblocks and stop-and-search, close drug dens."
+        quote: "Devolve policing down to the lowest level depending on the capacity of that level"
+        url: "https://acdp.org.za//2026ManifestoENGLISH-download.pdf"
+        date: "2026-08-15"
+        source_type: "manifesto"
+      housing_land:
+        summary: "Opposes expropriation without compensation; supports title deeds, land audits, serviced stands, preventing land invasions."
+        quote: "Oppose the expropriation of land without compensation and advance land reform and development"
+        url: "https://acdp.org.za//2026ManifestoENGLISH-download.pdf"
+        date: "2026-08-15"
+        source_type: "manifesto"
+      immigration:
+        summary: "Secure borders; strictly enforce immigration law with humane deportations while condemning violence against undocumented foreigners."
+        quote: "While condemning all forms violence against undocumented foreigners, ensure that authorities strictly enforce existing immigration laws, humanely execute lawful deportations"
+        url: "https://acdp.org.za//2026ManifestoENGLISH-download.pdf"
+        date: "2026-08-15"
+        source_type: "manifesto"
+
+  - name: "Build One South Africa"
+    website: "https://bosa.co.za"
+    manifesto:
+      title: "BOSA Local Government Manifesto 2026"
+      url: "https://www.polity.org.za/article/bosa-election-manifesto-2026-2026-09-16"
+      date: "2026-09-16"   # Polity publication date; also at https://static.pmg.org.za/BOSA_LG_Manifesto_2026.pdf
+      election: "2026 local"
+    priorities:
+      - text: "Service delivery: water, electricity, sanitation and housing administered fairly and on time."
+        url: "https://www.polity.org.za/article/bosa-election-manifesto-2026-2026-09-16"
+      - text: "Jobs and local growth using procurement, licensing, land and public employment, putting South Africans first."
+        url: "https://www.polity.org.za/article/bosa-election-manifesto-2026-2026-09-16"
+      - text: "Safety: empowered, accountable Metro Police working with residents; body-worn cameras."
+        url: "https://www.polity.org.za/article/bosa-election-manifesto-2026-2026-09-16"
+      - text: "End cadre deployment; merit appointments, published tender data, consequences for wrongdoing."
+        url: "https://www.polity.org.za/article/bosa-election-manifesto-2026-2026-09-16"
+      - text: "Audit municipal land within 90 days and release it for affordable housing (Cape Town: 10,000 a year)."
+        url: "https://www.polity.org.za/article/bosa-election-manifesto-2026-2026-09-16"
+    economy:
+      summary: "Fund commitments from ring-fenced service revenue, reprioritised budgets, PPPs and grants; no new debt; rates rebates for small businesses."
+      url: "https://www.polity.org.za/article/bosa-election-manifesto-2026-2026-09-16"
+      date: "2026-09-16"
+    positions:
+      lgbtq:
+        found: false
+        searched: "2026 manifesto (no mention); news searches for BOSA/Maimane LGBTQ statements (only a pre-BOSA 2015 interview as DA leader)."
+      human_rights:
+        summary: "Frames fair, predictable service delivery as a matter of dignity comparable to human rights protection."
+        quote: "Where service delivery is arbitrary, delayed, or politically discretionary, it degrades dignity in the same manner as the violation of human rights."
+        url: "https://www.polity.org.za/article/bosa-election-manifesto-2026-2026-09-16"
+        date: "2026-09-16"
+        source_type: "manifesto"
+      israel_palestine:
+        summary: "Called the ICJ case a misstep; urged a peaceful resolution and a two-state solution instead."
+        quote: "Protracting the battle instead of resolving it is a misstep by the ANC government"
+        url: "https://www.dailymaverick.co.za/article/2024-01-10-parties-weigh-up-sas-genocide-case-against-israel-newbies-change-starts-now-and-rise-mzansi-in-support-maimanes-bosa-says-its-a-misstep/"
+        date: "2024-01-10"
+        source_type: "party_statement"
+      policing:
+        summary: "Empower and re-professionalise Metro Police, partner with CPFs and private security, body cameras, expand Cape Town metro police."
+        quote: "Bringing policing closer to communities through empowered, accountable Metro Police services working hand in hand with residents."
+        url: "https://www.polity.org.za/article/bosa-election-manifesto-2026-2026-09-16"
+        date: "2026-09-16"
+        source_type: "manifesto"
+      housing_land:
+        summary: "90-day municipal land audit, release land for social/affordable housing, clear title-deed backlogs, regulate short-term rentals."
+        quote: "Releasing well-located, under-utilised state and municipal land and buildings for social and affordable housing developments, located close to transport and economic hubs."
+        url: "https://www.polity.org.za/article/bosa-election-manifesto-2026-2026-09-16"
+        date: "2026-09-16"
+        source_type: "manifesto"
+      immigration:
+        summary: "Zero tolerance for unlawful economic participation; municipal levy for foreign nationals; licensing priority for SA-owned businesses."
+        quote: "Anyone wishing to live, work, or operate a business in South Africa must be fully documented and legally registered."
+        url: "https://www.polity.org.za/article/bosa-election-manifesto-2026-2026-09-16"
+        date: "2026-09-16"
+        source_type: "manifesto"
+
+  - name: "South African Communist Party"
+    website: "https://www.sacp.org.za"
+    manifesto:
+      title: "SACP 2026 Local Election Manifesto (published in Umsebenzi Online)"
+      url: "https://www.polity.org.za/article/sacp-2026-local-election-manifesto-2026-09-08"
+      date: "2026-08-16"   # launched at 105th anniversary, Soshanguve
+      election: "2026 local"
+    priorities:
+      - text: "Reliable public services rebuilt through public capacity and insourcing, not privatisation."
+        url: "https://www.polity.org.za/article/sacp-2026-local-election-manifesto-2026-09-08"
+      - text: "The right to decent work through public employment, cooperatives and municipal public enterprises."
+        url: "https://www.polity.org.za/article/sacp-2026-local-election-manifesto-2026-09-08"
+      - text: "Land, homes and food for social need: release public land; expropriation in the public interest."
+        url: "https://www.polity.org.za/article/sacp-2026-local-election-manifesto-2026-09-08"
+      - text: "Safe, caring and healthy communities with accountable policing and organised communities."
+        url: "https://www.polity.org.za/article/sacp-2026-local-election-manifesto-2026-09-08"
+      - text: "Scrap the corrupt tender system; make public provision and insourcing the norm."
+        url: "https://www.polity.org.za/article/sacp-2026-local-election-manifesto-2026-09-08"
+      - text: "Councillors who seek mandates and report back; ward assemblies and participatory budgeting."
+        url: "https://www.polity.org.za/article/sacp-2026-local-election-manifesto-2026-09-08"
+    economy:
+      summary: "Reject privatisation and outsourcing; insource; scrap tender system; release public land and allow expropriation in the public interest."
+      url: "https://www.polity.org.za/article/sacp-2026-local-election-manifesto-2026-09-08"
+      date: "2026-08-16"
+    positions:
+      lgbtq:
+        found: false
+        searched: "2026 manifesto/Umsebenzi edition (no mention); sacp.org.za and news searches for SACP LGBTQI statements."
+      human_rights:
+        summary: "Human Rights Day statement says neoliberal policies threaten socio-economic rights won since 1994."
+        quote: "These policies threaten to replace those rights an services with an increased role for monopoly capital"
+        url: "https://www.sacp.org.za/node/27203"
+        date: "2026-03-21"
+        source_type: "party_statement"
+      israel_palestine:
+        summary: "Calls Israel an apartheid state committing genocide; wants its international isolation, prosecutions and BDS."
+        quote: "the SACP reiterates its call for the international isolation of apartheid Israel and the prosecution of all those individuals involved in perpetrating the genocide"
+        url: "https://sacp.org.za/node/27108"
+        date: "2025-09-17"
+        source_type: "party_statement"
+      policing:
+        summary: "Safety requires accountable policing, organised communities, youth development and action against syndicates and extortion."
+        quote: "We need functioning public services, accountable policing, organised communities, youth development, safe public spaces and effective action against criminal syndicates"
+        url: "https://www.polity.org.za/article/sacp-2026-local-election-manifesto-2026-09-08"
+        date: "2026-08-16"
+        source_type: "manifesto"
+      housing_land:
+        summary: "Stop selling well-located public land to private owners; redistribute land; state power to expropriate in public interest."
+        quote: "the state must have the power to acquire it, including through expropriation in the public interest"
+        url: "https://www.polity.org.za/article/sacp-2026-local-election-manifesto-2026-09-08"
+        date: "2026-08-16"
+        source_type: "manifesto"
+      immigration:
+        summary: "Central Committee warned against xenophobic attempts to blame foreign nationals for South Africa's social crisis."
+        quote: "warning against xenophobic attempts to blame foreign nationals for South Africa's social crisis"
+        url: "https://www.polity.org.za/article/sacp-2026-local-election-manifesto-2026-09-08"
+        date: "2026-09-08"
+        source_type: "party_statement"

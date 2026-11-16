@@ -1,0 +1,411 @@
+{
+  "$defs": {
+    "Economy": {
+      "additionalProperties": false,
+      "properties": {
+        "date": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Date"
+        },
+        "summary": {
+          "title": "Summary",
+          "type": "string"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        }
+      },
+      "required": [
+        "summary",
+        "url",
+        "date"
+      ],
+      "title": "Economy",
+      "type": "object"
+    },
+    "Gap": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        },
+        "ward_no": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Null for gaps that apply to the whole dataset",
+          "title": "Ward No"
+        }
+      },
+      "required": [
+        "code",
+        "message",
+        "ward_no"
+      ],
+      "title": "Gap",
+      "type": "object"
+    },
+    "Manifesto": {
+      "additionalProperties": false,
+      "properties": {
+        "date": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Date"
+        },
+        "election": {
+          "title": "Election",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "url",
+        "date",
+        "election"
+      ],
+      "title": "Manifesto",
+      "type": "object"
+    },
+    "PartyProfile": {
+      "additionalProperties": false,
+      "properties": {
+        "economy": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Economy"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "manifesto": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Manifesto"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "positions": {
+          "additionalProperties": {
+            "$ref": "#/$defs/Position"
+          },
+          "description": "Keyed by the envelope's topic keys",
+          "title": "Positions",
+          "type": "object"
+        },
+        "priorities": {
+          "items": {
+            "$ref": "#/$defs/SourcedText"
+          },
+          "title": "Priorities",
+          "type": "array"
+        },
+        "website": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Website"
+        }
+      },
+      "required": [
+        "name",
+        "website",
+        "manifesto",
+        "priorities",
+        "economy",
+        "positions"
+      ],
+      "title": "PartyProfile",
+      "type": "object"
+    },
+    "Position": {
+      "additionalProperties": false,
+      "properties": {
+        "date": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Date of the statement or document (ISO, or YYYY-MM)",
+          "title": "Date"
+        },
+        "found": {
+          "title": "Found",
+          "type": "boolean"
+        },
+        "quote": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The party's own words, verbatim (max 30 words)",
+          "title": "Quote"
+        },
+        "searched": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Where we looked, when nothing was found",
+          "title": "Searched"
+        },
+        "source_type": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "manifesto | policy_document | party_statement | leader_statement | parliament",
+          "title": "Source Type"
+        },
+        "summary": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Neutral paraphrase (max ~25 words)",
+          "title": "Summary"
+        },
+        "url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Url"
+        }
+      },
+      "required": [
+        "found",
+        "summary",
+        "quote",
+        "url",
+        "date",
+        "source_type",
+        "searched"
+      ],
+      "title": "Position",
+      "type": "object"
+    },
+    "Source": {
+      "additionalProperties": false,
+      "properties": {
+        "licence": {
+          "title": "Licence",
+          "type": "string"
+        },
+        "notes": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Notes"
+        },
+        "publisher": {
+          "title": "Publisher",
+          "type": "string"
+        },
+        "retrieved_at": {
+          "description": "ISO date the data was retrieved",
+          "title": "Retrieved At",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "publisher",
+        "url",
+        "retrieved_at",
+        "licence",
+        "notes"
+      ],
+      "title": "Source",
+      "type": "object"
+    },
+    "SourcedText": {
+      "additionalProperties": false,
+      "properties": {
+        "text": {
+          "title": "Text",
+          "type": "string"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        }
+      },
+      "required": [
+        "text",
+        "url"
+      ],
+      "title": "SourcedText",
+      "type": "object"
+    },
+    "Topic": {
+      "additionalProperties": false,
+      "properties": {
+        "key": {
+          "title": "Key",
+          "type": "string"
+        },
+        "label": {
+          "title": "Label",
+          "type": "string"
+        }
+      },
+      "required": [
+        "key",
+        "label"
+      ],
+      "title": "Topic",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "as_of": {
+      "title": "As Of",
+      "type": "string"
+    },
+    "dataset": {
+      "const": "parties",
+      "default": "parties",
+      "title": "Dataset",
+      "type": "string"
+    },
+    "gaps": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/Gap"
+      },
+      "title": "Gaps",
+      "type": "array"
+    },
+    "parties": {
+      "items": {
+        "$ref": "#/$defs/PartyProfile"
+      },
+      "title": "Parties",
+      "type": "array"
+    },
+    "schema_version": {
+      "default": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "sources": {
+      "additionalProperties": {
+        "$ref": "#/$defs/Source"
+      },
+      "title": "Sources",
+      "type": "object"
+    },
+    "topics": {
+      "description": "Position topics, in display order",
+      "items": {
+        "$ref": "#/$defs/Topic"
+      },
+      "title": "Topics",
+      "type": "array"
+    }
+  },
+  "required": [
+    "dataset",
+    "schema_version",
+    "as_of",
+    "sources",
+    "gaps",
+    "topics",
+    "parties"
+  ],
+  "title": "PartiesEnvelope",
+  "type": "object"
+}

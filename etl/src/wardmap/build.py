@@ -15,6 +15,7 @@ def build_all() -> None:
         elections,
         land_use,
         landmarks,
+        parties,
         places,
         wards,
     )
@@ -69,6 +70,12 @@ def build_all() -> None:
         donations.build()
         entries.append(
             IndexEntry(dataset="donations", file="donations.json", ward_vintage=CURRENT_VINTAGE)
+        )
+
+    if parties.FILE.exists():
+        parties.build()
+        entries.append(
+            IndexEntry(dataset="parties", file="parties.json", ward_vintage=CURRENT_VINTAGE)
         )
 
     for year in allocations.years():

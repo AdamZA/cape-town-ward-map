@@ -42,6 +42,8 @@ def run() -> int:
         except Exception as e:  # noqa: BLE001
             err(f"{entry.file}: does not match schema: {e}")
             continue
+        if entry.dataset == "parties":
+            continue  # validated when built (datasets/parties.py)
         if entry.dataset == "donations":
             # Not ward data: check that every party's total adds up from its rows.
             for p in env.parties:

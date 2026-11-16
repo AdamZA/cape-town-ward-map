@@ -240,6 +240,28 @@ total for these, without donors), and money given to companies or foundations li
 Donors are shown as declared; the same donor can appear under more than one spelling and we don't
 merge them.
 
+## Party profiles
+
+Profiles cover the parties with seats in Cape Town's council and the largest parties nationally.
+For each we record the party's stated local-election priorities (from its manifesto) and its
+position on six topics: LGBTQ+ rights; human rights and civil liberties; Israel and Palestine;
+policing and crime; housing and land; and immigration.
+
+- **Only the party's own words.** Manifestos, policy documents, official statements, leaders'
+  statements and Parliament. A news article is used only where it quotes the party directly.
+  No ratings by others, and no positions inferred from votes or alliances.
+- **Every party, every topic.** Each topic is either a short neutral summary, a verbatim quote of
+  at most 30 words, the date and a link, or "No stated position found" with a note of where we
+  looked. The build fails if any party is missing a topic.
+- **Dates matter.** Some statements are years old; the date is shown beside every quote.
+- **How it was compiled.** The research was done in November 2026 with an AI research agent,
+  every quote was checked against the source text, and the file
+  (`sources/parties/profiles-2026.yaml`) is open for corrections.
+- Foreign policy, constitutional rights and immigration are national matters, not decided by
+  city councils; they're included because they matter to voters.
+- The Cape Coloured Congress renamed itself the National Coloured Congress in 2023; both
+  elections show it under the new name.
+
 ## Ward allocations
 
 Each year the City budgets a fixed amount per ward (R1 million in 2024/25) for projects proposed

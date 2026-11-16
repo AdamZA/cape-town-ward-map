@@ -252,6 +252,7 @@ def pin_previous(year: int, code: str = "CPT", prov: str = "WP") -> None:
 # renamed parties given one name across elections so seat changes compare like with like.
 PARTY_SPELLING = {
     "VRYHEIDSFRONT PLUS": "Freedom Front Plus (Vryheidsfront Plus)",
+    "CAPE COLOURED CONGRESS": "National Coloured Congress",  # renamed in 2023
     "VRYHEIDSFRONT PLUS | FREEDOM FRONT PLUS": "Freedom Front Plus (Vryheidsfront Plus)",
     "ACTIONSA": "ActionSA",
     "GOOD": "GOOD",

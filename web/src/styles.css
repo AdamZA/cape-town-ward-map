@@ -298,6 +298,16 @@ strong { font-weight: 650; }
 .seg button + button { border-left: 1px solid var(--border-strong); }
 .seg button[aria-pressed="true"] { background: var(--ink); color: var(--surface); font-weight: 600; }
 
+.seg-wrap { flex-wrap: wrap; }
+.seg-wrap button { border-bottom: 1px solid var(--border-strong); }
+.priorities { margin: 4px 0 8px; padding-left: 18px; font-size: 13.5px; display: grid; gap: 3px; }
+.position p { margin: 0 0 4px; font-size: 13.5px; }
+.position blockquote { margin: 4px 0; padding: 4px 10px; border-left: 3px solid var(--border-strong); color: var(--ink-2); font-size: 13px; font-style: italic; }
+.position-none { margin: 0; font-size: 13px; color: var(--ink-3); }
+.position-block + .position-block { margin-top: 10px; }
+.compare-list { list-style: none; margin: 10px 0; padding: 0; display: grid; gap: 12px; }
+.compare-party { font-weight: 650; font-size: 13.5px; display: inline-block; margin-bottom: 2px; }
+
 .timeline { flex-basis: 100%; min-width: 0; max-width: 100%; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; border-top: 1px solid var(--border); padding-top: 8px; }
 .timeline-label { font-size: 12px; font-weight: 650; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink-3); white-space: nowrap; }
 .timeline-track { list-style: none; margin: 0; padding: 0; display: flex; gap: 0; flex: 1; min-width: 0; overflow-x: auto; }

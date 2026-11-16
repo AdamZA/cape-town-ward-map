@@ -1,0 +1,10 @@
+{
+  "licence": "Short quotations for comment and reporting; each links to its source",
+  "method": "manual",
+  "notes": "Researched November 2026 with an AI research agent; every quote checked against the downloaded source text. Each entry cites its own URL and date.",
+  "publisher": "Cape Town Ward Map (compiled from parties' own documents and statements)",
+  "retrieved_at": "2026-11-17",
+  "sha256": "40c9a46c115c5c6074f5c473bb8c7bf49ee4b7edc4f7c9c3bff10cbc76aff720",
+  "title": "Party profiles for the 2026 local elections",
+  "url": "https://github.com/AdamZA/cape-town-ward-map/blob/main/sources/parties/profiles-2026.yaml"
+}

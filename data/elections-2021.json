@@ -186,7 +186,7 @@
      "votes": 33656
     },
     {
-     "party": "Cape Coloured Congress",
+     "party": "National Coloured Congress",
      "seats": 7,
      "share": 0.0283,
      "votes": 25854
@@ -14482,7 +14482,7 @@
      "votes": 988
     },
     {
-     "party": "Cape Coloured Congress",
+     "party": "National Coloured Congress",
      "seats": 1,
      "share": 0.0143,
      "votes": 441
@@ -14844,7 +14844,7 @@
      "votes": 295
     },
     {
-     "party": "Cape Coloured Congress",
+     "party": "National Coloured Congress",
      "seats": 0,
      "share": 0.0067,
      "votes": 288
@@ -14936,7 +14936,7 @@
      "votes": 283
     },
     {
-     "party": "Cape Coloured Congress",
+     "party": "National Coloured Congress",
      "seats": 0,
      "share": 0.0064,
      "votes": 235
@@ -16337,13 +16337,6 @@
   {
    "councils_largest": 0,
    "councils_majority": 0,
-   "party": "Cape Coloured Congress",
-   "registered_in_majority": 0,
-   "seats": 8
-  },
-  {
-   "councils_largest": 0,
-   "councils_majority": 0,
    "party": "Defenders of the People",
    "registered_in_majority": 0,
    "seats": 8
@@ -16359,6 +16352,13 @@
    "councils_largest": 0,
    "councils_majority": 0,
    "party": "Namakwa Civic Movement",
+   "registered_in_majority": 0,
+   "seats": 8
+  },
+  {
+   "councils_largest": 0,
+   "councils_majority": 0,
+   "party": "National Coloured Congress",
    "registered_in_majority": 0,
    "seats": 8
   },
