@@ -7,7 +7,7 @@ import { suggest } from "../src/search/Search";
 import { bbox, inPolygon } from "../src/geo";
 import { standing, terms } from "../src/metrics";
 import { characterLine } from "../src/places/places";
-import { wardResult } from "../src/elections/Elections";
+import { pointsChange, wardResult } from "../src/elections/Elections";
 import type { AppData } from "../src/data";
 import type { AllocationsEnvelope } from "../src/generated/allocations";
 import type { CrosswalkEnvelope } from "../src/generated/crosswalk";
@@ -178,5 +178,14 @@ describe("terms", () => {
       ["2021 to 2026", 2021, false],
       ["2026 to now", 2026, true],
     ]);
+  });
+});
+
+describe("pointsChange", () => {
+  it("formats percentage-point changes", () => {
+    expect(pointsChange(0.642, 0.632)).toBe("+1.0");
+    expect(pointsChange(0.118, 0.1834)).toBe("−6.5");
+    expect(pointsChange(0.5, 0.5)).toBe("±0");
+    expect(pointsChange(0.05, undefined)).toBe("new");
   });
 });

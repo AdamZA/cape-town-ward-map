@@ -1,7 +1,9 @@
 // Election results: the ward ballot for one ward, and council seats for the city and country.
 // Bars are one neutral colour: party identity is carried by the name, never by colour.
 import type { AppData } from "../data";
+import { useState } from "preact/hooks";
 import type { ElectionsEnvelope, PartyResult } from "../generated/elections";
+import type { ElectionWardsEnvelope, WardElectionRow } from "../generated/election_wards";
 import { fmtInt, fmtPct } from "../format";
 import { predecessors } from "../panel/Allocations";
 import { SourceLine } from "../panel/Figure";
@@ -40,26 +42,67 @@ export function WardElection({ data, ward, year }: { data: AppData; ward: number
   const direct = chosen?.rows.find((r) => r.ward_no === ward);
   const res = chosen ? (direct ? { env: chosen, row: direct, oldWard: null } : null) : wardResult(data, ward);
   if (!res) return null;
-  const { env, row, oldWard } = res;
+  return <WardElectionBody env={res.env} row={res.row} oldWard={res.oldWard} />;
+}
+
+/** Change in percentage points, e.g. "+1.2" / "−0.4" / "new". */
+export function pointsChange(now: number, then: number | undefined): string {
+  if (then == null) return "new";
+  const d = Math.round((now - then) * 1000) / 10;
+  return d === 0 ? "±0" : `${d > 0 ? "+" : "−"}${Math.abs(d).toFixed(1)}`;
+}
+
+const MIN_COVERAGE = 0.8;
+
+function WardElectionBody({ env, row, oldWard }: { env: ElectionWardsEnvelope; row: WardElectionRow; oldWard: { ward: number; share: number } | null }) {
+  const [ballot, setBallot] = useState<"ward" | "pr">("ward");
   const winner = row.parties[0];
+  const prev = row.previous && row.previous.coverage >= MIN_COVERAGE ? row.previous : null;
+  const prevShare = new Map(prev?.parties.map((p) => [p.party, p.share]));
+  const parties = ballot === "ward" ? row.parties : row.pr_parties;
   return (
     <section class="section" aria-labelledby="election-title">
       <h3 id="election-title">Elections</h3>
       <p class="lede">
-        {env.year} local election, ward ballot
+        {env.year} local election
         {oldWard && (
           <>
-            {" "}
-            in old ward {oldWard.ward}, which covers {Math.round(oldWard.share * 100)}% of this ward
+            , in old ward {oldWard.ward}, which covers {Math.round(oldWard.share * 100)}% of this ward
           </>
         )}
         . Won by {row.councillor ? <><strong>{row.councillor}</strong> ({row.winner})</> : <strong>{row.winner}</strong>}
-        {winner && <> with {pct(winner.share)} of valid votes</>}. Turnout was {pct(row.turnout)} of {fmtInt(row.registered)}{" "}
-        registered voters.
+        {winner && <> with {pct(winner.share)} of ward-ballot votes</>}. Turnout was {pct(row.turnout)} of{" "}
+        {fmtInt(row.registered)} registered voters.
       </p>
-      <Bars parties={row.parties} value={(p) => p.share} label={(p) => pct(p.share)} />
+      {row.pr_parties.length > 0 && (
+        <div class="seg" role="group" aria-label="Ballot">
+          <button type="button" aria-pressed={ballot === "ward"} onClick={() => setBallot("ward")}>
+            Ward ballot
+          </button>
+          <button type="button" aria-pressed={ballot === "pr"} onClick={() => setBallot("pr")}>
+            Party list ballot
+          </button>
+        </div>
+      )}
+      <Bars
+        parties={parties}
+        value={(p) => p.share}
+        label={(p) => (ballot === "pr" && prev ? `${pct(p.share)} (${pointsChange(p.share, prevShare.get(p.party))})` : pct(p.share))}
+      />
       <p class="source">
-        Votes for ward candidates by party. Residents also vote on a party list for the rest of the council.{" "}
+        {ballot === "ward"
+          ? "Votes for the ward's candidates, by party. "
+          : "Votes for parties' lists, which decide the rest of the council's seats. "}
+        {ballot === "pr" && prev && (
+          <>
+            In brackets: change in percentage points since {prev.year}, adding up the {prev.year} votes in the same
+            voting districts
+            {prev.coverage < 0.95 && <> (these cover {Math.round(prev.coverage * 100)}% of today's voters here)</>}.{" "}
+          </>
+        )}
+        {ballot === "pr" && !prev && row.previous && (
+          <>No comparison with {row.previous.year}: too few of this ward's voting districts existed then. </>
+        )}
         <SourceLine env={env} sourceKey={env.fields.parties!.source} method={env.fields.parties!.method} />
       </p>
     </section>

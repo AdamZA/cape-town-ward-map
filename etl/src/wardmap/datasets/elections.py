@@ -42,6 +42,7 @@ from wardmap.models import (
     MunicipalityResult,
     NationalParty,
     PartyResult,
+    PreviousResult,
     Source,
     WardElectionRow,
 )
@@ -188,6 +189,60 @@ def pin(year: int) -> None:
                 + json.dumps(upstream, sort_keys=True),
             ),
         )
+
+
+def _previous_file(year: int, code: str) -> Path:
+    return _dir(year) / f"previous-on-wards-{code}.csv"
+
+
+def pin_previous(year: int, code: str = "CPT", prov: str = "WP") -> None:
+    """The previous election's PR-ballot votes, added up on this election's wards.
+
+    Voting districts are the building blocks of wards and mostly keep their numbers between
+    elections, so we sum the previous election's votes in each of this ward's voting districts.
+    `coverage` is the share of the ward's registered voters in voting districts that existed then.
+    """
+    prev = max(y for y in LGE if y < year)
+    cols = ["Municipality", "Ward", "VotingDistrict", "RegisteredVoters", "BallotType"]
+    now = pd.read_csv(_province_csv(year, prov), encoding="utf-8-sig", usecols=cols)
+    old = pd.read_csv(
+        _province_csv(prev, prov),
+        encoding="utf-8-sig",
+        usecols=[*cols[:5], "PartyName", "TotalValidVotes"],
+    )
+    now = now[now["Municipality"].str.startswith(f"{code} ") & (now["BallotType"] == "PR")]
+    old = old[old["Municipality"].str.startswith(f"{code} ") & (old["BallotType"] == "PR")]
+    vds = now.drop_duplicates("VotingDistrict")[["Ward", "VotingDistrict", "RegisteredVoters"]]
+    vds = vds.assign(ward=vds["Ward"].str.extract(r"(\d+)$", expand=False).str[-3:].astype(int))
+    known = set(old["VotingDistrict"])
+    vds["matched"] = vds["VotingDistrict"].isin(known)
+    cov = vds.groupby("ward").apply(
+        lambda g: (
+            (g["RegisteredVoters"] * g["matched"]).sum() / max(g["RegisteredVoters"].sum(), 1)
+        ),
+        include_groups=False,
+    )
+    votes = old.merge(vds[["VotingDistrict", "ward"]], on="VotingDistrict")
+    out = votes.groupby(["ward", "PartyName"], as_index=False)["TotalValidVotes"].sum()
+    out = out.rename(columns={"PartyName": "party", "TotalValidVotes": "votes"})
+    out = out[out["votes"] > 0].assign(coverage=lambda d: d["ward"].map(cov).round(4))
+    out = out.sort_values(["ward", "party"])
+    path = _previous_file(year, code)
+    path.write_text(out.to_csv(index=False, lineterminator="\n"), encoding="utf-8", newline="\n")
+    write_sidecar(
+        path,
+        SourceRecord(
+            title=f"Local Government Elections {prev}: PR ballot on the {year} wards",
+            publisher="Electoral Commission of South Africa (IEC)",
+            url=IEC_RESULTS_PAGE,
+            retrieved_at=today(),
+            licence=IEC_LICENCE,
+            method="aggregated",
+            notes=f"{prev} PR-ballot votes per voting district (IEC {prov}.csv), summed over the "
+            f"voting districts in each {year} ward (IEC {prov}.csv for {year}). coverage = share "
+            f"of the ward's {year} registered voters in voting districts that existed in {prev}.",
+        ),
+    )
 
 
 # ---- build --------------------------------------------------------------------------------------
@@ -385,6 +440,23 @@ def build(year: int) -> None:
         )
         if names:
             sources = sources | {"councillors": _councillor_source(cfile)}
+        pv = votes[(votes["muni"] == code) & (votes["ballot"] == "PR")]
+        prev_path = _previous_file(year, code)
+        prev = pd.read_csv(prev_path) if prev_path.exists() else None
+        prev_year = max((y for y in LGE if y < year), default=None)
+        if prev is not None:
+            prev["party"] = prev["party"].map(_tidy_party)
+            sources = sources | {"previous": _councillor_source(prev_path)}
+
+        def shares(by: pd.Series) -> list[PartyResult]:
+            by = by.sort_values(ascending=False, kind="stable")
+            total = int(by.sum())
+            return [
+                PartyResult(party=str(p), votes=int(v), share=round(int(v) / total, 4))
+                for p, v in by.head(MAX_WARD_PARTIES).items()
+                if v > 0 and total
+            ]
+
         wv = votes[(votes["muni"] == code) & (votes["ballot"] == "Ward")]
         wt = turnout[(turnout["muni"] == code) & (turnout["ballot"] == "Ward")]
         rows = []
@@ -400,6 +472,8 @@ def build(year: int) -> None:
                     turnout=round((valid + int(t["spoilt"].sum())) / reg, 4) if reg else 0.0,
                     winner=str(by.index[0]),
                     councillor=names.get(int(str(ward)[-3:])),
+                    pr_parties=shares(pv[pv["ward"] == ward].groupby("party")["votes"].sum()),
+                    previous=_previous_row(prev, prev_year, int(str(ward)[-3:]), shares),
                     parties=[
                         PartyResult(party=str(p), votes=int(v), share=round(int(v) / valid, 4))
                         for p, v in by.head(MAX_WARD_PARTIES).items()
@@ -433,6 +507,19 @@ def build(year: int) -> None:
                 rows=rows,
             ),
         )
+
+
+def _previous_row(prev, prev_year, ward_no: int, shares) -> PreviousResult | None:
+    if prev is None or prev_year is None:
+        return None
+    g = prev[prev["ward"] == ward_no]
+    if g.empty:
+        return None
+    return PreviousResult(
+        year=prev_year,
+        coverage=float(g["coverage"].iloc[0]),
+        parties=shares(g.groupby("party")["votes"].sum()),
+    )
 
 
 def _councillor_source(path: Path) -> Source:

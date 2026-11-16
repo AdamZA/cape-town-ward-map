@@ -73,6 +73,57 @@
      "votes": 47
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.8786,
+     "votes": 8869
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0315,
+     "votes": 318
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0233,
+     "votes": 235
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0189,
+     "votes": 191
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0124,
+     "votes": 125
+    },
+    {
+     "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+     "seats": null,
+     "share": 0.0087,
+     "votes": 88
+    },
+    {
+     "party": "United Independent Movement",
+     "seats": null,
+     "share": 0.0048,
+     "votes": 48
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0041,
+     "votes": 41
+    }
+   ],
+   "previous": null,
    "registered": 15635,
    "turnout": 0.6476,
    "ward_no": 1,
@@ -130,6 +181,57 @@
      "votes": 106
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.8137,
+     "votes": 10275
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0546,
+     "votes": 689
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0258,
+     "votes": 326
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0231,
+     "votes": 292
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0214,
+     "votes": 270
+    },
+    {
+     "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+     "seats": null,
+     "share": 0.0106,
+     "votes": 134
+    },
+    {
+     "party": "United Independent Movement",
+     "seats": null,
+     "share": 0.0098,
+     "votes": 124
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0087,
+     "votes": 110
+    }
+   ],
+   "previous": null,
    "registered": 20838,
    "turnout": 0.5885,
    "ward_no": 2,
@@ -187,6 +289,57 @@
      "votes": 68
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.856,
+     "votes": 8388
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0543,
+     "votes": 532
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0199,
+     "votes": 195
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0154,
+     "votes": 151
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0139,
+     "votes": 136
+    },
+    {
+     "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+     "seats": null,
+     "share": 0.013,
+     "votes": 127
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0061,
+     "votes": 60
+    },
+    {
+     "party": "United Independent Movement",
+     "seats": null,
+     "share": 0.006,
+     "votes": 59
+    }
+   ],
+   "previous": null,
    "registered": 15898,
    "turnout": 0.6266,
    "ward_no": 3,
@@ -244,6 +397,57 @@
      "votes": 68
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.6323,
+     "votes": 4210
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.1834,
+     "votes": 1221
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0859,
+     "votes": 572
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0182,
+     "votes": 121
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0149,
+     "votes": 99
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0126,
+     "votes": 84
+    },
+    {
+     "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+     "seats": null,
+     "share": 0.0101,
+     "votes": 67
+    },
+    {
+     "party": "African Transformation Movement",
+     "seats": null,
+     "share": 0.0084,
+     "votes": 56
+    }
+   ],
+   "previous": null,
    "registered": 15091,
    "turnout": 0.4429,
    "ward_no": 4,
@@ -301,6 +505,57 @@
      "votes": 98
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.8753,
+     "votes": 12971
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.026,
+     "votes": 386
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0227,
+     "votes": 336
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0148,
+     "votes": 220
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0127,
+     "votes": 188
+    },
+    {
+     "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+     "seats": null,
+     "share": 0.0123,
+     "votes": 182
+    },
+    {
+     "party": "United Independent Movement",
+     "seats": null,
+     "share": 0.0093,
+     "votes": 138
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0075,
+     "votes": 111
+    }
+   ],
+   "previous": null,
    "registered": 23528,
    "turnout": 0.6196,
    "ward_no": 5,
@@ -358,6 +613,57 @@
      "votes": 34
     }
    ],
+   "pr_parties": [
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.5772,
+     "votes": 3440
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.2092,
+     "votes": 1247
+    },
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.1503,
+     "votes": 896
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0104,
+     "votes": 62
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0077,
+     "votes": 46
+    },
+    {
+     "party": "African Transformation Movement",
+     "seats": null,
+     "share": 0.007,
+     "votes": 42
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0065,
+     "votes": 39
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0064,
+     "votes": 38
+    }
+   ],
+   "previous": null,
    "registered": 18129,
    "turnout": 0.3336,
    "ward_no": 6,
@@ -415,6 +721,57 @@
      "votes": 125
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.7395,
+     "votes": 6021
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0652,
+     "votes": 531
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0456,
+     "votes": 371
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0399,
+     "votes": 325
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0317,
+     "votes": 258
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0201,
+     "votes": 164
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0147,
+     "votes": 120
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0129,
+     "votes": 105
+    }
+   ],
+   "previous": null,
    "registered": 16835,
    "turnout": 0.4823,
    "ward_no": 7,
@@ -472,6 +829,57 @@
      "votes": 65
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.8428,
+     "votes": 10534
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0546,
+     "votes": 683
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0223,
+     "votes": 279
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.022,
+     "votes": 275
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.017,
+     "votes": 212
+    },
+    {
+     "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+     "seats": null,
+     "share": 0.0095,
+     "votes": 119
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0086,
+     "votes": 108
+    },
+    {
+     "party": "United Independent Movement",
+     "seats": null,
+     "share": 0.0067,
+     "votes": 84
+    }
+   ],
+   "previous": null,
    "registered": 20877,
    "turnout": 0.5958,
    "ward_no": 8,
@@ -529,6 +937,57 @@
      "votes": 175
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.5268,
+     "votes": 3616
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.1291,
+     "votes": 886
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.101,
+     "votes": 693
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0612,
+     "votes": 420
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.059,
+     "votes": 405
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0318,
+     "votes": 218
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0293,
+     "votes": 201
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0106,
+     "votes": 73
+    }
+   ],
+   "previous": null,
    "registered": 17153,
    "turnout": 0.4071,
    "ward_no": 9,
@@ -586,6 +1045,57 @@
      "votes": 167
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.7139,
+     "votes": 5665
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0475,
+     "votes": 377
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0447,
+     "votes": 355
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0426,
+     "votes": 338
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0389,
+     "votes": 309
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0276,
+     "votes": 219
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0236,
+     "votes": 187
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0207,
+     "votes": 164
+    }
+   ],
+   "previous": null,
    "registered": 16882,
    "turnout": 0.47,
    "ward_no": 10,
@@ -643,6 +1153,57 @@
      "votes": 143
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.7077,
+     "votes": 7552
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.075,
+     "votes": 800
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0514,
+     "votes": 549
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0426,
+     "votes": 455
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0376,
+     "votes": 401
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0205,
+     "votes": 219
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0148,
+     "votes": 158
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0117,
+     "votes": 125
+    }
+   ],
+   "previous": null,
    "registered": 19752,
    "turnout": 0.5451,
    "ward_no": 11,
@@ -700,6 +1261,57 @@
      "votes": 63
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.6492,
+     "votes": 4310
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0744,
+     "votes": 494
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0681,
+     "votes": 452
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0681,
+     "votes": 452
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0378,
+     "votes": 251
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0342,
+     "votes": 227
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0119,
+     "votes": 79
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0075,
+     "votes": 50
+    }
+   ],
+   "previous": null,
    "registered": 15763,
    "turnout": 0.4575,
    "ward_no": 12,
@@ -757,6 +1369,57 @@
      "votes": 66
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.4928,
+     "votes": 3023
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.2804,
+     "votes": 1720
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0633,
+     "votes": 388
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0393,
+     "votes": 241
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0258,
+     "votes": 158
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.024,
+     "votes": 147
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0134,
+     "votes": 82
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0114,
+     "votes": 70
+    }
+   ],
+   "previous": null,
    "registered": 16230,
    "turnout": 0.3757,
    "ward_no": 13,
@@ -814,6 +1477,57 @@
      "votes": 100
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.6891,
+     "votes": 5718
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0872,
+     "votes": 724
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0474,
+     "votes": 393
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0445,
+     "votes": 369
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0345,
+     "votes": 286
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.026,
+     "votes": 216
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0211,
+     "votes": 175
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0147,
+     "votes": 122
+    }
+   ],
+   "previous": null,
    "registered": 18845,
    "turnout": 0.4406,
    "ward_no": 14,
@@ -871,6 +1585,57 @@
      "votes": 28
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.8958,
+     "votes": 11965
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0408,
+     "votes": 545
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0271,
+     "votes": 362
+    },
+    {
+     "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+     "seats": null,
+     "share": 0.011,
+     "votes": 147
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0072,
+     "votes": 96
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0051,
+     "votes": 68
+    },
+    {
+     "party": "United Independent Movement",
+     "seats": null,
+     "share": 0.0046,
+     "votes": 62
+    },
+    {
+     "party": "The Organic Humanity Movement",
+     "seats": null,
+     "share": 0.0022,
+     "votes": 30
+    }
+   ],
+   "previous": null,
    "registered": 19473,
    "turnout": 0.6838,
    "ward_no": 15,
@@ -928,6 +1693,57 @@
      "votes": 86
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.5609,
+     "votes": 3768
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.1247,
+     "votes": 838
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0659,
+     "votes": 443
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0457,
+     "votes": 307
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.043,
+     "votes": 289
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.032,
+     "votes": 215
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0311,
+     "votes": 209
+    },
+    {
+     "party": "Independent Civic Organisation of South Africa",
+     "seats": null,
+     "share": 0.0127,
+     "votes": 85
+    }
+   ],
+   "previous": null,
    "registered": 15930,
    "turnout": 0.4035,
    "ward_no": 16,
@@ -985,6 +1801,57 @@
      "votes": 87
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.6559,
+     "votes": 5620
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0663,
+     "votes": 568
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0642,
+     "votes": 550
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0586,
+     "votes": 502
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0482,
+     "votes": 413
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0358,
+     "votes": 307
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0134,
+     "votes": 115
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0104,
+     "votes": 89
+    }
+   ],
+   "previous": null,
    "registered": 17753,
    "turnout": 0.4808,
    "ward_no": 17,
@@ -1042,6 +1909,57 @@
      "votes": 55
     }
    ],
+   "pr_parties": [
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.6384,
+     "votes": 3545
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.1592,
+     "votes": 884
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0625,
+     "votes": 347
+    },
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.0484,
+     "votes": 269
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0317,
+     "votes": 176
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0135,
+     "votes": 75
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0122,
+     "votes": 68
+    },
+    {
+     "party": "One Movement for Cape Town",
+     "seats": null,
+     "share": 0.0059,
+     "votes": 33
+    }
+   ],
+   "previous": null,
    "registered": 16275,
    "turnout": 0.3537,
    "ward_no": 18,
@@ -1099,6 +2017,57 @@
      "votes": 111
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.4933,
+     "votes": 3849
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.1671,
+     "votes": 1304
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.1596,
+     "votes": 1245
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0502,
+     "votes": 392
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0285,
+     "votes": 222
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0282,
+     "votes": 220
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0267,
+     "votes": 208
+    },
+    {
+     "party": "Africa Restoration Alliance",
+     "seats": null,
+     "share": 0.0045,
+     "votes": 35
+    }
+   ],
+   "previous": null,
    "registered": 19314,
    "turnout": 0.3988,
    "ward_no": 19,
@@ -1156,6 +2125,57 @@
      "votes": 32
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.5451,
+     "votes": 2924
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.2493,
+     "votes": 1337
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0567,
+     "votes": 304
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0341,
+     "votes": 183
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0319,
+     "votes": 171
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0155,
+     "votes": 83
+    },
+    {
+     "party": "Economic Emancipation Forum",
+     "seats": null,
+     "share": 0.0114,
+     "votes": 61
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0101,
+     "votes": 54
+    }
+   ],
+   "previous": null,
    "registered": 15090,
    "turnout": 0.3549,
    "ward_no": 20,
@@ -1213,6 +2233,57 @@
      "votes": 36
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.8932,
+     "votes": 9991
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0483,
+     "votes": 540
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0239,
+     "votes": 267
+    },
+    {
+     "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+     "seats": null,
+     "share": 0.0095,
+     "votes": 106
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0072,
+     "votes": 81
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0056,
+     "votes": 63
+    },
+    {
+     "party": "United Independent Movement",
+     "seats": null,
+     "share": 0.0024,
+     "votes": 27
+    },
+    {
+     "party": "The Organic Humanity Movement",
+     "seats": null,
+     "share": 0.0016,
+     "votes": 18
+    }
+   ],
+   "previous": null,
    "registered": 16798,
    "turnout": 0.6666,
    "ward_no": 21,
@@ -1270,6 +2341,57 @@
      "votes": 91
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.6515,
+     "votes": 5082
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.076,
+     "votes": 593
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0613,
+     "votes": 478
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0444,
+     "votes": 346
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0436,
+     "votes": 340
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0358,
+     "votes": 279
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.015,
+     "votes": 117
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0106,
+     "votes": 83
+    }
+   ],
+   "previous": null,
    "registered": 16360,
    "turnout": 0.4869,
    "ward_no": 22,
@@ -1327,6 +2449,57 @@
      "votes": 58
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.8626,
+     "votes": 10105
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0443,
+     "votes": 519
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0264,
+     "votes": 309
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0172,
+     "votes": 202
+    },
+    {
+     "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+     "seats": null,
+     "share": 0.0157,
+     "votes": 184
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0103,
+     "votes": 121
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0099,
+     "votes": 116
+    },
+    {
+     "party": "United Independent Movement",
+     "seats": null,
+     "share": 0.005,
+     "votes": 59
+    }
+   ],
+   "previous": null,
    "registered": 19228,
    "turnout": 0.6163,
    "ward_no": 23,
@@ -1384,6 +2557,57 @@
      "votes": 37
     }
    ],
+   "pr_parties": [
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.4065,
+     "votes": 1782
+    },
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.323,
+     "votes": 1416
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.1444,
+     "votes": 633
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0379,
+     "votes": 166
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0132,
+     "votes": 58
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0098,
+     "votes": 43
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0091,
+     "votes": 40
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0071,
+     "votes": 31
+    }
+   ],
+   "previous": null,
    "registered": 13868,
    "turnout": 0.318,
    "ward_no": 24,
@@ -1441,6 +2665,57 @@
      "votes": 97
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.7421,
+     "votes": 6401
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.058,
+     "votes": 500
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0457,
+     "votes": 394
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.035,
+     "votes": 302
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0348,
+     "votes": 300
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0278,
+     "votes": 240
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0116,
+     "votes": 100
+    },
+    {
+     "party": "Cape Muslim Congress",
+     "seats": null,
+     "share": 0.005,
+     "votes": 43
+    }
+   ],
+   "previous": null,
    "registered": 18791,
    "turnout": 0.462,
    "ward_no": 25,
@@ -1498,6 +2773,57 @@
      "votes": 87
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.6889,
+     "votes": 4669
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0571,
+     "votes": 387
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0475,
+     "votes": 322
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0421,
+     "votes": 285
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0317,
+     "votes": 215
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.031,
+     "votes": 210
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0217,
+     "votes": 147
+    },
+    {
+     "party": "Democratic People's Movement",
+     "seats": null,
+     "share": 0.0112,
+     "votes": 76
+    }
+   ],
+   "previous": null,
    "registered": 13366,
    "turnout": 0.4734,
    "ward_no": 26,
@@ -1555,6 +2881,57 @@
      "votes": 117
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.7578,
+     "votes": 6581
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.041,
+     "votes": 356
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0387,
+     "votes": 336
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0363,
+     "votes": 315
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0257,
+     "votes": 223
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0167,
+     "votes": 145
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0143,
+     "votes": 124
+    },
+    {
+     "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+     "seats": null,
+     "share": 0.0136,
+     "votes": 118
+    }
+   ],
+   "previous": null,
    "registered": 15273,
    "turnout": 0.5581,
    "ward_no": 27,
@@ -1612,6 +2989,57 @@
      "votes": 97
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.724,
+     "votes": 6661
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0508,
+     "votes": 467
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0505,
+     "votes": 465
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0477,
+     "votes": 439
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0268,
+     "votes": 247
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0266,
+     "votes": 245
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0133,
+     "votes": 122
+    },
+    {
+     "party": "United Independent Movement",
+     "seats": null,
+     "share": 0.009,
+     "votes": 83
+    }
+   ],
+   "previous": null,
    "registered": 18524,
    "turnout": 0.5008,
    "ward_no": 28,
@@ -1669,6 +3097,57 @@
      "votes": 52
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.5757,
+     "votes": 4492
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.1546,
+     "votes": 1206
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.1333,
+     "votes": 1040
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0328,
+     "votes": 256
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0323,
+     "votes": 252
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0123,
+     "votes": 96
+    },
+    {
+     "party": "Independent Civic Organisation of South Africa",
+     "seats": null,
+     "share": 0.0103,
+     "votes": 80
+    },
+    {
+     "party": "Africa Restoration Alliance",
+     "seats": null,
+     "share": 0.0065,
+     "votes": 51
+    }
+   ],
+   "previous": null,
    "registered": 16378,
    "turnout": 0.4769,
    "ward_no": 29,
@@ -1726,6 +3205,57 @@
      "votes": 92
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.6055,
+     "votes": 4322
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0936,
+     "votes": 668
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.071,
+     "votes": 507
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0563,
+     "votes": 402
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.043,
+     "votes": 307
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0373,
+     "votes": 266
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0153,
+     "votes": 109
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0151,
+     "votes": 108
+    }
+   ],
+   "previous": null,
    "registered": 16481,
    "turnout": 0.4371,
    "ward_no": 30,
@@ -1783,6 +3313,57 @@
      "votes": 113
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.6647,
+     "votes": 5523
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0901,
+     "votes": 749
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0734,
+     "votes": 610
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0331,
+     "votes": 275
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0315,
+     "votes": 262
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0277,
+     "votes": 230
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0136,
+     "votes": 113
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.013,
+     "votes": 108
+    }
+   ],
+   "previous": null,
    "registered": 18704,
    "turnout": 0.4533,
    "ward_no": 31,
@@ -1840,6 +3421,57 @@
      "votes": 57
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.464,
+     "votes": 3542
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.256,
+     "votes": 1954
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.1049,
+     "votes": 801
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0562,
+     "votes": 429
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0317,
+     "votes": 242
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0309,
+     "votes": 236
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0123,
+     "votes": 94
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0083,
+     "votes": 63
+    }
+   ],
+   "previous": null,
    "registered": 19232,
    "turnout": 0.3944,
    "ward_no": 32,
@@ -1897,6 +3529,57 @@
      "votes": 20
     }
    ],
+   "pr_parties": [
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.6997,
+     "votes": 3017
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.1565,
+     "votes": 675
+    },
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.0788,
+     "votes": 340
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0128,
+     "votes": 55
+    },
+    {
+     "party": "Inkatha Freedom Party",
+     "seats": null,
+     "share": 0.0123,
+     "votes": 53
+    },
+    {
+     "party": "One Movement for Cape Town",
+     "seats": null,
+     "share": 0.0097,
+     "votes": 42
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0088,
+     "votes": 38
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0042,
+     "votes": 18
+    }
+   ],
+   "previous": null,
    "registered": 16925,
    "turnout": 0.3022,
    "ward_no": 33,
@@ -1954,6 +3637,57 @@
      "votes": 12
     }
    ],
+   "pr_parties": [
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.7605,
+     "votes": 4327
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.1657,
+     "votes": 943
+    },
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.0262,
+     "votes": 149
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0093,
+     "votes": 53
+    },
+    {
+     "party": "African Transformation Movement",
+     "seats": null,
+     "share": 0.0074,
+     "votes": 42
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0067,
+     "votes": 38
+    },
+    {
+     "party": "United Independent Movement",
+     "seats": null,
+     "share": 0.004,
+     "votes": 23
+    },
+    {
+     "party": "Congress of the People",
+     "seats": null,
+     "share": 0.0035,
+     "votes": 20
+    }
+   ],
+   "previous": null,
    "registered": 17103,
    "turnout": 0.3359,
    "ward_no": 34,
@@ -2011,6 +3745,57 @@
      "votes": 49
     }
    ],
+   "pr_parties": [
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.6077,
+     "votes": 3227
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.1787,
+     "votes": 949
+    },
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.1096,
+     "votes": 582
+    },
+    {
+     "party": "One Movement for Cape Town",
+     "seats": null,
+     "share": 0.0211,
+     "votes": 112
+    },
+    {
+     "party": "African Transformation Movement",
+     "seats": null,
+     "share": 0.0139,
+     "votes": 74
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0107,
+     "votes": 57
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0104,
+     "votes": 55
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0098,
+     "votes": 52
+    }
+   ],
+   "previous": null,
    "registered": 18288,
    "turnout": 0.2756,
    "ward_no": 35,
@@ -2068,6 +3853,57 @@
      "votes": 11
     }
    ],
+   "pr_parties": [
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.7548,
+     "votes": 4147
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.1292,
+     "votes": 710
+    },
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.0471,
+     "votes": 259
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0257,
+     "votes": 141
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0122,
+     "votes": 67
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0089,
+     "votes": 49
+    },
+    {
+     "party": "African Transformation Movement",
+     "seats": null,
+     "share": 0.0058,
+     "votes": 32
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0022,
+     "votes": 12
+    }
+   ],
+   "previous": null,
    "registered": 15449,
    "turnout": 0.3698,
    "ward_no": 36,
@@ -2125,6 +3961,57 @@
      "votes": 15
     }
    ],
+   "pr_parties": [
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.75,
+     "votes": 4192
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.1254,
+     "votes": 701
+    },
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.0501,
+     "votes": 280
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0168,
+     "votes": 94
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0152,
+     "votes": 85
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0115,
+     "votes": 64
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0098,
+     "votes": 55
+    },
+    {
+     "party": "One Movement for Cape Town",
+     "seats": null,
+     "share": 0.0047,
+     "votes": 26
+    }
+   ],
+   "previous": null,
    "registered": 17540,
    "turnout": 0.3432,
    "ward_no": 37,
@@ -2182,6 +4069,57 @@
      "votes": 44
     }
    ],
+   "pr_parties": [
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.7594,
+     "votes": 4668
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.1002,
+     "votes": 616
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0472,
+     "votes": 290
+    },
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.0433,
+     "votes": 266
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0138,
+     "votes": 85
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0112,
+     "votes": 69
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0101,
+     "votes": 62
+    },
+    {
+     "party": "Congress of the People",
+     "seats": null,
+     "share": 0.0023,
+     "votes": 14
+    }
+   ],
+   "previous": null,
    "registered": 16415,
    "turnout": 0.3848,
    "ward_no": 38,
@@ -2239,6 +4177,57 @@
      "votes": 28
     }
    ],
+   "pr_parties": [
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.6441,
+     "votes": 3820
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.1367,
+     "votes": 811
+    },
+    {
+     "party": "African Progressive Movement",
+     "seats": null,
+     "share": 0.085,
+     "votes": 504
+    },
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.062,
+     "votes": 368
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0224,
+     "votes": 133
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0153,
+     "votes": 91
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0057,
+     "votes": 34
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0056,
+     "votes": 33
+    }
+   ],
+   "previous": null,
    "registered": 15804,
    "turnout": 0.3555,
    "ward_no": 39,
@@ -2296,6 +4285,57 @@
      "votes": 23
     }
    ],
+   "pr_parties": [
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.6618,
+     "votes": 3851
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.1832,
+     "votes": 1066
+    },
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.1023,
+     "votes": 595
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0079,
+     "votes": 46
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0079,
+     "votes": 46
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0077,
+     "votes": 45
+    },
+    {
+     "party": "One Movement for Cape Town",
+     "seats": null,
+     "share": 0.005,
+     "votes": 29
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0036,
+     "votes": 21
+    }
+   ],
+   "previous": null,
    "registered": 18049,
    "turnout": 0.3241,
    "ward_no": 40,
@@ -2353,6 +4393,57 @@
      "votes": 41
     }
    ],
+   "pr_parties": [
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.737,
+     "votes": 3920
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.1333,
+     "votes": 709
+    },
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.0438,
+     "votes": 233
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0165,
+     "votes": 88
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.015,
+     "votes": 80
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0115,
+     "votes": 61
+    },
+    {
+     "party": "Congress of the People",
+     "seats": null,
+     "share": 0.0105,
+     "votes": 56
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0083,
+     "votes": 44
+    }
+   ],
+   "previous": null,
    "registered": 15020,
    "turnout": 0.3611,
    "ward_no": 41,
@@ -2410,6 +4501,57 @@
      "votes": 33
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.7645,
+     "votes": 5796
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0569,
+     "votes": 431
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0466,
+     "votes": 353
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0338,
+     "votes": 256
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0264,
+     "votes": 200
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0235,
+     "votes": 178
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0106,
+     "votes": 80
+    },
+    {
+     "party": "United Independent Movement",
+     "seats": null,
+     "share": 0.0047,
+     "votes": 36
+    }
+   ],
+   "previous": null,
    "registered": 16385,
    "turnout": 0.4785,
    "ward_no": 42,
@@ -2467,6 +4609,57 @@
      "votes": 132
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.5631,
+     "votes": 5092
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0958,
+     "votes": 866
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0912,
+     "votes": 825
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0711,
+     "votes": 643
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0458,
+     "votes": 414
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0247,
+     "votes": 223
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0221,
+     "votes": 200
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0137,
+     "votes": 124
+    }
+   ],
+   "previous": null,
    "registered": 18496,
    "turnout": 0.5001,
    "ward_no": 43,
@@ -2524,6 +4717,57 @@
      "votes": 156
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.5198,
+     "votes": 3615
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.1175,
+     "votes": 817
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0663,
+     "votes": 461
+    },
+    {
+     "party": "United Progressive Party South Africa",
+     "seats": null,
+     "share": 0.0525,
+     "votes": 365
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0404,
+     "votes": 281
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0372,
+     "votes": 259
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0305,
+     "votes": 212
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0286,
+     "votes": 199
+    }
+   ],
+   "previous": null,
    "registered": 14889,
    "turnout": 0.4734,
    "ward_no": 44,
@@ -2581,6 +4825,57 @@
      "votes": 144
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.5436,
+     "votes": 2530
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.1753,
+     "votes": 816
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0739,
+     "votes": 344
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0423,
+     "votes": 197
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0348,
+     "votes": 162
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.032,
+     "votes": 149
+    },
+    {
+     "party": "Africa Restoration Alliance",
+     "seats": null,
+     "share": 0.0286,
+     "votes": 133
+    },
+    {
+     "party": "One Movement for Cape Town",
+     "seats": null,
+     "share": 0.0236,
+     "votes": 110
+    }
+   ],
+   "previous": null,
    "registered": 11673,
    "turnout": 0.4166,
    "ward_no": 45,
@@ -2638,6 +4933,57 @@
      "votes": 216
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.5397,
+     "votes": 4686
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0841,
+     "votes": 730
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0829,
+     "votes": 720
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0801,
+     "votes": 695
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.05,
+     "votes": 434
+    },
+    {
+     "party": "Cape Muslim Congress",
+     "seats": null,
+     "share": 0.0293,
+     "votes": 254
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0261,
+     "votes": 227
+    },
+    {
+     "party": "Democratic People's Alternative",
+     "seats": null,
+     "share": 0.0161,
+     "votes": 140
+    }
+   ],
+   "previous": null,
    "registered": 18177,
    "turnout": 0.4813,
    "ward_no": 46,
@@ -2695,6 +5041,57 @@
      "votes": 84
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.5764,
+     "votes": 4284
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.1223,
+     "votes": 909
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0708,
+     "votes": 526
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0626,
+     "votes": 465
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0513,
+     "votes": 381
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0334,
+     "votes": 248
+    },
+    {
+     "party": "Cape Muslim Congress",
+     "seats": null,
+     "share": 0.0148,
+     "votes": 110
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0143,
+     "votes": 106
+    }
+   ],
+   "previous": null,
    "registered": 16018,
    "turnout": 0.4734,
    "ward_no": 47,
@@ -2752,6 +5149,57 @@
      "votes": 194
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.5342,
+     "votes": 3673
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0915,
+     "votes": 629
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0777,
+     "votes": 534
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.066,
+     "votes": 454
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0329,
+     "votes": 226
+    },
+    {
+     "party": "Cape Muslim Congress",
+     "seats": null,
+     "share": 0.0292,
+     "votes": 201
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0271,
+     "votes": 186
+    },
+    {
+     "party": "National Freedom Party",
+     "seats": null,
+     "share": 0.0175,
+     "votes": 120
+    }
+   ],
+   "previous": null,
    "registered": 13409,
    "turnout": 0.529,
    "ward_no": 48,
@@ -2809,6 +5257,57 @@
      "votes": 145
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.7083,
+     "votes": 5701
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0579,
+     "votes": 466
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0511,
+     "votes": 411
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0405,
+     "votes": 326
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0308,
+     "votes": 248
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.027,
+     "votes": 217
+    },
+    {
+     "party": "Democratic People's Alternative",
+     "seats": null,
+     "share": 0.0171,
+     "votes": 138
+    },
+    {
+     "party": "Cape Muslim Congress",
+     "seats": null,
+     "share": 0.0122,
+     "votes": 98
+    }
+   ],
+   "previous": null,
    "registered": 15600,
    "turnout": 0.5183,
    "ward_no": 49,
@@ -2866,6 +5365,57 @@
      "votes": 171
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.6746,
+     "votes": 4924
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0745,
+     "votes": 544
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0438,
+     "votes": 320
+    },
+    {
+     "party": "Africa Restoration Alliance",
+     "seats": null,
+     "share": 0.0385,
+     "votes": 281
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0351,
+     "votes": 256
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.029,
+     "votes": 212
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0242,
+     "votes": 177
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.023,
+     "votes": 168
+    }
+   ],
+   "previous": null,
    "registered": 14671,
    "turnout": 0.5043,
    "ward_no": 50,
@@ -2923,6 +5473,57 @@
      "votes": 21
     }
    ],
+   "pr_parties": [
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.6507,
+     "votes": 3787
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.1799,
+     "votes": 1047
+    },
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.0727,
+     "votes": 423
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0383,
+     "votes": 223
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0103,
+     "votes": 60
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0096,
+     "votes": 56
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0062,
+     "votes": 36
+    },
+    {
+     "party": "African Transformation Movement",
+     "seats": null,
+     "share": 0.0038,
+     "votes": 22
+    }
+   ],
+   "previous": null,
    "registered": 14840,
    "turnout": 0.3954,
    "ward_no": 51,
@@ -2980,6 +5581,57 @@
      "votes": 17
     }
    ],
+   "pr_parties": [
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.6897,
+     "votes": 3212
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.1284,
+     "votes": 598
+    },
+    {
+     "party": "African Transformation Movement",
+     "seats": null,
+     "share": 0.0655,
+     "votes": 305
+    },
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.053,
+     "votes": 247
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0174,
+     "votes": 81
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0163,
+     "votes": 76
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0075,
+     "votes": 35
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0054,
+     "votes": 25
+    }
+   ],
+   "previous": null,
    "registered": 15265,
    "turnout": 0.3057,
    "ward_no": 52,
@@ -3037,6 +5689,57 @@
      "votes": 86
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.767,
+     "votes": 6532
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.055,
+     "votes": 468
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0383,
+     "votes": 326
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0373,
+     "votes": 318
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0129,
+     "votes": 110
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0123,
+     "votes": 105
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0113,
+     "votes": 96
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0107,
+     "votes": 91
+    }
+   ],
+   "previous": null,
    "registered": 14676,
    "turnout": 0.6149,
    "ward_no": 53,
@@ -3094,6 +5797,57 @@
      "votes": 13
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.8861,
+     "votes": 8618
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0263,
+     "votes": 256
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0251,
+     "votes": 244
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0207,
+     "votes": 201
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0094,
+     "votes": 91
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0077,
+     "votes": 75
+    },
+    {
+     "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+     "seats": null,
+     "share": 0.0071,
+     "votes": 69
+    },
+    {
+     "party": "Congress of the People",
+     "seats": null,
+     "share": 0.0019,
+     "votes": 18
+    }
+   ],
+   "previous": null,
    "registered": 19515,
    "turnout": 0.5105,
    "ward_no": 54,
@@ -3151,6 +5905,57 @@
      "votes": 80
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.8304,
+     "votes": 7177
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0375,
+     "votes": 324
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0215,
+     "votes": 186
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0177,
+     "votes": 153
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0172,
+     "votes": 149
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0153,
+     "votes": 132
+    },
+    {
+     "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+     "seats": null,
+     "share": 0.0126,
+     "votes": 109
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0101,
+     "votes": 87
+    }
+   ],
+   "previous": null,
    "registered": 15798,
    "turnout": 0.5434,
    "ward_no": 55,
@@ -3208,6 +6013,57 @@
      "votes": 144
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.6128,
+     "votes": 4586
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0803,
+     "votes": 601
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0695,
+     "votes": 520
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0623,
+     "votes": 466
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.041,
+     "votes": 307
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0277,
+     "votes": 207
+    },
+    {
+     "party": "Cape Muslim Congress",
+     "seats": null,
+     "share": 0.018,
+     "votes": 135
+    },
+    {
+     "party": "United Independent Movement",
+     "seats": null,
+     "share": 0.0119,
+     "votes": 89
+    }
+   ],
+   "previous": null,
    "registered": 16033,
    "turnout": 0.4693,
    "ward_no": 56,
@@ -3265,6 +6121,57 @@
      "votes": 115
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.5738,
+     "votes": 4228
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.1158,
+     "votes": 853
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.087,
+     "votes": 641
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0639,
+     "votes": 471
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0358,
+     "votes": 264
+    },
+    {
+     "party": "Cape Muslim Congress",
+     "seats": null,
+     "share": 0.0166,
+     "votes": 122
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0151,
+     "votes": 111
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0111,
+     "votes": 82
+    }
+   ],
+   "previous": null,
    "registered": 19135,
    "turnout": 0.3788,
    "ward_no": 57,
@@ -3322,6 +6229,57 @@
      "votes": 69
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.8299,
+     "votes": 9499
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0589,
+     "votes": 674
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0269,
+     "votes": 308
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0149,
+     "votes": 170
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0097,
+     "votes": 111
+    },
+    {
+     "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+     "seats": null,
+     "share": 0.0085,
+     "votes": 97
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0081,
+     "votes": 93
+    },
+    {
+     "party": "Credible Alternative 1St Movement",
+     "seats": null,
+     "share": 0.0053,
+     "votes": 61
+    }
+   ],
+   "previous": null,
    "registered": 19814,
    "turnout": 0.5789,
    "ward_no": 58,
@@ -3379,6 +6337,57 @@
      "votes": 37
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.8268,
+     "votes": 7923
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0608,
+     "votes": 583
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0268,
+     "votes": 257
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0215,
+     "votes": 206
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0122,
+     "votes": 117
+    },
+    {
+     "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+     "seats": null,
+     "share": 0.0081,
+     "votes": 78
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0081,
+     "votes": 78
+    },
+    {
+     "party": "The Greens",
+     "seats": null,
+     "share": 0.0053,
+     "votes": 51
+    }
+   ],
+   "previous": null,
    "registered": 19637,
    "turnout": 0.4919,
    "ward_no": 59,
@@ -3436,6 +6445,57 @@
      "votes": 130
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.5712,
+     "votes": 4667
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0969,
+     "votes": 792
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0813,
+     "votes": 664
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0718,
+     "votes": 587
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0344,
+     "votes": 281
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0253,
+     "votes": 207
+    },
+    {
+     "party": "Cape Muslim Congress",
+     "seats": null,
+     "share": 0.0239,
+     "votes": 195
+    },
+    {
+     "party": "United Independent Movement",
+     "seats": null,
+     "share": 0.0125,
+     "votes": 102
+    }
+   ],
+   "previous": null,
    "registered": 14717,
    "turnout": 0.5636,
    "ward_no": 60,
@@ -3493,6 +6553,57 @@
      "votes": 107
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.7456,
+     "votes": 6114
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0577,
+     "votes": 473
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0438,
+     "votes": 359
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0385,
+     "votes": 316
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0189,
+     "votes": 155
+    },
+    {
+     "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+     "seats": null,
+     "share": 0.0179,
+     "votes": 147
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0146,
+     "votes": 120
+    },
+    {
+     "party": "Africa Restoration Alliance",
+     "seats": null,
+     "share": 0.0137,
+     "votes": 112
+    }
+   ],
+   "previous": null,
    "registered": 16543,
    "turnout": 0.5029,
    "ward_no": 61,
@@ -3550,6 +6661,57 @@
      "votes": 33
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.8646,
+     "votes": 7801
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0348,
+     "votes": 314
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0289,
+     "votes": 261
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0146,
+     "votes": 132
+    },
+    {
+     "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+     "seats": null,
+     "share": 0.0103,
+     "votes": 93
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0099,
+     "votes": 89
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0093,
+     "votes": 84
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0031,
+     "votes": 28
+    }
+   ],
+   "previous": null,
    "registered": 15822,
    "turnout": 0.5801,
    "ward_no": 62,
@@ -3607,6 +6769,57 @@
      "votes": 124
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.7022,
+     "votes": 6221
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0794,
+     "votes": 703
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0427,
+     "votes": 378
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.035,
+     "votes": 310
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.027,
+     "votes": 239
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0182,
+     "votes": 161
+    },
+    {
+     "party": "United Independent Movement",
+     "seats": null,
+     "share": 0.013,
+     "votes": 115
+    },
+    {
+     "party": "Cape Muslim Congress",
+     "seats": null,
+     "share": 0.0107,
+     "votes": 95
+    }
+   ],
+   "previous": null,
    "registered": 16381,
    "turnout": 0.5528,
    "ward_no": 63,
@@ -3664,6 +6877,57 @@
      "votes": 61
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.8358,
+     "votes": 9618
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0398,
+     "votes": 458
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0316,
+     "votes": 364
+    },
+    {
+     "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+     "seats": null,
+     "share": 0.0193,
+     "votes": 222
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0164,
+     "votes": 189
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0149,
+     "votes": 172
+    },
+    {
+     "party": "United Independent Movement",
+     "seats": null,
+     "share": 0.0056,
+     "votes": 64
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.005,
+     "votes": 58
+    }
+   ],
+   "previous": null,
    "registered": 19786,
    "turnout": 0.5797,
    "ward_no": 64,
@@ -3721,6 +6985,57 @@
      "votes": 232
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.6152,
+     "votes": 5438
+    },
+    {
+     "party": "Democratic Labour Party",
+     "seats": null,
+     "share": 0.0649,
+     "votes": 574
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0543,
+     "votes": 480
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0476,
+     "votes": 421
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0408,
+     "votes": 361
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0347,
+     "votes": 307
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0313,
+     "votes": 277
+    },
+    {
+     "party": "Africa Restoration Alliance",
+     "seats": null,
+     "share": 0.0239,
+     "votes": 211
+    }
+   ],
+   "previous": null,
    "registered": 18608,
    "turnout": 0.4892,
    "ward_no": 65,
@@ -3778,6 +7093,57 @@
      "votes": 154
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.673,
+     "votes": 6619
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.078,
+     "votes": 767
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0446,
+     "votes": 439
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0377,
+     "votes": 371
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0335,
+     "votes": 329
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0334,
+     "votes": 328
+    },
+    {
+     "party": "United Independent Movement",
+     "seats": null,
+     "share": 0.0153,
+     "votes": 150
+    },
+    {
+     "party": "Cape Muslim Congress",
+     "seats": null,
+     "share": 0.0143,
+     "votes": 141
+    }
+   ],
+   "previous": null,
    "registered": 16526,
    "turnout": 0.6247,
    "ward_no": 66,
@@ -3835,6 +7201,57 @@
      "votes": 98
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.6098,
+     "votes": 4762
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.063,
+     "votes": 492
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0597,
+     "votes": 466
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0585,
+     "votes": 457
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0531,
+     "votes": 415
+    },
+    {
+     "party": "Africa Restoration Alliance",
+     "seats": null,
+     "share": 0.0485,
+     "votes": 379
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0291,
+     "votes": 227
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0127,
+     "votes": 99
+    }
+   ],
+   "previous": null,
    "registered": 15626,
    "turnout": 0.4827,
    "ward_no": 67,
@@ -3892,6 +7309,57 @@
      "votes": 119
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.599,
+     "votes": 4562
+    },
+    {
+     "party": "Africa Restoration Alliance",
+     "seats": null,
+     "share": 0.1702,
+     "votes": 1296
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0513,
+     "votes": 391
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0402,
+     "votes": 306
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0372,
+     "votes": 283
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0268,
+     "votes": 204
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0152,
+     "votes": 116
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0114,
+     "votes": 87
+    }
+   ],
+   "previous": null,
    "registered": 14852,
    "turnout": 0.5195,
    "ward_no": 68,
@@ -3949,6 +7417,57 @@
      "votes": 26
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.5852,
+     "votes": 5514
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.2412,
+     "votes": 2273
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.1041,
+     "votes": 981
+    },
+    {
+     "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+     "seats": null,
+     "share": 0.0155,
+     "votes": 146
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0143,
+     "votes": 135
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.01,
+     "votes": 94
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0081,
+     "votes": 76
+    },
+    {
+     "party": "United Independent Movement",
+     "seats": null,
+     "share": 0.0025,
+     "votes": 24
+    }
+   ],
+   "previous": null,
    "registered": 18763,
    "turnout": 0.5113,
    "ward_no": 69,
@@ -4006,6 +7525,57 @@
      "votes": 28
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.8952,
+     "votes": 10714
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0408,
+     "votes": 488
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0217,
+     "votes": 260
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0125,
+     "votes": 150
+    },
+    {
+     "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+     "seats": null,
+     "share": 0.0097,
+     "votes": 116
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0047,
+     "votes": 56
+    },
+    {
+     "party": "United Independent Movement",
+     "seats": null,
+     "share": 0.0024,
+     "votes": 29
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0021,
+     "votes": 25
+    }
+   ],
+   "previous": null,
    "registered": 18215,
    "turnout": 0.658,
    "ward_no": 70,
@@ -4063,6 +7633,57 @@
      "votes": 40
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.8522,
+     "votes": 7207
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0558,
+     "votes": 472
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.018,
+     "votes": 152
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0179,
+     "votes": 151
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0164,
+     "votes": 139
+    },
+    {
+     "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+     "seats": null,
+     "share": 0.0069,
+     "votes": 58
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0066,
+     "votes": 56
+    },
+    {
+     "party": "Africa Restoration Alliance",
+     "seats": null,
+     "share": 0.004,
+     "votes": 34
+    }
+   ],
+   "previous": null,
    "registered": 15518,
    "turnout": 0.5522,
    "ward_no": 71,
@@ -4120,6 +7741,57 @@
      "votes": 96
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.6849,
+     "votes": 5694
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0751,
+     "votes": 624
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0506,
+     "votes": 421
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0351,
+     "votes": 292
+    },
+    {
+     "party": "Africa Restoration Alliance",
+     "seats": null,
+     "share": 0.0312,
+     "votes": 259
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0287,
+     "votes": 239
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0112,
+     "votes": 93
+    },
+    {
+     "party": "United Independent Movement",
+     "seats": null,
+     "share": 0.0112,
+     "votes": 93
+    }
+   ],
+   "previous": null,
    "registered": 13722,
    "turnout": 0.6081,
    "ward_no": 72,
@@ -4177,6 +7849,57 @@
      "votes": 26
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.886,
+     "votes": 7859
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0329,
+     "votes": 292
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0221,
+     "votes": 196
+    },
+    {
+     "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+     "seats": null,
+     "share": 0.0097,
+     "votes": 86
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0089,
+     "votes": 79
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.007,
+     "votes": 62
+    },
+    {
+     "party": "Africa Restoration Alliance",
+     "seats": null,
+     "share": 0.0046,
+     "votes": 41
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0033,
+     "votes": 29
+    }
+   ],
+   "previous": null,
    "registered": 14561,
    "turnout": 0.6085,
    "ward_no": 73,
@@ -4234,6 +7957,57 @@
      "votes": 53
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.6372,
+     "votes": 4830
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.2276,
+     "votes": 1725
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0397,
+     "votes": 301
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0255,
+     "votes": 193
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0146,
+     "votes": 111
+    },
+    {
+     "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+     "seats": null,
+     "share": 0.0107,
+     "votes": 81
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0087,
+     "votes": 66
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0066,
+     "votes": 50
+    }
+   ],
+   "previous": null,
    "registered": 17235,
    "turnout": 0.4453,
    "ward_no": 74,
@@ -4291,6 +8065,57 @@
      "votes": 101
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.5709,
+     "votes": 4837
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.125,
+     "votes": 1059
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0951,
+     "votes": 806
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0446,
+     "votes": 378
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0433,
+     "votes": 367
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0385,
+     "votes": 326
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.023,
+     "votes": 195
+    },
+    {
+     "party": "United Independent Movement",
+     "seats": null,
+     "share": 0.0096,
+     "votes": 81
+    }
+   ],
+   "previous": null,
    "registered": 16438,
    "turnout": 0.5187,
    "ward_no": 75,
@@ -4348,6 +8173,57 @@
      "votes": 152
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.4572,
+     "votes": 3318
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.1563,
+     "votes": 1134
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.1191,
+     "votes": 864
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0752,
+     "votes": 546
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0486,
+     "votes": 353
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0354,
+     "votes": 257
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0273,
+     "votes": 198
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0124,
+     "votes": 90
+    }
+   ],
+   "previous": null,
    "registered": 15782,
    "turnout": 0.463,
    "ward_no": 76,
@@ -4405,6 +8281,57 @@
      "votes": 84
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.79,
+     "votes": 8045
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0564,
+     "votes": 574
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0431,
+     "votes": 439
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0235,
+     "votes": 239
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0151,
+     "votes": 154
+    },
+    {
+     "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+     "seats": null,
+     "share": 0.0117,
+     "votes": 119
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0094,
+     "votes": 96
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0076,
+     "votes": 77
+    }
+   ],
+   "previous": null,
    "registered": 18766,
    "turnout": 0.5288,
    "ward_no": 77,
@@ -4462,6 +8389,57 @@
      "votes": 99
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.6432,
+     "votes": 5021
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.1011,
+     "votes": 789
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0746,
+     "votes": 582
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0471,
+     "votes": 368
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0298,
+     "votes": 233
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0275,
+     "votes": 215
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0156,
+     "votes": 122
+    },
+    {
+     "party": "Africa Restoration Alliance",
+     "seats": null,
+     "share": 0.0127,
+     "votes": 99
+    }
+   ],
+   "previous": null,
    "registered": 15053,
    "turnout": 0.5253,
    "ward_no": 78,
@@ -4519,6 +8497,57 @@
      "votes": 121
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.6366,
+     "votes": 4601
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.1308,
+     "votes": 945
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0635,
+     "votes": 459
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0328,
+     "votes": 237
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.031,
+     "votes": 224
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0206,
+     "votes": 149
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0201,
+     "votes": 145
+    },
+    {
+     "party": "Africa Restoration Alliance",
+     "seats": null,
+     "share": 0.013,
+     "votes": 94
+    }
+   ],
+   "previous": null,
    "registered": 14406,
    "turnout": 0.5039,
    "ward_no": 79,
@@ -4576,6 +8605,57 @@
      "votes": 23
     }
    ],
+   "pr_parties": [
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.7491,
+     "votes": 4383
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.1472,
+     "votes": 861
+    },
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.0381,
+     "votes": 223
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0161,
+     "votes": 94
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0091,
+     "votes": 53
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0072,
+     "votes": 42
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0053,
+     "votes": 31
+    },
+    {
+     "party": "African Transformation Movement",
+     "seats": null,
+     "share": 0.0046,
+     "votes": 27
+    }
+   ],
+   "previous": null,
    "registered": 17997,
    "turnout": 0.3278,
    "ward_no": 80,
@@ -4633,6 +8713,57 @@
      "votes": 133
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.6338,
+     "votes": 4888
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.1402,
+     "votes": 1081
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0467,
+     "votes": 360
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0331,
+     "votes": 255
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0279,
+     "votes": 215
+    },
+    {
+     "party": "Africa Restoration Alliance",
+     "seats": null,
+     "share": 0.0235,
+     "votes": 181
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0219,
+     "votes": 169
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0162,
+     "votes": 125
+    }
+   ],
+   "previous": null,
    "registered": 14132,
    "turnout": 0.543,
    "ward_no": 81,
@@ -4690,6 +8821,57 @@
      "votes": 124
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.6406,
+     "votes": 3758
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.1076,
+     "votes": 631
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0762,
+     "votes": 447
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0338,
+     "votes": 198
+    },
+    {
+     "party": "Africa Restoration Alliance",
+     "seats": null,
+     "share": 0.0317,
+     "votes": 186
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0283,
+     "votes": 166
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0234,
+     "votes": 137
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0223,
+     "votes": 131
+    }
+   ],
+   "previous": null,
    "registered": 13173,
    "turnout": 0.452,
    "ward_no": 82,
@@ -4747,6 +8929,57 @@
      "votes": 36
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.8599,
+     "votes": 10276
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0526,
+     "votes": 629
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0266,
+     "votes": 318
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0134,
+     "votes": 160
+    },
+    {
+     "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+     "seats": null,
+     "share": 0.0126,
+     "votes": 151
+    },
+    {
+     "party": "United Independent Movement",
+     "seats": null,
+     "share": 0.0091,
+     "votes": 109
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0083,
+     "votes": 99
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.007,
+     "votes": 84
+    }
+   ],
+   "previous": null,
    "registered": 18398,
    "turnout": 0.645,
    "ward_no": 83,
@@ -4804,6 +9037,57 @@
      "votes": 52
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.8057,
+     "votes": 8662
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0685,
+     "votes": 736
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0297,
+     "votes": 319
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0264,
+     "votes": 284
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0202,
+     "votes": 217
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.017,
+     "votes": 183
+    },
+    {
+     "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+     "seats": null,
+     "share": 0.0087,
+     "votes": 93
+    },
+    {
+     "party": "United Independent Movement",
+     "seats": null,
+     "share": 0.0061,
+     "votes": 66
+    }
+   ],
+   "previous": null,
    "registered": 19475,
    "turnout": 0.5606,
    "ward_no": 84,
@@ -4861,6 +9145,57 @@
      "votes": 125
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.3796,
+     "votes": 3042
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.374,
+     "votes": 2997
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.053,
+     "votes": 425
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0374,
+     "votes": 300
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0227,
+     "votes": 182
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0206,
+     "votes": 165
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0197,
+     "votes": 158
+    },
+    {
+     "party": "United Independent Movement",
+     "seats": null,
+     "share": 0.0172,
+     "votes": 138
+    }
+   ],
+   "previous": null,
    "registered": 19347,
    "turnout": 0.4191,
    "ward_no": 85,
@@ -4918,6 +9253,57 @@
      "votes": 21
     }
    ],
+   "pr_parties": [
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.8399,
+     "votes": 4853
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0652,
+     "votes": 377
+    },
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.0372,
+     "votes": 215
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0114,
+     "votes": 66
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0104,
+     "votes": 60
+    },
+    {
+     "party": "African Transformation Movement",
+     "seats": null,
+     "share": 0.0054,
+     "votes": 31
+    },
+    {
+     "party": "African Freedom Revolution",
+     "seats": null,
+     "share": 0.005,
+     "votes": 29
+    },
+    {
+     "party": "Eastern Cape Movement",
+     "seats": null,
+     "share": 0.004,
+     "votes": 23
+    }
+   ],
+   "previous": null,
    "registered": 16916,
    "turnout": 0.3413,
    "ward_no": 86,
@@ -4975,6 +9361,57 @@
      "votes": 14
     }
    ],
+   "pr_parties": [
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.6927,
+     "votes": 3814
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0972,
+     "votes": 535
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.093,
+     "votes": 512
+    },
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.0625,
+     "votes": 344
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0167,
+     "votes": 92
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0078,
+     "votes": 43
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0078,
+     "votes": 43
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0056,
+     "votes": 31
+    }
+   ],
+   "previous": null,
    "registered": 14708,
    "turnout": 0.3835,
    "ward_no": 87,
@@ -5032,6 +9469,57 @@
      "votes": 56
     }
    ],
+   "pr_parties": [
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.5676,
+     "votes": 3500
+    },
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.1779,
+     "votes": 1097
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.1173,
+     "votes": 723
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0477,
+     "votes": 294
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0086,
+     "votes": 53
+    },
+    {
+     "party": "National Freedom Party",
+     "seats": null,
+     "share": 0.0079,
+     "votes": 49
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0075,
+     "votes": 46
+    },
+    {
+     "party": "African Transformation Movement",
+     "seats": null,
+     "share": 0.007,
+     "votes": 43
+    }
+   ],
+   "previous": null,
    "registered": 18040,
    "turnout": 0.3345,
    "ward_no": 88,
@@ -5089,6 +9577,57 @@
      "votes": 41
     }
    ],
+   "pr_parties": [
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.7463,
+     "votes": 3733
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.1325,
+     "votes": 663
+    },
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.0394,
+     "votes": 197
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0318,
+     "votes": 159
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.013,
+     "votes": 65
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0108,
+     "votes": 54
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0082,
+     "votes": 41
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0068,
+     "votes": 34
+    }
+   ],
+   "previous": null,
    "registered": 15495,
    "turnout": 0.3302,
    "ward_no": 89,
@@ -5146,6 +9685,57 @@
      "votes": 42
     }
    ],
+   "pr_parties": [
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.739,
+     "votes": 3322
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.1273,
+     "votes": 572
+    },
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.0585,
+     "votes": 263
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0176,
+     "votes": 79
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0089,
+     "votes": 40
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0085,
+     "votes": 38
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0062,
+     "votes": 28
+    },
+    {
+     "party": "African People's Convention",
+     "seats": null,
+     "share": 0.0056,
+     "votes": 25
+    }
+   ],
+   "previous": null,
    "registered": 13066,
    "turnout": 0.3464,
    "ward_no": 90,
@@ -5203,6 +9793,57 @@
      "votes": 32
     }
    ],
+   "pr_parties": [
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.7774,
+     "votes": 4184
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.1256,
+     "votes": 676
+    },
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.0373,
+     "votes": 201
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0136,
+     "votes": 73
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0098,
+     "votes": 53
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.008,
+     "votes": 43
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0072,
+     "votes": 39
+    },
+    {
+     "party": "African Transformation Movement",
+     "seats": null,
+     "share": 0.0052,
+     "votes": 28
+    }
+   ],
+   "previous": null,
    "registered": 14668,
    "turnout": 0.3623,
    "ward_no": 91,
@@ -5260,6 +9901,57 @@
      "votes": 136
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.6083,
+     "votes": 4363
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0948,
+     "votes": 680
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0542,
+     "votes": 389
+    },
+    {
+     "party": "Africa Restoration Alliance",
+     "seats": null,
+     "share": 0.052,
+     "votes": 373
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0404,
+     "votes": 290
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0399,
+     "votes": 286
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0287,
+     "votes": 206
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0209,
+     "votes": 150
+    }
+   ],
+   "previous": null,
    "registered": 17604,
    "turnout": 0.4173,
    "ward_no": 92,
@@ -5317,6 +10009,57 @@
      "votes": 10
     }
    ],
+   "pr_parties": [
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.7544,
+     "votes": 3966
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.1621,
+     "votes": 852
+    },
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.0346,
+     "votes": 182
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0137,
+     "votes": 72
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0107,
+     "votes": 56
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0053,
+     "votes": 28
+    },
+    {
+     "party": "African Transformation Movement",
+     "seats": null,
+     "share": 0.0048,
+     "votes": 25
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0021,
+     "votes": 11
+    }
+   ],
+   "previous": null,
    "registered": 15134,
    "turnout": 0.3487,
    "ward_no": 93,
@@ -5374,6 +10117,57 @@
      "votes": 31
     }
    ],
+   "pr_parties": [
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.763,
+     "votes": 4041
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.1375,
+     "votes": 728
+    },
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.0357,
+     "votes": 189
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0127,
+     "votes": 67
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0106,
+     "votes": 56
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0081,
+     "votes": 43
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0068,
+     "votes": 36
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0059,
+     "votes": 31
+    }
+   ],
+   "previous": null,
    "registered": 15202,
    "turnout": 0.354,
    "ward_no": 94,
@@ -5431,6 +10225,57 @@
      "votes": 22
     }
    ],
+   "pr_parties": [
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.7737,
+     "votes": 6171
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.1174,
+     "votes": 936
+    },
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.0602,
+     "votes": 480
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0105,
+     "votes": 84
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0104,
+     "votes": 83
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.007,
+     "votes": 56
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0038,
+     "votes": 30
+    },
+    {
+     "party": "African Transformation Movement",
+     "seats": null,
+     "share": 0.0029,
+     "votes": 23
+    }
+   ],
+   "previous": null,
    "registered": 22171,
    "turnout": 0.3602,
    "ward_no": 95,
@@ -5488,6 +10333,57 @@
      "votes": 11
     }
    ],
+   "pr_parties": [
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.7736,
+     "votes": 5084
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.1436,
+     "votes": 944
+    },
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.0367,
+     "votes": 241
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0145,
+     "votes": 95
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0088,
+     "votes": 58
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0049,
+     "votes": 32
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0047,
+     "votes": 31
+    },
+    {
+     "party": "African Transformation Movement",
+     "seats": null,
+     "share": 0.002,
+     "votes": 13
+    }
+   ],
+   "previous": null,
    "registered": 18907,
    "turnout": 0.3217,
    "ward_no": 96,
@@ -5545,6 +10441,57 @@
      "votes": 29
     }
    ],
+   "pr_parties": [
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.7308,
+     "votes": 4332
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.1432,
+     "votes": 849
+    },
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.0479,
+     "votes": 284
+    },
+    {
+     "party": "African People's Convention",
+     "seats": null,
+     "share": 0.0155,
+     "votes": 92
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.014,
+     "votes": 83
+    },
+    {
+     "party": "Africa Restoration Alliance",
+     "seats": null,
+     "share": 0.0116,
+     "votes": 69
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0076,
+     "votes": 45
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0076,
+     "votes": 45
+    }
+   ],
+   "previous": null,
    "registered": 16735,
    "turnout": 0.3586,
    "ward_no": 97,
@@ -5602,6 +10549,57 @@
      "votes": 21
     }
    ],
+   "pr_parties": [
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.6922,
+     "votes": 3953
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.1903,
+     "votes": 1087
+    },
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.0427,
+     "votes": 244
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0187,
+     "votes": 107
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0137,
+     "votes": 78
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0116,
+     "votes": 66
+    },
+    {
+     "party": "African Transformation Movement",
+     "seats": null,
+     "share": 0.007,
+     "votes": 40
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.006,
+     "votes": 34
+    }
+   ],
+   "previous": null,
    "registered": 18648,
    "turnout": 0.3303,
    "ward_no": 98,
@@ -5659,6 +10657,57 @@
      "votes": 38
     }
    ],
+   "pr_parties": [
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.6862,
+     "votes": 3987
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.1795,
+     "votes": 1043
+    },
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.0542,
+     "votes": 315
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0225,
+     "votes": 131
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0127,
+     "votes": 74
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0117,
+     "votes": 68
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0077,
+     "votes": 45
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0065,
+     "votes": 38
+    }
+   ],
+   "previous": null,
    "registered": 18644,
    "turnout": 0.3256,
    "ward_no": 99,
@@ -5716,6 +10765,57 @@
      "votes": 161
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.6928,
+     "votes": 6401
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0864,
+     "votes": 798
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0397,
+     "votes": 367
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0351,
+     "votes": 324
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0291,
+     "votes": 269
+    },
+    {
+     "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+     "seats": null,
+     "share": 0.0238,
+     "votes": 220
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.022,
+     "votes": 203
+    },
+    {
+     "party": "United Independent Movement",
+     "seats": null,
+     "share": 0.0174,
+     "votes": 161
+    }
+   ],
+   "previous": null,
    "registered": 19837,
    "turnout": 0.4284,
    "ward_no": 100,
@@ -5773,6 +10873,57 @@
      "votes": 22
     }
    ],
+   "pr_parties": [
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.6391,
+     "votes": 4146
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.2226,
+     "votes": 1444
+    },
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.0809,
+     "votes": 525
+    },
+    {
+     "party": "African Transformation Movement",
+     "seats": null,
+     "share": 0.0116,
+     "votes": 75
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0103,
+     "votes": 67
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0088,
+     "votes": 57
+    },
+    {
+     "party": "Inkatha Freedom Party",
+     "seats": null,
+     "share": 0.0062,
+     "votes": 40
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0043,
+     "votes": 28
+    }
+   ],
+   "previous": null,
    "registered": 19581,
    "turnout": 0.3351,
    "ward_no": 101,
@@ -5830,6 +10981,57 @@
      "votes": 76
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.8299,
+     "votes": 8202
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0522,
+     "votes": 516
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0213,
+     "votes": 211
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0163,
+     "votes": 161
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0145,
+     "votes": 143
+    },
+    {
+     "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+     "seats": null,
+     "share": 0.0133,
+     "votes": 131
+    },
+    {
+     "party": "United Independent Movement",
+     "seats": null,
+     "share": 0.0112,
+     "votes": 111
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0089,
+     "votes": 88
+    }
+   ],
+   "previous": null,
    "registered": 16404,
    "turnout": 0.6041,
    "ward_no": 102,
@@ -5887,6 +11089,57 @@
      "votes": 19
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.8874,
+     "votes": 11871
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0503,
+     "votes": 673
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0281,
+     "votes": 376
+    },
+    {
+     "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+     "seats": null,
+     "share": 0.0126,
+     "votes": 168
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0062,
+     "votes": 83
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0043,
+     "votes": 57
+    },
+    {
+     "party": "United Independent Movement",
+     "seats": null,
+     "share": 0.0031,
+     "votes": 42
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0016,
+     "votes": 21
+    }
+   ],
+   "previous": null,
    "registered": 18890,
    "turnout": 0.6789,
    "ward_no": 103,
@@ -5944,6 +11197,57 @@
      "votes": 42
     }
    ],
+   "pr_parties": [
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.6457,
+     "votes": 3177
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.1923,
+     "votes": 946
+    },
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.0776,
+     "votes": 382
+    },
+    {
+     "party": "African Transformation Movement",
+     "seats": null,
+     "share": 0.0295,
+     "votes": 145
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0234,
+     "votes": 115
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0089,
+     "votes": 44
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0075,
+     "votes": 37
+    },
+    {
+     "party": "Inkatha Freedom Party",
+     "seats": null,
+     "share": 0.0018,
+     "votes": 9
+    }
+   ],
+   "previous": null,
    "registered": 15809,
    "turnout": 0.3125,
    "ward_no": 104,
@@ -6001,6 +11305,57 @@
      "votes": 63
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.7825,
+     "votes": 6349
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0831,
+     "votes": 674
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0412,
+     "votes": 334
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.018,
+     "votes": 146
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0179,
+     "votes": 145
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0121,
+     "votes": 98
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0085,
+     "votes": 69
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0076,
+     "votes": 62
+    }
+   ],
+   "previous": null,
    "registered": 16886,
    "turnout": 0.4992,
    "ward_no": 105,
@@ -6058,6 +11413,57 @@
      "votes": 45
     }
    ],
+   "pr_parties": [
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.3973,
+     "votes": 2148
+    },
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.3292,
+     "votes": 1780
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.1156,
+     "votes": 625
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.039,
+     "votes": 211
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.03,
+     "votes": 162
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0198,
+     "votes": 107
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0094,
+     "votes": 51
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0078,
+     "votes": 42
+    }
+   ],
+   "previous": null,
    "registered": 16776,
    "turnout": 0.3225,
    "ward_no": 106,
@@ -6115,6 +11521,57 @@
      "votes": 55
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.8146,
+     "votes": 9263
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0452,
+     "votes": 514
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0388,
+     "votes": 441
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0264,
+     "votes": 300
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0195,
+     "votes": 222
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0189,
+     "votes": 215
+    },
+    {
+     "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+     "seats": null,
+     "share": 0.0149,
+     "votes": 169
+    },
+    {
+     "party": "United Independent Movement",
+     "seats": null,
+     "share": 0.0047,
+     "votes": 54
+    }
+   ],
+   "previous": null,
    "registered": 20779,
    "turnout": 0.5491,
    "ward_no": 107,
@@ -6172,6 +11629,57 @@
      "votes": 108
     }
    ],
+   "pr_parties": [
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.4864,
+     "votes": 3027
+    },
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.2573,
+     "votes": 1601
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.1009,
+     "votes": 628
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0252,
+     "votes": 157
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0233,
+     "votes": 145
+    },
+    {
+     "party": "African Transformation Movement",
+     "seats": null,
+     "share": 0.0222,
+     "votes": 138
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0188,
+     "votes": 117
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0172,
+     "votes": 107
+    }
+   ],
+   "previous": null,
    "registered": 17472,
    "turnout": 0.3607,
    "ward_no": 108,
@@ -6229,6 +11737,57 @@
      "votes": 72
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.6823,
+     "votes": 5612
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0849,
+     "votes": 698
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0692,
+     "votes": 569
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0671,
+     "votes": 552
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0252,
+     "votes": 207
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0199,
+     "votes": 164
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0088,
+     "votes": 72
+    },
+    {
+     "party": "United Independent Movement",
+     "seats": null,
+     "share": 0.0077,
+     "votes": 63
+    }
+   ],
+   "previous": null,
    "registered": 19197,
    "turnout": 0.439,
    "ward_no": 109,
@@ -6286,6 +11845,57 @@
      "votes": 147
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.6625,
+     "votes": 5395
+    },
+    {
+     "party": "Africa Restoration Alliance",
+     "seats": null,
+     "share": 0.0882,
+     "votes": 718
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0494,
+     "votes": 402
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0442,
+     "votes": 360
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0382,
+     "votes": 311
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0265,
+     "votes": 216
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0224,
+     "votes": 182
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0136,
+     "votes": 111
+    }
+   ],
+   "previous": null,
    "registered": 16796,
    "turnout": 0.4791,
    "ward_no": 110,
@@ -6343,6 +11953,57 @@
      "votes": 84
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.7395,
+     "votes": 7124
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0891,
+     "votes": 858
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.031,
+     "votes": 299
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0294,
+     "votes": 283
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0251,
+     "votes": 242
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0251,
+     "votes": 242
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0172,
+     "votes": 166
+    },
+    {
+     "party": "United Independent Movement",
+     "seats": null,
+     "share": 0.0104,
+     "votes": 100
+    }
+   ],
+   "previous": null,
    "registered": 19806,
    "turnout": 0.4864,
    "ward_no": 111,
@@ -6400,6 +12061,57 @@
      "votes": 19
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.8997,
+     "votes": 9138
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0436,
+     "votes": 443
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0214,
+     "votes": 217
+    },
+    {
+     "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+     "seats": null,
+     "share": 0.0097,
+     "votes": 99
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0059,
+     "votes": 60
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0045,
+     "votes": 46
+    },
+    {
+     "party": "The Organic Humanity Movement",
+     "seats": null,
+     "share": 0.0026,
+     "votes": 26
+    },
+    {
+     "party": "Cape Muslim Congress",
+     "seats": null,
+     "share": 0.002,
+     "votes": 20
+    }
+   ],
+   "previous": null,
    "registered": 16863,
    "turnout": 0.6518,
    "ward_no": 112,
@@ -6457,6 +12169,57 @@
      "votes": 48
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.8409,
+     "votes": 7917
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0294,
+     "votes": 277
+    },
+    {
+     "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+     "seats": null,
+     "share": 0.0261,
+     "votes": 246
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0245,
+     "votes": 231
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0226,
+     "votes": 213
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0169,
+     "votes": 159
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0167,
+     "votes": 157
+    },
+    {
+     "party": "United Independent Movement",
+     "seats": null,
+     "share": 0.0051,
+     "votes": 48
+    }
+   ],
+   "previous": null,
    "registered": 16523,
    "turnout": 0.5736,
    "ward_no": 113,
@@ -6514,6 +12277,57 @@
      "votes": 70
     }
    ],
+   "pr_parties": [
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.7078,
+     "votes": 5435
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.1251,
+     "votes": 961
+    },
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.0749,
+     "votes": 575
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0133,
+     "votes": 102
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0125,
+     "votes": 96
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0111,
+     "votes": 85
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0105,
+     "votes": 81
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.007,
+     "votes": 54
+    }
+   ],
+   "previous": null,
    "registered": 21997,
    "turnout": 0.356,
    "ward_no": 114,
@@ -6571,6 +12385,57 @@
      "votes": 57
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.7117,
+     "votes": 4983
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0758,
+     "votes": 531
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0448,
+     "votes": 314
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0333,
+     "votes": 233
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0308,
+     "votes": 216
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0157,
+     "votes": 110
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.0143,
+     "votes": 100
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0117,
+     "votes": 82
+    }
+   ],
+   "previous": null,
    "registered": 15341,
    "turnout": 0.4473,
    "ward_no": 115,
@@ -6628,6 +12493,57 @@
      "votes": 81
     }
    ],
+   "pr_parties": [
+    {
+     "party": "Democratic Alliance",
+     "seats": null,
+     "share": 0.6391,
+     "votes": 4713
+    },
+    {
+     "party": "Cape Coloured Congress",
+     "seats": null,
+     "share": 0.1347,
+     "votes": 993
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0443,
+     "votes": 327
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0338,
+     "votes": 249
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0319,
+     "votes": 235
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0294,
+     "votes": 217
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0281,
+     "votes": 207
+    },
+    {
+     "party": "Africa Restoration Alliance",
+     "seats": null,
+     "share": 0.009,
+     "votes": 66
+    }
+   ],
+   "previous": null,
    "registered": 16053,
    "turnout": 0.4787,
    "ward_no": 116,

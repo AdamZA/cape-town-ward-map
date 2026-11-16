@@ -57,6 +57,14 @@ export interface WardElectionRow {
    * Ward ballot, most votes first (up to 8)
    */
   parties: PartyResult[];
+  /**
+   * Party-list (PR) ballot in this ward, most votes first (up to 8)
+   */
+  pr_parties: PartyResult[];
+  /**
+   * Previous election's PR ballot on this ward's area (voting districts)
+   */
+  previous: PreviousResult | null;
   registered: number;
   /**
    * Ballots cast / registered on the ward ballot
@@ -79,6 +87,17 @@ export interface PartyResult {
    */
   share: number;
   votes: number;
+}
+export interface PreviousResult {
+  /**
+   * Share of this ward's registered voters in voting districts that existed then
+   */
+  coverage: number;
+  /**
+   * PR ballot shares on this ward's area
+   */
+  parties: PartyResult[];
+  year: number;
 }
 export interface Source {
   licence: string;

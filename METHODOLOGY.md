@@ -204,6 +204,11 @@ nothing is estimated.
   the council. The IEC's list of current councillors (which includes by-elections) can't be
   downloaded automatically, so by-elections aren't reflected yet. Names are converted from the
   IEC's capitals, so a few spellings may be off.
+- **Change since the last election** compares party-list (PR) shares, which measure support for
+  parties rather than for individual ward candidates. Ward boundaries change between elections,
+  but voting districts mostly keep their numbers, so we add up the previous election's votes in
+  the voting districts that make up today's ward. Where those districts hold less than 95% of
+  today's voters the site says so, and below 80% it shows no comparison.
 - **Turnout** is ballots cast, including spoilt ones, as a share of registered voters.
 - **Earlier ward boundaries.** An election is fought on the wards of its time. When the map shows
   newer wards, a ward's result is that of the old ward covering most of it, and the site says so.

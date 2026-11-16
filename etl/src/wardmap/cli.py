@@ -30,14 +30,23 @@ def _pin(args) -> None:
         "landmarks": landmarks.pin,
         "allocations": lambda: allocations.pin(args.year, local=args.local),
         "councillors": lambda: councillors.pin(args.election or max(LGE)),
-        "elections": lambda: [
-            elections.pin(y) for y in ([args.election] if args.election else sorted(LGE))
-        ],
+        "elections": lambda: _pin_elections(
+            elections, [args.election] if args.election else sorted(LGE)
+        ),
     }
     targets = list(pins) if args.dataset == "all" else [args.dataset]
     for t in targets:
         print(f"== pin {t}")
         pins[t]()
+
+
+def _pin_elections(elections, years: list[int]) -> None:
+    from wardmap.config import LGE
+
+    for y in years:
+        elections.pin(y)
+        if y > min(LGE):  # the previous election's votes on this election's wards
+            elections.pin_previous(y)
 
 
 def _build(args) -> None:

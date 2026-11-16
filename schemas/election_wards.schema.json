@@ -151,6 +151,35 @@
       "title": "Period",
       "type": "object"
     },
+    "PreviousResult": {
+      "additionalProperties": false,
+      "properties": {
+        "coverage": {
+          "description": "Share of this ward's registered voters in voting districts that existed then",
+          "title": "Coverage",
+          "type": "number"
+        },
+        "parties": {
+          "description": "PR ballot shares on this ward's area",
+          "items": {
+            "$ref": "#/$defs/PartyResult"
+          },
+          "title": "Parties",
+          "type": "array"
+        },
+        "year": {
+          "title": "Year",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "year",
+        "coverage",
+        "parties"
+      ],
+      "title": "PreviousResult",
+      "type": "object"
+    },
     "Source": {
       "additionalProperties": false,
       "properties": {
@@ -223,6 +252,27 @@
           "title": "Parties",
           "type": "array"
         },
+        "pr_parties": {
+          "default": [],
+          "description": "Party-list (PR) ballot in this ward, most votes first (up to 8)",
+          "items": {
+            "$ref": "#/$defs/PartyResult"
+          },
+          "title": "Pr Parties",
+          "type": "array"
+        },
+        "previous": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/PreviousResult"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Previous election's PR ballot on this ward's area (voting districts)"
+        },
         "registered": {
           "title": "Registered",
           "type": "integer"
@@ -248,7 +298,9 @@
         "turnout",
         "winner",
         "councillor",
-        "parties"
+        "parties",
+        "pr_parties",
+        "previous"
       ],
       "title": "WardElectionRow",
       "type": "object"

@@ -324,6 +324,14 @@ class ElectionsEnvelope(EnvelopeBase):
     national: list[NationalParty] = Field(description="Parties with any seats, most seats first")
 
 
+class PreviousResult(Strict):
+    year: int
+    coverage: float = Field(
+        description="Share of this ward's registered voters in voting districts that existed then"
+    )
+    parties: list[PartyResult] = Field(description="PR ballot shares on this ward's area")
+
+
 class WardElectionRow(Strict):
     ward_no: int
     registered: int
@@ -331,6 +339,12 @@ class WardElectionRow(Strict):
     winner: str = Field(description="Party (or independent) with most ward-ballot votes")
     councillor: str | None = Field(None, description="Elected ward councillor (winning candidate)")
     parties: list[PartyResult] = Field(description="Ward ballot, most votes first (up to 8)")
+    pr_parties: list[PartyResult] = Field(
+        [], description="Party-list (PR) ballot in this ward, most votes first (up to 8)"
+    )
+    previous: PreviousResult | None = Field(
+        None, description="Previous election's PR ballot on this ward's area (voting districts)"
+    )
 
 
 class ElectionWardsEnvelope(EnvelopeBase):
