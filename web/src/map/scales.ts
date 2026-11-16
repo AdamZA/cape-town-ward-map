@@ -49,7 +49,7 @@ export function legendEntries(s: Scale, fmt: (v: number) => string): [string, st
     const lo = edges[k]!;
     const hi = edges[k + 1]!;
     const last = k === edges.length - 2;
-    out.push([RAMP[s.classOf(lo)]!, last ? `${fmt(lo)} – ${fmt(hi)}` : `${fmt(lo)} – under ${fmt(hi)}`]);
+    out.push([RAMP[s.classOf(lo)]!, last ? `${fmt(lo)} to ${fmt(hi)}` : `${fmt(lo)} to under ${fmt(hi)}`]);
   }
   return out;
 }

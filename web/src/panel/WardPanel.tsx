@@ -86,7 +86,7 @@ export function WardPanel({ data, metrics, ward, layers, onShowLayer, onClose }:
         <h3>Service requests</h3>
         {sr.period && (
           <p class="lede">
-            Requests logged {fmtDate(sr.period.from)} – {fmtDate(sr.period.to)}, with their status as
+            Requests logged {fmtDate(sr.period.from)} to {fmtDate(sr.period.to)}, with their status as
             at {fmtDate(sr.as_of)}. Every request has had at least 90 days to be resolved.
           </p>
         )}

@@ -93,7 +93,7 @@ export function CityOverview({ data, metrics, metric, onWard, onClose }: Props) 
         </dl>
         {sr.period && (
           <p class="lede">
-            Service requests logged {fmtDate(sr.period.from)} – {fmtDate(sr.period.to)}.
+            Service requests logged {fmtDate(sr.period.from)} to {fmtDate(sr.period.to)}.
           </p>
         )}
       </section>
@@ -125,7 +125,7 @@ export function CityOverview({ data, metrics, metric, onWard, onClose }: Props) 
                     const v = value(w, c.key);
                     return (
                       <td key={c.key} class={c.key === "ward" ? "ward-cell" : "num"}>
-                        {v == null ? <span class="no-data">–</span> : c.fmt(v)}
+                        {v == null ? <span class="no-data">No data</span> : c.fmt(v)}
                       </td>
                     );
                   })}

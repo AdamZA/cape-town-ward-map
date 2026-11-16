@@ -1,8 +1,8 @@
 # Methodology
 
-How every figure on the map is produced, and what it can and can't tell you. The aim is to show
-public data neutrally: no rankings, no judgements, sources beside every number, and gaps stated
-plainly.
+How every figure on the map is produced, and what it can and can't tell you. The map shows
+public data without rankings or judgements. Every number has its source next to it, and gaps in
+the data are stated.
 
 ## Wards
 

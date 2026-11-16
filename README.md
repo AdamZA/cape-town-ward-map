@@ -1,9 +1,9 @@
 # Cape Town Ward Map
 
-A public, neutral map of how the City of Cape Town serves and spends, ward by ward: service
-request resolution, ward population, and the ward allocation projects in the City's budget. Every
-figure shows its source and retrieval date, and data gaps are stated next to the figures they
-affect. How each figure is produced: [METHODOLOGY.md](METHODOLOGY.md).
+A map of City of Cape Town data for each ward: service requests, water and electricity
+outages, population, land use, public places and the ward allocation projects in the City's
+budget. Every figure shows its source and retrieval date, and gaps in the data are stated next to
+the figures they affect. How each figure is produced: [METHODOLOGY.md](METHODOLOGY.md).
 
 ## How it fits together
 

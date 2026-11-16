@@ -125,7 +125,7 @@ function Main({ data }: { data: AppData }) {
       <header class="site-head">
         <div class="brand">
           <h1>Cape Town Ward Map</h1>
-          <p>How the City serves and spends, ward by ward. Every figure shows its source.</p>
+          <p>City services and ward budgets for each of Cape Town's wards. Each figure links to its source.</p>
         </div>
         <div class="head-tools">
           <Search places={data.places.rows} wardCount={data.wards.rows.length} onWard={(w) => (setPlace(null), openWard(w))} onPlace={choosePlace} />
@@ -183,7 +183,7 @@ function Main({ data }: { data: AppData }) {
             )}
             {metric.env.period && (
               <>
-                {fmtDate(metric.env.period.from)} – {fmtDate(metric.env.period.to)}.{" "}
+                {fmtDate(metric.env.period.from)} to {fmtDate(metric.env.period.to)}.{" "}
               </>
             )}
             <SourceLine env={metric.env} sourceKey={field.source} method={field.method} />

@@ -31,7 +31,7 @@ export function Summary({ data, metrics, ward }: { data: AppData; metrics: Recor
         {w.population != null && (
           <>
             About <strong>{fmtInt(w.population)}</strong> residents (estimate) on {fmtUnit(w.area_km2, "km²")}
-            {density != null && <> — {densityWord(denser, densities.length)}</>}.{" "}
+            {density != null && <>, {densityWord(denser, densities.length)}</>}.{" "}
           </>
         )}
         {character && <>{character} </>}
@@ -96,5 +96,5 @@ function densityWord(denser: number, n: number): string {
   const q = denser / n;
   if (q < 0.2) return "one of the most densely populated wards";
   if (q > 0.8) return "one of the least densely populated wards";
-  return "mid-range population density";
+  return "with a mid-range population density";
 }
