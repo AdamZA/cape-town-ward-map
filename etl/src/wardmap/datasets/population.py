@@ -60,7 +60,9 @@ def pin() -> None:
         ),
         key=lambda r: r["name"],
     )
-    ESTIMATES_FILE.write_text(json.dumps(rows, indent=1, sort_keys=True) + "\n", encoding="utf-8")
+    ESTIMATES_FILE.write_text(
+        json.dumps(rows, indent=1, sort_keys=True) + "\n", encoding="utf-8", newline="\n"
+    )
     write_sidecar(
         ESTIMATES_FILE,
         SourceRecord(

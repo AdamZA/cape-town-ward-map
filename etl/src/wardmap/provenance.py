@@ -44,6 +44,7 @@ def write_sidecar(path: Path, record: SourceRecord) -> None:
     sidecar_path(path).write_text(
         json.dumps(record.model_dump(exclude_none=True), indent=2, sort_keys=True) + "\n",
         encoding="utf-8",
+        newline="\n",  # sources are checksummed; LF on every OS (see .gitattributes)
     )
     print(f"pinned {path.relative_to(REPO)} ({record.method}, {record.retrieved_at})")
 

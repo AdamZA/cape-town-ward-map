@@ -4,7 +4,7 @@
   "notes": "Service name says 2020; these are the wards used for the 2021 elections.",
   "publisher": "Municipal Demarcation Board",
   "retrieved_at": "2026-11-16",
-  "sha256": "d035b7e47b487148188e7be1f1c0c82715c7d854a4f0872cfdeb9ea9bc0b5c11",
+  "sha256": "b09a48942ac711a464402632f132628ce135511d46f8860981491be4658bc113",
   "title": "Wards (2021 delimitation), City of Cape Town (CPT)",
   "url": "https://services7.arcgis.com/oeoyTUJC8HEeYsRB/arcgis/rest/services/MDB_Wards_2020/FeatureServer/0"
 }
