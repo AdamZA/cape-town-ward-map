@@ -194,6 +194,7 @@ strong { font-weight: 650; }
 .glance-value.no-data { font-size: 13px; font-weight: 400; }
 .glance-row .strip, .glance-rank { grid-column: 1 / -1; }
 .glance-rank { font-size: 12px; color: var(--ink-3); }
+.glance-warn { margin: 12px 0 0; padding: 8px 10px; border-left: 3px solid var(--accent); background: var(--surface); font-size: 12.5px; color: var(--ink-2); }
 .glance-key { margin: 12px 0 0; font-size: 11.5px; color: var(--ink-3); display: flex; flex-wrap: wrap; align-items: center; gap: 4px 6px; }
 .key-this, .key-dot, .key-ref { display: inline-block; }
 .key-this { width: 10px; height: 10px; border-radius: 50%; background: var(--this); }

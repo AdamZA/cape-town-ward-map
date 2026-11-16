@@ -15,6 +15,8 @@ export function Summary({ data, metrics, ward }: { data: AppData; metrics: Recor
   const density = w.population != null ? w.population / w.area_km2 : null;
   const densities = data.wards.rows.filter((r) => r.population != null).map((r) => r.population! / r.area_km2);
   const denser = density != null ? densities.filter((d) => d > density).length : 0;
+  const sr = data.serviceRequests.rows.find((r) => r.ward_no === ward);
+  const lowLocation = sr?.flags.includes("low_location_coverage") && sr.pct_located != null;
 
   return (
     <section class="glance" aria-labelledby="glance-title">
@@ -41,6 +43,12 @@ export function Summary({ data, metrics, ward }: { data: AppData; metrics: Recor
           <GlanceRow key={k} metric={metrics[k]} ward={ward} censored={k === "median_days" && !!data.serviceRequests.rows.find((r) => r.ward_no === ward)?.median_censored} />
         ))}
       </ul>
+      {lowLocation && (
+        <p class="glance-warn" role="note">
+          Only about {Math.round(sr!.pct_located!)}% of requests from this ward have a usable location, so these counts
+          are likely understated.
+        </p>
+      )}
       <p class="glance-key">
         <span class="key-this" /> this ward <span class="key-dot" /> other wards <span class="key-ref" /> city-wide (or median ward)
       </p>
