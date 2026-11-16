@@ -3,6 +3,9 @@ import { fmtDate, fmtRand, fmtUnit } from "../src/format";
 import { legendEntries, quantileScale, RAMP } from "../src/map/scales";
 import { predecessors } from "../src/panel/Allocations";
 import { parseHash, toHash } from "../src/state";
+import { suggest } from "../src/search/Search";
+import { bbox, inPolygon } from "../src/geo";
+import { standing } from "../src/metrics";
 import type { AllocationsEnvelope } from "../src/generated/allocations";
 import type { CrosswalkEnvelope } from "../src/generated/crosswalk";
 
@@ -46,11 +49,15 @@ describe("format", () => {
 describe("hash state", () => {
   it("round-trips", () => {
     const s = parseHash("#ward=57&metric=median_days");
-    expect(s).toEqual({ ward: 57, metric: "median_days" });
+    expect(s).toEqual({ ward: 57, metric: "median_days", city: false });
     expect(parseHash(toHash(s))).toEqual(s);
   });
   it("ignores junk", () => {
-    expect(parseHash("#ward=abc&metric=nope")).toEqual({ ward: null, metric: "pct_closed_30d" });
+    expect(parseHash("#ward=abc&metric=nope")).toEqual({ ward: null, metric: "pct_closed_30d", city: false });
+  });
+  it("keeps the city overview only when no ward is open", () => {
+    expect(parseHash(toHash({ ward: null, metric: "water_days", city: true }))).toEqual({ ward: null, metric: "water_days", city: true });
+    expect(toHash({ ward: 3, metric: "pct_closed_30d", city: true })).toBe("#ward=3");
   });
 });
 
@@ -72,5 +79,44 @@ describe("predecessors", () => {
   });
   it("is the ward itself when the budget uses the same boundaries", () => {
     expect(predecessors(7, 2021, budget, crosswalk)).toEqual([{ ward: 7, share: 1 }]);
+  });
+});
+
+describe("search", () => {
+  const places = [
+    { name: "Observatory", bbox: [0, 0, 1, 1], wards: [{ ward_no: 53, share: 0.7 }, { ward_no: 92, share: 0.3 }] },
+    { name: "Mowbray", bbox: [0, 0, 1, 1], wards: [{ ward_no: 59, share: 1 }] },
+    { name: "Wynberg Observatory Hill", bbox: [0, 0, 1, 1], wards: [{ ward_no: 62, share: 1 }] },
+  ];
+  it("puts a ward number first, then suburbs starting with the query, then containing it", () => {
+    expect(suggest("5", places, 118)[0]).toEqual({ kind: "ward", ward: 5 });
+    expect(suggest("ward 12", places, 118)[0]).toEqual({ kind: "ward", ward: 12 });
+    expect(suggest("obs", places, 118).map((s) => (s.kind === "place" ? s.place.name : s.ward))).toEqual([
+      "Observatory",
+      "Wynberg Observatory Hill",
+    ]);
+  });
+  it("ignores out-of-range ward numbers", () => {
+    expect(suggest("200", places, 118)).toEqual([]);
+  });
+});
+
+describe("geometry", () => {
+  const square = { type: "Polygon" as const, coordinates: [[[0, 0], [4, 0], [4, 4], [0, 4], [0, 0]], [[1, 1], [2, 1], [2, 2], [1, 2], [1, 1]]] };
+  it("finds points inside a polygon and respects holes", () => {
+    expect(inPolygon(3, 3, square)).toBe(true);
+    expect(inPolygon(1.5, 1.5, square)).toBe(false);
+    expect(inPolygon(5, 1, square)).toBe(false);
+  });
+  it("computes bounding boxes", () => {
+    expect(bbox([square])).toEqual([0, 0, 4, 4]);
+  });
+});
+
+describe("standing", () => {
+  it("counts wards below and above", () => {
+    const v = new Map<number, number | null>([[1, 10], [2, 20], [3, 30], [4, null]]);
+    expect(standing(v, 2)).toEqual({ lower: 1, higher: 1, n: 3, median: 20 });
+    expect(standing(v, 4)).toBeNull();
   });
 });

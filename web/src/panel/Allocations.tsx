@@ -23,6 +23,20 @@ export function predecessors(
     .map((r) => ({ ward: r.from_ward, share: r.share_of_to }));
 }
 
+/** Total allocated to the old ward covering most of this ward, for the summary. */
+export function mainAllocation(ward: number, wardVintage: number, budget: AllocationsEnvelope, crosswalk: CrosswalkEnvelope | null) {
+  const main = predecessors(ward, wardVintage, budget, crosswalk)[0];
+  if (!main) return null;
+  const rows = budget.rows.filter((r) => r.ward_no === main.ward);
+  return {
+    ward: main.ward,
+    share: main.share,
+    sameVintage: budget.ward_vintage === wardVintage,
+    projects: rows.length,
+    total: rows.reduce((s, r) => s + (r.amounts[budget.budget_year] ?? 0), 0),
+  };
+}
+
 interface Props {
   ward: number;
   wardVintage: number;

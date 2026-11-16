@@ -1,12 +1,10 @@
 """Ward facts: area, subcouncil, councillor and modelled population.
 
-- Subcouncil: no published ward-to-subcouncil mapping exists yet for the 2026 wards (the City's
-  subcouncil layer is incomplete: 20 of 21). The latest budget annexure gives the mapping for
-  its own ward vintage, so each ward gets the subcouncil of the predecessor ward covering most
-  of its area, with that share recorded and a caveat flag.
+- Subcouncil: the City's subcouncil boundaries (20 since August 2024). Each ward gets the
+  subcouncil covering most of its area; the share is recorded, and wards under 90% are flagged.
 - Councillor: from a curated CSV (sources/councillors/<vintage>.csv) because there is no stable
   machine-readable source yet for the councillors elected in November 2026. Missing -> gap.
-- Population: see population.py.
+- Population: see population.py. Electricity supplier: see electricity.py.
 """
 
 from __future__ import annotations
@@ -16,7 +14,7 @@ from functools import cache
 
 from wardmap import geo
 from wardmap.config import CURRENT_VINTAGE, SOURCES
-from wardmap.datasets import allocations, boundaries
+from wardmap.datasets import boundaries, electricity
 from wardmap.datasets import population as pop
 from wardmap.models import Councillor, FieldMeta, Gap, Source, WardRow, WardsEnvelope
 from wardmap.provenance import read_sidecar
@@ -63,25 +61,24 @@ def _councillors(vintage: int) -> tuple[dict[int, Councillor], Source | None]:
     return rows, boundaries.source(path)
 
 
-def _subcouncils(vintage: int) -> tuple[dict[int, tuple[int, float]], str]:
-    """Ward -> (subcouncil, share of the ward's area that mapping is based on), and the
-    annexure year used."""
-    year = allocations.years()[-1]
-    from_vintage = allocations.config(year)["ward_vintage"]
-    sc = allocations.ward_subcouncils(year)
-    if from_vintage == vintage:
-        return {w: (s, 1.0) for w, s in sc.items()}, year
+def _subcouncils(vintage: int) -> dict[int, tuple[int, float]]:
+    """Ward -> (subcouncil covering most of it, share of the ward's area)."""
+    ids, wg = boundaries.load(vintage)
+    feats = geo.load_features(boundaries.SUBCOUNCIL_FILE)
+    sc_ids = [f["properties"]["subcouncil"] for f in feats]
+    rows = geo.overlay_weights(geo.project(wg), ids, geo.project(geo.geoms(feats)), sc_ids)
     best: dict[int, tuple[int, float]] = {}
-    for r in boundaries.crosswalk(from_vintage, vintage):
-        if r.to_ward not in best or r.share_of_to > best[r.to_ward][1]:
-            best[r.to_ward] = (sc[r.from_ward], r.share_of_to)
-    return best, year
+    for w, sc, share, _, _ in rows:
+        if w not in best or share > best[w][1]:
+            best[w] = (sc, share)
+    return best
 
 
 def build(vintage: int = CURRENT_VINTAGE) -> None:
     ids, g = boundaries.load(vintage)
     proj = geo.project(g)
-    best, annexure_year = _subcouncils(vintage)
+    best = _subcouncils(vintage)
+    supply = electricity.city_share(vintage)
     wp = _population(vintage)
     councillors, councillor_src = _councillors(vintage)
 
@@ -99,6 +96,7 @@ def build(vintage: int = CURRENT_VINTAGE) -> None:
                 subcouncil_share=round(share, 3) if share is not None else None,
                 councillor=councillors.get(no),
                 population=int(round(wp.by_ward[no], -2)),
+                electricity_city_share=round(supply[no], 3),
                 flags=flags,
             )
         )
@@ -113,8 +111,9 @@ def build(vintage: int = CURRENT_VINTAGE) -> None:
 
     sources = {
         "boundaries": boundaries.source(boundaries.ward_file(vintage)),
-        "subcouncils": boundaries.source(allocations.pdf_path(annexure_year)),
+        "subcouncils": boundaries.source(boundaries.SUBCOUNCIL_FILE),
         "population": population_source(),
+        "electricity": electricity.source(),
     }
     if councillor_src:
         sources["councillors"] = councillor_src
@@ -128,22 +127,13 @@ def build(vintage: int = CURRENT_VINTAGE) -> None:
                 "councillor listing or the IEC's results.",
             )
         )
-    gaps.append(
-        Gap(
-            code="subcouncil_predates_delimitation",
-            message="Subcouncils are taken from the "
-            f"{allocations.config(annexure_year)['budget_year']} budget's ward list, which predates "
-            "the November 2026 ward changes. Each ward is shown in the subcouncil of the old ward "
-            "covering most of its area; the City may since have reassigned wards.",
-        )
-    )
     fields = {
         "area_km2": FieldMeta(label="Area", unit="km²", source="boundaries"),
         "subcouncil": FieldMeta(
             label="Subcouncil",
             source="subcouncils",
             method="subcouncil",
-            description="Inferred from the budget annexure's ward list (see gaps).",
+            description="The subcouncil covering most of the ward's area.",
         ),
     }
     if councillor_src:
@@ -160,6 +150,14 @@ def build(vintage: int = CURRENT_VINTAGE) -> None:
                 source="population",
                 method="population",
                 description="Modelled estimate, rounded to the nearest 100. Not a census count.",
+            ),
+            "electricity_city_share": FieldMeta(
+                label="Electricity supplier",
+                unit="ratio",
+                source="electricity",
+                method="electricity",
+                description="Share of residents (modelled) supplied by the City rather than "
+                "by Eskom directly, from the City's load-shedding areas.",
             ),
         },
         gaps=gaps,

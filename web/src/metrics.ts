@@ -26,11 +26,14 @@ export interface Metric {
   values: Map<number, number | null>;
   /** City-wide value, when one is meaningful. */
   city: number | null;
+  /** What a missing value means, for the legend and summary. */
+  nullLabel: string;
 }
 
 interface Def {
   topic: string;
   reading: string;
+  nullLabel?: string;
   build: (d: AppData) => Pick<Metric, "env" | "field" | "values" | "city">;
 }
 
@@ -85,7 +88,8 @@ const DEFS: Record<MetricKey, Def> = {
   },
   power_days: {
     topic: SUPPLY,
-    reading: "Days in the past year when several residents reported no power to the City. Eskom-supplied homes report to Eskom and aren't counted.",
+    reading: "Days in the past year when several residents reported no power to the City. Not shown where Eskom supplies most residents.",
+    nullLabel: "Mostly supplied by Eskom (not covered)",
     build: outage("power_days"),
   },
 };
@@ -96,7 +100,13 @@ export const isMetric = (k: string): k is MetricKey => k in DEFS;
 
 export function buildMetrics(d: AppData): Record<MetricKey, Metric> {
   return Object.fromEntries(
-    METRIC_KEYS.map((key) => [key, { key, topic: DEFS[key].topic, reading: DEFS[key].reading, ...DEFS[key].build(d) }]),
+    METRIC_KEYS.map((key) => [key, {
+        key,
+        topic: DEFS[key].topic,
+        reading: DEFS[key].reading,
+        nullLabel: DEFS[key].nullLabel ?? "Not enough data",
+        ...DEFS[key].build(d),
+      }]),
   ) as Record<MetricKey, Metric>;
 }
 

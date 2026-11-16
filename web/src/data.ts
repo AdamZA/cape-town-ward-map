@@ -8,7 +8,8 @@ import type { PlacesEnvelope } from "./generated/places";
 import type { ServiceRequestsEnvelope } from "./generated/service_requests";
 import type { WardsEnvelope } from "./generated/wards";
 
-export type WardFeatures = FeatureCollection<Polygon | MultiPolygon, { ward_no: number }>;
+/** Ward polygons; `label` is the [lon, lat] where the ward number is printed. */
+export type WardFeatures = FeatureCollection<Polygon | MultiPolygon, { ward_no: number; label: [number, number] }>;
 
 export interface AppData {
   index: Index;

@@ -49,11 +49,15 @@ export interface Period {
 export interface WardRow {
   area_km2: number;
   councillor: Councillor | null;
+  /**
+   * Share of the ward's modelled population where the City (not Eskom) supplies electricity
+   */
+  electricity_city_share: number | null;
   flags: string[];
   population: number | null;
   subcouncil: number | null;
   /**
-   * Share of the ward's area inside that subcouncil boundary
+   * Share of the ward's area inside that subcouncil's boundary
    */
   subcouncil_share: number | null;
   ward_no: number;

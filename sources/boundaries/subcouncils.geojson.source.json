@@ -1,0 +1,10 @@
+{
+  "licence": "City of Cape Town Open Data Licence",
+  "method": "download",
+  "notes": "20 subcouncils, as reconfigured on 30 August 2024.",
+  "publisher": "City of Cape Town",
+  "retrieved_at": "2026-11-16",
+  "sha256": "55fa973b83dc05dd4e3fa746cb258576f91b62b48cb165b5989b908a545104b7",
+  "title": "Sub Council",
+  "url": "https://citymaps.capetown.gov.za/agsext/rest/services/Theme_Based/ODP_SPLIT_5/FeatureServer/5"
+}

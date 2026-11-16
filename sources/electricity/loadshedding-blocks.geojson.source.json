@@ -1,0 +1,10 @@
+{
+  "licence": "City of Cape Town Open Data Licence",
+  "method": "download",
+  "notes": "The City's load-shedding areas, which together cover the area where the City distributes electricity. Used to tell City-supplied from Eskom-supplied areas.",
+  "publisher": "City of Cape Town",
+  "retrieved_at": "2026-11-16",
+  "sha256": "6b84e474f62aa04908fe640ac7789fe3c99de50f4d3580faf097a7378f2a1b2e",
+  "title": "Loadshedding Blocks",
+  "url": "https://citymaps.capetown.gov.za/agsext/rest/services/Theme_Based/Basic_Services_Infrastructure/MapServer/5"
+}

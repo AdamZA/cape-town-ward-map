@@ -7,8 +7,8 @@ reports were logged in that ward that day. This measures days with clustered rep
 without supply; see METHODOLOGY.md#outages.
 
 Electricity: where Eskom supplies residents directly, faults are reported to Eskom, not the City,
-so power figures undercount in those areas. The City's supply-authority layer is currently
-truncated (most of its City-supplied polygon is missing), so this can't yet be split by area.
+so power figures are only published for wards where the City supplies most residents, and only
+reports located in City-supplied areas are counted (electricity.py).
 """
 
 from __future__ import annotations
@@ -16,14 +16,17 @@ from __future__ import annotations
 from datetime import date, timedelta
 
 import pandas as pd
+import shapely
 
 from wardmap.config import CURRENT_VINTAGE
-from wardmap.datasets import boundaries
+from wardmap.datasets import boundaries, electricity
 from wardmap.datasets.service_requests import db
 from wardmap.models import FieldMeta, Gap, OutageRow, OutagesEnvelope, Period
 from wardmap.publish import write_model
 
 PERIOD_DAYS = 365
+MIN_CITY_SHARE = 0.5  # publish power figures only where the City supplies most residents
+PARTLY_ESKOM = 0.95
 MIN_REPORTS = 3
 
 WATER_TYPES = (
@@ -73,27 +76,46 @@ def build(vintage: int = CURRENT_VINTAGE) -> None:
 
     water = df[df["kind"] == "water"]
     power = df[df["kind"] == "power"]
+    power = power[shapely.contains_xy(electricity.city_area(), power["lon"], power["lat"])]
+    share = electricity.city_share(vintage)
     w_n, w_d = water.groupby("ward_no").size(), outage_days(water)
     p_n, p_d = power.groupby("ward_no").size(), outage_days(power)
     ids, _ = boundaries.load(vintage)
-    rows = [
-        OutageRow(
-            ward_no=w,
-            water_reports=int(w_n.get(w, 0)),
-            water_days=int(w_d.get(w, 0)),
-            power_reports=int(p_n.get(w, 0)),
-            power_days=int(p_d.get(w, 0)),
+    rows, gaps = [], []
+    for w in ids:
+        city = share[w] >= MIN_CITY_SHARE
+        flags = []
+        if not city:
+            flags.append("eskom_supplied")
+            gaps.append(
+                Gap(
+                    code="eskom_supplied",
+                    ward_no=w,
+                    message=f"Eskom supplies about {1 - share[w]:.0%} of this ward's residents "
+                    "directly, and they report power faults to Eskom, not the City, so "
+                    "electricity figures are not shown.",
+                )
+            )
+        elif share[w] < PARTLY_ESKOM:
+            flags.append("partly_eskom")
+            gaps.append(
+                Gap(
+                    code="partly_eskom",
+                    ward_no=w,
+                    message=f"About {1 - share[w]:.0%} of this ward's residents are supplied by "
+                    "Eskom directly; electricity figures cover only the City-supplied part.",
+                )
+            )
+        rows.append(
+            OutageRow(
+                ward_no=w,
+                water_reports=int(w_n.get(w, 0)),
+                water_days=int(w_d.get(w, 0)),
+                power_reports=int(p_n.get(w, 0)) if city else None,
+                power_days=int(p_d.get(w, 0)) if city else None,
+                flags=flags,
+            )
         )
-        for w in ids
-    ]
-    gaps = [
-        Gap(
-            code="eskom_areas",
-            message="Where Eskom supplies homes directly, power faults are reported to Eskom, "
-            "not the City, so electricity figures there undercount. The City's map of supply "
-            "areas is currently incomplete, so affected wards can't yet be marked.",
-        )
-    ]
     gaps.insert(
         0,
         Gap(
@@ -112,7 +134,7 @@ def build(vintage: int = CURRENT_VINTAGE) -> None:
         as_of=as_of.isoformat(),
         period=Period(start=start.isoformat(), end=(end - timedelta(days=1)).isoformat()),
         min_reports=MIN_REPORTS,
-        sources={"sr": sr_source(vintage)},
+        sources={"sr": sr_source(vintage), "electricity": electricity.source()},
         fields={
             "water_days": FieldMeta(
                 label="Days with no-water reports",
@@ -130,7 +152,7 @@ def build(vintage: int = CURRENT_VINTAGE) -> None:
                 source="sr",
                 method="outages",
                 description=f"Days in the year with {MIN_REPORTS} or more reports of no power "
-                "to the City.",
+                "to the City (City-supplied areas only).",
             ),
             "power_reports": FieldMeta(
                 label="No-power reports", unit="reports", source="sr", method="outages"

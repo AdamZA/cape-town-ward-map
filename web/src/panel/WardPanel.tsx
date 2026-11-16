@@ -1,15 +1,26 @@
-// Side panel for one ward: facts, service requests, ward allocation projects.
+// Side panel for one ward: summary first, then the detail behind it, each figure with its source.
 import type { AppData } from "../data";
+import type { Metric, MetricKey } from "../metrics";
 import { fmtDate, fmtInt, fmtPct } from "../format";
 import { Allocations } from "./Allocations";
 import { Figure } from "./Figure";
 import { Gaps, gapsFor } from "./Gaps";
+import { Summary } from "./Summary";
 
-export function WardPanel({ data, ward, onClose }: { data: AppData; ward: number; onClose: () => void }) {
+interface Props {
+  data: AppData;
+  metrics: Record<MetricKey, Metric>;
+  ward: number;
+  onClose: () => void;
+}
+
+export function WardPanel({ data, metrics, ward, onClose }: Props) {
   const w = data.wards.rows.find((r) => r.ward_no === ward);
   const sr = data.serviceRequests;
   const s = sr.rows.find((r) => r.ward_no === ward);
   const city = sr.citywide;
+  const out = data.outages;
+  const o = out.rows.find((r) => r.ward_no === ward);
   if (!w || !s) return <p>Ward {ward} not found.</p>;
   const suppressed = s.flags.includes("insufficient_data");
   const reason = suppressed ? "Too few requests to report" : undefined;
@@ -19,20 +30,30 @@ export function WardPanel({ data, ward, onClose }: { data: AppData; ward: number
   return (
     <article class="panel-body" aria-labelledby="ward-title">
       <header class="panel-head">
-        <h2 id="ward-title">Ward {ward}</h2>
-        <button type="button" class="close" onClick={onClose} aria-label="Close ward details">
+        <div>
+          <h2 id="ward-title">Ward {ward}</h2>
+          {w.subcouncil != null && <p class="panel-sub">Subcouncil {w.subcouncil}</p>}
+        </div>
+        <button type="button" class="icon-btn" onClick={onClose} aria-label="Close ward details">
           ×
         </button>
       </header>
 
+      <Summary data={data} metrics={metrics} ward={ward} />
+
       <section class="section">
+        <h3>The ward</h3>
         <dl class="figures">
           <Figure
             env={data.wards}
             field="subcouncil"
             value={w.subcouncil}
             display={`Subcouncil ${w.subcouncil}`}
-            note={w.flags.includes("subcouncil_split") ? "This ward was formed from parts of several older wards; its subcouncil may differ." : undefined}
+            note={
+              w.flags.includes("subcouncil_split") && w.subcouncil_share != null
+                ? `${Math.round(w.subcouncil_share * 100)}% of the ward lies in this subcouncil; the rest in a neighbouring one.`
+                : undefined
+            }
           />
           {data.wards.fields.councillor ? (
             <Figure env={data.wards} field="councillor"
@@ -46,6 +67,12 @@ export function WardPanel({ data, ward, onClose }: { data: AppData; ward: number
           )}
           <Figure env={data.wards} field="population" value={w.population} display={w.population != null ? `about ${fmtInt(w.population)}` : undefined} />
           <Figure env={data.wards} field="area_km2" value={w.area_km2} />
+          <Figure
+            env={data.wards}
+            field="electricity_city_share"
+            value={w.electricity_city_share}
+            display={w.electricity_city_share != null ? supplyText(w.electricity_city_share) : undefined}
+          />
         </dl>
         <Gaps gaps={gapsFor(data.wards.gaps, ward)} />
       </section>
@@ -83,9 +110,34 @@ export function WardPanel({ data, ward, onClose }: { data: AppData; ward: number
         <Gaps gaps={gapsFor(sr.gaps, ward)} />
       </section>
 
+      {o && (
+        <section class="section">
+          <h3>Water and electricity</h3>
+          {out.period && (
+            <p class="lede">
+              Days between {fmtDate(out.period.from)} and {fmtDate(out.period.to)} on which {out.min_reports} or more residents
+              of this ward reported having no water, or no power, to the City.
+            </p>
+          )}
+          <dl class="figures two-col">
+            <Figure env={out} field="water_days" value={o.water_days} />
+            <Figure env={out} field="power_days" value={o.power_days} emptyReason="Not shown: mostly supplied by Eskom" />
+            <Figure env={out} field="water_reports" value={o.water_reports} />
+            <Figure env={out} field="power_reports" value={o.power_reports} emptyReason="Not shown: mostly supplied by Eskom" />
+          </dl>
+          <Gaps gaps={gapsFor(out.gaps, ward)} />
+        </section>
+      )}
+
       {data.allocations.map((budget) => (
         <Allocations key={budget.budget_year} ward={ward} wardVintage={data.wards.ward_vintage} budget={budget} crosswalk={data.crosswalk} />
       ))}
     </article>
   );
+}
+
+function supplyText(cityShare: number): string {
+  if (cityShare >= 0.95) return "The City";
+  if (cityShare <= 0.05) return "Eskom (directly)";
+  return `Mixed: the City ${Math.round(cityShare * 100)}%, Eskom ${Math.round((1 - cityShare) * 100)}%`;
 }

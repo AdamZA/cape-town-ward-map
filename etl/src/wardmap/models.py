@@ -76,10 +76,15 @@ class WardRow(Strict):
     area_km2: float
     subcouncil: int | None = None
     subcouncil_share: float | None = Field(
-        None, description="Share of the ward's area inside that subcouncil boundary"
+        None, description="Share of the ward's area inside that subcouncil's boundary"
     )
     councillor: Councillor | None = None
     population: int | None = None
+    electricity_city_share: float | None = Field(
+        None,
+        description="Share of the ward's modelled population where the City (not Eskom) "
+        "supplies electricity",
+    )
     flags: list[str] = []
 
 
@@ -126,8 +131,14 @@ class OutageRow(Strict):
     ward_no: int
     water_reports: int = Field(description="Located no-water reports logged in the period")
     water_days: int = Field(description="Days with at least `min_reports` no-water reports")
-    power_reports: int = Field(description="Located no-power reports logged in the period")
-    power_days: int = Field(description="Days with at least `min_reports` no-power reports")
+    power_reports: int | None = Field(
+        None,
+        description="Located no-power reports in City-supplied areas; null where Eskom supplies "
+        "most residents",
+    )
+    power_days: int | None = Field(
+        None, description="Days with at least `min_reports` no-power reports (City-supplied areas)"
+    )
     flags: list[str] = []
 
 

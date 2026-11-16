@@ -9,6 +9,13 @@
    "source": "boundaries",
    "unit": "km²"
   },
+  "electricity_city_share": {
+   "description": "Share of residents (modelled) supplied by the City rather than by Eskom directly, from the City's load-shedding areas.",
+   "label": "Electricity supplier",
+   "method": "electricity",
+   "source": "electricity",
+   "unit": "ratio"
+  },
   "population": {
    "description": "Modelled estimate, rounded to the nearest 100. Not a census count.",
    "label": "Estimated population",
@@ -17,7 +24,7 @@
    "unit": "people"
   },
   "subcouncil": {
-   "description": "Inferred from the budget annexure's ward list (see gaps).",
+   "description": "The subcouncil covering most of the ward's area.",
    "label": "Subcouncil",
    "method": "subcouncil",
    "source": "subcouncils",
@@ -29,11 +36,6 @@
    "code": "councillors_missing",
    "message": "Ward councillors elected in November 2026 are not yet included: there is no stable machine-readable source yet. They will be added from the City's councillor listing or the IEC's results.",
    "ward_no": null
-  },
-  {
-   "code": "subcouncil_predates_delimitation",
-   "message": "Subcouncils are taken from the 2024/25 budget's ward list, which predates the November 2026 ward changes. Each ward is shown in the subcouncil of the old ward covering most of its area; the City may since have reassigned wards.",
-   "ward_no": null
   }
  ],
  "period": null,
@@ -41,15 +43,17 @@
   {
    "area_km2": 19.69,
    "councillor": null,
+   "electricity_city_share": 0.994,
    "flags": [],
    "population": 33300,
-   "subcouncil": 3,
+   "subcouncil": 7,
    "subcouncil_share": 1.0,
    "ward_no": 1
   },
   {
    "area_km2": 9.4,
    "councillor": null,
+   "electricity_city_share": 1.0,
    "flags": [],
    "population": 45900,
    "subcouncil": 6,
@@ -59,6 +63,7 @@
   {
    "area_km2": 10.9,
    "councillor": null,
+   "electricity_city_share": 1.0,
    "flags": [],
    "population": 36000,
    "subcouncil": 6,
@@ -68,6 +73,7 @@
   {
    "area_km2": 12.76,
    "councillor": null,
+   "electricity_city_share": 0.994,
    "flags": [],
    "population": 47100,
    "subcouncil": 3,
@@ -77,46 +83,47 @@
   {
    "area_km2": 8.86,
    "councillor": null,
+   "electricity_city_share": 0.526,
    "flags": [],
    "population": 35000,
-   "subcouncil": 3,
+   "subcouncil": 7,
    "subcouncil_share": 1.0,
    "ward_no": 5
   },
   {
    "area_km2": 6.63,
    "councillor": null,
+   "electricity_city_share": 0.022,
    "flags": [],
    "population": 47200,
    "subcouncil": 2,
-   "subcouncil_share": 0.955,
+   "subcouncil_share": 1.0,
    "ward_no": 6
   },
   {
    "area_km2": 8.44,
    "councillor": null,
-   "flags": [
-    "subcouncil_split"
-   ],
+   "electricity_city_share": 0.222,
+   "flags": [],
    "population": 52200,
    "subcouncil": 2,
-   "subcouncil_share": 0.7,
+   "subcouncil_share": 1.0,
    "ward_no": 7
   },
   {
    "area_km2": 8.67,
    "councillor": null,
-   "flags": [
-    "subcouncil_split"
-   ],
+   "electricity_city_share": 0.979,
+   "flags": [],
    "population": 27900,
    "subcouncil": 2,
-   "subcouncil_share": 0.573,
+   "subcouncil_share": 1.0,
    "ward_no": 8
   },
   {
    "area_km2": 11.13,
    "councillor": null,
+   "electricity_city_share": 0.998,
    "flags": [],
    "population": 45200,
    "subcouncil": 6,
@@ -126,6 +133,7 @@
   {
    "area_km2": 13.3,
    "councillor": null,
+   "electricity_city_share": 0.999,
    "flags": [],
    "population": 46000,
    "subcouncil": 6,
@@ -135,6 +143,7 @@
   {
    "area_km2": 16.2,
    "councillor": null,
+   "electricity_city_share": 0.999,
    "flags": [
     "subcouncil_split"
    ],
@@ -146,68 +155,67 @@
   {
    "area_km2": 4.79,
    "councillor": null,
-   "flags": [
-    "subcouncil_split"
-   ],
+   "electricity_city_share": 0.272,
+   "flags": [],
    "population": 70800,
    "subcouncil": 5,
-   "subcouncil_share": 0.753,
+   "subcouncil_share": 1.0,
    "ward_no": 12
   },
   {
    "area_km2": 215.64,
    "councillor": null,
+   "electricity_city_share": 0.475,
    "flags": [],
    "population": 19800,
    "subcouncil": 7,
-   "subcouncil_share": 0.952,
+   "subcouncil_share": 1.0,
    "ward_no": 13
   },
   {
    "area_km2": 33.71,
    "councillor": null,
+   "electricity_city_share": 0.367,
    "flags": [],
    "population": 46900,
-   "subcouncil": 21,
-   "subcouncil_share": 0.945,
+   "subcouncil": 14,
+   "subcouncil_share": 1.0,
    "ward_no": 14
   },
   {
    "area_km2": 52.07,
    "councillor": null,
-   "flags": [
-    "subcouncil_split"
-   ],
+   "electricity_city_share": 0.979,
+   "flags": [],
    "population": 24700,
    "subcouncil": 8,
-   "subcouncil_share": 0.771,
+   "subcouncil_share": 1.0,
    "ward_no": 15
   },
   {
    "area_km2": 6.92,
    "councillor": null,
-   "flags": [
-    "subcouncil_split"
-   ],
+   "electricity_city_share": 0.0,
+   "flags": [],
    "population": 68000,
-   "subcouncil": 21,
-   "subcouncil_share": 0.713,
+   "subcouncil": 14,
+   "subcouncil_share": 1.0,
    "ward_no": 16
   },
   {
    "area_km2": 8.11,
    "councillor": null,
-   "flags": [
-    "subcouncil_split"
-   ],
+   "electricity_city_share": 0.0,
+   "flags": [],
    "population": 49700,
-   "subcouncil": 21,
-   "subcouncil_share": 0.663,
+   "subcouncil": 14,
+   "subcouncil_share": 1.0,
    "ward_no": 17
   },
   {
    "area_km2": 1.99,
    "councillor": null,
+   "electricity_city_share": 0.0,
    "flags": [],
    "population": 36900,
    "subcouncil": 9,
@@ -217,28 +225,27 @@
   {
    "area_km2": 10.57,
    "councillor": null,
-   "flags": [
-    "subcouncil_split"
-   ],
+   "electricity_city_share": 0.821,
+   "flags": [],
    "population": 61900,
-   "subcouncil": 21,
-   "subcouncil_share": 0.627,
+   "subcouncil": 14,
+   "subcouncil_share": 1.0,
    "ward_no": 19
   },
   {
    "area_km2": 3.84,
    "councillor": null,
-   "flags": [
-    "subcouncil_split"
-   ],
+   "electricity_city_share": 0.0,
+   "flags": [],
    "population": 59400,
    "subcouncil": 5,
-   "subcouncil_share": 0.643,
+   "subcouncil_share": 1.0,
    "ward_no": 20
   },
   {
    "area_km2": 11.06,
    "councillor": null,
+   "electricity_city_share": 1.0,
    "flags": [],
    "population": 31400,
    "subcouncil": 7,
@@ -248,35 +255,37 @@
   {
    "area_km2": 16.9,
    "councillor": null,
+   "electricity_city_share": 0.131,
    "flags": [],
    "population": 42100,
    "subcouncil": 5,
-   "subcouncil_share": 0.951,
+   "subcouncil_share": 1.0,
    "ward_no": 22
   },
   {
    "area_km2": 115.05,
    "councillor": null,
+   "electricity_city_share": 0.882,
    "flags": [],
    "population": 25000,
    "subcouncil": 1,
-   "subcouncil_share": 0.993,
+   "subcouncil_share": 0.995,
    "ward_no": 23
   },
   {
    "area_km2": 4.43,
    "councillor": null,
-   "flags": [
-    "subcouncil_split"
-   ],
+   "electricity_city_share": 0.0,
+   "flags": [],
    "population": 64400,
    "subcouncil": 5,
-   "subcouncil_share": 0.818,
+   "subcouncil_share": 1.0,
    "ward_no": 24
   },
   {
    "area_km2": 3.62,
    "councillor": null,
+   "electricity_city_share": 0.265,
    "flags": [],
    "population": 62100,
    "subcouncil": 4,
@@ -286,6 +295,7 @@
   {
    "area_km2": 7.19,
    "councillor": null,
+   "electricity_city_share": 0.63,
    "flags": [],
    "population": 48400,
    "subcouncil": 4,
@@ -295,17 +305,19 @@
   {
    "area_km2": 9.52,
    "councillor": null,
+   "electricity_city_share": 0.999,
    "flags": [
     "subcouncil_split"
    ],
    "population": 37600,
    "subcouncil": 4,
-   "subcouncil_share": 0.716,
+   "subcouncil_share": 0.715,
    "ward_no": 27
   },
   {
    "area_km2": 9.78,
    "councillor": null,
+   "electricity_city_share": 0.088,
    "flags": [],
    "population": 62700,
    "subcouncil": 4,
@@ -315,26 +327,27 @@
   {
    "area_km2": 173.11,
    "councillor": null,
+   "electricity_city_share": 0.999,
    "flags": [],
    "population": 53100,
    "subcouncil": 1,
-   "subcouncil_share": 0.991,
+   "subcouncil_share": 0.997,
    "ward_no": 29
   },
   {
    "area_km2": 4.26,
    "councillor": null,
-   "flags": [
-    "subcouncil_split"
-   ],
+   "electricity_city_share": 1.0,
+   "flags": [],
    "population": 57700,
-   "subcouncil": 14,
-   "subcouncil_share": 0.881,
+   "subcouncil": 11,
+   "subcouncil_share": 1.0,
    "ward_no": 30
   },
   {
    "area_km2": 6.66,
    "councillor": null,
+   "electricity_city_share": 0.866,
    "flags": [],
    "population": 58800,
    "subcouncil": 15,
@@ -344,6 +357,7 @@
   {
    "area_km2": 199.07,
    "councillor": null,
+   "electricity_city_share": 0.779,
    "flags": [],
    "population": 45700,
    "subcouncil": 1,
@@ -353,6 +367,7 @@
   {
    "area_km2": 1.96,
    "councillor": null,
+   "electricity_city_share": 1.0,
    "flags": [],
    "population": 55600,
    "subcouncil": 17,
@@ -362,6 +377,7 @@
   {
    "area_km2": 1.58,
    "councillor": null,
+   "electricity_city_share": 1.0,
    "flags": [],
    "population": 47900,
    "subcouncil": 13,
@@ -371,6 +387,7 @@
   {
    "area_km2": 4.52,
    "councillor": null,
+   "electricity_city_share": 0.017,
    "flags": [],
    "population": 54200,
    "subcouncil": 12,
@@ -380,6 +397,7 @@
   {
    "area_km2": 2.63,
    "councillor": null,
+   "electricity_city_share": 0.096,
    "flags": [],
    "population": 49400,
    "subcouncil": 13,
@@ -389,6 +407,7 @@
   {
    "area_km2": 1.67,
    "councillor": null,
+   "electricity_city_share": 1.0,
    "flags": [],
    "population": 40800,
    "subcouncil": 13,
@@ -398,6 +417,7 @@
   {
    "area_km2": 1.76,
    "councillor": null,
+   "electricity_city_share": 1.0,
    "flags": [],
    "population": 44500,
    "subcouncil": 13,
@@ -407,6 +427,7 @@
   {
    "area_km2": 2.22,
    "councillor": null,
+   "electricity_city_share": 1.0,
    "flags": [],
    "population": 37900,
    "subcouncil": 13,
@@ -416,35 +437,39 @@
   {
    "area_km2": 1.76,
    "councillor": null,
+   "electricity_city_share": 0.994,
    "flags": [],
    "population": 45600,
-   "subcouncil": 14,
+   "subcouncil": 13,
    "subcouncil_share": 1.0,
    "ward_no": 40
   },
   {
    "area_km2": 1.65,
    "councillor": null,
+   "electricity_city_share": 1.0,
    "flags": [],
    "population": 39200,
    "subcouncil": 13,
-   "subcouncil_share": 0.902,
+   "subcouncil_share": 1.0,
    "ward_no": 41
   },
   {
    "area_km2": 3.32,
    "councillor": null,
+   "electricity_city_share": 0.006,
    "flags": [
     "subcouncil_split"
    ],
    "population": 51800,
-   "subcouncil": 4,
+   "subcouncil": 15,
    "subcouncil_share": 0.877,
    "ward_no": 42
   },
   {
    "area_km2": 46.39,
    "councillor": null,
+   "electricity_city_share": 1.0,
    "flags": [],
    "population": 55300,
    "subcouncil": 17,
@@ -454,35 +479,37 @@
   {
    "area_km2": 3.3,
    "councillor": null,
+   "electricity_city_share": 1.0,
    "flags": [],
    "population": 47500,
-   "subcouncil": 14,
+   "subcouncil": 11,
    "subcouncil_share": 0.944,
    "ward_no": 44
   },
   {
    "area_km2": 9.34,
    "councillor": null,
-   "flags": [
-    "subcouncil_split"
-   ],
+   "electricity_city_share": 1.0,
+   "flags": [],
    "population": 60500,
    "subcouncil": 19,
-   "subcouncil_share": 0.672,
+   "subcouncil_share": 0.975,
    "ward_no": 45
   },
   {
    "area_km2": 5.15,
    "councillor": null,
+   "electricity_city_share": 1.0,
    "flags": [],
    "population": 47300,
-   "subcouncil": 14,
-   "subcouncil_share": 0.976,
+   "subcouncil": 11,
+   "subcouncil_share": 1.0,
    "ward_no": 46
   },
   {
    "area_km2": 2.92,
    "councillor": null,
+   "electricity_city_share": 1.0,
    "flags": [],
    "population": 54400,
    "subcouncil": 11,
@@ -492,28 +519,27 @@
   {
    "area_km2": 5.23,
    "councillor": null,
-   "flags": [
-    "subcouncil_split"
-   ],
+   "electricity_city_share": 1.0,
+   "flags": [],
    "population": 42200,
    "subcouncil": 11,
-   "subcouncil_share": 0.804,
+   "subcouncil_share": 1.0,
    "ward_no": 48
   },
   {
    "area_km2": 5.46,
    "councillor": null,
-   "flags": [
-    "subcouncil_split"
-   ],
+   "electricity_city_share": 1.0,
+   "flags": [],
    "population": 45800,
-   "subcouncil": 14,
-   "subcouncil_share": 0.847,
+   "subcouncil": 11,
+   "subcouncil_share": 1.0,
    "ward_no": 49
   },
   {
    "area_km2": 2.61,
    "councillor": null,
+   "electricity_city_share": 1.0,
    "flags": [],
    "population": 50000,
    "subcouncil": 15,
@@ -523,6 +549,7 @@
   {
    "area_km2": 2.5,
    "councillor": null,
+   "electricity_city_share": 1.0,
    "flags": [],
    "population": 36600,
    "subcouncil": 15,
@@ -532,6 +559,7 @@
   {
    "area_km2": 1.13,
    "councillor": null,
+   "electricity_city_share": 1.0,
    "flags": [],
    "population": 38500,
    "subcouncil": 15,
@@ -541,15 +569,17 @@
   {
    "area_km2": 14.82,
    "councillor": null,
+   "electricity_city_share": 1.0,
    "flags": [],
    "population": 35700,
-   "subcouncil": 15,
+   "subcouncil": 16,
    "subcouncil_share": 1.0,
    "ward_no": 53
   },
   {
    "area_km2": 35.41,
    "councillor": null,
+   "electricity_city_share": 0.987,
    "flags": [],
    "population": 31500,
    "subcouncil": 16,
@@ -559,66 +589,69 @@
   {
    "area_km2": 14.54,
    "councillor": null,
+   "electricity_city_share": 0.996,
    "flags": [],
    "population": 44400,
-   "subcouncil": 16,
+   "subcouncil": 3,
    "subcouncil_share": 0.987,
    "ward_no": 55
   },
   {
    "area_km2": 9.16,
    "councillor": null,
+   "electricity_city_share": 1.0,
    "flags": [],
    "population": 47000,
-   "subcouncil": 15,
+   "subcouncil": 3,
    "subcouncil_share": 1.0,
    "ward_no": 56
   },
   {
    "area_km2": 8.92,
    "councillor": null,
+   "electricity_city_share": 1.0,
    "flags": [
     "subcouncil_split"
    ],
    "population": 25100,
-   "subcouncil": 11,
-   "subcouncil_share": 0.373,
+   "subcouncil": 20,
+   "subcouncil_share": 0.65,
    "ward_no": 57
   },
   {
    "area_km2": 8.06,
    "councillor": null,
-   "flags": [
-    "subcouncil_split"
-   ],
+   "electricity_city_share": 1.0,
+   "flags": [],
    "population": 34500,
-   "subcouncil": 11,
-   "subcouncil_share": 0.863,
+   "subcouncil": 20,
+   "subcouncil_share": 1.0,
    "ward_no": 58
   },
   {
    "area_km2": 6.26,
    "councillor": null,
+   "electricity_city_share": 1.0,
    "flags": [],
    "population": 20600,
-   "subcouncil": 11,
-   "subcouncil_share": 0.917,
+   "subcouncil": 20,
+   "subcouncil_share": 1.0,
    "ward_no": 59
   },
   {
    "area_km2": 7.8,
    "councillor": null,
-   "flags": [
-    "subcouncil_split"
-   ],
+   "electricity_city_share": 1.0,
+   "flags": [],
    "population": 45500,
    "subcouncil": 11,
-   "subcouncil_share": 0.862,
+   "subcouncil_share": 1.0,
    "ward_no": 60
   },
   {
    "area_km2": 166.61,
    "councillor": null,
+   "electricity_city_share": 0.999,
    "flags": [],
    "population": 41400,
    "subcouncil": 19,
@@ -628,6 +661,7 @@
   {
    "area_km2": 35.39,
    "councillor": null,
+   "electricity_city_share": 1.0,
    "flags": [],
    "population": 25100,
    "subcouncil": 20,
@@ -637,15 +671,17 @@
   {
    "area_km2": 8.68,
    "councillor": null,
+   "electricity_city_share": 1.0,
    "flags": [],
    "population": 41600,
    "subcouncil": 20,
-   "subcouncil_share": 0.951,
+   "subcouncil_share": 1.0,
    "ward_no": 63
   },
   {
    "area_km2": 16.26,
    "councillor": null,
+   "electricity_city_share": 0.999,
    "flags": [],
    "population": 25500,
    "subcouncil": 19,
@@ -655,6 +691,7 @@
   {
    "area_km2": 4.28,
    "councillor": null,
+   "electricity_city_share": 1.0,
    "flags": [],
    "population": 49200,
    "subcouncil": 18,
@@ -664,6 +701,7 @@
   {
    "area_km2": 8.05,
    "councillor": null,
+   "electricity_city_share": 1.0,
    "flags": [],
    "population": 45300,
    "subcouncil": 18,
@@ -673,15 +711,17 @@
   {
    "area_km2": 20.57,
    "councillor": null,
+   "electricity_city_share": 1.0,
    "flags": [],
    "population": 37600,
    "subcouncil": 18,
-   "subcouncil_share": 0.989,
+   "subcouncil_share": 0.994,
    "ward_no": 67
   },
   {
    "area_km2": 3.38,
    "councillor": null,
+   "electricity_city_share": 1.0,
    "flags": [],
    "population": 37200,
    "subcouncil": 18,
@@ -691,6 +731,7 @@
   {
    "area_km2": 41.71,
    "councillor": null,
+   "electricity_city_share": 1.0,
    "flags": [],
    "population": 49700,
    "subcouncil": 19,
@@ -700,6 +741,7 @@
   {
    "area_km2": 28.5,
    "councillor": null,
+   "electricity_city_share": 1.0,
    "flags": [],
    "population": 36000,
    "subcouncil": 7,
@@ -709,6 +751,7 @@
   {
    "area_km2": 56.03,
    "councillor": null,
+   "electricity_city_share": 1.0,
    "flags": [],
    "population": 34100,
    "subcouncil": 20,
@@ -718,15 +761,17 @@
   {
    "area_km2": 7.04,
    "councillor": null,
+   "electricity_city_share": 1.0,
    "flags": [],
    "population": 37600,
    "subcouncil": 18,
-   "subcouncil_share": 0.918,
+   "subcouncil_share": 1.0,
    "ward_no": 72
   },
   {
    "area_km2": 8.64,
    "councillor": null,
+   "electricity_city_share": 1.0,
    "flags": [],
    "population": 27400,
    "subcouncil": 20,
@@ -736,6 +781,7 @@
   {
    "area_km2": 32.69,
    "councillor": null,
+   "electricity_city_share": 1.0,
    "flags": [],
    "population": 47600,
    "subcouncil": 20,
@@ -745,17 +791,17 @@
   {
    "area_km2": 6.26,
    "councillor": null,
-   "flags": [
-    "subcouncil_split"
-   ],
+   "electricity_city_share": 1.0,
+   "flags": [],
    "population": 62000,
    "subcouncil": 17,
-   "subcouncil_share": 0.5,
+   "subcouncil_share": 1.0,
    "ward_no": 75
   },
   {
    "area_km2": 5.69,
    "councillor": null,
+   "electricity_city_share": 0.831,
    "flags": [],
    "population": 51100,
    "subcouncil": 12,
@@ -765,37 +811,39 @@
   {
    "area_km2": 18.95,
    "councillor": null,
+   "electricity_city_share": 1.0,
    "flags": [],
    "population": 32000,
    "subcouncil": 16,
-   "subcouncil_share": 0.977,
+   "subcouncil_share": 1.0,
    "ward_no": 77
   },
   {
    "area_km2": 3.48,
    "councillor": null,
-   "flags": [
-    "subcouncil_split"
-   ],
+   "electricity_city_share": 1.0,
+   "flags": [],
    "population": 47600,
    "subcouncil": 17,
-   "subcouncil_share": 0.662,
+   "subcouncil_share": 1.0,
    "ward_no": 78
   },
   {
    "area_km2": 4.72,
    "councillor": null,
+   "electricity_city_share": 1.0,
    "flags": [
     "subcouncil_split"
    ],
    "population": 51000,
    "subcouncil": 17,
-   "subcouncil_share": 0.482,
+   "subcouncil_share": 0.721,
    "ward_no": 79
   },
   {
    "area_km2": 1.77,
    "councillor": null,
+   "electricity_city_share": 1.0,
    "flags": [],
    "population": 52800,
    "subcouncil": 13,
@@ -805,28 +853,29 @@
   {
    "area_km2": 3.8,
    "councillor": null,
+   "electricity_city_share": 1.0,
    "flags": [
     "subcouncil_split"
    ],
    "population": 48900,
    "subcouncil": 17,
-   "subcouncil_share": 0.383,
+   "subcouncil_share": 0.619,
    "ward_no": 81
   },
   {
    "area_km2": 5.77,
    "councillor": null,
-   "flags": [
-    "subcouncil_split"
-   ],
+   "electricity_city_share": 1.0,
+   "flags": [],
    "population": 75900,
    "subcouncil": 12,
-   "subcouncil_share": 0.597,
+   "subcouncil_share": 0.989,
    "ward_no": 82
   },
   {
    "area_km2": 17.48,
    "councillor": null,
+   "electricity_city_share": 0.996,
    "flags": [],
    "population": 26700,
    "subcouncil": 8,
@@ -836,6 +885,7 @@
   {
    "area_km2": 103.02,
    "councillor": null,
+   "electricity_city_share": 0.61,
    "flags": [],
    "population": 37300,
    "subcouncil": 8,
@@ -845,37 +895,37 @@
   {
    "area_km2": 5.03,
    "councillor": null,
+   "electricity_city_share": 0.936,
    "flags": [],
    "population": 61500,
    "subcouncil": 8,
-   "subcouncil_share": 0.983,
+   "subcouncil_share": 1.0,
    "ward_no": 85
   },
   {
    "area_km2": 2.51,
    "councillor": null,
-   "flags": [
-    "subcouncil_split"
-   ],
+   "electricity_city_share": 0.673,
+   "flags": [],
    "population": 52500,
    "subcouncil": 8,
-   "subcouncil_share": 0.698,
+   "subcouncil_share": 1.0,
    "ward_no": 86
   },
   {
    "area_km2": 1.24,
    "councillor": null,
-   "flags": [
-    "subcouncil_split"
-   ],
+   "electricity_city_share": 0.0,
+   "flags": [],
    "population": 45700,
    "subcouncil": 9,
-   "subcouncil_share": 0.843,
+   "subcouncil_share": 1.0,
    "ward_no": 87
   },
   {
    "area_km2": 2.63,
    "councillor": null,
+   "electricity_city_share": 0.565,
    "flags": [],
    "population": 61400,
    "subcouncil": 17,
@@ -885,83 +935,77 @@
   {
    "area_km2": 1.31,
    "councillor": null,
-   "flags": [
-    "subcouncil_split"
-   ],
+   "electricity_city_share": 0.0,
+   "flags": [],
    "population": 54800,
    "subcouncil": 9,
-   "subcouncil_share": 0.607,
+   "subcouncil_share": 1.0,
    "ward_no": 89
   },
   {
    "area_km2": 17.73,
    "councillor": null,
-   "flags": [
-    "subcouncil_split"
-   ],
+   "electricity_city_share": 0.732,
+   "flags": [],
    "population": 18700,
-   "subcouncil": 21,
-   "subcouncil_share": 0.506,
+   "subcouncil": 8,
+   "subcouncil_share": 0.998,
    "ward_no": 90
   },
   {
    "area_km2": 1.16,
    "councillor": null,
-   "flags": [
-    "subcouncil_split"
-   ],
+   "electricity_city_share": 0.0,
+   "flags": [],
    "population": 56900,
    "subcouncil": 9,
-   "subcouncil_share": 0.663,
+   "subcouncil_share": 1.0,
    "ward_no": 91
   },
   {
    "area_km2": 11.18,
    "councillor": null,
-   "flags": [
-    "subcouncil_split"
-   ],
+   "electricity_city_share": 1.0,
+   "flags": [],
    "population": 42900,
    "subcouncil": 16,
-   "subcouncil_share": 0.674,
+   "subcouncil_share": 1.0,
    "ward_no": 92
   },
   {
    "area_km2": 4.54,
    "councillor": null,
-   "flags": [
-    "subcouncil_split"
-   ],
+   "electricity_city_share": 0.0,
+   "flags": [],
    "population": 56800,
    "subcouncil": 9,
-   "subcouncil_share": 0.857,
+   "subcouncil_share": 0.912,
    "ward_no": 93
   },
   {
    "area_km2": 4.11,
    "councillor": null,
-   "flags": [
-    "subcouncil_split"
-   ],
+   "electricity_city_share": 0.0,
+   "flags": [],
    "population": 47100,
    "subcouncil": 10,
-   "subcouncil_share": 0.745,
+   "subcouncil_share": 1.0,
    "ward_no": 94
   },
   {
    "area_km2": 7.54,
    "councillor": null,
-   "flags": [
-    "subcouncil_split"
-   ],
+   "electricity_city_share": 0.0,
+   "flags": [],
    "population": 49800,
    "subcouncil": 10,
-   "subcouncil_share": 0.892,
+   "subcouncil_share": 0.999,
    "ward_no": 95
   },
   {
    "area_km2": 4.19,
    "councillor": null,
+   "electricity_city_share": 0.0,
    "flags": [],
    "population": 52700,
    "subcouncil": 10,
@@ -971,17 +1015,17 @@
   {
    "area_km2": 3.32,
    "councillor": null,
-   "flags": [
-    "subcouncil_split"
-   ],
+   "electricity_city_share": 0.0,
+   "flags": [],
    "population": 56900,
    "subcouncil": 10,
-   "subcouncil_share": 0.598,
+   "subcouncil_share": 1.0,
    "ward_no": 97
   },
   {
    "area_km2": 2.9,
    "councillor": null,
+   "electricity_city_share": 0.0,
    "flags": [],
    "population": 48900,
    "subcouncil": 10,
@@ -991,35 +1035,39 @@
   {
    "area_km2": 11.6,
    "councillor": null,
+   "electricity_city_share": 0.019,
    "flags": [
     "subcouncil_split"
    ],
    "population": 53100,
    "subcouncil": 10,
-   "subcouncil_share": 0.501,
+   "subcouncil_share": 0.535,
    "ward_no": 99
   },
   {
    "area_km2": 112.64,
    "councillor": null,
+   "electricity_city_share": 0.967,
    "flags": [],
    "population": 51000,
    "subcouncil": 8,
-   "subcouncil_share": 0.994,
+   "subcouncil_share": 0.998,
    "ward_no": 100
   },
   {
    "area_km2": 4.71,
    "councillor": null,
+   "electricity_city_share": 0.135,
    "flags": [],
    "population": 56000,
    "subcouncil": 2,
-   "subcouncil_share": 0.937,
+   "subcouncil_share": 1.0,
    "ward_no": 101
   },
   {
    "area_km2": 44.18,
    "councillor": null,
+   "electricity_city_share": 0.961,
    "flags": [
     "subcouncil_split"
    ],
@@ -1031,6 +1079,7 @@
   {
    "area_km2": 9.24,
    "councillor": null,
+   "electricity_city_share": 1.0,
    "flags": [],
    "population": 33000,
    "subcouncil": 7,
@@ -1040,6 +1089,7 @@
   {
    "area_km2": 4.8,
    "councillor": null,
+   "electricity_city_share": 0.0,
    "flags": [],
    "population": 50600,
    "subcouncil": 3,
@@ -1049,6 +1099,7 @@
   {
    "area_km2": 228.26,
    "councillor": null,
+   "electricity_city_share": 0.393,
    "flags": [],
    "population": 38700,
    "subcouncil": 7,
@@ -1058,17 +1109,17 @@
   {
    "area_km2": 5.85,
    "councillor": null,
-   "flags": [
-    "subcouncil_split"
-   ],
+   "electricity_city_share": 0.0,
+   "flags": [],
    "population": 74000,
    "subcouncil": 5,
-   "subcouncil_share": 0.472,
+   "subcouncil_share": 1.0,
    "ward_no": 106
   },
   {
    "area_km2": 6.12,
    "councillor": null,
+   "electricity_city_share": 0.0,
    "flags": [
     "subcouncil_split"
    ],
@@ -1080,26 +1131,27 @@
   {
    "area_km2": 8.31,
    "councillor": null,
-   "flags": [
-    "subcouncil_split"
-   ],
+   "electricity_city_share": 0.0,
+   "flags": [],
    "population": 50500,
-   "subcouncil": 9,
-   "subcouncil_share": 0.53,
+   "subcouncil": 14,
+   "subcouncil_share": 1.0,
    "ward_no": 108
   },
   {
    "area_km2": 20.57,
    "councillor": null,
+   "electricity_city_share": 0.233,
    "flags": [],
    "population": 45200,
-   "subcouncil": 21,
+   "subcouncil": 8,
    "subcouncil_share": 0.998,
    "ward_no": 109
   },
   {
    "area_km2": 2.83,
    "councillor": null,
+   "electricity_city_share": 1.0,
    "flags": [],
    "population": 39600,
    "subcouncil": 18,
@@ -1109,6 +1161,7 @@
   {
    "area_km2": 8.31,
    "councillor": null,
+   "electricity_city_share": 0.997,
    "flags": [],
    "population": 48700,
    "subcouncil": 2,
@@ -1118,17 +1171,17 @@
   {
    "area_km2": 11.58,
    "councillor": null,
-   "flags": [
-    "subcouncil_split"
-   ],
+   "electricity_city_share": 1.0,
+   "flags": [],
    "population": 27300,
    "subcouncil": 7,
-   "subcouncil_share": 0.703,
+   "subcouncil_share": 1.0,
    "ward_no": 112
   },
   {
    "area_km2": 16.53,
    "councillor": null,
+   "electricity_city_share": 0.0,
    "flags": [],
    "population": 30400,
    "subcouncil": 3,
@@ -1138,56 +1191,51 @@
   {
    "area_km2": 2.84,
    "councillor": null,
-   "flags": [
-    "subcouncil_split"
-   ],
+   "electricity_city_share": 0.687,
+   "flags": [],
    "population": 58700,
-   "subcouncil": 21,
-   "subcouncil_share": 0.677,
+   "subcouncil": 14,
+   "subcouncil_share": 1.0,
    "ward_no": 114
   },
   {
    "area_km2": 10.86,
    "councillor": null,
-   "flags": [
-    "subcouncil_split"
-   ],
+   "electricity_city_share": 0.997,
+   "flags": [],
    "population": 29400,
    "subcouncil": 16,
-   "subcouncil_share": 0.756,
+   "subcouncil_share": 0.988,
    "ward_no": 115
   },
   {
    "area_km2": 2.85,
    "councillor": null,
-   "flags": [
-    "subcouncil_split"
-   ],
+   "electricity_city_share": 1.0,
+   "flags": [],
    "population": 66500,
    "subcouncil": 12,
-   "subcouncil_share": 0.657,
+   "subcouncil_share": 1.0,
    "ward_no": 116
   },
   {
    "area_km2": 10.46,
    "councillor": null,
-   "flags": [
-    "subcouncil_split"
-   ],
+   "electricity_city_share": 0.0,
+   "flags": [],
    "population": 22500,
    "subcouncil": 1,
-   "subcouncil_share": 0.695,
+   "subcouncil_share": 1.0,
    "ward_no": 117
   },
   {
    "area_km2": 15.16,
    "councillor": null,
-   "flags": [
-    "subcouncil_split"
-   ],
+   "electricity_city_share": 0.646,
+   "flags": [],
    "population": 39800,
-   "subcouncil": 9,
-   "subcouncil_share": 0.534,
+   "subcouncil": 14,
+   "subcouncil_share": 1.0,
    "ward_no": 118
   }
  ],
@@ -1201,6 +1249,14 @@
    "title": "Wards (2026 delimitation)",
    "url": "https://citymaps.capetown.gov.za/agsext/rest/services/Theme_Based/ODP_SPLIT_5/FeatureServer/6"
   },
+  "electricity": {
+   "licence": "City of Cape Town Open Data Licence",
+   "notes": "The City's load-shedding areas, which together cover the area where the City distributes electricity. Used to tell City-supplied from Eskom-supplied areas.",
+   "publisher": "City of Cape Town",
+   "retrieved_at": "2026-11-16",
+   "title": "Loadshedding Blocks",
+   "url": "https://citymaps.capetown.gov.za/agsext/rest/services/Theme_Based/Basic_Services_Infrastructure/MapServer/5"
+  },
   "population": {
    "licence": "CC BY 4.0 (GHSL); City of Cape Town Open Data Licence",
    "notes": "Schiavina M., Freire S., Carioli A., MacManus K. (2023): GHS-POP R2023A - GHS population grid multitemporal (1975-2030). European Commission, Joint Research Centre (JRC). doi:10.2905/2FF68A52-5B5B-4A22-8F40-C41DA8332CFE City total from https://services6.arcgis.com/nyYfO9SxHU2ChQd9/arcgis/rest/services/Population_Estimates_2026_(Suburb_Level)/FeatureServer/0.",
@@ -1210,12 +1266,12 @@
    "url": "https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/GHSL/GHS_POP_GLOBE_R2023A/GHS_POP_E2025_GLOBE_R2023A_4326_3ss/V1-0/tiles/GHS_POP_E2025_GLOBE_R2023A_4326_3ss_V1_0_R13_C20.zip"
   },
   "subcouncils": {
-   "licence": "Public budget document",
-   "notes": "City document server unreachable; retrieved from the Internet Archive's copy of the same URL (checksum recorded).",
+   "licence": "City of Cape Town Open Data Licence",
+   "notes": "20 subcouncils, as reconfigured on 30 August 2024.",
    "publisher": "City of Cape Town",
    "retrieved_at": "2026-11-16",
-   "title": "Annexure 25: Operating- and capital ward allocation projects supported by Subcouncils, 2024/25 Budget (May 2024)",
-   "url": "https://resource.capetown.gov.za/documentcentre/Documents/Financial%20documents/Budget2425_Ann25_Oper-capitalwardallocationprojects.pdf"
+   "title": "Sub Council",
+   "url": "https://citymaps.capetown.gov.za/agsext/rest/services/Theme_Based/ODP_SPLIT_5/FeatureServer/5"
   }
  },
  "ward_vintage": 2026

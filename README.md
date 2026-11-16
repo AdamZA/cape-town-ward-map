@@ -79,7 +79,10 @@ every printed total in the PDF.
   `sources/councillors/2026.csv` (`ward_no,name,party`) with a `.source.json` sidecar.
 - **Ward population** is modelled; Stats SA hasn't released Census 2022 by ward.
 - **About a third of service requests** have no usable location and can't be placed in a ward.
-- **Subcouncils** for the 2026 wards are inferred from the previous ward list.
+- **No-water / no-power days** count days with 3+ resident reports, not hours without supply.
+- **Electricity supplier** (City vs Eskom) comes from the City's load-shedding areas, because the
+  City's supply-authority layer is incomplete. Power figures are hidden where Eskom supplies most
+  residents.
 
 ## Licence
 

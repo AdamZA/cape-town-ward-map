@@ -105,14 +105,30 @@
           "type": "array"
         },
         "power_days": {
-          "description": "Days with at least `min_reports` no-power reports",
-          "title": "Power Days",
-          "type": "integer"
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Days with at least `min_reports` no-power reports (City-supplied areas)",
+          "title": "Power Days"
         },
         "power_reports": {
-          "description": "Located no-power reports logged in the period",
-          "title": "Power Reports",
-          "type": "integer"
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Located no-power reports in City-supplied areas; null where Eskom supplies most residents",
+          "title": "Power Reports"
         },
         "ward_no": {
           "title": "Ward No",

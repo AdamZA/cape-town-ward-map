@@ -1,7 +1,12 @@
 // The only module that touches MapLibre. Exposes a tiny imperative API to the app.
+//
+// Layer order (bottom -> top): basemap fills/roads, ward fill, ward borders, selection and
+// search outlines, basemap labels, ward numbers. Every line sits *under* the place names, so a
+// busy junction of borders never hides a name.
 import maplibregl, { type Map as MLMap, type StyleSpecification } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import type { WardFeatures } from "../data";
+import { bbox, type BBox } from "../geo";
 import { NO_DATA, RAMP } from "./scales";
 
 // OpenFreeMap: free, no API key. If it is unavailable we fall back to a blank background; the
@@ -12,6 +17,22 @@ const BLANK: StyleSpecification = {
   sources: {},
   layers: [{ id: "bg", type: "background", paint: { "background-color": "#f2f2ef" } }],
 };
+/** How far past the metro the map may pan (degrees), and how far out it may zoom. */
+const BOUNDS_MARGIN = 0.35;
+const MIN_ZOOM = 8.5;
+const INK = "#16191d";
+const CANDIDATE = "#d9480f";
+
+/** The basemap style, or a blank one if the basemap can't be reached (decided once, up front). */
+export async function basemapStyle(): Promise<StyleSpecification> {
+  try {
+    const res = await fetch(BASEMAP, { signal: AbortSignal.timeout(8000) });
+    if (res.ok) return (await res.json()) as StyleSpecification;
+  } catch {
+    // fall through
+  }
+  return BLANK;
+}
 
 export interface WardMapHandlers {
   onClick: (ward: number | null) => void;
@@ -22,27 +43,30 @@ export class WardMap {
   private map: MLMap;
   private ready: Promise<void>;
   private selected: number | null = null;
+  private candidates: number[] = [];
   private hovered: number | null = null;
   private classes = new Map<number, number>();
+  private extent: BBox;
 
-  constructor(container: HTMLElement, private wards: WardFeatures, handlers: WardMapHandlers) {
+  constructor(container: HTMLElement, private wards: WardFeatures, style: StyleSpecification, handlers: WardMapHandlers) {
+    this.extent = bbox(wards.features.map((f) => f.geometry));
+    const [x0, y0, x1, y1] = this.extent;
     this.map = new maplibregl.Map({
       container,
-      style: BASEMAP,
-      bounds: bbox(wards),
+      style,
+      bounds: [x0, y0, x1, y1],
       fitBoundsOptions: { padding: 24 },
+      maxBounds: [x0 - BOUNDS_MARGIN, y0 - BOUNDS_MARGIN, x1 + BOUNDS_MARGIN, y1 + BOUNDS_MARGIN],
+      minZoom: MIN_ZOOM,
+      maxZoom: 17,
       attributionControl: { compact: true },
-      cooperativeGestures: false,
+      dragRotate: false,
+      pitchWithRotate: false,
     });
+    this.map.touchZoomRotate.disableRotation();
     this.map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-right");
-    let fellBack = false;
-    this.map.on("error", (e) => {
-      // A basemap failure before load: switch to the blank style once.
-      if (!fellBack && !this.map.isStyleLoaded() && String(e.error?.message ?? "").match(/style|fetch|load/i)) {
-        fellBack = true;
-        this.map.setStyle(BLANK);
-      }
-    });
+    // Tile or glyph failures are non-fatal: the ward layer is ours and still renders.
+    this.map.on("error", (e) => console.warn("map:", e.error?.message ?? e));
     this.ready = new Promise((resolve) => this.map.on("load", () => resolve()));
     this.map.on("style.load", () => this.addLayers());
 
@@ -66,51 +90,85 @@ export class WardMap {
 
   private addLayers() {
     if (this.map.getSource("wards")) return;
+    const style = this.map.getStyle();
+    // Points of interest compete with the data for attention; keep places and roads only.
+    for (const l of style.layers) {
+      if (l.type === "symbol" && /poi|housenum|aerialway/i.test(l.id)) this.map.setLayoutProperty(l.id, "visibility", "none");
+    }
+    const firstLabel = style.layers.find((l) => l.type === "symbol")?.id;
     this.map.addSource("wards", { type: "geojson", data: this.wards, promoteId: "ward_no" });
-    const firstLabel = this.map.getStyle().layers.find((l) => l.type === "symbol")?.id;
-    const fillColor: maplibregl.ExpressionSpecification = [
+    // One label point per ward (computed in the ETL), so numbers aren't repeated per tile.
+    this.map.addSource("ward-points", {
+      type: "geojson",
+      data: {
+        type: "FeatureCollection",
+        features: this.wards.features.map((f) => ({
+          type: "Feature",
+          properties: { ward_no: f.properties.ward_no },
+          geometry: { type: "Point", coordinates: f.properties.label },
+        })),
+      },
+    });
+    const fillColor = [
       "match",
       ["coalesce", ["feature-state", "cls"], -1],
       ...RAMP.flatMap((c, i) => [i, c]),
       NO_DATA,
     ] as unknown as maplibregl.ExpressionSpecification;
-    this.map.addLayer(
-      {
-        id: "ward-fill",
-        type: "fill",
-        source: "wards",
-        paint: {
-          "fill-color": fillColor,
-          "fill-opacity": ["case", ["boolean", ["feature-state", "hover"], false], 0.95, 0.8],
-        },
+    const below = (layer: maplibregl.AddLayerObject) => this.map.addLayer(layer, firstLabel);
+    below({
+      id: "ward-fill",
+      type: "fill",
+      source: "wards",
+      paint: {
+        "fill-color": fillColor,
+        "fill-opacity": ["case", ["boolean", ["feature-state", "hover"], false], 0.92, 0.78],
       },
-      firstLabel,
-    );
-    this.map.addLayer({
+    });
+    below({
       id: "ward-line",
       type: "line",
       source: "wards",
-      paint: { "line-color": "#fcfcfb", "line-width": 0.8 },
+      paint: { "line-color": "#ffffff", "line-width": ["interpolate", ["linear"], ["zoom"], 9, 0.5, 13, 1.5], "line-opacity": 0.9 },
     });
-    this.map.addLayer({
+    below({
+      id: "ward-candidate",
+      type: "line",
+      source: "wards",
+      filter: ["in", ["get", "ward_no"], ["literal", []]],
+      paint: { "line-color": CANDIDATE, "line-width": 3, "line-dasharray": [2, 1] },
+    });
+    below({
+      id: "ward-selected-halo",
+      type: "line",
+      source: "wards",
+      filter: ["==", ["get", "ward_no"], -1],
+      paint: { "line-color": "#ffffff", "line-width": 6 },
+    });
+    below({
       id: "ward-selected",
       type: "line",
       source: "wards",
       filter: ["==", ["get", "ward_no"], -1],
-      paint: { "line-color": "#0b0b0b", "line-width": 2.5 },
+      paint: { "line-color": INK, "line-width": 3 },
     });
-    if (this.map.getStyle().glyphs) {
+    if (style.glyphs) {
+      // Ward numbers go on top, and take part in label collision with the basemap's names.
       this.map.addLayer({
         id: "ward-label",
         type: "symbol",
-        source: "wards",
-        minzoom: 11,
-        layout: { "text-field": ["to-string", ["get", "ward_no"]], "text-size": 12, "text-font": ["Noto Sans Regular"] },
-        paint: { "text-color": "#0b0b0b", "text-halo-color": "#fcfcfb", "text-halo-width": 1.5 },
+        source: "ward-points",
+        minzoom: 10,
+        layout: {
+          "text-field": ["to-string", ["get", "ward_no"]],
+          "text-size": ["interpolate", ["linear"], ["zoom"], 10.5, 11, 14, 14],
+          "text-font": ["Noto Sans Bold"],
+        },
+        paint: { "text-color": INK, "text-halo-color": "#ffffff", "text-halo-width": 1.8 },
       });
     }
     this.applyClasses();
-    this.setSelected(this.selected);
+    this.applySelection();
   }
 
   async setClasses(classes: Map<number, number>) {
@@ -130,12 +188,36 @@ export class WardMap {
   async setSelected(ward: number | null, fly = false) {
     this.selected = ward;
     await this.ready;
+    this.applySelection();
+    if (fly && ward) this.fitWards([ward]);
+  }
+
+  /** Outline wards that might be the one the user is looking for (search results). */
+  async setCandidates(wards: number[]) {
+    this.candidates = wards;
+    await this.ready;
+    this.applySelection();
+  }
+
+  private applySelection() {
     if (!this.map.getLayer("ward-selected")) return;
-    this.map.setFilter("ward-selected", ["==", ["get", "ward_no"], ward ?? -1]);
-    if (fly && ward) {
-      const f = this.wards.features.find((x) => x.properties.ward_no === ward);
-      if (f) this.map.fitBounds(bbox({ type: "FeatureCollection", features: [f] }), { padding: 80, maxZoom: 13.5 });
-    }
+    const sel: maplibregl.FilterSpecification = ["==", ["get", "ward_no"], this.selected ?? -1];
+    this.map.setFilter("ward-selected", sel);
+    this.map.setFilter("ward-selected-halo", sel);
+    this.map.setFilter("ward-candidate", ["in", ["get", "ward_no"], ["literal", this.candidates]]);
+  }
+
+  fitWards(wards: number[]) {
+    const fs = this.wards.features.filter((x) => wards.includes(x.properties.ward_no));
+    if (fs.length) this.fit(bbox(fs.map((f) => f.geometry)));
+  }
+
+  fit(b: BBox) {
+    this.map.fitBounds([b[0], b[1], b[2], b[3]], { padding: 60, maxZoom: 14 });
+  }
+
+  showCity() {
+    this.fit(this.extent);
   }
 
   private setHovered(ward: number | null) {
@@ -153,22 +235,4 @@ export class WardMap {
 function wardOf(f: maplibregl.MapGeoJSONFeature | undefined): number | null {
   const n = f?.properties?.ward_no;
   return typeof n === "number" ? n : null;
-}
-
-function bbox(fc: WardFeatures): [[number, number], [number, number]] {
-  let [x0, y0, x1, y1] = [Infinity, Infinity, -Infinity, -Infinity];
-  const visit = (c: unknown): void => {
-    if (Array.isArray(c) && typeof c[0] === "number") {
-      const [x, y] = c as [number, number];
-      x0 = Math.min(x0, x);
-      y0 = Math.min(y0, y);
-      x1 = Math.max(x1, x);
-      y1 = Math.max(y1, y);
-    } else if (Array.isArray(c)) c.forEach(visit);
-  };
-  fc.features.forEach((f) => visit(f.geometry.coordinates));
-  return [
-    [x0, y0],
-    [x1, y1],
-  ];
 }

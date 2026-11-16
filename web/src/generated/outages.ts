@@ -53,13 +53,13 @@ export interface Period {
 export interface OutageRow {
   flags: string[];
   /**
-   * Days with at least `min_reports` no-power reports
+   * Days with at least `min_reports` no-power reports (City-supplied areas)
    */
-  power_days: number;
+  power_days: number | null;
   /**
-   * Located no-power reports logged in the period
+   * Located no-power reports in City-supplied areas; null where Eskom supplies most residents
    */
-  power_reports: number;
+  power_reports: number | null;
   ward_no: number;
   /**
    * Days with at least `min_reports` no-water reports

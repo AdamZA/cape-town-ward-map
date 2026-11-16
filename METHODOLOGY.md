@@ -30,11 +30,10 @@ metro. Where more than 2% of a 2026 ward lies outside every 2021 ward, this is r
 
 ## Subcouncil
 
-There is no published ward-to-subcouncil list for the 2026 wards yet. The City's subcouncil map
-layer ("as at September 2024") has only 20 of the 21 subcouncils, so we don't use it. Instead, the
-latest budget annexure lists every ward under its subcouncil. Each 2026 ward is shown in the
-subcouncil of the 2021 ward covering most of its area. Wards formed from several older wards are
-flagged, and the City may have reassigned wards since.
+Cape Town has had 20 subcouncils since 30 August 2024 (there were 21 before). Each ward is shown
+in the subcouncil covering most of its area on the City's subcouncil map. Where that is under 90%
+of the ward, the panel says how much lies in the subcouncil shown. The 2024/25 budget annexure
+predates the change and still lists 21 subcouncils; its multi-ward items use those old numbers.
 
 ## Population
 
@@ -110,6 +109,42 @@ each ward we estimate the share of its requests that *could* be placed:
 
 Wards under 60% coverage are flagged: their figures describe only part of their requests, and
 their request rate is understated.
+
+## Electricity
+
+The City distributes electricity to most of Cape Town, but Eskom supplies some areas directly,
+and residents there report faults (and pay) to Eskom. The City's "Electricity Supply Authority"
+map layer is currently incomplete (its main City-supplied area is missing from the published
+geometry), so we use the City's load-shedding areas instead. They cover exactly the area where the
+City distributes electricity; everything outside them is treated as Eskom-supplied.
+
+A ward's "electricity supplier" is the share of its modelled population (see Population) living
+inside the City's load-shedding areas.
+
+## Outages
+
+There is no public record of how long water or electricity was off in each area, so this uses what
+residents reported. The City's service requests include "no water" and "no power" reports. One
+burst main produces many reports, and one household's fault produces one. So a day counts as a
+**day with no-water (or no-power) reports** for a ward only when **3 or more** such reports with a
+usable location were logged in the ward that day.
+
+- Period: the 365 days ending on the latest change in the service-request data.
+- Water types: WAT: No Supply; WAT: No Water 40mm and Above; WMM: No Water Below 40mm;
+  WMM: No Water 20mm and below; No Water Supply; No Water WMD.
+- Power types: No Power; No Power – Single unit affected / Multiple units affected / Backyarder.
+- Power figures are shown only for wards where the City supplies at least half of residents, and
+  only reports inside City-supplied areas are counted (see Electricity).
+
+This counts days with clustered reports, not hours without supply. Planned maintenance, announced
+outages and load-shedding are often not reported. Reports without a usable location are left out,
+so wards with low location coverage are undercounted.
+
+## Search
+
+Suburb search uses the City's official suburbs. A suburb is listed with every ward covering at
+least 2% of its area, with the share, because suburbs and wards don't line up. "My location" uses
+the device's position and the ward boundaries directly; the position never leaves the browser.
 
 ## Ward allocations
 

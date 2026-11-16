@@ -8,11 +8,12 @@ from pathlib import Path
 
 
 def _pin(args) -> None:
-    from wardmap.datasets import allocations, boundaries, places, population
+    from wardmap.datasets import allocations, boundaries, electricity, places, population
 
     pins = {
         "boundaries": boundaries.pin,
         "population": population.pin,
+        "electricity": electricity.pin,
         "places": places.pin,
         "allocations": lambda: allocations.pin(args.year, local=args.local),
     }
@@ -66,7 +67,8 @@ def main(argv: list[str] | None = None) -> None:
 
     pin = sub.add_parser("pin", help="Fetch upstream data into sources/ (network, run locally)")
     pin.add_argument(
-        "dataset", choices=["boundaries", "population", "places", "allocations", "all"]
+        "dataset",
+        choices=["boundaries", "population", "electricity", "places", "allocations", "all"],
     )
     pin.add_argument("--year", default="2024-25", help="allocations: budget year, e.g. 2024-25")
     pin.add_argument("--local", action="store_true", help="allocations: use a PDF placed by hand")

@@ -4,9 +4,7 @@ Sources:
 - 2026 wards: City of Cape Town open data (ODP_SPLIT_5 layer 6), cross-checked against the
   Municipal Demarcation Board's 2026 layer at pin time.
 - 2021 wards: Municipal Demarcation Board (the City no longer publishes them).
-
-Subcouncils are not taken from the City's subcouncil layer: it has 20 of the 21 subcouncils.
-See wards.py.
+- Subcouncils: City of Cape Town (20 since 30 August 2024).
 """
 
 from __future__ import annotations
@@ -15,12 +13,14 @@ import json
 
 import numpy as np
 import shapely
+from shapely.ops import polylabel
 
 from wardmap import arcgis, geo
 from wardmap.config import (
     CCT_LICENCE,
     CCT_ODP5,
     CCT_ODP5_MIRROR,
+    CCT_SUBCOUNCILS_LAYER,
     CCT_WARDS_LAYER,
     MDB_LICENCE,
     MDB_WARDS,
@@ -41,6 +41,9 @@ from wardmap.publish import write_geojson, write_model
 DIR = SOURCES / "boundaries"
 SIMPLIFY_TOLERANCE_DEG = 0.0002  # ~20 m; plenty for a city-scale choropleth
 COORD_GRID = 1e-5  # ~1 m
+
+
+SUBCOUNCIL_FILE = DIR / "subcouncils.geojson"
 
 
 def ward_file(vintage: int):
@@ -110,6 +113,26 @@ def pin() -> None:
         ),
     )
 
+    sc, url = arcgis.geojson_any((CCT_ODP5, CCT_ODP5_MIRROR), CCT_SUBCOUNCILS_LAYER)
+    for f in sc["features"]:
+        f["properties"] = {"subcouncil": int(f["properties"]["SUB_CNCL_NMBR"])}
+    sc["features"].sort(key=lambda f: f["properties"]["subcouncil"])
+    nos = [f["properties"]["subcouncil"] for f in sc["features"]]
+    if nos != list(range(1, 21)):
+        raise ValueError(f"expected subcouncils 1..20, got {nos}")
+    write_source_geojson(
+        SUBCOUNCIL_FILE,
+        sc,
+        SourceRecord(
+            title="Sub Council",
+            publisher="City of Cape Town",
+            url=url,
+            retrieved_at=today(),
+            licence=CCT_LICENCE,
+            notes="20 subcouncils, as reconfigured on 30 August 2024.",
+        ),
+    )
+
     mdb21 = _mdb_wards(2021)
     _check_ward_set(mdb21, 2021, "MDB 2021 wards")
     write_source_geojson(
@@ -147,6 +170,14 @@ def source(path) -> Source:
     )
 
 
+def label_point(geom: shapely.Geometry) -> list[float]:
+    """Where to print the ward number: the point of the largest part furthest from its edges."""
+    parts = list(getattr(geom, "geoms", [geom]))
+    largest = max(parts, key=lambda g: g.area)
+    p = polylabel(largest, tolerance=0.0002)
+    return [round(p.x, 5), round(p.y, 5)]
+
+
 def build() -> list[BoundaryEntry]:
     entries = []
     for vintage in sorted(VINTAGE_WARD_COUNT):
@@ -159,7 +190,7 @@ def build() -> list[BoundaryEntry]:
                 {
                     "type": "Feature",
                     "id": no,
-                    "properties": {"ward_no": no},
+                    "properties": {"ward_no": no, "label": label_point(geom)},
                     "geometry": json.loads(shapely.to_geojson(geom)),
                 }
                 for no, geom in zip(ids, simple, strict=True)

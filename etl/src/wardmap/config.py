@@ -25,6 +25,17 @@ CCT_ODP5_MIRROR = (
 )
 CCT_WARDS_LAYER = 6
 CCT_SUBURBS_LAYER = 3
+CCT_SUBCOUNCILS_LAYER = 5  # 20 subcouncils since 30 Aug 2024
+# Load-shedding blocks: the City's own electricity distribution area (outside = Eskom-supplied).
+CCT_BSI = (
+    "https://citymaps.capetown.gov.za/agsext/rest/services/Theme_Based/"
+    "Basic_Services_Infrastructure/MapServer"
+)
+CCT_BSI_MIRROR = (
+    "https://esapqa.capetown.gov.za/agsext/rest/services/Theme_Based/"
+    "Basic_Services_Infrastructure/MapServer"
+)
+CCT_LOADSHEDDING_BLOCKS_LAYER = 5
 
 # Municipal Demarcation Board ward layers on ArcGIS Online (CAT_B = 'CPT' for Cape Town).
 MDB_WARDS = {

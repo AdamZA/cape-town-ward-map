@@ -3,7 +3,7 @@
  "dataset": "outages",
  "fields": {
   "power_days": {
-   "description": "Days in the year with 3 or more reports of no power to the City.",
+   "description": "Days in the year with 3 or more reports of no power to the City (City-supplied areas only).",
    "label": "Days with no-power reports",
    "method": "outages",
    "source": "sr",
@@ -38,9 +38,249 @@
    "ward_no": null
   },
   {
-   "code": "eskom_areas",
-   "message": "Where Eskom supplies homes directly, power faults are reported to Eskom, not the City, so electricity figures there undercount. The City's map of supply areas is currently incomplete, so affected wards can't yet be marked.",
-   "ward_no": null
+   "code": "partly_eskom",
+   "message": "About 47% of this ward's residents are supplied by Eskom directly; electricity figures cover only the City-supplied part.",
+   "ward_no": 5
+  },
+  {
+   "code": "eskom_supplied",
+   "message": "Eskom supplies about 98% of this ward's residents directly, and they report power faults to Eskom, not the City, so electricity figures are not shown.",
+   "ward_no": 6
+  },
+  {
+   "code": "eskom_supplied",
+   "message": "Eskom supplies about 78% of this ward's residents directly, and they report power faults to Eskom, not the City, so electricity figures are not shown.",
+   "ward_no": 7
+  },
+  {
+   "code": "eskom_supplied",
+   "message": "Eskom supplies about 73% of this ward's residents directly, and they report power faults to Eskom, not the City, so electricity figures are not shown.",
+   "ward_no": 12
+  },
+  {
+   "code": "eskom_supplied",
+   "message": "Eskom supplies about 52% of this ward's residents directly, and they report power faults to Eskom, not the City, so electricity figures are not shown.",
+   "ward_no": 13
+  },
+  {
+   "code": "eskom_supplied",
+   "message": "Eskom supplies about 63% of this ward's residents directly, and they report power faults to Eskom, not the City, so electricity figures are not shown.",
+   "ward_no": 14
+  },
+  {
+   "code": "eskom_supplied",
+   "message": "Eskom supplies about 100% of this ward's residents directly, and they report power faults to Eskom, not the City, so electricity figures are not shown.",
+   "ward_no": 16
+  },
+  {
+   "code": "eskom_supplied",
+   "message": "Eskom supplies about 100% of this ward's residents directly, and they report power faults to Eskom, not the City, so electricity figures are not shown.",
+   "ward_no": 17
+  },
+  {
+   "code": "eskom_supplied",
+   "message": "Eskom supplies about 100% of this ward's residents directly, and they report power faults to Eskom, not the City, so electricity figures are not shown.",
+   "ward_no": 18
+  },
+  {
+   "code": "partly_eskom",
+   "message": "About 18% of this ward's residents are supplied by Eskom directly; electricity figures cover only the City-supplied part.",
+   "ward_no": 19
+  },
+  {
+   "code": "eskom_supplied",
+   "message": "Eskom supplies about 100% of this ward's residents directly, and they report power faults to Eskom, not the City, so electricity figures are not shown.",
+   "ward_no": 20
+  },
+  {
+   "code": "eskom_supplied",
+   "message": "Eskom supplies about 87% of this ward's residents directly, and they report power faults to Eskom, not the City, so electricity figures are not shown.",
+   "ward_no": 22
+  },
+  {
+   "code": "partly_eskom",
+   "message": "About 12% of this ward's residents are supplied by Eskom directly; electricity figures cover only the City-supplied part.",
+   "ward_no": 23
+  },
+  {
+   "code": "eskom_supplied",
+   "message": "Eskom supplies about 100% of this ward's residents directly, and they report power faults to Eskom, not the City, so electricity figures are not shown.",
+   "ward_no": 24
+  },
+  {
+   "code": "eskom_supplied",
+   "message": "Eskom supplies about 73% of this ward's residents directly, and they report power faults to Eskom, not the City, so electricity figures are not shown.",
+   "ward_no": 25
+  },
+  {
+   "code": "partly_eskom",
+   "message": "About 37% of this ward's residents are supplied by Eskom directly; electricity figures cover only the City-supplied part.",
+   "ward_no": 26
+  },
+  {
+   "code": "eskom_supplied",
+   "message": "Eskom supplies about 91% of this ward's residents directly, and they report power faults to Eskom, not the City, so electricity figures are not shown.",
+   "ward_no": 28
+  },
+  {
+   "code": "partly_eskom",
+   "message": "About 13% of this ward's residents are supplied by Eskom directly; electricity figures cover only the City-supplied part.",
+   "ward_no": 31
+  },
+  {
+   "code": "partly_eskom",
+   "message": "About 22% of this ward's residents are supplied by Eskom directly; electricity figures cover only the City-supplied part.",
+   "ward_no": 32
+  },
+  {
+   "code": "eskom_supplied",
+   "message": "Eskom supplies about 98% of this ward's residents directly, and they report power faults to Eskom, not the City, so electricity figures are not shown.",
+   "ward_no": 35
+  },
+  {
+   "code": "eskom_supplied",
+   "message": "Eskom supplies about 90% of this ward's residents directly, and they report power faults to Eskom, not the City, so electricity figures are not shown.",
+   "ward_no": 36
+  },
+  {
+   "code": "eskom_supplied",
+   "message": "Eskom supplies about 99% of this ward's residents directly, and they report power faults to Eskom, not the City, so electricity figures are not shown.",
+   "ward_no": 42
+  },
+  {
+   "code": "partly_eskom",
+   "message": "About 17% of this ward's residents are supplied by Eskom directly; electricity figures cover only the City-supplied part.",
+   "ward_no": 76
+  },
+  {
+   "code": "partly_eskom",
+   "message": "About 39% of this ward's residents are supplied by Eskom directly; electricity figures cover only the City-supplied part.",
+   "ward_no": 84
+  },
+  {
+   "code": "partly_eskom",
+   "message": "About 6% of this ward's residents are supplied by Eskom directly; electricity figures cover only the City-supplied part.",
+   "ward_no": 85
+  },
+  {
+   "code": "partly_eskom",
+   "message": "About 33% of this ward's residents are supplied by Eskom directly; electricity figures cover only the City-supplied part.",
+   "ward_no": 86
+  },
+  {
+   "code": "eskom_supplied",
+   "message": "Eskom supplies about 100% of this ward's residents directly, and they report power faults to Eskom, not the City, so electricity figures are not shown.",
+   "ward_no": 87
+  },
+  {
+   "code": "partly_eskom",
+   "message": "About 43% of this ward's residents are supplied by Eskom directly; electricity figures cover only the City-supplied part.",
+   "ward_no": 88
+  },
+  {
+   "code": "eskom_supplied",
+   "message": "Eskom supplies about 100% of this ward's residents directly, and they report power faults to Eskom, not the City, so electricity figures are not shown.",
+   "ward_no": 89
+  },
+  {
+   "code": "partly_eskom",
+   "message": "About 27% of this ward's residents are supplied by Eskom directly; electricity figures cover only the City-supplied part.",
+   "ward_no": 90
+  },
+  {
+   "code": "eskom_supplied",
+   "message": "Eskom supplies about 100% of this ward's residents directly, and they report power faults to Eskom, not the City, so electricity figures are not shown.",
+   "ward_no": 91
+  },
+  {
+   "code": "eskom_supplied",
+   "message": "Eskom supplies about 100% of this ward's residents directly, and they report power faults to Eskom, not the City, so electricity figures are not shown.",
+   "ward_no": 93
+  },
+  {
+   "code": "eskom_supplied",
+   "message": "Eskom supplies about 100% of this ward's residents directly, and they report power faults to Eskom, not the City, so electricity figures are not shown.",
+   "ward_no": 94
+  },
+  {
+   "code": "eskom_supplied",
+   "message": "Eskom supplies about 100% of this ward's residents directly, and they report power faults to Eskom, not the City, so electricity figures are not shown.",
+   "ward_no": 95
+  },
+  {
+   "code": "eskom_supplied",
+   "message": "Eskom supplies about 100% of this ward's residents directly, and they report power faults to Eskom, not the City, so electricity figures are not shown.",
+   "ward_no": 96
+  },
+  {
+   "code": "eskom_supplied",
+   "message": "Eskom supplies about 100% of this ward's residents directly, and they report power faults to Eskom, not the City, so electricity figures are not shown.",
+   "ward_no": 97
+  },
+  {
+   "code": "eskom_supplied",
+   "message": "Eskom supplies about 100% of this ward's residents directly, and they report power faults to Eskom, not the City, so electricity figures are not shown.",
+   "ward_no": 98
+  },
+  {
+   "code": "eskom_supplied",
+   "message": "Eskom supplies about 98% of this ward's residents directly, and they report power faults to Eskom, not the City, so electricity figures are not shown.",
+   "ward_no": 99
+  },
+  {
+   "code": "eskom_supplied",
+   "message": "Eskom supplies about 87% of this ward's residents directly, and they report power faults to Eskom, not the City, so electricity figures are not shown.",
+   "ward_no": 101
+  },
+  {
+   "code": "eskom_supplied",
+   "message": "Eskom supplies about 100% of this ward's residents directly, and they report power faults to Eskom, not the City, so electricity figures are not shown.",
+   "ward_no": 104
+  },
+  {
+   "code": "eskom_supplied",
+   "message": "Eskom supplies about 61% of this ward's residents directly, and they report power faults to Eskom, not the City, so electricity figures are not shown.",
+   "ward_no": 105
+  },
+  {
+   "code": "eskom_supplied",
+   "message": "Eskom supplies about 100% of this ward's residents directly, and they report power faults to Eskom, not the City, so electricity figures are not shown.",
+   "ward_no": 106
+  },
+  {
+   "code": "eskom_supplied",
+   "message": "Eskom supplies about 100% of this ward's residents directly, and they report power faults to Eskom, not the City, so electricity figures are not shown.",
+   "ward_no": 107
+  },
+  {
+   "code": "eskom_supplied",
+   "message": "Eskom supplies about 100% of this ward's residents directly, and they report power faults to Eskom, not the City, so electricity figures are not shown.",
+   "ward_no": 108
+  },
+  {
+   "code": "eskom_supplied",
+   "message": "Eskom supplies about 77% of this ward's residents directly, and they report power faults to Eskom, not the City, so electricity figures are not shown.",
+   "ward_no": 109
+  },
+  {
+   "code": "eskom_supplied",
+   "message": "Eskom supplies about 100% of this ward's residents directly, and they report power faults to Eskom, not the City, so electricity figures are not shown.",
+   "ward_no": 113
+  },
+  {
+   "code": "partly_eskom",
+   "message": "About 31% of this ward's residents are supplied by Eskom directly; electricity figures cover only the City-supplied part.",
+   "ward_no": 114
+  },
+  {
+   "code": "eskom_supplied",
+   "message": "Eskom supplies about 100% of this ward's residents directly, and they report power faults to Eskom, not the City, so electricity figures are not shown.",
+   "ward_no": 117
+  },
+  {
+   "code": "partly_eskom",
+   "message": "About 35% of this ward's residents are supplied by Eskom directly; electricity figures cover only the City-supplied part.",
+   "ward_no": 118
   }
  ],
  "min_reports": 3,
@@ -75,40 +315,46 @@
   },
   {
    "flags": [],
-   "power_days": 157,
-   "power_reports": 1146,
+   "power_days": 151,
+   "power_reports": 1117,
    "ward_no": 4,
    "water_days": 24,
    "water_reports": 264
   },
   {
-   "flags": [],
-   "power_days": 32,
-   "power_reports": 332,
+   "flags": [
+    "partly_eskom"
+   ],
+   "power_days": 24,
+   "power_reports": 300,
    "ward_no": 5,
    "water_days": 40,
    "water_reports": 409
   },
   {
-   "flags": [],
-   "power_days": 0,
-   "power_reports": 40,
+   "flags": [
+    "eskom_supplied"
+   ],
+   "power_days": null,
+   "power_reports": null,
    "ward_no": 6,
    "water_days": 3,
    "water_reports": 40
   },
   {
-   "flags": [],
-   "power_days": 50,
-   "power_reports": 409,
+   "flags": [
+    "eskom_supplied"
+   ],
+   "power_days": null,
+   "power_reports": null,
    "ward_no": 7,
    "water_days": 34,
    "water_reports": 334
   },
   {
    "flags": [],
-   "power_days": 12,
-   "power_reports": 230,
+   "power_days": 11,
+   "power_reports": 215,
    "ward_no": 8,
    "water_days": 22,
    "water_reports": 361
@@ -124,39 +370,45 @@
   {
    "flags": [],
    "power_days": 178,
-   "power_reports": 1458,
+   "power_reports": 1456,
    "ward_no": 10,
    "water_days": 69,
    "water_reports": 527
   },
   {
    "flags": [],
-   "power_days": 61,
-   "power_reports": 636,
+   "power_days": 60,
+   "power_reports": 628,
    "ward_no": 11,
    "water_days": 51,
    "water_reports": 464
   },
   {
-   "flags": [],
-   "power_days": 26,
-   "power_reports": 331,
+   "flags": [
+    "eskom_supplied"
+   ],
+   "power_days": null,
+   "power_reports": null,
    "ward_no": 12,
    "water_days": 14,
    "water_reports": 199
   },
   {
-   "flags": [],
-   "power_days": 25,
-   "power_reports": 281,
+   "flags": [
+    "eskom_supplied"
+   ],
+   "power_days": null,
+   "power_reports": null,
    "ward_no": 13,
    "water_days": 20,
    "water_reports": 182
   },
   {
-   "flags": [],
-   "power_days": 35,
-   "power_reports": 356,
+   "flags": [
+    "eskom_supplied"
+   ],
+   "power_days": null,
+   "power_reports": null,
    "ward_no": 14,
    "water_days": 31,
    "water_reports": 323
@@ -164,47 +416,57 @@
   {
    "flags": [],
    "power_days": 68,
-   "power_reports": 701,
+   "power_reports": 700,
    "ward_no": 15,
    "water_days": 70,
    "water_reports": 688
   },
   {
-   "flags": [],
-   "power_days": 6,
-   "power_reports": 63,
+   "flags": [
+    "eskom_supplied"
+   ],
+   "power_days": null,
+   "power_reports": null,
    "ward_no": 16,
    "water_days": 11,
    "water_reports": 222
   },
   {
-   "flags": [],
-   "power_days": 3,
-   "power_reports": 54,
+   "flags": [
+    "eskom_supplied"
+   ],
+   "power_days": null,
+   "power_reports": null,
    "ward_no": 17,
    "water_days": 27,
    "water_reports": 276
   },
   {
-   "flags": [],
-   "power_days": 1,
-   "power_reports": 13,
+   "flags": [
+    "eskom_supplied"
+   ],
+   "power_days": null,
+   "power_reports": null,
    "ward_no": 18,
    "water_days": 0,
    "water_reports": 23
   },
   {
-   "flags": [],
-   "power_days": 124,
-   "power_reports": 924,
+   "flags": [
+    "partly_eskom"
+   ],
+   "power_days": 111,
+   "power_reports": 834,
    "ward_no": 19,
    "water_days": 30,
    "water_reports": 339
   },
   {
-   "flags": [],
-   "power_days": 6,
-   "power_reports": 72,
+   "flags": [
+    "eskom_supplied"
+   ],
+   "power_days": null,
+   "power_reports": null,
    "ward_no": 20,
    "water_days": 13,
    "water_reports": 197
@@ -218,57 +480,69 @@
    "water_reports": 723
   },
   {
-   "flags": [],
-   "power_days": 9,
-   "power_reports": 140,
+   "flags": [
+    "eskom_supplied"
+   ],
+   "power_days": null,
+   "power_reports": null,
    "ward_no": 22,
    "water_days": 12,
    "water_reports": 206
   },
   {
-   "flags": [],
-   "power_days": 44,
-   "power_reports": 407,
+   "flags": [
+    "partly_eskom"
+   ],
+   "power_days": 41,
+   "power_reports": 377,
    "ward_no": 23,
    "water_days": 34,
    "water_reports": 412
   },
   {
-   "flags": [],
-   "power_days": 6,
-   "power_reports": 73,
+   "flags": [
+    "eskom_supplied"
+   ],
+   "power_days": null,
+   "power_reports": null,
    "ward_no": 24,
    "water_days": 2,
    "water_reports": 76
   },
   {
-   "flags": [],
-   "power_days": 74,
-   "power_reports": 594,
+   "flags": [
+    "eskom_supplied"
+   ],
+   "power_days": null,
+   "power_reports": null,
    "ward_no": 25,
    "water_days": 32,
    "water_reports": 369
   },
   {
-   "flags": [],
-   "power_days": 173,
-   "power_reports": 1595,
+   "flags": [
+    "partly_eskom"
+   ],
+   "power_days": 161,
+   "power_reports": 1504,
    "ward_no": 26,
    "water_days": 60,
    "water_reports": 520
   },
   {
    "flags": [],
-   "power_days": 118,
-   "power_reports": 1114,
+   "power_days": 117,
+   "power_reports": 1105,
    "ward_no": 27,
    "water_days": 36,
    "water_reports": 378
   },
   {
-   "flags": [],
-   "power_days": 47,
-   "power_reports": 375,
+   "flags": [
+    "eskom_supplied"
+   ],
+   "power_days": null,
+   "power_reports": null,
    "ward_no": 28,
    "water_days": 33,
    "water_reports": 354
@@ -276,7 +550,7 @@
   {
    "flags": [],
    "power_days": 114,
-   "power_reports": 773,
+   "power_reports": 772,
    "ward_no": 29,
    "water_days": 7,
    "water_reports": 181
@@ -290,17 +564,21 @@
    "water_reports": 176
   },
   {
-   "flags": [],
-   "power_days": 99,
-   "power_reports": 685,
+   "flags": [
+    "partly_eskom"
+   ],
+   "power_days": 92,
+   "power_reports": 642,
    "ward_no": 31,
    "water_days": 17,
    "water_reports": 230
   },
   {
-   "flags": [],
-   "power_days": 63,
-   "power_reports": 472,
+   "flags": [
+    "partly_eskom"
+   ],
+   "power_days": 62,
+   "power_reports": 467,
    "ward_no": 32,
    "water_days": 1,
    "water_reports": 132
@@ -322,17 +600,21 @@
    "water_reports": 52
   },
   {
-   "flags": [],
-   "power_days": 33,
-   "power_reports": 304,
+   "flags": [
+    "eskom_supplied"
+   ],
+   "power_days": null,
+   "power_reports": null,
    "ward_no": 35,
    "water_days": 2,
    "water_reports": 48
   },
   {
-   "flags": [],
-   "power_days": 4,
-   "power_reports": 97,
+   "flags": [
+    "eskom_supplied"
+   ],
+   "power_days": null,
+   "power_reports": null,
    "ward_no": 36,
    "water_days": 0,
    "water_reports": 20
@@ -378,9 +660,11 @@
    "water_reports": 69
   },
   {
-   "flags": [],
-   "power_days": 8,
-   "power_reports": 100,
+   "flags": [
+    "eskom_supplied"
+   ],
+   "power_days": null,
+   "power_reports": null,
    "ward_no": 42,
    "water_days": 10,
    "water_reports": 164
@@ -388,7 +672,7 @@
   {
    "flags": [],
    "power_days": 253,
-   "power_reports": 2364,
+   "power_reports": 2363,
    "ward_no": 43,
    "water_days": 54,
    "water_reports": 442
@@ -476,7 +760,7 @@
   {
    "flags": [],
    "power_days": 172,
-   "power_reports": 1347,
+   "power_reports": 1332,
    "ward_no": 54,
    "water_days": 41,
    "water_reports": 392
@@ -555,8 +839,8 @@
   },
   {
    "flags": [],
-   "power_days": 121,
-   "power_reports": 1139,
+   "power_days": 119,
+   "power_reports": 1122,
    "ward_no": 64,
    "water_days": 55,
    "water_reports": 464
@@ -636,7 +920,7 @@
   {
    "flags": [],
    "power_days": 221,
-   "power_reports": 1349,
+   "power_reports": 1348,
    "ward_no": 74,
    "water_days": 69,
    "water_reports": 543
@@ -650,9 +934,11 @@
    "water_reports": 314
   },
   {
-   "flags": [],
+   "flags": [
+    "partly_eskom"
+   ],
    "power_days": 37,
-   "power_reports": 345,
+   "power_reports": 339,
    "ward_no": 76,
    "water_days": 14,
    "water_reports": 218
@@ -708,71 +994,87 @@
   {
    "flags": [],
    "power_days": 102,
-   "power_reports": 998,
+   "power_reports": 986,
    "ward_no": 83,
    "water_days": 43,
    "water_reports": 491
   },
   {
-   "flags": [],
-   "power_days": 43,
-   "power_reports": 377,
+   "flags": [
+    "partly_eskom"
+   ],
+   "power_days": 37,
+   "power_reports": 345,
    "ward_no": 84,
    "water_days": 34,
    "water_reports": 419
   },
   {
-   "flags": [],
-   "power_days": 195,
-   "power_reports": 1327,
+   "flags": [
+    "partly_eskom"
+   ],
+   "power_days": 189,
+   "power_reports": 1250,
    "ward_no": 85,
    "water_days": 29,
    "water_reports": 281
   },
   {
-   "flags": [],
-   "power_days": 155,
-   "power_reports": 970,
+   "flags": [
+    "partly_eskom"
+   ],
+   "power_days": 148,
+   "power_reports": 911,
    "ward_no": 86,
    "water_days": 10,
    "water_reports": 123
   },
   {
-   "flags": [],
-   "power_days": 0,
-   "power_reports": 2,
+   "flags": [
+    "eskom_supplied"
+   ],
+   "power_days": null,
+   "power_reports": null,
    "ward_no": 87,
    "water_days": 0,
    "water_reports": 6
   },
   {
-   "flags": [],
-   "power_days": 122,
-   "power_reports": 784,
+   "flags": [
+    "partly_eskom"
+   ],
+   "power_days": 119,
+   "power_reports": 764,
    "ward_no": 88,
    "water_days": 5,
    "water_reports": 74
   },
   {
-   "flags": [],
-   "power_days": 0,
-   "power_reports": 13,
+   "flags": [
+    "eskom_supplied"
+   ],
+   "power_days": null,
+   "power_reports": null,
    "ward_no": 89,
    "water_days": 3,
    "water_reports": 39
   },
   {
-   "flags": [],
-   "power_days": 27,
-   "power_reports": 459,
+   "flags": [
+    "partly_eskom"
+   ],
+   "power_days": 25,
+   "power_reports": 430,
    "ward_no": 90,
    "water_days": 47,
    "water_reports": 482
   },
   {
-   "flags": [],
-   "power_days": 1,
-   "power_reports": 11,
+   "flags": [
+    "eskom_supplied"
+   ],
+   "power_days": null,
+   "power_reports": null,
    "ward_no": 91,
    "water_days": 1,
    "water_reports": 38
@@ -786,73 +1088,89 @@
    "water_reports": 421
   },
   {
-   "flags": [],
-   "power_days": 0,
-   "power_reports": 8,
+   "flags": [
+    "eskom_supplied"
+   ],
+   "power_days": null,
+   "power_reports": null,
    "ward_no": 93,
    "water_days": 0,
    "water_reports": 14
   },
   {
-   "flags": [],
-   "power_days": 0,
-   "power_reports": 27,
+   "flags": [
+    "eskom_supplied"
+   ],
+   "power_days": null,
+   "power_reports": null,
    "ward_no": 94,
    "water_days": 12,
    "water_reports": 112
   },
   {
-   "flags": [],
-   "power_days": 0,
-   "power_reports": 27,
+   "flags": [
+    "eskom_supplied"
+   ],
+   "power_days": null,
+   "power_reports": null,
    "ward_no": 95,
    "water_days": 0,
    "water_reports": 44
   },
   {
-   "flags": [],
-   "power_days": 0,
-   "power_reports": 32,
+   "flags": [
+    "eskom_supplied"
+   ],
+   "power_days": null,
+   "power_reports": null,
    "ward_no": 96,
    "water_days": 1,
    "water_reports": 48
   },
   {
-   "flags": [],
-   "power_days": 1,
-   "power_reports": 43,
+   "flags": [
+    "eskom_supplied"
+   ],
+   "power_days": null,
+   "power_reports": null,
    "ward_no": 97,
    "water_days": 0,
    "water_reports": 88
   },
   {
-   "flags": [],
-   "power_days": 1,
-   "power_reports": 35,
+   "flags": [
+    "eskom_supplied"
+   ],
+   "power_days": null,
+   "power_reports": null,
    "ward_no": 98,
    "water_days": 6,
    "water_reports": 67
   },
   {
-   "flags": [],
-   "power_days": 2,
-   "power_reports": 41,
+   "flags": [
+    "eskom_supplied"
+   ],
+   "power_days": null,
+   "power_reports": null,
    "ward_no": 99,
    "water_days": 6,
    "water_reports": 97
   },
   {
    "flags": [],
-   "power_days": 134,
-   "power_reports": 1077,
+   "power_days": 108,
+   "power_reports": 905,
    "ward_no": 100,
    "water_days": 81,
    "water_reports": 694
   },
   {
-   "flags": [],
-   "power_days": 11,
-   "power_reports": 153,
+   "flags": [
+    "eskom_supplied"
+   ],
+   "power_days": null,
+   "power_reports": null,
    "ward_no": 101,
    "water_days": 5,
    "water_reports": 92
@@ -860,7 +1178,7 @@
   {
    "flags": [],
    "power_days": 29,
-   "power_reports": 430,
+   "power_reports": 425,
    "ward_no": 102,
    "water_days": 9,
    "water_reports": 149
@@ -874,49 +1192,61 @@
    "water_reports": 231
   },
   {
-   "flags": [],
-   "power_days": 2,
-   "power_reports": 32,
+   "flags": [
+    "eskom_supplied"
+   ],
+   "power_days": null,
+   "power_reports": null,
    "ward_no": 104,
    "water_days": 5,
    "water_reports": 74
   },
   {
-   "flags": [],
-   "power_days": 26,
-   "power_reports": 297,
+   "flags": [
+    "eskom_supplied"
+   ],
+   "power_days": null,
+   "power_reports": null,
    "ward_no": 105,
    "water_days": 36,
    "water_reports": 313
   },
   {
-   "flags": [],
-   "power_days": 6,
-   "power_reports": 85,
+   "flags": [
+    "eskom_supplied"
+   ],
+   "power_days": null,
+   "power_reports": null,
    "ward_no": 106,
    "water_days": 10,
    "water_reports": 126
   },
   {
-   "flags": [],
-   "power_days": 16,
-   "power_reports": 205,
+   "flags": [
+    "eskom_supplied"
+   ],
+   "power_days": null,
+   "power_reports": null,
    "ward_no": 107,
    "water_days": 17,
    "water_reports": 219
   },
   {
-   "flags": [],
-   "power_days": 3,
-   "power_reports": 65,
+   "flags": [
+    "eskom_supplied"
+   ],
+   "power_days": null,
+   "power_reports": null,
    "ward_no": 108,
    "water_days": 10,
    "water_reports": 138
   },
   {
-   "flags": [],
-   "power_days": 55,
-   "power_reports": 435,
+   "flags": [
+    "eskom_supplied"
+   ],
+   "power_days": null,
+   "power_reports": null,
    "ward_no": 109,
    "water_days": 45,
    "water_reports": 351
@@ -946,17 +1276,21 @@
    "water_reports": 396
   },
   {
-   "flags": [],
-   "power_days": 20,
-   "power_reports": 198,
+   "flags": [
+    "eskom_supplied"
+   ],
+   "power_days": null,
+   "power_reports": null,
    "ward_no": 113,
    "water_days": 19,
    "water_reports": 236
   },
   {
-   "flags": [],
-   "power_days": 188,
-   "power_reports": 1865,
+   "flags": [
+    "partly_eskom"
+   ],
+   "power_days": 145,
+   "power_reports": 1405,
    "ward_no": 114,
    "water_days": 1,
    "water_reports": 51
@@ -978,17 +1312,21 @@
    "water_reports": 184
   },
   {
-   "flags": [],
-   "power_days": 20,
-   "power_reports": 209,
+   "flags": [
+    "eskom_supplied"
+   ],
+   "power_days": null,
+   "power_reports": null,
    "ward_no": 117,
    "water_days": 22,
    "water_reports": 294
   },
   {
-   "flags": [],
-   "power_days": 242,
-   "power_reports": 2638,
+   "flags": [
+    "partly_eskom"
+   ],
+   "power_days": 205,
+   "power_reports": 1786,
    "ward_no": 118,
    "water_days": 30,
    "water_reports": 288
@@ -996,6 +1334,14 @@
  ],
  "schema_version": 1,
  "sources": {
+  "electricity": {
+   "licence": "City of Cape Town Open Data Licence",
+   "notes": "The City's load-shedding areas, which together cover the area where the City distributes electricity. Used to tell City-supplied from Eskom-supplied areas.",
+   "publisher": "City of Cape Town",
+   "retrieved_at": "2026-11-16",
+   "title": "Loadshedding Blocks",
+   "url": "https://citymaps.capetown.gov.za/agsext/rest/services/Theme_Based/Basic_Services_Infrastructure/MapServer/5"
+  },
   "sr": {
    "licence": "City of Cape Town Open Data Licence",
    "notes": "Mirrored locally and updated with deltas from https://services6.arcgis.com/nyYfO9SxHU2ChQd9/arcgis/rest/services/schema_jan2023_iso/FeatureServer/0. Requests are assigned to 2026 wards by their coordinates.",

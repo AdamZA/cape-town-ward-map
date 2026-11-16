@@ -205,6 +205,19 @@
           ],
           "default": null
         },
+        "electricity_city_share": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Share of the ward's modelled population where the City (not Eskom) supplies electricity",
+          "title": "Electricity City Share"
+        },
         "flags": {
           "default": [],
           "items": {
@@ -247,7 +260,7 @@
             }
           ],
           "default": null,
-          "description": "Share of the ward's area inside that subcouncil boundary",
+          "description": "Share of the ward's area inside that subcouncil's boundary",
           "title": "Subcouncil Share"
         },
         "ward_no": {
@@ -262,6 +275,7 @@
         "subcouncil_share",
         "councillor",
         "population",
+        "electricity_city_share",
         "flags"
       ],
       "title": "WardRow",
