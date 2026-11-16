@@ -270,7 +270,9 @@ strong { font-weight: 650; }
 .share-label { color: var(--ink-2); }
 .share-track { height: 8px; background: var(--surface-2); border-radius: 2px; overflow: hidden; }
 .share-track > span { display: block; height: 100%; background: var(--ink-2); border-radius: 0 2px 2px 0; }
-.share-value { text-align: right; font-weight: 600; }
+.share-value { text-align: right; font-weight: 600; white-space: nowrap; }
+.party-cell { min-width: 11rem; }
+.party-list li { grid-template-columns: minmax(8rem, 13rem) 1fr auto; }
 .here-list { list-style: none; margin: 12px 0 4px; padding: 0; display: grid; gap: 10px; }
 .here-head { display: flex; align-items: center; gap: 6px; font-size: 13px; }
 .here-head .link-btn { margin-left: auto; font-size: 12px; }

@@ -7,6 +7,8 @@ import { suggest } from "../src/search/Search";
 import { bbox, inPolygon } from "../src/geo";
 import { standing } from "../src/metrics";
 import { characterLine } from "../src/places/places";
+import { wardResult } from "../src/elections/Elections";
+import type { AppData } from "../src/data";
 import type { AllocationsEnvelope } from "../src/generated/allocations";
 import type { CrosswalkEnvelope } from "../src/generated/crosswalk";
 
@@ -147,5 +149,20 @@ describe("characterLine", () => {
   });
   it("returns null with no zoned land", () => {
     expect(characterLine({ ...row({}), zoned_km2: 0 }, labels)).toBeNull();
+  });
+});
+
+describe("wardResult", () => {
+  const row = (ward_no: number) => ({ ward_no, registered: 100, turnout: 0.5, winner: "A", parties: [] });
+  const base = { wards: { ward_vintage: 2026 }, crosswalk: { from_vintage: 2021, rows: [{ from_ward: 3, to_ward: 7, share_of_from: 0.5, share_of_to: 0.7 }] } };
+  it("uses the same ward when the election was on current boundaries", () => {
+    const data = { ...base, electionWards: [{ year: 2026, ward_vintage: 2026, rows: [row(7)] }] } as unknown as AppData;
+    expect(wardResult(data, 7)?.oldWard).toBeNull();
+  });
+  it("falls back to the old ward covering most of the ward", () => {
+    const data = { ...base, electionWards: [{ year: 2021, ward_vintage: 2021, rows: [row(3)] }] } as unknown as AppData;
+    const r = wardResult(data, 7);
+    expect(r?.row.ward_no).toBe(3);
+    expect(r?.oldWard).toEqual({ ward: 3, share: 0.7 });
   });
 });

@@ -2,13 +2,21 @@
 
 from __future__ import annotations
 
-from wardmap.config import CURRENT_VINTAGE, DB_PATH
+from wardmap.config import CURRENT_VINTAGE, DB_PATH, LGE
 from wardmap.models import Index, IndexEntry
 from wardmap.publish import write_model
 
 
 def build_all() -> None:
-    from wardmap.datasets import allocations, boundaries, land_use, landmarks, places, wards
+    from wardmap.datasets import (
+        allocations,
+        boundaries,
+        elections,
+        land_use,
+        landmarks,
+        places,
+        wards,
+    )
     from wardmap.datasets.service_requests import aggregate, outages
 
     boundary_entries = boundaries.build()
@@ -40,6 +48,21 @@ def build_all() -> None:
                 dataset=name, file=f"{name}-{CURRENT_VINTAGE}.json", ward_vintage=CURRENT_VINTAGE
             )
         )
+
+    for year in elections.years():
+        elections.build(year)
+        vintage = LGE[year][1]
+        entries.append(
+            IndexEntry(dataset="elections", file=f"elections-{year}.json", ward_vintage=vintage)
+        )
+        for code in elections.WARD_MUNICIPALITIES:
+            entries.append(
+                IndexEntry(
+                    dataset="election_wards",
+                    file=f"election_wards-{code}-{year}.json",
+                    ward_vintage=vintage,
+                )
+            )
 
     for year in allocations.years():
         allocations.build(year)

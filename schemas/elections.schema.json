@@ -1,0 +1,411 @@
+{
+  "$defs": {
+    "FieldMeta": {
+      "additionalProperties": false,
+      "properties": {
+        "description": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Description"
+        },
+        "label": {
+          "title": "Label",
+          "type": "string"
+        },
+        "method": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Anchor in METHODOLOGY.md",
+          "title": "Method"
+        },
+        "source": {
+          "description": "Key into the envelope's `sources`",
+          "title": "Source",
+          "type": "string"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Unit"
+        }
+      },
+      "required": [
+        "label",
+        "unit",
+        "source",
+        "method",
+        "description"
+      ],
+      "title": "FieldMeta",
+      "type": "object"
+    },
+    "Gap": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        },
+        "ward_no": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Null for gaps that apply to the whole dataset",
+          "title": "Ward No"
+        }
+      },
+      "required": [
+        "code",
+        "message",
+        "ward_no"
+      ],
+      "title": "Gap",
+      "type": "object"
+    },
+    "MunicipalityResult": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "description": "IEC/MDB municipality code, e.g. CPT, WC011",
+          "title": "Code",
+          "type": "string"
+        },
+        "independent_seats": {
+          "description": "Seats won by independent ward candidates",
+          "title": "Independent Seats",
+          "type": "integer"
+        },
+        "kind": {
+          "enum": [
+            "metro",
+            "local"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "largest_party": {
+          "description": "Party with the most seats (ties: most votes)",
+          "title": "Largest Party",
+          "type": "string"
+        },
+        "majority": {
+          "description": "Largest party holds more than half the seats",
+          "title": "Majority",
+          "type": "boolean"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "parties": {
+          "description": "Parties that won seats, then others by votes (up to 12); PR ballot votes",
+          "items": {
+            "$ref": "#/$defs/PartyResult"
+          },
+          "title": "Parties",
+          "type": "array"
+        },
+        "province": {
+          "title": "Province",
+          "type": "string"
+        },
+        "registered": {
+          "description": "Registered voters",
+          "title": "Registered",
+          "type": "integer"
+        },
+        "seats_total": {
+          "description": "Council size, including independent ward councillors",
+          "title": "Seats Total",
+          "type": "integer"
+        },
+        "turnout": {
+          "description": "Ballots cast (valid + spoilt) / registered, PR ballot",
+          "title": "Turnout",
+          "type": "number"
+        }
+      },
+      "required": [
+        "code",
+        "name",
+        "province",
+        "kind",
+        "seats_total",
+        "independent_seats",
+        "registered",
+        "turnout",
+        "largest_party",
+        "majority",
+        "parties"
+      ],
+      "title": "MunicipalityResult",
+      "type": "object"
+    },
+    "NationalParty": {
+      "additionalProperties": false,
+      "properties": {
+        "councils_largest": {
+          "description": "Councils where it has the most seats",
+          "title": "Councils Largest",
+          "type": "integer"
+        },
+        "councils_majority": {
+          "description": "Councils where it has more than half the seats",
+          "title": "Councils Majority",
+          "type": "integer"
+        },
+        "party": {
+          "title": "Party",
+          "type": "string"
+        },
+        "registered_in_majority": {
+          "description": "Registered voters living in councils where it has a majority",
+          "title": "Registered In Majority",
+          "type": "integer"
+        },
+        "seats": {
+          "description": "Seats won across all metro and local councils",
+          "title": "Seats",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "party",
+        "seats",
+        "councils_largest",
+        "councils_majority",
+        "registered_in_majority"
+      ],
+      "title": "NationalParty",
+      "type": "object"
+    },
+    "PartyResult": {
+      "additionalProperties": false,
+      "properties": {
+        "party": {
+          "title": "Party",
+          "type": "string"
+        },
+        "seats": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Council seats won (municipality rows only)",
+          "title": "Seats"
+        },
+        "share": {
+          "description": "Share of valid votes on this ballot, 0-1",
+          "title": "Share",
+          "type": "number"
+        },
+        "votes": {
+          "title": "Votes",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "party",
+        "votes",
+        "share",
+        "seats"
+      ],
+      "title": "PartyResult",
+      "type": "object"
+    },
+    "Period": {
+      "additionalProperties": false,
+      "properties": {
+        "from": {
+          "title": "From",
+          "type": "string"
+        },
+        "to": {
+          "title": "To",
+          "type": "string"
+        }
+      },
+      "required": [
+        "from",
+        "to"
+      ],
+      "title": "Period",
+      "type": "object"
+    },
+    "Source": {
+      "additionalProperties": false,
+      "properties": {
+        "licence": {
+          "title": "Licence",
+          "type": "string"
+        },
+        "notes": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Notes"
+        },
+        "publisher": {
+          "title": "Publisher",
+          "type": "string"
+        },
+        "retrieved_at": {
+          "description": "ISO date the data was retrieved",
+          "title": "Retrieved At",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "publisher",
+        "url",
+        "retrieved_at",
+        "licence",
+        "notes"
+      ],
+      "title": "Source",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "as_of": {
+      "description": "ISO date (or year-month) the figures describe, not when the file was built",
+      "title": "As Of",
+      "type": "string"
+    },
+    "dataset": {
+      "const": "elections",
+      "default": "elections",
+      "title": "Dataset",
+      "type": "string"
+    },
+    "fields": {
+      "additionalProperties": {
+        "$ref": "#/$defs/FieldMeta"
+      },
+      "title": "Fields",
+      "type": "object"
+    },
+    "gaps": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/Gap"
+      },
+      "title": "Gaps",
+      "type": "array"
+    },
+    "municipalities": {
+      "items": {
+        "$ref": "#/$defs/MunicipalityResult"
+      },
+      "title": "Municipalities",
+      "type": "array"
+    },
+    "national": {
+      "description": "Parties with any seats, most seats first",
+      "items": {
+        "$ref": "#/$defs/NationalParty"
+      },
+      "title": "National",
+      "type": "array"
+    },
+    "period": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Period"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "schema_version": {
+      "default": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "sources": {
+      "additionalProperties": {
+        "$ref": "#/$defs/Source"
+      },
+      "title": "Sources",
+      "type": "object"
+    },
+    "ward_vintage": {
+      "description": "Year the ward delimitation took effect (2021, 2026)",
+      "title": "Ward Vintage",
+      "type": "integer"
+    },
+    "year": {
+      "title": "Year",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "dataset",
+    "schema_version",
+    "ward_vintage",
+    "as_of",
+    "period",
+    "sources",
+    "fields",
+    "gaps",
+    "year",
+    "municipalities",
+    "national"
+  ],
+  "title": "ElectionsEnvelope",
+  "type": "object"
+}

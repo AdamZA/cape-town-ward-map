@@ -39,6 +39,31 @@ CCT_LOADSHEDDING_BLOCKS_LAYER = 5
 CCT_THEMES = "https://citymaps.capetown.gov.za/agsext/rest/services/Theme_Based"
 CCT_ZONING_LAYER = f"{CCT_THEMES}/Land_Parcel_Zonning/MapServer/2"  # (sic) the City's spelling
 
+# Electoral Commission of South Africa (IEC): static report files behind the results portal.
+IEC_REPORTS = "https://results.elections.org.za/home/LGEPublicReports"
+IEC_RESULTS_PAGE = "https://results.elections.org.za/home/Downloads/ME-Results/"
+IEC_LICENCE = (
+    "Electoral Commission of South Africa (copyright notice: reproduction for non-commercial "
+    "use; https://www.elections.org.za/pw/Copyright-Notice)"
+)
+# Local government elections: year -> (IEC event id, ward vintage the election was fought on).
+LGE = {
+    2021: (1091, 2021),
+    2026: (1887, 2026),
+}
+IEC_PROVINCES = {  # IEC report file codes
+    "EC": "Eastern Cape",
+    "FS": "Free State",
+    "GP": "Gauteng",
+    "KN": "KwaZulu-Natal",
+    "NP": "Limpopo",
+    "MP": "Mpumalanga",
+    "NW": "North West",
+    "NC": "Northern Cape",
+    "WP": "Western Cape",
+}
+METROS = {"BUF", "CPT", "EKU", "ETH", "JHB", "MAN", "NMA", "TSH"}
+
 # OpenStreetMap (malls only: the City publishes no shopping-centre layer).
 OVERPASS = "https://overpass-api.de/api/interpreter"
 OSM_LICENCE = "Open Database License (ODbL) 1.0, (c) OpenStreetMap contributors"

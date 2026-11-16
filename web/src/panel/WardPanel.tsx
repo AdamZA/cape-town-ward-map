@@ -5,6 +5,7 @@ import { fmtDate, fmtInt, fmtPct } from "../format";
 import { Allocations } from "./Allocations";
 import { Figure } from "./Figure";
 import { Gaps, gapsFor } from "./Gaps";
+import { WardElection } from "../elections/Elections";
 import { WhatsHere } from "../places/WhatsHere";
 import { Summary } from "./Summary";
 
@@ -81,6 +82,8 @@ export function WardPanel({ data, metrics, ward, layers, onShowLayer, onClose }:
       </section>
 
       <WhatsHere data={data} ward={ward} layers={layers} onShow={onShowLayer} />
+
+      <WardElection data={data} ward={ward} />
 
       <section class="section">
         <h3>Service requests</h3>

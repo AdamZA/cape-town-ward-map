@@ -63,6 +63,7 @@ CATEGORIES: dict[str, tuple[str, str]] = {
 # Words kept in capitals when tidying the City's upper-case names.
 ACRONYMS = {"CDC", "CHC", "MOU", "SAPS", "TB", "HIV", "NG", "VGK", "AGS", "UCT", "CPUT", "UWC"}
 ACRONYMS |= {"II", "III", "IV", "SA", "RSA", "MPC", "YMCA", "CBD"}
+SMALL_WORDS = {"of", "and", "the", "for", "in", "on", "at", "to", "van", "der", "den", "de"}
 
 
 def tidy(name: str) -> str:
@@ -80,7 +81,9 @@ def tidy(name: str) -> str:
             re.sub(r"[a-z]", lambda m: m.group().upper(), p.lower(), count=1) for p in w.split("-")
         )
 
-    return " ".join(word(w) for w in name.split(" "))
+    words = [word(w) for w in name.split(" ")]
+    # Short joining words stay lower case except at the start ("Congress of Azania").
+    return " ".join(w.lower() if i and w.lower() in SMALL_WORDS else w for i, w in enumerate(words))
 
 
 HEALTH_CLASSES = {  # City layer's CLS domain

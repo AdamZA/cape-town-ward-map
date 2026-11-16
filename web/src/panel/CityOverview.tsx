@@ -4,6 +4,7 @@ import { useState } from "preact/hooks";
 import type { AppData } from "../data";
 import { fmtDate, fmtInt, fmtUnit } from "../format";
 import { type Metric, type MetricKey, METRIC_KEYS, median } from "../metrics";
+import { CouncilResults } from "../elections/Elections";
 import { Figure, METHODOLOGY_URL } from "./Figure";
 
 interface Props {
@@ -97,6 +98,8 @@ export function CityOverview({ data, metrics, metric, onWard, onClose }: Props) 
           </p>
         )}
       </section>
+
+      <CouncilResults data={data} code="CPT" />
 
       <section class="section">
         <h3>All wards</h3>

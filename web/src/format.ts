@@ -21,6 +21,8 @@ export function fmtUnit(v: number, unit: string | null | undefined): string {
   switch (unit) {
     case "%":
       return fmtPct(v);
+    case "share":
+      return fmtPct(v * 100);
     case "R":
       return fmtRand(v);
     case "days":

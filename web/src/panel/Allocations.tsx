@@ -12,7 +12,7 @@ const MIN_OVERLAP = 0.05; // ignore slivers: predecessors covering under 5% of t
 export function predecessors(
   ward: number,
   wardVintage: number,
-  budget: AllocationsEnvelope,
+  budget: { ward_vintage: number },
   crosswalk: CrosswalkEnvelope | null,
 ): { ward: number; share: number }[] {
   if (budget.ward_vintage === wardVintage) return [{ ward, share: 1 }];

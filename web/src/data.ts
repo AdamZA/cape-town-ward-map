@@ -2,6 +2,8 @@
 import type { FeatureCollection, MultiPolygon, Polygon } from "geojson";
 import type { AllocationsEnvelope } from "./generated/allocations";
 import type { CrosswalkEnvelope } from "./generated/crosswalk";
+import type { ElectionWardsEnvelope } from "./generated/election_wards";
+import type { ElectionsEnvelope } from "./generated/elections";
 import type { Index } from "./generated/index";
 import type { LandUseEnvelope } from "./generated/land_use";
 import type { LandmarksEnvelope } from "./generated/landmarks";
@@ -23,6 +25,10 @@ export interface AppData {
   landmarks: LandmarksEnvelope;
   landUse: LandUseEnvelope;
   allocations: AllocationsEnvelope[];
+  /** Newest first. National council results. */
+  elections: ElectionsEnvelope[];
+  /** Newest first. Cape Town ward-ballot results (each on its own ward vintage). */
+  electionWards: ElectionWardsEnvelope[];
   crosswalk: CrosswalkEnvelope | null;
 }
 
@@ -45,7 +51,8 @@ export async function loadAll(): Promise<AppData> {
   };
   const allocationFiles = index.datasets.filter((d) => d.dataset === "allocations");
   const crosswalkEntry = index.datasets.find((d) => d.dataset === "crosswalk");
-  const [boundaries, wards, serviceRequests, outages, places, landmarks, landUse, allocations, crosswalk] = await Promise.all([
+  const all = (dataset: string) => index.datasets.filter((d) => d.dataset === dataset);
+  const [boundaries, wards, serviceRequests, outages, places, landmarks, landUse, allocations, elections, electionWards, crosswalk] = await Promise.all([
     get<WardFeatures>(boundary!.file),
     get<WardsEnvelope>(one("wards")),
     get<ServiceRequestsEnvelope>(one("service_requests")),
@@ -54,8 +61,12 @@ export async function loadAll(): Promise<AppData> {
     get<LandmarksEnvelope>(one("landmarks")),
     get<LandUseEnvelope>(one("land_use")),
     Promise.all(allocationFiles.map((d) => get<AllocationsEnvelope>(d.file))),
+    Promise.all(all("elections").map((d) => get<ElectionsEnvelope>(d.file))),
+    Promise.all(all("election_wards").map((d) => get<ElectionWardsEnvelope>(d.file))),
     crosswalkEntry ? get<CrosswalkEnvelope>(crosswalkEntry.file) : Promise.resolve(null),
   ]);
   allocations.sort((a, b) => b.budget_year.localeCompare(a.budget_year));
-  return { index, boundaries, wards, serviceRequests, outages, places, landmarks, landUse, allocations, crosswalk };
+  elections.sort((a, b) => b.year - a.year);
+  electionWards.sort((a, b) => b.year - a.year);
+  return { index, boundaries, wards, serviceRequests, outages, places, landmarks, landUse, allocations, elections, electionWards, crosswalk };
 }

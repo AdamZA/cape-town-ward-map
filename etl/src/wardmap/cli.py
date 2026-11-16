@@ -8,10 +8,11 @@ from pathlib import Path
 
 
 def _pin(args) -> None:
-    from wardmap.config import CURRENT_VINTAGE
+    from wardmap.config import CURRENT_VINTAGE, LGE
     from wardmap.datasets import (
         allocations,
         boundaries,
+        elections,
         electricity,
         land_use,
         landmarks,
@@ -27,6 +28,9 @@ def _pin(args) -> None:
         "land_use": lambda: land_use.pin(CURRENT_VINTAGE),
         "landmarks": landmarks.pin,
         "allocations": lambda: allocations.pin(args.year, local=args.local),
+        "elections": lambda: [
+            elections.pin(y) for y in ([args.election] if args.election else sorted(LGE))
+        ],
     }
     targets = list(pins) if args.dataset == "all" else [args.dataset]
     for t in targets:
@@ -87,11 +91,13 @@ def main(argv: list[str] | None = None) -> None:
             "land_use",
             "landmarks",
             "allocations",
+            "elections",
             "all",
         ],
     )
     pin.add_argument("--year", default="2024-25", help="allocations: budget year, e.g. 2024-25")
     pin.add_argument("--local", action="store_true", help="allocations: use a PDF placed by hand")
+    pin.add_argument("--election", type=int, help="elections: one election year (default: all)")
     pin.set_defaults(fn=_pin)
 
     b = sub.add_parser("build", help="Build data/ from sources/ and the DB (offline)")

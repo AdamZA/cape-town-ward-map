@@ -26,6 +26,7 @@ MIN_INTERVAL = {
     "citymaps.capetown.gov.za": 1.5,
     "esapqa.capetown.gov.za": 1.5,
     "overpass-api.de": 5.0,
+    "results.elections.org.za": 1.5,
     "services6.arcgis.com": 0.5,
     "services7.arcgis.com": 0.5,
 }

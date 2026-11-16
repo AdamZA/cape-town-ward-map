@@ -281,7 +281,67 @@ class LandUseEnvelope(EnvelopeBase):
     rows: list[LandUseRow]
 
 
+# ---- elections ---------------------------------------------------------------------------------
+
+
+class PartyResult(Strict):
+    party: str
+    votes: int
+    share: float = Field(description="Share of valid votes on this ballot, 0-1")
+    seats: int | None = Field(None, description="Council seats won (municipality rows only)")
+
+
+class MunicipalityResult(Strict):
+    code: str = Field(description="IEC/MDB municipality code, e.g. CPT, WC011")
+    name: str
+    province: str
+    kind: Literal["metro", "local"]
+    seats_total: int = Field(description="Council size, including independent ward councillors")
+    independent_seats: int = Field(description="Seats won by independent ward candidates")
+    registered: int = Field(description="Registered voters")
+    turnout: float = Field(description="Ballots cast (valid + spoilt) / registered, PR ballot")
+    largest_party: str = Field(description="Party with the most seats (ties: most votes)")
+    majority: bool = Field(description="Largest party holds more than half the seats")
+    parties: list[PartyResult] = Field(
+        description="Parties that won seats, then others by votes (up to 12); PR ballot votes"
+    )
+
+
+class NationalParty(Strict):
+    party: str
+    seats: int = Field(description="Seats won across all metro and local councils")
+    councils_largest: int = Field(description="Councils where it has the most seats")
+    councils_majority: int = Field(description="Councils where it has more than half the seats")
+    registered_in_majority: int = Field(
+        description="Registered voters living in councils where it has a majority"
+    )
+
+
+class ElectionsEnvelope(EnvelopeBase):
+    dataset: Literal["elections"] = "elections"
+    year: int
+    municipalities: list[MunicipalityResult]
+    national: list[NationalParty] = Field(description="Parties with any seats, most seats first")
+
+
+class WardElectionRow(Strict):
+    ward_no: int
+    registered: int
+    turnout: float = Field(description="Ballots cast / registered on the ward ballot")
+    winner: str = Field(description="Party (or independent) with most ward-ballot votes")
+    parties: list[PartyResult] = Field(description="Ward ballot, most votes first (up to 8)")
+
+
+class ElectionWardsEnvelope(EnvelopeBase):
+    dataset: Literal["election_wards"] = "election_wards"
+    year: int
+    municipality: str
+    rows: list[WardElectionRow]
+
+
 ENVELOPES: dict[str, type[BaseModel]] = {
+    "elections": ElectionsEnvelope,
+    "election_wards": ElectionWardsEnvelope,
     "landmarks": LandmarksEnvelope,
     "land_use": LandUseEnvelope,
     "wards": WardsEnvelope,

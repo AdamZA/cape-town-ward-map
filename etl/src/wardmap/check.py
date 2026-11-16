@@ -75,6 +75,17 @@ def run() -> int:
             ]
             if stray:
                 err(f"{entry.file}: places in unknown wards {sorted(set(stray))[:10]}")
+        if entry.dataset == "election_wards":
+            nos = sorted(r.ward_no for r in env.rows)
+            if nos != sorted(expected):
+                err(f"{entry.file}: rows are not exactly wards 1..{len(expected)}")
+        if entry.dataset == "elections":
+            for m in env.municipalities:
+                won = sum(p.seats or 0 for p in m.parties)
+                if won + m.independent_seats != m.seats_total or m.independent_seats < 0:
+                    err(f"{entry.file}: {m.code} party seats {won} vs council {m.seats_total}")
+                if not 0.05 < m.turnout < 1:
+                    err(f"{entry.file}: {m.code} implausible turnout {m.turnout}")
         if entry.dataset == "allocations":
             wards = {r.ward_no for r in env.rows if r.ward_no is not None}
             if wards != expected:

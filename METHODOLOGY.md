@@ -183,6 +183,32 @@ which sends requests to each host one at a time with a minimum gap (1.5 s for th
 servers, 5 s for OpenStreetMap's Overpass API), backs off on errors and honours `Retry-After`.
 Monthly refreshes fetch only what changed since the last run.
 
+## Elections
+
+Results come from the Electoral Commission of South Africa (IEC). For each local government
+election we download the IEC's published files: votes for every party at every voting district,
+and each council's seat calculation. Votes are added up to ward level when the files are pinned;
+nothing is estimated.
+
+- **Council seats** are as allocated after the election. By-elections, floor crossings and
+  coalitions formed later are not shown. Where no party won more than half the seats, the site
+  says so instead of naming a governing party.
+- **Markers on the IEC's seat calculation** are stated as notes: a party that won more ward
+  seats than its share of the vote ("excess seats"), and a party with fewer candidates than
+  seats won ("potential forfeiture"). Seats won by independent ward candidates are shown
+  separately.
+- **Ward results** are the ward ballot: votes for ward candidates, by party or independent.
+  Residents also vote on a party list (PR ballot), which tops up the council so seats match
+  overall support. The council table uses the PR ballot's votes.
+- **Turnout** is ballots cast, including spoilt ones, as a share of registered voters.
+- **Earlier ward boundaries.** An election is fought on the wards of its time. When the map shows
+  newer wards, a ward's result is that of the old ward covering most of it, and the site says so.
+- **The national table** covers all metro and local councils. District councils are left out
+  because they overlap the local councils.
+
+The IEC's copyright notice allows reproduction for non-commercial use. This project is
+non-commercial and credits the IEC on every figure.
+
 ## Ward allocations
 
 Each year the City budgets a fixed amount per ward (R1 million in 2024/25) for projects proposed

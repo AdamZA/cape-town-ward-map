@@ -1,0 +1,10 @@
+{
+  "licence": "Electoral Commission of South Africa (copyright notice: reproduction for non-commercial use; https://www.elections.org.za/pw/Copyright-Notice)",
+  "method": "aggregated",
+  "notes": "Seats won per party per council, from each council's seat calculation. Built from https://results.elections.org.za/home/LGEPublicReports/1887/...; upstream sha256: {\"EC.csv\": \"62d52b01f002b80b2dc398fc3e088843cfe493b0b5de66df472cfc1f54decd49\", \"FS.csv\": \"4fbddd15aee3c59c80e752a736ce416dea20e07c33337a101b2e7602ab63b3da\", \"GP.csv\": \"b142ea43bb4281f4b98b8f0c5021fdb42f77c096832145fc9526805a1b43408c\", \"KN.csv\": \"1d0478c334dbb0f66fbc45810cc610337d34dda56deb96544426c3d9273c3b25\", \"MP.csv\": \"fab380774059c1a59d60b406f896aaaa6928a73a422e3841a2f9571b66a962f2\", \"NC.csv\": \"5ba0a698645c53d64cd2fe3067990b7b72bcbf66a2e5640bca569af13a881a9b\", \"NP.csv\": \"decf6887aec1010bf231cece760f9d68a6eb4d27b5f78b91b3b135260203d259\", \"NW.csv\": \"1cd975fca48b27063e4b567871cd5d400306bc9f96edf332cdcc3b06404c4c54\", \"WP.csv\": \"862211175527a3a3978e53ba572e2c5ff0d598a8f7ec25b8b377b01060590ec5\"}",
+  "publisher": "Electoral Commission of South Africa (IEC)",
+  "retrieved_at": "2026-11-16",
+  "sha256": "60cc74ef65d62cd54d8d6873a3385390aee9137a07d17b11eddb08dad0019287",
+  "title": "Local Government Elections 2026: results",
+  "url": "https://results.elections.org.za/home/Downloads/ME-Results/"
+}

@@ -13,7 +13,8 @@ export type MetricKey =
   | "per_1000"
   | "pct_located"
   | "water_days"
-  | "power_days";
+  | "power_days"
+  | "turnout";
 
 export interface Metric {
   key: MetricKey;
@@ -51,6 +52,11 @@ const outage = (field: "water_days" | "power_days") => (d: AppData) => ({
   values: new Map(d.outages.rows.map((r) => [r.ward_no, r[field]])),
   city: null,
 });
+
+/** Latest ward-ballot results fought on the wards the map shows (none until such an election). */
+export function currentElectionWards(d: AppData) {
+  return d.electionWards.find((e) => e.ward_vintage === d.wards.ward_vintage) ?? null;
+}
 
 const SERVICE = "Service requests";
 const SUPPLY = "Water and electricity";
@@ -91,6 +97,20 @@ const DEFS: Record<MetricKey, Def> = {
     reading: "Days in the past year when several residents reported no power to the City. Not shown where Eskom supplies most residents.",
     nullLabel: "Mostly supplied by Eskom (not covered)",
     build: outage("power_days"),
+  },
+  turnout: {
+    topic: "Elections",
+    reading: "Share of registered voters who cast a ward ballot in the latest local election.",
+    nullLabel: "No data",
+    build: (d) => {
+      const e = currentElectionWards(d);
+      return {
+        env: e ?? d.wards,
+        field: e ? "turnout" : "population",
+        values: new Map(e ? e.rows.map((r) => [r.ward_no, r.turnout]) : []),
+        city: null,
+      };
+    },
   },
 };
 
