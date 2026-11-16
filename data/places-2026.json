@@ -1,0 +1,12747 @@
+{
+ "as_of": "2026-11-16",
+ "dataset": "places",
+ "fields": {
+  "wards": {
+   "description": "Every ward covering at least 2% of the suburb's area.",
+   "label": "Wards covering this suburb",
+   "method": null,
+   "source": "suburbs",
+   "unit": null
+  }
+ },
+ "gaps": [],
+ "period": null,
+ "rows": [
+  {
+   "bbox": [
+    18.735,
+    -34.0206,
+    18.7432,
+    -34.0043
+   ],
+   "name": "Aan De Wijnlanden Estate",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5015,
+    -33.9052,
+    18.5334,
+    -33.8852
+   ],
+   "name": "Acacia Park",
+   "wards": [
+    {
+     "share": 0.904,
+     "ward_no": 27
+    },
+    {
+     "share": 0.096,
+     "ward_no": 55
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.874,
+    -34.1522,
+    18.8815,
+    -34.1447
+   ],
+   "name": "Admirals Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 100
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5838,
+    -33.9437,
+    18.5931,
+    -33.9358
+   ],
+   "name": "Adriaanse",
+   "wards": [
+    {
+     "share": 0.548,
+     "ward_no": 42
+    },
+    {
+     "share": 0.452,
+     "ward_no": 28
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6204,
+    -33.9997,
+    18.6274,
+    -33.9965
+   ],
+   "name": "Airport",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 36
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5876,
+    -33.9873,
+    18.6019,
+    -33.9734
+   ],
+   "name": "Airport City",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 22
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6601,
+    -33.8626,
+    18.6706,
+    -33.8493
+   ],
+   "name": "Amanda Glen",
+   "wards": [
+    {
+     "share": 0.792,
+     "ward_no": 21
+    },
+    {
+     "share": 0.208,
+     "ward_no": 103
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6873,
+    -33.9261,
+    18.6951,
+    -33.9147
+   ],
+   "name": "Amandelrug",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 11
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6891,
+    -33.9322,
+    18.699,
+    -33.9232
+   ],
+   "name": "Amandelsig",
+   "wards": [
+    {
+     "share": 0.752,
+     "ward_no": 11
+    },
+    {
+     "share": 0.248,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.871,
+    -34.1535,
+    18.8791,
+    -34.1438
+   ],
+   "name": "Anchorage Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 100
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6836,
+    -33.9176,
+    18.6987,
+    -33.9045
+   ],
+   "name": "Annandale",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 11
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5415,
+    -33.8312,
+    18.5577,
+    -33.8147
+   ],
+   "name": "Annandale Farm",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 13
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8504,
+    -34.1466,
+    18.8546,
+    -34.1433
+   ],
+   "name": "Antilles/Cayman Beach",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 100
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6825,
+    -33.8775,
+    18.6877,
+    -33.8684
+   ],
+   "name": "Arauna",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 7
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8463,
+    -34.1139,
+    18.8611,
+    -34.1012
+   ],
+   "name": "Asanda",
+   "wards": [
+    {
+     "share": 0.965,
+     "ward_no": 85
+    },
+    {
+     "share": 0.035,
+     "ward_no": 86
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8509,
+    -34.1072,
+    18.8564,
+    -34.1009
+   ],
+   "name": "Asla Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 85
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4949,
+    -33.9739,
+    18.5147,
+    -33.9602
+   ],
+   "name": "Athlone",
+   "wards": [
+    {
+     "share": 0.743,
+     "ward_no": 48
+    },
+    {
+     "share": 0.257,
+     "ward_no": 60
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4531,
+    -33.6146,
+    18.5,
+    -33.5747
+   ],
+   "name": "Atlantis Industrial",
+   "wards": [
+    {
+     "share": 0.964,
+     "ward_no": 32
+    },
+    {
+     "share": 0.036,
+     "ward_no": 29
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5523,
+    -33.8181,
+    18.5578,
+    -33.8136
+   ],
+   "name": "Atlas Gardens Business Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 13
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.839,
+    -34.0846,
+    18.849,
+    -34.0756
+   ],
+   "name": "Audas Estate",
+   "wards": [
+    {
+     "share": 0.809,
+     "ward_no": 84
+    },
+    {
+     "share": 0.191,
+     "ward_no": 15
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6246,
+    -33.8412,
+    18.6368,
+    -33.8226
+   ],
+   "name": "Aurora",
+   "wards": [
+    {
+     "share": 0.886,
+     "ward_no": 112
+    },
+    {
+     "share": 0.114,
+     "ward_no": 13
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6932,
+    -33.9814,
+    18.7009,
+    -33.9746
+   ],
+   "name": "Austinville",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6876,
+    -33.8251,
+    18.6974,
+    -33.8199
+   ],
+   "name": "Avalon Estate",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 112
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5657,
+    -33.9234,
+    18.5712,
+    -33.9168
+   ],
+   "name": "Avon",
+   "wards": [
+    {
+     "share": 0.972,
+     "ward_no": 26
+    },
+    {
+     "share": 0.028,
+     "ward_no": 28
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5964,
+    -33.904,
+    18.6055,
+    -33.8892
+   ],
+   "name": "Avondale - Parow",
+   "wards": [
+    {
+     "share": 0.697,
+     "ward_no": 2
+    },
+    {
+     "share": 0.303,
+     "ward_no": 10
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4783,
+    -33.5764,
+    18.4972,
+    -33.5571
+   ],
+   "name": "Avondale - Wesfleur",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 29
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5757,
+    -33.9289,
+    18.5852,
+    -33.9218
+   ],
+   "name": "Avonwood",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 28
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5773,
+    -33.9362,
+    18.587,
+    -33.9281
+   ],
+   "name": "Balvenie",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 28
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.3744,
+    -33.9318,
+    18.3824,
+    -33.9241
+   ],
+   "name": "Bantry Bay",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 54
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6639,
+    -34.0259,
+    18.6773,
+    -34.0158
+   ],
+   "name": "Barnet Molokwana Corner",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 93
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.567,
+    -33.8674,
+    18.5902,
+    -33.8531
+   ],
+   "name": "Baronetcy Estate",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 1
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4963,
+    -33.5645,
+    18.5164,
+    -33.5511
+   ],
+   "name": "Beacon Hill",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 32
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6173,
+    -34.0481,
+    18.6357,
+    -34.0324
+   ],
+   "name": "Beacon Valley",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 116
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5776,
+    -33.9217,
+    18.6044,
+    -33.9095
+   ],
+   "name": "Beaconvale",
+   "wards": [
+    {
+     "share": 0.956,
+     "ward_no": 26
+    },
+    {
+     "share": 0.044,
+     "ward_no": 10
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8281,
+    -34.0487,
+    18.8358,
+    -34.0421
+   ],
+   "name": "Bel'Aire",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 90
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5109,
+    -33.9799,
+    18.5262,
+    -33.9631
+   ],
+   "name": "Belgravia",
+   "wards": [
+    {
+     "share": 0.575,
+     "ward_no": 48
+    },
+    {
+     "share": 0.425,
+     "ward_no": 46
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6398,
+    -33.9037,
+    18.6478,
+    -33.8976
+   ],
+   "name": "Belgravia -Bellville",
+   "wards": [
+    {
+     "share": 0.709,
+     "ward_no": 3
+    },
+    {
+     "share": 0.291,
+     "ward_no": 10
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6042,
+    -33.9484,
+    18.6122,
+    -33.9413
+   ],
+   "name": "Belhar Ext 1",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 22
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6387,
+    -33.9448,
+    18.6478,
+    -33.9414
+   ],
+   "name": "Belhar Ext 10",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 12
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6427,
+    -33.9472,
+    18.6462,
+    -33.9444
+   ],
+   "name": "Belhar Ext 11",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 12
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6359,
+    -33.95,
+    18.6427,
+    -33.9471
+   ],
+   "name": "Belhar Ext 12",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 12
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6301,
+    -33.9531,
+    18.6425,
+    -33.9496
+   ],
+   "name": "Belhar Ext 13",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 12
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6324,
+    -33.9505,
+    18.6394,
+    -33.9429
+   ],
+   "name": "Belhar Ext 14",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 12
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6404,
+    -33.9472,
+    18.6428,
+    -33.9444
+   ],
+   "name": "Belhar Ext 15",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 12
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.639,
+    -33.9537,
+    18.6478,
+    -33.9445
+   ],
+   "name": "Belhar Ext 16",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 12
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6089,
+    -33.9435,
+    18.6268,
+    -33.9374
+   ],
+   "name": "Belhar Ext 17",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 22
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6472,
+    -33.9545,
+    18.658,
+    -33.9494
+   ],
+   "name": "Belhar Ext 18",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 12
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6475,
+    -33.9522,
+    18.6553,
+    -33.9472
+   ],
+   "name": "Belhar Ext 19",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 12
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5984,
+    -33.9512,
+    18.6156,
+    -33.9449
+   ],
+   "name": "Belhar Ext 2",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 22
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6477,
+    -33.9489,
+    18.6558,
+    -33.9449
+   ],
+   "name": "Belhar Ext 20",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 12
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6475,
+    -33.9462,
+    18.6574,
+    -33.9394
+   ],
+   "name": "Belhar Ext 21",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 12
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6543,
+    -33.9501,
+    18.6605,
+    -33.938
+   ],
+   "name": "Belhar Ext 22",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 12
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6381,
+    -33.9424,
+    18.6477,
+    -33.9346
+   ],
+   "name": "Belhar Ext 23",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 22
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6155,
+    -33.952,
+    18.6265,
+    -33.9424
+   ],
+   "name": "Belhar Ext 3",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 22
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6119,
+    -33.9488,
+    18.6245,
+    -33.943
+   ],
+   "name": "Belhar Ext 4",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 22
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6113,
+    -33.9461,
+    18.6231,
+    -33.9419
+   ],
+   "name": "Belhar Ext 5",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 22
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6251,
+    -33.9521,
+    18.6353,
+    -33.9418
+   ],
+   "name": "Belhar Ext 6",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 22
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6265,
+    -33.9524,
+    18.639,
+    -33.942
+   ],
+   "name": "Belhar Ext 7",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 12
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6257,
+    -33.9424,
+    18.6393,
+    -33.9359
+   ],
+   "name": "Belhar Ext 8",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 22
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6378,
+    -33.9475,
+    18.6414,
+    -33.9441
+   ],
+   "name": "Belhar Ext 9",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 12
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.749,
+    -34.0624,
+    18.7565,
+    -34.0555
+   ],
+   "name": "Bell Glen",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 109
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6514,
+    -33.886,
+    18.6655,
+    -33.8815
+   ],
+   "name": "Bellair",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 3
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6266,
+    -33.9066,
+    18.6432,
+    -33.8972
+   ],
+   "name": "Bellville Cbd",
+   "wards": [
+    {
+     "share": 0.964,
+     "ward_no": 10
+    },
+    {
+     "share": 0.036,
+     "ward_no": 2
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6474,
+    -33.9412,
+    18.6626,
+    -33.9274
+   ],
+   "name": "Bellville Landfill",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 9
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6322,
+    -33.9248,
+    18.6523,
+    -33.9076
+   ],
+   "name": "Bellville South",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 9
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6414,
+    -33.9257,
+    18.661,
+    -33.9161
+   ],
+   "name": "Bellville South Industria",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 9
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6767,
+    -33.9432,
+    18.683,
+    -33.9375
+   ],
+   "name": "Bellville Teachers College",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 19
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7202,
+    -33.8588,
+    18.7357,
+    -33.8414
+   ],
+   "name": "Belmont Park",
+   "wards": [
+    {
+     "share": 0.827,
+     "ward_no": 111
+    },
+    {
+     "share": 0.173,
+     "ward_no": 101
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6323,
+    -33.9069,
+    18.64,
+    -33.9037
+   ],
+   "name": "Belrail",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 10
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5069,
+    -33.9891,
+    18.5205,
+    -33.978
+   ],
+   "name": "Belthorn Estate",
+   "wards": [
+    {
+     "share": 0.978,
+     "ward_no": 48
+    },
+    {
+     "share": 0.022,
+     "ward_no": 60
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5975,
+    -33.8904,
+    18.601,
+    -33.8883
+   ],
+   "name": "Belvedere Tygerberg",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 2
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8503,
+    -34.0788,
+    18.8565,
+    -34.077
+   ],
+   "name": "Bene Township",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 15
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6889,
+    -33.9423,
+    18.6922,
+    -33.9397
+   ],
+   "name": "Benno Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.847,
+    -34.0771,
+    18.8498,
+    -34.0747
+   ],
+   "name": "Berbago",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 15
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4439,
+    -34.0657,
+    18.4636,
+    -34.0342
+   ],
+   "name": "Bergvliet",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 73
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6555,
+    -33.8608,
+    18.6611,
+    -33.8557
+   ],
+   "name": "Bethanie",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 21
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4533,
+    -33.8018,
+    18.4685,
+    -33.785
+   ],
+   "name": "Big Bay",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 23
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5663,
+    -33.9544,
+    18.5982,
+    -33.9427
+   ],
+   "name": "Bishop Lavis",
+   "wards": [
+    {
+     "share": 0.736,
+     "ward_no": 42
+    },
+    {
+     "share": 0.173,
+     "ward_no": 22
+    },
+    {
+     "share": 0.091,
+     "ward_no": 31
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4326,
+    -34.002,
+    18.4556,
+    -33.9806
+   ],
+   "name": "Bishopscourt",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 62
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.856,
+    -34.0944,
+    18.8705,
+    -34.0845
+   ],
+   "name": "Bizweni",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 84
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4516,
+    -33.809,
+    18.4705,
+    -33.7792
+   ],
+   "name": "Blaauwbergstrand",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 23
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6873,
+    -33.9767,
+    18.7073,
+    -33.9516
+   ],
+   "name": "Blackheath Industria",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7426,
+    -33.8501,
+    18.7531,
+    -33.8345
+   ],
+   "name": "Bloekombos",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 101
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6398,
+    -33.8842,
+    18.6506,
+    -33.8777
+   ],
+   "name": "Bloemhof",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 21
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6486,
+    -33.8915,
+    18.657,
+    -33.8859
+   ],
+   "name": "Blommendal",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 3
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6422,
+    -33.8866,
+    18.6526,
+    -33.8806
+   ],
+   "name": "Blomtuin",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 3
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6174,
+    -33.8813,
+    18.6213,
+    -33.8781
+   ],
+   "name": "Blomvlei",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 70
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4777,
+    -33.8187,
+    18.489,
+    -33.8091
+   ],
+   "name": "Blouberg Rise",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 107
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4704,
+    -33.8082,
+    18.4837,
+    -33.795
+   ],
+   "name": "Blouberg Sands",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 117
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4731,
+    -33.8195,
+    18.4798,
+    -33.8119
+   ],
+   "name": "Bloubergrant",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 107
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6805,
+    -33.9872,
+    18.6953,
+    -33.9751
+   ],
+   "name": "Blue Downs Cbd",
+   "wards": [
+    {
+     "share": 0.871,
+     "ward_no": 14
+    },
+    {
+     "share": 0.104,
+     "ward_no": 108
+    },
+    {
+     "share": 0.025,
+     "ward_no": 17
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6341,
+    -33.8871,
+    18.6421,
+    -33.8718
+   ],
+   "name": "Bo Oakdale",
+   "wards": [
+    {
+     "share": 0.896,
+     "ward_no": 21
+    },
+    {
+     "share": 0.104,
+     "ward_no": 70
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4043,
+    -33.9264,
+    18.4177,
+    -33.9145
+   ],
+   "name": "Bo-Kaap",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 77
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6323,
+    -34.0471,
+    18.6566,
+    -34.0157
+   ],
+   "name": "Bongani",
+   "wards": [
+    {
+     "share": 0.968,
+     "ward_no": 99
+    },
+    {
+     "share": 0.032,
+     "ward_no": 87
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6972,
+    -33.837,
+    18.7096,
+    -33.8279
+   ],
+   "name": "Bonnie Brae",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 102
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6971,
+    -33.8404,
+    18.7069,
+    -33.8323
+   ],
+   "name": "Bonnie Brook",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 102
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.541,
+    -33.9618,
+    18.5643,
+    -33.9414
+   ],
+   "name": "Bonteheuwel",
+   "wards": [
+    {
+     "share": 0.729,
+     "ward_no": 50
+    },
+    {
+     "share": 0.247,
+     "ward_no": 31
+    },
+    {
+     "share": 0.024,
+     "ward_no": 52
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5737,
+    -33.982,
+    18.5919,
+    -33.9554
+   ],
+   "name": "Boquinar Industrial Area",
+   "wards": [
+    {
+     "share": 0.952,
+     "ward_no": 31
+    },
+    {
+     "share": 0.048,
+     "ward_no": 22
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6248,
+    -33.8978,
+    18.6277,
+    -33.8948
+   ],
+   "name": "Bosbell",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 2
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.872,
+    -34.0988,
+    18.8816,
+    -34.0897
+   ],
+   "name": "Boskloof",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 84
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6787,
+    -33.93,
+    18.6859,
+    -33.9246
+   ],
+   "name": "Bosonia",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 11
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6136,
+    -33.9018,
+    18.6341,
+    -33.8871
+   ],
+   "name": "Boston",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 2
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7188,
+    -33.8975,
+    18.7532,
+    -33.8603
+   ],
+   "name": "Botfontein Smallholdings",
+   "wards": [
+    {
+     "share": 0.727,
+     "ward_no": 6
+    },
+    {
+     "share": 0.273,
+     "ward_no": 8
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5295,
+    -33.874,
+    18.5573,
+    -33.8483
+   ],
+   "name": "Bothasig",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 5
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7127,
+    -33.9056,
+    18.7193,
+    -33.8964
+   ],
+   "name": "Bottelary Smallholdings 1",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 8
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6971,
+    -33.9175,
+    18.7138,
+    -33.9016
+   ],
+   "name": "Bottelary Smallholdings 2",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 11
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6742,
+    -33.8787,
+    18.6827,
+    -33.872
+   ],
+   "name": "Bracken Heights",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 111
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6753,
+    -33.8902,
+    18.6944,
+    -33.8746
+   ],
+   "name": "Brackenfell Central",
+   "wards": [
+    {
+     "share": 0.944,
+     "ward_no": 7
+    },
+    {
+     "share": 0.056,
+     "ward_no": 8
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6707,
+    -33.9104,
+    18.6803,
+    -33.9075
+   ],
+   "name": "Brackenfell Common",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 11
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6951,
+    -33.8743,
+    18.7177,
+    -33.8597
+   ],
+   "name": "Brackenfell Industria",
+   "wards": [
+    {
+     "share": 0.677,
+     "ward_no": 111
+    },
+    {
+     "share": 0.323,
+     "ward_no": 7
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6959,
+    -33.9045,
+    18.7213,
+    -33.883
+   ],
+   "name": "Brackenfell South",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 8
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8254,
+    -34.0543,
+    18.8287,
+    -34.0519
+   ],
+   "name": "Braeview",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 90
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7742,
+    -34.0656,
+    18.7765,
+    -34.0641
+   ],
+   "name": "Brandwacht",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 109
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6804,
+    -33.9197,
+    18.6875,
+    -33.9122
+   ],
+   "name": "Brandwag",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 11
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6699,
+    -33.9311,
+    18.6769,
+    -33.9179
+   ],
+   "name": "Brantwood",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 11
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6475,
+    -33.987,
+    18.6657,
+    -33.9784
+   ],
+   "name": "Brentwood Park - Blue Downs",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 108
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6618,
+    -33.815,
+    18.6651,
+    -33.8117
+   ],
+   "name": "Brentwood Park - Durbanville",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 105
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8474,
+    -34.0941,
+    18.8516,
+    -34.0898
+   ],
+   "name": "Bridgebank",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 84
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5214,
+    -33.9687,
+    18.541,
+    -33.9502
+   ],
+   "name": "Bridgetown",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 49
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8496,
+    -34.0914,
+    18.855,
+    -34.0887
+   ],
+   "name": "Bridgewater",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 84
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8334,
+    -34.0752,
+    18.8452,
+    -34.0577
+   ],
+   "name": "Briza",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 15
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8612,
+    -34.1391,
+    18.8928,
+    -34.12
+   ],
+   "name": "Broadlands",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 100
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8575,
+    -34.1337,
+    18.8653,
+    -34.1264
+   ],
+   "name": "Broadlands Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 100
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8513,
+    -34.1276,
+    18.8612,
+    -34.1218
+   ],
+   "name": "Broadlands Village",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 86
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4745,
+    -33.9183,
+    18.4906,
+    -33.9012
+   ],
+   "name": "Brooklyn",
+   "wards": [
+    {
+     "share": 0.969,
+     "ward_no": 55
+    },
+    {
+     "share": 0.031,
+     "ward_no": 56
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7107,
+    -33.83,
+    18.723,
+    -33.8166
+   ],
+   "name": "Buh-Rein Estate",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 102
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.683,
+    -33.9054,
+    18.6971,
+    -33.8925
+   ],
+   "name": "Burgundy",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 11
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5415,
+    -33.8477,
+    18.5553,
+    -33.8286
+   ],
+   "name": "Burgundy Estate",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 13
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6646,
+    -33.9655,
+    18.6735,
+    -33.9578
+   ],
+   "name": "Camelot",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 19
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.3717,
+    -33.9691,
+    18.3916,
+    -33.9407
+   ],
+   "name": "Camps Bay / Bakoven",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 54
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.3413,
+    -33.8344,
+    18.6102,
+    -33.5089
+   ],
+   "name": "Cape Farms - District B",
+   "wards": [
+    {
+     "share": 0.453,
+     "ward_no": 32
+    },
+    {
+     "share": 0.298,
+     "ward_no": 29
+    },
+    {
+     "share": 0.249,
+     "ward_no": 23
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5435,
+    -33.8574,
+    18.731,
+    -33.5844
+   ],
+   "name": "Cape Farms - District C",
+   "wards": [
+    {
+     "share": 0.656,
+     "ward_no": 13
+    },
+    {
+     "share": 0.32,
+     "ward_no": 105
+    },
+    {
+     "share": 0.024,
+     "ward_no": 70
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.3191,
+    -34.359,
+    18.4977,
+    -34.0157
+   ],
+   "name": "Cape Farms - District H",
+   "wards": [
+    {
+     "share": 0.733,
+     "ward_no": 61
+    },
+    {
+     "share": 0.185,
+     "ward_no": 71
+    },
+    {
+     "share": 0.082,
+     "ward_no": 69
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6913,
+    -33.8579,
+    18.6985,
+    -33.8465
+   ],
+   "name": "Cape Gate",
+   "wards": [
+    {
+     "share": 0.501,
+     "ward_no": 102
+    },
+    {
+     "share": 0.499,
+     "ward_no": 103
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5879,
+    -33.9981,
+    18.6327,
+    -33.9479
+   ],
+   "name": "Cape Town Airport",
+   "wards": [
+    {
+     "share": 0.708,
+     "ward_no": 22
+    },
+    {
+     "share": 0.181,
+     "ward_no": 106
+    },
+    {
+     "share": 0.111,
+     "ward_no": 24
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4118,
+    -33.9326,
+    18.4352,
+    -33.9109
+   ],
+   "name": "Cape Town City Centre",
+   "wards": [
+    {
+     "share": 0.978,
+     "ward_no": 115
+    },
+    {
+     "share": 0.022,
+     "ward_no": 77
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8387,
+    -34.0886,
+    18.845,
+    -34.0844
+   ],
+   "name": "Carey Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 84
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8498,
+    -34.0948,
+    18.8535,
+    -34.092
+   ],
+   "name": "Carwick",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 84
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4708,
+    -34.2488,
+    18.4781,
+    -34.2354
+   ],
+   "name": "Castle Rock",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 61
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5011,
+    -33.9011,
+    18.5244,
+    -33.8778
+   ],
+   "name": "Century City",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 55
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6551,
+    -33.8647,
+    18.6622,
+    -33.8592
+   ],
+   "name": "Chantecler",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 21
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5628,
+    -33.9638,
+    18.5689,
+    -33.9565
+   ],
+   "name": "Charlesville",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 31
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.758,
+    -34.0633,
+    18.7611,
+    -34.0607
+   ],
+   "name": "Chris Hani Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 109
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8695,
+    -34.1114,
+    18.8731,
+    -34.1082
+   ],
+   "name": "Chris Nissen Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 84
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6409,
+    -33.9004,
+    18.6516,
+    -33.8862
+   ],
+   "name": "Chrismar",
+   "wards": [
+    {
+     "share": 0.938,
+     "ward_no": 3
+    },
+    {
+     "share": 0.062,
+     "ward_no": 10
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5683,
+    -33.9028,
+    18.5867,
+    -33.8949
+   ],
+   "name": "Churchill Estate",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 2
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5862,
+    -33.9,
+    18.5923,
+    -33.8932
+   ],
+   "name": "Clamhall",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 2
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6214,
+    -33.8269,
+    18.6364,
+    -33.8127
+   ],
+   "name": "Clara Anna Fontein",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 13
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4516,
+    -33.9955,
+    18.4912,
+    -33.9724
+   ],
+   "name": "Claremont",
+   "wards": [
+    {
+     "share": 0.6,
+     "ward_no": 58
+    },
+    {
+     "share": 0.4,
+     "ward_no": 59
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5779,
+    -33.9429,
+    18.5843,
+    -33.9362
+   ],
+   "name": "Clarkes Estate",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 42
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.3708,
+    -33.9463,
+    18.3813,
+    -33.9296
+   ],
+   "name": "Clifton",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 54
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4137,
+    -34.1327,
+    18.4464,
+    -34.1086
+   ],
+   "name": "Clovelly",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 64
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5743,
+    -34.031,
+    18.5984,
+    -34.0206
+   ],
+   "name": "Colorado Park",
+   "wards": [
+    {
+     "share": 0.59,
+     "ward_no": 78
+    },
+    {
+     "share": 0.41,
+     "ward_no": 75
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5852,
+    -33.9358,
+    18.5949,
+    -33.9278
+   ],
+   "name": "Connaught",
+   "wards": [
+    {
+     "share": 0.971,
+     "ward_no": 25
+    },
+    {
+     "share": 0.029,
+     "ward_no": 28
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.3999,
+    -34.0561,
+    18.463,
+    -33.9932
+   ],
+   "name": "Constantia",
+   "wards": [
+    {
+     "share": 0.648,
+     "ward_no": 62
+    },
+    {
+     "share": 0.279,
+     "ward_no": 71
+    },
+    {
+     "share": 0.073,
+     "ward_no": 73
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.636,
+    -33.9359,
+    18.6604,
+    -33.9286
+   ],
+   "name": "Cput",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 9
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5834,
+    -33.9309,
+    18.5941,
+    -33.9206
+   ],
+   "name": "Cravenby",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 25
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5011,
+    -33.9861,
+    18.5119,
+    -33.9733
+   ],
+   "name": "Crawford",
+   "wards": [
+    {
+     "share": 0.717,
+     "ward_no": 60
+    },
+    {
+     "share": 0.283,
+     "ward_no": 48
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5739,
+    -33.9996,
+    18.6216,
+    -33.9791
+   ],
+   "name": "Crossroads",
+   "wards": [
+    {
+     "share": 0.782,
+     "ward_no": 36
+    },
+    {
+     "share": 0.111,
+     "ward_no": 38
+    },
+    {
+     "share": 0.086,
+     "ward_no": 37
+    },
+    {
+     "share": 0.02,
+     "ward_no": 40
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7501,
+    -34.0405,
+    18.7587,
+    -34.0312
+   ],
+   "name": "Croydon",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 90
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7498,
+    -34.0463,
+    18.7631,
+    -34.0409
+   ],
+   "name": "Croydon Olive Estate",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 90
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7496,
+    -34.0437,
+    18.7581,
+    -34.0346
+   ],
+   "name": "Croydon Vineyard Estate",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 90
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.63,
+    -33.8239,
+    18.6453,
+    -33.8113
+   ],
+   "name": "D'Urbanvale",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 13
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6767,
+    -33.9376,
+    18.6805,
+    -33.9357
+   ],
+   "name": "Danarand",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 19
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6272,
+    -33.8628,
+    18.6328,
+    -33.8488
+   ],
+   "name": "De Bron",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 70
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5671,
+    -33.888,
+    18.5742,
+    -33.8817
+   ],
+   "name": "De Duin",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 1
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5522,
+    -33.8627,
+    18.5864,
+    -33.8217
+   ],
+   "name": "De Grendel Farm",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 1
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6751,
+    -33.9341,
+    18.6829,
+    -33.9227
+   ],
+   "name": "De Kuilen",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 11
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6467,
+    -33.9057,
+    18.6579,
+    -33.8944
+   ],
+   "name": "De La Haye",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 3
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6893,
+    -33.8984,
+    18.7001,
+    -33.8886
+   ],
+   "name": "De Oude Spruit",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 8
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.59,
+    -33.8943,
+    18.599,
+    -33.8851
+   ],
+   "name": "De Tijger",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 2
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8186,
+    -34.0937,
+    18.8264,
+    -34.0888
+   ],
+   "name": "De Velde",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 83
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7403,
+    -34.0216,
+    18.7474,
+    -34.006
+   ],
+   "name": "De Wijnlanden Estate",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7642,
+    -34.0627,
+    18.7692,
+    -34.0581
+   ],
+   "name": "Deaconville",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 109
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7735,
+    -34.0691,
+    18.7775,
+    -34.065
+   ],
+   "name": "Deepfreeze",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 109
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6254,
+    -33.9604,
+    18.6361,
+    -33.9521
+   ],
+   "name": "Delft 1 & 2",
+   "wards": [
+    {
+     "share": 0.976,
+     "ward_no": 20
+    },
+    {
+     "share": 0.024,
+     "ward_no": 22
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6248,
+    -33.9652,
+    18.6309,
+    -33.9592
+   ],
+   "name": "Delft 3",
+   "wards": [
+    {
+     "share": 0.969,
+     "ward_no": 20
+    },
+    {
+     "share": 0.031,
+     "ward_no": 106
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6305,
+    -33.9646,
+    18.6381,
+    -33.9588
+   ],
+   "name": "Delft 4",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 20
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6248,
+    -33.969,
+    18.6331,
+    -33.9643
+   ],
+   "name": "Delft 5",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 106
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6261,
+    -33.9772,
+    18.6338,
+    -33.9684
+   ],
+   "name": "Delft 6",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 106
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6311,
+    -33.9819,
+    18.6391,
+    -33.9757
+   ],
+   "name": "Delft 7",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 106
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6374,
+    -33.9836,
+    18.644,
+    -33.976
+   ],
+   "name": "Delft 8",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 106
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6272,
+    -33.9872,
+    18.6416,
+    -33.9809
+   ],
+   "name": "Delft 9",
+   "wards": [
+    {
+     "share": 0.956,
+     "ward_no": 24
+    },
+    {
+     "share": 0.044,
+     "ward_no": 106
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6244,
+    -34.0014,
+    18.6466,
+    -33.9793
+   ],
+   "name": "Delft South",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 24
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.68,
+    -33.9853,
+    18.6835,
+    -33.9827
+   ],
+   "name": "Delro Village",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 108
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8631,
+    -34.1063,
+    18.8814,
+    -34.0927
+   ],
+   "name": "Dennegeur",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 84
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7009,
+    -33.9903,
+    18.7156,
+    -33.9748
+   ],
+   "name": "Dennemere",
+   "wards": [
+    {
+     "share": 0.879,
+     "ward_no": 17
+    },
+    {
+     "share": 0.121,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6684,
+    -33.9326,
+    18.6767,
+    -33.9235
+   ],
+   "name": "Des Hampden",
+   "wards": [
+    {
+     "share": 0.926,
+     "ward_no": 11
+    },
+    {
+     "share": 0.074,
+     "ward_no": 19
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8253,
+    -34.0721,
+    18.8361,
+    -34.0572
+   ],
+   "name": "Die Wingerd",
+   "wards": [
+    {
+     "share": 0.5,
+     "ward_no": 15
+    },
+    {
+     "share": 0.5,
+     "ward_no": 90
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4602,
+    -34.043,
+    18.4779,
+    -34.029
+   ],
+   "name": "Diep River",
+   "wards": [
+    {
+     "share": 0.609,
+     "ward_no": 73
+    },
+    {
+     "share": 0.367,
+     "ward_no": 63
+    },
+    {
+     "share": 0.024,
+     "ward_no": 72
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4216,
+    -33.9389,
+    18.4421,
+    -33.9261
+   ],
+   "name": "District Six",
+   "wards": [
+    {
+     "share": 0.72,
+     "ward_no": 115
+    },
+    {
+     "share": 0.28,
+     "ward_no": 92
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.863,
+    -34.1536,
+    18.8711,
+    -34.1472
+   ],
+   "name": "Dobson",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 100
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6202,
+    -33.8722,
+    18.633,
+    -33.8594
+   ],
+   "name": "Door De Kraal",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 70
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6176,
+    -33.8594,
+    18.6287,
+    -33.8506
+   ],
+   "name": "Door De Kraal Farm",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 70
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8416,
+    -34.0778,
+    18.8494,
+    -34.0701
+   ],
+   "name": "Dorhill",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 15
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7024,
+    -34.0393,
+    18.7312,
+    -34.0266
+   ],
+   "name": "Dreamworld",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 118
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6328,
+    -34.0534,
+    18.7237,
+    -33.9801
+   ],
+   "name": "Driftsands",
+   "wards": [
+    {
+     "share": 0.418,
+     "ward_no": 118
+    },
+    {
+     "share": 0.246,
+     "ward_no": 108
+    },
+    {
+     "share": 0.2,
+     "ward_no": 93
+    },
+    {
+     "share": 0.136,
+     "ward_no": 96
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5353,
+    -33.827,
+    18.5464,
+    -33.8085
+   ],
+   "name": "Dunoon",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 104
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6483,
+    -33.9061,
+    18.6499,
+    -33.9041
+   ],
+   "name": "Dunrobin",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 10
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6321,
+    -33.8476,
+    18.6725,
+    -33.8136
+   ],
+   "name": "Durbanville",
+   "wards": [
+    {
+     "share": 0.655,
+     "ward_no": 112
+    },
+    {
+     "share": 0.173,
+     "ward_no": 105
+    },
+    {
+     "share": 0.171,
+     "ward_no": 13
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6342,
+    -33.8532,
+    18.6443,
+    -33.843
+   ],
+   "name": "Durbanville Hills",
+   "wards": [
+    {
+     "share": 0.885,
+     "ward_no": 112
+    },
+    {
+     "share": 0.115,
+     "ward_no": 21
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6723,
+    -33.8358,
+    18.6795,
+    -33.8316
+   ],
+   "name": "Durbanville Meadows",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 103
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6393,
+    -33.8589,
+    18.647,
+    -33.853
+   ],
+   "name": "Durbell",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 21
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.663,
+    -33.8166,
+    18.6718,
+    -33.803
+   ],
+   "name": "Durmonte",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 105
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5175,
+    -34.0533,
+    18.5289,
+    -34.0428
+   ],
+   "name": "Eagle Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 67
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6209,
+    -34.0585,
+    18.6413,
+    -34.0421
+   ],
+   "name": "Eastridge",
+   "wards": [
+    {
+     "share": 0.606,
+     "ward_no": 116
+    },
+    {
+     "share": 0.394,
+     "ward_no": 81
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.674,
+    -33.8727,
+    18.683,
+    -33.8662
+   ],
+   "name": "Edenpark",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 111
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.53,
+    -33.8854,
+    18.5593,
+    -33.8575
+   ],
+   "name": "Edgemead",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 5
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6982,
+    -33.9351,
+    18.7024,
+    -33.9316
+   ],
+   "name": "Eensgevonden",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7109,
+    -34.0204,
+    18.7359,
+    -33.9945
+   ],
+   "name": "Eersterivier",
+   "wards": [
+    {
+     "share": 0.948,
+     "ward_no": 16
+    },
+    {
+     "share": 0.052,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7246,
+    -34.0206,
+    18.7518,
+    -33.9933
+   ],
+   "name": "Eersterivier Industria",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7177,
+    -34.0266,
+    18.7441,
+    -34.013
+   ],
+   "name": "Eersterivier South",
+   "wards": [
+    {
+     "share": 0.839,
+     "ward_no": 16
+    },
+    {
+     "share": 0.097,
+     "ward_no": 90
+    },
+    {
+     "share": 0.064,
+     "ward_no": 118
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6986,
+    -33.9414,
+    18.7082,
+    -33.9351
+   ],
+   "name": "Eikenbosch Kuils River",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7083,
+    -33.8601,
+    18.7257,
+    -33.8502
+   ],
+   "name": "Eikendal",
+   "wards": [
+    {
+     "share": 0.915,
+     "ward_no": 111
+    },
+    {
+     "share": 0.085,
+     "ward_no": 7
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6432,
+    -33.988,
+    18.6524,
+    -33.9767
+   ],
+   "name": "Eindhoven",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 106
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6682,
+    -34.051,
+    18.6758,
+    -34.0399
+   ],
+   "name": "Ekuphumleni",
+   "wards": [
+    {
+     "share": 0.975,
+     "ward_no": 94
+    },
+    {
+     "share": 0.025,
+     "ward_no": 97
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7064,
+    -34.0223,
+    18.7196,
+    -34.0112
+   ],
+   "name": "Electric City",
+   "wards": [
+    {
+     "share": 0.804,
+     "ward_no": 118
+    },
+    {
+     "share": 0.196,
+     "ward_no": 16
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4664,
+    -34.0519,
+    18.4843,
+    -34.0365
+   ],
+   "name": "Elfindale",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 72
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6769,
+    -33.9297,
+    18.6959,
+    -33.9192
+   ],
+   "name": "Elim",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 11
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5748,
+    -33.937,
+    18.5838,
+    -33.9309
+   ],
+   "name": "Elnor",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 28
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5616,
+    -33.9318,
+    18.5797,
+    -33.9168
+   ],
+   "name": "Elsies River",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 28
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5656,
+    -33.9179,
+    18.5795,
+    -33.9075
+   ],
+   "name": "Elsies River Industria",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 26
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.655,
+    -34.0715,
+    18.6813,
+    -34.0585
+   ],
+   "name": "Endlovini",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 99
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6922,
+    -34.0659,
+    18.715,
+    -34.0546
+   ],
+   "name": "Enkanini",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 95
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.57,
+    -33.937,
+    18.578,
+    -33.9315
+   ],
+   "name": "Epping Forest",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 28
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5182,
+    -33.9418,
+    18.5437,
+    -33.9268
+   ],
+   "name": "Epping Industria 1",
+   "wards": [
+    {
+     "share": 0.959,
+     "ward_no": 53
+    },
+    {
+     "share": 0.041,
+     "ward_no": 51
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5428,
+    -33.943,
+    18.5666,
+    -33.9254
+   ],
+   "name": "Epping Industria 2",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 28
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8765,
+    -34.0757,
+    18.8892,
+    -34.0522
+   ],
+   "name": "Erinvale Estate",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 15
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.587,
+    -33.9429,
+    18.5967,
+    -33.9345
+   ],
+   "name": "Eureka Estate",
+   "wards": [
+    {
+     "share": 0.977,
+     "ward_no": 25
+    },
+    {
+     "share": 0.023,
+     "ward_no": 28
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6424,
+    -33.8592,
+    18.6532,
+    -33.854
+   ],
+   "name": "Everglen",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 21
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6903,
+    -33.883,
+    18.7195,
+    -33.8685
+   ],
+   "name": "Everite Industria",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 7
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6413,
+    -33.8722,
+    18.6623,
+    -33.8466
+   ],
+   "name": "Eversdal",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 21
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6384,
+    -33.8557,
+    18.6581,
+    -33.8492
+   ],
+   "name": "Eversdal Heights",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 21
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6641,
+    -34.0409,
+    18.6799,
+    -34.0285
+   ],
+   "name": "Eyethu",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 94
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6689,
+    -34.0008,
+    18.6854,
+    -33.9805
+   ],
+   "name": "Fairdale",
+   "wards": [
+    {
+     "share": 0.788,
+     "ward_no": 114
+    },
+    {
+     "share": 0.212,
+     "ward_no": 108
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.589,
+    -33.9054,
+    18.5975,
+    -33.8942
+   ],
+   "name": "Fairfield Estate",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 2
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8614,
+    -34.1444,
+    18.8752,
+    -34.1348
+   ],
+   "name": "Fairview Golf Estate",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 100
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4793,
+    -34.0972,
+    18.549,
+    -34.0452
+   ],
+   "name": "False Bay Coastal Park",
+   "wards": [
+    {
+     "share": 0.89,
+     "ward_no": 67
+    },
+    {
+     "share": 0.11,
+     "ward_no": 45
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.742,
+    -34.0364,
+    18.7529,
+    -34.0244
+   ],
+   "name": "Faure",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 90
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6729,
+    -33.8866,
+    18.6814,
+    -33.878
+   ],
+   "name": "Ferndale",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 7
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8675,
+    -34.1096,
+    18.8764,
+    -34.1002
+   ],
+   "name": "Fernwood",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 84
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7822,
+    -34.0595,
+    18.7961,
+    -34.0506
+   ],
+   "name": "Firgrove",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 90
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7682,
+    -34.101,
+    18.82,
+    -34.0529
+   ],
+   "name": "Firgrove Rural",
+   "wards": [
+    {
+     "share": 0.524,
+     "ward_no": 83
+    },
+    {
+     "share": 0.379,
+     "ward_no": 109
+    },
+    {
+     "share": 0.097,
+     "ward_no": 90
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8717,
+    -34.1633,
+    18.9373,
+    -34.1254
+   ],
+   "name": "Firlands",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 100
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7116,
+    -33.7887,
+    18.7233,
+    -33.7786
+   ],
+   "name": "Fisantekraal",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 105
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6963,
+    -33.7961,
+    18.7117,
+    -33.7828
+   ],
+   "name": "Fisantekraal Industrial",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 105
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.3941,
+    -34.1518,
+    18.4399,
+    -34.1135
+   ],
+   "name": "Fish Hoek",
+   "wards": [
+    {
+     "share": 0.93,
+     "ward_no": 64
+    },
+    {
+     "share": 0.07,
+     "ward_no": 69
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4901,
+    -33.8382,
+    18.5095,
+    -33.829
+   ],
+   "name": "Flamingo Vlei",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 113
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5901,
+    -33.9308,
+    18.598,
+    -33.918
+   ],
+   "name": "Florida",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 25
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4134,
+    -33.928,
+    18.4715,
+    -33.8976
+   ],
+   "name": "Foreshore",
+   "wards": [
+    {
+     "share": 0.968,
+     "ward_no": 115
+    },
+    {
+     "share": 0.032,
+     "ward_no": 92
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7038,
+    -34.008,
+    18.7217,
+    -33.9965
+   ],
+   "name": "Forest Heights",
+   "wards": [
+    {
+     "share": 0.574,
+     "ward_no": 17
+    },
+    {
+     "share": 0.426,
+     "ward_no": 16
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6916,
+    -34.0273,
+    18.725,
+    -34.0071
+   ],
+   "name": "Forest Village",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 118
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.678,
+    -33.9978,
+    18.6908,
+    -33.9837
+   ],
+   "name": "Fountain Village",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 17
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8201,
+    -34.0551,
+    18.8262,
+    -34.0511
+   ],
+   "name": "Fraaigelegen",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 90
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.3811,
+    -33.9306,
+    18.3929,
+    -33.9195
+   ],
+   "name": "Fresnaye",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 54
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8378,
+    -34.0998,
+    18.8466,
+    -34.0922
+   ],
+   "name": "Gants Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 83
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8362,
+    -34.0896,
+    18.8409,
+    -34.0858
+   ],
+   "name": "Garden Village",
+   "wards": [
+    {
+     "share": 0.915,
+     "ward_no": 84
+    },
+    {
+     "share": 0.085,
+     "ward_no": 83
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.3952,
+    -33.9443,
+    18.426,
+    -33.9257
+   ],
+   "name": "Gardens",
+   "wards": [
+    {
+     "share": 0.819,
+     "ward_no": 77
+    },
+    {
+     "share": 0.181,
+     "ward_no": 115
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5256,
+    -33.9826,
+    18.5384,
+    -33.9682
+   ],
+   "name": "Gatesville",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 46
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6976,
+    -33.9785,
+    18.7093,
+    -33.9702
+   ],
+   "name": "Gaylee",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8358,
+    -34.1231,
+    18.845,
+    -34.1173
+   ],
+   "name": "George Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 85
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6706,
+    -33.9503,
+    18.6768,
+    -33.9426
+   ],
+   "name": "Gersham",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 19
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.396,
+    -34.174,
+    18.4395,
+    -34.1456
+   ],
+   "name": "Glencairn",
+   "wards": [
+    {
+     "share": 0.923,
+     "ward_no": 61
+    },
+    {
+     "share": 0.077,
+     "ward_no": 64
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.651,
+    -33.9229,
+    18.6608,
+    -33.9128
+   ],
+   "name": "Glenhaven",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 9
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5706,
+    -33.9075,
+    18.5908,
+    -33.8992
+   ],
+   "name": "Glenlily",
+   "wards": [
+    {
+     "share": 0.546,
+     "ward_no": 26
+    },
+    {
+     "share": 0.454,
+     "ward_no": 2
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5331,
+    -33.8993,
+    18.5386,
+    -33.8932
+   ],
+   "name": "Glenwood",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 27
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8411,
+    -34.0695,
+    18.8434,
+    -34.0667
+   ],
+   "name": "Goede Hoop",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 15
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8261,
+    -34.1016,
+    18.8355,
+    -34.0949
+   ],
+   "name": "Goedehoop",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 83
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6702,
+    -33.8333,
+    18.678,
+    -33.8212
+   ],
+   "name": "Goedemoed",
+   "wards": [
+    {
+     "share": 0.731,
+     "ward_no": 112
+    },
+    {
+     "share": 0.269,
+     "ward_no": 103
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.856,
+    -34.0786,
+    18.8691,
+    -34.0703
+   ],
+   "name": "Golden Acre",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 15
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8627,
+    -34.0712,
+    18.868,
+    -34.062
+   ],
+   "name": "Golden Hill Ext 1",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 15
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7077,
+    -33.8336,
+    18.713,
+    -33.83
+   ],
+   "name": "Goliath Estate",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 102
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6473,
+    -34.063,
+    18.6612,
+    -34.0447
+   ],
+   "name": "Good Hope",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 99
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5553,
+    -33.9139,
+    18.5601,
+    -33.9109
+   ],
+   "name": "Goodrail",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 28
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.545,
+    -33.9139,
+    18.5569,
+    -33.896
+   ],
+   "name": "Goodwood Estate",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 27
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5392,
+    -33.9049,
+    18.5516,
+    -33.8986
+   ],
+   "name": "Goodwood Ext 1",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 27
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8769,
+    -34.161,
+    18.8853,
+    -34.1567
+   ],
+   "name": "Gordon Heights",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 100
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8442,
+    -34.1738,
+    18.8863,
+    -34.1387
+   ],
+   "name": "Gordons Bay",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 100
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8686,
+    -34.1644,
+    18.8783,
+    -34.1566
+   ],
+   "name": "Gordons Bay Ext 12",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 100
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8523,
+    -34.1682,
+    18.8718,
+    -34.1502
+   ],
+   "name": "Gordons Bay Village",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 100
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8513,
+    -34.1544,
+    18.8684,
+    -34.1417
+   ],
+   "name": "Gordons Strand Estate",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 100
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6717,
+    -33.8166,
+    18.6804,
+    -33.8056
+   ],
+   "name": "Graanendal",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 105
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6715,
+    -34.0487,
+    18.6806,
+    -34.0392
+   ],
+   "name": "Graceland",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 94
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4873,
+    -34.0674,
+    18.512,
+    -34.0361
+   ],
+   "name": "Grassy Park",
+   "wards": [
+    {
+     "share": 0.487,
+     "ward_no": 67
+    },
+    {
+     "share": 0.283,
+     "ward_no": 110
+    },
+    {
+     "share": 0.23,
+     "ward_no": 65
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.3985,
+    -33.9163,
+    18.4182,
+    -33.9001
+   ],
+   "name": "Green Point",
+   "wards": [
+    {
+     "share": 0.973,
+     "ward_no": 115
+    },
+    {
+     "share": 0.027,
+     "ward_no": 77
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6953,
+    -33.9869,
+    18.7035,
+    -33.9775
+   ],
+   "name": "Greenfields",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6309,
+    -33.9265,
+    18.6395,
+    -33.9172
+   ],
+   "name": "Greenlands",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 9
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7096,
+    -33.8043,
+    18.7603,
+    -33.7746
+   ],
+   "name": "Greenville Garden City",
+   "wards": [
+    {
+     "share": 0.643,
+     "ward_no": 102
+    },
+    {
+     "share": 0.357,
+     "ward_no": 105
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8346,
+    -34.1366,
+    18.8466,
+    -34.1251
+   ],
+   "name": "Greenways",
+   "wards": [
+    {
+     "share": 0.843,
+     "ward_no": 100
+    },
+    {
+     "share": 0.157,
+     "ward_no": 85
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.665,
+    -33.8978,
+    18.6729,
+    -33.8885
+   ],
+   "name": "Groenvallei",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 3
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5584,
+    -34.0025,
+    18.5876,
+    -33.9618
+   ],
+   "name": "Guguletu",
+   "wards": [
+    {
+     "share": 0.354,
+     "ward_no": 39
+    },
+    {
+     "share": 0.278,
+     "ward_no": 40
+    },
+    {
+     "share": 0.27,
+     "ward_no": 41
+    },
+    {
+     "share": 0.098,
+     "ward_no": 44
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6986,
+    -33.9274,
+    18.7136,
+    -33.9114
+   ],
+   "name": "Haasendal",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 11
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6594,
+    -33.9669,
+    18.6866,
+    -33.9549
+   ],
+   "name": "Hagley",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 19
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5186,
+    -34.0019,
+    18.5397,
+    -33.9883
+   ],
+   "name": "Hanover Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 47
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6813,
+    -33.9759,
+    18.6883,
+    -33.9709
+   ],
+   "name": "Happy Valley",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6612,
+    -34.0651,
+    18.6842,
+    -34.051
+   ],
+   "name": "Harare",
+   "wards": [
+    {
+     "share": 0.769,
+     "ward_no": 98
+    },
+    {
+     "share": 0.231,
+     "ward_no": 99
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8526,
+    -34.1525,
+    18.8604,
+    -34.1455
+   ],
+   "name": "Harbour Island",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 100
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6096,
+    -33.9062,
+    18.6274,
+    -33.901
+   ],
+   "name": "Hardekraaltjie",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 10
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5885,
+    -34.039,
+    18.5956,
+    -34.0353
+   ],
+   "name": "Harmony Village",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 75
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.531,
+    -33.9828,
+    18.5381,
+    -33.9783
+   ],
+   "name": "Hatton",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 46
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5012,
+    -33.9613,
+    18.5088,
+    -33.9497
+   ],
+   "name": "Hazendal",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 49
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8136,
+    -34.0982,
+    18.8186,
+    -34.0922
+   ],
+   "name": "Heartland Beach Road Precinct",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 83
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.809,
+    -34.093,
+    18.8193,
+    -34.0892
+   ],
+   "name": "Heartland Historic Precinct",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 83
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4619,
+    -34.0541,
+    18.4756,
+    -34.0425
+   ],
+   "name": "Heathfield",
+   "wards": [
+    {
+     "share": 0.77,
+     "ward_no": 72
+    },
+    {
+     "share": 0.23,
+     "ward_no": 73
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6676,
+    -33.8937,
+    18.6706,
+    -33.8916
+   ],
+   "name": "Heemstede",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 3
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5453,
+    -33.9735,
+    18.5626,
+    -33.9573
+   ],
+   "name": "Heideveld",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 44
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8288,
+    -34.057,
+    18.8402,
+    -34.0467
+   ],
+   "name": "Helderberg Estate",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 90
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8725,
+    -34.1238,
+    18.884,
+    -34.1175
+   ],
+   "name": "Helderberg Industrial Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 100
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.853,
+    -34.1297,
+    18.8575,
+    -34.1262
+   ],
+   "name": "Helderberg Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 86
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8196,
+    -34.2703,
+    18.9803,
+    -34.1382
+   ],
+   "name": "Helderberg Rural",
+   "wards": [
+    {
+     "share": 0.95,
+     "ward_no": 100
+    },
+    {
+     "share": 0.05,
+     "ward_no": 84
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.805,
+    -34.0513,
+    18.8238,
+    -34.0397
+   ],
+   "name": "Helderberg Village",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 90
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8569,
+    -34.0665,
+    18.8631,
+    -34.0593
+   ],
+   "name": "Helderrant",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 15
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8096,
+    -34.0694,
+    18.8296,
+    -34.0537
+   ],
+   "name": "Heldervue",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 90
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8326,
+    -34.091,
+    18.8379,
+    -34.0884
+   ],
+   "name": "Helderzicht",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 83
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8296,
+    -34.0635,
+    18.8507,
+    -34.0516
+   ],
+   "name": "Helena Heights",
+   "wards": [
+    {
+     "share": 0.875,
+     "ward_no": 90
+    },
+    {
+     "share": 0.125,
+     "ward_no": 15
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8539,
+    -34.1084,
+    18.8695,
+    -34.0929
+   ],
+   "name": "Heritage Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 84
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.9057,
+    -34.1306,
+    18.9252,
+    -34.1221
+   ],
+   "name": "High Riding",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 84
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6737,
+    -33.9532,
+    18.6892,
+    -33.941
+   ],
+   "name": "Highbury",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 19
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6712,
+    -33.9563,
+    18.6804,
+    -33.9495
+   ],
+   "name": "Highbury Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 19
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6679,
+    -33.9804,
+    18.6768,
+    -33.9684
+   ],
+   "name": "Highgate",
+   "wards": [
+    {
+     "share": 0.562,
+     "ward_no": 19
+    },
+    {
+     "share": 0.438,
+     "ward_no": 108
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5857,
+    -34.0368,
+    18.5897,
+    -34.0307
+   ],
+   "name": "Highlands Village",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 75
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8445,
+    -34.0654,
+    18.8487,
+    -34.0619
+   ],
+   "name": "Highveld",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 15
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6917,
+    -34.0124,
+    18.7087,
+    -34.0015
+   ],
+   "name": "Hillcrest Heights",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 17
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6769,
+    -33.9844,
+    18.6808,
+    -33.9817
+   ],
+   "name": "Hindle Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 108
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6176,
+    -33.8889,
+    18.6242,
+    -33.8817
+   ],
+   "name": "Hoheizen",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 70
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6637,
+    -33.879,
+    18.683,
+    -33.8659
+   ],
+   "name": "Hoogstede",
+   "wards": [
+    {
+     "share": 0.7,
+     "ward_no": 111
+    },
+    {
+     "share": 0.17,
+     "ward_no": 3
+    },
+    {
+     "share": 0.083,
+     "ward_no": 103
+    },
+    {
+     "share": 0.047,
+     "ward_no": 21
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.3074,
+    -34.0623,
+    18.4059,
+    -33.999
+   ],
+   "name": "Hout Bay",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 74
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8415,
+    -34.0922,
+    18.8471,
+    -34.0886
+   ],
+   "name": "Humanshof",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 84
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6979,
+    -33.9475,
+    18.7053,
+    -33.9421
+   ],
+   "name": "Hunters Creek",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5806,
+    -34.0347,
+    18.5853,
+    -34.031
+   ],
+   "name": "Hyde Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 75
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6552,
+    -34.0585,
+    18.6716,
+    -34.0409
+   ],
+   "name": "Ilitha Park",
+   "wards": [
+    {
+     "share": 0.868,
+     "ward_no": 98
+    },
+    {
+     "share": 0.132,
+     "ward_no": 94
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8219,
+    -34.0533,
+    18.8262,
+    -34.0464
+   ],
+   "name": "Illaire",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 90
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6988,
+    -33.9358,
+    18.7083,
+    -33.9227
+   ],
+   "name": "Jacarandas",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.706,
+    -33.9868,
+    18.7198,
+    -33.9624
+   ],
+   "name": "Jacobsdal Smallholdings",
+   "wards": [
+    {
+     "share": 0.843,
+     "ward_no": 14
+    },
+    {
+     "share": 0.157,
+     "ward_no": 17
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8509,
+    -34.0778,
+    18.8565,
+    -34.074
+   ],
+   "name": "Jacques Hill",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 15
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6988,
+    -33.9435,
+    18.7062,
+    -33.9382
+   ],
+   "name": "Jagtershof",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6802,
+    -33.9231,
+    18.6885,
+    -33.916
+   ],
+   "name": "Jan Kriel",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 11
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5084,
+    -33.8774,
+    18.5138,
+    -33.8694
+   ],
+   "name": "Joe Slovo Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 4
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.825,
+    -34.0537,
+    18.8284,
+    -34.0476
+   ],
+   "name": "Jonkers Hoogte",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 90
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7213,
+    -33.838,
+    18.743,
+    -33.8226
+   ],
+   "name": "Joostenbergvlakte Smallholdings",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 102
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6688,
+    -33.891,
+    18.6723,
+    -33.8879
+   ],
+   "name": "Joubertpark",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 3
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6954,
+    -33.9,
+    18.6997,
+    -33.8972
+   ],
+   "name": "Kaapsig",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 8
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5623,
+    -33.8886,
+    18.5679,
+    -33.8793
+   ],
+   "name": "Kaapzicht",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 1
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8591,
+    -34.0859,
+    18.8616,
+    -34.0829
+   ],
+   "name": "Kalamunda",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 84
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4374,
+    -34.1327,
+    18.4538,
+    -34.1213
+   ],
+   "name": "Kalk Bay",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 64
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6586,
+    -33.9491,
+    18.6726,
+    -33.9406
+   ],
+   "name": "Kalkfontein",
+   "wards": [
+    {
+     "share": 0.969,
+     "ward_no": 19
+    },
+    {
+     "share": 0.031,
+     "ward_no": 12
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5591,
+    -33.9567,
+    18.5664,
+    -33.9425
+   ],
+   "name": "Kalksteenfontein",
+   "wards": [
+    {
+     "share": 0.947,
+     "ward_no": 31
+    },
+    {
+     "share": 0.053,
+     "ward_no": 28
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5893,
+    -33.8626,
+    18.6,
+    -33.8566
+   ],
+   "name": "Kanonberg",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 70
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7548,
+    -34.0441,
+    18.7677,
+    -34.0333
+   ],
+   "name": "Kelderhof",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 90
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6318,
+    -33.9024,
+    18.6423,
+    -33.897
+   ],
+   "name": "Kempenville",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 10
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.458,
+    -34.0027,
+    18.4912,
+    -33.9885
+   ],
+   "name": "Kenilworth",
+   "wards": [
+    {
+     "share": 0.651,
+     "ward_no": 58
+    },
+    {
+     "share": 0.349,
+     "ward_no": 59
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6306,
+    -33.8719,
+    18.6424,
+    -33.8454
+   ],
+   "name": "Kenridge",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 70
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4963,
+    -33.9189,
+    18.5152,
+    -33.9033
+   ],
+   "name": "Kensington",
+   "wards": [
+    {
+     "share": 0.95,
+     "ward_no": 56
+    },
+    {
+     "share": 0.05,
+     "ward_no": 55
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.508,
+    -33.9623,
+    18.5237,
+    -33.9427
+   ],
+   "name": "Kewtown",
+   "wards": [
+    {
+     "share": 0.762,
+     "ward_no": 49
+    },
+    {
+     "share": 0.238,
+     "ward_no": 51
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6528,
+    -34.0451,
+    18.6682,
+    -34.0292
+   ],
+   "name": "Khaya",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 94
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6414,
+    -34.0613,
+    18.6578,
+    -34.0455
+   ],
+   "name": "Khayelitsha",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 99
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5275,
+    -33.8323,
+    18.5417,
+    -33.8185
+   ],
+   "name": "Killarney Gardens",
+   "wards": [
+    {
+     "share": 0.936,
+     "ward_no": 113
+    },
+    {
+     "share": 0.064,
+     "ward_no": 104
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5757,
+    -33.9681,
+    18.5889,
+    -33.9581
+   ],
+   "name": "King David Country Club",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 31
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6321,
+    -33.8985,
+    18.6403,
+    -33.8931
+   ],
+   "name": "Kingston",
+   "wards": [
+    {
+     "share": 0.708,
+     "ward_no": 3
+    },
+    {
+     "share": 0.292,
+     "ward_no": 10
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4449,
+    -34.0803,
+    18.4588,
+    -34.0643
+   ],
+   "name": "Kirstenhof",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 71
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7082,
+    -33.9356,
+    18.7141,
+    -33.926
+   ],
+   "name": "Klein Zevenwacht",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7303,
+    -33.8548,
+    18.7363,
+    -33.8502
+   ],
+   "name": "Kleinbegin",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 101
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5573,
+    -33.865,
+    18.5654,
+    -33.8575
+   ],
+   "name": "Kleinbosch",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 1
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6826,
+    -33.8551,
+    18.6919,
+    -33.8448
+   ],
+   "name": "Kleinbron",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 103
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7018,
+    -33.9951,
+    18.7199,
+    -33.9825
+   ],
+   "name": "Kleinvlei Town",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 17
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6817,
+    -33.9339,
+    18.69,
+    -33.9275
+   ],
+   "name": "Klipdam",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 11
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6985,
+    -33.7007,
+    18.7043,
+    -33.6945
+   ],
+   "name": "Klipheuwel Housing Scheme",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 105
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5979,
+    -33.9166,
+    18.6094,
+    -33.9064
+   ],
+   "name": "Klipkop",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 10
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6919,
+    -33.9436,
+    18.695,
+    -33.9417
+   ],
+   "name": "Kloofzicht",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.319,
+    -34.1479,
+    18.371,
+    -34.1271
+   ],
+   "name": "Kommetjie",
+   "wards": [
+    {
+     "share": 0.816,
+     "ward_no": 61
+    },
+    {
+     "share": 0.184,
+     "ward_no": 69
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6944,
+    -33.8334,
+    18.7246,
+    -33.8037
+   ],
+   "name": "Kraaifontein",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 102
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7355,
+    -33.8484,
+    18.7435,
+    -33.8392
+   ],
+   "name": "Kraaifontein East",
+   "wards": [
+    {
+     "share": 0.904,
+     "ward_no": 101
+    },
+    {
+     "share": 0.096,
+     "ward_no": 111
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7257,
+    -33.8452,
+    18.7357,
+    -33.8353
+   ],
+   "name": "Kraaifontein Industria",
+   "wards": [
+    {
+     "share": 0.929,
+     "ward_no": 111
+    },
+    {
+     "share": 0.071,
+     "ward_no": 102
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6866,
+    -33.956,
+    18.6926,
+    -33.9488
+   ],
+   "name": "Kuils River Common",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 19
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6908,
+    -33.9452,
+    18.7011,
+    -33.937
+   ],
+   "name": "Kuils River Sports Grounds",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7043,
+    -33.9109,
+    18.7156,
+    -33.9011
+   ],
+   "name": "Kuilsrivier Golf Course",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 11
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6778,
+    -33.9532,
+    18.6956,
+    -33.9319
+   ],
+   "name": "Kuilsrivier Industria",
+   "wards": [
+    {
+     "share": 0.968,
+     "ward_no": 11
+    },
+    {
+     "share": 0.032,
+     "ward_no": 19
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6571,
+    -33.9556,
+    18.6737,
+    -33.9456
+   ],
+   "name": "Kuilsrivier South Smallholdings",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 19
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6813,
+    -34.0666,
+    18.6978,
+    -34.0551
+   ],
+   "name": "Kuyasa",
+   "wards": [
+    {
+     "share": 0.57,
+     "ward_no": 95
+    },
+    {
+     "share": 0.43,
+     "ward_no": 99
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8418,
+    -34.0635,
+    18.8527,
+    -34.0549
+   ],
+   "name": "La Concorde",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 15
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.805,
+    -34.0522,
+    18.8152,
+    -34.0512
+   ],
+   "name": "La Montagne",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 90
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6506,
+    -33.8831,
+    18.663,
+    -33.877
+   ],
+   "name": "La Rochelle",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 3
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8513,
+    -34.0664,
+    18.8579,
+    -34.0572
+   ],
+   "name": "La Sandra",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 15
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6533,
+    -33.9157,
+    18.6647,
+    -33.9063
+   ],
+   "name": "Labiance",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 9
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4778,
+    -33.8998,
+    18.4859,
+    -33.8907
+   ],
+   "name": "Lagoon Beach",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 55
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4492,
+    -34.0969,
+    18.4676,
+    -34.0794
+   ],
+   "name": "Lakeside",
+   "wards": [
+    {
+     "share": 0.786,
+     "ward_no": 64
+    },
+    {
+     "share": 0.214,
+     "ward_no": 71
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8682,
+    -34.0786,
+    18.8798,
+    -34.0673
+   ],
+   "name": "Land En Zeezicht",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 15
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5167,
+    -33.9552,
+    18.5428,
+    -33.9383
+   ],
+   "name": "Langa",
+   "wards": [
+    {
+     "share": 0.653,
+     "ward_no": 51
+    },
+    {
+     "share": 0.347,
+     "ward_no": 52
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6875,
+    -33.8392,
+    18.6985,
+    -33.8323
+   ],
+   "name": "Langeberg Hoogte",
+   "wards": [
+    {
+     "share": 0.936,
+     "ward_no": 103
+    },
+    {
+     "share": 0.064,
+     "ward_no": 102
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6866,
+    -33.8475,
+    18.6982,
+    -33.8378
+   ],
+   "name": "Langeberg Ridge",
+   "wards": [
+    {
+     "share": 0.863,
+     "ward_no": 103
+    },
+    {
+     "share": 0.137,
+     "ward_no": 102
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6673,
+    -33.8343,
+    18.6712,
+    -33.8306
+   ],
+   "name": "Langeberg Village",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 112
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4881,
+    -34.0028,
+    18.5215,
+    -33.9804
+   ],
+   "name": "Lansdowne",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 60
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4795,
+    -34.0752,
+    18.4957,
+    -34.061
+   ],
+   "name": "Lavender Hill",
+   "wards": [
+    {
+     "share": 0.747,
+     "ward_no": 110
+    },
+    {
+     "share": 0.208,
+     "ward_no": 68
+    },
+    {
+     "share": 0.045,
+     "ward_no": 45
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6314,
+    -33.9797,
+    18.6461,
+    -33.9635
+   ],
+   "name": "Leiden",
+   "wards": [
+    {
+     "share": 0.524,
+     "ward_no": 106
+    },
+    {
+     "share": 0.476,
+     "ward_no": 20
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5984,
+    -34.0412,
+    18.6338,
+    -34.017
+   ],
+   "name": "Lentegeur",
+   "wards": [
+    {
+     "share": 0.759,
+     "ward_no": 76
+    },
+    {
+     "share": 0.241,
+     "ward_no": 78
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.569,
+    -33.9228,
+    18.5835,
+    -33.9144
+   ],
+   "name": "Leonsdale",
+   "wards": [
+    {
+     "share": 0.978,
+     "ward_no": 26
+    },
+    {
+     "share": 0.022,
+     "ward_no": 28
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6707,
+    -33.9231,
+    18.6739,
+    -33.921
+   ],
+   "name": "Letru",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 11
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7005,
+    -33.9474,
+    18.702,
+    -33.9453
+   ],
+   "name": "Lillydale",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.3336,
+    -34.015,
+    18.3481,
+    -34.005
+   ],
+   "name": "Llandudno",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 74
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5967,
+    -33.8898,
+    18.6341,
+    -33.877
+   ],
+   "name": "Loevenstein",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 70
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8504,
+    -34.093,
+    18.8555,
+    -34.0902
+   ],
+   "name": "Longdown Estate",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 84
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4957,
+    -34.0483,
+    18.527,
+    -34.0246
+   ],
+   "name": "Lotus River",
+   "wards": [
+    {
+     "share": 0.439,
+     "ward_no": 65
+    },
+    {
+     "share": 0.378,
+     "ward_no": 66
+    },
+    {
+     "share": 0.182,
+     "ward_no": 67
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6945,
+    -33.935,
+    18.6988,
+    -33.9313
+   ],
+   "name": "Loucharmante",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6545,
+    -33.9064,
+    18.6616,
+    -33.9032
+   ],
+   "name": "Loumar",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 3
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8254,
+    -34.0921,
+    18.8312,
+    -34.0884
+   ],
+   "name": "Lourensia Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 83
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8567,
+    -34.1264,
+    18.8725,
+    -34.115
+   ],
+   "name": "Lwandle",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 86
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8141,
+    -34.0555,
+    18.8293,
+    -34.042
+   ],
+   "name": "Lynn'S View",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 90
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6659,
+    -33.9235,
+    18.6735,
+    -33.914
+   ],
+   "name": "Mabille Park",
+   "wards": [
+    {
+     "share": 0.972,
+     "ward_no": 11
+    },
+    {
+     "share": 0.028,
+     "ward_no": 9
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7157,
+    -34.0818,
+    18.7856,
+    -34.0254
+   ],
+   "name": "Macassar",
+   "wards": [
+    {
+     "share": 0.739,
+     "ward_no": 109
+    },
+    {
+     "share": 0.261,
+     "ward_no": 90
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7391,
+    -34.0771,
+    18.7537,
+    -34.0695
+   ],
+   "name": "Macassar Beach",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 109
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7474,
+    -34.0578,
+    18.7559,
+    -34.0497
+   ],
+   "name": "Macassar Village",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 109
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4768,
+    -33.9386,
+    18.5412,
+    -33.9118
+   ],
+   "name": "Maitland",
+   "wards": [
+    {
+     "share": 0.608,
+     "ward_no": 56
+    },
+    {
+     "share": 0.392,
+     "ward_no": 53
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4802,
+    -33.9387,
+    18.4893,
+    -33.9287
+   ],
+   "name": "Maitland Garden Village",
+   "wards": [
+    {
+     "share": 0.938,
+     "ward_no": 53
+    },
+    {
+     "share": 0.062,
+     "ward_no": 92
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6882,
+    -34.0076,
+    18.6984,
+    -33.9872
+   ],
+   "name": "Malibu Village",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 17
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.811,
+    -34.0851,
+    18.8205,
+    -34.0686
+   ],
+   "name": "Mall Interchange",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 83
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8107,
+    -34.0851,
+    18.8347,
+    -34.0678
+   ],
+   "name": "Mall Motor City",
+   "wards": [
+    {
+     "share": 0.556,
+     "ward_no": 15
+    },
+    {
+     "share": 0.245,
+     "ward_no": 83
+    },
+    {
+     "share": 0.199,
+     "ward_no": 90
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.819,
+    -34.0902,
+    18.8362,
+    -34.0778
+   ],
+   "name": "Mall Triangle",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 83
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4261,
+    -33.7511,
+    18.822,
+    -33.4713
+   ],
+   "name": "Malmesbury Farms",
+   "wards": [
+    {
+     "share": 0.668,
+     "ward_no": 105
+    },
+    {
+     "share": 0.332,
+     "ward_no": 29
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4605,
+    -33.5206,
+    18.4848,
+    -33.5076
+   ],
+   "name": "Mamre",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 29
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6156,
+    -34.0195,
+    18.6323,
+    -34.0052
+   ],
+   "name": "Mandalay",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 76
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6716,
+    -34.0553,
+    18.6954,
+    -34.0378
+   ],
+   "name": "Mandela Park",
+   "wards": [
+    {
+     "share": 0.806,
+     "ward_no": 97
+    },
+    {
+     "share": 0.174,
+     "ward_no": 93
+    },
+    {
+     "share": 0.02,
+     "ward_no": 95
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5479,
+    -34.002,
+    18.5614,
+    -33.9704
+   ],
+   "name": "Manenberg",
+   "wards": [
+    {
+     "share": 0.736,
+     "ward_no": 30
+    },
+    {
+     "share": 0.264,
+     "ward_no": 46
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8833,
+    -34.1525,
+    18.8876,
+    -34.149
+   ],
+   "name": "Mansfield Industria",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 100
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4996,
+    -33.881,
+    18.5219,
+    -33.8605
+   ],
+   "name": "Marconi Beam",
+   "wards": [
+    {
+     "share": 0.858,
+     "ward_no": 4
+    },
+    {
+     "share": 0.142,
+     "ward_no": 55
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6636,
+    -33.9186,
+    18.6685,
+    -33.9119
+   ],
+   "name": "Marinda Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 9
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8518,
+    -34.0862,
+    18.8692,
+    -34.0771
+   ],
+   "name": "Martinville",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 84
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7745,
+    -34.0639,
+    18.7807,
+    -34.06
+   ],
+   "name": "Marvinpark",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 109
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5664,
+    -33.943,
+    18.578,
+    -33.937
+   ],
+   "name": "Matroosfontein",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 42
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4454,
+    -34.0424,
+    18.4614,
+    -34.0279
+   ],
+   "name": "Meadowridge",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 73
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4352,
+    -33.7613,
+    18.4569,
+    -33.6822
+   ],
+   "name": "Melkbosch Strand",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 23
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4782,
+    -33.9008,
+    18.4863,
+    -33.8907
+   ],
+   "name": "Metro",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 55
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6575,
+    -33.9079,
+    18.6625,
+    -33.9044
+   ],
+   "name": "Meyerhof",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 3
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6641,
+    -34.0144,
+    18.6917,
+    -33.9857
+   ],
+   "name": "Mfuleni",
+   "wards": [
+    {
+     "share": 0.591,
+     "ward_no": 118
+    },
+    {
+     "share": 0.409,
+     "ward_no": 114
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6994,
+    -33.7294,
+    18.7156,
+    -33.7126
+   ],
+   "name": "Mikpunt",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 105
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.688,
+    -33.934,
+    18.6972,
+    -33.9295
+   ],
+   "name": "Mikro Park",
+   "wards": [
+    {
+     "share": 0.564,
+     "ward_no": 11
+    },
+    {
+     "share": 0.436,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4817,
+    -33.8923,
+    18.5417,
+    -33.828
+   ],
+   "name": "Milnerton",
+   "wards": [
+    {
+     "share": 0.526,
+     "ward_no": 113
+    },
+    {
+     "share": 0.302,
+     "ward_no": 4
+    },
+    {
+     "share": 0.172,
+     "ward_no": 55
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5007,
+    -33.8597,
+    18.5164,
+    -33.8481
+   ],
+   "name": "Milnerton Ridge",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 4
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.9,
+    -34.1231,
+    18.9063,
+    -34.1167
+   ],
+   "name": "Mission Grounds",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 84
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.3595,
+    -34.1865,
+    18.3666,
+    -34.1822
+   ],
+   "name": "Misty Cliffs",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 61
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6134,
+    -34.0528,
+    18.6249,
+    -34.0368
+   ],
+   "name": "Mitchells Plain Cbd",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 81
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5931,
+    -33.948,
+    18.6042,
+    -33.9406
+   ],
+   "name": "Modderdam",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 22
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5312,
+    -33.8943,
+    18.5534,
+    -33.8821
+   ],
+   "name": "Montague",
+   "wards": [
+    {
+     "share": 0.537,
+     "ward_no": 5
+    },
+    {
+     "share": 0.463,
+     "ward_no": 27
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5126,
+    -33.8797,
+    18.5314,
+    -33.8503
+   ],
+   "name": "Montague Gardens",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 4
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5662,
+    -33.9645,
+    18.5796,
+    -33.9567
+   ],
+   "name": "Montana",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 31
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5753,
+    -33.9595,
+    18.5827,
+    -33.9574
+   ],
+   "name": "Montana Extension",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 31
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.846,
+    -34.0669,
+    18.85,
+    -34.0633
+   ],
+   "name": "Montchere",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 15
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6178,
+    -34.0259,
+    18.633,
+    -34.0185
+   ],
+   "name": "Montclair",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 76
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8397,
+    -34.0666,
+    18.8442,
+    -34.0608
+   ],
+   "name": "Monte Sereno",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 15
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5476,
+    -33.8899,
+    18.5621,
+    -33.8668
+   ],
+   "name": "Monte Vista",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 1
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5703,
+    -33.9678,
+    18.578,
+    -33.9616
+   ],
+   "name": "Montevideo",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 31
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6676,
+    -34.0751,
+    18.7371,
+    -34.0534
+   ],
+   "name": "Monwabisi",
+   "wards": [
+    {
+     "share": 0.766,
+     "ward_no": 95
+    },
+    {
+     "share": 0.234,
+     "ward_no": 99
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6724,
+    -33.908,
+    18.6953,
+    -33.8841
+   ],
+   "name": "Morgan Industria",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 11
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5883,
+    -34.0434,
+    18.5971,
+    -34.0378
+   ],
+   "name": "Morgans Village",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 75
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6908,
+    -33.8756,
+    18.7022,
+    -33.8631
+   ],
+   "name": "Morgenster",
+   "wards": [
+    {
+     "share": 0.581,
+     "ward_no": 7
+    },
+    {
+     "share": 0.419,
+     "ward_no": 111
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.683,
+    -33.8746,
+    18.6991,
+    -33.8579
+   ],
+   "name": "Morgenster Heights",
+   "wards": [
+    {
+     "share": 0.95,
+     "ward_no": 111
+    },
+    {
+     "share": 0.05,
+     "ward_no": 7
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.878,
+    -34.0767,
+    18.8826,
+    -34.0724
+   ],
+   "name": "Morningside",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 15
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6527,
+    -33.8293,
+    18.6615,
+    -33.8255
+   ],
+   "name": "Morningstar",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 112
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.3973,
+    -33.9062,
+    18.4158,
+    -33.8988
+   ],
+   "name": "Mouille Point",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 115
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8713,
+    -34.16,
+    18.8801,
+    -34.1549
+   ],
+   "name": "Mountainside",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 100
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8783,
+    -34.1583,
+    18.8906,
+    -34.1514
+   ],
+   "name": "Mountainside Estate",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 100
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8753,
+    -34.1578,
+    18.8831,
+    -34.1532
+   ],
+   "name": "Mountainside Ext 2",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 100
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.522,
+    -33.9923,
+    18.5314,
+    -33.981
+   ],
+   "name": "Mountview",
+   "wards": [
+    {
+     "share": 0.703,
+     "ward_no": 48
+    },
+    {
+     "share": 0.297,
+     "ward_no": 47
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4657,
+    -33.9579,
+    18.5029,
+    -33.9436
+   ],
+   "name": "Mowbray",
+   "wards": [
+    {
+     "share": 0.48,
+     "ward_no": 57
+    },
+    {
+     "share": 0.324,
+     "ward_no": 53
+    },
+    {
+     "share": 0.196,
+     "ward_no": 60
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4581,
+    -34.1163,
+    18.5039,
+    -34.0791
+   ],
+   "name": "Muizenberg",
+   "wards": [
+    {
+     "share": 0.749,
+     "ward_no": 45
+    },
+    {
+     "share": 0.226,
+     "ward_no": 64
+    },
+    {
+     "share": 0.024,
+     "ward_no": 68
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6367,
+    -34.0174,
+    18.6588,
+    -34.0036
+   ],
+   "name": "Mxolisi Phetani",
+   "wards": [
+    {
+     "share": 0.536,
+     "ward_no": 87
+    },
+    {
+     "share": 0.464,
+     "ward_no": 18
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5534,
+    -33.8957,
+    18.5664,
+    -33.8888
+   ],
+   "name": "N1-Stad",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 27
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8784,
+    -34.0735,
+    18.8811,
+    -34.0697
+   ],
+   "name": "Nature'S Valley",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 15
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6442,
+    -33.826,
+    18.6476,
+    -33.8226
+   ],
+   "name": "Natures Valley",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 13
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6416,
+    -33.8234,
+    18.6477,
+    -33.8158
+   ],
+   "name": "Nerina",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 13
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7534,
+    -34.0603,
+    18.761,
+    -34.0557
+   ],
+   "name": "New Macassar",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 109
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7679,
+    -34.0651,
+    18.7757,
+    -34.061
+   ],
+   "name": "New Scheme",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 109
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5949,
+    -34.0285,
+    18.6081,
+    -34.0191
+   ],
+   "name": "New Woodlands",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 78
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5264,
+    -33.9888,
+    18.549,
+    -33.9795
+   ],
+   "name": "Newfields",
+   "wards": [
+    {
+     "share": 0.468,
+     "ward_no": 30
+    },
+    {
+     "share": 0.453,
+     "ward_no": 47
+    },
+    {
+     "share": 0.079,
+     "ward_no": 46
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4347,
+    -33.9869,
+    18.4737,
+    -33.9672
+   ],
+   "name": "Newlands",
+   "wards": [
+    {
+     "share": 0.538,
+     "ward_no": 59
+    },
+    {
+     "share": 0.355,
+     "ward_no": 62
+    },
+    {
+     "share": 0.107,
+     "ward_no": 58
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5776,
+    -33.8609,
+    18.5974,
+    -33.8298
+   ],
+   "name": "Nieuw Maastrecht-1",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 70
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5941,
+    -33.8521,
+    18.6044,
+    -33.8439
+   ],
+   "name": "Nieuw Maastrecht-2",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 70
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.852,
+    -34.1192,
+    18.8699,
+    -34.1083
+   ],
+   "name": "Nomzamo",
+   "wards": [
+    {
+     "share": 0.699,
+     "ward_no": 86
+    },
+    {
+     "share": 0.301,
+     "ward_no": 85
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6555,
+    -34.0296,
+    18.6754,
+    -34.0159
+   ],
+   "name": "Nonqubela",
+   "wards": [
+    {
+     "share": 0.939,
+     "ward_no": 89
+    },
+    {
+     "share": 0.061,
+     "ward_no": 93
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5761,
+    -33.9578,
+    18.5898,
+    -33.9533
+   ],
+   "name": "Nooitgedacht",
+   "wards": [
+    {
+     "share": 0.94,
+     "ward_no": 31
+    },
+    {
+     "share": 0.06,
+     "ward_no": 42
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.357,
+    -34.125,
+    18.4052,
+    -34.0778
+   ],
+   "name": "Noordhoek",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 69
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7151,
+    -33.8891,
+    18.7208,
+    -33.8851
+   ],
+   "name": "Normandie Estate",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 8
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5733,
+    -33.887,
+    18.5849,
+    -33.8839
+   ],
+   "name": "Northgate",
+   "wards": [
+    {
+     "share": 0.971,
+     "ward_no": 1
+    },
+    {
+     "share": 0.029,
+     "ward_no": 2
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7046,
+    -33.8761,
+    18.7196,
+    -33.8607
+   ],
+   "name": "Northpine",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 7
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8492,
+    -34.068,
+    18.8522,
+    -34.0633
+   ],
+   "name": "Nutwood",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 15
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5698,
+    -34.0023,
+    18.5926,
+    -33.983
+   ],
+   "name": "Nyanga",
+   "wards": [
+    {
+     "share": 0.505,
+     "ward_no": 38
+    },
+    {
+     "share": 0.495,
+     "ward_no": 37
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6385,
+    -33.8726,
+    18.6432,
+    -33.8701
+   ],
+   "name": "O'Kennedyville",
+   "wards": [
+    {
+     "share": 0.974,
+     "ward_no": 21
+    },
+    {
+     "share": 0.026,
+     "ward_no": 70
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6272,
+    -33.8989,
+    18.6454,
+    -33.8841
+   ],
+   "name": "Oakdale",
+   "wards": [
+    {
+     "share": 0.674,
+     "ward_no": 3
+    },
+    {
+     "share": 0.206,
+     "ward_no": 10
+    },
+    {
+     "share": 0.12,
+     "ward_no": 2
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6724,
+    -33.9429,
+    18.6767,
+    -33.934
+   ],
+   "name": "Oakdene",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 19
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6566,
+    -33.8922,
+    18.6753,
+    -33.879
+   ],
+   "name": "Oakglen",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 3
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4576,
+    -33.9465,
+    18.4914,
+    -33.9294
+   ],
+   "name": "Observatory",
+   "wards": [
+    {
+     "share": 0.865,
+     "ward_no": 92
+    },
+    {
+     "share": 0.135,
+     "ward_no": 53
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.3459,
+    -34.1582,
+    18.3606,
+    -34.1417
+   ],
+   "name": "Ocean View",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 61
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6958,
+    -33.8651,
+    18.708,
+    -33.8561
+   ],
+   "name": "Okavango Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 111
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8614,
+    -34.096,
+    18.869,
+    -34.0921
+   ],
+   "name": "Olive Grove",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 84
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8604,
+    -34.1496,
+    18.866,
+    -34.1456
+   ],
+   "name": "Onverwacht - Gordon'S Bay",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 100
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8394,
+    -34.1189,
+    18.852,
+    -34.1052
+   ],
+   "name": "Onverwacht - The Strand",
+   "wards": [
+    {
+     "share": 0.947,
+     "ward_no": 85
+    },
+    {
+     "share": 0.053,
+     "ward_no": 83
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8613,
+    -34.1132,
+    18.8713,
+    -34.1044
+   ],
+   "name": "Onverwacht Village",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 84
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6013,
+    -33.9031,
+    18.6111,
+    -33.8894
+   ],
+   "name": "Oosterzee-Bellville",
+   "wards": [
+    {
+     "share": 0.772,
+     "ward_no": 2
+    },
+    {
+     "share": 0.228,
+     "ward_no": 10
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.407,
+    -33.9477,
+    18.4191,
+    -33.9339
+   ],
+   "name": "Oranjezicht",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 77
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4836,
+    -34.0291,
+    18.5235,
+    -34.0009
+   ],
+   "name": "Ottery",
+   "wards": [
+    {
+     "share": 0.619,
+     "ward_no": 66
+    },
+    {
+     "share": 0.381,
+     "ward_no": 63
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5931,
+    -33.8612,
+    18.6053,
+    -33.8509
+   ],
+   "name": "Oude Westhof",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 70
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.3415,
+    -34.0043,
+    18.392,
+    -33.9656
+   ],
+   "name": "Oudekraal",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 54
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8274,
+    -34.0907,
+    18.8375,
+    -34.0864
+   ],
+   "name": "Paarde Vlei",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 83
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4603,
+    -33.9212,
+    18.4812,
+    -33.8997
+   ],
+   "name": "Paarden Eiland",
+   "wards": [
+    {
+     "share": 0.979,
+     "ward_no": 55
+    },
+    {
+     "share": 0.021,
+     "ward_no": 115
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7141,
+    -33.8344,
+    18.833,
+    -33.7176
+   ],
+   "name": "Paarl Farms",
+   "wards": [
+    {
+     "share": 0.628,
+     "ward_no": 105
+    },
+    {
+     "share": 0.372,
+     "ward_no": 102
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5639,
+    -33.8844,
+    18.5824,
+    -33.8747
+   ],
+   "name": "Panorama",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 1
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8485,
+    -34.0761,
+    18.8628,
+    -34.063
+   ],
+   "name": "Parel Vallei",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 15
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8541,
+    -34.0599,
+    18.8632,
+    -34.0535
+   ],
+   "name": "Parelvallei Kleinhoewes",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 15
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4867,
+    -33.8194,
+    18.5258,
+    -33.7897
+   ],
+   "name": "Parklands",
+   "wards": [
+    {
+     "share": 0.524,
+     "ward_no": 117
+    },
+    {
+     "share": 0.476,
+     "ward_no": 107
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4875,
+    -34.0457,
+    18.502,
+    -34.0259
+   ],
+   "name": "Parkwood",
+   "wards": [
+    {
+     "share": 0.895,
+     "ward_no": 65
+    },
+    {
+     "share": 0.057,
+     "ward_no": 72
+    },
+    {
+     "share": 0.048,
+     "ward_no": 110
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5766,
+    -33.9105,
+    18.592,
+    -33.9049
+   ],
+   "name": "Parow",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 26
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5905,
+    -33.909,
+    18.6113,
+    -33.902
+   ],
+   "name": "Parow East",
+   "wards": [
+    {
+     "share": 0.715,
+     "ward_no": 10
+    },
+    {
+     "share": 0.285,
+     "ward_no": 26
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5646,
+    -33.898,
+    18.5831,
+    -33.8891
+   ],
+   "name": "Parow Golf Course",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 2
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6022,
+    -33.9449,
+    18.623,
+    -33.9183
+   ],
+   "name": "Parow Industria",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 10
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5643,
+    -33.8956,
+    18.593,
+    -33.8844
+   ],
+   "name": "Parow North",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 2
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5862,
+    -33.9189,
+    18.5995,
+    -33.9079
+   ],
+   "name": "Parow Valley",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 26
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5316,
+    -34.0702,
+    18.5359,
+    -34.0657
+   ],
+   "name": "Peacock Close",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 67
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8455,
+    -34.0716,
+    18.8507,
+    -34.0645
+   ],
+   "name": "Pearl Marina",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 15
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8416,
+    -34.0719,
+    18.8469,
+    -34.064
+   ],
+   "name": "Pearl Rise",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 15
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7152,
+    -33.8502,
+    18.727,
+    -33.8386
+   ],
+   "name": "Peerless Park East",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 111
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7141,
+    -33.8452,
+    18.7259,
+    -33.8328
+   ],
+   "name": "Peerless Park North",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 102
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7114,
+    -33.8536,
+    18.7202,
+    -33.8452
+   ],
+   "name": "Peerless Park West",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 111
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5374,
+    -34.0888,
+    18.5463,
+    -34.0799
+   ],
+   "name": "Pelikan Heights",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 67
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5202,
+    -34.0903,
+    18.5486,
+    -34.0518
+   ],
+   "name": "Pelikan Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 67
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5165,
+    -33.5511,
+    18.5279,
+    -33.5284
+   ],
+   "name": "Pella",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 29
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7248,
+    -33.9984,
+    18.7415,
+    -33.9893
+   ],
+   "name": "Penhill",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5191,
+    -33.9885,
+    18.5258,
+    -33.9742
+   ],
+   "name": "Penlyn Estate",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 48
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5399,
+    -33.8575,
+    18.5573,
+    -33.8462
+   ],
+   "name": "Petrosa Tank Farm",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 13
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5775,
+    -33.6698,
+    18.5875,
+    -33.6622
+   ],
+   "name": "Philadelphia",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 13
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5126,
+    -34.0724,
+    18.633,
+    -33.9971
+   ],
+   "name": "Philippi",
+   "wards": [
+    {
+     "share": 0.729,
+     "ward_no": 43
+    },
+    {
+     "share": 0.1,
+     "ward_no": 35
+    },
+    {
+     "share": 0.054,
+     "ward_no": 88
+    },
+    {
+     "share": 0.044,
+     "ward_no": 33
+    },
+    {
+     "share": 0.039,
+     "ward_no": 80
+    },
+    {
+     "share": 0.034,
+     "ward_no": 34
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5932,
+    -34.0076,
+    18.5996,
+    -34.0036
+   ],
+   "name": "Philippi Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 88
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5033,
+    -33.8774,
+    18.5099,
+    -33.8692
+   ],
+   "name": "Phoenix",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 4
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5121,
+    -33.9977,
+    18.5253,
+    -33.9877
+   ],
+   "name": "Pinati Estate",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 48
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6746,
+    -33.8393,
+    18.6993,
+    -33.8219
+   ],
+   "name": "Pinehurst",
+   "wards": [
+    {
+     "share": 0.793,
+     "ward_no": 112
+    },
+    {
+     "share": 0.207,
+     "ward_no": 103
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4901,
+    -33.9498,
+    18.5289,
+    -33.9193
+   ],
+   "name": "Pinelands",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 53
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5843,
+    -33.8881,
+    18.6003,
+    -33.8764
+   ],
+   "name": "Plattekloof 1",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 1
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5799,
+    -33.8825,
+    18.5957,
+    -33.867
+   ],
+   "name": "Plattekloof 2",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 1
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5714,
+    -33.8767,
+    18.595,
+    -33.8616
+   ],
+   "name": "Plattekloof 3",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 1
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5532,
+    -33.8906,
+    18.5643,
+    -33.8792
+   ],
+   "name": "Plattekloof Glen",
+   "wards": [
+    {
+     "share": 0.955,
+     "ward_no": 1
+    },
+    {
+     "share": 0.045,
+     "ward_no": 27
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.456,
+    -34.0325,
+    18.4887,
+    -34.0132
+   ],
+   "name": "Plumstead",
+   "wards": [
+    {
+     "share": 0.719,
+     "ward_no": 63
+    },
+    {
+     "share": 0.281,
+     "ward_no": 73
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6043,
+    -34.0621,
+    18.6232,
+    -34.0381
+   ],
+   "name": "Portland",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 81
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6839,
+    -33.8972,
+    18.7087,
+    -33.8784
+   ],
+   "name": "Protea Heights",
+   "wards": [
+    {
+     "share": 0.935,
+     "ward_no": 8
+    },
+    {
+     "share": 0.065,
+     "ward_no": 11
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.872,
+    -34.1544,
+    18.8768,
+    -34.1502
+   ],
+   "name": "Protea Park - Gordon'S Bay",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 100
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4883,
+    -33.5824,
+    18.5053,
+    -33.567
+   ],
+   "name": "Protea Park - Wesfleur",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 32
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6059,
+    -33.8694,
+    18.6207,
+    -33.859
+   ],
+   "name": "Protea Valley",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 70
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7121,
+    -33.8862,
+    18.721,
+    -33.8789
+   ],
+   "name": "Protea Village",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 8
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6522,
+    -33.8215,
+    18.6579,
+    -33.8173
+   ],
+   "name": "Proteaville",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 105
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5307,
+    -33.8187,
+    18.5393,
+    -33.8088
+   ],
+   "name": "Racing Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 104
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.596,
+    -33.9317,
+    18.6167,
+    -33.9152
+   ],
+   "name": "Ravensmead",
+   "wards": [
+    {
+     "share": 0.742,
+     "ward_no": 10
+    },
+    {
+     "share": 0.258,
+     "ward_no": 25
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4571,
+    -34.0757,
+    18.489,
+    -34.045
+   ],
+   "name": "Retreat",
+   "wards": [
+    {
+     "share": 0.636,
+     "ward_no": 72
+    },
+    {
+     "share": 0.154,
+     "ward_no": 71
+    },
+    {
+     "share": 0.128,
+     "ward_no": 110
+    },
+    {
+     "share": 0.082,
+     "ward_no": 68
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.571,
+    -33.9083,
+    18.5767,
+    -33.9041
+   ],
+   "name": "Richmond",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 26
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.561,
+    -33.9105,
+    18.572,
+    -33.8937
+   ],
+   "name": "Richmond Estate",
+   "wards": [
+    {
+     "share": 0.56,
+     "ward_no": 26
+    },
+    {
+     "share": 0.44,
+     "ward_no": 27
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5327,
+    -33.8504,
+    18.5448,
+    -33.8356
+   ],
+   "name": "Richmond Park",
+   "wards": [
+    {
+     "share": 0.963,
+     "ward_no": 13
+    },
+    {
+     "share": 0.037,
+     "ward_no": 113
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5374,
+    -33.8377,
+    18.5497,
+    -33.8283
+   ],
+   "name": "Richwood",
+   "wards": [
+    {
+     "share": 0.979,
+     "ward_no": 13
+    },
+    {
+     "share": 0.021,
+     "ward_no": 113
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6373,
+    -33.8797,
+    18.6504,
+    -33.8715
+   ],
+   "name": "Ridgeworth",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 21
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.525,
+    -33.8101,
+    18.5471,
+    -33.7809
+   ],
+   "name": "Rivergate",
+   "wards": [
+    {
+     "share": 0.936,
+     "ward_no": 23
+    },
+    {
+     "share": 0.064,
+     "ward_no": 104
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7576,
+    -34.069,
+    18.7676,
+    -34.0625
+   ],
+   "name": "Riverside",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 109
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5595,
+    -33.9176,
+    18.5675,
+    -33.9104
+   ],
+   "name": "Riverton Elsies River",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 26
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.3567,
+    -33.8202,
+    18.3829,
+    -33.7896
+   ],
+   "name": "Robben Island",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 54
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4945,
+    -33.5763,
+    18.5107,
+    -33.5636
+   ],
+   "name": "Robinvale",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 32
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5905,
+    -34.0715,
+    18.6238,
+    -34.0539
+   ],
+   "name": "Rocklands",
+   "wards": [
+    {
+     "share": 0.881,
+     "ward_no": 79
+    },
+    {
+     "share": 0.119,
+     "ward_no": 75
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8652,
+    -34.0942,
+    18.8752,
+    -34.0868
+   ],
+   "name": "Rome Glen",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 84
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4559,
+    -33.9795,
+    18.4958,
+    -33.951
+   ],
+   "name": "Rondebosch",
+   "wards": [
+    {
+     "share": 0.523,
+     "ward_no": 57
+    },
+    {
+     "share": 0.326,
+     "ward_no": 58
+    },
+    {
+     "share": 0.151,
+     "ward_no": 59
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4909,
+    -33.981,
+    18.5014,
+    -33.9684
+   ],
+   "name": "Rondebosch East",
+   "wards": [
+    {
+     "share": 0.968,
+     "ward_no": 60
+    },
+    {
+     "share": 0.032,
+     "ward_no": 58
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5819,
+    -34.041,
+    18.5898,
+    -34.031
+   ],
+   "name": "Rondevlei Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 75
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6461,
+    -33.9679,
+    18.6571,
+    -33.9537
+   ],
+   "name": "Roosendal",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 12
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4646,
+    -33.9609,
+    18.4834,
+    -33.95
+   ],
+   "name": "Rosebank",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 57
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6758,
+    -33.8284,
+    18.6799,
+    -33.8241
+   ],
+   "name": "Rosedale - Durbanville",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 112
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7033,
+    -34.0022,
+    18.7273,
+    -33.989
+   ],
+   "name": "Rosedale - Klein Vlei",
+   "wards": [
+    {
+     "share": 0.891,
+     "ward_no": 16
+    },
+    {
+     "share": 0.109,
+     "ward_no": 17
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6401,
+    -33.8726,
+    18.648,
+    -33.8612
+   ],
+   "name": "Rosendal",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 21
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6389,
+    -33.8708,
+    18.6438,
+    -33.8648
+   ],
+   "name": "Rosenpark",
+   "wards": [
+    {
+     "share": 0.956,
+     "ward_no": 21
+    },
+    {
+     "share": 0.044,
+     "ward_no": 70
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6576,
+    -33.9807,
+    18.6752,
+    -33.9654
+   ],
+   "name": "Rotterdam",
+   "wards": [
+    {
+     "share": 0.547,
+     "ward_no": 108
+    },
+    {
+     "share": 0.453,
+     "ward_no": 19
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8501,
+    -34.0823,
+    18.8605,
+    -34.0769
+   ],
+   "name": "Roundhay",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 15
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6922,
+    -33.9264,
+    18.6989,
+    -33.9124
+   ],
+   "name": "Rouxville",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 11
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5013,
+    -33.8659,
+    18.5155,
+    -33.85
+   ],
+   "name": "Royal Ascot",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 4
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4808,
+    -33.9032,
+    18.4953,
+    -33.8908
+   ],
+   "name": "Rugby",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 55
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.648,
+    -33.8178,
+    18.6565,
+    -33.8098
+   ],
+   "name": "Ruitershoogte",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 105
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6964,
+    -33.9641,
+    18.7067,
+    -33.9554
+   ],
+   "name": "Rustdal",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.704,
+    -33.8849,
+    18.7121,
+    -33.8783
+   ],
+   "name": "Ruwari",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 8
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5499,
+    -33.9271,
+    18.5643,
+    -33.912
+   ],
+   "name": "Ruyterwacht",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 28
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5212,
+    -33.9809,
+    18.5334,
+    -33.9664
+   ],
+   "name": "Rylands",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 46
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.674,
+    -34.0378,
+    18.6817,
+    -34.0243
+   ],
+   "name": "Sabata Dalindyebo Square",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 93
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6313,
+    -33.931,
+    18.661,
+    -33.9243
+   ],
+   "name": "Sack'S Circle Industria",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 9
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4529,
+    -33.9412,
+    18.4808,
+    -33.9176
+   ],
+   "name": "Salt River",
+   "wards": [
+    {
+     "share": 0.969,
+     "ward_no": 92
+    },
+    {
+     "share": 0.031,
+     "ward_no": 56
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5384,
+    -34.0001,
+    18.5495,
+    -33.9877
+   ],
+   "name": "Sand Industria",
+   "wards": [
+    {
+     "share": 0.932,
+     "ward_no": 30
+    },
+    {
+     "share": 0.068,
+     "ward_no": 47
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.501,
+    -33.886,
+    18.5211,
+    -33.8786
+   ],
+   "name": "Sanddrift",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 55
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4967,
+    -33.8011,
+    18.5215,
+    -33.7843
+   ],
+   "name": "Sandown",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 117
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7245,
+    -34.0643,
+    18.7471,
+    -34.0461
+   ],
+   "name": "Sandvlei",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 109
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6425,
+    -33.9065,
+    18.649,
+    -33.9027
+   ],
+   "name": "Sanlamhof",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 10
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.66,
+    -33.9427,
+    18.6792,
+    -33.9248
+   ],
+   "name": "Sarepta",
+   "wards": [
+    {
+     "share": 0.795,
+     "ward_no": 19
+    },
+    {
+     "share": 0.178,
+     "ward_no": 11
+    },
+    {
+     "share": 0.027,
+     "ward_no": 9
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6957,
+    -33.9569,
+    18.7068,
+    -33.9493
+   ],
+   "name": "Saxenburg Park 1",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7023,
+    -33.9675,
+    18.7067,
+    -33.9597
+   ],
+   "name": "Saxenburg Park 2",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6407,
+    -33.9184,
+    18.6559,
+    -33.9092
+   ],
+   "name": "Saxon Industrial",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 9
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4803,
+    -33.5616,
+    18.4965,
+    -33.5399
+   ],
+   "name": "Saxonsea",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 29
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5063,
+    -33.5814,
+    18.5306,
+    -33.5519
+   ],
+   "name": "Saxonwood",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 32
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.3723,
+    -34.2033,
+    18.3835,
+    -34.1932
+   ],
+   "name": "Scarborough",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 61
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8072,
+    -34.0747,
+    18.8253,
+    -34.063
+   ],
+   "name": "Schonenberg",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 90
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6442,
+    -33.8207,
+    18.6517,
+    -33.8132
+   ],
+   "name": "Schoongezicht",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 105
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7166,
+    -33.8807,
+    18.7345,
+    -33.8574
+   ],
+   "name": "Scottsdene",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 7
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6984,
+    -33.8597,
+    18.7159,
+    -33.8471
+   ],
+   "name": "Scottsville",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 111
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8692,
+    -34.1505,
+    18.8717,
+    -34.147
+   ],
+   "name": "Sea Breeze Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 100
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.3763,
+    -33.9263,
+    18.3997,
+    -33.908
+   ],
+   "name": "Sea Point",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 54
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4792,
+    -34.081,
+    18.4965,
+    -34.0747
+   ],
+   "name": "Seawinds",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 45
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6175,
+    -33.8825,
+    18.6233,
+    -33.8803
+   ],
+   "name": "Selborne",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 70
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8544,
+    -34.1387,
+    18.8643,
+    -34.1286
+   ],
+   "name": "Sercor Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 100
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4934,
+    -33.5601,
+    18.5072,
+    -33.545
+   ],
+   "name": "Sherwood",
+   "wards": [
+    {
+     "share": 0.53,
+     "ward_no": 29
+    },
+    {
+     "share": 0.47,
+     "ward_no": 32
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6599,
+    -33.9091,
+    18.6651,
+    -33.9051
+   ],
+   "name": "Shirley Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 3
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.3754,
+    -33.9455,
+    18.4138,
+    -33.9117
+   ],
+   "name": "Signal Hill / Lions Head",
+   "wards": [
+    {
+     "share": 0.536,
+     "ward_no": 54
+    },
+    {
+     "share": 0.383,
+     "ward_no": 77
+    },
+    {
+     "share": 0.081,
+     "ward_no": 115
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6842,
+    -33.9412,
+    18.6926,
+    -33.9326
+   ],
+   "name": "Silveroaks",
+   "wards": [
+    {
+     "share": 0.824,
+     "ward_no": 14
+    },
+    {
+     "share": 0.176,
+     "ward_no": 11
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6702,
+    -33.9832,
+    18.6825,
+    -33.9657
+   ],
+   "name": "Silversands",
+   "wards": [
+    {
+     "share": 0.504,
+     "ward_no": 19
+    },
+    {
+     "share": 0.496,
+     "ward_no": 108
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8359,
+    -34.0903,
+    18.8386,
+    -34.0876
+   ],
+   "name": "Silvertas",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 83
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5117,
+    -33.9682,
+    18.5344,
+    -33.9572
+   ],
+   "name": "Silvertown",
+   "wards": [
+    {
+     "share": 0.98,
+     "ward_no": 49
+    },
+    {
+     "share": 0.02,
+     "ward_no": 46
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6798,
+    -34.0443,
+    18.69,
+    -34.0369
+   ],
+   "name": "Silvertown - Khayelitsha",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 93
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8514,
+    -34.0553,
+    18.8562,
+    -34.046
+   ],
+   "name": "Silwerboomkloof",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 15
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.3827,
+    -34.2192,
+    18.4641,
+    -34.1636
+   ],
+   "name": "Simon'S Town",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 61
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.9016,
+    -34.1248,
+    18.9245,
+    -34.1141
+   ],
+   "name": "Sir Lowry'S Pass",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 84
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.9096,
+    -34.119,
+    18.9132,
+    -34.1168
+   ],
+   "name": "Sir Lowry'S Pass Village Centre",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 84
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6625,
+    -33.9166,
+    18.6657,
+    -33.9111
+   ],
+   "name": "Sirrocco'S",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 9
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7557,
+    -34.0586,
+    18.7804,
+    -34.043
+   ],
+   "name": "Sitari Country Estate",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 90
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7478,
+    -34.0592,
+    18.7504,
+    -34.0578
+   ],
+   "name": "Smartie Town",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 109
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4591,
+    -34.2668,
+    18.4682,
+    -34.259
+   ],
+   "name": "Smitswinkelbaai",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 61
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.9002,
+    -34.1251,
+    18.9049,
+    -34.1225
+   ],
+   "name": "Somerset Forest",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 84
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8224,
+    -34.0781,
+    18.8329,
+    -34.0694
+   ],
+   "name": "Somerset Ridge",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 15
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8209,
+    -34.1004,
+    18.8845,
+    -34.0757
+   ],
+   "name": "Somerset West",
+   "wards": [
+    {
+     "share": 0.668,
+     "ward_no": 84
+    },
+    {
+     "share": 0.184,
+     "ward_no": 15
+    },
+    {
+     "share": 0.148,
+     "ward_no": 83
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8503,
+    -34.1057,
+    18.8593,
+    -34.0989
+   ],
+   "name": "Somerset West Business Park",
+   "wards": [
+    {
+     "share": 0.934,
+     "ward_no": 84
+    },
+    {
+     "share": 0.066,
+     "ward_no": 85
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8275,
+    -34.0864,
+    18.8432,
+    -34.0763
+   ],
+   "name": "Somerset West Country Club",
+   "wards": [
+    {
+     "share": 0.962,
+     "ward_no": 15
+    },
+    {
+     "share": 0.038,
+     "ward_no": 84
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8652,
+    -34.0712,
+    18.8795,
+    -34.0419
+   ],
+   "name": "Somerset West Nature Reserve",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 15
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6757,
+    -33.9227,
+    18.6845,
+    -33.9126
+   ],
+   "name": "Soneike I",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 11
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.672,
+    -33.9145,
+    18.6862,
+    -33.9072
+   ],
+   "name": "Soneike Ii",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 11
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6864,
+    -33.9008,
+    18.6959,
+    -33.8907
+   ],
+   "name": "Sonkring",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 11
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6685,
+    -33.9208,
+    18.678,
+    -33.9098
+   ],
+   "name": "Sonnekuil",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 11
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5775,
+    -33.8841,
+    18.5847,
+    -33.8797
+   ],
+   "name": "Sonnendal",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 1
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6574,
+    -33.8526,
+    18.6682,
+    -33.8405
+   ],
+   "name": "Sonstraal",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 21
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6678,
+    -33.8505,
+    18.6876,
+    -33.833
+   ],
+   "name": "Sonstraal Heights",
+   "wards": [
+    {
+     "share": 0.842,
+     "ward_no": 103
+    },
+    {
+     "share": 0.158,
+     "ward_no": 21
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4732,
+    -34.046,
+    18.4918,
+    -34.0258
+   ],
+   "name": "Southfield",
+   "wards": [
+    {
+     "share": 0.825,
+     "ward_no": 72
+    },
+    {
+     "share": 0.175,
+     "ward_no": 63
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.851,
+    -34.1424,
+    18.8582,
+    -34.1363
+   ],
+   "name": "Southfork",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 100
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8458,
+    -34.0573,
+    18.8563,
+    -34.0508
+   ],
+   "name": "Spanish Farm",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 15
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.68,
+    -33.8828,
+    18.6858,
+    -33.877
+   ],
+   "name": "Springbokpark",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 7
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6028,
+    -33.8513,
+    18.6135,
+    -33.8393
+   ],
+   "name": "Springfield",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 70
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6897,
+    -33.9441,
+    18.6999,
+    -33.9333
+   ],
+   "name": "St Dumas",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4525,
+    -34.123,
+    18.4624,
+    -34.1151
+   ],
+   "name": "St James",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 64
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6877,
+    -33.8777,
+    18.693,
+    -33.8705
+   ],
+   "name": "St Michaels",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 7
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4555,
+    -34.0836,
+    18.4847,
+    -34.0623
+   ],
+   "name": "Steenberg",
+   "wards": [
+    {
+     "share": 0.844,
+     "ward_no": 68
+    },
+    {
+     "share": 0.156,
+     "ward_no": 71
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8248,
+    -34.0591,
+    18.8316,
+    -34.0517
+   ],
+   "name": "Steenbras View",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 90
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6493,
+    -33.877,
+    18.6638,
+    -33.8641
+   ],
+   "name": "Stellenberg",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 21
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8366,
+    -34.1797,
+    19.0048,
+    -33.9999
+   ],
+   "name": "Stellenbosch Farms",
+   "wards": [
+    {
+     "share": 0.677,
+     "ward_no": 84
+    },
+    {
+     "share": 0.287,
+     "ward_no": 15
+    },
+    {
+     "share": 0.036,
+     "ward_no": 100
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7037,
+    -33.9902,
+    18.7454,
+    -33.9494
+   ],
+   "name": "Stellenbosch Farms (Blue Downs)",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7002,
+    -33.9626,
+    18.7453,
+    -33.9212
+   ],
+   "name": "Stellenbosch Farms (Kuilsrivier)",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6201,
+    -33.8885,
+    18.6314,
+    -33.8739
+   ],
+   "name": "Stellenbosch Univ",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 70
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6779,
+    -33.9565,
+    18.6876,
+    -33.948
+   ],
+   "name": "Stellendale",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 19
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6483,
+    -33.8806,
+    18.6589,
+    -33.8723
+   ],
+   "name": "Stellenridge",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 21
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6583,
+    -33.8747,
+    18.67,
+    -33.8576
+   ],
+   "name": "Stellenryk",
+   "wards": [
+    {
+     "share": 0.644,
+     "ward_no": 21
+    },
+    {
+     "share": 0.356,
+     "ward_no": 103
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6485,
+    -33.9064,
+    18.6548,
+    -33.9043
+   ],
+   "name": "Stikland",
+   "wards": [
+    {
+     "share": 0.866,
+     "ward_no": 10
+    },
+    {
+     "share": 0.109,
+     "ward_no": 9
+    },
+    {
+     "share": 0.025,
+     "ward_no": 3
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6496,
+    -33.9038,
+    18.6661,
+    -33.8891
+   ],
+   "name": "Stikland Hospitaal",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 3
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6585,
+    -33.914,
+    18.6774,
+    -33.8865
+   ],
+   "name": "Stikland Industria",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 3
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8131,
+    -34.1439,
+    18.8614,
+    -34.0904
+   ],
+   "name": "Strand",
+   "wards": [
+    {
+     "share": 0.528,
+     "ward_no": 83
+    },
+    {
+     "share": 0.321,
+     "ward_no": 85
+    },
+    {
+     "share": 0.128,
+     "ward_no": 100
+    },
+    {
+     "share": 0.023,
+     "ward_no": 84
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8149,
+    -34.101,
+    18.8289,
+    -34.0905
+   ],
+   "name": "Strand Golf Club",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 83
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8421,
+    -34.1027,
+    18.8493,
+    -34.096
+   ],
+   "name": "Strand Industria",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 83
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5385,
+    -34.0889,
+    18.6286,
+    -34.0586
+   ],
+   "name": "Strandfontein",
+   "wards": [
+    {
+     "share": 0.94,
+     "ward_no": 43
+    },
+    {
+     "share": 0.06,
+     "ward_no": 79
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8323,
+    -34.1009,
+    18.8414,
+    -34.0931
+   ],
+   "name": "Strandvale",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 83
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8466,
+    -34.0793,
+    18.853,
+    -34.0723
+   ],
+   "name": "Stuart'S Hill",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 15
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.521,
+    -33.8903,
+    18.5312,
+    -33.8735
+   ],
+   "name": "Summer Greens",
+   "wards": [
+    {
+     "share": 0.945,
+     "ward_no": 4
+    },
+    {
+     "share": 0.031,
+     "ward_no": 55
+    },
+    {
+     "share": 0.024,
+     "ward_no": 27
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7235,
+    -33.8596,
+    18.7263,
+    -33.8561
+   ],
+   "name": "Summerville",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 7
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.907,
+    -34.1242,
+    18.9116,
+    -34.118
+   ],
+   "name": "Sun City",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 84
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.3918,
+    -34.1286,
+    18.4024,
+    -34.1185
+   ],
+   "name": "Sun Valley",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 69
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6746,
+    -33.9674,
+    18.6841,
+    -33.961
+   ],
+   "name": "Sunbird Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 19
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4748,
+    -33.8155,
+    18.4944,
+    -33.7859
+   ],
+   "name": "Sunningdale",
+   "wards": [
+    {
+     "share": 0.429,
+     "ward_no": 117
+    },
+    {
+     "share": 0.313,
+     "ward_no": 107
+    },
+    {
+     "share": 0.258,
+     "ward_no": 23
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.3672,
+    -34.1518,
+    18.3997,
+    -34.1157
+   ],
+   "name": "Sunnydale",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 69
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.507,
+    -33.8304,
+    18.5198,
+    -33.8234
+   ],
+   "name": "Sunridge",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 113
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4873,
+    -33.8728,
+    18.4975,
+    -33.8439
+   ],
+   "name": "Sunset Beach",
+   "wards": [
+    {
+     "share": 0.971,
+     "ward_no": 4
+    },
+    {
+     "share": 0.029,
+     "ward_no": 113
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5379,
+    -33.9816,
+    18.551,
+    -33.9687
+   ],
+   "name": "Surrey Estate",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 46
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4945,
+    -33.9608,
+    18.5028,
+    -33.9514
+   ],
+   "name": "Sybrand Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 60
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.3756,
+    -34.012,
+    18.4669,
+    -33.9374
+   ],
+   "name": "Table Mountain",
+   "wards": [
+    {
+     "share": 0.355,
+     "ward_no": 54
+    },
+    {
+     "share": 0.349,
+     "ward_no": 77
+    },
+    {
+     "share": 0.115,
+     "ward_no": 62
+    },
+    {
+     "share": 0.09,
+     "ward_no": 57
+    },
+    {
+     "share": 0.063,
+     "ward_no": 92
+    },
+    {
+     "share": 0.028,
+     "ward_no": 74
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4677,
+    -33.8539,
+    18.5222,
+    -33.8086
+   ],
+   "name": "Table View",
+   "wards": [
+    {
+     "share": 0.843,
+     "ward_no": 113
+    },
+    {
+     "share": 0.157,
+     "ward_no": 107
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.621,
+    -34.0716,
+    18.659,
+    -34.0471
+   ],
+   "name": "Tafelsig",
+   "wards": [
+    {
+     "share": 0.802,
+     "ward_no": 82
+    },
+    {
+     "share": 0.198,
+     "ward_no": 79
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.397,
+    -33.9353,
+    18.4111,
+    -33.9226
+   ],
+   "name": "Tamboerskloof",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 77
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8797,
+    -34.1546,
+    18.8856,
+    -34.1508
+   ],
+   "name": "Temperance Town",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 100
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6908,
+    -33.9945,
+    18.7009,
+    -33.9814
+   ],
+   "name": "The Conifers",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 17
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6695,
+    -33.8233,
+    18.6782,
+    -33.813
+   ],
+   "name": "The Crest",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 105
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.634,
+    -33.9652,
+    18.6472,
+    -33.9528
+   ],
+   "name": "The Hague",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 20
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8328,
+    -34.0752,
+    18.8416,
+    -34.0694
+   ],
+   "name": "The Link",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 15
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5665,
+    -33.937,
+    18.573,
+    -33.9315
+   ],
+   "name": "The Range",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 28
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5369,
+    -33.8123,
+    18.5426,
+    -33.8064
+   ],
+   "name": "The Stables",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 104
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6291,
+    -34.0186,
+    18.6385,
+    -34.0014
+   ],
+   "name": "Thembokwezi",
+   "wards": [
+    {
+     "share": 0.98,
+     "ward_no": 18
+    },
+    {
+     "share": 0.02,
+     "ward_no": 99
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5176,
+    -33.9301,
+    18.5437,
+    -33.9169
+   ],
+   "name": "Thornton",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 53
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.3924,
+    -33.9115,
+    18.4024,
+    -33.9056
+   ],
+   "name": "Three Anchor Bay",
+   "wards": [
+    {
+     "share": 0.851,
+     "ward_no": 115
+    },
+    {
+     "share": 0.149,
+     "ward_no": 54
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4932,
+    -33.8961,
+    18.5029,
+    -33.8779
+   ],
+   "name": "Tijgerhof",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 55
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4113,
+    -34.0871,
+    18.459,
+    -34.0495
+   ],
+   "name": "Tokai",
+   "wards": [
+    {
+     "share": 0.951,
+     "ward_no": 71
+    },
+    {
+     "share": 0.049,
+     "ward_no": 73
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5334,
+    -33.9167,
+    18.5491,
+    -33.8973
+   ],
+   "name": "Townsend Estate",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 27
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6094,
+    -33.933,
+    18.6492,
+    -33.9026
+   ],
+   "name": "Transnet Marshalling Yard",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 10
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.9127,
+    -34.12,
+    18.927,
+    -34.1138
+   ],
+   "name": "Tre Donne",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 84
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6344,
+    -33.9125,
+    18.657,
+    -33.9057
+   ],
+   "name": "Triangle Farm",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 9
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6962,
+    -33.9484,
+    18.7008,
+    -33.9443
+   ],
+   "name": "Turtle Creek",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6955,
+    -34.0029,
+    18.7054,
+    -33.9869
+   ],
+   "name": "Tuscany Glen",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 17
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8353,
+    -34.1181,
+    18.8435,
+    -34.1127
+   ],
+   "name": "Twin Palms",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 83
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6078,
+    -33.9188,
+    18.6193,
+    -33.9063
+   ],
+   "name": "Tygerberg Hospital",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 10
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5374,
+    -33.8984,
+    18.5547,
+    -33.8906
+   ],
+   "name": "Tygerdal",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 27
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6304,
+    -33.8878,
+    18.6378,
+    -33.8689
+   ],
+   "name": "Tygervalley",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 70
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6269,
+    -33.8817,
+    18.6334,
+    -33.8648
+   ],
+   "name": "Tygervalley Waterfront",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 70
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.594,
+    -33.9421,
+    18.6037,
+    -33.9288
+   ],
+   "name": "Uitsig",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 25
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6756,
+    -33.8242,
+    18.6969,
+    -33.8097
+   ],
+   "name": "Uitzicht",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 112
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.692,
+    -34.0552,
+    18.7157,
+    -34.0375
+   ],
+   "name": "Umrhabulo Triangle",
+   "wards": [
+    {
+     "share": 0.629,
+     "ward_no": 96
+    },
+    {
+     "share": 0.371,
+     "ward_no": 97
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6116,
+    -33.9391,
+    18.638,
+    -33.9263
+   ],
+   "name": "Uwc",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 9
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5662,
+    -33.9574,
+    18.5792,
+    -33.9491
+   ],
+   "name": "Valhalla Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 31
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6445,
+    -33.846,
+    18.6594,
+    -33.8411
+   ],
+   "name": "Valmary Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 21
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8466,
+    -34.1003,
+    18.8574,
+    -34.0939
+   ],
+   "name": "Van Der Stel",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 84
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.603,
+    -33.8619,
+    18.6202,
+    -33.8505
+   ],
+   "name": "Van Riebeeckshof",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 70
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5384,
+    -33.9697,
+    18.5473,
+    -33.96
+   ],
+   "name": "Vanguard Estate",
+   "wards": [
+    {
+     "share": 0.929,
+     "ward_no": 44
+    },
+    {
+     "share": 0.047,
+     "ward_no": 49
+    },
+    {
+     "share": 0.024,
+     "ward_no": 46
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.553,
+    -33.9115,
+    18.565,
+    -33.8946
+   ],
+   "name": "Vasco Estate",
+   "wards": [
+    {
+     "share": 0.524,
+     "ward_no": 26
+    },
+    {
+     "share": 0.476,
+     "ward_no": 27
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6317,
+    -33.8433,
+    18.6387,
+    -33.8338
+   ],
+   "name": "Vergesig",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 112
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6516,
+    -34.0312,
+    18.6641,
+    -34.0174
+   ],
+   "name": "Victoria Mxenge",
+   "wards": [
+    {
+     "share": 0.975,
+     "ward_no": 91
+    },
+    {
+     "share": 0.025,
+     "ward_no": 89
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8274,
+    -34.095,
+    18.8372,
+    -34.0902
+   ],
+   "name": "Victoria Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 83
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.651,
+    -33.8188,
+    18.667,
+    -33.8004
+   ],
+   "name": "Vierlanden",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 105
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7148,
+    -33.8334,
+    18.7243,
+    -33.8284
+   ],
+   "name": "Viking Village",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 102
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6631,
+    -33.9251,
+    18.6699,
+    -33.9184
+   ],
+   "name": "Voelvlei",
+   "wards": [
+    {
+     "share": 0.915,
+     "ward_no": 11
+    },
+    {
+     "share": 0.085,
+     "ward_no": 9
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6557,
+    -33.9274,
+    18.6658,
+    -33.9132
+   ],
+   "name": "Vogelvlei",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 9
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6423,
+    -33.9784,
+    18.6546,
+    -33.9652
+   ],
+   "name": "Voorbrug",
+   "wards": [
+    {
+     "share": 0.563,
+     "ward_no": 20
+    },
+    {
+     "share": 0.437,
+     "ward_no": 106
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4174,
+    -33.9486,
+    18.4364,
+    -33.9336
+   ],
+   "name": "Vredehoek",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 77
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6669,
+    -33.8733,
+    18.6833,
+    -33.8494
+   ],
+   "name": "Vredekloof",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 103
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.683,
+    -33.8662,
+    18.6958,
+    -33.8547
+   ],
+   "name": "Vredekloof East",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 103
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6828,
+    -33.8569,
+    18.6891,
+    -33.8535
+   ],
+   "name": "Vredekloof Heights",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 103
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6101,
+    -33.902,
+    18.6147,
+    -33.8892
+   ],
+   "name": "Vredelust Bellville",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 2
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6915,
+    -33.9474,
+    18.6979,
+    -33.9437
+   ],
+   "name": "Vredelust Kuils River",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6589,
+    -33.8814,
+    18.6729,
+    -33.8737
+   ],
+   "name": "Vredenberg - Bellville",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 3
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8126,
+    -34.0512,
+    18.816,
+    -34.0491
+   ],
+   "name": "Vredenberg - Somerset West",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 90
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8149,
+    -34.0513,
+    18.8178,
+    -34.0497
+   ],
+   "name": "Vredenzicht",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 90
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4829,
+    -34.0872,
+    18.4922,
+    -34.0807
+   ],
+   "name": "Vrygrond",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 45
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6441,
+    -33.8493,
+    18.6586,
+    -33.8453
+   ],
+   "name": "Vygeboom",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 21
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6338,
+    -33.827,
+    18.637,
+    -33.8239
+   ],
+   "name": "Wairoa",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 13
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7263,
+    -33.8687,
+    18.7531,
+    -33.8447
+   ],
+   "name": "Wallacedene",
+   "wards": [
+    {
+     "share": 0.657,
+     "ward_no": 6
+    },
+    {
+     "share": 0.343,
+     "ward_no": 101
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.9118,
+    -34.1109,
+    18.9501,
+    -34.0911
+   ],
+   "name": "Wedderwill Estate",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 84
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5405,
+    -33.9661,
+    18.5477,
+    -33.9552
+   ],
+   "name": "Welcome Estate",
+   "wards": [
+    {
+     "share": 0.876,
+     "ward_no": 44
+    },
+    {
+     "share": 0.124,
+     "ward_no": 49
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5902,
+    -33.8755,
+    18.6088,
+    -33.8594
+   ],
+   "name": "Welgedacht",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 70
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5589,
+    -33.8802,
+    18.5782,
+    -33.8616
+   ],
+   "name": "Welgelegen",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 1
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5954,
+    -33.8793,
+    18.6275,
+    -33.8666
+   ],
+   "name": "Welgemoed",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 70
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6749,
+    -33.8203,
+    18.6815,
+    -33.8147
+   ],
+   "name": "Welgevonden",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 105
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6587,
+    -33.8241,
+    18.6627,
+    -33.8199
+   ],
+   "name": "Wellway Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 105
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6567,
+    -33.8284,
+    18.6708,
+    -33.8197
+   ],
+   "name": "Wellway Park East",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 112
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7186,
+    -33.9946,
+    18.7357,
+    -33.9821
+   ],
+   "name": "Welmoed Cemetery",
+   "wards": [
+    {
+     "share": 0.846,
+     "ward_no": 14
+    },
+    {
+     "share": 0.154,
+     "ward_no": 16
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7084,
+    -33.9863,
+    18.7299,
+    -33.9661
+   ],
+   "name": "Welmoed Estate",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.56,
+    -34.0535,
+    18.5877,
+    -34.0094
+   ],
+   "name": "Weltevreden Valley",
+   "wards": [
+    {
+     "share": 0.905,
+     "ward_no": 43
+    },
+    {
+     "share": 0.095,
+     "ward_no": 75
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6684,
+    -33.9571,
+    18.6724,
+    -33.9554
+   ],
+   "name": "Wembley Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 19
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6524,
+    -33.9794,
+    18.6638,
+    -33.9545
+   ],
+   "name": "Wesbank",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 108
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4478,
+    -33.5904,
+    18.519,
+    -33.5349
+   ],
+   "name": "Wesfleur",
+   "wards": [
+    {
+     "share": 0.827,
+     "ward_no": 29
+    },
+    {
+     "share": 0.173,
+     "ward_no": 32
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.469,
+    -33.8133,
+    18.4854,
+    -33.8054
+   ],
+   "name": "West Beach",
+   "wards": [
+    {
+     "share": 0.566,
+     "ward_no": 117
+    },
+    {
+     "share": 0.434,
+     "ward_no": 107
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5093,
+    -33.8254,
+    18.5196,
+    -33.8194
+   ],
+   "name": "West Riding",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 113
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6113,
+    -33.8169,
+    18.6298,
+    -33.8049
+   ],
+   "name": "Westerdale",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 13
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5843,
+    -34.056,
+    18.595,
+    -34.0388
+   ],
+   "name": "Westgate",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 75
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4267,
+    -34.0893,
+    18.4538,
+    -34.0711
+   ],
+   "name": "Westlake",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 71
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5896,
+    -34.0605,
+    18.6103,
+    -34.0412
+   ],
+   "name": "Westridge - Mitchells Plain",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 75
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.828,
+    -34.0819,
+    18.8429,
+    -34.0721
+   ],
+   "name": "Westridge - Somerset West",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 15
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.497,
+    -34.0105,
+    18.5229,
+    -34.0003
+   ],
+   "name": "Wetton",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 66
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5789,
+    -34.0326,
+    18.5857,
+    -34.0289
+   ],
+   "name": "Wildwood",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 75
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6813,
+    -33.9716,
+    18.6913,
+    -33.9558
+   ],
+   "name": "Wimbledon Estate",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5122,
+    -33.9155,
+    18.523,
+    -33.9014
+   ],
+   "name": "Windermere",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 56
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6978,
+    -33.8561,
+    18.7152,
+    -33.8404
+   ],
+   "name": "Windsor Estate",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 102
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7048,
+    -33.8446,
+    18.7216,
+    -33.831
+   ],
+   "name": "Windsor Park Estate",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 102
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5223,
+    -33.9167,
+    18.5402,
+    -33.899
+   ],
+   "name": "Wingfield",
+   "wards": [
+    {
+     "share": 0.967,
+     "ward_no": 56
+    },
+    {
+     "share": 0.033,
+     "ward_no": 27
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8677,
+    -34.1566,
+    18.8751,
+    -34.1506
+   ],
+   "name": "Winslow",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 100
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5005,
+    -33.5929,
+    18.5102,
+    -33.5794
+   ],
+   "name": "Witsand",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 32
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6278,
+    -34.0736,
+    18.6676,
+    -34.0653
+   ],
+   "name": "Wolfgat Nature Reserve",
+   "wards": [
+    {
+     "share": 0.86,
+     "ward_no": 82
+    },
+    {
+     "share": 0.14,
+     "ward_no": 79
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5887,
+    -34.0434,
+    18.6043,
+    -34.0285
+   ],
+   "name": "Woodlands",
+   "wards": [
+    {
+     "share": 0.51,
+     "ward_no": 78
+    },
+    {
+     "share": 0.49,
+     "ward_no": 75
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4394,
+    -33.9405,
+    18.4658,
+    -33.9165
+   ],
+   "name": "Woodstock",
+   "wards": [
+    {
+     "share": 0.892,
+     "ward_no": 92
+    },
+    {
+     "share": 0.076,
+     "ward_no": 55
+    },
+    {
+     "share": 0.032,
+     "ward_no": 115
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.8183,
+    -34.1944,
+    18.8443,
+    -34.173
+   ],
+   "name": "World'S View - Caledon Farms",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 100
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.863,
+    -34.0622,
+    18.8669,
+    -34.0549
+   ],
+   "name": "World'S View - Somerset West",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 15
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5429,
+    -33.9269,
+    18.551,
+    -33.9225
+   ],
+   "name": "Wp Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 28
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.5411,
+    -33.9231,
+    18.5507,
+    -33.9137
+   ],
+   "name": "Wp Showgrounds",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 28
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4501,
+    -34.0164,
+    18.488,
+    -33.9941
+   ],
+   "name": "Wynberg",
+   "wards": [
+    {
+     "share": 0.623,
+     "ward_no": 62
+    },
+    {
+     "share": 0.377,
+     "ward_no": 63
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4029,
+    -34.0098,
+    18.4466,
+    -33.9668
+   ],
+   "name": "Wynberg Nu",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 62
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7356,
+    -33.8412,
+    18.7528,
+    -33.8308
+   ],
+   "name": "Wynland Industrial Park",
+   "wards": [
+    {
+     "share": 0.961,
+     "ward_no": 101
+    },
+    {
+     "share": 0.039,
+     "ward_no": 102
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.486,
+    -33.9165,
+    18.5046,
+    -33.8922
+   ],
+   "name": "Ysterplaat",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 55
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.4975,
+    -34.0732,
+    18.5183,
+    -34.0468
+   ],
+   "name": "Zeekoevlei",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 67
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.709,
+    -33.9408,
+    18.7172,
+    -33.9356
+   ],
+   "name": "Zevendal",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7144,
+    -33.9404,
+    18.719,
+    -33.9353
+   ],
+   "name": "Zevenwacht Country Estate",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7085,
+    -33.9364,
+    18.7144,
+    -33.9309
+   ],
+   "name": "Zevenwacht Farm Village",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6925,
+    -33.9516,
+    18.7027,
+    -33.9464
+   ],
+   "name": "Zevenwacht Mall",
+   "wards": [
+    {
+     "share": 0.953,
+     "ward_no": 14
+    },
+    {
+     "share": 0.047,
+     "ward_no": 11
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7135,
+    -33.9363,
+    18.7178,
+    -33.9309
+   ],
+   "name": "Zevenwacht Retirement Village",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.7081,
+    -33.9408,
+    18.7123,
+    -33.9356
+   ],
+   "name": "Zevenzicht",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 14
+    }
+   ]
+  },
+  {
+   "bbox": [
+    18.6978,
+    -33.8453,
+    18.7048,
+    -33.8378
+   ],
+   "name": "Zoo Park",
+   "wards": [
+    {
+     "share": 1.0,
+     "ward_no": 102
+    }
+   ]
+  }
+ ],
+ "schema_version": 1,
+ "sources": {
+  "boundaries": {
+   "licence": "City of Cape Town Open Data Licence",
+   "notes": "Layer metadata still describes 2016 wards, but every feature has WARD_YEAR=2026 and there are 118 wards. Cross-checked against the Municipal Demarcation Board 2026 layer: per-ward intersection-over-union min 0.9746.",
+   "publisher": "City of Cape Town",
+   "retrieved_at": "2026-11-16",
+   "title": "Wards (2026 delimitation)",
+   "url": "https://citymaps.capetown.gov.za/agsext/rest/services/Theme_Based/ODP_SPLIT_5/FeatureServer/6"
+  },
+  "suburbs": {
+   "licence": "City of Cape Town Open Data Licence",
+   "notes": "Suburb names are title-cased from the City's upper-case names.",
+   "publisher": "City of Cape Town",
+   "retrieved_at": "2026-11-16",
+   "title": "Official Suburbs",
+   "url": "https://citymaps.capetown.gov.za/agsext/rest/services/Theme_Based/ODP_SPLIT_5/FeatureServer/3"
+  }
+ },
+ "ward_vintage": 2026
+}

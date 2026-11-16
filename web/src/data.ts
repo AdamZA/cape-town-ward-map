@@ -3,6 +3,8 @@ import type { FeatureCollection, MultiPolygon, Polygon } from "geojson";
 import type { AllocationsEnvelope } from "./generated/allocations";
 import type { CrosswalkEnvelope } from "./generated/crosswalk";
 import type { Index } from "./generated/index";
+import type { OutagesEnvelope } from "./generated/outages";
+import type { PlacesEnvelope } from "./generated/places";
 import type { ServiceRequestsEnvelope } from "./generated/service_requests";
 import type { WardsEnvelope } from "./generated/wards";
 
@@ -13,6 +15,8 @@ export interface AppData {
   boundaries: WardFeatures;
   wards: WardsEnvelope;
   serviceRequests: ServiceRequestsEnvelope;
+  outages: OutagesEnvelope;
+  places: PlacesEnvelope;
   allocations: AllocationsEnvelope[];
   crosswalk: CrosswalkEnvelope | null;
 }
@@ -36,13 +40,15 @@ export async function loadAll(): Promise<AppData> {
   };
   const allocationFiles = index.datasets.filter((d) => d.dataset === "allocations");
   const crosswalkEntry = index.datasets.find((d) => d.dataset === "crosswalk");
-  const [boundaries, wards, serviceRequests, allocations, crosswalk] = await Promise.all([
+  const [boundaries, wards, serviceRequests, outages, places, allocations, crosswalk] = await Promise.all([
     get<WardFeatures>(boundary!.file),
     get<WardsEnvelope>(one("wards")),
     get<ServiceRequestsEnvelope>(one("service_requests")),
+    get<OutagesEnvelope>(one("outages")),
+    get<PlacesEnvelope>(one("places")),
     Promise.all(allocationFiles.map((d) => get<AllocationsEnvelope>(d.file))),
     crosswalkEntry ? get<CrosswalkEnvelope>(crosswalkEntry.file) : Promise.resolve(null),
   ]);
   allocations.sort((a, b) => b.budget_year.localeCompare(a.budget_year));
-  return { index, boundaries, wards, serviceRequests, allocations, crosswalk };
+  return { index, boundaries, wards, serviceRequests, outages, places, allocations, crosswalk };
 }

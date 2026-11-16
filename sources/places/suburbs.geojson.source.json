@@ -1,0 +1,10 @@
+{
+  "licence": "City of Cape Town Open Data Licence",
+  "method": "download",
+  "notes": "Suburb names are title-cased from the City's upper-case names.",
+  "publisher": "City of Cape Town",
+  "retrieved_at": "2026-11-16",
+  "sha256": "db8c48f790df359ea217e7ea5783e5a864e6e51fd752c4cdf4dd2a9ec705fa7a",
+  "title": "Official Suburbs",
+  "url": "https://citymaps.capetown.gov.za/agsext/rest/services/Theme_Based/ODP_SPLIT_5/FeatureServer/3"
+}

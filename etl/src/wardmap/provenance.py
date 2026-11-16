@@ -61,3 +61,12 @@ def read_sidecar(path: Path) -> SourceRecord:
 
 def today() -> str:
     return date.today().isoformat()
+
+
+def write_source_geojson(path: Path, fc: dict, record: SourceRecord) -> None:
+    """Pin a GeoJSON source compactly (LF, sorted keys) with its sidecar."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(
+        json.dumps(fc, separators=(",", ":"), sort_keys=True) + "\n", encoding="utf-8", newline="\n"
+    )
+    write_sidecar(path, record)

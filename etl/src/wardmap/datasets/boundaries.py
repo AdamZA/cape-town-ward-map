@@ -35,7 +35,7 @@ from wardmap.models import (
     Gap,
     Source,
 )
-from wardmap.provenance import SourceRecord, read_sidecar, today, write_sidecar
+from wardmap.provenance import SourceRecord, read_sidecar, today, write_source_geojson
 from wardmap.publish import write_geojson, write_model
 
 DIR = SOURCES / "boundaries"
@@ -48,23 +48,6 @@ def ward_file(vintage: int):
 
 
 # ---- pin ---------------------------------------------------------------------------------------
-
-
-def _cct_layer(layer: int, where: str = "1=1") -> tuple[dict, str]:
-    for base in (CCT_ODP5, CCT_ODP5_MIRROR):
-        try:
-            return arcgis.geojson(f"{base}/{layer}", where), f"{base}/{layer}"
-        except Exception as e:  # noqa: BLE001 - try the mirror on any failure
-            print(f"  {base} failed: {e}")
-    raise RuntimeError(f"City layer {layer} unavailable on both servers")
-
-
-def _write(path, fc: dict, rec: SourceRecord) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(
-        json.dumps(fc, separators=(",", ":"), sort_keys=True) + "\n", encoding="utf-8", newline="\n"
-    )
-    write_sidecar(path, rec)
 
 
 def _mdb_wards(vintage: int) -> dict:
@@ -96,7 +79,7 @@ def _iou_by_ward(a: dict, b: dict) -> dict[int, float]:
 
 def pin() -> None:
     # 2026 wards from the City; verify vintage and agreement with the MDB.
-    fc, url = _cct_layer(CCT_WARDS_LAYER)
+    fc, url = arcgis.geojson_any((CCT_ODP5, CCT_ODP5_MIRROR), CCT_WARDS_LAYER)
     years = {f["properties"]["WARD_YEAR"] for f in fc["features"]}
     if years != {2026}:
         raise ValueError(f"City ward layer is not the 2026 delimitation (WARD_YEAR={years})")
@@ -110,7 +93,7 @@ def pin() -> None:
     print(f"  City vs MDB 2026 IoU: min {worst[0][1]:.4f}, worst wards {worst}")
     if worst[0][1] < 0.95:
         raise ValueError(f"City and MDB 2026 ward boundaries disagree: {worst}")
-    _write(
+    write_source_geojson(
         ward_file(2026),
         fc,
         SourceRecord(
@@ -129,7 +112,7 @@ def pin() -> None:
 
     mdb21 = _mdb_wards(2021)
     _check_ward_set(mdb21, 2021, "MDB 2021 wards")
-    _write(
+    write_source_geojson(
         ward_file(2021),
         mdb21,
         SourceRecord(

@@ -83,3 +83,13 @@ def geojson(layer_url: str, where: str = "1=1", out_fields: str = "*") -> dict[s
             break
         offset += len(page)
     return {"type": "FeatureCollection", "features": features}
+
+
+def geojson_any(bases: tuple[str, ...], layer: int, where: str = "1=1") -> tuple[dict, str]:
+    """Like `geojson`, trying each mirror of a service in turn. Returns (collection, layer url)."""
+    for base in bases:
+        try:
+            return geojson(f"{base}/{layer}", where), f"{base}/{layer}"
+        except Exception as e:  # noqa: BLE001 - try the next mirror on any failure
+            print(f"  {base} failed: {e}")
+    raise RuntimeError(f"layer {layer} unavailable on {bases}")

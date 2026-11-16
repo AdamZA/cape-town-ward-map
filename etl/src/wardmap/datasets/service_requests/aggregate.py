@@ -34,6 +34,24 @@ MIN_REQUESTS = 30
 LOW_LOCATION = 0.6  # flag wards where under 60% of requests could be placed on the map
 
 
+def sr_source(vintage: int) -> Source:
+    con = db.connect()
+    last_sync = (
+        db.get_meta(con, "last_sync")
+        or con.execute("SELECT max(changed) FROM request").fetchone()[0]
+    )
+    con.close()
+    return Source(
+        title="Service Requests Jan 2023 to Present",
+        publisher="City of Cape Town",
+        url=SR_PORTAL_PAGE,
+        retrieved_at=last_sync,
+        licence=CCT_LICENCE,
+        notes=f"Mirrored locally and updated with deltas from {SR_LAYER}. Requests are "
+        f"assigned to {vintage} wards by their coordinates.",
+    )
+
+
 def cohort_bounds(as_of: date) -> tuple[date, date]:
     end = as_of - timedelta(days=FOLLOW_UP_DAYS)  # exclusive
     return end - timedelta(days=COHORT_DAYS), end
@@ -125,7 +143,6 @@ def build(vintage: int = CURRENT_VINTAGE, population: dict[int, float] | None = 
 
     con = db.connect()
     as_of = date.fromisoformat(con.execute("SELECT max(changed) FROM request").fetchone()[0])
-    last_sync = db.get_meta(con, "last_sync") or as_of.isoformat()
     start, end = cohort_bounds(as_of)
     df = load_cohort(con, vintage, start, end)
     con.close()
@@ -201,15 +218,7 @@ def build(vintage: int = CURRENT_VINTAGE, population: dict[int, float] | None = 
         as_of=as_of.isoformat(),
         period=Period(start=start.isoformat(), end=(end - timedelta(days=1)).isoformat()),
         sources={
-            src: Source(
-                title="Service Requests Jan 2023 to Present",
-                publisher="City of Cape Town",
-                url=SR_PORTAL_PAGE,
-                retrieved_at=last_sync,
-                licence=CCT_LICENCE,
-                notes=f"Mirrored locally and updated with deltas from {SR_LAYER}. Requests are "
-                f"assigned to {vintage} wards by their coordinates.",
-            ),
+            src: sr_source(vintage),
             "population": wards.population_source(),
         },
         fields={

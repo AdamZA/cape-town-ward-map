@@ -118,16 +118,19 @@ class WardPopulation:
     scale: float
 
 
-def ward_population(ward_ids: list[int], ward_geoms: np.ndarray) -> WardPopulation:
-    city_total = sum(r["population"] for r in json.loads(ESTIMATES_FILE.read_text("utf-8")))
+def grid_cells() -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+    """Centre lon, lat and (unscaled) population of every populated grid cell."""
     with rasterio.open(GRID_FILE) as src:
         data = src.read(1)
         t = src.transform
     rows, cols = np.nonzero(data > 0)
-    lon = t.c + (cols + 0.5) * t.a
-    lat = t.f + (rows + 0.5) * t.e
+    return t.c + (cols + 0.5) * t.a, t.f + (rows + 0.5) * t.e, data[rows, cols]
+
+
+def ward_population(ward_ids: list[int], ward_geoms: np.ndarray) -> WardPopulation:
+    city_total = sum(r["population"] for r in json.loads(ESTIMATES_FILE.read_text("utf-8")))
+    lon, lat, vals = grid_cells()
     ward = geo.assign_points(lon, lat, ward_geoms, ward_ids)
-    vals = data[rows, cols]
     inside = ward >= 0
     sums = np.bincount(ward[inside], weights=vals[inside], minlength=max(ward_ids) + 1)
     grid_total = float(sums.sum())

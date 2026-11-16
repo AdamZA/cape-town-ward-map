@@ -8,8 +8,8 @@ from wardmap.publish import write_model
 
 
 def build_all() -> None:
-    from wardmap.datasets import allocations, boundaries, wards
-    from wardmap.datasets.service_requests import aggregate
+    from wardmap.datasets import allocations, boundaries, places, wards
+    from wardmap.datasets.service_requests import aggregate, outages
 
     boundary_entries = boundaries.build()
     entries = [
@@ -22,6 +22,13 @@ def build_all() -> None:
     entries.append(
         IndexEntry(
             dataset="wards", file=f"wards-{CURRENT_VINTAGE}.json", ward_vintage=CURRENT_VINTAGE
+        )
+    )
+
+    places.build(CURRENT_VINTAGE)
+    entries.append(
+        IndexEntry(
+            dataset="places", file=f"places-{CURRENT_VINTAGE}.json", ward_vintage=CURRENT_VINTAGE
         )
     )
 
@@ -38,14 +45,15 @@ def build_all() -> None:
         )
 
     sr_file = f"service_requests-{CURRENT_VINTAGE}.json"
+    outage_file = f"outages-{CURRENT_VINTAGE}.json"
     if DB_PATH.exists():
         aggregate.build(CURRENT_VINTAGE, wards.population(CURRENT_VINTAGE))
+        outages.build(CURRENT_VINTAGE)
     else:
-        # CI without the DB: keep the committed aggregate (it is refreshed by its own workflow).
-        print(f"no service-request DB at {DB_PATH}; keeping existing data/{sr_file}")
-    entries.append(
-        IndexEntry(dataset="service_requests", file=sr_file, ward_vintage=CURRENT_VINTAGE)
-    )
+        # CI without the DB: keep the committed aggregates (refreshed by their own workflow).
+        print(f"no service-request DB at {DB_PATH}; keeping data/{sr_file}, data/{outage_file}")
+    for name, file in (("service_requests", sr_file), ("outages", outage_file)):
+        entries.append(IndexEntry(dataset=name, file=file, ward_vintage=CURRENT_VINTAGE))
 
     write_model(
         "index.json",

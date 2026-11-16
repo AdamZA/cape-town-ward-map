@@ -119,6 +119,43 @@ class ServiceRequestsEnvelope(EnvelopeBase):
     citywide: ServiceRequestRow  # same metrics over all located requests; ward_no is 0
 
 
+# ---- supply outages -----------------------------------------------------------------------------
+
+
+class OutageRow(Strict):
+    ward_no: int
+    water_reports: int = Field(description="Located no-water reports logged in the period")
+    water_days: int = Field(description="Days with at least `min_reports` no-water reports")
+    power_reports: int = Field(description="Located no-power reports logged in the period")
+    power_days: int = Field(description="Days with at least `min_reports` no-power reports")
+    flags: list[str] = []
+
+
+class OutagesEnvelope(EnvelopeBase):
+    dataset: Literal["outages"] = "outages"
+    min_reports: int = Field(description="Reports on one day needed to count it as an outage day")
+    rows: list[OutageRow]
+
+
+# ---- places (search) ---------------------------------------------------------------------------
+
+
+class PlaceWard(Strict):
+    ward_no: int
+    share: float = Field(description="Share of the place's area inside this ward")
+
+
+class PlaceRow(Strict):
+    name: str
+    bbox: list[float] = Field(description="[west, south, east, north] in WGS84")
+    wards: list[PlaceWard] = Field(description="Wards covering the place, largest share first")
+
+
+class PlacesEnvelope(EnvelopeBase):
+    dataset: Literal["places"] = "places"
+    rows: list[PlaceRow]
+
+
 # ---- ward allocations --------------------------------------------------------------------------
 
 
@@ -183,5 +220,7 @@ ENVELOPES: dict[str, type[BaseModel]] = {
     "service_requests": ServiceRequestsEnvelope,
     "allocations": AllocationsEnvelope,
     "crosswalk": CrosswalkEnvelope,
+    "outages": OutagesEnvelope,
+    "places": PlacesEnvelope,
     "index": Index,
 }

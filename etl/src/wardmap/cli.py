@@ -8,11 +8,12 @@ from pathlib import Path
 
 
 def _pin(args) -> None:
-    from wardmap.datasets import allocations, boundaries, population
+    from wardmap.datasets import allocations, boundaries, places, population
 
     pins = {
         "boundaries": boundaries.pin,
         "population": population.pin,
+        "places": places.pin,
         "allocations": lambda: allocations.pin(args.year, local=args.local),
     }
     targets = list(pins) if args.dataset == "all" else [args.dataset]
@@ -28,7 +29,7 @@ def _build(args) -> None:
 
 
 def _sr(args) -> None:
-    from wardmap.datasets.service_requests import aggregate, db, sync
+    from wardmap.datasets.service_requests import aggregate, db, outages, sync
 
     if args.sr_cmd == "load-csv":
         db.load_csv(Path(args.path))
@@ -38,6 +39,7 @@ def _sr(args) -> None:
         db.assign_wards()
     elif args.sr_cmd == "aggregate":
         aggregate.build()
+        outages.build()
 
 
 def _inspect(args) -> None:
@@ -63,7 +65,9 @@ def main(argv: list[str] | None = None) -> None:
     sub = p.add_subparsers(dest="cmd", required=True)
 
     pin = sub.add_parser("pin", help="Fetch upstream data into sources/ (network, run locally)")
-    pin.add_argument("dataset", choices=["boundaries", "population", "allocations", "all"])
+    pin.add_argument(
+        "dataset", choices=["boundaries", "population", "places", "allocations", "all"]
+    )
     pin.add_argument("--year", default="2024-25", help="allocations: budget year, e.g. 2024-25")
     pin.add_argument("--local", action="store_true", help="allocations: use a PDF placed by hand")
     pin.set_defaults(fn=_pin)
@@ -79,7 +83,7 @@ def main(argv: list[str] | None = None) -> None:
     sy.add_argument("--full", action="store_true", help="Rebuild from the live layer")
     sy.add_argument("--max-delta", type=int, default=750_000)
     srs.add_parser("assign", help="Assign located requests to wards")
-    srs.add_parser("aggregate", help="Write data/service_requests-<vintage>.json")
+    srs.add_parser("aggregate", help="Write data/service_requests- and outages-<vintage>.json")
     sr.set_defaults(fn=_sr)
 
     ins = sub.add_parser("annexure-inspect", help="Dump words with x/y positions from a PDF page")

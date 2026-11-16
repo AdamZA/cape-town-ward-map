@@ -1,0 +1,1009 @@
+{
+ "as_of": "2026-11-13",
+ "dataset": "outages",
+ "fields": {
+  "power_days": {
+   "description": "Days in the year with 3 or more reports of no power to the City.",
+   "label": "Days with no-power reports",
+   "method": "outages",
+   "source": "sr",
+   "unit": "days"
+  },
+  "power_reports": {
+   "description": null,
+   "label": "No-power reports",
+   "method": "outages",
+   "source": "sr",
+   "unit": "reports"
+  },
+  "water_days": {
+   "description": "Days in the year with 3 or more reports of no water.",
+   "label": "Days with no-water reports",
+   "method": "outages",
+   "source": "sr",
+   "unit": "days"
+  },
+  "water_reports": {
+   "description": null,
+   "label": "No-water reports",
+   "method": "outages",
+   "source": "sr",
+   "unit": "reports"
+  }
+ },
+ "gaps": [
+  {
+   "code": "reports_not_outages",
+   "message": "These count days on which several residents reported having no water or no power, not how long supply was off. Planned maintenance, announced outages and load-shedding are often not reported, and reports without a usable location are left out.",
+   "ward_no": null
+  },
+  {
+   "code": "eskom_areas",
+   "message": "Where Eskom supplies homes directly, power faults are reported to Eskom, not the City, so electricity figures there undercount. The City's map of supply areas is currently incomplete, so affected wards can't yet be marked.",
+   "ward_no": null
+  }
+ ],
+ "min_reports": 3,
+ "period": {
+  "from": "2025-11-13",
+  "to": "2026-11-12"
+ },
+ "rows": [
+  {
+   "flags": [],
+   "power_days": 51,
+   "power_reports": 819,
+   "ward_no": 1,
+   "water_days": 50,
+   "water_reports": 460
+  },
+  {
+   "flags": [],
+   "power_days": 100,
+   "power_reports": 1095,
+   "ward_no": 2,
+   "water_days": 79,
+   "water_reports": 814
+  },
+  {
+   "flags": [],
+   "power_days": 90,
+   "power_reports": 902,
+   "ward_no": 3,
+   "water_days": 57,
+   "water_reports": 521
+  },
+  {
+   "flags": [],
+   "power_days": 157,
+   "power_reports": 1146,
+   "ward_no": 4,
+   "water_days": 24,
+   "water_reports": 264
+  },
+  {
+   "flags": [],
+   "power_days": 32,
+   "power_reports": 332,
+   "ward_no": 5,
+   "water_days": 40,
+   "water_reports": 409
+  },
+  {
+   "flags": [],
+   "power_days": 0,
+   "power_reports": 40,
+   "ward_no": 6,
+   "water_days": 3,
+   "water_reports": 40
+  },
+  {
+   "flags": [],
+   "power_days": 50,
+   "power_reports": 409,
+   "ward_no": 7,
+   "water_days": 34,
+   "water_reports": 334
+  },
+  {
+   "flags": [],
+   "power_days": 12,
+   "power_reports": 230,
+   "ward_no": 8,
+   "water_days": 22,
+   "water_reports": 361
+  },
+  {
+   "flags": [],
+   "power_days": 112,
+   "power_reports": 1078,
+   "ward_no": 9,
+   "water_days": 34,
+   "water_reports": 368
+  },
+  {
+   "flags": [],
+   "power_days": 178,
+   "power_reports": 1458,
+   "ward_no": 10,
+   "water_days": 69,
+   "water_reports": 527
+  },
+  {
+   "flags": [],
+   "power_days": 61,
+   "power_reports": 636,
+   "ward_no": 11,
+   "water_days": 51,
+   "water_reports": 464
+  },
+  {
+   "flags": [],
+   "power_days": 26,
+   "power_reports": 331,
+   "ward_no": 12,
+   "water_days": 14,
+   "water_reports": 199
+  },
+  {
+   "flags": [],
+   "power_days": 25,
+   "power_reports": 281,
+   "ward_no": 13,
+   "water_days": 20,
+   "water_reports": 182
+  },
+  {
+   "flags": [],
+   "power_days": 35,
+   "power_reports": 356,
+   "ward_no": 14,
+   "water_days": 31,
+   "water_reports": 323
+  },
+  {
+   "flags": [],
+   "power_days": 68,
+   "power_reports": 701,
+   "ward_no": 15,
+   "water_days": 70,
+   "water_reports": 688
+  },
+  {
+   "flags": [],
+   "power_days": 6,
+   "power_reports": 63,
+   "ward_no": 16,
+   "water_days": 11,
+   "water_reports": 222
+  },
+  {
+   "flags": [],
+   "power_days": 3,
+   "power_reports": 54,
+   "ward_no": 17,
+   "water_days": 27,
+   "water_reports": 276
+  },
+  {
+   "flags": [],
+   "power_days": 1,
+   "power_reports": 13,
+   "ward_no": 18,
+   "water_days": 0,
+   "water_reports": 23
+  },
+  {
+   "flags": [],
+   "power_days": 124,
+   "power_reports": 924,
+   "ward_no": 19,
+   "water_days": 30,
+   "water_reports": 339
+  },
+  {
+   "flags": [],
+   "power_days": 6,
+   "power_reports": 72,
+   "ward_no": 20,
+   "water_days": 13,
+   "water_reports": 197
+  },
+  {
+   "flags": [],
+   "power_days": 58,
+   "power_reports": 584,
+   "ward_no": 21,
+   "water_days": 75,
+   "water_reports": 723
+  },
+  {
+   "flags": [],
+   "power_days": 9,
+   "power_reports": 140,
+   "ward_no": 22,
+   "water_days": 12,
+   "water_reports": 206
+  },
+  {
+   "flags": [],
+   "power_days": 44,
+   "power_reports": 407,
+   "ward_no": 23,
+   "water_days": 34,
+   "water_reports": 412
+  },
+  {
+   "flags": [],
+   "power_days": 6,
+   "power_reports": 73,
+   "ward_no": 24,
+   "water_days": 2,
+   "water_reports": 76
+  },
+  {
+   "flags": [],
+   "power_days": 74,
+   "power_reports": 594,
+   "ward_no": 25,
+   "water_days": 32,
+   "water_reports": 369
+  },
+  {
+   "flags": [],
+   "power_days": 173,
+   "power_reports": 1595,
+   "ward_no": 26,
+   "water_days": 60,
+   "water_reports": 520
+  },
+  {
+   "flags": [],
+   "power_days": 118,
+   "power_reports": 1114,
+   "ward_no": 27,
+   "water_days": 36,
+   "water_reports": 378
+  },
+  {
+   "flags": [],
+   "power_days": 47,
+   "power_reports": 375,
+   "ward_no": 28,
+   "water_days": 33,
+   "water_reports": 354
+  },
+  {
+   "flags": [],
+   "power_days": 114,
+   "power_reports": 773,
+   "ward_no": 29,
+   "water_days": 7,
+   "water_reports": 181
+  },
+  {
+   "flags": [],
+   "power_days": 146,
+   "power_reports": 1007,
+   "ward_no": 30,
+   "water_days": 12,
+   "water_reports": 176
+  },
+  {
+   "flags": [],
+   "power_days": 99,
+   "power_reports": 685,
+   "ward_no": 31,
+   "water_days": 17,
+   "water_reports": 230
+  },
+  {
+   "flags": [],
+   "power_days": 63,
+   "power_reports": 472,
+   "ward_no": 32,
+   "water_days": 1,
+   "water_reports": 132
+  },
+  {
+   "flags": [],
+   "power_days": 198,
+   "power_reports": 1540,
+   "ward_no": 33,
+   "water_days": 3,
+   "water_reports": 55
+  },
+  {
+   "flags": [],
+   "power_days": 136,
+   "power_reports": 965,
+   "ward_no": 34,
+   "water_days": 0,
+   "water_reports": 52
+  },
+  {
+   "flags": [],
+   "power_days": 33,
+   "power_reports": 304,
+   "ward_no": 35,
+   "water_days": 2,
+   "water_reports": 48
+  },
+  {
+   "flags": [],
+   "power_days": 4,
+   "power_reports": 97,
+   "ward_no": 36,
+   "water_days": 0,
+   "water_reports": 20
+  },
+  {
+   "flags": [],
+   "power_days": 96,
+   "power_reports": 666,
+   "ward_no": 37,
+   "water_days": 1,
+   "water_reports": 31
+  },
+  {
+   "flags": [],
+   "power_days": 125,
+   "power_reports": 792,
+   "ward_no": 38,
+   "water_days": 0,
+   "water_reports": 55
+  },
+  {
+   "flags": [],
+   "power_days": 126,
+   "power_reports": 1113,
+   "ward_no": 39,
+   "water_days": 6,
+   "water_reports": 106
+  },
+  {
+   "flags": [],
+   "power_days": 203,
+   "power_reports": 1387,
+   "ward_no": 40,
+   "water_days": 1,
+   "water_reports": 28
+  },
+  {
+   "flags": [],
+   "power_days": 109,
+   "power_reports": 754,
+   "ward_no": 41,
+   "water_days": 1,
+   "water_reports": 69
+  },
+  {
+   "flags": [],
+   "power_days": 8,
+   "power_reports": 100,
+   "ward_no": 42,
+   "water_days": 10,
+   "water_reports": 164
+  },
+  {
+   "flags": [],
+   "power_days": 253,
+   "power_reports": 2364,
+   "ward_no": 43,
+   "water_days": 54,
+   "water_reports": 442
+  },
+  {
+   "flags": [],
+   "power_days": 148,
+   "power_reports": 1093,
+   "ward_no": 44,
+   "water_days": 18,
+   "water_reports": 194
+  },
+  {
+   "flags": [],
+   "power_days": 263,
+   "power_reports": 1907,
+   "ward_no": 45,
+   "water_days": 25,
+   "water_reports": 262
+  },
+  {
+   "flags": [],
+   "power_days": 168,
+   "power_reports": 1344,
+   "ward_no": 46,
+   "water_days": 23,
+   "water_reports": 234
+  },
+  {
+   "flags": [],
+   "power_days": 159,
+   "power_reports": 1325,
+   "ward_no": 47,
+   "water_days": 24,
+   "water_reports": 376
+  },
+  {
+   "flags": [],
+   "power_days": 268,
+   "power_reports": 2901,
+   "ward_no": 48,
+   "water_days": 24,
+   "water_reports": 248
+  },
+  {
+   "flags": [],
+   "power_days": 143,
+   "power_reports": 1077,
+   "ward_no": 49,
+   "water_days": 3,
+   "water_reports": 119
+  },
+  {
+   "flags": [],
+   "power_days": 113,
+   "power_reports": 873,
+   "ward_no": 50,
+   "water_days": 8,
+   "water_reports": 114
+  },
+  {
+   "flags": [],
+   "power_days": 124,
+   "power_reports": 874,
+   "ward_no": 51,
+   "water_days": 1,
+   "water_reports": 64
+  },
+  {
+   "flags": [],
+   "power_days": 150,
+   "power_reports": 1078,
+   "ward_no": 52,
+   "water_days": 0,
+   "water_reports": 32
+  },
+  {
+   "flags": [],
+   "power_days": 174,
+   "power_reports": 1530,
+   "ward_no": 53,
+   "water_days": 27,
+   "water_reports": 236
+  },
+  {
+   "flags": [],
+   "power_days": 172,
+   "power_reports": 1347,
+   "ward_no": 54,
+   "water_days": 41,
+   "water_reports": 392
+  },
+  {
+   "flags": [],
+   "power_days": 211,
+   "power_reports": 2042,
+   "ward_no": 55,
+   "water_days": 43,
+   "water_reports": 450
+  },
+  {
+   "flags": [],
+   "power_days": 201,
+   "power_reports": 1608,
+   "ward_no": 56,
+   "water_days": 30,
+   "water_reports": 311
+  },
+  {
+   "flags": [],
+   "power_days": 148,
+   "power_reports": 1364,
+   "ward_no": 57,
+   "water_days": 9,
+   "water_reports": 106
+  },
+  {
+   "flags": [],
+   "power_days": 193,
+   "power_reports": 2277,
+   "ward_no": 58,
+   "water_days": 33,
+   "water_reports": 431
+  },
+  {
+   "flags": [],
+   "power_days": 124,
+   "power_reports": 1615,
+   "ward_no": 59,
+   "water_days": 24,
+   "water_reports": 240
+  },
+  {
+   "flags": [],
+   "power_days": 296,
+   "power_reports": 4131,
+   "ward_no": 60,
+   "water_days": 46,
+   "water_reports": 628
+  },
+  {
+   "flags": [],
+   "power_days": 153,
+   "power_reports": 1317,
+   "ward_no": 61,
+   "water_days": 112,
+   "water_reports": 959
+  },
+  {
+   "flags": [],
+   "power_days": 164,
+   "power_reports": 1819,
+   "ward_no": 62,
+   "water_days": 57,
+   "water_reports": 595
+  },
+  {
+   "flags": [],
+   "power_days": 200,
+   "power_reports": 2458,
+   "ward_no": 63,
+   "water_days": 47,
+   "water_reports": 535
+  },
+  {
+   "flags": [],
+   "power_days": 121,
+   "power_reports": 1139,
+   "ward_no": 64,
+   "water_days": 55,
+   "water_reports": 464
+  },
+  {
+   "flags": [],
+   "power_days": 123,
+   "power_reports": 1009,
+   "ward_no": 65,
+   "water_days": 19,
+   "water_reports": 266
+  },
+  {
+   "flags": [],
+   "power_days": 154,
+   "power_reports": 1512,
+   "ward_no": 66,
+   "water_days": 41,
+   "water_reports": 536
+  },
+  {
+   "flags": [],
+   "power_days": 178,
+   "power_reports": 1346,
+   "ward_no": 67,
+   "water_days": 44,
+   "water_reports": 443
+  },
+  {
+   "flags": [],
+   "power_days": 83,
+   "power_reports": 737,
+   "ward_no": 68,
+   "water_days": 17,
+   "water_reports": 204
+  },
+  {
+   "flags": [],
+   "power_days": 184,
+   "power_reports": 1580,
+   "ward_no": 69,
+   "water_days": 48,
+   "water_reports": 496
+  },
+  {
+   "flags": [],
+   "power_days": 85,
+   "power_reports": 817,
+   "ward_no": 70,
+   "water_days": 108,
+   "water_reports": 852
+  },
+  {
+   "flags": [],
+   "power_days": 99,
+   "power_reports": 999,
+   "ward_no": 71,
+   "water_days": 50,
+   "water_reports": 391
+  },
+  {
+   "flags": [],
+   "power_days": 124,
+   "power_reports": 1035,
+   "ward_no": 72,
+   "water_days": 25,
+   "water_reports": 235
+  },
+  {
+   "flags": [],
+   "power_days": 121,
+   "power_reports": 1686,
+   "ward_no": 73,
+   "water_days": 49,
+   "water_reports": 616
+  },
+  {
+   "flags": [],
+   "power_days": 221,
+   "power_reports": 1349,
+   "ward_no": 74,
+   "water_days": 69,
+   "water_reports": 543
+  },
+  {
+   "flags": [],
+   "power_days": 109,
+   "power_reports": 917,
+   "ward_no": 75,
+   "water_days": 24,
+   "water_reports": 314
+  },
+  {
+   "flags": [],
+   "power_days": 37,
+   "power_reports": 345,
+   "ward_no": 76,
+   "water_days": 14,
+   "water_reports": 218
+  },
+  {
+   "flags": [],
+   "power_days": 165,
+   "power_reports": 1198,
+   "ward_no": 77,
+   "water_days": 82,
+   "water_reports": 847
+  },
+  {
+   "flags": [],
+   "power_days": 57,
+   "power_reports": 457,
+   "ward_no": 78,
+   "water_days": 18,
+   "water_reports": 249
+  },
+  {
+   "flags": [],
+   "power_days": 54,
+   "power_reports": 451,
+   "ward_no": 79,
+   "water_days": 20,
+   "water_reports": 271
+  },
+  {
+   "flags": [],
+   "power_days": 126,
+   "power_reports": 926,
+   "ward_no": 80,
+   "water_days": 3,
+   "water_reports": 52
+  },
+  {
+   "flags": [],
+   "power_days": 49,
+   "power_reports": 495,
+   "ward_no": 81,
+   "water_days": 12,
+   "water_reports": 198
+  },
+  {
+   "flags": [],
+   "power_days": 80,
+   "power_reports": 646,
+   "ward_no": 82,
+   "water_days": 24,
+   "water_reports": 296
+  },
+  {
+   "flags": [],
+   "power_days": 102,
+   "power_reports": 998,
+   "ward_no": 83,
+   "water_days": 43,
+   "water_reports": 491
+  },
+  {
+   "flags": [],
+   "power_days": 43,
+   "power_reports": 377,
+   "ward_no": 84,
+   "water_days": 34,
+   "water_reports": 419
+  },
+  {
+   "flags": [],
+   "power_days": 195,
+   "power_reports": 1327,
+   "ward_no": 85,
+   "water_days": 29,
+   "water_reports": 281
+  },
+  {
+   "flags": [],
+   "power_days": 155,
+   "power_reports": 970,
+   "ward_no": 86,
+   "water_days": 10,
+   "water_reports": 123
+  },
+  {
+   "flags": [],
+   "power_days": 0,
+   "power_reports": 2,
+   "ward_no": 87,
+   "water_days": 0,
+   "water_reports": 6
+  },
+  {
+   "flags": [],
+   "power_days": 122,
+   "power_reports": 784,
+   "ward_no": 88,
+   "water_days": 5,
+   "water_reports": 74
+  },
+  {
+   "flags": [],
+   "power_days": 0,
+   "power_reports": 13,
+   "ward_no": 89,
+   "water_days": 3,
+   "water_reports": 39
+  },
+  {
+   "flags": [],
+   "power_days": 27,
+   "power_reports": 459,
+   "ward_no": 90,
+   "water_days": 47,
+   "water_reports": 482
+  },
+  {
+   "flags": [],
+   "power_days": 1,
+   "power_reports": 11,
+   "ward_no": 91,
+   "water_days": 1,
+   "water_reports": 38
+  },
+  {
+   "flags": [],
+   "power_days": 236,
+   "power_reports": 2075,
+   "ward_no": 92,
+   "water_days": 39,
+   "water_reports": 421
+  },
+  {
+   "flags": [],
+   "power_days": 0,
+   "power_reports": 8,
+   "ward_no": 93,
+   "water_days": 0,
+   "water_reports": 14
+  },
+  {
+   "flags": [],
+   "power_days": 0,
+   "power_reports": 27,
+   "ward_no": 94,
+   "water_days": 12,
+   "water_reports": 112
+  },
+  {
+   "flags": [],
+   "power_days": 0,
+   "power_reports": 27,
+   "ward_no": 95,
+   "water_days": 0,
+   "water_reports": 44
+  },
+  {
+   "flags": [],
+   "power_days": 0,
+   "power_reports": 32,
+   "ward_no": 96,
+   "water_days": 1,
+   "water_reports": 48
+  },
+  {
+   "flags": [],
+   "power_days": 1,
+   "power_reports": 43,
+   "ward_no": 97,
+   "water_days": 0,
+   "water_reports": 88
+  },
+  {
+   "flags": [],
+   "power_days": 1,
+   "power_reports": 35,
+   "ward_no": 98,
+   "water_days": 6,
+   "water_reports": 67
+  },
+  {
+   "flags": [],
+   "power_days": 2,
+   "power_reports": 41,
+   "ward_no": 99,
+   "water_days": 6,
+   "water_reports": 97
+  },
+  {
+   "flags": [],
+   "power_days": 134,
+   "power_reports": 1077,
+   "ward_no": 100,
+   "water_days": 81,
+   "water_reports": 694
+  },
+  {
+   "flags": [],
+   "power_days": 11,
+   "power_reports": 153,
+   "ward_no": 101,
+   "water_days": 5,
+   "water_reports": 92
+  },
+  {
+   "flags": [],
+   "power_days": 29,
+   "power_reports": 430,
+   "ward_no": 102,
+   "water_days": 9,
+   "water_reports": 149
+  },
+  {
+   "flags": [],
+   "power_days": 47,
+   "power_reports": 637,
+   "ward_no": 103,
+   "water_days": 20,
+   "water_reports": 231
+  },
+  {
+   "flags": [],
+   "power_days": 2,
+   "power_reports": 32,
+   "ward_no": 104,
+   "water_days": 5,
+   "water_reports": 74
+  },
+  {
+   "flags": [],
+   "power_days": 26,
+   "power_reports": 297,
+   "ward_no": 105,
+   "water_days": 36,
+   "water_reports": 313
+  },
+  {
+   "flags": [],
+   "power_days": 6,
+   "power_reports": 85,
+   "ward_no": 106,
+   "water_days": 10,
+   "water_reports": 126
+  },
+  {
+   "flags": [],
+   "power_days": 16,
+   "power_reports": 205,
+   "ward_no": 107,
+   "water_days": 17,
+   "water_reports": 219
+  },
+  {
+   "flags": [],
+   "power_days": 3,
+   "power_reports": 65,
+   "ward_no": 108,
+   "water_days": 10,
+   "water_reports": 138
+  },
+  {
+   "flags": [],
+   "power_days": 55,
+   "power_reports": 435,
+   "ward_no": 109,
+   "water_days": 45,
+   "water_reports": 351
+  },
+  {
+   "flags": [],
+   "power_days": 94,
+   "power_reports": 695,
+   "ward_no": 110,
+   "water_days": 7,
+   "water_reports": 158
+  },
+  {
+   "flags": [],
+   "power_days": 86,
+   "power_reports": 823,
+   "ward_no": 111,
+   "water_days": 34,
+   "water_reports": 453
+  },
+  {
+   "flags": [],
+   "power_days": 78,
+   "power_reports": 782,
+   "ward_no": 112,
+   "water_days": 46,
+   "water_reports": 396
+  },
+  {
+   "flags": [],
+   "power_days": 20,
+   "power_reports": 198,
+   "ward_no": 113,
+   "water_days": 19,
+   "water_reports": 236
+  },
+  {
+   "flags": [],
+   "power_days": 188,
+   "power_reports": 1865,
+   "ward_no": 114,
+   "water_days": 1,
+   "water_reports": 51
+  },
+  {
+   "flags": [],
+   "power_days": 99,
+   "power_reports": 839,
+   "ward_no": 115,
+   "water_days": 15,
+   "water_reports": 195
+  },
+  {
+   "flags": [],
+   "power_days": 30,
+   "power_reports": 408,
+   "ward_no": 116,
+   "water_days": 10,
+   "water_reports": 184
+  },
+  {
+   "flags": [],
+   "power_days": 20,
+   "power_reports": 209,
+   "ward_no": 117,
+   "water_days": 22,
+   "water_reports": 294
+  },
+  {
+   "flags": [],
+   "power_days": 242,
+   "power_reports": 2638,
+   "ward_no": 118,
+   "water_days": 30,
+   "water_reports": 288
+  }
+ ],
+ "schema_version": 1,
+ "sources": {
+  "sr": {
+   "licence": "City of Cape Town Open Data Licence",
+   "notes": "Mirrored locally and updated with deltas from https://services6.arcgis.com/nyYfO9SxHU2ChQd9/arcgis/rest/services/schema_jan2023_iso/FeatureServer/0. Requests are assigned to 2026 wards by their coordinates.",
+   "publisher": "City of Cape Town",
+   "retrieved_at": "2026-11-16",
+   "title": "Service Requests Jan 2023 to Present",
+   "url": "https://odp-cctegis.opendata.arcgis.com/datasets/da3b6d46845e4671bde500e8de7e1d3e"
+  }
+ },
+ "ward_vintage": 2026
+}
