@@ -7,6 +7,7 @@ import type { ElectionWardsEnvelope, WardElectionRow } from "../generated/electi
 import { fmtInt, fmtPct } from "../format";
 import { predecessors } from "../panel/Allocations";
 import { SourceLine } from "../panel/Figure";
+import { partyHref } from "../state";
 
 const pct = (s: number) => fmtPct(s * 100);
 
@@ -25,7 +26,9 @@ function Bars({ parties, value, label }: { parties: PartyResult[]; value: (p: Pa
     <ul class="share-list party-list">
       {parties.map((p) => (
         <li key={p.party}>
-          <span class="share-label">{p.party}</span>
+          <a class="share-label party-link" href={partyHref(p.party)}>
+            {p.party}
+          </a>
           <span class="share-track" aria-hidden="true">
             <span style={{ width: `${Math.max(value(p) * 100, 0.5)}%` }} />
           </span>
@@ -182,7 +185,11 @@ export function NationalResults({ env }: { env: ElectionsEnvelope }) {
           <tbody>
             {top.map((p) => (
               <tr key={p.party}>
-                <td class="party-cell">{p.party}</td>
+                <td class="party-cell">
+                  <a class="party-link" href={partyHref(p.party)}>
+                    {p.party}
+                  </a>
+                </td>
                 <td class="num">{fmtInt(p.seats)}</td>
                 <td class="num">{p.councils_majority}</td>
                 <td class="num">{fmtInt(p.registered_in_majority)}</td>

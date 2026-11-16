@@ -62,7 +62,7 @@ CATEGORIES: dict[str, tuple[str, str]] = {
 
 # Words kept in capitals when tidying the City's upper-case names.
 ACRONYMS = {"CDC", "CHC", "MOU", "SAPS", "TB", "HIV", "NG", "VGK", "AGS", "UCT", "CPUT", "UWC"}
-ACRONYMS |= {"II", "III", "IV", "SA", "RSA", "MPC", "YMCA", "CBD"}
+ACRONYMS |= {"II", "III", "IV", "SA", "RSA", "MPC", "YMCA", "CBD", "NPC", "LLC", "BEE", "USA", "UK"}
 SMALL_WORDS = {"of", "and", "the", "for", "in", "on", "at", "to", "van", "der", "den", "de"}
 
 

@@ -1,0 +1,10 @@
+{
+  "licence": "Electoral Commission of South Africa (copyright notice: reproduction for non-commercial use; https://www.elections.org.za/pw/Copyright-Notice)",
+  "method": "aggregated",
+  "notes": "Rows parsed from the quarterly spreadsheets at https://results.elections.org.za/home/PartyFundingReports/<year>/<q>/<year>_<q>_Published_Declarations_Report.xls, financial years 2021/22 onwards (Political Party Funding Act 6 of 2018, section 9(1)).",
+  "publisher": "Electoral Commission of South Africa (IEC)",
+  "retrieved_at": "2026-11-16",
+  "sha256": "38c765817a61172740fb0b66db53255be1493cd3d7c3fb83ffd7ce121e47976a",
+  "title": "Party funding: published declarations reports",
+  "url": "https://results.elections.org.za/home/downloads/party-funding-reports"
+}

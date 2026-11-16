@@ -84,6 +84,8 @@ every printed total in the PDF.
 - **Electricity supplier** (City vs Eskom) comes from the City's load-shedding areas, because the
   City's supply-authority layer is incomplete. Power figures are hidden where Eskom supplies most
   residents.
+- **Party donations** are those declared to the IEC since April 2021; smaller donations and money
+  given to party-linked companies aren't covered.
 - **"What kind of place"** comes from zoning: what land may be used for, not what is on it. Place
   layers come from the City's facility registers (and OpenStreetMap for shopping centres) and can
   be incomplete.

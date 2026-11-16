@@ -1,0 +1,281 @@
+{
+  "$defs": {
+    "DonationRow": {
+      "additionalProperties": false,
+      "properties": {
+        "amount": {
+          "title": "Amount",
+          "type": "number"
+        },
+        "date": {
+          "title": "Date",
+          "type": "string"
+        },
+        "donor": {
+          "title": "Donor",
+          "type": "string"
+        },
+        "financial_year": {
+          "title": "Financial Year",
+          "type": "string"
+        },
+        "party": {
+          "title": "Party",
+          "type": "string"
+        },
+        "quarter": {
+          "title": "Quarter",
+          "type": "integer"
+        },
+        "section": {
+          "enum": [
+            "quarter",
+            "late"
+          ],
+          "title": "Section",
+          "type": "string"
+        },
+        "type": {
+          "title": "Type",
+          "type": "string"
+        }
+      },
+      "required": [
+        "financial_year",
+        "quarter",
+        "section",
+        "party",
+        "date",
+        "donor",
+        "type",
+        "amount"
+      ],
+      "title": "DonationRow",
+      "type": "object"
+    },
+    "DonorTotal": {
+      "additionalProperties": false,
+      "properties": {
+        "amount": {
+          "description": "Rand declared from this donor in the period",
+          "title": "Amount",
+          "type": "number"
+        },
+        "declarations": {
+          "title": "Declarations",
+          "type": "integer"
+        },
+        "donor": {
+          "title": "Donor",
+          "type": "string"
+        }
+      },
+      "required": [
+        "donor",
+        "amount",
+        "declarations"
+      ],
+      "title": "DonorTotal",
+      "type": "object"
+    },
+    "Gap": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        },
+        "ward_no": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Null for gaps that apply to the whole dataset",
+          "title": "Ward No"
+        }
+      },
+      "required": [
+        "code",
+        "message",
+        "ward_no"
+      ],
+      "title": "Gap",
+      "type": "object"
+    },
+    "PartyDonations": {
+      "additionalProperties": false,
+      "properties": {
+        "by_financial_year": {
+          "additionalProperties": {
+            "type": "number"
+          },
+          "title": "By Financial Year",
+          "type": "object"
+        },
+        "party": {
+          "title": "Party",
+          "type": "string"
+        },
+        "top_donors": {
+          "description": "Largest donors first (up to 10)",
+          "items": {
+            "$ref": "#/$defs/DonorTotal"
+          },
+          "title": "Top Donors",
+          "type": "array"
+        },
+        "total": {
+          "title": "Total",
+          "type": "number"
+        }
+      },
+      "required": [
+        "party",
+        "total",
+        "by_financial_year",
+        "top_donors"
+      ],
+      "title": "PartyDonations",
+      "type": "object"
+    },
+    "Period": {
+      "additionalProperties": false,
+      "properties": {
+        "from": {
+          "title": "From",
+          "type": "string"
+        },
+        "to": {
+          "title": "To",
+          "type": "string"
+        }
+      },
+      "required": [
+        "from",
+        "to"
+      ],
+      "title": "Period",
+      "type": "object"
+    },
+    "Source": {
+      "additionalProperties": false,
+      "properties": {
+        "licence": {
+          "title": "Licence",
+          "type": "string"
+        },
+        "notes": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Notes"
+        },
+        "publisher": {
+          "title": "Publisher",
+          "type": "string"
+        },
+        "retrieved_at": {
+          "description": "ISO date the data was retrieved",
+          "title": "Retrieved At",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "publisher",
+        "url",
+        "retrieved_at",
+        "licence",
+        "notes"
+      ],
+      "title": "Source",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "as_of": {
+      "title": "As Of",
+      "type": "string"
+    },
+    "dataset": {
+      "const": "donations",
+      "default": "donations",
+      "title": "Dataset",
+      "type": "string"
+    },
+    "gaps": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/Gap"
+      },
+      "title": "Gaps",
+      "type": "array"
+    },
+    "parties": {
+      "description": "Largest total first",
+      "items": {
+        "$ref": "#/$defs/PartyDonations"
+      },
+      "title": "Parties",
+      "type": "array"
+    },
+    "period": {
+      "$ref": "#/$defs/Period"
+    },
+    "rows": {
+      "items": {
+        "$ref": "#/$defs/DonationRow"
+      },
+      "title": "Rows",
+      "type": "array"
+    },
+    "schema_version": {
+      "default": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "sources": {
+      "additionalProperties": {
+        "$ref": "#/$defs/Source"
+      },
+      "title": "Sources",
+      "type": "object"
+    }
+  },
+  "required": [
+    "dataset",
+    "schema_version",
+    "as_of",
+    "period",
+    "sources",
+    "gaps",
+    "parties",
+    "rows"
+  ],
+  "title": "DonationsEnvelope",
+  "type": "object"
+}

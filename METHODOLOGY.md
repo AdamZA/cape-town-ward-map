@@ -228,6 +228,18 @@ term only. A past ward's panel lists the current wards covering it, with how muc
 covers. Seat changes compare a party with itself across elections; a party that changed its
 registered name is shown under one name.
 
+## Donations
+
+Since April 2021 the Political Party Funding Act has required parties to declare donations above
+a threshold to the IEC, which publishes the declarations every quarter. We parse each quarterly
+spreadsheet and check that the rows add up to the totals the IEC prints for every party, in both
+the quarter's section and the late-submissions section.
+
+What the declarations don't cover: donations below the threshold (the IEC lists only a running
+total for these, without donors), and money given to companies or foundations linked to a party.
+Donors are shown as declared; the same donor can appear under more than one spelling and we don't
+merge them.
+
 ## Ward allocations
 
 Each year the City budgets a fixed amount per ward (R1 million in 2024/25) for projects proposed

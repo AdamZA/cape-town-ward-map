@@ -9,6 +9,7 @@ import { buildMetrics, METRIC_KEYS, type MetricKey, type Term, terms, topics } f
 import type { LandmarkRow } from "./generated/landmarks";
 import { Layers } from "./places/Layers";
 import { categoryMap } from "./places/places";
+import { PartyPanel } from "./elections/PartyPanel";
 import { Timeline } from "./elections/Timeline";
 import { CityOverview } from "./panel/CityOverview";
 import { PastWardPanel } from "./panel/PastWardPanel";
@@ -56,14 +57,14 @@ function Main({ data }: { data: AppData }) {
   const field = metric.env.fields[metric.field]!;
   const scale = useMemo(() => quantileScale([...metric.values.values()]), [metric]);
   const fmt = (v: number) => fmtUnit(v, metric.unit);
-  const panel = state.ward ? "ward" : state.city ? "city" : null;
+  const panel = state.party ? "party" : state.ward ? "ward" : state.city ? "city" : null;
 
   useEffect(() => {
     let cancelled = false;
     basemapStyle().then((style) => {
       if (cancelled || !mapEl.current || map.current) return;
       map.current = new WardMap(mapEl.current, data.boundaries, style, {
-        onClick: (ward) => update({ ward, city: false }),
+        onClick: (ward) => update({ ward, city: false, party: null }),
         onHover: (ward, p) => setHover(ward && p ? { ward, ...p } : null),
       });
       // Effects that ran before the map existed: apply their state now.
@@ -110,9 +111,9 @@ function Main({ data }: { data: AppData }) {
     requestAnimationFrame(() => map.current?.resize());
   }, [panel]);
 
-  const openWard = (ward: number) => update({ ward, city: false });
+  const openWard = (ward: number) => update({ ward, city: false, party: null });
   /** Search, location and place pins work on today's wards: switch to the current term. */
-  const openCurrentWard = (ward: number) => update({ ward, city: false, term: null });
+  const openCurrentWard = (ward: number) => update({ ward, city: false, term: null, party: null });
   const chooseTerm = (t: Term) => {
     setPlace(null);
     update({ term: t.current ? null : t.year, ward: null });
@@ -164,7 +165,7 @@ function Main({ data }: { data: AppData }) {
             aria-pressed={panel === "city"}
             onClick={() => {
               setPlace(null);
-              update({ ward: null, city: panel !== "city" });
+              update({ ward: null, party: null, city: panel !== "city" });
               if (panel !== "city") map.current?.showCity();
             }}
           >
@@ -236,7 +237,9 @@ function Main({ data }: { data: AppData }) {
 
       {panel && (
         <aside class="panel" aria-live="polite">
-          {panel === "ward" && !term.current ? (
+          {panel === "party" ? (
+            <PartyPanel data={data} party={state.party!} onClose={() => update({ party: null })} />
+          ) : panel === "ward" && !term.current ? (
             <PastWardPanel data={data} term={term} ward={state.ward!} onCurrentWard={openCurrentWard} onClose={() => update({ ward: null })} />
           ) : panel === "ward" ? (
             <WardPanel

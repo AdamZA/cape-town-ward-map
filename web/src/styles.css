@@ -271,6 +271,9 @@ strong { font-weight: 650; }
 .share-track { height: 8px; background: var(--surface-2); border-radius: 2px; overflow: hidden; }
 .share-track > span { display: block; height: 100%; background: var(--ink-2); border-radius: 0 2px 2px 0; }
 .share-value { text-align: right; font-weight: 600; white-space: nowrap; }
+.party-link { color: inherit; text-decoration: underline; text-decoration-color: var(--border-strong); text-underline-offset: 2px; }
+.party-link:hover { color: var(--link); text-decoration-color: currentColor; }
+.sub-head { font-size: 13px; font-weight: 650; margin: 12px 0 4px; }
 .party-cell { min-width: 11rem; }
 .party-list li { grid-template-columns: minmax(8rem, 13rem) 1fr auto; }
 .here-list { list-style: none; margin: 12px 0 4px; padding: 0; display: grid; gap: 10px; }

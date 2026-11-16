@@ -52,15 +52,15 @@ describe("format", () => {
 describe("hash state", () => {
   it("round-trips", () => {
     const s = parseHash("#ward=57&metric=median_days");
-    expect(s).toEqual({ ward: 57, metric: "median_days", city: false, layers: [], term: null });
+    expect(s).toEqual({ ward: 57, metric: "median_days", city: false, layers: [], term: null, party: null });
     expect(parseHash(toHash(s))).toEqual(s);
   });
   it("ignores junk", () => {
-    expect(parseHash("#ward=abc&metric=nope")).toEqual({ ward: null, metric: "pct_closed_30d", city: false, layers: [], term: null });
+    expect(parseHash("#ward=abc&metric=nope")).toEqual({ ward: null, metric: "pct_closed_30d", city: false, layers: [], term: null, party: null });
   });
   it("keeps the city overview only when no ward is open", () => {
-    expect(parseHash(toHash({ ward: null, metric: "water_days", city: true, layers: [], term: null }))).toEqual({ ward: null, metric: "water_days", city: true, layers: [], term: null });
-    expect(toHash({ ward: 3, metric: "pct_closed_30d", city: true, layers: [], term: null })).toBe("#ward=3");
+    expect(parseHash(toHash({ ward: null, metric: "water_days", city: true, layers: [], term: null, party: null }))).toEqual({ ward: null, metric: "water_days", city: true, layers: [], term: null, party: null });
+    expect(toHash({ ward: 3, metric: "pct_closed_30d", city: true, layers: [], term: null, party: null })).toBe("#ward=3");
   });
   it("keeps the council term", () => {
     expect(parseHash("#term=2021&ward=4")).toMatchObject({ term: 2021, ward: 4 });

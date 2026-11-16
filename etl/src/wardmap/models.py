@@ -354,7 +354,46 @@ class ElectionWardsEnvelope(EnvelopeBase):
     rows: list[WardElectionRow]
 
 
+# ---- party funding -----------------------------------------------------------------------------
+
+
+class DonorTotal(Strict):
+    donor: str
+    amount: float = Field(description="Rand declared from this donor in the period")
+    declarations: int
+
+
+class PartyDonations(Strict):
+    party: str
+    total: float
+    by_financial_year: dict[str, float]
+    top_donors: list[DonorTotal] = Field(description="Largest donors first (up to 10)")
+
+
+class DonationRow(Strict):
+    financial_year: str
+    quarter: int
+    section: Literal["quarter", "late"]
+    party: str
+    date: str
+    donor: str
+    type: str
+    amount: float
+
+
+class DonationsEnvelope(Strict):
+    dataset: Literal["donations"] = "donations"
+    schema_version: int = SCHEMA_VERSION
+    as_of: str
+    period: Period
+    sources: dict[str, Source]
+    gaps: list[Gap] = []
+    parties: list[PartyDonations] = Field(description="Largest total first")
+    rows: list[DonationRow]
+
+
 ENVELOPES: dict[str, type[BaseModel]] = {
+    "donations": DonationsEnvelope,
     "elections": ElectionsEnvelope,
     "election_wards": ElectionWardsEnvelope,
     "landmarks": LandmarksEnvelope,

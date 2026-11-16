@@ -1,0 +1,5460 @@
+{
+ "as_of": "2026-11-16",
+ "dataset": "donations",
+ "gaps": [
+  {
+   "code": "declared_only",
+   "message": "Only donations parties declared to the IEC: those above the disclosure threshold, from April 2021. Smaller donations (reported only as a running total without donors) and money given to party-linked companies or foundations are not included.",
+   "ward_no": null
+  },
+  {
+   "code": "donor_spelling",
+   "message": "Donors are listed as declared. The same donor can appear under different spellings; we don't merge them.",
+   "ward_no": null
+  }
+ ],
+ "parties": [
+  {
+   "by_financial_year": {
+    "2021/22": 47895770.1,
+    "2022/23": 54472863.01,
+    "2023/24": 126972220.31,
+    "2024/25": 68183782.92,
+    "2025/26": 122160956.84,
+    "2026/27": 104034185.25
+   },
+   "party": "Democratic Alliance",
+   "top_donors": [
+    {
+     "amount": 110099000.0,
+     "declarations": 8,
+     "donor": "Fynbos Ekwiteit (Pty) Ltd"
+    },
+    {
+     "amount": 98000000.0,
+     "declarations": 6,
+     "donor": "Fynbos Kapitaal Proprietary Limited"
+    },
+    {
+     "amount": 30000000.0,
+     "declarations": 2,
+     "donor": "Martin Moshal"
+    },
+    {
+     "amount": 25000000.0,
+     "declarations": 2,
+     "donor": "Mr J Oppenheimer"
+    },
+    {
+     "amount": 20000000.0,
+     "declarations": 2,
+     "donor": "Ms M Slack"
+    },
+    {
+     "amount": 18000000.0,
+     "declarations": 3,
+     "donor": "Mr M Moshal"
+    },
+    {
+     "amount": 16000000.0,
+     "declarations": 3,
+     "donor": "Mr D Barnes"
+    },
+    {
+     "amount": 15000000.0,
+     "declarations": 2,
+     "donor": "Main Street 1564"
+    },
+    {
+     "amount": 15000000.0,
+     "declarations": 1,
+     "donor": "Ms Mary Slack"
+    },
+    {
+     "amount": 14442925.31,
+     "declarations": 7,
+     "donor": "Voices of South Africa Foundation NPC"
+    }
+   ],
+   "total": 523719778.43
+  },
+  {
+   "by_financial_year": {
+    "2021/22": 66143938.0,
+    "2022/23": 51496880.0,
+    "2023/24": 47560309.0,
+    "2024/25": 53226586.0,
+    "2025/26": 10019100.0
+   },
+   "party": "African National Congress",
+   "top_donors": [
+    {
+     "amount": 58161000.0,
+     "declarations": 10,
+     "donor": "Chancellor House Trust"
+    },
+    {
+     "amount": 45000000.0,
+     "declarations": 3,
+     "donor": "Batho Batho Trust"
+    },
+    {
+     "amount": 35000000.0,
+     "declarations": 4,
+     "donor": "United Manganese of Kalahari"
+    },
+    {
+     "amount": 20000000.0,
+     "declarations": 2,
+     "donor": "Botho Botho Commercial Enterprise Pty Ltd"
+    },
+    {
+     "amount": 15000000.0,
+     "declarations": 1,
+     "donor": "Batho Batho"
+    },
+    {
+     "amount": 12753969.0,
+     "declarations": 2,
+     "donor": "Harmony Gold Mining Company Limited"
+    },
+    {
+     "amount": 7000000.0,
+     "declarations": 3,
+     "donor": "Naspers Limited"
+    },
+    {
+     "amount": 6900000.0,
+     "declarations": 1,
+     "donor": "African Rainbow Minerals Limited"
+    },
+    {
+     "amount": 6000000.0,
+     "declarations": 1,
+     "donor": "Safdev Ssdc (Pty) Ltd"
+    },
+    {
+     "amount": 5853969.0,
+     "declarations": 1,
+     "donor": "African Rainbow Minerals Ltd"
+    }
+   ],
+   "total": 228446813.0
+  },
+  {
+   "by_financial_year": {
+    "2021/22": 25300820.76,
+    "2022/23": 26461500.0,
+    "2023/24": 40059610.0,
+    "2024/25": 14186000.0,
+    "2025/26": 12367432.0,
+    "2026/27": 5500000.0
+   },
+   "party": "ActionSA",
+   "top_donors": [
+    {
+     "amount": 42500000.0,
+     "declarations": 11,
+     "donor": "Martin Moshal"
+    },
+    {
+     "amount": 31083694.0,
+     "declarations": 5,
+     "donor": "Victoria Freudenheim"
+    },
+    {
+     "amount": 9353432.0,
+     "declarations": 19,
+     "donor": "Herman Mashaba"
+    },
+    {
+     "amount": 8000000.0,
+     "declarations": 1,
+     "donor": "Jessica Slack Jell"
+    },
+    {
+     "amount": 4500000.0,
+     "declarations": 2,
+     "donor": "Martin Paul Moshal"
+    },
+    {
+     "amount": 4212350.5,
+     "declarations": 1,
+     "donor": "Pty Props 274 (Pty) Ltd"
+    },
+    {
+     "amount": 4000000.0,
+     "declarations": 4,
+     "donor": "African Equity Corporation (Pty) Ltd"
+    },
+    {
+     "amount": 3333333.0,
+     "declarations": 1,
+     "donor": "Jessica Slack-Jell"
+    },
+    {
+     "amount": 3333333.0,
+     "declarations": 1,
+     "donor": "Rebecca Oppenheimer"
+    },
+    {
+     "amount": 2707520.0,
+     "declarations": 6,
+     "donor": "Style Eyes of California (Pty) Ltd"
+    }
+   ],
+   "total": 123875362.76
+  },
+  {
+   "by_financial_year": {
+    "2023/24": 31844186.0,
+    "2024/25": 33895000.0,
+    "2025/26": 30000000.0,
+    "2026/27": 2250000.0
+   },
+   "party": "Rise Mzansi",
+   "top_donors": [
+    {
+     "amount": 60000000.0,
+     "declarations": 3,
+     "donor": "We Are the People"
+    },
+    {
+     "amount": 30000000.0,
+     "declarations": 2,
+     "donor": "Rebecca Oppenheimer"
+    },
+    {
+     "amount": 3300000.0,
+     "declarations": 1,
+     "donor": "The Tempyr Trust"
+    },
+    {
+     "amount": 1250000.0,
+     "declarations": 1,
+     "donor": "Ungani Investments ( Pty) Ltd"
+    },
+    {
+     "amount": 1000000.0,
+     "declarations": 1,
+     "donor": "Captrust Investments (Pty) Ltd"
+    },
+    {
+     "amount": 1000000.0,
+     "declarations": 1,
+     "donor": "Main Street 1564"
+    },
+    {
+     "amount": 559958.0,
+     "declarations": 1,
+     "donor": "Kairos Communications (Pty) Ltd"
+    },
+    {
+     "amount": 320000.0,
+     "declarations": 1,
+     "donor": "Zungu Family Trust"
+    },
+    {
+     "amount": 275000.0,
+     "declarations": 1,
+     "donor": "Craig Butters"
+    },
+    {
+     "amount": 184228.0,
+     "declarations": 1,
+     "donor": "Injozi Design Cc"
+    }
+   ],
+   "total": 97989186.0
+  },
+  {
+   "by_financial_year": {
+    "2021/22": 787588.0,
+    "2023/24": 20303514.52,
+    "2024/25": 38553790.0,
+    "2025/26": 514885.56
+   },
+   "party": "Inkatha Freedom Party",
+   "top_donors": [
+    {
+     "amount": 25000000.0,
+     "declarations": 2,
+     "donor": "Jonathan Ernest Maximillian Oppenheimer"
+    },
+    {
+     "amount": 15000000.0,
+     "declarations": 1,
+     "donor": "Nicholas Frank Oppenheimer"
+    },
+    {
+     "amount": 10000000.0,
+     "declarations": 1,
+     "donor": "Nf Oppenheimer"
+    },
+    {
+     "amount": 7500000.0,
+     "declarations": 1,
+     "donor": "Martin Paul Moshal"
+    },
+    {
+     "amount": 845464.08,
+     "declarations": 5,
+     "donor": "Konrad Adenauer Stiftung NPC"
+    },
+    {
+     "amount": 763794.0,
+     "declarations": 2,
+     "donor": "African Rainbow Minerals Limited"
+    },
+    {
+     "amount": 420000.0,
+     "declarations": 1,
+     "donor": "Harmony Gold Mining Limited"
+    },
+    {
+     "amount": 343794.0,
+     "declarations": 1,
+     "donor": "Harmony Gold Mining"
+    },
+    {
+     "amount": 186726.0,
+     "declarations": 1,
+     "donor": "Westminster Foundation for Democracy"
+    },
+    {
+     "amount": 100000.0,
+     "declarations": 1,
+     "donor": "Counterpoint Trading 156"
+    }
+   ],
+   "total": 60159778.08
+  },
+  {
+   "by_financial_year": {
+    "2023/24": 35820000.0,
+    "2024/25": 150000.0
+   },
+   "party": "Change Starts Now",
+   "top_donors": [
+    {
+     "amount": 15000000.0,
+     "declarations": 1,
+     "donor": "Fynbos Ekwiteit (Pty) Ltd"
+    },
+    {
+     "amount": 15000000.0,
+     "declarations": 1,
+     "donor": "Main Street 1564"
+    },
+    {
+     "amount": 5820000.0,
+     "declarations": 1,
+     "donor": "Ball Family Trust"
+    },
+    {
+     "amount": 150000.0,
+     "declarations": 1,
+     "donor": "William Rodger Jardine"
+    }
+   ],
+   "total": 35970000.0
+  },
+  {
+   "by_financial_year": {
+    "2023/24": 16800000.0,
+    "2024/25": 13037872.84,
+    "2025/26": 217275.6
+   },
+   "party": "Build One South Africa",
+   "top_donors": [
+    {
+     "amount": 15500000.0,
+     "declarations": 4,
+     "donor": "Martin Paul Moshal"
+    },
+    {
+     "amount": 6000000.0,
+     "declarations": 1,
+     "donor": "Jessica Bridget Slack Jell"
+    },
+    {
+     "amount": 6000000.0,
+     "declarations": 2,
+     "donor": "Mary Slack"
+    },
+    {
+     "amount": 1500000.0,
+     "declarations": 2,
+     "donor": "Rth Investments (Pty) Ltd"
+    },
+    {
+     "amount": 505148.44,
+     "declarations": 4,
+     "donor": "Konrad Adenauer Stiftung NPC"
+    },
+    {
+     "amount": 250000.0,
+     "declarations": 1,
+     "donor": "The Douw Steyn Family Trust"
+    },
+    {
+     "amount": 200000.0,
+     "declarations": 1,
+     "donor": "Hlumelo Biko"
+    },
+    {
+     "amount": 100000.0,
+     "declarations": 1,
+     "donor": "Robert B Hersov"
+    }
+   ],
+   "total": 30055148.44
+  },
+  {
+   "by_financial_year": {
+    "2021/22": 430000.0,
+    "2022/23": 557000.0,
+    "2023/24": 8351380.0,
+    "2024/25": 6649900.0
+   },
+   "party": "Patriotic Alliance",
+   "top_donors": [
+    {
+     "amount": 5100000.0,
+     "declarations": 5,
+     "donor": "Zar Empire Holdings Pty Ltd"
+    },
+    {
+     "amount": 4624030.0,
+     "declarations": 9,
+     "donor": "Gayton Mckenzie"
+    },
+    {
+     "amount": 2000000.0,
+     "declarations": 1,
+     "donor": "Red C2 Pty Ltd"
+    },
+    {
+     "amount": 1254250.0,
+     "declarations": 2,
+     "donor": "Kenny Kunene"
+    },
+    {
+     "amount": 1000000.0,
+     "declarations": 1,
+     "donor": "Valumax Projects Pty Ltd"
+    },
+    {
+     "amount": 380000.0,
+     "declarations": 2,
+     "donor": "Downtown Spares"
+    },
+    {
+     "amount": 380000.0,
+     "declarations": 1,
+     "donor": "Metrowired Pty Ltd"
+    },
+    {
+     "amount": 250000.0,
+     "declarations": 1,
+     "donor": "Delicate Slate Mining Pty Ltd"
+    },
+    {
+     "amount": 230000.0,
+     "declarations": 1,
+     "donor": "E Botha and Y Erasmus Inc"
+    },
+    {
+     "amount": 200000.0,
+     "declarations": 1,
+     "donor": "3Sixty Health Solutions"
+    }
+   ],
+   "total": 15988280.0
+  },
+  {
+   "by_financial_year": {
+    "2021/22": 3148176.0,
+    "2022/23": 352600.0,
+    "2023/24": 2640000.0,
+    "2024/25": 515313.0
+   },
+   "party": "Economic Freedom Fighters",
+   "top_donors": [
+    {
+     "amount": 2419088.0,
+     "declarations": 2,
+     "donor": "African Rainbow Minerals Limited"
+    },
+    {
+     "amount": 1320000.0,
+     "declarations": 1,
+     "donor": "Harmony Gold Mining Company Limited"
+    },
+    {
+     "amount": 1099088.0,
+     "declarations": 1,
+     "donor": "Harmony Gold Mining"
+    },
+    {
+     "amount": 750000.0,
+     "declarations": 2,
+     "donor": "3Sixty Health (Pty) Ltd"
+    },
+    {
+     "amount": 515313.0,
+     "declarations": 1,
+     "donor": "Mobile Telephone Networks (Pty) Ltd"
+    },
+    {
+     "amount": 202600.0,
+     "declarations": 1,
+     "donor": "Car Junction"
+    },
+    {
+     "amount": 150000.0,
+     "declarations": 1,
+     "donor": "Twaabam Pty Ltd"
+    },
+    {
+     "amount": 100000.0,
+     "declarations": 1,
+     "donor": "Mr Sn Maseko"
+    },
+    {
+     "amount": 100000.0,
+     "declarations": 1,
+     "donor": "The South African Breweries Pty Ltd"
+    }
+   ],
+   "total": 6656089.0
+  },
+  {
+   "by_financial_year": {
+    "2026/27": 5000000.0
+   },
+   "party": "Labour Party of South Africa",
+   "top_donors": [
+    {
+     "amount": 5000000.0,
+     "declarations": 1,
+     "donor": "Association of Mineworkers & Construction Union (Amcu)"
+    }
+   ],
+   "total": 5000000.0
+  },
+  {
+   "by_financial_year": {
+    "2023/24": 2250000.0
+   },
+   "party": "United Democratic Movement",
+   "top_donors": [
+    {
+     "amount": 1000000.0,
+     "declarations": 1,
+     "donor": "Mary Slack"
+    },
+    {
+     "amount": 500000.0,
+     "declarations": 1,
+     "donor": "Exxaroreso"
+    },
+    {
+     "amount": 500000.0,
+     "declarations": 1,
+     "donor": "We Are the People"
+    },
+    {
+     "amount": 250000.0,
+     "declarations": 1,
+     "donor": "The Douw Steyn Family Trust"
+    }
+   ],
+   "total": 2250000.0
+  },
+  {
+   "by_financial_year": {
+    "2023/24": 1599000.0
+   },
+   "party": "Independent South African National Civic Organisation",
+   "top_donors": [
+    {
+     "amount": 1599000.0,
+     "declarations": 2,
+     "donor": "Main Street 1564"
+    }
+   ],
+   "total": 1599000.0
+  },
+  {
+   "by_financial_year": {
+    "2021/22": 484438.0,
+    "2023/24": 900600.0
+   },
+   "party": "Freedom Front Plus (Vryheidsfront Plus)",
+   "top_donors": [
+    {
+     "amount": 542219.0,
+     "declarations": 2,
+     "donor": "African Rainbow Minerals Limited"
+    },
+    {
+     "amount": 542219.0,
+     "declarations": 2,
+     "donor": "Harmony Gold Mining Company Limited"
+    },
+    {
+     "amount": 169600.0,
+     "declarations": 1,
+     "donor": "Robert Hersov"
+    },
+    {
+     "amount": 131000.0,
+     "declarations": 1,
+     "donor": "Taipei Liaison Office in Cape Town"
+    }
+   ],
+   "total": 1385038.0
+  },
+  {
+   "by_financial_year": {
+    "2021/22": 463347.0,
+    "2024/25": 600000.0
+   },
+   "party": "GOOD",
+   "top_donors": [
+    {
+     "amount": 500000.0,
+     "declarations": 1,
+     "donor": "We Are the People Association"
+    },
+    {
+     "amount": 200000.0,
+     "declarations": 1,
+     "donor": "3Sixty Health Solutions"
+    },
+    {
+     "amount": 140447.0,
+     "declarations": 1,
+     "donor": "South African Law School"
+    },
+    {
+     "amount": 122900.0,
+     "declarations": 1,
+     "donor": "Si Africa Solutions"
+    },
+    {
+     "amount": 100000.0,
+     "declarations": 1,
+     "donor": "Winston Brittow"
+    }
+   ],
+   "total": 1063347.0
+  },
+  {
+   "by_financial_year": {
+    "2024/25": 937341.24
+   },
+   "party": "Referendum Party",
+   "top_donors": [
+    {
+     "amount": 937341.24,
+     "declarations": 1,
+     "donor": "Cape Independence Advocacy Group"
+    }
+   ],
+   "total": 937341.24
+  },
+  {
+   "by_financial_year": {
+    "2021/22": 235000.0,
+    "2024/25": 240000.0
+   },
+   "party": "African Christian Democratic Party",
+   "top_donors": [
+    {
+     "amount": 235000.0,
+     "declarations": 1,
+     "donor": "Firestation Asset Management (Pty) Ltd"
+    },
+    {
+     "amount": 120000.0,
+     "declarations": 1,
+     "donor": "African Rainbow Minerals Limited"
+    },
+    {
+     "amount": 120000.0,
+     "declarations": 1,
+     "donor": "Harmony Gold Mining Company Limited"
+    }
+   ],
+   "total": 475000.0
+  },
+  {
+   "by_financial_year": {
+    "2025/26": 440500.0
+   },
+   "party": "Alliance of Citizens for Change",
+   "top_donors": [
+    {
+     "amount": 440500.0,
+     "declarations": 1,
+     "donor": "Masizole Mnqasela"
+    }
+   ],
+   "total": 440500.0
+  },
+  {
+   "by_financial_year": {
+    "2024/25": 400000.0
+   },
+   "party": "South African Rainbow Alliance",
+   "top_donors": [
+    {
+     "amount": 400000.0,
+     "declarations": 1,
+     "donor": "Tmbh Pty Ltd"
+    }
+   ],
+   "total": 400000.0
+  },
+  {
+   "by_financial_year": {
+    "2024/25": 380555.0
+   },
+   "party": "Umkhonto Wesizwe",
+   "top_donors": [
+    {
+     "amount": 380555.0,
+     "declarations": 1,
+     "donor": "South African Policy Education Initiative"
+    }
+   ],
+   "total": 380555.0
+  },
+  {
+   "by_financial_year": {
+    "2023/24": 360000.0
+   },
+   "party": "Able Leadership",
+   "top_donors": [
+    {
+     "amount": 360000.0,
+     "declarations": 3,
+     "donor": "Madzahisi Trading Enterprise"
+    }
+   ],
+   "total": 360000.0
+  },
+  {
+   "by_financial_year": {
+    "2021/22": 200000.0,
+    "2023/24": 120000.0
+   },
+   "party": "African Transformation Movement",
+   "top_donors": [
+    {
+     "amount": 200000.0,
+     "declarations": 1,
+     "donor": "3Sixty Health (Pty) Ltd"
+    },
+    {
+     "amount": 120000.0,
+     "declarations": 1,
+     "donor": "Caesar Nongqunga"
+    }
+   ],
+   "total": 320000.0
+  },
+  {
+   "by_financial_year": {
+    "2021/22": 212386.04
+   },
+   "party": "Abantu Integrity Movement",
+   "top_donors": [
+    {
+     "amount": 112386.04,
+     "declarations": 1,
+     "donor": "Mkhuseli Jack Investment Trust"
+    },
+    {
+     "amount": 100000.0,
+     "declarations": 1,
+     "donor": "Sakumzi Justice Macozoma"
+    }
+   ],
+   "total": 212386.04
+  },
+  {
+   "by_financial_year": {
+    "2021/22": 150000.0
+   },
+   "party": "Shosholoza Progressive Party",
+   "top_donors": [
+    {
+     "amount": 150000.0,
+     "declarations": 1,
+     "donor": "Institute of Commerce and Management SA"
+    }
+   ],
+   "total": 150000.0
+  }
+ ],
+ "period": {
+  "from": "2021-04-08",
+  "to": "2026-06-30"
+ },
+ "rows": [
+  {
+   "amount": 1000000.0,
+   "date": "2021-04-08",
+   "donor": "NONKWELO INVESTMENT HOLDINGS",
+   "financial_year": "2021/22",
+   "party": "African National Congress",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 500000.0,
+   "date": "2021-04-09",
+   "donor": "MR CEDRIC M NTOMBELA",
+   "financial_year": "2021/22",
+   "party": "African National Congress",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1000000.0,
+   "date": "2021-04-09",
+   "donor": "NONKWELO INVESTMENT HOLDINGS",
+   "financial_year": "2021/22",
+   "party": "African National Congress",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 100000.0,
+   "date": "2021-04-12",
+   "donor": "TYEKS SECURITY",
+   "financial_year": "2021/22",
+   "party": "African National Congress",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 350000.0,
+   "date": "2021-04-26",
+   "donor": "BRAHMAN HILLS PROPRIETARY LIMITED",
+   "financial_year": "2021/22",
+   "party": "ActionSA",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 620000.0,
+   "date": "2021-04-29",
+   "donor": "MR L SIBIYA",
+   "financial_year": "2021/22",
+   "party": "African National Congress",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 121490.26,
+   "date": "2021-05-03",
+   "donor": "BLACK LIKE ME (PTY) LTD",
+   "financial_year": "2021/22",
+   "party": "ActionSA",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 200000.0,
+   "date": "2021-05-03",
+   "donor": "LONGLANDS VILLAGE (PTY) LTD",
+   "financial_year": "2021/22",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 333600.0,
+   "date": "2021-05-11",
+   "donor": "STYLE EYES OF CALIFORNIA (PTY) LTD",
+   "financial_year": "2021/22",
+   "party": "ActionSA",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 15000000.0,
+   "date": "2021-05-14",
+   "donor": "MS MARY SLACK",
+   "financial_year": "2021/22",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 200177.05,
+   "date": "2021-05-17",
+   "donor": "FRIEDRICH NAUMANN FOUNDATION",
+   "financial_year": "2021/22",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 5000000.0,
+   "date": "2021-05-18",
+   "donor": "UNITED MANGANESE OF KALAHARI",
+   "financial_year": "2021/22",
+   "party": "African National Congress",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 184156.33,
+   "date": "2021-05-20",
+   "donor": "DANISH LIBERAL DEMOCRACY PROGRAMME",
+   "financial_year": "2021/22",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 2500000.0,
+   "date": "2021-05-24",
+   "donor": "MAJESTIC SILVER TRADING 40 (PTY) LTD",
+   "financial_year": "2021/22",
+   "party": "African National Congress",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 100000.0,
+   "date": "2021-05-24",
+   "donor": "JACQUES PLAUT",
+   "financial_year": "2021/22",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 2500000.0,
+   "date": "2021-06-09",
+   "donor": "MARTIN MOSHAL",
+   "financial_year": "2021/22",
+   "party": "ActionSA",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 299418.1,
+   "date": "2021-06-28",
+   "donor": "FRIEDRICH NAUMANN FOUNDATION",
+   "financial_year": "2021/22",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 120000.0,
+   "date": "2021-07-02",
+   "donor": "KONRAD-ADENAUER-STIFTUNG E.V.",
+   "financial_year": "2021/22",
+   "party": "ActionSA",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 500000.0,
+   "date": "2021-07-07",
+   "donor": "MOXITONE INVESTMENTS PTY LTD",
+   "financial_year": "2021/22",
+   "party": "ActionSA",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 150000.0,
+   "date": "2021-07-16",
+   "donor": "DISCOVERY CENTRAL SERVICES",
+   "financial_year": "2021/22",
+   "party": "Democratic Alliance",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 122900.0,
+   "date": "2021-07-19",
+   "donor": "SI AFRICA SOLUTIONS",
+   "financial_year": "2021/22",
+   "party": "GOOD",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 23920.0,
+   "date": "2021-07-20",
+   "donor": "STYLE EYES OF CALIFORNIA (PTY) LTD",
+   "financial_year": "2021/22",
+   "party": "ActionSA",
+   "quarter": 2,
+   "section": "late",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 200000.0,
+   "date": "2021-07-20",
+   "donor": "STYLE EYES OF CALIFORNIA (PTY) LTD",
+   "financial_year": "2021/22",
+   "party": "ActionSA",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 125000.0,
+   "date": "2021-07-23",
+   "donor": "FIRESTATION ASSET MANAGEMENT (PTY) LTD",
+   "financial_year": "2021/22",
+   "party": "ActionSA",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 400000.0,
+   "date": "2021-08-18",
+   "donor": "CEDRIC MUZIWAKHILE NTOMBELA",
+   "financial_year": "2021/22",
+   "party": "African National Congress",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 47007.43,
+   "date": "2021-08-20",
+   "donor": "FRIEDRICH NEUMANN FOUNDATION",
+   "financial_year": "2021/22",
+   "party": "Democratic Alliance",
+   "quarter": 2,
+   "section": "late",
+   "type": "Monetary"
+  },
+  {
+   "amount": 166000.0,
+   "date": "2021-08-30",
+   "donor": "MATAMELA RAMAPHOSA CYRIL",
+   "financial_year": "2021/22",
+   "party": "African National Congress",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 200000.0,
+   "date": "2021-08-30",
+   "donor": "MATAMELA RAMAPHOSA CYRIL",
+   "financial_year": "2021/22",
+   "party": "African National Congress",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 15000000.0,
+   "date": "2021-08-31",
+   "donor": "CHANCELLOR HOUSE TRUST",
+   "financial_year": "2021/22",
+   "party": "African National Congress",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1000000.0,
+   "date": "2021-09-03",
+   "donor": "NEP CONSULTING ENGENEERS PTY LTD",
+   "financial_year": "2021/22",
+   "party": "African National Congress",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 500000.0,
+   "date": "2021-09-09",
+   "donor": "AFRICAN EQUITY CORPORATION PTY LTD",
+   "financial_year": "2021/22",
+   "party": "ActionSA",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 5853969.0,
+   "date": "2021-09-09",
+   "donor": "AFRICAN RAINBOW MINERALS LTD",
+   "financial_year": "2021/22",
+   "party": "African National Congress",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1000000.0,
+   "date": "2021-09-10",
+   "donor": "NASPERS LTD",
+   "financial_year": "2021/22",
+   "party": "Democratic Alliance",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 100000.0,
+   "date": "2021-09-11",
+   "donor": "FIRESTATION ASSET MANAGEMENT (PTY) LTD",
+   "financial_year": "2021/22",
+   "party": "ActionSA",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 170000.0,
+   "date": "2021-09-14",
+   "donor": "B & J STEENBERG ENGINEERING",
+   "financial_year": "2021/22",
+   "party": "Democratic Alliance",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 3333333.0,
+   "date": "2021-09-16",
+   "donor": "REBECCA OPPENHEIMER",
+   "financial_year": "2021/22",
+   "party": "ActionSA",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 3333333.0,
+   "date": "2021-09-17",
+   "donor": "JESSICA SLACK-JELL",
+   "financial_year": "2021/22",
+   "party": "ActionSA",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 5000000.0,
+   "date": "2021-09-17",
+   "donor": "MARTIN MOSHAL",
+   "financial_year": "2021/22",
+   "party": "ActionSA",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 3333334.0,
+   "date": "2021-09-17",
+   "donor": "VICTORIA FREUDENHEIM",
+   "financial_year": "2021/22",
+   "party": "ActionSA",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 235000.0,
+   "date": "2021-09-20",
+   "donor": "FIRESTATION ASSET MANAGEMENT (PTY) LTD",
+   "financial_year": "2021/22",
+   "party": "African Christian Democratic Party",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 15000000.0,
+   "date": "2021-09-22",
+   "donor": "MARTIN MOSHAL",
+   "financial_year": "2021/22",
+   "party": "Democratic Alliance",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 230000.0,
+   "date": "2021-09-27",
+   "donor": "KAGGEN INVESTMENTS",
+   "financial_year": "2021/22",
+   "party": "ActionSA",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 124462.0,
+   "date": "2021-09-27",
+   "donor": "THE SHAVE AND GIBSON FOUNDATION",
+   "financial_year": "2021/22",
+   "party": "ActionSA",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 200000.0,
+   "date": "2021-09-27",
+   "donor": "SANDY VAN HOOGSTRATEN",
+   "financial_year": "2021/22",
+   "party": "Democratic Alliance",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 300000.0,
+   "date": "2021-09-29",
+   "donor": "SIR MICHAEL LAWRENCE DAVIS",
+   "financial_year": "2021/22",
+   "party": "Democratic Alliance",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 112386.04,
+   "date": "2021-09-30",
+   "donor": "MKHUSELI JACK INVESTMENT TRUST",
+   "financial_year": "2021/22",
+   "party": "Abantu Integrity Movement",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 179998.0,
+   "date": "2021-10-01",
+   "donor": "BLACK LIKE ME (PTY) LTD",
+   "financial_year": "2021/22",
+   "party": "ActionSA",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 200394.0,
+   "date": "2021-10-01",
+   "donor": "MR JODY SCHECKTER",
+   "financial_year": "2021/22",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 230000.0,
+   "date": "2021-10-01",
+   "donor": "GAYTON MCKENZIE",
+   "financial_year": "2021/22",
+   "party": "Patriotic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 150000.0,
+   "date": "2021-10-04",
+   "donor": "INSTITUTE OF COMMERCE AND MANAGEMENT SA",
+   "financial_year": "2021/22",
+   "party": "Shosholoza Progressive Party",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 2115019.0,
+   "date": "2021-10-05",
+   "donor": "AFRICAN RAINBOW MINERALS",
+   "financial_year": "2021/22",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1099088.0,
+   "date": "2021-10-05",
+   "donor": "AFRICAN RAINBOW MINERALS LIMITED",
+   "financial_year": "2021/22",
+   "party": "Economic Freedom Fighters",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 343794.0,
+   "date": "2021-10-05",
+   "donor": "AFRICAN RAINBOW MINERALS LIMITED",
+   "financial_year": "2021/22",
+   "party": "Inkatha Freedom Party",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 242219.0,
+   "date": "2021-10-05",
+   "donor": "AFRICAN RAINBOW MINERALS LIMITED",
+   "financial_year": "2021/22",
+   "party": "Freedom Front Plus (Vryheidsfront Plus)",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 300000.0,
+   "date": "2021-10-06",
+   "donor": "CHARLES LIASIDES",
+   "financial_year": "2021/22",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 250000.0,
+   "date": "2021-10-06",
+   "donor": "KARL LEINBERGER",
+   "financial_year": "2021/22",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 150000.0,
+   "date": "2021-10-06",
+   "donor": "3SIXTY HEALTH (PTY) LTD",
+   "financial_year": "2021/22",
+   "party": "Economic Freedom Fighters",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 600000.0,
+   "date": "2021-10-07",
+   "donor": "3SIXTY HEALTH (PTY) LTD",
+   "financial_year": "2021/22",
+   "party": "Economic Freedom Fighters",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 200000.0,
+   "date": "2021-10-07",
+   "donor": "3SIXTY HEALTH SOLUTIONS",
+   "financial_year": "2021/22",
+   "party": "Patriotic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 102267.11,
+   "date": "2021-10-08",
+   "donor": "FRIEDRICH NAUMANN FOUNDATION",
+   "financial_year": "2021/22",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 500000.0,
+   "date": "2021-10-08",
+   "donor": "NICHOLAS FRANK OPPENHEIMER",
+   "financial_year": "2021/22",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 100000.0,
+   "date": "2021-10-08",
+   "donor": "COUNTERPOINT TRADING 156",
+   "financial_year": "2021/22",
+   "party": "Inkatha Freedom Party",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 200000.0,
+   "date": "2021-10-11",
+   "donor": "3SIXTY HEALTH (PTY) LTD",
+   "financial_year": "2021/22",
+   "party": "African Transformation Movement",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 200000.0,
+   "date": "2021-10-11",
+   "donor": "3SIXTY HEALTH SOLUTIONS",
+   "financial_year": "2021/22",
+   "party": "GOOD",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 800000.0,
+   "date": "2021-10-12",
+   "donor": "3SIXTY HEALTH SOLUTIONS",
+   "financial_year": "2021/22",
+   "party": "African National Congress",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1000000.0,
+   "date": "2021-10-12",
+   "donor": "THE CHANDOS TRUST",
+   "financial_year": "2021/22",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 150000.0,
+   "date": "2021-10-13",
+   "donor": "SHAVE & GIBSON FOUNDATION",
+   "financial_year": "2021/22",
+   "party": "ActionSA",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 100000.0,
+   "date": "2021-10-19",
+   "donor": "SAKUMZI JUSTICE MACOZOMA",
+   "financial_year": "2021/22",
+   "party": "Abantu Integrity Movement",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 5853969.0,
+   "date": "2021-10-19",
+   "donor": "HARMONY GOLD MINING COMPANY LIMITED",
+   "financial_year": "2021/22",
+   "party": "African National Congress",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 2115019.0,
+   "date": "2021-10-19",
+   "donor": "HARMONY GOLD MINING COMPANY LIMITED",
+   "financial_year": "2021/22",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1099088.0,
+   "date": "2021-10-19",
+   "donor": "HARMONY GOLD MINING",
+   "financial_year": "2021/22",
+   "party": "Economic Freedom Fighters",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 343794.0,
+   "date": "2021-10-19",
+   "donor": "HARMONY GOLD MINING",
+   "financial_year": "2021/22",
+   "party": "Inkatha Freedom Party",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 242219.0,
+   "date": "2021-10-19",
+   "donor": "HARMONY GOLD MINING COMPANY LIMITED",
+   "financial_year": "2021/22",
+   "party": "Freedom Front Plus (Vryheidsfront Plus)",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 5099000.0,
+   "date": "2021-10-21",
+   "donor": "FYNBOS EKWITEIT (PTY) LTD",
+   "financial_year": "2021/22",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 100000.0,
+   "date": "2021-10-27",
+   "donor": "THE SOUTH AFRICAN BREWERIES PTY LTD",
+   "financial_year": "2021/22",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 100000.0,
+   "date": "2021-10-27",
+   "donor": "THE SOUTH AFRICAN BREWERIES PTY LTD",
+   "financial_year": "2021/22",
+   "party": "Economic Freedom Fighters",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 329400.0,
+   "date": "2021-10-29",
+   "donor": "FRIEDRICH NAUMANN FOUNDATION",
+   "financial_year": "2021/22",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 100000.0,
+   "date": "2021-10-29",
+   "donor": "MR SN MASEKO",
+   "financial_year": "2021/22",
+   "party": "Economic Freedom Fighters",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 140447.0,
+   "date": "2021-11-03",
+   "donor": "SOUTH AFRICAN LAW SCHOOL",
+   "financial_year": "2021/22",
+   "party": "GOOD",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 150000.0,
+   "date": "2021-11-04",
+   "donor": "DISCOVERY CENTRAL SERVICES",
+   "financial_year": "2021/22",
+   "party": "African National Congress",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1000000.0,
+   "date": "2021-11-19",
+   "donor": "NASPERS LTD",
+   "financial_year": "2021/22",
+   "party": "African National Congress",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 4212350.5,
+   "date": "2021-12-02",
+   "donor": "PTY PROPS 274 (PTY) LTD",
+   "financial_year": "2021/22",
+   "party": "ActionSA",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 408524.36,
+   "date": "2021-12-08",
+   "donor": "FRIEDRICH NAUMANN FOUNDATION",
+   "financial_year": "2021/22",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 530000.0,
+   "date": "2021-12-15",
+   "donor": "KONRAD ADENAUER STIFTUNG NPC",
+   "financial_year": "2021/22",
+   "party": "ActionSA",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 15000000.0,
+   "date": "2021-12-21",
+   "donor": "BATHO BATHO",
+   "financial_year": "2021/22",
+   "party": "African National Congress",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 78000.0,
+   "date": "2022-01-26",
+   "donor": "FRIEDRICH NAUMANN FOUNDATION",
+   "financial_year": "2021/22",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "late",
+   "type": "Monetary"
+  },
+  {
+   "amount": 771097.99,
+   "date": "2022-01-26",
+   "donor": "FRIEDRICH NAUMANN FOUNDATION",
+   "financial_year": "2021/22",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 150000.0,
+   "date": "2022-02-14",
+   "donor": "FRIEDRICH NAUMANN FOUNDATION",
+   "financial_year": "2021/22",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "late",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 448661.57,
+   "date": "2022-02-14",
+   "donor": "FRIEDRICH NAUMANN FOUNDATION",
+   "financial_year": "2021/22",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "late",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 10000000.0,
+   "date": "2022-03-01",
+   "donor": "UNITED MANGANESE OF KALAHARI",
+   "financial_year": "2021/22",
+   "party": "African National Congress",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 692136.92,
+   "date": "2022-03-01",
+   "donor": "DANISH LIBERAL DEMOCRACY PROGRAMME",
+   "financial_year": "2021/22",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 78000.0,
+   "date": "2022-03-01",
+   "donor": "FRIEDRICH NAUMANN FOUNDATION",
+   "financial_year": "2021/22",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "late",
+   "type": "Monetary"
+  },
+  {
+   "amount": 120000.0,
+   "date": "2022-03-01",
+   "donor": "POLYOAK PACKAGING (PTY) LTD",
+   "financial_year": "2021/22",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 75000.0,
+   "date": "2022-03-31",
+   "donor": "FRIEDRICH NAUMANN FOUNDATION",
+   "financial_year": "2021/22",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "late",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 112491.24,
+   "date": "2022-03-31",
+   "donor": "FRIEDRICH NAUMANN FOUNDATION",
+   "financial_year": "2021/22",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 150000.0,
+   "date": "2022-04-01",
+   "donor": "GAYTON MCKENZIE",
+   "financial_year": "2022/23",
+   "party": "Patriotic Alliance",
+   "quarter": 1,
+   "section": "late",
+   "type": "Monetary"
+  },
+  {
+   "amount": 160000.0,
+   "date": "2022-04-01",
+   "donor": "GAYTON MCKENZIE",
+   "financial_year": "2022/23",
+   "party": "Patriotic Alliance",
+   "quarter": 1,
+   "section": "late",
+   "type": "Monetary"
+  },
+  {
+   "amount": 15000000.0,
+   "date": "2022-04-08",
+   "donor": "FYNBOS EKWITEIT (PTY) LTD",
+   "financial_year": "2022/23",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 600000.0,
+   "date": "2022-05-13",
+   "donor": "STYLE EYES OF CALIFORNIA (PTY) LTD",
+   "financial_year": "2022/23",
+   "party": "ActionSA",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 254193.57,
+   "date": "2022-05-31",
+   "donor": "VOLKSPARTIJ VOOR VRIJHEID EN DEMOCRATIE",
+   "financial_year": "2022/23",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 10000000.0,
+   "date": "2022-06-14",
+   "donor": "BOTHO BOTHO COMMERCIAL ENTERPRISE PTY LTD",
+   "financial_year": "2022/23",
+   "party": "African National Congress",
+   "quarter": 1,
+   "section": "late",
+   "type": "Monetary"
+  },
+  {
+   "amount": 150000.0,
+   "date": "2022-06-22",
+   "donor": "SHAVE & GIBSON GROUP PTY LTD",
+   "financial_year": "2022/23",
+   "party": "ActionSA",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 723493.56,
+   "date": "2022-06-24",
+   "donor": "FRIEDRICH NAUMANN FOUNDATION",
+   "financial_year": "2022/23",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 8000000.0,
+   "date": "2022-07-07",
+   "donor": "VICTORIA FREUDENHEIM",
+   "financial_year": "2022/23",
+   "party": "ActionSA",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 150000.0,
+   "date": "2022-07-08",
+   "donor": "DISCOVERY CENTRAL SERVICES",
+   "financial_year": "2022/23",
+   "party": "Democratic Alliance",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 8000000.0,
+   "date": "2022-07-18",
+   "donor": "JESSICA SLACK JELL",
+   "financial_year": "2022/23",
+   "party": "ActionSA",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 2000000.0,
+   "date": "2022-07-18",
+   "donor": "JESSICA SLACK JELL",
+   "financial_year": "2022/23",
+   "party": "Democratic Alliance",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 15000000.0,
+   "date": "2022-07-25",
+   "donor": "FYNBOS KAPITAAL PROPRIETARY LIMITED",
+   "financial_year": "2022/23",
+   "party": "Democratic Alliance",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 150000.0,
+   "date": "2022-08-01",
+   "donor": "TWAABAM PTY LTD",
+   "financial_year": "2022/23",
+   "party": "Economic Freedom Fighters",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 7500000.0,
+   "date": "2022-08-19",
+   "donor": "CHANCELLOR HOUSE TRUST",
+   "financial_year": "2022/23",
+   "party": "African National Congress",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 150000.0,
+   "date": "2022-08-26",
+   "donor": "WENDY ACKERMAN",
+   "financial_year": "2022/23",
+   "party": "Democratic Alliance",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 150000.0,
+   "date": "2022-09-07",
+   "donor": "KING SOLOMON FOODS (PTY) LTD",
+   "financial_year": "2022/23",
+   "party": "Democratic Alliance",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 301500.0,
+   "date": "2022-09-16",
+   "donor": "VINCEMUS INVESTMENTS PTY LTD",
+   "financial_year": "2022/23",
+   "party": "ActionSA",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 15000000.0,
+   "date": "2022-09-16",
+   "donor": "MARTIN MOSHAL",
+   "financial_year": "2022/23",
+   "party": "Democratic Alliance",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 701524.58,
+   "date": "2022-09-19",
+   "donor": "DANISH LIBERAL DEMOCRACY PROGRAMME",
+   "financial_year": "2022/23",
+   "party": "Democratic Alliance",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1000000.0,
+   "date": "2022-09-21",
+   "donor": "MOSS KADEY",
+   "financial_year": "2022/23",
+   "party": "ActionSA",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 500000.0,
+   "date": "2022-09-27",
+   "donor": "LAURIE CHIAPPINI",
+   "financial_year": "2022/23",
+   "party": "Democratic Alliance",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1663221.93,
+   "date": "2022-09-29",
+   "donor": "FRIEDRICH NAUMANN FOUNDATION",
+   "financial_year": "2022/23",
+   "party": "Democratic Alliance",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 247000.0,
+   "date": "2022-10-12",
+   "donor": "KENNY KUNENE",
+   "financial_year": "2022/23",
+   "party": "Patriotic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 15000000.0,
+   "date": "2022-10-20",
+   "donor": "BATHO BATHO TRUST",
+   "financial_year": "2022/23",
+   "party": "African National Congress",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 202600.0,
+   "date": "2022-10-21",
+   "donor": "CAR JUNCTION",
+   "financial_year": "2022/23",
+   "party": "Economic Freedom Fighters",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 271000.0,
+   "date": "2022-10-25",
+   "donor": "FYNBOS TRUST",
+   "financial_year": "2022/23",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 250000.0,
+   "date": "2022-11-09",
+   "donor": "KAREN CRAMER",
+   "financial_year": "2022/23",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 2000000.0,
+   "date": "2022-11-11",
+   "donor": "NASPERS LIMITED",
+   "financial_year": "2022/23",
+   "party": "African National Congress",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 2000000.0,
+   "date": "2022-11-11",
+   "donor": "NASPERS LIMITED",
+   "financial_year": "2022/23",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 15000000.0,
+   "date": "2022-11-25",
+   "donor": "UNITED MANGANESE OF KALAHARI",
+   "financial_year": "2022/23",
+   "party": "African National Congress",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 3500000.0,
+   "date": "2022-12-08",
+   "donor": "MARTIN MOSHAL",
+   "financial_year": "2022/23",
+   "party": "ActionSA",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 180000.0,
+   "date": "2022-12-09",
+   "donor": "KONRAD ADENAUER STIFTUNG NPC",
+   "financial_year": "2022/23",
+   "party": "ActionSA",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 1000000.0,
+   "date": "2022-12-14",
+   "donor": "AFRICAN EQUITY CORPORATION (PTY) LTD",
+   "financial_year": "2022/23",
+   "party": "ActionSA",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 400325.54,
+   "date": "2022-12-21",
+   "donor": "FRIEDRICH NAUMANN FOUNDATION",
+   "financial_year": "2022/23",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 200000.0,
+   "date": "2022-12-31",
+   "donor": "HLUMELO BIKO",
+   "financial_year": "2023/24",
+   "party": "Build One South Africa",
+   "quarter": 1,
+   "section": "late",
+   "type": "Monetary"
+  },
+  {
+   "amount": 496880.0,
+   "date": "2023-01-01",
+   "donor": "EDUCATION AND TRAINING UNIT",
+   "financial_year": "2022/23",
+   "party": "African National Congress",
+   "quarter": 4,
+   "section": "late",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 150000.0,
+   "date": "2023-01-06",
+   "donor": "ELOHIM ERETS RETAILE",
+   "financial_year": "2023/24",
+   "party": "African National Congress",
+   "quarter": 2,
+   "section": "late",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1500000.0,
+   "date": "2023-01-06",
+   "donor": "ICHIKOWITZ FAMILY FOUNDATION",
+   "financial_year": "2022/23",
+   "party": "African National Congress",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 105000.0,
+   "date": "2023-01-16",
+   "donor": "DR BB MABIZELA",
+   "financial_year": "2022/23",
+   "party": "ActionSA",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1000000.0,
+   "date": "2023-01-20",
+   "donor": "RTH INVESTMENTS (PTY) LTD",
+   "financial_year": "2023/24",
+   "party": "Build One South Africa",
+   "quarter": 1,
+   "section": "late",
+   "type": "Monetary"
+  },
+  {
+   "amount": 428309.0,
+   "date": "2023-01-24",
+   "donor": "ICEBURG TRADING",
+   "financial_year": "2023/24",
+   "party": "African National Congress",
+   "quarter": 2,
+   "section": "late",
+   "type": "Monetary"
+  },
+  {
+   "amount": 125000.0,
+   "date": "2023-02-27",
+   "donor": "CHRIS DU TOIT",
+   "financial_year": "2022/23",
+   "party": "ActionSA",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 3500000.0,
+   "date": "2023-03-06",
+   "donor": "MARTIN PAUL MOSHAL",
+   "financial_year": "2022/23",
+   "party": "ActionSA",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 100000.0,
+   "date": "2023-03-09",
+   "donor": "ROBERT B HERSOV",
+   "financial_year": "2023/24",
+   "party": "Build One South Africa",
+   "quarter": 1,
+   "section": "late",
+   "type": "Monetary"
+  },
+  {
+   "amount": 139103.83,
+   "date": "2023-03-22",
+   "donor": "FRIEDRICH NAUMANN FOUNDATION",
+   "financial_year": "2022/23",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 120000.0,
+   "date": "2023-03-28",
+   "donor": "POLYOAK PACKAGING (PTY) LTD",
+   "financial_year": "2022/23",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 15000000.0,
+   "date": "2023-04-04",
+   "donor": "BATHO BATHO TRUST",
+   "financial_year": "2023/24",
+   "party": "African National Congress",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 200000.0,
+   "date": "2023-04-11",
+   "donor": "PHEPHA MV SECURITY SERVICES (PTY) LTD",
+   "financial_year": "2023/24",
+   "party": "African National Congress",
+   "quarter": 2,
+   "section": "late",
+   "type": "Monetary"
+  },
+  {
+   "amount": 500000.0,
+   "date": "2023-05-02",
+   "donor": "HERMAN MASHABA",
+   "financial_year": "2023/24",
+   "party": "ActionSA",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1500000.0,
+   "date": "2023-05-02",
+   "donor": "HERMAN MASHABA",
+   "financial_year": "2023/24",
+   "party": "ActionSA",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 5000000.0,
+   "date": "2023-05-02",
+   "donor": "MAIN STREET 1564",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 2000000.0,
+   "date": "2023-05-03",
+   "donor": "MARTIN PAUL MOSHAL",
+   "financial_year": "2023/24",
+   "party": "Build One South Africa",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 2000000.0,
+   "date": "2023-05-06",
+   "donor": "SOLOMON DAVID GROUP (PTY) LTD",
+   "financial_year": "2023/24",
+   "party": "ActionSA",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 200000.0,
+   "date": "2023-05-11",
+   "donor": "NANCY HOSSACK",
+   "financial_year": "2023/24",
+   "party": "ActionSA",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 200000.0,
+   "date": "2023-05-24",
+   "donor": "MR A A MCGREGOR",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 700000.0,
+   "date": "2023-06-05",
+   "donor": "STYLE EYES OF CALIFORNIA (PTY) LTD",
+   "financial_year": "2023/24",
+   "party": "ActionSA",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 15000000.0,
+   "date": "2023-06-09",
+   "donor": "FYNBOS EKWITEIT (PTY) LTD",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 7264160.0,
+   "date": "2023-06-20",
+   "donor": "VICTORIA FREUDENHEIM",
+   "financial_year": "2023/24",
+   "party": "ActionSA",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 250000.0,
+   "date": "2023-06-23",
+   "donor": "MR I LIDDLE",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 221161.09,
+   "date": "2023-06-26",
+   "donor": "FRIEDRICH NAUMANN FOUNDATION",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 125000.0,
+   "date": "2023-06-27",
+   "donor": "MR D ARTUS",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 5000000.0,
+   "date": "2023-06-28",
+   "donor": "CHANCELLOR HOUSE TRUST",
+   "financial_year": "2023/24",
+   "party": "African National Congress",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 2000000.0,
+   "date": "2023-06-28",
+   "donor": "MR G RYAN",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 105000.0,
+   "date": "2023-06-30",
+   "donor": "DR MJ BURKE",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1478230.02,
+   "date": "2023-07-10",
+   "donor": "DANISH LIBERAL DEMOCRACY PROGRAMME",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 200000.0,
+   "date": "2023-07-10",
+   "donor": "MR B MACROBERT",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 250000.0,
+   "date": "2023-07-10",
+   "donor": "MR R KAPLAN",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 112473.75,
+   "date": "2023-07-12",
+   "donor": "KONRAD ADENAUER STIFTUNG NPC",
+   "financial_year": "2023/24",
+   "party": "Inkatha Freedom Party",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 15000000.0,
+   "date": "2023-07-14",
+   "donor": "FYNBOS KAPITAAL PROPRIETARY LIMITED",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 225000.0,
+   "date": "2023-07-14",
+   "donor": "GAYTON MCKENZIE",
+   "financial_year": "2023/24",
+   "party": "Patriotic Alliance",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1000000.0,
+   "date": "2023-07-20",
+   "donor": "MARTIN PAUL MOSHAL",
+   "financial_year": "2023/24",
+   "party": "ActionSA",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 150000.0,
+   "date": "2023-07-26",
+   "donor": "SHAVE & GIBSON GROUP PTY LTD",
+   "financial_year": "2023/24",
+   "party": "ActionSA",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 5000000.0,
+   "date": "2023-07-31",
+   "donor": "MARY SLACK",
+   "financial_year": "2023/24",
+   "party": "Build One South Africa",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 2000000.0,
+   "date": "2023-08-01",
+   "donor": "HERMAN MASHABA",
+   "financial_year": "2023/24",
+   "party": "ActionSA",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 10000000.0,
+   "date": "2023-08-03",
+   "donor": "MS M SLACK",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 100000.0,
+   "date": "2023-08-07",
+   "donor": "MR R CARTER",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 250000.0,
+   "date": "2023-08-07",
+   "donor": "MRS G LEINBERGER",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 131000.0,
+   "date": "2023-08-10",
+   "donor": "TAIPEI LIAISON OFFICE IN CAPE TOWN",
+   "financial_year": "2023/24",
+   "party": "Freedom Front Plus (Vryheidsfront Plus)",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 200000.0,
+   "date": "2023-08-16",
+   "donor": "PETROCAM TRADING (PTY) LTD",
+   "financial_year": "2023/24",
+   "party": "ActionSA",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 5000000.0,
+   "date": "2023-08-24",
+   "donor": "MR M MOSHAL",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 108000.0,
+   "date": "2023-08-29",
+   "donor": "ALAN BEESLEY",
+   "financial_year": "2023/24",
+   "party": "ActionSA",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 127750.0,
+   "date": "2023-08-29",
+   "donor": "SOLOMON DAVID GROUP (PTY) LTD",
+   "financial_year": "2023/24",
+   "party": "ActionSA",
+   "quarter": 3,
+   "section": "late",
+   "type": "Monetary"
+  },
+  {
+   "amount": 465570.0,
+   "date": "2023-08-29",
+   "donor": "MR J SCHECKTER",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 3000000.0,
+   "date": "2023-08-31",
+   "donor": "MR D BARNES",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 500000.0,
+   "date": "2023-09-12",
+   "donor": "EXXARORESO",
+   "financial_year": "2023/24",
+   "party": "United Democratic Movement",
+   "quarter": 4,
+   "section": "late",
+   "type": "Monetary"
+  },
+  {
+   "amount": 250000.0,
+   "date": "2023-09-28",
+   "donor": "MR I LIDDLE",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 394890.76,
+   "date": "2023-09-30",
+   "donor": "FRIEDRICH NAUMANN FOUNDATION",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 250000.0,
+   "date": "2023-10-02",
+   "donor": "GAYTON MCKENZIE",
+   "financial_year": "2023/24",
+   "party": "Patriotic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 559958.0,
+   "date": "2023-10-03",
+   "donor": "KAIROS COMMUNICATIONS (PTY) LTD",
+   "financial_year": "2023/24",
+   "party": "Rise Mzansi",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 2000000.0,
+   "date": "2023-10-06",
+   "donor": "RED C2 PTY LTD",
+   "financial_year": "2023/24",
+   "party": "Patriotic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1000000.0,
+   "date": "2023-10-18",
+   "donor": "ARTEMIS PROPERTIES (PTY) LTD",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1000000.0,
+   "date": "2023-10-24",
+   "donor": "AFRICAN EQUITY CORPORATION (PTY) LTD",
+   "financial_year": "2023/24",
+   "party": "ActionSA",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 184228.0,
+   "date": "2023-10-24",
+   "donor": "INJOZI DESIGN CC",
+   "financial_year": "2023/24",
+   "party": "Rise Mzansi",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 148500.0,
+   "date": "2023-10-26",
+   "donor": "ALAN BEESLEY",
+   "financial_year": "2023/24",
+   "party": "ActionSA",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 190000.0,
+   "date": "2023-10-27",
+   "donor": "DOWNTOWN SPARES",
+   "financial_year": "2023/24",
+   "party": "Patriotic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1000000.0,
+   "date": "2023-10-27",
+   "donor": "MAIN STREET 1564",
+   "financial_year": "2023/24",
+   "party": "Rise Mzansi",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 190000.0,
+   "date": "2023-10-30",
+   "donor": "XTX TRADE",
+   "financial_year": "2023/24",
+   "party": "Patriotic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 3000000.0,
+   "date": "2023-10-31",
+   "donor": "MARTIN MOSHAL",
+   "financial_year": "2023/24",
+   "party": "ActionSA",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 7486200.0,
+   "date": "2023-10-31",
+   "donor": "VICTORIA FREUDENHEIM",
+   "financial_year": "2023/24",
+   "party": "ActionSA",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1000000.0,
+   "date": "2023-11-02",
+   "donor": "MARY SLACK",
+   "financial_year": "2023/24",
+   "party": "United Democratic Movement",
+   "quarter": 4,
+   "section": "late",
+   "type": "Monetary"
+  },
+  {
+   "amount": 191040.77,
+   "date": "2023-11-07",
+   "donor": "KONRAD ADENAUER STIFTUNG NPC",
+   "financial_year": "2023/24",
+   "party": "Inkatha Freedom Party",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 190000.0,
+   "date": "2023-11-10",
+   "donor": "DOWNTOWN SPARES",
+   "financial_year": "2023/24",
+   "party": "Patriotic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 380000.0,
+   "date": "2023-11-10",
+   "donor": "METROWIRED PTY LTD",
+   "financial_year": "2023/24",
+   "party": "Patriotic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 190000.0,
+   "date": "2023-11-10",
+   "donor": "RAPULA MOGAKI",
+   "financial_year": "2023/24",
+   "party": "Patriotic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 150000.0,
+   "date": "2023-11-13",
+   "donor": "SHIYAN 80422 (PTY) LTD",
+   "financial_year": "2023/24",
+   "party": "ActionSA",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 150000.0,
+   "date": "2023-11-13",
+   "donor": "INDAWO (CAPE) PTY LTD",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 2000000.0,
+   "date": "2023-11-20",
+   "donor": "MARTIN MOSHAL",
+   "financial_year": "2023/24",
+   "party": "ActionSA",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 220000.0,
+   "date": "2023-11-21",
+   "donor": "GAYTON MCKENZIE",
+   "financial_year": "2023/24",
+   "party": "Patriotic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 190000.0,
+   "date": "2023-11-21",
+   "donor": "XMOOR TRANSPORT",
+   "financial_year": "2023/24",
+   "party": "Patriotic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1007250.0,
+   "date": "2023-11-24",
+   "donor": "KENNY KUNENE",
+   "financial_year": "2023/24",
+   "party": "Patriotic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 15000000.0,
+   "date": "2023-11-28",
+   "donor": "REBECCA OPPENHEIMER",
+   "financial_year": "2023/24",
+   "party": "Rise Mzansi",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 2000000.0,
+   "date": "2023-11-30",
+   "donor": "MARTIN PAUL MOSHAL",
+   "financial_year": "2023/24",
+   "party": "Build One South Africa",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 999711.81,
+   "date": "2023-12-01",
+   "donor": "BEACON ROCK LIMITED",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 500000.0,
+   "date": "2023-12-04",
+   "donor": "RTH INVESTMENTS (PTY) LTD",
+   "financial_year": "2023/24",
+   "party": "Build One South Africa",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 6000000.0,
+   "date": "2023-12-05",
+   "donor": "JESSICA BRIDGET SLACK JELL",
+   "financial_year": "2023/24",
+   "party": "Build One South Africa",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 5000000.0,
+   "date": "2023-12-07",
+   "donor": "CHANCELLOR HOUSE TRUST",
+   "financial_year": "2023/24",
+   "party": "African National Congress",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 250000.0,
+   "date": "2023-12-12",
+   "donor": "JOOF ALBERTS TRUST",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 2289130.0,
+   "date": "2023-12-13",
+   "donor": "GAYTON MCKENZIE",
+   "financial_year": "2023/24",
+   "party": "Patriotic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 136500.0,
+   "date": "2023-12-18",
+   "donor": "MR A DYMOND",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 5000000.0,
+   "date": "2023-12-20",
+   "donor": "CHANCELLOR HOUSE TRUST",
+   "financial_year": "2023/24",
+   "party": "African National Congress",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 71797.24,
+   "date": "2023-12-22",
+   "donor": "FRIEDRICH NAUMANN FOUNDATION",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "late",
+   "type": "Monetary"
+  },
+  {
+   "amount": 10000000.0,
+   "date": "2024-01-10",
+   "donor": "MAIN STREET 1564",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 100000.0,
+   "date": "2024-01-11",
+   "donor": "GAP INFRASTRUCTURE CORPORATION (PTY) LTD",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 4000000.0,
+   "date": "2024-01-19",
+   "donor": "GAP INFRASTRUCTURE CORPORATION (PTY) LTD",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 200000.0,
+   "date": "2024-01-23",
+   "donor": "MADZAHISI TRADING ENTERPRISE",
+   "financial_year": "2023/24",
+   "party": "Able Leadership",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 825726.93,
+   "date": "2024-01-23",
+   "donor": "DANISH LIBERAL DEMOCRACY PROGRAMME",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 100000.0,
+   "date": "2024-01-24",
+   "donor": "MADZAHISI TRADING ENTERPRISE",
+   "financial_year": "2023/24",
+   "party": "Able Leadership",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 200000.0,
+   "date": "2024-01-26",
+   "donor": "MR S SUSMAN",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 599000.0,
+   "date": "2024-01-29",
+   "donor": "MAIN STREET 1564",
+   "financial_year": "2023/24",
+   "party": "Independent South African National Civic Organisation",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 3000000.0,
+   "date": "2024-01-31",
+   "donor": "MARTIN MOSHAL",
+   "financial_year": "2023/24",
+   "party": "ActionSA",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 200000.0,
+   "date": "2024-01-31",
+   "donor": "NINE YEARS INVESTMENTS (PTY) LTD",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 472000.0,
+   "date": "2024-02-01",
+   "donor": "ELOHIM ERETS",
+   "financial_year": "2023/24",
+   "party": "African National Congress",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 10000000.0,
+   "date": "2024-02-05",
+   "donor": "MR NF OPPENHEIMER",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 10000000.0,
+   "date": "2024-02-05",
+   "donor": "NF OPPENHEIMER",
+   "financial_year": "2023/24",
+   "party": "Inkatha Freedom Party",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 10000000.0,
+   "date": "2024-02-06",
+   "donor": "MR J OPPENHEIMER",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 10000000.0,
+   "date": "2024-02-06",
+   "donor": "JONATHAN ERNEST MAXIMILLIAN OPPENHEIMER",
+   "financial_year": "2023/24",
+   "party": "Inkatha Freedom Party",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 6000000.0,
+   "date": "2024-02-07",
+   "donor": "SECTION 48 OF FLAT 405 SAN MICHELE CLIFTON (PTY) LTD",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 100000.0,
+   "date": "2024-02-12",
+   "donor": "WINSTON BRITTOW",
+   "financial_year": "2024/25",
+   "party": "GOOD",
+   "quarter": 1,
+   "section": "late",
+   "type": "Monetary"
+  },
+  {
+   "amount": 500000.0,
+   "date": "2024-02-14",
+   "donor": "MOSS KADEY",
+   "financial_year": "2023/24",
+   "party": "ActionSA",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 120000.0,
+   "date": "2024-02-20",
+   "donor": "STUCKEN AND COMPANY (PTY) LTD",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 510000.0,
+   "date": "2024-02-23",
+   "donor": "VUKUZENZELE BOUKONTRAKTEURS",
+   "financial_year": "2023/24",
+   "party": "African National Congress",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 2000000.0,
+   "date": "2024-02-26",
+   "donor": "MARTIN MOSHAL",
+   "financial_year": "2023/24",
+   "party": "ActionSA",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 6000000.0,
+   "date": "2024-02-27",
+   "donor": "GAP INFRASTRUCTURE CORPORATION (PTY) LTD",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 15000000.0,
+   "date": "2024-02-28",
+   "donor": "WE ARE THE PEOPLE",
+   "financial_year": "2023/24",
+   "party": "Rise Mzansi",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 120000.0,
+   "date": "2024-03-01",
+   "donor": "CAESAR NONGQUNGA",
+   "financial_year": "2023/24",
+   "party": "African Transformation Movement",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 106000.0,
+   "date": "2024-03-01",
+   "donor": "DR E HERTZOG",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 120000.0,
+   "date": "2024-03-01",
+   "donor": "POLYOAK PACKAGING (PTY) LTD",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 60000.0,
+   "date": "2024-03-04",
+   "donor": "MADZAHISI TRADING ENTERPRISE",
+   "financial_year": "2023/24",
+   "party": "Able Leadership",
+   "quarter": 4,
+   "section": "late",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1000000.0,
+   "date": "2024-03-04",
+   "donor": "MAIN STREET 1564",
+   "financial_year": "2023/24",
+   "party": "Independent South African National Civic Organisation",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 2000000.0,
+   "date": "2024-03-07",
+   "donor": "NASPERS LIMITED",
+   "financial_year": "2023/24",
+   "party": "African National Congress",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 2000000.0,
+   "date": "2024-03-07",
+   "donor": "NASPERS LIMITED",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 800000.0,
+   "date": "2024-03-08",
+   "donor": "GAYTON MCKENZIE",
+   "financial_year": "2023/24",
+   "party": "Patriotic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 400000.0,
+   "date": "2024-03-08",
+   "donor": "TMBH PTY LTD",
+   "financial_year": "2024/25",
+   "party": "South African Rainbow Alliance",
+   "quarter": 1,
+   "section": "late",
+   "type": "Monetary"
+  },
+  {
+   "amount": 63000.0,
+   "date": "2024-03-09",
+   "donor": "MR A DYMOND",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "late",
+   "type": "Monetary"
+  },
+  {
+   "amount": 230000.0,
+   "date": "2024-03-09",
+   "donor": "E BOTHA AND Y ERASMUS INC",
+   "financial_year": "2023/24",
+   "party": "Patriotic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 6900000.0,
+   "date": "2024-03-12",
+   "donor": "AFRICAN RAINBOW MINERALS LIMITED",
+   "financial_year": "2023/24",
+   "party": "African National Congress",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 6900000.0,
+   "date": "2024-03-12",
+   "donor": "HARMONY GOLD MINING COMPANY LIMITED",
+   "financial_year": "2023/24",
+   "party": "African National Congress",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1099000.0,
+   "date": "2024-03-13",
+   "donor": "MR M STEKHOVEN",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1320000.0,
+   "date": "2024-03-13",
+   "donor": "AFRICAN RAINBOW MINERALS LIMITED",
+   "financial_year": "2023/24",
+   "party": "Economic Freedom Fighters",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1320000.0,
+   "date": "2024-03-14",
+   "donor": "HARMONY GOLD MINING COMPANY LIMITED",
+   "financial_year": "2023/24",
+   "party": "Economic Freedom Fighters",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 100000.0,
+   "date": "2024-03-15",
+   "donor": "MR PETER VUNDLA",
+   "financial_year": "2023/24",
+   "party": "Rise Mzansi",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 250000.0,
+   "date": "2024-03-18",
+   "donor": "THE DOUW STEYN FAMILY TRUST",
+   "financial_year": "2024/25",
+   "party": "Build One South Africa",
+   "quarter": 1,
+   "section": "late",
+   "type": "Monetary"
+  },
+  {
+   "amount": 300000.0,
+   "date": "2024-03-18",
+   "donor": "AFRICAN RAINBOW MINERALS LIMITED",
+   "financial_year": "2023/24",
+   "party": "Freedom Front Plus (Vryheidsfront Plus)",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 850000.0,
+   "date": "2024-03-20",
+   "donor": "STYLE EYES OF CALIFORNIA (PTY) LTD",
+   "financial_year": "2023/24",
+   "party": "ActionSA",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 15000000.0,
+   "date": "2024-03-20",
+   "donor": "MAIN STREET 1564",
+   "financial_year": "2023/24",
+   "party": "Change Starts Now",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 292664.46,
+   "date": "2024-03-20",
+   "donor": "FRIEDRICH NAUMANN FOUNDATION",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 250000.0,
+   "date": "2024-03-22",
+   "donor": "THE DOUW STEYN FAMILY TRUST",
+   "financial_year": "2023/24",
+   "party": "United Democratic Movement",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 300000.0,
+   "date": "2024-03-22",
+   "donor": "HARMONY GOLD MINING COMPANY LIMITED",
+   "financial_year": "2023/24",
+   "party": "Freedom Front Plus (Vryheidsfront Plus)",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 2520000.0,
+   "date": "2024-03-25",
+   "donor": "HARMONY GOLD MINING COMPANY LIMITED",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 195000.0,
+   "date": "2024-03-25",
+   "donor": "MR B MACROBERT",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 169600.0,
+   "date": "2024-03-25",
+   "donor": "ROBERT HERSOV",
+   "financial_year": "2023/24",
+   "party": "Freedom Front Plus (Vryheidsfront Plus)",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 175000.0,
+   "date": "2024-03-26",
+   "donor": "CHRIS DU TOIT",
+   "financial_year": "2023/24",
+   "party": "ActionSA",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 4000000.0,
+   "date": "2024-03-26",
+   "donor": "MARTIN MOSHAL",
+   "financial_year": "2023/24",
+   "party": "ActionSA",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 5820000.0,
+   "date": "2024-03-26",
+   "donor": "BALL FAMILY TRUST",
+   "financial_year": "2023/24",
+   "party": "Change Starts Now",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 8000000.0,
+   "date": "2024-03-26",
+   "donor": "MR M MOSHAL",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 15000000.0,
+   "date": "2024-03-27",
+   "donor": "FYNBOS EKWITEIT (PTY) LTD",
+   "financial_year": "2023/24",
+   "party": "Change Starts Now",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 2520000.0,
+   "date": "2024-03-27",
+   "donor": "AFRICAN RAINBOW MINERAL",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 500000.0,
+   "date": "2024-03-27",
+   "donor": "WE ARE THE PEOPLE",
+   "financial_year": "2023/24",
+   "party": "United Democratic Movement",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 300000.0,
+   "date": "2024-03-28",
+   "donor": "LEEU COLLECTION SOUTH AFRICA",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 250000.0,
+   "date": "2024-03-30",
+   "donor": "MR I LIDDLE",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 162968.0,
+   "date": "2024-03-31",
+   "donor": "VOICES OF SOUTH AFRICA FOUNDATION NPC",
+   "financial_year": "2023/24",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 15000000.0,
+   "date": "2024-04-02",
+   "donor": "BATHO BATHO TRUST",
+   "financial_year": "2024/25",
+   "party": "African National Congress",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 2500000.0,
+   "date": "2024-04-02",
+   "donor": "SAFDEV SSDC (PTY) LTD",
+   "financial_year": "2024/25",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 250000.0,
+   "date": "2024-04-02",
+   "donor": "DELICATE SLATE MINING PTY LTD",
+   "financial_year": "2024/25",
+   "party": "Patriotic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 250000.0,
+   "date": "2024-04-03",
+   "donor": "MOXITONE INVESTMENTS (PTY) LTD",
+   "financial_year": "2024/25",
+   "party": "ActionSA",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1000000.0,
+   "date": "2024-04-03",
+   "donor": "MARY SLACK",
+   "financial_year": "2024/25",
+   "party": "Build One South Africa",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 500000.0,
+   "date": "2024-04-03",
+   "donor": "WE ARE THE PEOPLE ASSOCIATION",
+   "financial_year": "2024/25",
+   "party": "GOOD",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 420000.0,
+   "date": "2024-04-03",
+   "donor": "AFRICAN RAINBOW MINERALS LIMITED",
+   "financial_year": "2024/25",
+   "party": "Inkatha Freedom Party",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 4000000.0,
+   "date": "2024-04-05",
+   "donor": "MARTIN PAUL MOSHAL",
+   "financial_year": "2024/25",
+   "party": "Build One South Africa",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 186000.0,
+   "date": "2024-04-08",
+   "donor": "HERMAN MASHABA",
+   "financial_year": "2024/25",
+   "party": "ActionSA",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 15000000.0,
+   "date": "2024-04-08",
+   "donor": "REBECCA OPPENHEIMER",
+   "financial_year": "2024/25",
+   "party": "Rise Mzansi",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 5000000.0,
+   "date": "2024-04-09",
+   "donor": "VICTORIA FREUDENHEIM",
+   "financial_year": "2024/25",
+   "party": "ActionSA",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 420000.0,
+   "date": "2024-04-12",
+   "donor": "HARMONY GOLD MINING LIMITED",
+   "financial_year": "2024/25",
+   "party": "Inkatha Freedom Party",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 15000000.0,
+   "date": "2024-04-15",
+   "donor": "WE ARE THE PEOPLE",
+   "financial_year": "2024/25",
+   "party": "Rise Mzansi",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 15000000.0,
+   "date": "2024-04-17",
+   "donor": "FYNBOS EKWITEIT (PTY) LTD",
+   "financial_year": "2024/25",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 15000000.0,
+   "date": "2024-04-17",
+   "donor": "FYNBOS KAPITAAL PROPRIETARY LIMITED",
+   "financial_year": "2024/25",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 7500000.0,
+   "date": "2024-04-23",
+   "donor": "MARTIN MOSHAL",
+   "financial_year": "2024/25",
+   "party": "ActionSA",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 15000000.0,
+   "date": "2024-04-25",
+   "donor": "MR J OPPENHEIMER",
+   "financial_year": "2024/25",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 15000000.0,
+   "date": "2024-04-25",
+   "donor": "JONATHAN ERNEST MAXIMILLIAN OPPENHEIMER",
+   "financial_year": "2024/25",
+   "party": "Inkatha Freedom Party",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 15000000.0,
+   "date": "2024-04-25",
+   "donor": "NICHOLAS FRANK OPPENHEIMER",
+   "financial_year": "2024/25",
+   "party": "Inkatha Freedom Party",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 250000.0,
+   "date": "2024-04-26",
+   "donor": "LEAP SERVE HOLDINGS (PTY) LTD",
+   "financial_year": "2024/25",
+   "party": "ActionSA",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 120000.0,
+   "date": "2024-04-26",
+   "donor": "AFRICAN RAINBOW MINERALS LIMITED",
+   "financial_year": "2024/25",
+   "party": "African Christian Democratic Party",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 120000.0,
+   "date": "2024-04-26",
+   "donor": "HARMONY GOLD MINING COMPANY LIMITED",
+   "financial_year": "2024/25",
+   "party": "African Christian Democratic Party",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 7500000.0,
+   "date": "2024-04-29",
+   "donor": "MARTIN PAUL MOSHAL",
+   "financial_year": "2024/25",
+   "party": "Build One South Africa",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 2384162.92,
+   "date": "2024-04-30",
+   "donor": "VOICES OF SOUTH AFRICA FOUNDATION NPC",
+   "financial_year": "2024/25",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 7500000.0,
+   "date": "2024-05-06",
+   "donor": "MARTIN PAUL MOSHAL",
+   "financial_year": "2024/25",
+   "party": "Inkatha Freedom Party",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 4000000.0,
+   "date": "2024-05-08",
+   "donor": "ZAR EMPIRE HOLDINGS PTY LTD",
+   "financial_year": "2024/25",
+   "party": "Patriotic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 300000.0,
+   "date": "2024-05-17",
+   "donor": "ZAR EMPIRE HOLDINGS PTY LTD",
+   "financial_year": "2024/25",
+   "party": "Patriotic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 299900.0,
+   "date": "2024-05-18",
+   "donor": "GAYTON MCKENZIE",
+   "financial_year": "2024/25",
+   "party": "Patriotic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 200000.0,
+   "date": "2024-05-18",
+   "donor": "ZAR EMPIRE HOLDINGS PTY LTD",
+   "financial_year": "2024/25",
+   "party": "Patriotic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 400000.0,
+   "date": "2024-05-20",
+   "donor": "ZAR EMPIRE HOLDINGS PTY LTD",
+   "financial_year": "2024/25",
+   "party": "Patriotic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 275000.0,
+   "date": "2024-05-21",
+   "donor": "CRAIG BUTTERS",
+   "financial_year": "2024/25",
+   "party": "Rise Mzansi",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 320000.0,
+   "date": "2024-05-21",
+   "donor": "ZUNGU FAMILY TRUST",
+   "financial_year": "2024/25",
+   "party": "Rise Mzansi",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 5000000.0,
+   "date": "2024-05-22",
+   "donor": "UNITED MANGANESE OF KALAHARI",
+   "financial_year": "2024/25",
+   "party": "African National Congress",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 500000.0,
+   "date": "2024-05-24",
+   "donor": "DISCOVERY CENTRAL SERVICES",
+   "financial_year": "2024/25",
+   "party": "African National Congress",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 515313.0,
+   "date": "2024-05-24",
+   "donor": "MOBILE TELEPHONE NETWORKS (PTY) LTD",
+   "financial_year": "2024/25",
+   "party": "African National Congress",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 500000.0,
+   "date": "2024-05-24",
+   "donor": "DISCOVERY CENTRAL SERVICES",
+   "financial_year": "2024/25",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 150000.0,
+   "date": "2024-05-25",
+   "donor": "WILLIAM RODGER JARDINE",
+   "financial_year": "2024/25",
+   "party": "Change Starts Now",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 5000000.0,
+   "date": "2024-05-27",
+   "donor": "CHANCELLOR HOUSE TRUST",
+   "financial_year": "2024/25",
+   "party": "African National Congress",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 515313.0,
+   "date": "2024-05-28",
+   "donor": "MOBILE TELEPHONE NETWORKS (PTY) LTD",
+   "financial_year": "2024/25",
+   "party": "Economic Freedom Fighters",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 1000000.0,
+   "date": "2024-05-28",
+   "donor": "VALUMAX PROJECTS PTY LTD",
+   "financial_year": "2024/25",
+   "party": "Patriotic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 6216876.5,
+   "date": "2024-05-31",
+   "donor": "VOICES OF SOUTH AFRICA FOUNDATION NPC",
+   "financial_year": "2024/25",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 3300000.0,
+   "date": "2024-06-04",
+   "donor": "THE TEMPYR TRUST",
+   "financial_year": "2024/25",
+   "party": "Rise Mzansi",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 200000.0,
+   "date": "2024-06-11",
+   "donor": "ZAR EMPIRE HOLDINGS PTY LTD",
+   "financial_year": "2024/25",
+   "party": "Patriotic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 380555.0,
+   "date": "2024-06-20",
+   "donor": "SOUTH AFRICAN POLICY EDUCATION INITIATIVE",
+   "financial_year": "2024/25",
+   "party": "Umkhonto Wesizwe",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 127708.7,
+   "date": "2024-06-28",
+   "donor": "KONRAD ADENAUER STIFTUNG NPC",
+   "financial_year": "2024/25",
+   "party": "Build One South Africa",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 937341.24,
+   "date": "2024-06-30",
+   "donor": "CAPE INDEPENDENCE ADVOCACY GROUP",
+   "financial_year": "2024/25",
+   "party": "Referendum Party",
+   "quarter": 3,
+   "section": "late",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 234684.0,
+   "date": "2024-07-22",
+   "donor": "MR J SCHECKTER",
+   "financial_year": "2024/25",
+   "party": "Democratic Alliance",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 120000.0,
+   "date": "2024-07-25",
+   "donor": "VALUMAX PROJECTS",
+   "financial_year": "2024/25",
+   "party": "African National Congress",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1092500.0,
+   "date": "2024-07-25",
+   "donor": "VALUMAX PROJECTS",
+   "financial_year": "2024/25",
+   "party": "African National Congress",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 213790.0,
+   "date": "2024-08-30",
+   "donor": "KONRAD ADENAUER STIFTUNG NPC",
+   "financial_year": "2024/25",
+   "party": "Inkatha Freedom Party",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 189238.69,
+   "date": "2024-09-11",
+   "donor": "FRIEDRICH NAUMANN FOUNDATION",
+   "financial_year": "2024/25",
+   "party": "Democratic Alliance",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 704000.0,
+   "date": "2024-09-11",
+   "donor": "FRIEDRICH NAUMANN FOUNDATION",
+   "financial_year": "2024/25",
+   "party": "Democratic Alliance",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 6000000.0,
+   "date": "2024-09-27",
+   "donor": "SAFDEV SSDC (PTY) LTD",
+   "financial_year": "2024/25",
+   "party": "African National Congress",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 150000.0,
+   "date": "2024-10-02",
+   "donor": "THE SMOLLAN FOUNDATION TRUST",
+   "financial_year": "2024/25",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 888950.0,
+   "date": "2024-11-11",
+   "donor": "FRIEDRICH NAUMANN FOUNDATION",
+   "financial_year": "2024/25",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 998773.0,
+   "date": "2024-11-14",
+   "donor": "EDUCATION AND TRAINING UNIT",
+   "financial_year": "2024/25",
+   "party": "African National Congress",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 160164.14,
+   "date": "2024-11-25",
+   "donor": "KONRAD ADENAUER STIFTUNG NPC",
+   "financial_year": "2024/25",
+   "party": "Build One South Africa",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 790640.66,
+   "date": "2024-12-02",
+   "donor": "DANISH LIBERAL DEMOCRACY PROGRAMME",
+   "financial_year": "2024/25",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 10000000.0,
+   "date": "2024-12-05",
+   "donor": "BOTHO BOTHO COMMERCIAL ENTERPRISE PTY LTD",
+   "financial_year": "2024/25",
+   "party": "African National Congress",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1420773.18,
+   "date": "2024-12-06",
+   "donor": "MAIN STREET 1564 PTY LTD",
+   "financial_year": "2024/25",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 2000000.0,
+   "date": "2024-12-13",
+   "donor": "CHANCELLOR HOUSE TRUST",
+   "financial_year": "2024/25",
+   "party": "African National Congress",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 706316.46,
+   "date": "2024-12-14",
+   "donor": "MAIN STREET 1564 PTY LTD",
+   "financial_year": "2024/25",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 311546.51,
+   "date": "2024-12-19",
+   "donor": "FRIEDRICH NAUMANN FOUNDATION",
+   "financial_year": "2024/25",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 200000.0,
+   "date": "2025-01-29",
+   "donor": "MR J TREGER",
+   "financial_year": "2024/25",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 743687.0,
+   "date": "2025-01-30",
+   "donor": "MAIN STREET 1564 PTY LTD",
+   "financial_year": "2024/25",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 250000.0,
+   "date": "2025-02-11",
+   "donor": "MR SIMON SUSMAN",
+   "financial_year": "2024/25",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 250000.0,
+   "date": "2025-02-18",
+   "donor": "MR DAG CRAMER",
+   "financial_year": "2024/25",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 440500.0,
+   "date": "2025-02-25",
+   "donor": "MASIZOLE MNQASELA",
+   "financial_year": "2025/26",
+   "party": "Alliance of Citizens for Change",
+   "quarter": 4,
+   "section": "late",
+   "type": "Monetary"
+  },
+  {
+   "amount": 120000.0,
+   "date": "2025-03-03",
+   "donor": "POLYOAK PACKAGING (PTY) LTD",
+   "financial_year": "2024/25",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 4000000.0,
+   "date": "2025-03-07",
+   "donor": "CHANCELLOR HOUSE TRUST",
+   "financial_year": "2024/25",
+   "party": "African National Congress",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 132000.0,
+   "date": "2025-03-12",
+   "donor": "MR A DYMOND",
+   "financial_year": "2024/25",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 3000000.0,
+   "date": "2025-03-17",
+   "donor": "NASPERS LIMITED",
+   "financial_year": "2024/25",
+   "party": "African National Congress",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 3000000.0,
+   "date": "2025-03-18",
+   "donor": "NASPERS LIMITED",
+   "financial_year": "2024/25",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1000000.0,
+   "date": "2025-03-20",
+   "donor": "AFRICAN EQUITY CORPORATION (PTY) LTD",
+   "financial_year": "2024/25",
+   "party": "ActionSA",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 200000.0,
+   "date": "2025-03-26",
+   "donor": "DKS GENERAL INDUSTRIAL CLEANERS",
+   "financial_year": "2024/25",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1040907.0,
+   "date": "2025-03-27",
+   "donor": "FRIEDRICH NAUMANN FOUNDATION",
+   "financial_year": "2024/25",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 250000.0,
+   "date": "2025-03-28",
+   "donor": "MR BRUCE MACROBERT",
+   "financial_year": "2024/25",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 250000.0,
+   "date": "2025-04-08",
+   "donor": "DALIB INVESTMENTS (PTY) LTD",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1465265.0,
+   "date": "2025-04-10",
+   "donor": "MAIN STREET 1564 PTY LTD",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 150000.0,
+   "date": "2025-04-14",
+   "donor": "MS G LEINBERGER",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 270000.0,
+   "date": "2025-05-02",
+   "donor": "HERMAN MASHABA",
+   "financial_year": "2025/26",
+   "party": "ActionSA",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1000000.0,
+   "date": "2025-05-23",
+   "donor": "MR M STEKHOVEN",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 7661000.0,
+   "date": "2025-05-29",
+   "donor": "CHANCELLOR HOUSE TRUST",
+   "financial_year": "2025/26",
+   "party": "African National Congress",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 100001.0,
+   "date": "2025-06-02",
+   "donor": "MR R BREYER",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 250000.0,
+   "date": "2025-06-04",
+   "donor": "HERMAN MASHABA",
+   "financial_year": "2025/26",
+   "party": "ActionSA",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 300000.0,
+   "date": "2025-06-12",
+   "donor": "RUSTDENE INVESTMENTS",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 250000.0,
+   "date": "2025-06-13",
+   "donor": "DISCOVERY CENTRAL SERVICES",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 2000000.0,
+   "date": "2025-06-23",
+   "donor": "JUFRAPI INVESTMENTS",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 570208.05,
+   "date": "2025-06-23",
+   "donor": "MS M S MEYER",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 10000000.0,
+   "date": "2025-06-24",
+   "donor": "FYNBOS EKWITEIT (PTY) LTD",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 15000000.0,
+   "date": "2025-06-24",
+   "donor": "FYNBOS KAPITAAL PROPRIETARY LIMITED",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 132856.71,
+   "date": "2025-06-27",
+   "donor": "DR MJ BURKE",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1011143.53,
+   "date": "2025-06-30",
+   "donor": "FRIEDRICH NAUMANN FOUNDATION",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 200000.0,
+   "date": "2025-07-02",
+   "donor": "HERMAN MASHABA",
+   "financial_year": "2025/26",
+   "party": "ActionSA",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 186726.0,
+   "date": "2025-07-29",
+   "donor": "WESTMINSTER FOUNDATION FOR DEMOCRACY",
+   "financial_year": "2025/26",
+   "party": "Inkatha Freedom Party",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 220000.0,
+   "date": "2025-08-05",
+   "donor": "HERMAN MASHABA",
+   "financial_year": "2025/26",
+   "party": "ActionSA",
+   "quarter": 3,
+   "section": "late",
+   "type": "Monetary"
+  },
+  {
+   "amount": 200000.0,
+   "date": "2025-08-08",
+   "donor": "LEPHATSI INVESTMENTS",
+   "financial_year": "2025/26",
+   "party": "ActionSA",
+   "quarter": 3,
+   "section": "late",
+   "type": "Monetary"
+  },
+  {
+   "amount": 33200.76,
+   "date": "2025-08-23",
+   "donor": "FRIEDRICH NAUMANN FOUNDATION",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 295095.62,
+   "date": "2025-08-23",
+   "donor": "FRIEDRICH NAUMANN FOUNDATION",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 500000.0,
+   "date": "2025-08-26",
+   "donor": "MR W LE ROUX",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 169830.0,
+   "date": "2025-08-26",
+   "donor": "KONRAD ADENAUER STIFTUNG NPC",
+   "financial_year": "2025/26",
+   "party": "Inkatha Freedom Party",
+   "quarter": 2,
+   "section": "late",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 101000.0,
+   "date": "2025-08-30",
+   "donor": "DR MARK JOHN BURKE",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 2,
+   "section": "late",
+   "type": "Monetary"
+  },
+  {
+   "amount": 270000.0,
+   "date": "2025-09-01",
+   "donor": "HERMAN MASHABA",
+   "financial_year": "2025/26",
+   "party": "ActionSA",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 103481.0,
+   "date": "2025-09-17",
+   "donor": "KONRAD ADENAUER STIFTUNG NPC",
+   "financial_year": "2025/26",
+   "party": "Build One South Africa",
+   "quarter": 3,
+   "section": "late",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 358100.0,
+   "date": "2025-09-22",
+   "donor": "EDUCATION AND TRAINING UNIT",
+   "financial_year": "2025/26",
+   "party": "African National Congress",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 95000.0,
+   "date": "2025-09-29",
+   "donor": "HERMAN MASHABA",
+   "financial_year": "2025/26",
+   "party": "ActionSA",
+   "quarter": 3,
+   "section": "late",
+   "type": "Monetary"
+  },
+  {
+   "amount": 293894.36,
+   "date": "2025-09-30",
+   "donor": "VOICES OF SOUTH AFRICA FOUNDATION NPC",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 2,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 270000.0,
+   "date": "2025-10-07",
+   "donor": "HERMAN MASHABA",
+   "financial_year": "2025/26",
+   "party": "ActionSA",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 4670000.0,
+   "date": "2025-10-15",
+   "donor": "LAWRIN INVESTMENTS LTD",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1000000.0,
+   "date": "2025-10-31",
+   "donor": "MR & MRS BREYER",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1000000.0,
+   "date": "2025-11-03",
+   "donor": "DR CH WIESE",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 2000000.0,
+   "date": "2025-11-04",
+   "donor": "CHANCELLOR HOUSE TRUST",
+   "financial_year": "2025/26",
+   "party": "African National Congress",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 158329.56,
+   "date": "2025-11-04",
+   "donor": "KONRAD ADENAUER STIFTUNG NPC",
+   "financial_year": "2025/26",
+   "party": "Inkatha Freedom Party",
+   "quarter": 3,
+   "section": "late",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 270000.0,
+   "date": "2025-11-05",
+   "donor": "HERMAN MASHABA",
+   "financial_year": "2025/26",
+   "party": "ActionSA",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1137811.53,
+   "date": "2025-11-13",
+   "donor": "DANISH LIBERAL DEMOCRACY PROGRAMME",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1000000.0,
+   "date": "2025-11-13",
+   "donor": "SAFDEV SSDC (PTY) LTD",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 10000000.0,
+   "date": "2025-12-01",
+   "donor": "FYNBOS EKWITEIT (PTY) LTD",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 220000.0,
+   "date": "2025-12-04",
+   "donor": "HERMAN MASHABA",
+   "financial_year": "2025/26",
+   "party": "ActionSA",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 10000000.0,
+   "date": "2025-12-12",
+   "donor": "BALL FAMILY TRUST",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 192000.0,
+   "date": "2025-12-19",
+   "donor": "HERMAN MASHABA",
+   "financial_year": "2025/26",
+   "party": "ActionSA",
+   "quarter": 3,
+   "section": "late",
+   "type": "Monetary"
+  },
+  {
+   "amount": 202000.0,
+   "date": "2025-12-27",
+   "donor": "DR MJ BURKE",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 322590.53,
+   "date": "2025-12-30",
+   "donor": "FRIEDRICH NAUMANN FOUNDATION",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 1107148.24,
+   "date": "2025-12-30",
+   "donor": "FRIEDRICH NAUMANN FOUNDATION",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 850437.96,
+   "date": "2025-12-31",
+   "donor": "VOICES OF SOUTH AFRICA FOUNDATION NPC",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 3,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 282432.0,
+   "date": "2026-01-11",
+   "donor": "HERMAN MASHABA",
+   "financial_year": "2025/26",
+   "party": "ActionSA",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 5000000.0,
+   "date": "2026-01-20",
+   "donor": "MARTIN MOSHAL",
+   "financial_year": "2025/26",
+   "party": "ActionSA",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 500000.0,
+   "date": "2026-01-30",
+   "donor": "NORTHAM PLATINUM LIMITED",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 250000.0,
+   "date": "2026-02-10",
+   "donor": "MR S SUSMAN",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 10000000.0,
+   "date": "2026-02-17",
+   "donor": "MAIN STREET 1564 PTY LTD",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 500000.0,
+   "date": "2026-02-17",
+   "donor": "SWEETHEART OF THE RODEO PTY LTD",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 30000000.0,
+   "date": "2026-02-28",
+   "donor": "WE ARE THE PEOPLE",
+   "financial_year": "2025/26",
+   "party": "Rise Mzansi",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 3000000.0,
+   "date": "2026-03-04",
+   "donor": "MR D BARNES",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 101000.0,
+   "date": "2026-03-05",
+   "donor": "DR MJ BURKE",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "late",
+   "type": "Monetary"
+  },
+  {
+   "amount": 500000.0,
+   "date": "2026-03-06",
+   "donor": "WATERVAL BOVEN BELEGGINGS PROPRIETARY LIMITED",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1000000.0,
+   "date": "2026-03-07",
+   "donor": "SIYAYA FREE TO AIR TV (PTY) LTD",
+   "financial_year": "2025/26",
+   "party": "ActionSA",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1000000.0,
+   "date": "2026-03-11",
+   "donor": "AFRICAN EQUITY CORPORATION (PTY) LTD",
+   "financial_year": "2025/26",
+   "party": "ActionSA",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1755777.2,
+   "date": "2026-03-11",
+   "donor": "VOICES OF SOUTH AFRICA FOUNDATION NPC",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 250000.0,
+   "date": "2026-03-12",
+   "donor": "HERMAN MASHABA",
+   "financial_year": "2025/26",
+   "party": "ActionSA",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1000000.0,
+   "date": "2026-03-13",
+   "donor": "HERMAN MASHABA",
+   "financial_year": "2025/26",
+   "party": "ActionSA",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 500000.0,
+   "date": "2026-03-13",
+   "donor": "ARTEMIS PROPERTY PTY LTD",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 113794.6,
+   "date": "2026-03-16",
+   "donor": "KONRAD ADENAUER STIFTUNG NPC",
+   "financial_year": "2025/26",
+   "party": "Build One South Africa",
+   "quarter": 4,
+   "section": "late",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 225000.0,
+   "date": "2026-03-16",
+   "donor": "MR A DYMOND",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 10000000.0,
+   "date": "2026-03-16",
+   "donor": "MS M SLACK",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1000000.0,
+   "date": "2026-03-18",
+   "donor": "HERMAN MASHABA",
+   "financial_year": "2025/26",
+   "party": "ActionSA",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 4000000.0,
+   "date": "2026-03-23",
+   "donor": "MR G RYAN",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 250000.0,
+   "date": "2026-03-23",
+   "donor": "MR R KAPLAN",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 10000000.0,
+   "date": "2026-03-25",
+   "donor": "FYNBOS EKWITEIT (PTY) LTD",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 13000000.0,
+   "date": "2026-03-25",
+   "donor": "FYNBOS KAPITAAL PROPRIETARY LIMITED",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 300000.0,
+   "date": "2026-03-26",
+   "donor": "MR S MCNALLY",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 378000.0,
+   "date": "2026-03-30",
+   "donor": "HERMAN MASHABA",
+   "financial_year": "2025/26",
+   "party": "ActionSA",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 532000.0,
+   "date": "2026-03-30",
+   "donor": "MR P DUFF",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1272946.58,
+   "date": "2026-03-31",
+   "donor": "DANISH LIBERAL DEMOCRACY PROGRAMME",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 38524.47,
+   "date": "2026-03-31",
+   "donor": "FRIEDRICH NAUMANN FOUNDATION",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 693055.3,
+   "date": "2026-03-31",
+   "donor": "FRIEDRICH NAUMANN FOUNDATION",
+   "financial_year": "2025/26",
+   "party": "Democratic Alliance",
+   "quarter": 4,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 5000000.0,
+   "date": "2026-04-13",
+   "donor": "MARTIN MOSHAL",
+   "financial_year": "2026/27",
+   "party": "ActionSA",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 500000.0,
+   "date": "2026-04-13",
+   "donor": "SIYAYA FREE TO AIR TV (PTY) LTD",
+   "financial_year": "2026/27",
+   "party": "ActionSA",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 250000.0,
+   "date": "2026-04-15",
+   "donor": "MR I LIDDLE",
+   "financial_year": "2026/27",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 250000.0,
+   "date": "2026-04-15",
+   "donor": "MS S VAN HOOGSTRATEN",
+   "financial_year": "2026/27",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 5000000.0,
+   "date": "2026-04-21",
+   "donor": "MRS R SLACK DIAMOND",
+   "financial_year": "2026/27",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 5000000.0,
+   "date": "2026-04-21",
+   "donor": "MS J SLACK JELL",
+   "financial_year": "2026/27",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 250000.0,
+   "date": "2026-04-24",
+   "donor": "CHATZ CONNECT",
+   "financial_year": "2026/27",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 528655.0,
+   "date": "2026-05-04",
+   "donor": "MR AND MRS T MADILONGA",
+   "financial_year": "2026/27",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 5000000.0,
+   "date": "2026-05-05",
+   "donor": "LOMBARD CONSOLIDATED PTY LTD",
+   "financial_year": "2026/27",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 10000000.0,
+   "date": "2026-05-07",
+   "donor": "MR D BARNES",
+   "financial_year": "2026/27",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 500000.0,
+   "date": "2026-05-11",
+   "donor": "HFG DEVELOPMENTS (PTY) LTD",
+   "financial_year": "2026/27",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1250000.0,
+   "date": "2026-05-11",
+   "donor": "UNGANI INVESTMENTS ( PTY) LTD",
+   "financial_year": "2026/27",
+   "party": "Rise Mzansi",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 500000.0,
+   "date": "2026-05-12",
+   "donor": "MR J BLAKEMORE",
+   "financial_year": "2026/27",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 500000.0,
+   "date": "2026-05-12",
+   "donor": "VDMV BOTFONTEIN PTY LTD",
+   "financial_year": "2026/27",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1000000.0,
+   "date": "2026-05-13",
+   "donor": "DAKF INVESTMENT HOLDINGS",
+   "financial_year": "2026/27",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 2500000.0,
+   "date": "2026-05-14",
+   "donor": "KERRY ROAD TRUST",
+   "financial_year": "2026/27",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 500000.0,
+   "date": "2026-05-20",
+   "donor": "MR R CAME",
+   "financial_year": "2026/27",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 500004.0,
+   "date": "2026-05-25",
+   "donor": "LONG ISLAND TRADING 58CC",
+   "financial_year": "2026/27",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1000000.0,
+   "date": "2026-05-25",
+   "donor": "MR M STEKHOVEN",
+   "financial_year": "2026/27",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 30000000.0,
+   "date": "2026-05-29",
+   "donor": "FYNBOS EKWITEIT (PTY) LTD",
+   "financial_year": "2026/27",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 25000000.0,
+   "date": "2026-05-29",
+   "donor": "FYNBOS KAPITAAL PROPRIETARY LIMITED",
+   "financial_year": "2026/27",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1000000.0,
+   "date": "2026-05-29",
+   "donor": "CAPTRUST INVESTMENTS (PTY) LTD",
+   "financial_year": "2026/27",
+   "party": "Rise Mzansi",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 2000000.0,
+   "date": "2026-06-02",
+   "donor": "PREDATOR SECURITIES (PTY) LTD",
+   "financial_year": "2026/27",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 250000.0,
+   "date": "2026-06-03",
+   "donor": "MR J MAREE",
+   "financial_year": "2026/27",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1500000.0,
+   "date": "2026-06-05",
+   "donor": "ARZAPART (PTY) LTD",
+   "financial_year": "2026/27",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1000000.0,
+   "date": "2026-06-08",
+   "donor": "MR A A BARRELL",
+   "financial_year": "2026/27",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 250000.0,
+   "date": "2026-06-10",
+   "donor": "ATTERBURY PROPERTY (PTY) LTD",
+   "financial_year": "2026/27",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1000000.0,
+   "date": "2026-06-10",
+   "donor": "MR B DAWSON",
+   "financial_year": "2026/27",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 1160826.8,
+   "date": "2026-06-11",
+   "donor": "MAKE A DIFFERENCE TRUST (MAD)",
+   "financial_year": "2026/27",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 5000000.0,
+   "date": "2026-06-18",
+   "donor": "MR M MOSHAL",
+   "financial_year": "2026/27",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  },
+  {
+   "amount": 815891.08,
+   "date": "2026-06-19",
+   "donor": "FRIEDRICH NAUMANN FOUNDATION",
+   "financial_year": "2026/27",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 2778808.37,
+   "date": "2026-06-30",
+   "donor": "VOICES OF SOUTH AFRICA FOUNDATION NPC",
+   "financial_year": "2026/27",
+   "party": "Democratic Alliance",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "In-Kind"
+  },
+  {
+   "amount": 5000000.0,
+   "date": "2026-06-30",
+   "donor": "ASSOCIATION OF MINEWORKERS & CONSTRUCTION UNION (AMCU)",
+   "financial_year": "2026/27",
+   "party": "Labour Party of South Africa",
+   "quarter": 1,
+   "section": "quarter",
+   "type": "Monetary"
+  }
+ ],
+ "schema_version": 1,
+ "sources": {
+  "declarations": {
+   "licence": "Electoral Commission of South Africa (copyright notice: reproduction for non-commercial use; https://www.elections.org.za/pw/Copyright-Notice)",
+   "notes": "Rows parsed from the quarterly spreadsheets at https://results.elections.org.za/home/PartyFundingReports/<year>/<q>/<year>_<q>_Published_Declarations_Report.xls, financial years 2021/22 onwards (Political Party Funding Act 6 of 2018, section 9(1)).",
+   "publisher": "Electoral Commission of South Africa (IEC)",
+   "retrieved_at": "2026-11-16",
+   "title": "Party funding: published declarations reports",
+   "url": "https://results.elections.org.za/home/downloads/party-funding-reports"
+  }
+ }
+}

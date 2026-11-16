@@ -12,6 +12,12 @@ from wardmap.config import DATA, VINTAGE_WARD_COUNT
 from wardmap.models import ENVELOPES, Index
 
 
+def _party(name: str) -> str:
+    from wardmap.datasets.elections import _tidy_party
+
+    return _tidy_party(name)
+
+
 def run() -> int:
     errors: list[str] = []
 
@@ -35,6 +41,13 @@ def run() -> int:
             env = model.model_validate_json(path.read_text(encoding="utf-8"))
         except Exception as e:  # noqa: BLE001
             err(f"{entry.file}: does not match schema: {e}")
+            continue
+        if entry.dataset == "donations":
+            # Not ward data: check that every party's total adds up from its rows.
+            for p in env.parties:
+                rows = sum(r.amount for r in env.rows if _party(r.party) == p.party)
+                if abs(rows - p.total) > 1:
+                    err(f"{entry.file}: {p.party} total {p.total} != rows {rows}")
             continue
         if env.ward_vintage != entry.ward_vintage:
             err(f"{entry.file}: vintage {env.ward_vintage} != index {entry.ward_vintage}")

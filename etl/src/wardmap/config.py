@@ -67,6 +67,18 @@ IEC_PROVINCES = {  # IEC report file codes
 IEC_DASHBOARD_DATA = "https://results.elections.org.za/dashboards/lge/MapsJason"
 IEC_DASHBOARD = "https://results.elections.org.za/dashboards/lge/LGEResultsDashboard.aspx"
 IEC_MUNIC_IDS = {"CPT": 9006}
+# Political Party Funding Act declarations (published quarterly by the IEC since April 2021).
+# The portal's financial-year ids: 4 = 2021/22 ... 9 = 2026/27.
+IEC_FUNDING_REPORTS = "https://results.elections.org.za/home/PartyFundingReports"
+IEC_FUNDING_PAGE = "https://results.elections.org.za/home/downloads/party-funding-reports"
+IEC_FUNDING_YEARS = {
+    4: "2021/22",
+    5: "2022/23",
+    6: "2023/24",
+    7: "2024/25",
+    8: "2025/26",
+    9: "2026/27",
+}
 METROS = {"BUF", "CPT", "EKU", "ETH", "JHB", "MAN", "NMA", "TSH"}
 
 # OpenStreetMap (malls only: the City publishes no shopping-centre layer).

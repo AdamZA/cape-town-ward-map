@@ -11,6 +11,7 @@ def build_all() -> None:
     from wardmap.datasets import (
         allocations,
         boundaries,
+        donations,
         elections,
         land_use,
         landmarks,
@@ -63,6 +64,12 @@ def build_all() -> None:
                     ward_vintage=vintage,
                 )
             )
+
+    if donations.FILE.exists():
+        donations.build()
+        entries.append(
+            IndexEntry(dataset="donations", file="donations.json", ward_vintage=CURRENT_VINTAGE)
+        )
 
     for year in allocations.years():
         allocations.build(year)
