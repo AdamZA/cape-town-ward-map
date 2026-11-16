@@ -9,6 +9,13 @@
    "source": "boundaries",
    "unit": "km²"
   },
+  "councillor": {
+   "description": "Elected at the last local election. By-elections since then are not reflected yet.",
+   "label": "Ward councillor",
+   "method": "elections",
+   "source": "councillors",
+   "unit": null
+  },
   "electricity_city_share": {
    "description": "Share of residents (modelled) supplied by the City rather than by Eskom directly, from the City's load-shedding areas.",
    "label": "Electricity supplier",
@@ -31,18 +38,15 @@
    "unit": null
   }
  },
- "gaps": [
-  {
-   "code": "councillors_missing",
-   "message": "Ward councillors elected in November 2026 are not yet included: there is no stable machine-readable source yet. They will be added from the City's councillor listing or the IEC's results.",
-   "ward_no": null
-  }
- ],
+ "gaps": [],
  "period": null,
  "rows": [
   {
    "area_km2": 19.69,
-   "councillor": null,
+   "councillor": {
+    "name": "Cheryl Linsey Visser",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.994,
    "flags": [],
    "population": 33300,
@@ -52,7 +56,10 @@
   },
   {
    "area_km2": 9.4,
-   "councillor": null,
+   "councillor": {
+    "name": "Alistair Francis Isobell",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 45900,
@@ -62,7 +69,10 @@
   },
   {
    "area_km2": 10.9,
-   "councillor": null,
+   "councillor": {
+    "name": "Annelize van Zyl",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 36000,
@@ -72,7 +82,10 @@
   },
   {
    "area_km2": 12.76,
-   "councillor": null,
+   "councillor": {
+    "name": "Brett Clive Peter Steensma",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.994,
    "flags": [],
    "population": 47100,
@@ -82,7 +95,10 @@
   },
   {
    "area_km2": 8.86,
-   "councillor": null,
+   "councillor": {
+    "name": "Miquette Temlett",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.526,
    "flags": [],
    "population": 35000,
@@ -92,7 +108,10 @@
   },
   {
    "area_km2": 6.63,
-   "councillor": null,
+   "councillor": {
+    "name": "Mawethu Sila",
+    "party": "African National Congress"
+   },
    "electricity_city_share": 0.022,
    "flags": [],
    "population": 47200,
@@ -102,7 +121,10 @@
   },
   {
    "area_km2": 8.44,
-   "councillor": null,
+   "councillor": {
+    "name": "Gabriel Grant Twigg",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.222,
    "flags": [],
    "population": 52200,
@@ -112,7 +134,10 @@
   },
   {
    "area_km2": 8.67,
-   "councillor": null,
+   "councillor": {
+    "name": "Charlotte Du Toit",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.979,
    "flags": [],
    "population": 27900,
@@ -122,7 +147,10 @@
   },
   {
    "area_km2": 11.13,
-   "councillor": null,
+   "councillor": {
+    "name": "Mercia Elmarie Kleinsmith",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.998,
    "flags": [],
    "population": 45200,
@@ -132,7 +160,10 @@
   },
   {
    "area_km2": 13.3,
-   "councillor": null,
+   "councillor": {
+    "name": "Albertus Johannes Gideon Basson",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.999,
    "flags": [],
    "population": 46000,
@@ -142,7 +173,10 @@
   },
   {
    "area_km2": 16.2,
-   "councillor": null,
+   "councillor": {
+    "name": "Pieter Wouter de Vos",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.999,
    "flags": [
     "subcouncil_split"
@@ -154,7 +188,10 @@
   },
   {
    "area_km2": 4.79,
-   "councillor": null,
+   "councillor": {
+    "name": "Michelle Adonis",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.272,
    "flags": [],
    "population": 70800,
@@ -164,7 +201,10 @@
   },
   {
    "area_km2": 215.64,
-   "councillor": null,
+   "councillor": {
+    "name": "Francois Berry",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.475,
    "flags": [],
    "population": 19800,
@@ -174,7 +214,10 @@
   },
   {
    "area_km2": 33.71,
-   "councillor": null,
+   "councillor": {
+    "name": "Kariena Maré",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.367,
    "flags": [],
    "population": 46900,
@@ -184,7 +227,10 @@
   },
   {
    "area_km2": 52.07,
-   "councillor": null,
+   "councillor": {
+    "name": "Stuart Bruce Pringle",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.979,
    "flags": [],
    "population": 24700,
@@ -194,7 +240,10 @@
   },
   {
    "area_km2": 6.92,
-   "councillor": null,
+   "councillor": {
+    "name": "Shakeerah Hermanus",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.0,
    "flags": [],
    "population": 68000,
@@ -204,7 +253,10 @@
   },
   {
    "area_km2": 8.11,
-   "councillor": null,
+   "councillor": {
+    "name": "Frans Anthony Sauls",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.0,
    "flags": [],
    "population": 49700,
@@ -214,7 +266,10 @@
   },
   {
    "area_km2": 1.99,
-   "councillor": null,
+   "councillor": {
+    "name": "Patrick Phindile George",
+    "party": "African National Congress"
+   },
    "electricity_city_share": 0.0,
    "flags": [],
    "population": 36900,
@@ -224,7 +279,10 @@
   },
   {
    "area_km2": 10.57,
-   "councillor": null,
+   "councillor": {
+    "name": "Joseph Julius Witbooi",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.821,
    "flags": [],
    "population": 61900,
@@ -234,7 +292,10 @@
   },
   {
    "area_km2": 3.84,
-   "councillor": null,
+   "councillor": {
+    "name": "Dineo Zandile Njokweni-Masiu",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.0,
    "flags": [],
    "population": 59400,
@@ -244,7 +305,10 @@
   },
   {
    "area_km2": 11.06,
-   "councillor": null,
+   "councillor": {
+    "name": "Hendri Petrus Terblanche",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 31400,
@@ -254,7 +318,10 @@
   },
   {
    "area_km2": 16.9,
-   "councillor": null,
+   "councillor": {
+    "name": "Oriel Marva Samy",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.131,
    "flags": [],
    "population": 42100,
@@ -264,7 +331,10 @@
   },
   {
    "area_km2": 115.05,
-   "councillor": null,
+   "councillor": {
+    "name": "Paul Stephanus Swart",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.882,
    "flags": [],
    "population": 25000,
@@ -274,7 +344,10 @@
   },
   {
    "area_km2": 4.43,
-   "councillor": null,
+   "councillor": {
+    "name": "Nobanathi Luthango",
+    "party": "African National Congress"
+   },
    "electricity_city_share": 0.0,
    "flags": [],
    "population": 64400,
@@ -284,7 +357,10 @@
   },
   {
    "area_km2": 3.62,
-   "councillor": null,
+   "councillor": {
+    "name": "Beverley van Reenen",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.265,
    "flags": [],
    "population": 62100,
@@ -294,7 +370,10 @@
   },
   {
    "area_km2": 7.19,
-   "councillor": null,
+   "councillor": {
+    "name": "Franchesca Crecencia Walker",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.63,
    "flags": [],
    "population": 48400,
@@ -304,7 +383,10 @@
   },
   {
    "area_km2": 9.52,
-   "councillor": null,
+   "councillor": {
+    "name": "Cecile Janse van Rensburg",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.999,
    "flags": [
     "subcouncil_split"
@@ -316,7 +398,10 @@
   },
   {
    "area_km2": 9.78,
-   "councillor": null,
+   "councillor": {
+    "name": "Abdullah Slamat",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.088,
    "flags": [],
    "population": 62700,
@@ -326,7 +411,10 @@
   },
   {
    "area_km2": 173.11,
-   "councillor": null,
+   "councillor": {
+    "name": "Allister Gerome Lightburn",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.999,
    "flags": [],
    "population": 53100,
@@ -336,7 +424,10 @@
   },
   {
    "area_km2": 4.26,
-   "councillor": null,
+   "councillor": {
+    "name": "Deidrée Carol de Vos",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 57700,
@@ -346,7 +437,10 @@
   },
   {
    "area_km2": 6.66,
-   "councillor": null,
+   "councillor": {
+    "name": "Theresa Bereniece Thompson",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.866,
    "flags": [],
    "population": 58800,
@@ -356,7 +450,10 @@
   },
   {
    "area_km2": 199.07,
-   "councillor": null,
+   "councillor": {
+    "name": "Manfred Edward van Rooyen",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.779,
    "flags": [],
    "population": 45700,
@@ -366,7 +463,10 @@
   },
   {
    "area_km2": 1.96,
-   "councillor": null,
+   "councillor": {
+    "name": "Sithembiso Mzobe",
+    "party": "African National Congress"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 55600,
@@ -376,7 +476,10 @@
   },
   {
    "area_km2": 1.58,
-   "councillor": null,
+   "councillor": {
+    "name": "Melikhaya Gadeni",
+    "party": "African National Congress"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 47900,
@@ -386,7 +489,10 @@
   },
   {
    "area_km2": 4.52,
-   "councillor": null,
+   "councillor": {
+    "name": "Mzawulahlwa Albert Dlala",
+    "party": "African National Congress"
+   },
    "electricity_city_share": 0.017,
    "flags": [],
    "population": 54200,
@@ -396,7 +502,10 @@
   },
   {
    "area_km2": 2.63,
-   "councillor": null,
+   "councillor": {
+    "name": "Phillip Mgangxela",
+    "party": "African National Congress"
+   },
    "electricity_city_share": 0.096,
    "flags": [],
    "population": 49400,
@@ -406,7 +515,10 @@
   },
   {
    "area_km2": 1.67,
-   "councillor": null,
+   "councillor": {
+    "name": "Khayalethu Mbaswana",
+    "party": "African National Congress"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 40800,
@@ -416,7 +528,10 @@
   },
   {
    "area_km2": 1.76,
-   "councillor": null,
+   "councillor": {
+    "name": "Suzanne Zumana",
+    "party": "African National Congress"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 44500,
@@ -426,7 +541,10 @@
   },
   {
    "area_km2": 2.22,
-   "councillor": null,
+   "councillor": {
+    "name": "Wonke Mapeyi",
+    "party": "African National Congress"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 37900,
@@ -436,7 +554,10 @@
   },
   {
    "area_km2": 1.76,
-   "councillor": null,
+   "councillor": {
+    "name": "Bongani Ngcombolo",
+    "party": "African National Congress"
+   },
    "electricity_city_share": 0.994,
    "flags": [],
    "population": 45600,
@@ -446,7 +567,10 @@
   },
   {
    "area_km2": 1.65,
-   "councillor": null,
+   "councillor": {
+    "name": "Masibulele Anthony Tolofane",
+    "party": "African National Congress"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 39200,
@@ -456,7 +580,10 @@
   },
   {
    "area_km2": 3.32,
-   "councillor": null,
+   "councillor": {
+    "name": "Charles Johannes Esau",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.006,
    "flags": [
     "subcouncil_split"
@@ -468,7 +595,10 @@
   },
   {
    "area_km2": 46.39,
-   "councillor": null,
+   "councillor": {
+    "name": "Elton-Enrique Jansen",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 55300,
@@ -478,7 +608,10 @@
   },
   {
    "area_km2": 3.3,
-   "councillor": null,
+   "councillor": {
+    "name": "Venessa Adriaanse",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 47500,
@@ -488,7 +621,10 @@
   },
   {
    "area_km2": 9.34,
-   "councillor": null,
+   "councillor": {
+    "name": "Mandy Joyce Marr",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 60500,
@@ -498,7 +634,10 @@
   },
   {
    "area_km2": 5.15,
-   "councillor": null,
+   "councillor": {
+    "name": "Mogamat Aslam Cassiem",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 47300,
@@ -508,7 +647,10 @@
   },
   {
    "area_km2": 2.92,
-   "councillor": null,
+   "councillor": {
+    "name": "Anwar Constance",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 54400,
@@ -518,7 +660,10 @@
   },
   {
    "area_km2": 5.23,
-   "councillor": null,
+   "councillor": {
+    "name": "Yushrah Davis",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 42200,
@@ -528,7 +673,10 @@
   },
   {
    "area_km2": 5.46,
-   "councillor": null,
+   "councillor": {
+    "name": "Rashid Adams",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 45800,
@@ -538,7 +686,10 @@
   },
   {
    "area_km2": 2.61,
-   "councillor": null,
+   "councillor": {
+    "name": "Angus Patrick Mckenzie",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 50000,
@@ -548,7 +699,10 @@
   },
   {
    "area_km2": 2.5,
-   "councillor": null,
+   "councillor": {
+    "name": "Lwazi Phakade",
+    "party": "African National Congress"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 36600,
@@ -558,7 +712,10 @@
   },
   {
    "area_km2": 1.13,
-   "councillor": null,
+   "councillor": {
+    "name": "Thandiswa Ngqukumba",
+    "party": "African National Congress"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 38500,
@@ -568,7 +725,10 @@
   },
   {
    "area_km2": 14.82,
-   "councillor": null,
+   "councillor": {
+    "name": "Bryan Ivor James Banfield",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 35700,
@@ -578,7 +738,10 @@
   },
   {
    "area_km2": 35.41,
-   "councillor": null,
+   "councillor": {
+    "name": "Nicola Jowell",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.987,
    "flags": [],
    "population": 31500,
@@ -588,7 +751,10 @@
   },
   {
    "area_km2": 14.54,
-   "councillor": null,
+   "councillor": {
+    "name": "Lauren Valentine",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.996,
    "flags": [],
    "population": 44400,
@@ -598,7 +764,10 @@
   },
   {
    "area_km2": 9.16,
-   "councillor": null,
+   "councillor": {
+    "name": "Ashwin Jermaine Jansen",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 47000,
@@ -608,7 +777,10 @@
   },
   {
    "area_km2": 8.92,
-   "councillor": null,
+   "councillor": {
+    "name": "Bovain Alasdair James Macnab",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [
     "subcouncil_split"
@@ -620,7 +792,10 @@
   },
   {
    "area_km2": 8.06,
-   "councillor": null,
+   "councillor": {
+    "name": "Richard Charles Hill",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 34500,
@@ -630,7 +805,10 @@
   },
   {
    "area_km2": 6.26,
-   "councillor": null,
+   "councillor": {
+    "name": "Mikhail Manuel",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 20600,
@@ -640,7 +818,10 @@
   },
   {
    "area_km2": 7.8,
-   "councillor": null,
+   "councillor": {
+    "name": "Aslam Richards",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 45500,
@@ -650,7 +831,10 @@
   },
   {
    "area_km2": 166.61,
-   "councillor": null,
+   "councillor": {
+    "name": "Simon Patrick Liell Cock",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.999,
    "flags": [],
    "population": 41400,
@@ -660,7 +844,10 @@
   },
   {
    "area_km2": 35.39,
-   "councillor": null,
+   "councillor": {
+    "name": "Emile Langenhoven",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 25100,
@@ -670,7 +857,10 @@
   },
   {
    "area_km2": 8.68,
-   "councillor": null,
+   "councillor": {
+    "name": "Carmen Cecilia Siebritz",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 41600,
@@ -680,7 +870,10 @@
   },
   {
    "area_km2": 16.26,
-   "councillor": null,
+   "councillor": {
+    "name": "Izabel Sherry",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.999,
    "flags": [],
    "population": 25500,
@@ -690,7 +883,10 @@
   },
   {
    "area_km2": 4.28,
-   "councillor": null,
+   "councillor": {
+    "name": "Patricia Elizabeth van der Ross",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 49200,
@@ -700,7 +896,10 @@
   },
   {
    "area_km2": 8.05,
-   "councillor": null,
+   "councillor": {
+    "name": "Sebastian Petersen",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 45300,
@@ -710,7 +909,10 @@
   },
   {
    "area_km2": 20.57,
-   "councillor": null,
+   "councillor": {
+    "name": "Geraldine Ethel Gordon",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 37600,
@@ -720,7 +922,10 @@
   },
   {
    "area_km2": 3.38,
-   "councillor": null,
+   "councillor": {
+    "name": "Marita Johanna Petersen",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 37200,
@@ -730,7 +935,10 @@
   },
   {
    "area_km2": 41.71,
-   "councillor": null,
+   "councillor": {
+    "name": "Patricia Francke",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 49700,
@@ -740,7 +948,10 @@
   },
   {
    "area_km2": 28.5,
-   "councillor": null,
+   "councillor": {
+    "name": "Ronèl Viljoen",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 36000,
@@ -750,7 +961,10 @@
   },
   {
    "area_km2": 56.03,
-   "councillor": null,
+   "councillor": {
+    "name": "Haylee Linsy Dugmore",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 34100,
@@ -760,7 +974,10 @@
   },
   {
    "area_km2": 7.04,
-   "councillor": null,
+   "councillor": {
+    "name": "Kevin Graham Southgate",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 37600,
@@ -770,7 +987,10 @@
   },
   {
    "area_km2": 8.64,
-   "councillor": null,
+   "councillor": {
+    "name": "Edwin Peter Andrews",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 27400,
@@ -780,7 +1000,10 @@
   },
   {
    "area_km2": 32.69,
-   "councillor": null,
+   "councillor": {
+    "name": "Cameron James Patrick",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 47600,
@@ -790,7 +1013,10 @@
   },
   {
    "area_km2": 6.26,
-   "councillor": null,
+   "councillor": {
+    "name": "Joan Woodman",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 62000,
@@ -800,7 +1026,10 @@
   },
   {
    "area_km2": 5.69,
-   "councillor": null,
+   "councillor": {
+    "name": "Avron Plaatjies",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.831,
    "flags": [],
    "population": 51100,
@@ -810,7 +1039,10 @@
   },
   {
    "area_km2": 18.95,
-   "councillor": null,
+   "councillor": {
+    "name": "Francine Higham",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 32000,
@@ -820,7 +1052,10 @@
   },
   {
    "area_km2": 3.48,
-   "councillor": null,
+   "councillor": {
+    "name": "Anton Paul Peacock",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 47600,
@@ -830,7 +1065,10 @@
   },
   {
    "area_km2": 4.72,
-   "councillor": null,
+   "councillor": {
+    "name": "Saul Gefry Markgraff",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [
     "subcouncil_split"
@@ -842,7 +1080,10 @@
   },
   {
    "area_km2": 1.77,
-   "councillor": null,
+   "councillor": {
+    "name": "Bennet Lindikaya Payiya",
+    "party": "African National Congress"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 52800,
@@ -852,7 +1093,10 @@
   },
   {
    "area_km2": 3.8,
-   "councillor": null,
+   "councillor": {
+    "name": "Franklin William Randel Williams",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [
     "subcouncil_split"
@@ -864,7 +1108,10 @@
   },
   {
    "area_km2": 5.77,
-   "councillor": null,
+   "councillor": {
+    "name": "Washiela Harris",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 75900,
@@ -874,7 +1121,10 @@
   },
   {
    "area_km2": 17.48,
-   "councillor": null,
+   "councillor": {
+    "name": "Carl Bernard Punt",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.996,
    "flags": [],
    "population": 26700,
@@ -884,7 +1134,10 @@
   },
   {
    "area_km2": 103.02,
-   "councillor": null,
+   "councillor": {
+    "name": "Pieter Dennis Janse van Rensburg",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.61,
    "flags": [],
    "population": 37300,
@@ -894,7 +1147,10 @@
   },
   {
    "area_km2": 5.03,
-   "councillor": null,
+   "councillor": {
+    "name": "Sitembile Sydney Mfecane",
+    "party": "African National Congress"
+   },
    "electricity_city_share": 0.936,
    "flags": [],
    "population": 61500,
@@ -904,7 +1160,10 @@
   },
   {
    "area_km2": 2.51,
-   "councillor": null,
+   "councillor": {
+    "name": "Xolani Divine Diniso",
+    "party": "African National Congress"
+   },
    "electricity_city_share": 0.673,
    "flags": [],
    "population": 52500,
@@ -914,7 +1173,10 @@
   },
   {
    "area_km2": 1.24,
-   "councillor": null,
+   "councillor": {
+    "name": "Khayalethu Kama",
+    "party": "African National Congress"
+   },
    "electricity_city_share": 0.0,
    "flags": [],
    "population": 45700,
@@ -924,7 +1186,10 @@
   },
   {
    "area_km2": 2.63,
-   "councillor": null,
+   "councillor": {
+    "name": "Zukisani Welcome Sophazi",
+    "party": "African National Congress"
+   },
    "electricity_city_share": 0.565,
    "flags": [],
    "population": 61400,
@@ -934,7 +1199,10 @@
   },
   {
    "area_km2": 1.31,
-   "councillor": null,
+   "councillor": {
+    "name": "Kayalethu Wiseman Gxasheka",
+    "party": "African National Congress"
+   },
    "electricity_city_share": 0.0,
    "flags": [],
    "population": 54800,
@@ -944,7 +1212,10 @@
   },
   {
    "area_km2": 17.73,
-   "councillor": null,
+   "councillor": {
+    "name": "Colleen Margaret Mes",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.732,
    "flags": [],
    "population": 18700,
@@ -954,7 +1225,10 @@
   },
   {
    "area_km2": 1.16,
-   "councillor": null,
+   "councillor": {
+    "name": "Thando Mpengezi",
+    "party": "African National Congress"
+   },
    "electricity_city_share": 0.0,
    "flags": [],
    "population": 56900,
@@ -964,7 +1238,10 @@
   },
   {
    "area_km2": 11.18,
-   "councillor": null,
+   "councillor": {
+    "name": "Yusuf Mohamed",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 42900,
@@ -974,7 +1251,10 @@
   },
   {
    "area_km2": 4.54,
-   "councillor": null,
+   "councillor": {
+    "name": "Thando Innocent Pimpi",
+    "party": "African National Congress"
+   },
    "electricity_city_share": 0.0,
    "flags": [],
    "population": 56800,
@@ -984,7 +1264,10 @@
   },
   {
    "area_km2": 4.11,
-   "councillor": null,
+   "councillor": {
+    "name": "Xolisa Gloria Peter",
+    "party": "African National Congress"
+   },
    "electricity_city_share": 0.0,
    "flags": [],
    "population": 47100,
@@ -994,7 +1277,10 @@
   },
   {
    "area_km2": 7.54,
-   "councillor": null,
+   "councillor": {
+    "name": "Precious Duduzile Nenemba",
+    "party": "African National Congress"
+   },
    "electricity_city_share": 0.0,
    "flags": [],
    "population": 49800,
@@ -1004,7 +1290,10 @@
   },
   {
    "area_km2": 4.19,
-   "councillor": null,
+   "councillor": {
+    "name": "Lucky Nhlanhla Mbiza",
+    "party": "African National Congress"
+   },
    "electricity_city_share": 0.0,
    "flags": [],
    "population": 52700,
@@ -1014,7 +1303,10 @@
   },
   {
    "area_km2": 3.32,
-   "councillor": null,
+   "councillor": {
+    "name": "Ayanda Tetani",
+    "party": "African National Congress"
+   },
    "electricity_city_share": 0.0,
    "flags": [],
    "population": 56900,
@@ -1024,7 +1316,10 @@
   },
   {
    "area_km2": 2.9,
-   "councillor": null,
+   "councillor": {
+    "name": "Yanga Eric Mjingwana",
+    "party": "African National Congress"
+   },
    "electricity_city_share": 0.0,
    "flags": [],
    "population": 48900,
@@ -1034,7 +1329,10 @@
   },
   {
    "area_km2": 11.6,
-   "councillor": null,
+   "councillor": {
+    "name": "Lonwabo Mluleki Mqina",
+    "party": "African National Congress"
+   },
    "electricity_city_share": 0.019,
    "flags": [
     "subcouncil_split"
@@ -1046,7 +1344,10 @@
   },
   {
    "area_km2": 112.64,
-   "councillor": null,
+   "councillor": {
+    "name": "Wade Francois Skriker",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.967,
    "flags": [],
    "population": 51000,
@@ -1056,7 +1357,10 @@
   },
   {
    "area_km2": 4.71,
-   "councillor": null,
+   "councillor": {
+    "name": "Siyabonga Solly Duka",
+    "party": "African National Congress"
+   },
    "electricity_city_share": 0.135,
    "flags": [],
    "population": 56000,
@@ -1066,7 +1370,10 @@
   },
   {
    "area_km2": 44.18,
-   "councillor": null,
+   "councillor": {
+    "name": "Rhynhardt Bresler",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.961,
    "flags": [
     "subcouncil_split"
@@ -1078,7 +1385,10 @@
   },
   {
    "area_km2": 9.24,
-   "councillor": null,
+   "councillor": {
+    "name": "Gerhard Dawid Fourie",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 33000,
@@ -1088,7 +1398,10 @@
   },
   {
    "area_km2": 4.8,
-   "councillor": null,
+   "councillor": {
+    "name": "Bulelwa Mayende",
+    "party": "African National Congress"
+   },
    "electricity_city_share": 0.0,
    "flags": [],
    "population": 50600,
@@ -1098,7 +1411,10 @@
   },
   {
    "area_km2": 228.26,
-   "councillor": null,
+   "councillor": {
+    "name": "Janessa Joy Stockhall",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.393,
    "flags": [],
    "population": 38700,
@@ -1108,7 +1424,10 @@
   },
   {
    "area_km2": 5.85,
-   "councillor": null,
+   "councillor": {
+    "name": "Phelisa Sweetness Mzolisa",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.0,
    "flags": [],
    "population": 74000,
@@ -1118,7 +1437,10 @@
   },
   {
    "area_km2": 6.12,
-   "councillor": null,
+   "councillor": {
+    "name": "Theresa de Wet",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.0,
    "flags": [
     "subcouncil_split"
@@ -1130,7 +1452,10 @@
   },
   {
    "area_km2": 8.31,
-   "councillor": null,
+   "councillor": {
+    "name": "Rudi Stevens",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.0,
    "flags": [],
    "population": 50500,
@@ -1140,7 +1465,10 @@
   },
   {
    "area_km2": 20.57,
-   "councillor": null,
+   "councillor": {
+    "name": "Peter George Helfrich",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.233,
    "flags": [],
    "population": 45200,
@@ -1150,7 +1478,10 @@
   },
   {
    "area_km2": 2.83,
-   "councillor": null,
+   "councillor": {
+    "name": "Shanen Joyce Rossouw",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 39600,
@@ -1160,7 +1491,10 @@
   },
   {
    "area_km2": 8.31,
-   "councillor": null,
+   "councillor": {
+    "name": "Cedric-Junior Laguma",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.997,
    "flags": [],
    "population": 48700,
@@ -1170,7 +1504,10 @@
   },
   {
    "area_km2": 11.58,
-   "councillor": null,
+   "councillor": {
+    "name": "Theresa Audry Uys",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 27300,
@@ -1180,7 +1517,10 @@
   },
   {
    "area_km2": 16.53,
-   "councillor": null,
+   "councillor": {
+    "name": "Susan Iris van der Linde",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.0,
    "flags": [],
    "population": 30400,
@@ -1190,7 +1530,10 @@
   },
   {
    "area_km2": 2.84,
-   "councillor": null,
+   "councillor": {
+    "name": "Pamela Nozuko Daniso",
+    "party": "African National Congress"
+   },
    "electricity_city_share": 0.687,
    "flags": [],
    "population": 58700,
@@ -1200,7 +1543,10 @@
   },
   {
    "area_km2": 10.86,
-   "councillor": null,
+   "councillor": {
+    "name": "Ian Patrick Mc Mahon",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.997,
    "flags": [],
    "population": 29400,
@@ -1210,7 +1556,10 @@
   },
   {
    "area_km2": 2.85,
-   "councillor": null,
+   "councillor": {
+    "name": "Marvin John Sampson",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 1.0,
    "flags": [],
    "population": 66500,
@@ -1220,7 +1569,10 @@
   },
   {
    "area_km2": 10.46,
-   "councillor": null,
+   "councillor": {
+    "name": "Sandile Sydney Booysen",
+    "party": "Democratic Alliance"
+   },
    "electricity_city_share": 0.0,
    "flags": [],
    "population": 22500,
@@ -1230,7 +1582,10 @@
   },
   {
    "area_km2": 15.16,
-   "councillor": null,
+   "councillor": {
+    "name": "Ernest Mongezi Madikane",
+    "party": "African National Congress"
+   },
    "electricity_city_share": 0.646,
    "flags": [],
    "population": 39800,
@@ -1248,6 +1603,14 @@
    "retrieved_at": "2026-11-16",
    "title": "Wards (2026 delimitation)",
    "url": "https://citymaps.capetown.gov.za/agsext/rest/services/Theme_Based/ODP_SPLIT_5/FeatureServer/6"
+  },
+  "councillors": {
+   "licence": "Electoral Commission of South Africa (copyright notice: reproduction for non-commercial use; https://www.elections.org.za/pw/Copyright-Notice)",
+   "notes": "Winning ward candidate per ward, from the dashboard data file https://results.elections.org.za/dashboards/lge/MapsJason/2026/EEID1887Munic9006.js (sha256 bc7b20ea8fe7da716f98540294fbb8ab5b2c8c5a379ca37a725c704f119f8396). Names title-cased from the IEC's capitals. As elected; by-elections since are not reflected.",
+   "publisher": "Electoral Commission of South Africa (IEC)",
+   "retrieved_at": "2026-11-16",
+   "title": "Local Government Elections 2026: elected ward councillors",
+   "url": "https://results.elections.org.za/dashboards/lge/LGEResultsDashboard.aspx"
   },
   "electricity": {
    "licence": "City of Cape Town Open Data Licence",

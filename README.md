@@ -75,8 +75,9 @@ every printed total in the PDF.
 
 ## Known gaps
 
-- **Councillors** elected in November 2026 are not yet included. Add them as
-  `sources/councillors/2026.csv` (`ward_no,name,party`) with a `.source.json` sidecar.
+- **Councillors** are the ward winners of the last local election (IEC results). By-elections
+  since then are not reflected, and names are converted from the IEC's capitals, so a few
+  spellings may be off.
 - **Ward population** is modelled; Stats SA hasn't released Census 2022 by ward.
 - **About a third of service requests** have no usable location and can't be placed in a ward.
 - **No-water / no-power days** count days with 3+ resident reports, not hours without supply.

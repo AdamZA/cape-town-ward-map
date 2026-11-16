@@ -79,6 +79,17 @@ def run() -> int:
             nos = sorted(r.ward_no for r in env.rows)
             if nos != sorted(expected):
                 err(f"{entry.file}: rows are not exactly wards 1..{len(expected)}")
+        if entry.dataset == "election_wards" and env.ward_vintage == index.default_vintage:
+            wards_entry = next(e for e in index.datasets if e.dataset == "wards")
+            wards_env = ENVELOPES["wards"].model_validate_json(
+                (DATA / wards_entry.file).read_text("utf-8")
+            )
+            for r in wards_env.rows:
+                won = next((x.winner for x in env.rows if x.ward_no == r.ward_no), None)
+                if r.councillor and r.councillor.party and r.councillor.party != won:
+                    err(
+                        f"ward {r.ward_no}: councillor's party {r.councillor.party} != winner {won}"
+                    )
         if entry.dataset == "elections":
             for m in env.municipalities:
                 won = sum(p.seats or 0 for p in m.parties)

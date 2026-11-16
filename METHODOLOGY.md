@@ -200,6 +200,10 @@ nothing is estimated.
 - **Ward results** are the ward ballot: votes for ward candidates, by party or independent.
   Residents also vote on a party list (PR ballot), which tops up the council so seats match
   overall support. The council table uses the PR ballot's votes.
+- **Ward councillors** are the winning ward candidates, from the IEC results dashboard's data for
+  the council. The IEC's list of current councillors (which includes by-elections) can't be
+  downloaded automatically, so by-elections aren't reflected yet. Names are converted from the
+  IEC's capitals, so a few spellings may be off.
 - **Turnout** is ballots cast, including spoilt ones, as a share of registered voters.
 - **Earlier ward boundaries.** An election is fought on the wards of its time. When the map shows
   newer wards, a ward's result is that of the old ward covering most of it, and the site says so.

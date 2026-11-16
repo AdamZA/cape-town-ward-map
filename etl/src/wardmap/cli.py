@@ -12,6 +12,7 @@ def _pin(args) -> None:
     from wardmap.datasets import (
         allocations,
         boundaries,
+        councillors,
         elections,
         electricity,
         land_use,
@@ -28,6 +29,7 @@ def _pin(args) -> None:
         "land_use": lambda: land_use.pin(CURRENT_VINTAGE),
         "landmarks": landmarks.pin,
         "allocations": lambda: allocations.pin(args.year, local=args.local),
+        "councillors": lambda: councillors.pin(args.election or max(LGE)),
         "elections": lambda: [
             elections.pin(y) for y in ([args.election] if args.election else sorted(LGE))
         ],
@@ -92,6 +94,7 @@ def main(argv: list[str] | None = None) -> None:
             "landmarks",
             "allocations",
             "elections",
+            "councillors",
             "all",
         ],
     )

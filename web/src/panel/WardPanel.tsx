@@ -36,7 +36,15 @@ export function WardPanel({ data, metrics, ward, layers, onShowLayer, onClose }:
       <header class="panel-head">
         <div>
           <h2 id="ward-title">Ward {ward}</h2>
-          {w.subcouncil != null && <p class="panel-sub">Subcouncil {w.subcouncil}</p>}
+          <p class="panel-sub">
+            {w.subcouncil != null && <>Subcouncil {w.subcouncil}</>}
+            {w.councillor && (
+              <>
+                {w.subcouncil != null && " · "}Councillor {w.councillor.name}
+                {w.councillor.party && <> ({w.councillor.party})</>}
+              </>
+            )}
+          </p>
         </div>
         <button type="button" class="icon-btn" onClick={onClose} aria-label="Close ward details">
           ×

@@ -62,6 +62,11 @@ IEC_PROVINCES = {  # IEC report file codes
     "NC": "Northern Cape",
     "WP": "Western Cape",
 }
+# The IEC results dashboard's static data files (per council, per election), e.g.
+# MapsJason/2026/EEID1887Munic9006.js. They name each ward's elected candidate.
+IEC_DASHBOARD_DATA = "https://results.elections.org.za/dashboards/lge/MapsJason"
+IEC_DASHBOARD = "https://results.elections.org.za/dashboards/lge/LGEResultsDashboard.aspx"
+IEC_MUNIC_IDS = {"CPT": 9006}
 METROS = {"BUF", "CPT", "EKU", "ETH", "JHB", "MAN", "NMA", "TSH"}
 
 # OpenStreetMap (malls only: the City publishes no shopping-centre layer).

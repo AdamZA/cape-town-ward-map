@@ -2,8 +2,8 @@
 
 - Subcouncil: the City's subcouncil boundaries (20 since August 2024). Each ward gets the
   subcouncil covering most of its area; the share is recorded, and wards under 90% are flagged.
-- Councillor: from a curated CSV (sources/councillors/<vintage>.csv) because there is no stable
-  machine-readable source yet for the councillors elected in November 2026. Missing -> gap.
+- Councillor: sources/councillors/<vintage>.csv, pinned from the IEC's election results by
+  datasets/councillors.py (as elected; by-elections not reflected). Missing -> gap.
 - Population: see population.py. Electricity supplier: see electricity.py.
 """
 
@@ -137,7 +137,13 @@ def build(vintage: int = CURRENT_VINTAGE) -> None:
         ),
     }
     if councillor_src:
-        fields["councillor"] = FieldMeta(label="Ward councillor", source="councillors")
+        fields["councillor"] = FieldMeta(
+            label="Ward councillor",
+            source="councillors",
+            method="elections",
+            description="Elected at the last local election. By-elections since then are not "
+            "reflected yet.",
+        )
     env = WardsEnvelope(
         ward_vintage=vintage,
         as_of=sources["boundaries"].retrieved_at,
