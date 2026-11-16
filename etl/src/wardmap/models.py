@@ -329,6 +329,7 @@ class WardElectionRow(Strict):
     registered: int
     turnout: float = Field(description="Ballots cast / registered on the ward ballot")
     winner: str = Field(description="Party (or independent) with most ward-ballot votes")
+    councillor: str | None = Field(None, description="Elected ward councillor (winning candidate)")
     parties: list[PartyResult] = Field(description="Ward ballot, most votes first (up to 8)")
 
 

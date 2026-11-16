@@ -34,8 +34,11 @@ function Bars({ parties, value, label }: { parties: PartyResult[]; value: (p: Pa
   );
 }
 
-export function WardElection({ data, ward }: { data: AppData; ward: number }) {
-  const res = wardResult(data, ward);
+export function WardElection({ data, ward, year }: { data: AppData; ward: number; year?: number }) {
+  // A given election on its own wards (past terms), or the newest result tied to a current ward.
+  const chosen = year != null ? data.electionWards.find((e) => e.year === year) : undefined;
+  const direct = chosen?.rows.find((r) => r.ward_no === ward);
+  const res = chosen ? (direct ? { env: chosen, row: direct, oldWard: null } : null) : wardResult(data, ward);
   if (!res) return null;
   const { env, row, oldWard } = res;
   const winner = row.parties[0];
@@ -50,7 +53,7 @@ export function WardElection({ data, ward }: { data: AppData; ward: number }) {
             in old ward {oldWard.ward}, which covers {Math.round(oldWard.share * 100)}% of this ward
           </>
         )}
-        . Won by <strong>{row.winner}</strong>
+        . Won by {row.councillor ? <><strong>{row.councillor}</strong> ({row.winner})</> : <strong>{row.winner}</strong>}
         {winner && <> with {pct(winner.share)} of valid votes</>}. Turnout was {pct(row.turnout)} of {fmtInt(row.registered)}{" "}
         registered voters.
       </p>
@@ -68,10 +71,18 @@ function council(env: ElectionsEnvelope, code: string) {
 }
 
 /** City overview: the council's make-up after the latest election, then the national picture. */
-export function CouncilResults({ data, code }: { data: AppData; code: string }) {
-  const env = data.elections[0];
+export function CouncilResults({ data, code, year }: { data: AppData; code: string; year: number }) {
+  const env = data.elections.find((e) => e.year === year);
   if (!env) return null;
   const m = council(env, code);
+  const prevEnv = data.elections.filter((e) => e.year < year).sort((a, b) => b.year - a.year)[0];
+  const prev = prevEnv ? council(prevEnv, code) : null;
+  const prevSeats = new Map(prev?.parties.map((p) => [p.party, p.seats ?? 0]));
+  const change = (p: PartyResult) => {
+    if (!prev) return "";
+    const d = (p.seats ?? 0) - (prevSeats.get(p.party) ?? 0);
+    return d === 0 ? " (no change)" : ` (${d > 0 ? "+" : "−"}${Math.abs(d)})`;
+  };
   return (
     <>
       {m && (
@@ -86,8 +97,13 @@ export function CouncilResults({ data, code }: { data: AppData; code: string }) 
           <Bars
             parties={m.parties.filter((p) => (p.seats ?? 0) > 0)}
             value={(p) => (p.seats ?? 0) / m.seats_total}
-            label={(p) => `${p.seats} seat${p.seats === 1 ? "" : "s"}`}
+            label={(p) => `${p.seats} seat${p.seats === 1 ? "" : "s"}${change(p)}`}
           />
+          {prev && prevEnv && (
+            <p class="source">
+              In brackets: change since the {prevEnv.year} election, when the council had {prev.seats_total} seats.
+            </p>
+          )}
           <p class="source">
             <SourceLine env={env} sourceKey="seats" method="elections" />
           </p>

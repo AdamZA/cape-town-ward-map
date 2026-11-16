@@ -14,11 +14,35 @@ export type MetricKey =
   | "pct_located"
   | "water_days"
   | "power_days"
-  | "turnout";
+  | "turnout"
+  | "winner_share"
+  | "allocation_total";
+
+/** A council term, named by the election that started it. */
+export interface Term {
+  year: number;
+  /** Ward boundaries the term's election was fought on. */
+  vintage: number;
+  /** Year of the next election, or null for the current term. */
+  next: number | null;
+  current: boolean;
+  label: string;
+}
+
+/** Terms from the published elections, oldest first. */
+export function terms(d: { elections: { year: number; ward_vintage: number }[] }): Term[] {
+  const es = [...d.elections].sort((a, b) => a.year - b.year);
+  return es.map((e, i) => {
+    const next = es[i + 1]?.year ?? null;
+    return { year: e.year, vintage: e.ward_vintage, next, current: next == null, label: `${e.year} to ${next ?? "now"}` };
+  });
+}
 
 export interface Metric {
   key: MetricKey;
   topic: string;
+  label: string;
+  unit: string | null;
   env: Provenance & { period?: { from: string; to: string } | null };
   field: string;
   /** Short hint shown under the legend so the ramp is read correctly. */
@@ -35,27 +59,31 @@ interface Def {
   topic: string;
   reading: string;
   nullLabel?: string;
-  build: (d: AppData) => Pick<Metric, "env" | "field" | "values" | "city">;
+  /** Label and unit, when not the field's own. */
+  label?: string;
+  unit?: string;
+  /** Null when the metric doesn't exist for this term. */
+  build: (d: AppData, t: Term) => Pick<Metric, "env" | "field" | "values" | "city"> | null;
 }
 
 const sr = (field: "pct_closed_30d" | "median_days" | "pct_no_completion" | "per_1000" | "pct_located") =>
-  (d: AppData) => ({
+  (d: AppData, t: Term) => !t.current ? null : ({
     env: d.serviceRequests,
     field,
     values: new Map(d.serviceRequests.rows.map((r) => [r.ward_no, r[field] ?? null])),
     city: d.serviceRequests.citywide[field] ?? null,
   });
 
-const outage = (field: "water_days" | "power_days") => (d: AppData) => ({
+const outage = (field: "water_days" | "power_days") => (d: AppData, t: Term) => !t.current ? null : ({
   env: d.outages,
   field,
   values: new Map(d.outages.rows.map((r) => [r.ward_no, r[field]])),
   city: null,
 });
 
-/** Latest ward-ballot results fought on the wards the map shows (none until such an election). */
-export function currentElectionWards(d: AppData) {
-  return d.electionWards.find((e) => e.ward_vintage === d.wards.ward_vintage) ?? null;
+/** Ward-ballot results of the election that started this term. */
+export function termElectionWards(d: AppData, t: Term) {
+  return d.electionWards.find((e) => e.year === t.year) ?? null;
 }
 
 const SERVICE = "Service requests";
@@ -100,16 +128,32 @@ const DEFS: Record<MetricKey, Def> = {
   },
   turnout: {
     topic: "Elections",
-    reading: "Share of registered voters who cast a ward ballot in the latest local election.",
-    nullLabel: "No data",
-    build: (d) => {
-      const e = currentElectionWards(d);
-      return {
-        env: e ?? d.wards,
-        field: e ? "turnout" : "population",
-        values: new Map(e ? e.rows.map((r) => [r.ward_no, r.turnout]) : []),
-        city: null,
-      };
+    reading: "Share of registered voters who cast a ward ballot in the election that started this term.",
+    build: (d, t) => {
+      const e = termElectionWards(d, t);
+      return e && { env: e, field: "turnout", values: new Map(e.rows.map((r) => [r.ward_no, r.turnout])), city: null };
+    },
+  },
+  winner_share: {
+    topic: "Elections",
+    label: "Winner's share of the ward vote",
+    unit: "share",
+    reading: "The winning candidate's share of valid ward-ballot votes. Darker means a less contested ward, not a better one.",
+    build: (d, t) => {
+      const e = termElectionWards(d, t);
+      return e && { env: e, field: "parties", values: new Map(e.rows.map((r) => [r.ward_no, r.parties[0]?.share ?? null])), city: null };
+    },
+  },
+  allocation_total: {
+    topic: "Ward budgets",
+    unit: "R",
+    reading: "Rand budgeted for the ward's allocation projects that year. Every ward gets the same amount; differences are rounding, later changes and unspent amounts moved.",
+    build: (d, t) => {
+      const b = d.allocations.find((a) => a.ward_vintage === t.vintage);
+      if (!b) return null;
+      const values = new Map<number, number | null>();
+      for (const r of b.rows) if (r.ward_no != null) values.set(r.ward_no, (values.get(r.ward_no) ?? 0) + (r.amounts[b.budget_year] ?? 0));
+      return { env: b, field: "amounts", values, city: null };
     },
   },
 };
@@ -118,22 +162,33 @@ export const METRIC_KEYS = Object.keys(DEFS) as MetricKey[];
 export const DEFAULT_METRIC: MetricKey = "pct_closed_30d";
 export const isMetric = (k: string): k is MetricKey => k in DEFS;
 
-export function buildMetrics(d: AppData): Record<MetricKey, Metric> {
-  return Object.fromEntries(
-    METRIC_KEYS.map((key) => [key, {
-        key,
-        topic: DEFS[key].topic,
-        reading: DEFS[key].reading,
-        nullLabel: DEFS[key].nullLabel ?? "Not enough data",
-        ...DEFS[key].build(d),
-      }]),
-  ) as Record<MetricKey, Metric>;
+export type Metrics = Partial<Record<MetricKey, Metric>>;
+
+/** The metrics that exist for a term (service figures only on the current term's wards). */
+export function buildMetrics(d: AppData, t: Term): Metrics {
+  const out: Metrics = {};
+  for (const key of METRIC_KEYS) {
+    const def = DEFS[key];
+    const built = def.build(d, t);
+    if (!built) continue;
+    const meta = built.env.fields[built.field];
+    out[key] = {
+      key,
+      topic: def.topic,
+      label: def.label ?? meta?.label ?? key,
+      unit: def.unit ?? meta?.unit ?? null,
+      reading: def.reading,
+      nullLabel: def.nullLabel ?? "Not enough data",
+      ...built,
+    };
+  }
+  return out;
 }
 
-/** Metric keys grouped by topic, in display order. */
-export function topics(): [string, MetricKey[]][] {
+/** Available metric keys grouped by topic, in display order. */
+export function topics(m: Metrics): [string, MetricKey[]][] {
   const out = new Map<string, MetricKey[]>();
-  for (const k of METRIC_KEYS) out.set(DEFS[k].topic, [...(out.get(DEFS[k].topic) ?? []), k]);
+  for (const k of METRIC_KEYS) if (m[k]) out.set(DEFS[k].topic, [...(out.get(DEFS[k].topic) ?? []), k]);
   return [...out];
 }
 

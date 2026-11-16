@@ -117,17 +117,7 @@ export class WardMap {
     const firstLabel = style.layers.find((l) => l.type === "symbol")?.id;
     this.map.addSource("wards", { type: "geojson", data: this.wards, promoteId: "ward_no" });
     // One label point per ward (computed in the ETL), so numbers aren't repeated per tile.
-    this.map.addSource("ward-points", {
-      type: "geojson",
-      data: {
-        type: "FeatureCollection",
-        features: this.wards.features.map((f) => ({
-          type: "Feature",
-          properties: { ward_no: f.properties.ward_no },
-          geometry: { type: "Point", coordinates: f.properties.label },
-        })),
-      },
-    });
+    this.map.addSource("ward-points", { type: "geojson", data: labelPoints(this.wards) });
     const fillColor = [
       "match",
       ["coalesce", ["feature-state", "cls"], -1],
@@ -312,6 +302,19 @@ export class WardMap {
     this.popup?.remove();
   }
 
+  /** Swap the ward boundaries (a different council term's wards). */
+  async setWards(wards: WardFeatures) {
+    if (wards === this.wards) return;
+    this.wards = wards;
+    this.extent = bbox(wards.features.map((f) => f.geometry));
+    await this.ready;
+    (this.map.getSource("wards") as maplibregl.GeoJSONSource | undefined)?.setData(wards);
+    (this.map.getSource("ward-points") as maplibregl.GeoJSONSource | undefined)?.setData(labelPoints(wards));
+    this.hovered = null;
+    this.applyClasses();
+    this.applySelection();
+  }
+
   async setClasses(classes: Map<number, number>) {
     this.classes = classes;
     await this.ready;
@@ -371,6 +374,18 @@ export class WardMap {
   resize() {
     this.map.resize();
   }
+}
+
+/** One label point per ward (computed in the ETL), so numbers aren't repeated per tile. */
+function labelPoints(wards: WardFeatures): GeoJSON.FeatureCollection {
+  return {
+    type: "FeatureCollection",
+    features: wards.features.map((f) => ({
+      type: "Feature",
+      properties: { ward_no: f.properties.ward_no },
+      geometry: { type: "Point", coordinates: f.properties.label },
+    })),
+  };
 }
 
 function wardOf(f: maplibregl.MapGeoJSONFeature | undefined): number | null {

@@ -193,8 +193,11 @@ def pin(year: int) -> None:
 # ---- build --------------------------------------------------------------------------------------
 
 
-# Parties whose own spelling title-casing gets wrong (as written on their IEC registration).
+# Parties whose own spelling title-casing gets wrong (as written on their IEC registration), and
+# renamed parties given one name across elections so seat changes compare like with like.
 PARTY_SPELLING = {
+    "VRYHEIDSFRONT PLUS": "Freedom Front Plus (Vryheidsfront Plus)",
+    "VRYHEIDSFRONT PLUS | FREEDOM FRONT PLUS": "Freedom Front Plus (Vryheidsfront Plus)",
     "ACTIONSA": "ActionSA",
     "GOOD": "GOOD",
     "AL JAMA-AH": "Al Jama-ah",
@@ -373,6 +376,15 @@ def build(year: int) -> None:
     )
 
     for code in WARD_MUNICIPALITIES:
+        # Winning candidates, pinned by datasets/councillors.py (Cape Town only for now).
+        cfile = SOURCES / "councillors" / f"{vintage}.csv"
+        names = (
+            dict(zip(*[pd.read_csv(cfile)[c] for c in ("ward_no", "name")], strict=True))
+            if code == "CPT" and cfile.exists()
+            else {}
+        )
+        if names:
+            sources = sources | {"councillors": _councillor_source(cfile)}
         wv = votes[(votes["muni"] == code) & (votes["ballot"] == "Ward")]
         wt = turnout[(turnout["muni"] == code) & (turnout["ballot"] == "Ward")]
         rows = []
@@ -387,6 +399,7 @@ def build(year: int) -> None:
                     registered=reg,
                     turnout=round((valid + int(t["spoilt"].sum())) / reg, 4) if reg else 0.0,
                     winner=str(by.index[0]),
+                    councillor=names.get(int(str(ward)[-3:])),
                     parties=[
                         PartyResult(party=str(p), votes=int(v), share=round(int(v) / valid, 4))
                         for p, v in by.head(MAX_WARD_PARTIES).items()
@@ -398,7 +411,7 @@ def build(year: int) -> None:
         write_model(
             f"election_wards-{code}-{year}.json",
             ElectionWardsEnvelope(
-                **common,
+                **(common | {"sources": sources}),
                 year=year,
                 municipality=code,
                 fields={
@@ -420,6 +433,18 @@ def build(year: int) -> None:
                 rows=rows,
             ),
         )
+
+
+def _councillor_source(path: Path) -> Source:
+    rec = read_sidecar(path)
+    return Source(
+        title=rec.title,
+        publisher=rec.publisher,
+        url=rec.url,
+        retrieved_at=rec.retrieved_at,
+        licence=rec.licence,
+        notes=rec.notes,
+    )
 
 
 def years() -> list[int]:

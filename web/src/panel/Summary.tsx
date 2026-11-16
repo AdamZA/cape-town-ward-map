@@ -2,14 +2,14 @@
 // among all wards. Wording is factual ("higher than in N wards"), never "better" or "worse".
 import type { AppData } from "../data";
 import { fmtInt, fmtRandShort, fmtUnit } from "../format";
-import { type Metric, type MetricKey, standing } from "../metrics";
+import { type Metric, type MetricKey, type Metrics, standing } from "../metrics";
 import { characterLine, labelsOf } from "../places/places";
 import { mainAllocation } from "./Allocations";
 import { Strip } from "./Strip";
 
 const GLANCE: MetricKey[] = ["pct_closed_30d", "median_days", "water_days", "power_days"];
 
-export function Summary({ data, metrics, ward }: { data: AppData; metrics: Record<MetricKey, Metric>; ward: number }) {
+export function Summary({ data, metrics, ward }: { data: AppData; metrics: Metrics; ward: number }) {
   const w = data.wards.rows.find((r) => r.ward_no === ward)!;
   const budget = data.allocations[0];
   const alloc = budget ? mainAllocation(ward, data.wards.ward_vintage, budget, data.crosswalk) : null;
@@ -44,8 +44,8 @@ export function Summary({ data, metrics, ward }: { data: AppData; metrics: Recor
         )}
       </p>
       <ul class="glance-rows">
-        {GLANCE.map((k) => (
-          <GlanceRow key={k} metric={metrics[k]} ward={ward} censored={k === "median_days" && !!data.serviceRequests.rows.find((r) => r.ward_no === ward)?.median_censored} />
+        {GLANCE.filter((k) => metrics[k]).map((k) => (
+          <GlanceRow key={k} metric={metrics[k]!} ward={ward} censored={k === "median_days" && !!data.serviceRequests.rows.find((r) => r.ward_no === ward)?.median_censored} />
         ))}
       </ul>
       {lowLocation && (
@@ -62,7 +62,7 @@ export function Summary({ data, metrics, ward }: { data: AppData; metrics: Recor
 }
 
 function GlanceRow({ metric, ward, censored }: { metric: Metric; ward: number; censored: boolean }) {
-  const meta = metric.env.fields[metric.field]!;
+  const meta = { label: metric.label, unit: metric.unit };
   const v = metric.values.get(ward) ?? null;
   const st = standing(metric.values, ward);
   return (

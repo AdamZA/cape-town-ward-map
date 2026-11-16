@@ -1,15 +1,17 @@
 import { useEffect, useMemo, useRef, useState } from "preact/hooks";
-import { type AppData, loadAll } from "./data";
+import { type AppData, loadAll, loadBoundaries, type WardFeatures } from "./data";
 import type { PlaceRow } from "./generated/places";
 import { fmtDate, fmtUnit } from "./format";
 import { wardAt } from "./geo";
 import { basemapStyle, WardMap } from "./map/map";
 import { legendEntries, NO_DATA, quantileScale } from "./map/scales";
-import { buildMetrics, type MetricKey, topics } from "./metrics";
+import { buildMetrics, METRIC_KEYS, type MetricKey, type Term, terms, topics } from "./metrics";
 import type { LandmarkRow } from "./generated/landmarks";
 import { Layers } from "./places/Layers";
 import { categoryMap } from "./places/places";
+import { Timeline } from "./elections/Timeline";
 import { CityOverview } from "./panel/CityOverview";
+import { PastWardPanel } from "./panel/PastWardPanel";
 import { SourceLine } from "./panel/Figure";
 import { WardPanel } from "./panel/WardPanel";
 import { PlaceResult, Search } from "./search/Search";
@@ -35,11 +37,25 @@ function Main({ data }: { data: AppData }) {
   const [notice, setNotice] = useState<string | null>(null);
   const [mapReady, setMapReady] = useState(false);
 
-  const metrics = useMemo(() => buildMetrics(data), [data]);
-  const metric = metrics[state.metric];
+  const allTerms = useMemo(() => terms(data), [data]);
+  const fallback: Term = { year: 0, vintage: data.wards.ward_vintage, next: null, current: true, label: "current" };
+  const term = allTerms.find((t) => t.year === state.term) ?? allTerms.at(-1) ?? fallback;
+  const [wardShapes, setWardShapes] = useState<WardFeatures>(data.boundaries);
+  useEffect(() => {
+    let live = true;
+    loadBoundaries(data, term.vintage).then((fc) => live && setWardShapes(fc), () => live && setNotice("Could not load that term's wards."));
+    return () => {
+      live = false;
+    };
+  }, [term.vintage]);
+
+  const metrics = useMemo(() => buildMetrics(data, term), [data, term.year]);
+  // A metric that doesn't exist in this term falls back to the term's first one.
+  const metricKey = metrics[state.metric] ? state.metric : METRIC_KEYS.find((k) => metrics[k])!;
+  const metric = metrics[metricKey]!;
   const field = metric.env.fields[metric.field]!;
   const scale = useMemo(() => quantileScale([...metric.values.values()]), [metric]);
-  const fmt = (v: number) => fmtUnit(v, field.unit);
+  const fmt = (v: number) => fmtUnit(v, metric.unit);
   const panel = state.ward ? "ward" : state.city ? "city" : null;
 
   useEffect(() => {
@@ -59,6 +75,10 @@ function Main({ data }: { data: AppData }) {
   }, []);
 
   useEffect(() => {
+    map.current?.setWards(wardShapes);
+  }, [wardShapes, mapReady]);
+
+  useEffect(() => {
     map.current?.setClasses(new Map([...metric.values].map(([w, v]) => [w, scale.classOf(v)])));
   }, [metric, scale, mapReady]);
 
@@ -68,7 +88,7 @@ function Main({ data }: { data: AppData }) {
     map.current.setPlaces({
       rows: lm.rows,
       groupOf: Object.fromEntries(lm.categories.map((c) => [c.key, c.group])),
-      popup: (row) => placePopup(data, row, (w) => openWard(w)),
+      popup: (row) => placePopup(data, row, (w) => openCurrentWard(w)),
     });
   }, [mapReady]);
 
@@ -91,14 +111,20 @@ function Main({ data }: { data: AppData }) {
   }, [panel]);
 
   const openWard = (ward: number) => update({ ward, city: false });
+  /** Search, location and place pins work on today's wards: switch to the current term. */
+  const openCurrentWard = (ward: number) => update({ ward, city: false, term: null });
+  const chooseTerm = (t: Term) => {
+    setPlace(null);
+    update({ term: t.current ? null : t.year, ward: null });
+  };
   const choosePlace = (p: PlaceRow) => {
     setNotice(null);
     if (p.wards.length === 1) {
       setPlace(null);
-      openWard(p.wards[0]!.ward_no);
+      openCurrentWard(p.wards[0]!.ward_no);
     } else {
       setPlace(p);
-      update({ ward: null });
+      update({ ward: null, term: null });
       const [w, s, e, n] = p.bbox;
       map.current?.fit([w!, s!, e!, n!]);
     }
@@ -112,7 +138,7 @@ function Main({ data }: { data: AppData }) {
         setPlace(null);
         if (ward) {
           setNotice(null);
-          openWard(ward);
+          openCurrentWard(ward);
         } else setNotice("Your location is outside the City of Cape Town's wards.");
       },
       () => setNotice("Location unavailable. Check your browser's permission, or search for your suburb."),
@@ -128,7 +154,7 @@ function Main({ data }: { data: AppData }) {
           <p>City services and ward budgets for each of Cape Town's wards. Each figure links to its source.</p>
         </div>
         <div class="head-tools">
-          <Search places={data.places.rows} wardCount={data.wards.rows.length} onWard={(w) => (setPlace(null), openWard(w))} onPlace={choosePlace} />
+          <Search places={data.places.rows} wardCount={data.wards.rows.length} onWard={(w) => (setPlace(null), openCurrentWard(w))} onPlace={choosePlace} />
           <button type="button" class="btn" onClick={locate}>
             <span aria-hidden="true">◎</span> My location
           </button>
@@ -145,25 +171,27 @@ function Main({ data }: { data: AppData }) {
             City overview
           </button>
         </div>
+        <Timeline data={data} terms={allTerms} term={term} onTerm={chooseTerm} />
       </header>
 
       <div class="map-wrap">
         <div ref={mapEl} class="map" role="application" aria-label="Map of Cape Town's wards. Select a ward for details." />
         <div class="controls">
           <label for="metric">Colour wards by</label>
-          <select id="metric" value={state.metric} onChange={(e) => update({ metric: e.currentTarget.value as MetricKey })}>
-            {topics().map(([topic, keys]) => (
+          <select id="metric" value={metricKey} onChange={(e) => update({ metric: e.currentTarget.value as MetricKey })}>
+            {topics(metrics).map(([topic, keys]) => (
               <optgroup key={topic} label={topic}>
                 {keys.map((k) => (
                   <option key={k} value={k}>
-                    {metrics[k].env.fields[metrics[k].field]?.label ?? k}
+                    {metrics[k]!.label}
                   </option>
                 ))}
               </optgroup>
             ))}
           </select>
           <p class="reading">{metric.reading}</p>
-          <ul class="legend" aria-label={`Legend: ${field.label}`}>
+          {!term.current && <p class="reading term-note">Showing the {term.label} term on its own ward boundaries.</p>}
+          <ul class="legend" aria-label={`Legend: ${metric.label}`}>
             {legendEntries(scale, fmt).map(([color, label]) => (
               <li key={label}>
                 <span class="swatch" style={{ background: color }} />
@@ -200,7 +228,7 @@ function Main({ data }: { data: AppData }) {
           <div class="tooltip" style={{ left: hover.x + 14, top: hover.y + 14 }} role="status">
             <strong>Ward {hover.ward}</strong>
             <span>
-              {field.label}: {metric.values.get(hover.ward) != null ? fmt(metric.values.get(hover.ward)!) : metric.nullLabel}
+              {metric.label}: {metric.values.get(hover.ward) != null ? fmt(metric.values.get(hover.ward)!) : metric.nullLabel}
             </span>
           </div>
         )}
@@ -208,7 +236,9 @@ function Main({ data }: { data: AppData }) {
 
       {panel && (
         <aside class="panel" aria-live="polite">
-          {panel === "ward" ? (
+          {panel === "ward" && !term.current ? (
+            <PastWardPanel data={data} term={term} ward={state.ward!} onCurrentWard={openCurrentWard} onClose={() => update({ ward: null })} />
+          ) : panel === "ward" ? (
             <WardPanel
               data={data}
               metrics={metrics}
@@ -218,7 +248,7 @@ function Main({ data }: { data: AppData }) {
               onClose={() => update({ ward: null })}
             />
           ) : (
-            <CityOverview data={data} metrics={metrics} metric={state.metric} onWard={openWard} onClose={() => update({ city: false })} />
+            <CityOverview data={data} metrics={metrics} metric={metricKey} term={term} onWard={openWard} onClose={() => update({ city: false })} />
           )}
         </aside>
       )}

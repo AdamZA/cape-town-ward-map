@@ -288,6 +288,25 @@ strong { font-weight: 650; }
 .place-popup .link-btn { align-self: flex-start; margin-top: 4px; color: #1c5cab; }
 .place-popup .source { margin: 4px 0 0; color: #6b717a; }
 
+/* Council-term timeline: a full-width row in the header, one segment per term. */
+.timeline { flex-basis: 100%; display: flex; align-items: center; gap: 12px; border-top: 1px solid var(--border); padding-top: 8px; }
+.timeline-label { font-size: 12px; font-weight: 650; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink-3); white-space: nowrap; }
+.timeline-track { list-style: none; margin: 0; padding: 0; display: flex; gap: 0; flex: 1; min-width: 0; overflow-x: auto; }
+.timeline-track li { flex: 1 1 0; min-width: 11rem; }
+.term {
+  width: 100%; display: flex; flex-direction: column; align-items: flex-start; gap: 1px;
+  padding: 6px 12px; background: var(--surface-2); color: var(--ink);
+  border: 1px solid var(--border); border-left-width: 0; font: inherit; cursor: pointer; text-align: left;
+}
+.timeline-track li:first-child .term { border-left-width: 1px; border-radius: var(--radius) 0 0 var(--radius); }
+.timeline-track li:last-child .term { border-radius: 0 var(--radius) var(--radius) 0; }
+.term strong { font-size: 13px; }
+.term span { font-size: 12px; color: var(--ink-3); }
+.term:hover { background: var(--surface); }
+.term.on { background: var(--ink); color: var(--surface); border-color: var(--ink); }
+.term.on span { color: var(--surface); opacity: 0.8; }
+.term-note { font-weight: 600; color: var(--ink); }
+
 @media (max-width: 760px) {
   .layout, .layout.has-panel { grid-template-columns: 1fr; grid-template-rows: auto minmax(55dvh, 1fr) auto; height: auto; min-height: 100dvh; }
   .brand p { display: none; }

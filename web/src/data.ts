@@ -70,3 +70,15 @@ export async function loadAll(): Promise<AppData> {
   electionWards.sort((a, b) => b.year - a.year);
   return { index, boundaries, wards, serviceRequests, outages, places, landmarks, landUse, allocations, elections, electionWards, crosswalk };
 }
+
+const boundaryCache = new Map<number, Promise<WardFeatures>>();
+
+/** Ward boundaries of another vintage (e.g. an earlier council term), loaded on first use. */
+export function loadBoundaries(d: AppData, vintage: number): Promise<WardFeatures> {
+  if (vintage === d.wards.ward_vintage) return Promise.resolve(d.boundaries);
+  if (!boundaryCache.has(vintage)) {
+    const entry = d.index.boundaries.find((b) => b.ward_vintage === vintage);
+    boundaryCache.set(vintage, entry ? get<WardFeatures>(entry.file) : Promise.reject(new Error(`no ${vintage} wards`)));
+  }
+  return boundaryCache.get(vintage)!;
+}

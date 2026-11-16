@@ -213,6 +213,16 @@ nothing is estimated.
 The IEC's copyright notice allows reproduction for non-commercial use. This project is
 non-commercial and credits the IEC on every figure.
 
+## Council terms
+
+A term runs from one local election to the next. Choosing a term on the timeline shows that
+term's ward boundaries and only the figures that exist for them: the election that started the
+term, its ward councillors, and ward budgets published on those wards. Service request, outage,
+land-use and place figures are only produced for today's wards, so they appear in the current
+term only. A past ward's panel lists the current wards covering it, with how much of it each
+covers. Seat changes compare a party with itself across elections; a party that changed its
+registered name is shown under one name.
+
 ## Ward allocations
 
 Each year the City budgets a fixed amount per ward (R1 million in 2024/25) for projects proposed

@@ -5,7 +5,7 @@ import { predecessors } from "../src/panel/Allocations";
 import { parseHash, toHash } from "../src/state";
 import { suggest } from "../src/search/Search";
 import { bbox, inPolygon } from "../src/geo";
-import { standing } from "../src/metrics";
+import { standing, terms } from "../src/metrics";
 import { characterLine } from "../src/places/places";
 import { wardResult } from "../src/elections/Elections";
 import type { AppData } from "../src/data";
@@ -52,15 +52,19 @@ describe("format", () => {
 describe("hash state", () => {
   it("round-trips", () => {
     const s = parseHash("#ward=57&metric=median_days");
-    expect(s).toEqual({ ward: 57, metric: "median_days", city: false, layers: [] });
+    expect(s).toEqual({ ward: 57, metric: "median_days", city: false, layers: [], term: null });
     expect(parseHash(toHash(s))).toEqual(s);
   });
   it("ignores junk", () => {
-    expect(parseHash("#ward=abc&metric=nope")).toEqual({ ward: null, metric: "pct_closed_30d", city: false, layers: [] });
+    expect(parseHash("#ward=abc&metric=nope")).toEqual({ ward: null, metric: "pct_closed_30d", city: false, layers: [], term: null });
   });
   it("keeps the city overview only when no ward is open", () => {
-    expect(parseHash(toHash({ ward: null, metric: "water_days", city: true, layers: [] }))).toEqual({ ward: null, metric: "water_days", city: true, layers: [] });
-    expect(toHash({ ward: 3, metric: "pct_closed_30d", city: true, layers: [] })).toBe("#ward=3");
+    expect(parseHash(toHash({ ward: null, metric: "water_days", city: true, layers: [], term: null }))).toEqual({ ward: null, metric: "water_days", city: true, layers: [], term: null });
+    expect(toHash({ ward: 3, metric: "pct_closed_30d", city: true, layers: [], term: null })).toBe("#ward=3");
+  });
+  it("keeps the council term", () => {
+    expect(parseHash("#term=2021&ward=4")).toMatchObject({ term: 2021, ward: 4 });
+    expect(parseHash("#term=abc").term).toBeNull();
   });
   it("keeps place layers, dropping junk", () => {
     const s = parseHash("#layers=police,clinics,<b>");
@@ -164,5 +168,15 @@ describe("wardResult", () => {
     const r = wardResult(data, 7);
     expect(r?.row.ward_no).toBe(3);
     expect(r?.oldWard).toEqual({ ward: 3, share: 0.7 });
+  });
+});
+
+describe("terms", () => {
+  it("runs each term from one election to the next, newest is current", () => {
+    const t = terms({ elections: [{ year: 2026, ward_vintage: 2026 }, { year: 2021, ward_vintage: 2021 }] });
+    expect(t.map((x) => [x.label, x.vintage, x.current])).toEqual([
+      ["2021 to 2026", 2021, false],
+      ["2026 to now", 2026, true],
+    ]);
   });
 });

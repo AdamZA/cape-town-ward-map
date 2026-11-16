@@ -50,6 +50,10 @@ export interface Period {
 }
 export interface WardElectionRow {
   /**
+   * Elected ward councillor (winning candidate)
+   */
+  councillor: string | null;
+  /**
    * Ward ballot, most votes first (up to 8)
    */
   parties: PartyResult[];

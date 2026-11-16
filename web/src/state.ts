@@ -1,4 +1,4 @@
-// App state lives in the URL hash (#ward=57&metric=median_days, #view=city, #layers=police): shareable links, working back
+// App state lives in the URL hash (#ward=57&metric=median_days, #view=city, #layers=police, #term=2021): shareable links, working back
 // button, and no state library.
 import { useEffect, useState } from "preact/hooks";
 import { DEFAULT_METRIC, isMetric, type MetricKey } from "./metrics";
@@ -10,6 +10,8 @@ export interface AppState {
   city: boolean;
   /** Place categories shown on the map (#layers=police,clinics). */
   layers: string[];
+  /** Council term, by the election that started it (#term=2021). Null = the current term. */
+  term: number | null;
 }
 
 export function parseHash(hash: string): AppState {
@@ -21,6 +23,7 @@ export function parseHash(hash: string): AppState {
     metric: isMetric(metric) ? metric : DEFAULT_METRIC,
     city: p.get("view") === "city",
     layers: (p.get("layers") ?? "").split(",").filter((l) => /^[a-z_]+$/.test(l)),
+    term: /^\d{4}$/.test(p.get("term") ?? "") ? Number(p.get("term")) : null,
   };
 }
 
@@ -30,6 +33,7 @@ export function toHash(s: AppState): string {
   if (s.metric !== DEFAULT_METRIC) p.set("metric", s.metric);
   if (s.city && !s.ward) p.set("view", "city");
   if (s.layers.length) p.set("layers", [...new Set(s.layers)].join(","));
+  if (s.term) p.set("term", String(s.term));
   const str = p.toString();
   return str ? `#${str}` : "#";
 }

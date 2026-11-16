@@ -3,30 +3,34 @@
 import { useState } from "preact/hooks";
 import type { AppData } from "../data";
 import { fmtDate, fmtInt, fmtUnit } from "../format";
-import { type Metric, type MetricKey, METRIC_KEYS, median } from "../metrics";
+import { type MetricKey, type Metrics, METRIC_KEYS, median, type Term } from "../metrics";
 import { CouncilResults } from "../elections/Elections";
 import { Figure, METHODOLOGY_URL } from "./Figure";
 
 interface Props {
   data: AppData;
-  metrics: Record<MetricKey, Metric>;
+  metrics: Metrics;
   metric: MetricKey;
+  term: Term;
   onWard: (ward: number) => void;
   onClose: () => void;
 }
 
 type SortKey = "ward" | "population" | MetricKey;
 
-export function CityOverview({ data, metrics, metric, onWard, onClose }: Props) {
+export function CityOverview({ data, metrics, metric, term, onWard, onClose }: Props) {
   const [sort, setSort] = useState<{ key: SortKey; desc: boolean }>({ key: metric, desc: true });
   const sr = data.serviceRequests;
   const wards = data.wards.rows;
+  // Past terms list that term's wards (from its election), with only the figures that exist then.
+  const termWards = term.current
+    ? wards.map((w) => w.ward_no)
+    : (data.electionWards.find((e) => e.year === term.year)?.rows.map((r) => r.ward_no) ?? []);
   const totalPop = wards.reduce((s, w) => s + (w.population ?? 0), 0);
   const subcouncils = new Set(wards.map((w) => w.subcouncil).filter((s) => s != null)).size;
   const value = (w: number, k: SortKey): number | null =>
-    k === "ward" ? w : k === "population" ? (wards.find((r) => r.ward_no === w)?.population ?? null) : (metrics[k].values.get(w) ?? null);
-  const rows = wards
-    .map((w) => w.ward_no)
+    k === "ward" ? w : k === "population" ? (wards.find((r) => r.ward_no === w)?.population ?? null) : (metrics[k]?.values.get(w) ?? null);
+  const rows = [...termWards]
     .sort((a, b) => {
       const va = value(a, sort.key);
       const vb = value(b, sort.key);
@@ -36,10 +40,10 @@ export function CityOverview({ data, metrics, metric, onWard, onClose }: Props) 
     });
   const columns: { key: SortKey; label: string; fmt: (v: number) => string }[] = [
     { key: "ward", label: "Ward", fmt: String },
-    { key: "population", label: "People (est.)", fmt: fmtInt },
-    ...METRIC_KEYS.filter((k) => k !== "pct_located").map((k) => {
-      const meta = metrics[k].env.fields[metrics[k].field]!;
-      return { key: k as SortKey, label: meta.label, fmt: (v: number) => fmtUnit(v, meta.unit) };
+    ...(term.current ? [{ key: "population" as SortKey, label: "People (est.)", fmt: fmtInt }] : []),
+    ...METRIC_KEYS.filter((k) => k !== "pct_located" && metrics[k]).map((k) => {
+      const m = metrics[k]!;
+      return { key: k as SortKey, label: m.label, fmt: (v: number) => fmtUnit(v, m.unit) };
     }),
   ];
 
@@ -48,7 +52,7 @@ export function CityOverview({ data, metrics, metric, onWard, onClose }: Props) 
       <header class="panel-head">
         <div>
           <h2 id="city-title">Cape Town</h2>
-          <p class="panel-sub">City overview</p>
+          <p class="panel-sub">City overview{term.current ? "" : `, ${term.label} term`}</p>
         </div>
         <button type="button" class="icon-btn" onClick={onClose} aria-label="Close city overview">
           ×
@@ -70,7 +74,7 @@ export function CityOverview({ data, metrics, metric, onWard, onClose }: Props) 
         </p>
       </section>
 
-      <section class="section">
+      {term.current && <section class="section">
         <h3>City-wide</h3>
         <dl class="figures two-col">
           <div class="figure">
@@ -89,17 +93,17 @@ export function CityOverview({ data, metrics, metric, onWard, onClose }: Props) 
           </div>
           <Figure env={sr} field="pct_closed_30d" value={sr.citywide.pct_closed_30d} />
           <Figure env={sr} field="median_days" value={sr.citywide.median_days} />
-          <Figure env={data.outages} field="water_days" value={median([...metrics.water_days.values.values()].filter((v): v is number => v != null))} display={`${median([...metrics.water_days.values.values()].filter((v): v is number => v != null))} days in the median ward`} />
-          <Figure env={data.outages} field="power_days" value={median([...metrics.power_days.values.values()].filter((v): v is number => v != null))} display={`${median([...metrics.power_days.values.values()].filter((v): v is number => v != null))} days in the median ward`} />
+          <MedianFigure data={data} metrics={metrics} k="water_days" />
+          <MedianFigure data={data} metrics={metrics} k="power_days" />
         </dl>
         {sr.period && (
           <p class="lede">
             Service requests logged {fmtDate(sr.period.from)} to {fmtDate(sr.period.to)}.
           </p>
         )}
-      </section>
+      </section>}
 
-      <CouncilResults data={data} code="CPT" />
+      <CouncilResults data={data} code="CPT" year={term.year} />
 
       <section class="section">
         <h3>All wards</h3>
@@ -140,4 +144,11 @@ export function CityOverview({ data, metrics, metric, onWard, onClose }: Props) 
       </section>
     </article>
   );
+}
+
+function MedianFigure({ data, metrics, k }: { data: AppData; metrics: Metrics; k: "water_days" | "power_days" }) {
+  const m = metrics[k];
+  if (!m) return null;
+  const med = median([...m.values.values()].filter((v): v is number => v != null));
+  return <Figure env={data.outages} field={k} value={med} display={`${med} days in the median ward`} />;
 }

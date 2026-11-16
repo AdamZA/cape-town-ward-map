@@ -22,6 +22,7 @@
  "period": null,
  "rows": [
   {
+   "councillor": "Cheryl Linsey Visser",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -30,7 +31,7 @@
      "votes": 10045
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0723,
      "votes": 876
@@ -78,6 +79,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Alistair Francis Isobell",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -86,7 +88,7 @@
      "votes": 9942
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.099,
      "votes": 1307
@@ -134,6 +136,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Annelize van Zyl",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -142,7 +145,7 @@
      "votes": 9747
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0939,
      "votes": 1129
@@ -190,6 +193,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Brett Clive Peter Steensma",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -210,7 +214,7 @@
      "votes": 384
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.039,
      "votes": 330
@@ -246,6 +250,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Miquette Temlett",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -254,7 +259,7 @@
      "votes": 11793
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.06,
      "votes": 827
@@ -302,6 +307,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Mawethu Sila",
    "parties": [
     {
      "party": "African National Congress",
@@ -346,7 +352,7 @@
      "votes": 249
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0256,
      "votes": 198
@@ -358,6 +364,7 @@
    "winner": "African National Congress"
   },
   {
+   "councillor": "Gabriel Grant Twigg",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -372,7 +379,7 @@
      "votes": 3662
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0312,
      "votes": 394
@@ -414,6 +421,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Charlotte Du Toit",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -422,7 +430,7 @@
      "votes": 10645
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.1045,
      "votes": 1328
@@ -470,6 +478,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Mercia Elmarie Kleinsmith",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -526,6 +535,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Albertus Johannes Gideon Basson",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -540,7 +550,7 @@
      "votes": 624
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0436,
      "votes": 421
@@ -582,6 +592,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Pieter Wouter de Vos",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -590,7 +601,7 @@
      "votes": 11611
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0513,
      "votes": 737
@@ -638,6 +649,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Michelle Adonis",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -676,7 +688,7 @@
      "votes": 233
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0178,
      "votes": 191
@@ -694,6 +706,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Francois Berry",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -702,7 +715,7 @@
      "votes": 8494
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0678,
      "votes": 697
@@ -750,6 +763,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Kariena Maré",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -764,7 +778,7 @@
      "votes": 691
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0465,
      "votes": 576
@@ -806,6 +820,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Stuart Bruce Pringle",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -814,7 +829,7 @@
      "votes": 8376
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0904,
      "votes": 865
@@ -862,6 +877,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Shakeerah Hermanus",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -888,7 +904,7 @@
      "votes": 585
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.041,
      "votes": 455
@@ -918,6 +934,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Frans Anthony Sauls",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -944,7 +961,7 @@
      "votes": 435
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.029,
      "votes": 344
@@ -974,6 +991,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Patrick Phindile George",
    "parties": [
     {
      "party": "African National Congress",
@@ -1030,6 +1048,7 @@
    "winner": "African National Congress"
   },
   {
+   "councillor": "Joseph Julius Witbooi",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -1074,7 +1093,7 @@
      "votes": 328
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0236,
      "votes": 281
@@ -1086,6 +1105,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Dineo Zandile Njokweni-Masiu",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -1130,7 +1150,7 @@
      "votes": 270
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0216,
      "votes": 202
@@ -1142,6 +1162,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Hendri Petrus Terblanche",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -1150,7 +1171,7 @@
      "votes": 12367
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0879,
      "votes": 1247
@@ -1198,6 +1219,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Oriel Marva Samy",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -1242,7 +1264,7 @@
      "votes": 235
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0193,
      "votes": 198
@@ -1254,6 +1276,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Paul Stephanus Swart",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -1262,7 +1285,7 @@
      "votes": 9948
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0732,
      "votes": 865
@@ -1310,6 +1333,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Nobanathi Luthango",
    "parties": [
     {
      "party": "African National Congress",
@@ -1354,7 +1378,7 @@
      "votes": 235
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0217,
      "votes": 171
@@ -1366,6 +1390,7 @@
    "winner": "African National Congress"
   },
   {
+   "councillor": "Beverley van Reenen",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -1410,7 +1435,7 @@
      "votes": 175
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0156,
      "votes": 159
@@ -1422,6 +1447,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Franchesca Crecencia Walker",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -1436,7 +1462,7 @@
      "votes": 642
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0465,
      "votes": 446
@@ -1478,6 +1504,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Cecile Janse van Rensburg",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -1486,7 +1513,7 @@
      "votes": 7100
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0451,
      "votes": 457
@@ -1534,6 +1561,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Abdullah Slamat",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -1578,7 +1606,7 @@
      "votes": 282
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0221,
      "votes": 256
@@ -1590,6 +1618,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Allister Gerome Lightburn",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -1622,7 +1651,7 @@
      "votes": 308
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0168,
      "votes": 163
@@ -1646,6 +1675,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Deidrée Carol de Vos",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -1702,6 +1732,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Theresa Bereniece Thompson",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -1758,6 +1789,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Manfred Edward van Rooyen",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -1790,7 +1822,7 @@
      "votes": 242
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0233,
      "votes": 196
@@ -1814,6 +1846,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Sithembiso Mzobe",
    "parties": [
     {
      "party": "African National Congress",
@@ -1858,7 +1891,7 @@
      "votes": 157
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0181,
      "votes": 113
@@ -1870,6 +1903,7 @@
    "winner": "African National Congress"
   },
   {
+   "councillor": "Melikhaya Gadeni",
    "parties": [
     {
      "party": "African National Congress",
@@ -1908,7 +1942,7 @@
      "votes": 169
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0177,
      "votes": 123
@@ -1926,6 +1960,7 @@
    "winner": "African National Congress"
   },
   {
+   "councillor": "Mzawulahlwa Albert Dlala",
    "parties": [
     {
      "party": "African National Congress",
@@ -1982,6 +2017,7 @@
    "winner": "African National Congress"
   },
   {
+   "councillor": "Phillip Mgangxela",
    "parties": [
     {
      "party": "African National Congress",
@@ -2038,6 +2074,7 @@
    "winner": "African National Congress"
   },
   {
+   "councillor": "Khayalethu Mbaswana",
    "parties": [
     {
      "party": "African National Congress",
@@ -2094,6 +2131,7 @@
    "winner": "African National Congress"
   },
   {
+   "councillor": "Suzanne Zumana",
    "parties": [
     {
      "party": "African National Congress",
@@ -2150,6 +2188,7 @@
    "winner": "African National Congress"
   },
   {
+   "councillor": "Wonke Mapeyi",
    "parties": [
     {
      "party": "African National Congress",
@@ -2194,7 +2233,7 @@
      "votes": 111
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0163,
      "votes": 106
@@ -2206,6 +2245,7 @@
    "winner": "African National Congress"
   },
   {
+   "councillor": "Bongani Ngcombolo",
    "parties": [
     {
      "party": "African National Congress",
@@ -2262,6 +2302,7 @@
    "winner": "African National Congress"
   },
   {
+   "councillor": "Masibulele Anthony Tolofane",
    "parties": [
     {
      "party": "African National Congress",
@@ -2300,7 +2341,7 @@
      "votes": 176
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0194,
      "votes": 137
@@ -2318,6 +2359,7 @@
    "winner": "African National Congress"
   },
   {
+   "councillor": "Charles Johannes Esau",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -2356,7 +2398,7 @@
      "votes": 155
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.015,
      "votes": 145
@@ -2374,6 +2416,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Elton-Enrique Jansen",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -2430,6 +2473,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Venessa Adriaanse",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -2486,6 +2530,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Mandy Joyce Marr",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -2512,7 +2557,7 @@
      "votes": 305
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0285,
      "votes": 256
@@ -2542,6 +2587,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Mogamat Aslam Cassiem",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -2598,6 +2644,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Anwar Constance",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -2654,6 +2701,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Yushrah Davis",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -2710,6 +2758,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Rashid Adams",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -2766,6 +2815,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Angus Patrick Mckenzie",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -2822,6 +2872,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Lwazi Phakade",
    "parties": [
     {
      "party": "African National Congress",
@@ -2878,6 +2929,7 @@
    "winner": "African National Congress"
   },
   {
+   "councillor": "Thandiswa Ngqukumba",
    "parties": [
     {
      "party": "African National Congress",
@@ -2934,6 +2986,7 @@
    "winner": "African National Congress"
   },
   {
+   "councillor": "Bryan Ivor James Banfield",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -2978,7 +3031,7 @@
      "votes": 335
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0218,
      "votes": 245
@@ -2990,6 +3043,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Nicola Jowell",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -2998,7 +3052,7 @@
      "votes": 8998
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.035,
      "votes": 360
@@ -3046,6 +3100,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Lauren Valentine",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -3054,7 +3109,7 @@
      "votes": 8495
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0418,
      "votes": 453
@@ -3102,6 +3157,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Ashwin Jermaine Jansen",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -3158,6 +3214,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Bovain Alasdair James Macnab",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -3202,7 +3259,7 @@
      "votes": 143
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0151,
      "votes": 139
@@ -3214,6 +3271,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Richard Charles Hill",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -3246,7 +3304,7 @@
      "votes": 217
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0147,
      "votes": 178
@@ -3270,6 +3328,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Mikhail Manuel",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -3296,7 +3355,7 @@
      "votes": 180
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0173,
      "votes": 168
@@ -3326,6 +3385,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Aslam Richards",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -3382,6 +3442,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Simon Patrick Liell Cock",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -3402,7 +3463,7 @@
      "votes": 365
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0352,
      "votes": 312
@@ -3438,6 +3499,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Emile Langenhoven",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -3452,7 +3514,7 @@
      "votes": 379
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0231,
      "votes": 208
@@ -3494,6 +3556,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Carmen Cecilia Siebritz",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -3514,7 +3577,7 @@
      "votes": 669
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0294,
      "votes": 355
@@ -3550,6 +3613,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Izabel Sherry",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -3564,7 +3628,7 @@
      "votes": 434
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0395,
      "votes": 418
@@ -3606,6 +3670,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Patricia Elizabeth van der Ross",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -3662,6 +3727,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Sebastian Petersen",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -3718,6 +3784,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Geraldine Ethel Gordon",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -3774,6 +3841,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Marita Johanna Petersen",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -3830,6 +3898,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Patricia Francke",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -3844,7 +3913,7 @@
      "votes": 1200
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0431,
      "votes": 419
@@ -3886,6 +3955,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Ronèl Viljoen",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -3894,7 +3964,7 @@
      "votes": 12937
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0646,
      "votes": 942
@@ -3942,6 +4012,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Haylee Linsy Dugmore",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -3956,7 +4027,7 @@
      "votes": 462
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0235,
      "votes": 249
@@ -3998,6 +4069,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Kevin Graham Southgate",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -4030,7 +4102,7 @@
      "votes": 291
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0249,
      "votes": 271
@@ -4054,6 +4126,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Edwin Peter Andrews",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -4068,7 +4141,7 @@
      "votes": 282
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0238,
      "votes": 265
@@ -4110,6 +4183,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Cameron James Patrick",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -4136,7 +4210,7 @@
      "votes": 186
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.02,
      "votes": 181
@@ -4166,6 +4240,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Joan Woodman",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -4222,6 +4297,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Avron Plaatjies",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -4278,6 +4354,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Francine Higham",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -4298,7 +4375,7 @@
      "votes": 517
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0246,
      "votes": 299
@@ -4334,6 +4411,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Anton Paul Peacock",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -4390,6 +4468,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Saul Gefry Markgraff",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -4446,6 +4525,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Bennet Lindikaya Payiya",
    "parties": [
     {
      "party": "African National Congress",
@@ -4502,6 +4582,7 @@
    "winner": "African National Congress"
   },
   {
+   "councillor": "Franklin William Randel Williams",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -4546,7 +4627,7 @@
      "votes": 277
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0222,
      "votes": 193
@@ -4558,6 +4639,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Washiela Harris",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -4614,6 +4696,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Carl Bernard Punt",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -4622,7 +4705,7 @@
      "votes": 11552
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.1151,
      "votes": 1623
@@ -4670,6 +4753,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Pieter Dennis Janse van Rensburg",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -4678,7 +4762,7 @@
      "votes": 9636
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.079,
      "votes": 990
@@ -4726,6 +4810,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Sitembile Sydney Mfecane",
    "parties": [
     {
      "party": "African National Congress",
@@ -4740,7 +4825,7 @@
      "votes": 3649
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0511,
      "votes": 540
@@ -4782,6 +4867,7 @@
    "winner": "African National Congress"
   },
   {
+   "councillor": "Xolani Divine Diniso",
    "parties": [
     {
      "party": "African National Congress",
@@ -4838,6 +4924,7 @@
    "winner": "African National Congress"
   },
   {
+   "councillor": "Khayalethu Kama",
    "parties": [
     {
      "party": "African National Congress",
@@ -4894,6 +4981,7 @@
    "winner": "African National Congress"
   },
   {
+   "councillor": "Zukisani Welcome Sophazi",
    "parties": [
     {
      "party": "African National Congress",
@@ -4950,6 +5038,7 @@
    "winner": "African National Congress"
   },
   {
+   "councillor": "Kayalethu Wiseman Gxasheka",
    "parties": [
     {
      "party": "African National Congress",
@@ -5006,6 +5095,7 @@
    "winner": "African National Congress"
   },
   {
+   "councillor": "Colleen Margaret Mes",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -5014,7 +5104,7 @@
      "votes": 10563
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0645,
      "votes": 784
@@ -5062,6 +5152,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Thando Mpengezi",
    "parties": [
     {
      "party": "African National Congress",
@@ -5106,7 +5197,7 @@
      "votes": 117
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0103,
      "votes": 89
@@ -5118,6 +5209,7 @@
    "winner": "African National Congress"
   },
   {
+   "councillor": "Yusuf Mohamed",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -5174,6 +5266,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Thando Innocent Pimpi",
    "parties": [
     {
      "party": "African National Congress",
@@ -5230,6 +5323,7 @@
    "winner": "African National Congress"
   },
   {
+   "councillor": "Xolisa Gloria Peter",
    "parties": [
     {
      "party": "African National Congress",
@@ -5274,7 +5368,7 @@
      "votes": 249
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0195,
      "votes": 173
@@ -5286,6 +5380,7 @@
    "winner": "African National Congress"
   },
   {
+   "councillor": "Precious Duduzile Nenemba",
    "parties": [
     {
      "party": "African National Congress",
@@ -5330,7 +5425,7 @@
      "votes": 121
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0131,
      "votes": 102
@@ -5342,6 +5437,7 @@
    "winner": "African National Congress"
   },
   {
+   "councillor": "Lucky Nhlanhla Mbiza",
    "parties": [
     {
      "party": "African National Congress",
@@ -5398,6 +5494,7 @@
    "winner": "African National Congress"
   },
   {
+   "councillor": "Ayanda Tetani",
    "parties": [
     {
      "party": "African National Congress",
@@ -5454,6 +5551,7 @@
    "winner": "African National Congress"
   },
   {
+   "councillor": "Yanga Eric Mjingwana",
    "parties": [
     {
      "party": "African National Congress",
@@ -5510,6 +5608,7 @@
    "winner": "African National Congress"
   },
   {
+   "councillor": "Lonwabo Mluleki Mqina",
    "parties": [
     {
      "party": "African National Congress",
@@ -5566,6 +5665,7 @@
    "winner": "African National Congress"
   },
   {
+   "councillor": "Wade Francois Skriker",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -5574,7 +5674,7 @@
      "votes": 8255
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0849,
      "votes": 1041
@@ -5622,6 +5722,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Siyabonga Solly Duka",
    "parties": [
     {
      "party": "African National Congress",
@@ -5660,7 +5761,7 @@
      "votes": 248
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0254,
      "votes": 189
@@ -5678,6 +5779,7 @@
    "winner": "African National Congress"
   },
   {
+   "councillor": "Rhynhardt Bresler",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -5686,7 +5788,7 @@
      "votes": 10260
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0829,
      "votes": 1051
@@ -5734,6 +5836,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Gerhard Dawid Fourie",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -5742,7 +5845,7 @@
      "votes": 11920
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0897,
      "votes": 1235
@@ -5790,6 +5893,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Bulelwa Mayende",
    "parties": [
     {
      "party": "African National Congress",
@@ -5834,7 +5938,7 @@
      "votes": 215
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0157,
      "votes": 110
@@ -5846,6 +5950,7 @@
    "winner": "African National Congress"
   },
   {
+   "councillor": "Janessa Joy Stockhall",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -5860,7 +5965,7 @@
      "votes": 855
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0538,
      "votes": 534
@@ -5902,6 +6007,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Phelisa Sweetness Mzolisa",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -5958,6 +6064,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Theresa de Wet",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -5966,7 +6073,7 @@
      "votes": 8764
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0508,
      "votes": 543
@@ -6014,6 +6121,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Rudi Stevens",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -6052,7 +6160,7 @@
      "votes": 132
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0178,
      "votes": 130
@@ -6070,6 +6178,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Peter George Helfrich",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -6126,6 +6235,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Shanen Joyce Rossouw",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -6182,6 +6292,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Cedric-Junior Laguma",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -6196,7 +6307,7 @@
      "votes": 1348
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0638,
      "votes": 728
@@ -6238,6 +6349,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Theresa Audry Uys",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -6246,7 +6358,7 @@
      "votes": 11681
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0821,
      "votes": 1108
@@ -6294,6 +6406,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Susan Iris van der Linde",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -6302,7 +6415,7 @@
      "votes": 8104
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0526,
      "votes": 509
@@ -6350,6 +6463,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Pamela Nozuko Daniso",
    "parties": [
     {
      "party": "African National Congress",
@@ -6394,7 +6508,7 @@
      "votes": 361
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0175,
      "votes": 135
@@ -6406,6 +6520,7 @@
    "winner": "African National Congress"
   },
   {
+   "councillor": "Ian Patrick Mc Mahon",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -6438,7 +6553,7 @@
      "votes": 327
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0218,
      "votes": 202
@@ -6462,6 +6577,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Marvin John Sampson",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -6518,6 +6634,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Sandile Sydney Booysen",
    "parties": [
     {
      "party": "Democratic Alliance",
@@ -6544,7 +6661,7 @@
      "votes": 538
     },
     {
-     "party": "Vryheidsfront Plus | Freedom Front Plus",
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
      "seats": null,
      "share": 0.0327,
      "votes": 418
@@ -6574,6 +6691,7 @@
    "winner": "Democratic Alliance"
   },
   {
+   "councillor": "Ernest Mongezi Madikane",
    "parties": [
     {
      "party": "African National Congress",
@@ -6632,6 +6750,14 @@
  ],
  "schema_version": 1,
  "sources": {
+  "councillors": {
+   "licence": "Electoral Commission of South Africa (copyright notice: reproduction for non-commercial use; https://www.elections.org.za/pw/Copyright-Notice)",
+   "notes": "Winning ward candidate per ward, from the dashboard data file https://results.elections.org.za/dashboards/lge/MapsJason/2026/EEID1887Munic9006.js (sha256 bc7b20ea8fe7da716f98540294fbb8ab5b2c8c5a379ca37a725c704f119f8396). Names title-cased from the IEC's capitals. As elected; by-elections since are not reflected.",
+   "publisher": "Electoral Commission of South Africa (IEC)",
+   "retrieved_at": "2026-11-16",
+   "title": "Local Government Elections 2026: elected ward councillors",
+   "url": "https://results.elections.org.za/dashboards/lge/LGEResultsDashboard.aspx"
+  },
   "seats": {
    "licence": "Electoral Commission of South Africa (copyright notice: reproduction for non-commercial use; https://www.elections.org.za/pw/Copyright-Notice)",
    "notes": "Seats won per party per council, from each council's seat calculation. Built from https://results.elections.org.za/home/LGEPublicReports/1887/...; upstream sha256: {\"EC.csv\": \"62d52b01f002b80b2dc398fc3e088843cfe493b0b5de66df472cfc1f54decd49\", \"FS.csv\": \"4fbddd15aee3c59c80e752a736ce416dea20e07c33337a101b2e7602ab63b3da\", \"GP.csv\": \"b142ea43bb4281f4b98b8f0c5021fdb42f77c096832145fc9526805a1b43408c\", \"KN.csv\": \"1d0478c334dbb0f66fbc45810cc610337d34dda56deb96544426c3d9273c3b25\", \"MP.csv\": \"fab380774059c1a59d60b406f896aaaa6928a73a422e3841a2f9571b66a962f2\", \"NC.csv\": \"5ba0a698645c53d64cd2fe3067990b7b72bcbf66a2e5640bca569af13a881a9b\", \"NP.csv\": \"decf6887aec1010bf231cece760f9d68a6eb4d27b5f78b91b3b135260203d259\", \"NW.csv\": \"1cd975fca48b27063e4b567871cd5d400306bc9f96edf332cdcc3b06404c4c54\", \"WP.csv\": \"862211175527a3a3978e53ba572e2c5ff0d598a8f7ec25b8b377b01060590ec5\"}",

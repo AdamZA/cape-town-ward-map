@@ -12,6 +12,7 @@ from __future__ import annotations
 import csv
 import io
 import json
+import time
 
 from wardmap.config import (
     CACHE,
@@ -34,19 +35,28 @@ def pin(year: int) -> None:
     event, vintage = LGE[year]
     url = f"{IEC_DASHBOARD_DATA}/{year}/EEID{event}Munic{IEC_MUNIC_IDS[MUNICIPALITY]}.js"
     raw = CACHE / "iec" / str(year) / f"dashboard-{MUNICIPALITY}.json"
-    download(url, raw)
+    if not raw.exists() or raw.stat().st_mtime < time.time() - 86400:
+        download(url, raw)  # reuse a same-day copy rather than fetch 10 MB again
     data = json.loads(raw.read_text(encoding="utf-8-sig"))
+    # Party names: on each ward row (2026 files) or only by id at council level (2021 files).
+    party_names = {p["ID"]: p.get("Name") for p in data.get("PartyBallotResults", [])}
     rows = []
     for ward in data["WardResults"]:
-        winners = [p for p in ward["PartyBallotResults"] if p.get("WardSeatsWon") == 1]
+        winners = [
+            p
+            for p in ward["PartyBallotResults"]
+            if p.get("WardSeatsWon", p.get("TotalSeatsWon")) == 1
+            and p.get("CandidateName", "-").strip("- ")
+        ]
         if len(winners) != 1:
             raise ValueError(f"ward {ward['WardID']}: {len(winners)} ward winners in IEC data")
         w = winners[0]
+        party = w.get("Name") or party_names.get(w["ID"])
         rows.append(
             {
                 "ward_no": int(str(ward["WardID"])[-3:]),
                 "name": tidy(" ".join(w["CandidateName"].split())),
-                "party": _tidy_party(w["Name"]),
+                "party": _tidy_party(party) if party else "",
             }
         )
     rows.sort(key=lambda r: r["ward_no"])

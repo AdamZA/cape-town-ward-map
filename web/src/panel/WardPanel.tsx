@@ -1,6 +1,6 @@
 // Side panel for one ward: summary first, then the detail behind it, each figure with its source.
 import type { AppData } from "../data";
-import type { Metric, MetricKey } from "../metrics";
+import type { Metrics } from "../metrics";
 import { fmtDate, fmtInt, fmtPct } from "../format";
 import { Allocations } from "./Allocations";
 import { Figure } from "./Figure";
@@ -11,7 +11,7 @@ import { Summary } from "./Summary";
 
 interface Props {
   data: AppData;
-  metrics: Record<MetricKey, Metric>;
+  metrics: Metrics;
   ward: number;
   layers: string[];
   onShowLayer: (category: string) => void;

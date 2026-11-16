@@ -202,6 +202,19 @@
     "WardElectionRow": {
       "additionalProperties": false,
       "properties": {
+        "councillor": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Elected ward councillor (winning candidate)",
+          "title": "Councillor"
+        },
         "parties": {
           "description": "Ward ballot, most votes first (up to 8)",
           "items": {
@@ -234,6 +247,7 @@
         "registered",
         "turnout",
         "winner",
+        "councillor",
         "parties"
       ],
       "title": "WardElectionRow",
