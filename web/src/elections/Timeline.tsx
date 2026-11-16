@@ -19,9 +19,11 @@ interface Props {
   terms: Term[];
   term: Term;
   onTerm: (t: Term) => void;
+  comparing: boolean;
+  onCompare: () => void;
 }
 
-export function Timeline({ data, terms, term, onTerm }: Props) {
+export function Timeline({ data, terms, term, onTerm, comparing, onCompare }: Props) {
   if (terms.length < 2) return null;
   return (
     <nav class="timeline" aria-label="Council terms">
@@ -36,6 +38,9 @@ export function Timeline({ data, terms, term, onTerm }: Props) {
           </li>
         ))}
       </ol>
+      <button type="button" class={`btn compare-btn ${comparing ? "btn-on" : ""}`} aria-pressed={comparing} onClick={onCompare}>
+        Compare terms
+      </button>
     </nav>
   );
 }

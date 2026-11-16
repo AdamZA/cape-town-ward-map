@@ -489,6 +489,9 @@ class CrimeEnvelope(EnvelopeBase):
     years: list[str]
     categories: list[CrimeCategory]
     stations: list[StationCrime]
+    city_totals: dict[str, dict[str, int]] = Field(
+        description="category -> financial year -> count, all City of Cape Town District stations"
+    )
     rows: list[CrimeWardRow]
 
 

@@ -8,6 +8,7 @@ import { bbox, inPolygon } from "../src/geo";
 import { standing, terms } from "../src/metrics";
 import { characterLine } from "../src/places/places";
 import { pointsChange, wardResult } from "../src/elections/Elections";
+import { yearsInTerm } from "../src/elections/Compare";
 import type { AppData } from "../src/data";
 import type { AllocationsEnvelope } from "../src/generated/allocations";
 import type { CrosswalkEnvelope } from "../src/generated/crosswalk";
@@ -52,15 +53,15 @@ describe("format", () => {
 describe("hash state", () => {
   it("round-trips", () => {
     const s = parseHash("#ward=57&metric=median_days");
-    expect(s).toEqual({ ward: 57, metric: "median_days", city: false, layers: [], term: null, party: null });
+    expect(s).toEqual({ ward: 57, metric: "median_days", city: false, layers: [], term: null, party: null, compare: [] });
     expect(parseHash(toHash(s))).toEqual(s);
   });
   it("ignores junk", () => {
-    expect(parseHash("#ward=abc&metric=nope")).toEqual({ ward: null, metric: "pct_closed_30d", city: false, layers: [], term: null, party: null });
+    expect(parseHash("#ward=abc&metric=nope")).toEqual({ ward: null, metric: "pct_closed_30d", city: false, layers: [], term: null, party: null, compare: [] });
   });
   it("keeps the city overview only when no ward is open", () => {
-    expect(parseHash(toHash({ ward: null, metric: "water_days", city: true, layers: [], term: null, party: null }))).toEqual({ ward: null, metric: "water_days", city: true, layers: [], term: null, party: null });
-    expect(toHash({ ward: 3, metric: "pct_closed_30d", city: true, layers: [], term: null, party: null })).toBe("#ward=3");
+    expect(parseHash(toHash({ ward: null, metric: "water_days", city: true, layers: [], term: null, party: null, compare: [] }))).toEqual({ ward: null, metric: "water_days", city: true, layers: [], term: null, party: null, compare: [] });
+    expect(toHash({ ward: 3, metric: "pct_closed_30d", city: true, layers: [], term: null, party: null, compare: [] })).toBe("#ward=3");
   });
   it("keeps the council term", () => {
     expect(parseHash("#term=2021&ward=4")).toMatchObject({ term: 2021, ward: 4 });
@@ -187,5 +188,13 @@ describe("pointsChange", () => {
     expect(pointsChange(0.118, 0.1834)).toBe("−6.5");
     expect(pointsChange(0.5, 0.5)).toBe("±0");
     expect(pointsChange(0.05, undefined)).toBe("new");
+  });
+});
+
+describe("yearsInTerm", () => {
+  const years = ["2021/22", "2022/23", "2023/24", "2024/25", "2025/26"];
+  it("counts a financial year in the term in which it ends", () => {
+    expect(yearsInTerm(years, { year: 2021, vintage: 2021, next: 2026, current: false, label: "" })).toEqual(years);
+    expect(yearsInTerm(years, { year: 2026, vintage: 2026, next: null, current: true, label: "" })).toEqual([]);
   });
 });

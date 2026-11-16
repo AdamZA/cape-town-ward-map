@@ -9,6 +9,7 @@ import { buildMetrics, METRIC_KEYS, type MetricKey, type Term, terms, topics } f
 import type { LandmarkRow } from "./generated/landmarks";
 import { Layers } from "./places/Layers";
 import { categoryMap } from "./places/places";
+import { ComparePanel } from "./elections/Compare";
 import { PartyPanel } from "./elections/PartyPanel";
 import { Timeline } from "./elections/Timeline";
 import { CityOverview } from "./panel/CityOverview";
@@ -57,7 +58,7 @@ function Main({ data }: { data: AppData }) {
   const field = metric.env.fields[metric.field]!;
   const scale = useMemo(() => quantileScale([...metric.values.values()]), [metric]);
   const fmt = (v: number) => fmtUnit(v, metric.unit);
-  const panel = state.party ? "party" : state.ward ? "ward" : state.city ? "city" : null;
+  const panel = state.compare.length ? "compare" : state.party ? "party" : state.ward ? "ward" : state.city ? "city" : null;
 
   useEffect(() => {
     let cancelled = false;
@@ -172,7 +173,14 @@ function Main({ data }: { data: AppData }) {
             City overview
           </button>
         </div>
-        <Timeline data={data} terms={allTerms} term={term} onTerm={chooseTerm} />
+        <Timeline
+          data={data}
+          terms={allTerms}
+          term={term}
+          onTerm={chooseTerm}
+          comparing={state.compare.length > 0}
+          onCompare={() => update({ compare: state.compare.length ? [] : allTerms.map((t) => t.year) })}
+        />
       </header>
 
       <div class="map-wrap">
@@ -237,7 +245,16 @@ function Main({ data }: { data: AppData }) {
 
       {panel && (
         <aside class="panel" aria-live="polite">
-          {panel === "party" ? (
+          {panel === "compare" ? (
+            <ComparePanel
+              data={data}
+              terms={allTerms}
+              selected={state.compare}
+              ward={term.current ? state.ward : null}
+              onSelect={(years) => update({ compare: years.length ? years : [] })}
+              onClose={() => update({ compare: [] })}
+            />
+          ) : panel === "party" ? (
             <PartyPanel data={data} party={state.party!} onClose={() => update({ party: null })} />
           ) : panel === "ward" && !term.current ? (
             <PastWardPanel data={data} term={term} ward={state.ward!} onCurrentWard={openCurrentWard} onClose={() => update({ ward: null })} />

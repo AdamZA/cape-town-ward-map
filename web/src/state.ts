@@ -14,6 +14,8 @@ export interface AppState {
   term: number | null;
   /** Party profile open (#party=Democratic Alliance). */
   party: string | null;
+  /** Terms being compared, by election year (#compare=2021,2026); empty = not comparing. */
+  compare: number[];
 }
 
 export function parseHash(hash: string): AppState {
@@ -27,6 +29,7 @@ export function parseHash(hash: string): AppState {
     layers: (p.get("layers") ?? "").split(",").filter((l) => /^[a-z_]+$/.test(l)),
     term: /^\d{4}$/.test(p.get("term") ?? "") ? Number(p.get("term")) : null,
     party: p.get("party")?.slice(0, 120) || null,
+    compare: (p.get("compare") ?? "").split(",").filter((x) => /^\d{4}$/.test(x)).map(Number),
   };
 }
 
@@ -38,6 +41,7 @@ export function toHash(s: AppState): string {
   if (s.layers.length) p.set("layers", [...new Set(s.layers)].join(","));
   if (s.term) p.set("term", String(s.term));
   if (s.party) p.set("party", s.party);
+  if (s.compare.length) p.set("compare", s.compare.join(","));
   const str = p.toString();
   return str ? `#${str}` : "#";
 }

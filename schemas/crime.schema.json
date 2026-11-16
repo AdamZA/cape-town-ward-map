@@ -305,6 +305,17 @@
       "title": "Categories",
       "type": "array"
     },
+    "city_totals": {
+      "additionalProperties": {
+        "additionalProperties": {
+          "type": "integer"
+        },
+        "type": "object"
+      },
+      "description": "category -> financial year -> count, all City of Cape Town District stations",
+      "title": "City Totals",
+      "type": "object"
+    },
     "dataset": {
       "const": "crime",
       "default": "crime",
@@ -393,6 +404,7 @@
     "years",
     "categories",
     "stations",
+    "city_totals",
     "rows"
   ],
   "title": "CrimeEnvelope",

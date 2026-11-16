@@ -6,6 +6,14 @@ export interface CrimeEnvelope {
    */
   as_of: string;
   categories: CrimeCategory[];
+  /**
+   * category -> financial year -> count, all City of Cape Town District stations
+   */
+  city_totals: {
+    [k: string]: {
+      [k: string]: number;
+    };
+  };
   dataset: "crime";
   fields: {
     [k: string]: FieldMeta;

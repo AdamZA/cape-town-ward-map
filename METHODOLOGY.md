@@ -285,6 +285,15 @@ same population grid as the population estimates, and publish only that table.
   Drug-related crime mostly measures police activity. SAPS revises figures in later releases.
 - Year-on-year percentage changes are left out where the earlier year had fewer than 10 crimes.
 
+## Comparing terms
+
+"Compare terms" puts council terms side by side. Each column only uses figures that exist for
+that term: the election that started it, crime for the financial years ending during it
+(April to March, counted in the term in which they end), and ward budgets published on its
+wards. A ward is traced back through boundary changes to the old ward covering most of it, and
+crime uses its main police precinct, whose figures don't depend on ward boundaries. Averages
+are per year, so terms of different lengths compare fairly.
+
 ## Ward allocations
 
 Each year the City budgets a fixed amount per ward (R1 million in 2024/25) for projects proposed

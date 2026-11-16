@@ -225,6 +225,7 @@ CATEGORIES = {
         "Mostly reflects police activity (arrests), not how common drugs are",
     ),
 }
+CITY_DISTRICT = "City of Cape Town District"
 MIN_POPULATION = 5000  # below this, per-resident rates mislead (harbours, business districts)
 MIN_IN_GRID = 0.95  # precincts reaching past the population grid are undercounted
 
@@ -285,6 +286,14 @@ def build(vintage: int) -> None:
             )
         rows.append(CrimeWardRow(ward_no=int(w), precincts=precincts, rates=rates))
 
+    city = stats[stats["district"] == CITY_DISTRICT]
+    city_totals = {
+        CATEGORIES[c][0]: {
+            fy: int(n) for fy, n in g.groupby("financial_year")["count"].sum().items()
+        }
+        for c, g in city.groupby("category")
+    }
+
     stats_src = read_sidecar(STATS_FILE)
     fy0 = int(latest[:4])
     write_model(
@@ -334,6 +343,7 @@ def build(vintage: int) -> None:
                 CrimeCategory(key=k, label=lab, note=n) for k, lab, n in CATEGORIES.values()
             ],
             stations=sorted(stations.values(), key=lambda s: s.station),
+            city_totals=city_totals,
             rows=rows,
         ),
     )
