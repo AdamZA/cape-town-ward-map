@@ -21,6 +21,12 @@ export type MetricKey =
   | "party_share"
   | "party_change"
   | "allocation_total"
+  | "unemployment"
+  | "expanded_unemployment"
+  | "employment_ratio"
+  | "water_in_dwelling"
+  | "flush_toilet"
+  | "refuse_weekly"
   | "murder_rate"
   | "contact_rate"
   | "burglary_rate";
@@ -135,6 +141,14 @@ const crime = (key: string) => (d: AppData, t: Term) => {
   if (!c || !t.current) return null;
   return { env: c, field: "rates", values: new Map(c.rows.map((r) => [r.ward_no, r.rates[key] ?? null])), city: null };
 };
+
+/** A Census 2011 figure, on whichever ward set the term uses (when it's published for it). */
+const census = (field: "unemployment" | "expanded_unemployment" | "employment_ratio" | "water_in_dwelling" | "flush_toilet" | "refuse_weekly") =>
+  (d: AppData, t: Term) => {
+    const c = d.census.find((e) => e.ward_vintage === t.vintage);
+    return c ? { env: c, field, values: new Map(c.rows.map((r) => [r.ward_no, r[field] ?? null])), city: c.citywide[field] ?? null } : null;
+  };
+const CENSUS = "Census 2011: jobs and services";
 
 const SERVICE = "Service requests";
 const SUPPLY = "Water and electricity";
@@ -298,6 +312,36 @@ const DEFS: Record<MetricKey, Def> = {
     unit: "per 100,000",
     reading: "Residential burglaries reported in the covering precinct(s), per 100,000 residents, latest financial year.",
     build: crime("burglary_home"),
+  },
+  unemployment: {
+    topic: CENSUS,
+    reading: "Unemployed as a share of people aged 15 to 64 who were working or looking for work, at the 2011 census. Fifteen years old: the most local figure published.",
+    build: census("unemployment"),
+  },
+  expanded_unemployment: {
+    topic: CENSUS,
+    reading: "As unemployment, but also counting people who wanted work and had given up looking (2011 census).",
+    build: census("expanded_unemployment"),
+  },
+  employment_ratio: {
+    topic: CENSUS,
+    reading: "Share of all people aged 15 to 64 with a job, including students, carers and retired people (2011 census).",
+    build: census("employment_ratio"),
+  },
+  water_in_dwelling: {
+    topic: CENSUS,
+    reading: "Share of people in households with a tap inside the home, at the 2011 census. Much may have changed since.",
+    build: census("water_in_dwelling"),
+  },
+  flush_toilet: {
+    topic: CENSUS,
+    reading: "Share of people in households with a flush toilet, at the 2011 census.",
+    build: census("flush_toilet"),
+  },
+  refuse_weekly: {
+    topic: CENSUS,
+    reading: "Share of people in households whose refuse was removed at least weekly by the municipality, at the 2011 census.",
+    build: census("refuse_weekly"),
   },
   allocation_total: {
     topic: "Ward budgets",

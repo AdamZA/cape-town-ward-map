@@ -324,6 +324,25 @@ crime uses its main police precinct, whose figures don't depend on ward boundari
 are per year, so terms of different lengths compare fairly. The change column runs from the first
 term ticked to the last.
 
+## Census
+
+Employment and household services come from Census 2011 (Statistics South Africa), the latest
+census published by ward. The Municipal Demarcation Board re-counted it onto the 2021 wards; its
+Cape Town total, 3 740 028 people, matches the census. These figures are 15 years old and are
+labelled with their year everywhere.
+
+- **Unemployment** is the official definition: unemployed people as a share of those aged 15 to
+  64 who were working or looking for work. **Including discouraged** also counts people who
+  wanted work but had stopped looking. **Adults with a job** is the employed share of everyone
+  aged 15 to 64, including students, carers and retired people.
+- **Water, toilets and refuse** are shares of people living in households with each service.
+- **On today's wards**, each 2021 ward's counts are split between the 2026 wards by where people
+  live, using the same population grid as the population estimates (which describes recent
+  years, not 2011). Counts are split first and the rates worked out afterwards.
+- **Education is left out**: the profile counts schoolchildren alongside adults, so a "share
+  with Grade 12" would mostly reflect how young an area is.
+- **Income** isn't shown: no ward-level income figures are published in a form we can use.
+
 ## Ward allocations
 
 Each year the City budgets a fixed amount per ward (R1 million in 2024/25) for projects proposed

@@ -12,6 +12,7 @@ def _pin(args) -> None:
     from wardmap.datasets import (
         allocations,
         boundaries,
+        census,
         councillors,
         crime,
         donations,
@@ -26,6 +27,7 @@ def _pin(args) -> None:
     pins = {
         "boundaries": boundaries.pin,
         "older_wards": boundaries.pin_older,
+        "census": census.pin,
         "population": population.pin,
         "electricity": electricity.pin,
         "places": places.pin,
@@ -102,6 +104,7 @@ def main(argv: list[str] | None = None) -> None:
         choices=[
             "boundaries",
             "older_wards",
+            "census",
             "population",
             "electricity",
             "places",

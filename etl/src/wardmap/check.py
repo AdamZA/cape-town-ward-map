@@ -60,7 +60,7 @@ def run() -> int:
             if fm.source not in env.sources:
                 err(f"{entry.file}: field {name!r} cites unknown source {fm.source!r}")
 
-        if entry.dataset in ("wards", "service_requests", "land_use", "crime"):
+        if entry.dataset in ("wards", "service_requests", "land_use", "crime", "census"):
             nos = [r.ward_no for r in env.rows]
             if sorted(nos) != sorted(expected):
                 err(f"{entry.file}: rows are not exactly wards 1..{len(expected)}")

@@ -154,6 +154,18 @@
   },
   {
    "budget_year": null,
+   "dataset": "census",
+   "file": "census-2021.json",
+   "ward_vintage": 2021
+  },
+  {
+   "budget_year": null,
+   "dataset": "census",
+   "file": "census-2026.json",
+   "ward_vintage": 2026
+  },
+  {
+   "budget_year": null,
    "dataset": "parties",
    "file": "parties.json",
    "ward_vintage": 2026

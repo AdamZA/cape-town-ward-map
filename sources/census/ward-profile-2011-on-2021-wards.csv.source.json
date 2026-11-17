@@ -1,0 +1,10 @@
+{
+  "licence": "Municipal Demarcation Board public data",
+  "method": "download",
+  "notes": "Attributes of the CAT_B='CPT' features (116 wards). Total population 3740028, matching Census 2011's 3740026 for the metro.",
+  "publisher": "Municipal Demarcation Board, from Statistics South Africa's Census 2011",
+  "retrieved_at": "2026-11-17",
+  "sha256": "3ce37c219f2b0c7ad939b13424a0420ddf9db1eaccea7f3fb5d8226bdb6754c5",
+  "title": "Ward Profile 2021 (Census 2011 on the 2021 wards), City of Cape Town",
+  "url": "https://services7.arcgis.com/oeoyTUJC8HEeYsRB/arcgis/rest/services/WardProfile2021_gdb/FeatureServer/0"
+}

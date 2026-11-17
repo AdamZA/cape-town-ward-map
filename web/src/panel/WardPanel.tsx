@@ -8,6 +8,7 @@ import { Gaps, gapsFor } from "./Gaps";
 import { WardElection } from "../elections/Elections";
 import { WhatsHere } from "../places/WhatsHere";
 import { WardCrime } from "./Crime";
+import { WardCensus } from "./Census";
 import { Summary } from "./Summary";
 
 interface Props {
@@ -99,6 +100,7 @@ export function WardPanel({ data, metrics, ward, layers, onShowLayer, onCompare,
       <WardElection data={data} ward={ward} />
 
       <WardCrime data={data} ward={ward} />
+      <WardCensus data={data} ward={ward} />
 
       <section class="section">
         <h3>Service requests</h3>

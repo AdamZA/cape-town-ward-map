@@ -1,0 +1,1234 @@
+{
+ "as_of": "2011-10",
+ "census_year": 2011,
+ "citywide": {
+  "employment_ratio": 0.497,
+  "expanded_unemployment": 0.2736,
+  "flush_toilet": 0.9177,
+  "refuse_weekly": 0.9508,
+  "unemployment": 0.2388,
+  "water_in_dwelling": 0.7877
+ },
+ "dataset": "census",
+ "fields": {
+  "employment_ratio": {
+   "description": "Employed as a share of all people aged 15 to 64, including students, carers and retired people.",
+   "label": "Adults 15 to 64 with a job (Census 2011)",
+   "method": "census",
+   "source": "profile",
+   "unit": "share"
+  },
+  "expanded_unemployment": {
+   "description": "As above, also counting people who wanted work but had stopped looking.",
+   "label": "Unemployment incl. discouraged (Census 2011)",
+   "method": "census",
+   "source": "profile",
+   "unit": "share"
+  },
+  "flush_toilet": {
+   "description": "Share of people in households with a flush toilet (sewer or septic tank).",
+   "label": "Flush toilet (Census 2011)",
+   "method": "census",
+   "source": "profile",
+   "unit": "share"
+  },
+  "refuse_weekly": {
+   "description": "Share of people in households whose refuse the municipality removes at least once a week.",
+   "label": "Refuse removed weekly (Census 2011)",
+   "method": "census",
+   "source": "profile",
+   "unit": "share"
+  },
+  "unemployment": {
+   "description": "Unemployed as a share of people aged 15 to 64 who were working or looking for work (the official definition).",
+   "label": "Unemployment (Census 2011)",
+   "method": "census",
+   "source": "profile",
+   "unit": "share"
+  },
+  "water_in_dwelling": {
+   "description": "Share of people in households with a tap inside the dwelling.",
+   "label": "Piped water inside the home (Census 2011)",
+   "method": "census",
+   "source": "profile",
+   "unit": "share"
+  }
+ },
+ "gaps": [],
+ "period": null,
+ "rows": [
+  {
+   "employment_ratio": 0.6942,
+   "expanded_unemployment": 0.0489,
+   "flush_toilet": 0.9869,
+   "population": 26217,
+   "refuse_weekly": 0.9797,
+   "unemployment": 0.0433,
+   "ward_no": 1,
+   "water_in_dwelling": 0.9779
+  },
+  {
+   "employment_ratio": 0.6439,
+   "expanded_unemployment": 0.0781,
+   "flush_toilet": 0.9936,
+   "population": 35339,
+   "refuse_weekly": 0.9724,
+   "unemployment": 0.0666,
+   "ward_no": 2,
+   "water_in_dwelling": 0.9925
+  },
+  {
+   "employment_ratio": 0.6389,
+   "expanded_unemployment": 0.0684,
+   "flush_toilet": 0.9972,
+   "population": 24580,
+   "refuse_weekly": 0.9912,
+   "unemployment": 0.0583,
+   "ward_no": 3,
+   "water_in_dwelling": 0.9928
+  },
+  {
+   "employment_ratio": 0.6479,
+   "expanded_unemployment": 0.1752,
+   "flush_toilet": 0.9514,
+   "population": 32816,
+   "refuse_weekly": 0.9929,
+   "unemployment": 0.1504,
+   "ward_no": 4,
+   "water_in_dwelling": 0.7475
+  },
+  {
+   "employment_ratio": 0.6193,
+   "expanded_unemployment": 0.0749,
+   "flush_toilet": 0.9979,
+   "population": 27468,
+   "refuse_weekly": 0.9956,
+   "unemployment": 0.0651,
+   "ward_no": 5,
+   "water_in_dwelling": 0.9851
+  },
+  {
+   "employment_ratio": 0.4539,
+   "expanded_unemployment": 0.3806,
+   "flush_toilet": 0.9352,
+   "population": 35292,
+   "refuse_weekly": 0.9226,
+   "unemployment": 0.3267,
+   "ward_no": 6,
+   "water_in_dwelling": 0.5122
+  },
+  {
+   "employment_ratio": 0.5893,
+   "expanded_unemployment": 0.1496,
+   "flush_toilet": 0.9882,
+   "population": 34478,
+   "refuse_weekly": 0.9881,
+   "unemployment": 0.1208,
+   "ward_no": 7,
+   "water_in_dwelling": 0.9193
+  },
+  {
+   "employment_ratio": 0.7187,
+   "expanded_unemployment": 0.0564,
+   "flush_toilet": 0.9969,
+   "population": 26061,
+   "refuse_weekly": 0.9785,
+   "unemployment": 0.0491,
+   "ward_no": 8,
+   "water_in_dwelling": 0.9871
+  },
+  {
+   "employment_ratio": 0.4136,
+   "expanded_unemployment": 0.215,
+   "flush_toilet": 0.9138,
+   "population": 31736,
+   "refuse_weekly": 0.9979,
+   "unemployment": 0.1912,
+   "ward_no": 9,
+   "water_in_dwelling": 0.8817
+  },
+  {
+   "employment_ratio": 0.5081,
+   "expanded_unemployment": 0.174,
+   "flush_toilet": 0.9801,
+   "population": 32423,
+   "refuse_weekly": 0.9967,
+   "unemployment": 0.1452,
+   "ward_no": 10,
+   "water_in_dwelling": 0.9377
+  },
+  {
+   "employment_ratio": 0.612,
+   "expanded_unemployment": 0.1069,
+   "flush_toilet": 0.9909,
+   "population": 32763,
+   "refuse_weekly": 0.9965,
+   "unemployment": 0.0925,
+   "ward_no": 11,
+   "water_in_dwelling": 0.9717
+  },
+  {
+   "employment_ratio": 0.4671,
+   "expanded_unemployment": 0.2829,
+   "flush_toilet": 0.9506,
+   "population": 40498,
+   "refuse_weekly": 0.9957,
+   "unemployment": 0.2314,
+   "ward_no": 12,
+   "water_in_dwelling": 0.9368
+  },
+  {
+   "employment_ratio": 0.4233,
+   "expanded_unemployment": 0.3849,
+   "flush_toilet": 0.9348,
+   "population": 32143,
+   "refuse_weekly": 0.9932,
+   "unemployment": 0.3426,
+   "ward_no": 13,
+   "water_in_dwelling": 0.936
+  },
+  {
+   "employment_ratio": 0.5495,
+   "expanded_unemployment": 0.2287,
+   "flush_toilet": 0.8791,
+   "population": 39831,
+   "refuse_weekly": 0.9657,
+   "unemployment": 0.2075,
+   "ward_no": 14,
+   "water_in_dwelling": 0.7367
+  },
+  {
+   "employment_ratio": 0.6553,
+   "expanded_unemployment": 0.0545,
+   "flush_toilet": 0.9969,
+   "population": 20960,
+   "refuse_weekly": 0.973,
+   "unemployment": 0.0456,
+   "ward_no": 15,
+   "water_in_dwelling": 0.9886
+  },
+  {
+   "employment_ratio": 0.5292,
+   "expanded_unemployment": 0.2367,
+   "flush_toilet": 0.9383,
+   "population": 39413,
+   "refuse_weekly": 0.9939,
+   "unemployment": 0.2128,
+   "ward_no": 16,
+   "water_in_dwelling": 0.8895
+  },
+  {
+   "employment_ratio": 0.5173,
+   "expanded_unemployment": 0.2325,
+   "flush_toilet": 0.9493,
+   "population": 35723,
+   "refuse_weekly": 0.9955,
+   "unemployment": 0.1984,
+   "ward_no": 17,
+   "water_in_dwelling": 0.9323
+  },
+  {
+   "employment_ratio": 0.3756,
+   "expanded_unemployment": 0.4261,
+   "flush_toilet": 0.7951,
+   "population": 25214,
+   "refuse_weekly": 0.8795,
+   "unemployment": 0.3891,
+   "ward_no": 18,
+   "water_in_dwelling": 0.5513
+  },
+  {
+   "employment_ratio": 0.4968,
+   "expanded_unemployment": 0.3041,
+   "flush_toilet": 0.9343,
+   "population": 56201,
+   "refuse_weekly": 0.9786,
+   "unemployment": 0.2658,
+   "ward_no": 19,
+   "water_in_dwelling": 0.8399
+  },
+  {
+   "employment_ratio": 0.3912,
+   "expanded_unemployment": 0.434,
+   "flush_toilet": 0.9544,
+   "population": 34289,
+   "refuse_weekly": 0.9897,
+   "unemployment": 0.3905,
+   "ward_no": 20,
+   "water_in_dwelling": 0.935
+  },
+  {
+   "employment_ratio": 0.7122,
+   "expanded_unemployment": 0.0376,
+   "flush_toilet": 0.9972,
+   "population": 22311,
+   "refuse_weekly": 0.9939,
+   "unemployment": 0.032,
+   "ward_no": 21,
+   "water_in_dwelling": 0.992
+  },
+  {
+   "employment_ratio": 0.4521,
+   "expanded_unemployment": 0.2664,
+   "flush_toilet": 0.8397,
+   "population": 29145,
+   "refuse_weekly": 0.9155,
+   "unemployment": 0.2317,
+   "ward_no": 22,
+   "water_in_dwelling": 0.8303
+  },
+  {
+   "employment_ratio": 0.7173,
+   "expanded_unemployment": 0.0678,
+   "flush_toilet": 0.9553,
+   "population": 22147,
+   "refuse_weekly": 0.9417,
+   "unemployment": 0.0607,
+   "ward_no": 23,
+   "water_in_dwelling": 0.95
+  },
+  {
+   "employment_ratio": 0.3543,
+   "expanded_unemployment": 0.4801,
+   "flush_toilet": 0.9703,
+   "population": 34777,
+   "refuse_weekly": 0.9593,
+   "unemployment": 0.4553,
+   "ward_no": 24,
+   "water_in_dwelling": 0.7194
+  },
+  {
+   "employment_ratio": 0.4276,
+   "expanded_unemployment": 0.3002,
+   "flush_toilet": 0.9462,
+   "population": 43977,
+   "refuse_weekly": 0.9965,
+   "unemployment": 0.2467,
+   "ward_no": 25,
+   "water_in_dwelling": 0.9137
+  },
+  {
+   "employment_ratio": 0.5292,
+   "expanded_unemployment": 0.1751,
+   "flush_toilet": 0.9764,
+   "population": 30410,
+   "refuse_weekly": 0.9455,
+   "unemployment": 0.1405,
+   "ward_no": 26,
+   "water_in_dwelling": 0.9689
+  },
+  {
+   "employment_ratio": 0.6412,
+   "expanded_unemployment": 0.0864,
+   "flush_toilet": 0.9887,
+   "population": 26268,
+   "refuse_weekly": 0.9964,
+   "unemployment": 0.0743,
+   "ward_no": 27,
+   "water_in_dwelling": 0.989
+  },
+  {
+   "employment_ratio": 0.4884,
+   "expanded_unemployment": 0.2508,
+   "flush_toilet": 0.9501,
+   "population": 39497,
+   "refuse_weekly": 0.9936,
+   "unemployment": 0.1854,
+   "ward_no": 28,
+   "water_in_dwelling": 0.9515
+  },
+  {
+   "employment_ratio": 0.4434,
+   "expanded_unemployment": 0.3353,
+   "flush_toilet": 0.9423,
+   "population": 37138,
+   "refuse_weekly": 0.9947,
+   "unemployment": 0.2829,
+   "ward_no": 29,
+   "water_in_dwelling": 0.9159
+  },
+  {
+   "employment_ratio": 0.3176,
+   "expanded_unemployment": 0.4777,
+   "flush_toilet": 0.9619,
+   "population": 40623,
+   "refuse_weekly": 0.9962,
+   "unemployment": 0.4113,
+   "ward_no": 30,
+   "water_in_dwelling": 0.9203
+  },
+  {
+   "employment_ratio": 0.3846,
+   "expanded_unemployment": 0.3455,
+   "flush_toilet": 0.8821,
+   "population": 40465,
+   "refuse_weekly": 0.9414,
+   "unemployment": 0.2889,
+   "ward_no": 31,
+   "water_in_dwelling": 0.8689
+  },
+  {
+   "employment_ratio": 0.4567,
+   "expanded_unemployment": 0.3087,
+   "flush_toilet": 0.8621,
+   "population": 43561,
+   "refuse_weekly": 0.9262,
+   "unemployment": 0.2489,
+   "ward_no": 32,
+   "water_in_dwelling": 0.8402
+  },
+  {
+   "employment_ratio": 0.4387,
+   "expanded_unemployment": 0.3904,
+   "flush_toilet": 0.8465,
+   "population": 36851,
+   "refuse_weekly": 0.9114,
+   "unemployment": 0.3623,
+   "ward_no": 33,
+   "water_in_dwelling": 0.2628
+  },
+  {
+   "employment_ratio": 0.4495,
+   "expanded_unemployment": 0.3906,
+   "flush_toilet": 0.9579,
+   "population": 34108,
+   "refuse_weekly": 0.8808,
+   "unemployment": 0.3519,
+   "ward_no": 34,
+   "water_in_dwelling": 0.2161
+  },
+  {
+   "employment_ratio": 0.4092,
+   "expanded_unemployment": 0.4163,
+   "flush_toilet": 0.9686,
+   "population": 37987,
+   "refuse_weekly": 0.9691,
+   "unemployment": 0.362,
+   "ward_no": 35,
+   "water_in_dwelling": 0.3934
+  },
+  {
+   "employment_ratio": 0.3117,
+   "expanded_unemployment": 0.5014,
+   "flush_toilet": 0.7161,
+   "population": 34171,
+   "refuse_weekly": 0.8494,
+   "unemployment": 0.455,
+   "ward_no": 36,
+   "water_in_dwelling": 0.6289
+  },
+  {
+   "employment_ratio": 0.3252,
+   "expanded_unemployment": 0.5284,
+   "flush_toilet": 0.8965,
+   "population": 28862,
+   "refuse_weekly": 0.9254,
+   "unemployment": 0.4711,
+   "ward_no": 37,
+   "water_in_dwelling": 0.5693
+  },
+  {
+   "employment_ratio": 0.3588,
+   "expanded_unemployment": 0.4809,
+   "flush_toilet": 0.8882,
+   "population": 30300,
+   "refuse_weekly": 0.9573,
+   "unemployment": 0.4242,
+   "ward_no": 38,
+   "water_in_dwelling": 0.6601
+  },
+  {
+   "employment_ratio": 0.3424,
+   "expanded_unemployment": 0.4952,
+   "flush_toilet": 0.9622,
+   "population": 28286,
+   "refuse_weekly": 0.9931,
+   "unemployment": 0.4301,
+   "ward_no": 39,
+   "water_in_dwelling": 0.8654
+  },
+  {
+   "employment_ratio": 0.4052,
+   "expanded_unemployment": 0.4515,
+   "flush_toilet": 0.3877,
+   "population": 37838,
+   "refuse_weekly": 0.886,
+   "unemployment": 0.4104,
+   "ward_no": 40,
+   "water_in_dwelling": 0.3593
+  },
+  {
+   "employment_ratio": 0.4103,
+   "expanded_unemployment": 0.3995,
+   "flush_toilet": 0.8396,
+   "population": 26247,
+   "refuse_weekly": 0.8616,
+   "unemployment": 0.3634,
+   "ward_no": 41,
+   "water_in_dwelling": 0.5523
+  },
+  {
+   "employment_ratio": 0.4233,
+   "expanded_unemployment": 0.3022,
+   "flush_toilet": 0.9378,
+   "population": 35146,
+   "refuse_weekly": 0.9959,
+   "unemployment": 0.2579,
+   "ward_no": 42,
+   "water_in_dwelling": 0.9219
+  },
+  {
+   "employment_ratio": 0.5873,
+   "expanded_unemployment": 0.1777,
+   "flush_toilet": 0.8697,
+   "population": 38022,
+   "refuse_weekly": 0.9027,
+   "unemployment": 0.1488,
+   "ward_no": 43,
+   "water_in_dwelling": 0.8658
+  },
+  {
+   "employment_ratio": 0.4318,
+   "expanded_unemployment": 0.3236,
+   "flush_toilet": 0.9665,
+   "population": 31191,
+   "refuse_weekly": 0.9954,
+   "unemployment": 0.2945,
+   "ward_no": 44,
+   "water_in_dwelling": 0.8954
+  },
+  {
+   "employment_ratio": 0.4835,
+   "expanded_unemployment": 0.3457,
+   "flush_toilet": 0.7873,
+   "population": 37744,
+   "refuse_weekly": 0.9105,
+   "unemployment": 0.3203,
+   "ward_no": 45,
+   "water_in_dwelling": 0.6884
+  },
+  {
+   "employment_ratio": 0.433,
+   "expanded_unemployment": 0.2512,
+   "flush_toilet": 0.9411,
+   "population": 36591,
+   "refuse_weekly": 0.9797,
+   "unemployment": 0.217,
+   "ward_no": 46,
+   "water_in_dwelling": 0.9027
+  },
+  {
+   "employment_ratio": 0.3284,
+   "expanded_unemployment": 0.4434,
+   "flush_toilet": 0.9399,
+   "population": 38164,
+   "refuse_weekly": 0.9938,
+   "unemployment": 0.3877,
+   "ward_no": 47,
+   "water_in_dwelling": 0.9447
+  },
+  {
+   "employment_ratio": 0.5215,
+   "expanded_unemployment": 0.151,
+   "flush_toilet": 0.9589,
+   "population": 28680,
+   "refuse_weekly": 0.9952,
+   "unemployment": 0.1215,
+   "ward_no": 48,
+   "water_in_dwelling": 0.9836
+  },
+  {
+   "employment_ratio": 0.4664,
+   "expanded_unemployment": 0.2564,
+   "flush_toilet": 0.9486,
+   "population": 31184,
+   "refuse_weekly": 0.9973,
+   "unemployment": 0.1952,
+   "ward_no": 49,
+   "water_in_dwelling": 0.9601
+  },
+  {
+   "employment_ratio": 0.4365,
+   "expanded_unemployment": 0.3252,
+   "flush_toilet": 0.9377,
+   "population": 35517,
+   "refuse_weekly": 0.9922,
+   "unemployment": 0.2733,
+   "ward_no": 50,
+   "water_in_dwelling": 0.9356
+  },
+  {
+   "employment_ratio": 0.428,
+   "expanded_unemployment": 0.3664,
+   "flush_toilet": 0.9846,
+   "population": 25389,
+   "refuse_weekly": 0.9637,
+   "unemployment": 0.3379,
+   "ward_no": 51,
+   "water_in_dwelling": 0.7367
+  },
+  {
+   "employment_ratio": 0.3681,
+   "expanded_unemployment": 0.4898,
+   "flush_toilet": 0.6159,
+   "population": 28054,
+   "refuse_weekly": 0.9284,
+   "unemployment": 0.4536,
+   "ward_no": 52,
+   "water_in_dwelling": 0.4079
+  },
+  {
+   "employment_ratio": 0.6222,
+   "expanded_unemployment": 0.083,
+   "flush_toilet": 0.9935,
+   "population": 24927,
+   "refuse_weekly": 0.9926,
+   "unemployment": 0.0754,
+   "ward_no": 53,
+   "water_in_dwelling": 0.9775
+  },
+  {
+   "employment_ratio": 0.6547,
+   "expanded_unemployment": 0.0528,
+   "flush_toilet": 0.9975,
+   "population": 25467,
+   "refuse_weekly": 0.9938,
+   "unemployment": 0.0464,
+   "ward_no": 54,
+   "water_in_dwelling": 0.9892
+  },
+  {
+   "employment_ratio": 0.6209,
+   "expanded_unemployment": 0.1318,
+   "flush_toilet": 0.9939,
+   "population": 31275,
+   "refuse_weekly": 0.9892,
+   "unemployment": 0.1185,
+   "ward_no": 55,
+   "water_in_dwelling": 0.9835
+  },
+  {
+   "employment_ratio": 0.5335,
+   "expanded_unemployment": 0.1567,
+   "flush_toilet": 0.9561,
+   "population": 33461,
+   "refuse_weekly": 0.9889,
+   "unemployment": 0.1336,
+   "ward_no": 56,
+   "water_in_dwelling": 0.9097
+  },
+  {
+   "employment_ratio": 0.4418,
+   "expanded_unemployment": 0.1254,
+   "flush_toilet": 0.9939,
+   "population": 27699,
+   "refuse_weekly": 0.9909,
+   "unemployment": 0.1146,
+   "ward_no": 57,
+   "water_in_dwelling": 0.9832
+  },
+  {
+   "employment_ratio": 0.6941,
+   "expanded_unemployment": 0.0448,
+   "flush_toilet": 0.9976,
+   "population": 28761,
+   "refuse_weekly": 0.9932,
+   "unemployment": 0.0388,
+   "ward_no": 58,
+   "water_in_dwelling": 0.9937
+  },
+  {
+   "employment_ratio": 0.5545,
+   "expanded_unemployment": 0.0538,
+   "flush_toilet": 0.9978,
+   "population": 20656,
+   "refuse_weekly": 0.9936,
+   "unemployment": 0.0498,
+   "ward_no": 59,
+   "water_in_dwelling": 0.9931
+  },
+  {
+   "employment_ratio": 0.6161,
+   "expanded_unemployment": 0.1045,
+   "flush_toilet": 0.991,
+   "population": 26224,
+   "refuse_weekly": 0.9858,
+   "unemployment": 0.0845,
+   "ward_no": 60,
+   "water_in_dwelling": 0.9857
+  },
+  {
+   "employment_ratio": 0.4024,
+   "expanded_unemployment": 0.2028,
+   "flush_toilet": 0.9407,
+   "population": 30689,
+   "refuse_weekly": 0.7994,
+   "unemployment": 0.154,
+   "ward_no": 61,
+   "water_in_dwelling": 0.9278
+  },
+  {
+   "employment_ratio": 0.6498,
+   "expanded_unemployment": 0.0574,
+   "flush_toilet": 0.9956,
+   "population": 20161,
+   "refuse_weekly": 0.9931,
+   "unemployment": 0.0433,
+   "ward_no": 62,
+   "water_in_dwelling": 0.9953
+  },
+  {
+   "employment_ratio": 0.6459,
+   "expanded_unemployment": 0.0929,
+   "flush_toilet": 0.9931,
+   "population": 25971,
+   "refuse_weekly": 0.9937,
+   "unemployment": 0.0807,
+   "ward_no": 63,
+   "water_in_dwelling": 0.9897
+  },
+  {
+   "employment_ratio": 0.6432,
+   "expanded_unemployment": 0.0605,
+   "flush_toilet": 0.9958,
+   "population": 23027,
+   "refuse_weekly": 0.9937,
+   "unemployment": 0.0542,
+   "ward_no": 64,
+   "water_in_dwelling": 0.9944
+  },
+  {
+   "employment_ratio": 0.474,
+   "expanded_unemployment": 0.2873,
+   "flush_toilet": 0.9527,
+   "population": 31691,
+   "refuse_weekly": 0.9979,
+   "unemployment": 0.2331,
+   "ward_no": 65,
+   "water_in_dwelling": 0.9346
+  },
+  {
+   "employment_ratio": 0.5568,
+   "expanded_unemployment": 0.1686,
+   "flush_toilet": 0.9836,
+   "population": 33641,
+   "refuse_weekly": 0.9907,
+   "unemployment": 0.1479,
+   "ward_no": 66,
+   "water_in_dwelling": 0.9622
+  },
+  {
+   "employment_ratio": 0.5317,
+   "expanded_unemployment": 0.1883,
+   "flush_toilet": 0.9318,
+   "population": 26216,
+   "refuse_weekly": 0.9759,
+   "unemployment": 0.1598,
+   "ward_no": 67,
+   "water_in_dwelling": 0.9292
+  },
+  {
+   "employment_ratio": 0.5,
+   "expanded_unemployment": 0.2395,
+   "flush_toilet": 0.9656,
+   "population": 26611,
+   "refuse_weekly": 0.9964,
+   "unemployment": 0.2077,
+   "ward_no": 68,
+   "water_in_dwelling": 0.975
+  },
+  {
+   "employment_ratio": 0.6064,
+   "expanded_unemployment": 0.2415,
+   "flush_toilet": 0.9926,
+   "population": 34862,
+   "refuse_weekly": 0.9873,
+   "unemployment": 0.2278,
+   "ward_no": 69,
+   "water_in_dwelling": 0.4937
+  },
+  {
+   "employment_ratio": 0.7161,
+   "expanded_unemployment": 0.0315,
+   "flush_toilet": 0.9951,
+   "population": 24611,
+   "refuse_weekly": 0.9931,
+   "unemployment": 0.0279,
+   "ward_no": 70,
+   "water_in_dwelling": 0.9933
+  },
+  {
+   "employment_ratio": 0.5691,
+   "expanded_unemployment": 0.1095,
+   "flush_toilet": 0.9884,
+   "population": 24062,
+   "refuse_weekly": 0.9873,
+   "unemployment": 0.0959,
+   "ward_no": 71,
+   "water_in_dwelling": 0.9387
+  },
+  {
+   "employment_ratio": 0.5982,
+   "expanded_unemployment": 0.1492,
+   "flush_toilet": 0.985,
+   "population": 20805,
+   "refuse_weekly": 0.9958,
+   "unemployment": 0.1361,
+   "ward_no": 72,
+   "water_in_dwelling": 0.9794
+  },
+  {
+   "employment_ratio": 0.6793,
+   "expanded_unemployment": 0.0591,
+   "flush_toilet": 0.9962,
+   "population": 20226,
+   "refuse_weekly": 0.9913,
+   "unemployment": 0.0526,
+   "ward_no": 73,
+   "water_in_dwelling": 0.9939
+  },
+  {
+   "employment_ratio": 0.5822,
+   "expanded_unemployment": 0.2511,
+   "flush_toilet": 0.8149,
+   "population": 33438,
+   "refuse_weekly": 0.8145,
+   "unemployment": 0.2272,
+   "ward_no": 74,
+   "water_in_dwelling": 0.6493
+  },
+  {
+   "employment_ratio": 0.5154,
+   "expanded_unemployment": 0.2435,
+   "flush_toilet": 0.9803,
+   "population": 36876,
+   "refuse_weekly": 0.997,
+   "unemployment": 0.2132,
+   "ward_no": 75,
+   "water_in_dwelling": 0.9816
+  },
+  {
+   "employment_ratio": 0.4444,
+   "expanded_unemployment": 0.2919,
+   "flush_toilet": 0.9735,
+   "population": 35668,
+   "refuse_weekly": 0.9939,
+   "unemployment": 0.2543,
+   "ward_no": 76,
+   "water_in_dwelling": 0.9702
+  },
+  {
+   "employment_ratio": 0.6701,
+   "expanded_unemployment": 0.0642,
+   "flush_toilet": 0.9941,
+   "population": 20912,
+   "refuse_weekly": 0.9929,
+   "unemployment": 0.0584,
+   "ward_no": 77,
+   "water_in_dwelling": 0.986
+  },
+  {
+   "employment_ratio": 0.4788,
+   "expanded_unemployment": 0.2094,
+   "flush_toilet": 0.9768,
+   "population": 28075,
+   "refuse_weekly": 0.9976,
+   "unemployment": 0.1575,
+   "ward_no": 78,
+   "water_in_dwelling": 0.9779
+  },
+  {
+   "employment_ratio": 0.4891,
+   "expanded_unemployment": 0.2313,
+   "flush_toilet": 0.9802,
+   "population": 29297,
+   "refuse_weekly": 0.9979,
+   "unemployment": 0.1841,
+   "ward_no": 79,
+   "water_in_dwelling": 0.9748
+  },
+  {
+   "employment_ratio": 0.4064,
+   "expanded_unemployment": 0.4361,
+   "flush_toilet": 0.8412,
+   "population": 35900,
+   "refuse_weekly": 0.7478,
+   "unemployment": 0.4045,
+   "ward_no": 80,
+   "water_in_dwelling": 0.3422
+  },
+  {
+   "employment_ratio": 0.5294,
+   "expanded_unemployment": 0.1985,
+   "flush_toilet": 0.9886,
+   "population": 32811,
+   "refuse_weekly": 0.9974,
+   "unemployment": 0.1759,
+   "ward_no": 81,
+   "water_in_dwelling": 0.9856
+  },
+  {
+   "employment_ratio": 0.3673,
+   "expanded_unemployment": 0.399,
+   "flush_toilet": 0.9384,
+   "population": 27488,
+   "refuse_weekly": 0.9965,
+   "unemployment": 0.3555,
+   "ward_no": 82,
+   "water_in_dwelling": 0.9356
+  },
+  {
+   "employment_ratio": 0.6391,
+   "expanded_unemployment": 0.086,
+   "flush_toilet": 0.9885,
+   "population": 18968,
+   "refuse_weekly": 0.9929,
+   "unemployment": 0.0716,
+   "ward_no": 83,
+   "water_in_dwelling": 0.9848
+  },
+  {
+   "employment_ratio": 0.5808,
+   "expanded_unemployment": 0.1691,
+   "flush_toilet": 0.9222,
+   "population": 32342,
+   "refuse_weekly": 0.9067,
+   "unemployment": 0.1069,
+   "ward_no": 84,
+   "water_in_dwelling": 0.859
+  },
+  {
+   "employment_ratio": 0.525,
+   "expanded_unemployment": 0.3048,
+   "flush_toilet": 0.9653,
+   "population": 43490,
+   "refuse_weekly": 0.9765,
+   "unemployment": 0.2605,
+   "ward_no": 85,
+   "water_in_dwelling": 0.7539
+  },
+  {
+   "employment_ratio": 0.4453,
+   "expanded_unemployment": 0.418,
+   "flush_toilet": 0.928,
+   "population": 32131,
+   "refuse_weekly": 0.9556,
+   "unemployment": 0.3762,
+   "ward_no": 86,
+   "water_in_dwelling": 0.377
+  },
+  {
+   "employment_ratio": 0.3737,
+   "expanded_unemployment": 0.4841,
+   "flush_toilet": 0.7254,
+   "population": 26741,
+   "refuse_weekly": 0.8314,
+   "unemployment": 0.4555,
+   "ward_no": 87,
+   "water_in_dwelling": 0.323
+  },
+  {
+   "employment_ratio": 0.3966,
+   "expanded_unemployment": 0.4533,
+   "flush_toilet": 0.6647,
+   "population": 46178,
+   "refuse_weekly": 0.8065,
+   "unemployment": 0.4182,
+   "ward_no": 88,
+   "water_in_dwelling": 0.3584
+  },
+  {
+   "employment_ratio": 0.394,
+   "expanded_unemployment": 0.4326,
+   "flush_toilet": 0.7523,
+   "population": 29187,
+   "refuse_weekly": 0.8756,
+   "unemployment": 0.3881,
+   "ward_no": 89,
+   "water_in_dwelling": 0.253
+  },
+  {
+   "employment_ratio": 0.3778,
+   "expanded_unemployment": 0.4747,
+   "flush_toilet": 0.579,
+   "population": 21871,
+   "refuse_weekly": 0.639,
+   "unemployment": 0.4397,
+   "ward_no": 90,
+   "water_in_dwelling": 0.1803
+  },
+  {
+   "employment_ratio": 0.3962,
+   "expanded_unemployment": 0.4044,
+   "flush_toilet": 0.9039,
+   "population": 32892,
+   "refuse_weekly": 0.8625,
+   "unemployment": 0.3696,
+   "ward_no": 91,
+   "water_in_dwelling": 0.2957
+  },
+  {
+   "employment_ratio": 0.3596,
+   "expanded_unemployment": 0.4394,
+   "flush_toilet": 0.9514,
+   "population": 52736,
+   "refuse_weekly": 0.9947,
+   "unemployment": 0.3869,
+   "ward_no": 92,
+   "water_in_dwelling": 0.9432
+  },
+  {
+   "employment_ratio": 0.41,
+   "expanded_unemployment": 0.4278,
+   "flush_toilet": 0.6229,
+   "population": 34848,
+   "refuse_weekly": 0.6185,
+   "unemployment": 0.3865,
+   "ward_no": 93,
+   "water_in_dwelling": 0.2156
+  },
+  {
+   "employment_ratio": 0.3671,
+   "expanded_unemployment": 0.387,
+   "flush_toilet": 0.9798,
+   "population": 27691,
+   "refuse_weekly": 0.9765,
+   "unemployment": 0.3502,
+   "ward_no": 94,
+   "water_in_dwelling": 0.933
+  },
+  {
+   "employment_ratio": 0.4239,
+   "expanded_unemployment": 0.4304,
+   "flush_toilet": 0.7252,
+   "population": 42895,
+   "refuse_weekly": 0.8173,
+   "unemployment": 0.4071,
+   "ward_no": 95,
+   "water_in_dwelling": 0.1447
+  },
+  {
+   "employment_ratio": 0.3809,
+   "expanded_unemployment": 0.4318,
+   "flush_toilet": 0.9715,
+   "population": 37444,
+   "refuse_weekly": 0.9365,
+   "unemployment": 0.3905,
+   "ward_no": 96,
+   "water_in_dwelling": 0.2605
+  },
+  {
+   "employment_ratio": 0.4123,
+   "expanded_unemployment": 0.3826,
+   "flush_toilet": 0.9911,
+   "population": 32258,
+   "refuse_weekly": 0.9968,
+   "unemployment": 0.3499,
+   "ward_no": 97,
+   "water_in_dwelling": 0.7664
+  },
+  {
+   "employment_ratio": 0.4637,
+   "expanded_unemployment": 0.3442,
+   "flush_toilet": 0.9923,
+   "population": 39410,
+   "refuse_weekly": 0.9883,
+   "unemployment": 0.3036,
+   "ward_no": 98,
+   "water_in_dwelling": 0.5823
+  },
+  {
+   "employment_ratio": 0.425,
+   "expanded_unemployment": 0.4056,
+   "flush_toilet": 0.6246,
+   "population": 41298,
+   "refuse_weekly": 0.687,
+   "unemployment": 0.3625,
+   "ward_no": 99,
+   "water_in_dwelling": 0.5309
+  },
+  {
+   "employment_ratio": 0.541,
+   "expanded_unemployment": 0.2045,
+   "flush_toilet": 0.9746,
+   "population": 39814,
+   "refuse_weekly": 0.9866,
+   "unemployment": 0.1694,
+   "ward_no": 100,
+   "water_in_dwelling": 0.9309
+  },
+  {
+   "employment_ratio": 0.4516,
+   "expanded_unemployment": 0.3879,
+   "flush_toilet": 0.9698,
+   "population": 37441,
+   "refuse_weekly": 0.9858,
+   "unemployment": 0.3531,
+   "ward_no": 101,
+   "water_in_dwelling": 0.6056
+  },
+  {
+   "employment_ratio": 0.6944,
+   "expanded_unemployment": 0.0775,
+   "flush_toilet": 0.9814,
+   "population": 22774,
+   "refuse_weekly": 0.975,
+   "unemployment": 0.0614,
+   "ward_no": 102,
+   "water_in_dwelling": 0.9713
+  },
+  {
+   "employment_ratio": 0.8038,
+   "expanded_unemployment": 0.0288,
+   "flush_toilet": 0.9959,
+   "population": 25984,
+   "refuse_weekly": 0.9925,
+   "unemployment": 0.024,
+   "ward_no": 103,
+   "water_in_dwelling": 0.9927
+  },
+  {
+   "employment_ratio": 0.4822,
+   "expanded_unemployment": 0.415,
+   "flush_toilet": 0.6938,
+   "population": 36166,
+   "refuse_weekly": 0.9605,
+   "unemployment": 0.3945,
+   "ward_no": 104,
+   "water_in_dwelling": 0.3502
+  },
+  {
+   "employment_ratio": 0.6017,
+   "expanded_unemployment": 0.1706,
+   "flush_toilet": 0.8691,
+   "population": 30099,
+   "refuse_weekly": 0.8333,
+   "unemployment": 0.1578,
+   "ward_no": 105,
+   "water_in_dwelling": 0.7254
+  },
+  {
+   "employment_ratio": 0.3771,
+   "expanded_unemployment": 0.4674,
+   "flush_toilet": 0.9094,
+   "population": 50821,
+   "refuse_weekly": 0.9709,
+   "unemployment": 0.4435,
+   "ward_no": 106,
+   "water_in_dwelling": 0.8775
+  },
+  {
+   "employment_ratio": 0.7565,
+   "expanded_unemployment": 0.0678,
+   "flush_toilet": 0.9967,
+   "population": 31304,
+   "refuse_weekly": 0.9932,
+   "unemployment": 0.0592,
+   "ward_no": 107,
+   "water_in_dwelling": 0.9925
+  },
+  {
+   "employment_ratio": 0.4753,
+   "expanded_unemployment": 0.3586,
+   "flush_toilet": 0.9725,
+   "population": 37546,
+   "refuse_weekly": 0.9132,
+   "unemployment": 0.3271,
+   "ward_no": 108,
+   "water_in_dwelling": 0.4906
+  },
+  {
+   "employment_ratio": 0.5001,
+   "expanded_unemployment": 0.2668,
+   "flush_toilet": 0.9463,
+   "population": 35116,
+   "refuse_weekly": 0.9665,
+   "unemployment": 0.2321,
+   "ward_no": 109,
+   "water_in_dwelling": 0.894
+  },
+  {
+   "employment_ratio": 0.484,
+   "expanded_unemployment": 0.2936,
+   "flush_toilet": 0.9219,
+   "population": 33159,
+   "refuse_weekly": 0.9808,
+   "unemployment": 0.2542,
+   "ward_no": 110,
+   "water_in_dwelling": 0.9401
+  },
+  {
+   "employment_ratio": 0.5965,
+   "expanded_unemployment": 0.1375,
+   "flush_toilet": 0.9654,
+   "population": 37916,
+   "refuse_weekly": 0.9898,
+   "unemployment": 0.1024,
+   "ward_no": 111,
+   "water_in_dwelling": 0.9541
+  },
+  {
+   "employment_ratio": 0.6882,
+   "expanded_unemployment": 0.0589,
+   "flush_toilet": 0.9918,
+   "population": 18802,
+   "refuse_weekly": 0.9958,
+   "unemployment": 0.0517,
+   "ward_no": 112,
+   "water_in_dwelling": 0.973
+  },
+  {
+   "employment_ratio": 0.7103,
+   "expanded_unemployment": 0.0768,
+   "flush_toilet": 0.9914,
+   "population": 29338,
+   "refuse_weekly": 0.9896,
+   "unemployment": 0.0658,
+   "ward_no": 113,
+   "water_in_dwelling": 0.9913
+  },
+  {
+   "employment_ratio": 0.4132,
+   "expanded_unemployment": 0.4268,
+   "flush_toilet": 0.8796,
+   "population": 38074,
+   "refuse_weekly": 0.9096,
+   "unemployment": 0.3861,
+   "ward_no": 114,
+   "water_in_dwelling": 0.6436
+  },
+  {
+   "employment_ratio": 0.4886,
+   "expanded_unemployment": 0.1116,
+   "flush_toilet": 0.9835,
+   "population": 28599,
+   "refuse_weekly": 0.9903,
+   "unemployment": 0.0988,
+   "ward_no": 115,
+   "water_in_dwelling": 0.9744
+  },
+  {
+   "employment_ratio": 0.4275,
+   "expanded_unemployment": 0.314,
+   "flush_toilet": 0.9397,
+   "population": 39091,
+   "refuse_weekly": 0.9939,
+   "unemployment": 0.2552,
+   "ward_no": 116,
+   "water_in_dwelling": 0.9541
+  }
+ ],
+ "schema_version": 1,
+ "source_vintage": 2021,
+ "sources": {
+  "profile": {
+   "licence": "Municipal Demarcation Board public data",
+   "notes": "Attributes of the CAT_B='CPT' features (116 wards). Total population 3740028, matching Census 2011's 3740026 for the metro.",
+   "publisher": "Municipal Demarcation Board, from Statistics South Africa's Census 2011",
+   "retrieved_at": "2026-11-17",
+   "title": "Ward Profile 2021 (Census 2011 on the 2021 wards), City of Cape Town",
+   "url": "https://services7.arcgis.com/oeoyTUJC8HEeYsRB/arcgis/rest/services/WardProfile2021_gdb/FeatureServer/0"
+  }
+ },
+ "ward_vintage": 2021
+}

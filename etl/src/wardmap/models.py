@@ -495,7 +495,30 @@ class CrimeEnvelope(EnvelopeBase):
     rows: list[CrimeWardRow]
 
 
+# ---- census -------------------------------------------------------------------------------------
+
+
+class CensusRow(Strict):
+    ward_no: int
+    population: int = Field(description="Census 2011 residents of the ward's area")
+    unemployment: float | None
+    expanded_unemployment: float | None
+    employment_ratio: float | None
+    water_in_dwelling: float | None
+    flush_toilet: float | None
+    refuse_weekly: float | None
+
+
+class CensusEnvelope(EnvelopeBase):
+    dataset: Literal["census"] = "census"
+    census_year: int
+    source_vintage: int = Field(description="Ward set the census counts were published on")
+    citywide: dict[str, float]
+    rows: list[CensusRow]
+
+
 ENVELOPES: dict[str, type[BaseModel]] = {
+    "census": CensusEnvelope,
     "crime": CrimeEnvelope,
     "parties": PartiesEnvelope,
     "donations": DonationsEnvelope,

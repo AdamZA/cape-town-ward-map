@@ -11,6 +11,7 @@ def build_all() -> None:
     from wardmap.datasets import (
         allocations,
         boundaries,
+        census,
         crime,
         donations,
         elections,
@@ -84,6 +85,11 @@ def build_all() -> None:
                 dataset="crime", file=f"crime-{CURRENT_VINTAGE}.json", ward_vintage=CURRENT_VINTAGE
             )
         )
+
+    if census.FILE.exists():
+        for v in (census.SOURCE_VINTAGE, CURRENT_VINTAGE):
+            census.build(v)
+            entries.append(IndexEntry(dataset="census", file=f"census-{v}.json", ward_vintage=v))
 
     if parties.FILE.exists():
         parties.build()
