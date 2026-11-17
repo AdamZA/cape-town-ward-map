@@ -4,14 +4,19 @@ import type { AppData } from "../data";
 import { fmtDate, fmtInt, fmtRandShort } from "../format";
 import { SourceLine } from "../panel/Figure";
 import { PartyProfileView, profileFor } from "./Positions";
+import { LineChart } from "../charts/LineChart";
+import { fmtPct } from "../format";
+import { parseHash, toHash } from "../state";
+import { partyColour } from "./partyColours";
 
 interface Props {
   data: AppData;
   party: string;
+  dark: boolean;
   onClose: () => void;
 }
 
-export function PartyPanel({ data, party, onClose }: Props) {
+export function PartyPanel({ data, party, dark, onClose }: Props) {
   const elections = [...data.elections].sort((a, b) => b.year - a.year);
   const latest = elections[0];
   const nat = latest?.national.find((p) => p.party === party);
@@ -66,6 +71,27 @@ export function PartyPanel({ data, party, onClose }: Props) {
             <SourceLine env={latest} sourceKey="seats" method="elections" />
           </p>
         )}
+        <LineChart
+          title="Share of Cape Town's votes"
+          desc={`${party}'s share of all Cape Town council votes at each local election.`}
+          x={[...elections].reverse().map((e) => String(e.year))}
+          series={[
+            {
+              key: party,
+              label: party,
+              colour: partyColour(party, dark),
+              values: [...elections].reverse().map((e) => e.municipalities.find((x) => x.code === "CPT")?.parties.find((x) => x.party === party)?.share ?? null),
+            },
+          ]}
+          fmt={(v) => fmtPct(v * 100)}
+          tick={(v) => `${Math.round(v * 100)}%`}
+          short
+        />
+        <p>
+          <a href={toHash({ ...parseHash(location.hash), party: null, ward: null, vs: null, metric: "party_share", vote: party })}>
+            Show this party's support on the map, ward by ward
+          </a>
+        </p>
       </section>
 
       {data.parties && profileFor(data.parties, party) && (

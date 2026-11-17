@@ -376,7 +376,7 @@ function Main({ data }: { data: AppData }) {
           ) : panel === "trends" ? (
             <TrendsPanel data={data} terms={allTerms} ward={term.current ? state.ward : null} dark={dark} onClose={() => update({ trends: false })} />
           ) : panel === "party" ? (
-            <PartyPanel data={data} party={state.party!} onClose={() => update({ party: null })} />
+            <PartyPanel data={data} party={state.party!} dark={dark} onClose={() => update({ party: null })} />
           ) : panel === "vs" ? (
             <WardCompare
               data={data}
