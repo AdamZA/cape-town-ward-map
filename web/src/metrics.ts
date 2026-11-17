@@ -15,6 +15,7 @@ export type MetricKey =
   | "water_days"
   | "power_days"
   | "turnout"
+  | "turnout_change"
   | "winner_party"
   | "winner_share"
   | "margin"
@@ -196,6 +197,31 @@ const DEFS: Record<MetricKey, Def> = {
     build: (d, t) => {
       const e = termElectionWards(d, t);
       return e && { env: e, field: "turnout", values: new Map(e.rows.map((r) => [r.ward_no, r.turnout])), city: null };
+    },
+  },
+  turnout_change: {
+    topic: "Elections",
+    kind: "diverging",
+    noTable: true,
+    unit: "points",
+    reading: "",
+    build: (d, t) => {
+      const e = termElectionWards(d, t);
+      const prevYear = e?.rows.find((r) => r.previous?.turnout != null)?.previous?.year;
+      if (!e || !prevYear) return null;
+      return {
+        env: e,
+        field: "turnout",
+        label: `Turnout change since ${prevYear}`,
+        reading: `Change in ward-ballot turnout between ${prevYear} and ${t.year}, in percentage points, over the same voting districts. Left out where under 80% of the ward's voters can be traced back.`,
+        values: new Map(
+          e.rows.map((r) => [
+            r.ward_no,
+            r.previous?.turnout != null && r.previous.coverage >= MIN_PREVIOUS_COVERAGE ? Math.round((r.turnout - r.previous.turnout) * 1000) / 10 : null,
+          ]),
+        ),
+        city: null,
+      };
     },
   },
   winner_party: {

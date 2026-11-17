@@ -1,10 +1,10 @@
 {
   "licence": "Electoral Commission of South Africa (copyright notice: reproduction for non-commercial use; https://www.elections.org.za/pw/Copyright-Notice)",
   "method": "aggregated",
-  "notes": "2021 PR-ballot votes per voting district (IEC WP.csv), summed over the voting districts in each 2026 ward (IEC WP.csv for 2026). coverage = share of the ward's 2026 registered voters in voting districts that existed in 2021.",
+  "notes": "2021 PR-ballot votes, and ward-ballot registered voters and ballots cast (registered, ballots), per voting district (IEC WP.csv), summed over the voting districts in each 2026 ward (IEC WP.csv for 2026). coverage = share of the ward's 2026 registered voters in voting districts that existed in 2021.",
   "publisher": "Electoral Commission of South Africa (IEC)",
-  "retrieved_at": "2026-11-16",
-  "sha256": "3208563a127b3085dd5918701f72a1ce2005c84a29ccbad48710d81f6b3cc062",
+  "retrieved_at": "2026-11-17",
+  "sha256": "7eaffd2306ddbd1b002ba38c1822a25ee5be1eee363aa8bbcf911b3857460b66",
   "title": "Local Government Elections 2021: PR ballot on the 2026 wards",
   "url": "https://results.elections.org.za/home/Downloads/ME-Results/"
 }

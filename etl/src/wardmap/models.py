@@ -330,6 +330,10 @@ class PreviousResult(Strict):
         description="Share of this ward's registered voters in voting districts that existed then"
     )
     parties: list[PartyResult] = Field(description="PR ballot shares on this ward's area")
+    turnout: float | None = Field(
+        None,
+        description="Ward-ballot turnout then, over the voting districts that existed then",
+    )
 
 
 class WardElectionRow(Strict):

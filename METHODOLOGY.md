@@ -212,7 +212,8 @@ nothing is estimated.
   but voting districts mostly keep their numbers, so we add up the previous election's votes in
   the voting districts that make up today's ward. Where those districts hold less than 95% of
   today's voters the site says so, and below 80% it shows no comparison.
-- **Turnout** is ballots cast, including spoilt ones, as a share of registered voters.
+- **Turnout** is ballots cast, including spoilt ones, as a share of registered voters. **Turnout
+  change** compares the ward ballot then and now over the same voting districts, the same way.
 - **Earlier ward boundaries.** An election is fought on the wards of its time. When the map shows
   newer wards, a ward's result is that of the old ward covering most of it, and the site says so.
 - **Party maps** show one party's share of each ward's party-list (PR) vote, or its change since

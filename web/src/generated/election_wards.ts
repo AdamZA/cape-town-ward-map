@@ -97,6 +97,10 @@ export interface PreviousResult {
    * PR ballot shares on this ward's area
    */
   parties: PartyResult[];
+  /**
+   * Ward-ballot turnout then, over the voting districts that existed then
+   */
+  turnout: number | null;
   year: number;
 }
 export interface Source {

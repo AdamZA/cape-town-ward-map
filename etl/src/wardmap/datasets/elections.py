@@ -228,10 +228,19 @@ def pin_previous(year: int, code: str = "CPT", prov: str = "WP") -> None:
     old = pd.read_csv(
         old_path,
         encoding=_encoding(old_path),
-        usecols=[*cols[:5], "PartyName", "TotalValidVotes"],
+        usecols=[*cols[:5], "SpoiltVotes", "PartyName", "TotalValidVotes"],
     )
     now = now[now["Municipality"].str.startswith(f"{code} ") & (now["BallotType"] == "PR")]
-    old = old[old["Municipality"].str.startswith(f"{code} ") & (old["BallotType"] == "PR")]
+    old = old[old["Municipality"].str.startswith(f"{code} ")]
+    # Ward-ballot turnout then, per voting district: registered voters and spoilt ballots repeat
+    # on every party row, valid votes are summed.
+    old_ward = old[old["BallotType"] == "Ward"]
+    old_vd = old_ward.groupby("VotingDistrict").agg(
+        registered=("RegisteredVoters", "first"),
+        spoilt=("SpoiltVotes", "first"),
+        valid=("TotalValidVotes", "sum"),
+    )
+    old = old[old["BallotType"] == "PR"]
     vds = now.drop_duplicates("VotingDistrict")[["Ward", "VotingDistrict", "RegisteredVoters"]]
     vds = vds.assign(ward=vds["Ward"].str.extract(r"(\d+)$", expand=False).str[-3:].astype(int))
     known = set(old["VotingDistrict"])
@@ -246,6 +255,12 @@ def pin_previous(year: int, code: str = "CPT", prov: str = "WP") -> None:
     out = votes.groupby(["ward", "PartyName"], as_index=False)["TotalValidVotes"].sum()
     out = out.rename(columns={"PartyName": "party", "TotalValidVotes": "votes"})
     out = out[out["votes"] > 0].assign(coverage=lambda d: d["ward"].map(cov).round(4))
+    t = old_vd.merge(vds[["VotingDistrict", "ward"]], left_index=True, right_on="VotingDistrict")
+    t = t.groupby("ward")[["registered", "spoilt", "valid"]].sum()
+    out = out.assign(
+        registered=out["ward"].map(t["registered"]).fillna(0).astype(int),
+        ballots=out["ward"].map(t["spoilt"] + t["valid"]).fillna(0).astype(int),
+    )
     out = out.sort_values(["ward", "party"])
     path = _previous_file(year, code)
     path.write_text(out.to_csv(index=False, lineterminator="\n"), encoding="utf-8", newline="\n")
@@ -258,7 +273,8 @@ def pin_previous(year: int, code: str = "CPT", prov: str = "WP") -> None:
             retrieved_at=today(),
             licence=IEC_LICENCE,
             method="aggregated",
-            notes=f"{prev} PR-ballot votes per voting district (IEC {prov}.csv), summed over the "
+            notes=f"{prev} PR-ballot votes, and ward-ballot registered voters and ballots cast "
+            f"(registered, ballots), per voting district (IEC {prov}.csv), summed over the "
             f"voting districts in each {year} ward (IEC {prov}.csv for {year}). coverage = share "
             f"of the ward's {year} registered voters in voting districts that existed in {prev}.",
         ),
@@ -537,9 +553,11 @@ def _previous_row(prev, prev_year, ward_no: int, shares) -> PreviousResult | Non
     g = prev[prev["ward"] == ward_no]
     if g.empty:
         return None
+    reg = int(g["registered"].iloc[0]) if "registered" in g else 0
     return PreviousResult(
         year=prev_year,
         coverage=float(g["coverage"].iloc[0]),
+        turnout=round(int(g["ballots"].iloc[0]) / reg, 4) if reg else None,
         parties=shares(g.groupby("party")["votes"].sum()),
     )
 

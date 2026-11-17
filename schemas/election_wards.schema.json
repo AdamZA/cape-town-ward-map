@@ -167,6 +167,19 @@
           "title": "Parties",
           "type": "array"
         },
+        "turnout": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Ward-ballot turnout then, over the voting districts that existed then",
+          "title": "Turnout"
+        },
         "year": {
           "title": "Year",
           "type": "integer"
@@ -175,7 +188,8 @@
       "required": [
         "year",
         "coverage",
-        "parties"
+        "parties",
+        "turnout"
       ],
       "title": "PreviousResult",
       "type": "object"
