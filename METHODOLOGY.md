@@ -307,6 +307,13 @@ For a ward, each election is shown for the ward of the time that covered most of
 and the share it covered is stated. Where that share is small, the earlier figures describe a
 partly different area.
 
+## Comparing wards
+
+Any two of today's wards can be put side by side, with the median ward (or the city as a whole,
+for party votes) for reference. Each figure is the same one shown in the ward panel. "Above 80 of
+117" means the ward's figure is higher than 80 of the other wards that have one; it says nothing
+about whether higher is better.
+
 ## Comparing terms
 
 "Compare terms" puts council terms side by side. Each column only uses figures that exist for
@@ -314,7 +321,8 @@ that term: the election that started it, crime for the financial years ending du
 (April to March, counted in the term in which they end), and ward budgets published on its
 wards. A ward is traced back through boundary changes to the old ward covering most of it, and
 crime uses its main police precinct, whose figures don't depend on ward boundaries. Averages
-are per year, so terms of different lengths compare fairly.
+are per year, so terms of different lengths compare fairly. The change column runs from the first
+term ticked to the last.
 
 ## Ward allocations
 

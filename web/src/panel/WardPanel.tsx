@@ -16,10 +16,11 @@ interface Props {
   ward: number;
   layers: string[];
   onShowLayer: (category: string) => void;
+  onCompare: () => void;
   onClose: () => void;
 }
 
-export function WardPanel({ data, metrics, ward, layers, onShowLayer, onClose }: Props) {
+export function WardPanel({ data, metrics, ward, layers, onShowLayer, onCompare, onClose }: Props) {
   const w = data.wards.rows.find((r) => r.ward_no === ward);
   const sr = data.serviceRequests;
   const s = sr.rows.find((r) => r.ward_no === ward);
@@ -46,6 +47,9 @@ export function WardPanel({ data, metrics, ward, layers, onShowLayer, onClose }:
               </>
             )}
           </p>
+          <button type="button" class="btn btn-small" onClick={onCompare}>
+            Compare with another ward
+          </button>
         </div>
         <button type="button" class="icon-btn" onClick={onClose} aria-label="Close ward details">
           ×

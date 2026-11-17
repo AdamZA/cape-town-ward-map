@@ -20,6 +20,8 @@ export interface AppState {
   vote: string | null;
   /** Trends panel open (#trends=1). */
   trends: boolean;
+  /** Ward compared with the open ward (#vs=12); 0 while one is being chosen, null = not comparing. */
+  vs: number | null;
 }
 
 export function parseHash(hash: string): AppState {
@@ -36,6 +38,7 @@ export function parseHash(hash: string): AppState {
     compare: (p.get("compare") ?? "").split(",").filter((x) => /^\d{4}$/.test(x)).map(Number),
     vote: p.get("vote")?.slice(0, 120) || null,
     trends: p.get("trends") === "1",
+    vs: /^\d{1,3}$/.test(p.get("vs") ?? "") ? Number(p.get("vs")) : null,
   };
 }
 
@@ -50,6 +53,7 @@ export function toHash(s: AppState): string {
   if (s.compare.length) p.set("compare", s.compare.join(","));
   if (s.vote) p.set("vote", s.vote);
   if (s.trends) p.set("trends", "1");
+  if (s.vs != null && s.ward) p.set("vs", String(s.vs));
   const str = p.toString();
   return str ? `#${str}` : "#";
 }

@@ -8,6 +8,7 @@ import type { Term } from "../metrics";
 import { predecessors } from "../panel/Allocations";
 import { partyHref } from "../state";
 import { councilAfter } from "./Timeline";
+import { partyColour } from "./partyColours";
 
 /** Financial years (April to March) are counted in the term during which they end. */
 export function yearsInTerm(years: string[], t: Term): string[] {
@@ -29,9 +30,11 @@ interface Row {
 }
 
 function Table({ title, terms, rows, foot }: { title: string; terms: Term[]; rows: Row[]; foot?: ComponentChildren }) {
-  const showDiff = terms.length === 2;
+  // Change from the first selected term to the last.
+  const showDiff = terms.length >= 2;
   const change = (r: Row) => {
-    const [a, b] = r.values;
+    const a = r.values[0];
+    const b = r.values[r.values.length - 1];
     if (!showDiff || a == null || b == null || !r.diff) return "";
     if (r.diff === "points") {
       const d = Math.round((b - a) * 1000) / 10;
@@ -54,12 +57,12 @@ function Table({ title, terms, rows, foot }: { title: string; terms: Term[]; row
             <tr>
               <th scope="col" />
               {terms.map((t) => (
-                <th key={t.year} scope="col" class="num">
-                  {t.label}
+                <th key={t.year} scope="col" class="num" title={`${t.label} term`}>
+                  {t.year}
                 </th>
               ))}
               {showDiff && (
-                <th scope="col" class="num">
+                <th scope="col" class="num" title={`From ${terms[0]!.year} to ${terms[terms.length - 1]!.year}`}>
                   Change
                 </th>
               )}
@@ -90,11 +93,12 @@ interface Props {
   terms: Term[];
   selected: number[];
   ward: number | null;
+  dark: boolean;
   onSelect: (years: number[]) => void;
   onClose: () => void;
 }
 
-export function ComparePanel({ data, terms, selected, ward, onSelect, onClose }: Props) {
+export function ComparePanel({ data, terms, selected, ward, dark, onSelect, onClose }: Props) {
   const chosen = terms.filter((t) => selected.includes(t.year));
   const toggle = (y: number) =>
     onSelect(selected.includes(y) ? selected.filter((x) => x !== y) : [...selected, y].sort((a, b) => a - b));
@@ -107,6 +111,10 @@ export function ComparePanel({ data, terms, selected, ward, onSelect, onClose }:
   function seatsOf(party: string) {
     return councils.map((m) => m?.parties.find((p) => p.party === party)?.seats ?? 0);
   }
+
+  const winParties = [
+    ...new Set(chosen.flatMap((t) => data.electionWards.find((e) => e.year === t.year)?.rows.map((r) => r.winner) ?? [])),
+  ];
 
   const crime = data.crime;
   const crimeRows: Row[] = crime
@@ -162,7 +170,7 @@ export function ComparePanel({ data, terms, selected, ward, onSelect, onClose }:
       </header>
 
       <fieldset class="compare-pick">
-        <legend>Terms to compare</legend>
+        <legend>Terms to compare (named by the election that started each)</legend>
         {terms.map((t) => (
           <label key={t.year}>
             <input type="checkbox" checked={selected.includes(t.year)} onChange={() => toggle(t.year)} /> {t.label}
@@ -170,6 +178,12 @@ export function ComparePanel({ data, terms, selected, ward, onSelect, onClose }:
         ))}
       </fieldset>
 
+      {chosen.length >= 2 && (
+        <p class="lede">
+          "Change" runs from the first term ticked ({chosen[0]!.year}) to the last ({chosen[chosen.length - 1]!.year}). For every
+          term at once as a chart, open Trends.
+        </p>
+      )}
       {chosen.length === 0 ? (
         <p class="lede">Select at least one term.</p>
       ) : (
@@ -192,9 +206,12 @@ export function ComparePanel({ data, terms, selected, ward, onSelect, onClose }:
               },
               ...parties.slice(0, 10).map((p) => ({
                 label: (
-                  <a class="party-link" href={partyHref(p)}>
-                    {p}
-                  </a>
+                  <span class="party-key">
+                    <span class="chart-key" style={{ background: partyColour(p, dark) }} />
+                    <a class="party-link" href={partyHref(p)}>
+                      {p}
+                    </a>
+                  </span>
                 ),
                 values: councils.map((m) => (m ? (m.parties.find((x) => x.party === p)?.seats ?? 0) : null)),
                 fmt: fmtInt,
@@ -202,6 +219,26 @@ export function ComparePanel({ data, terms, selected, ward, onSelect, onClose }:
               })),
             ]}
             foot="Seats as allocated after each election, which starts the term."
+          />
+
+          <Table
+            title="Ward seats won"
+            terms={chosen}
+            rows={winParties.map((p) => ({
+              label: (
+                <span class="party-key">
+                  <span class="chart-key" style={{ background: partyColour(p, dark) }} />
+                  {p}
+                </span>
+              ),
+              values: chosen.map((t) => {
+                const env = data.electionWards.find((e) => e.year === t.year);
+                return env ? env.rows.filter((r) => r.winner === p).length : null;
+              }),
+              fmt: fmtInt,
+              diff: "count" as const,
+            }))}
+            foot={`Wards per term: ${chosen.map((t) => `${t.year} ${data.electionWards.find((e) => e.year === t.year)?.rows.length ?? "–"}`).join(", ")}.`}
           />
 
           {crime && (

@@ -56,15 +56,15 @@ describe("format", () => {
 describe("hash state", () => {
   it("round-trips", () => {
     const s = parseHash("#ward=57&metric=median_days");
-    expect(s).toEqual({ ward: 57, metric: "median_days", city: false, layers: [], term: null, party: null, compare: [], vote: null, trends: false });
+    expect(s).toEqual({ ward: 57, metric: "median_days", city: false, layers: [], term: null, party: null, compare: [], vote: null, trends: false, vs: null });
     expect(parseHash(toHash(s))).toEqual(s);
   });
   it("ignores junk", () => {
-    expect(parseHash("#ward=abc&metric=nope")).toEqual({ ward: null, metric: "pct_closed_30d", city: false, layers: [], term: null, party: null, compare: [], vote: null, trends: false });
+    expect(parseHash("#ward=abc&metric=nope")).toEqual({ ward: null, metric: "pct_closed_30d", city: false, layers: [], term: null, party: null, compare: [], vote: null, trends: false, vs: null });
   });
   it("keeps the city overview only when no ward is open", () => {
-    expect(parseHash(toHash({ ward: null, metric: "water_days", city: true, layers: [], term: null, party: null, compare: [], vote: null, trends: false }))).toEqual({ ward: null, metric: "water_days", city: true, layers: [], term: null, party: null, compare: [], vote: null, trends: false });
-    expect(toHash({ ward: 3, metric: "pct_closed_30d", city: true, layers: [], term: null, party: null, compare: [], vote: null, trends: false })).toBe("#ward=3");
+    expect(parseHash(toHash({ ward: null, metric: "water_days", city: true, layers: [], term: null, party: null, compare: [], vote: null, trends: false, vs: null }))).toEqual({ ward: null, metric: "water_days", city: true, layers: [], term: null, party: null, compare: [], vote: null, trends: false, vs: null });
+    expect(toHash({ ward: 3, metric: "pct_closed_30d", city: true, layers: [], term: null, party: null, compare: [], vote: null, trends: false, vs: null })).toBe("#ward=3");
   });
   it("keeps the council term", () => {
     expect(parseHash("#term=2021&ward=4")).toMatchObject({ term: 2021, ward: 4 });

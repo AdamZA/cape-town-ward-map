@@ -400,7 +400,10 @@ export class WardMap {
   }
 
   fit(b: BBox) {
-    this.map.fitBounds([b[0], b[1], b[2], b[3]], { padding: 60, maxZoom: 14 });
+    // On wide screens the controls card covers the map's top-left: keep fitted wards clear of it.
+    const wide = this.map.getContainer().clientWidth >= 800;
+    const padding = wide ? { top: 60, bottom: 60, right: 60, left: 300 } : 60;
+    this.map.fitBounds([b[0], b[1], b[2], b[3]], { padding, maxZoom: 14 });
   }
 
   showCity() {

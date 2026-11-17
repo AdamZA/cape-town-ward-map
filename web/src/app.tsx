@@ -17,9 +17,10 @@ import { TrendsPanel } from "./elections/Trends";
 import { CityOverview } from "./panel/CityOverview";
 import { PastWardPanel } from "./panel/PastWardPanel";
 import { SourceLine } from "./panel/Figure";
+import { WardCompare } from "./panel/WardCompare";
 import { WardPanel } from "./panel/WardPanel";
 import { PlaceResult, Search } from "./search/Search";
-import { useHashState, usePreference } from "./state";
+import { parseHash, useHashState, usePreference } from "./state";
 import { THEMES, type ThemeChoice, useTheme } from "./theme";
 
 export function App() {
@@ -71,7 +72,19 @@ function Main({ data }: { data: AppData }) {
     if (cat) return `${cat}${v != null ? ` (${fmt(v)})` : ""}`;
     return v != null ? fmt(v) : metric.nullLabel;
   };
-  const panel = state.compare.length ? "compare" : state.trends ? "trends" : state.party ? "party" : state.ward ? "ward" : state.city ? "city" : null;
+  const panel = state.compare.length
+    ? "compare"
+    : state.trends
+      ? "trends"
+      : state.party
+        ? "party"
+        : state.ward && state.vs != null && term.current
+          ? "vs"
+          : state.ward
+            ? "ward"
+            : state.city
+              ? "city"
+              : null;
 
   useEffect(() => {
     let cancelled = false;
@@ -82,7 +95,12 @@ function Main({ data }: { data: AppData }) {
         data.boundaries,
         style,
         {
-          onClick: (ward) => update({ ward, city: false, party: null }),
+          onClick: (ward) => {
+            // While comparing two wards, a click picks the second ward.
+            const s = parseHash(location.hash);
+            if (s.vs != null && s.ward && ward && ward !== s.ward && !s.compare.length && !s.trends && !s.party) update({ vs: ward });
+            else update({ ward, city: false, party: null, vs: null });
+          },
           onHover: (ward, p) => setHover(ward && p ? { ward, ...p } : null),
         },
         dark,
@@ -128,21 +146,25 @@ function Main({ data }: { data: AppData }) {
   }, [layerKey, mapReady]);
 
   useEffect(() => {
-    map.current?.setSelected(state.ward, true);
-  }, [state.ward, mapReady]);
+    map.current?.setSelected(state.ward, !state.vs);
+    // After the panel has opened and the map has resized.
+    if (state.ward && state.vs) requestAnimationFrame(() => requestAnimationFrame(() => map.current?.fitWards([state.ward!, state.vs!])));
+  }, [state.ward, state.vs, mapReady]);
 
   useEffect(() => {
-    map.current?.setCandidates(place && place.wards.length > 1 ? place.wards.map((w) => w.ward_no) : []);
-  }, [place, mapReady]);
+    map.current?.setCandidates(
+      panel === "vs" && state.vs ? [state.vs] : place && place.wards.length > 1 ? place.wards.map((w) => w.ward_no) : [],
+    );
+  }, [place, mapReady, panel, state.vs]);
 
   useEffect(() => {
     // Opening or closing the panel changes the map's size on wide screens.
     requestAnimationFrame(() => map.current?.resize());
   }, [panel]);
 
-  const openWard = (ward: number) => update({ ward, city: false, party: null });
+  const openWard = (ward: number) => update({ ward, city: false, party: null, vs: null });
   /** Search, location and place pins work on today's wards: switch to the current term. */
-  const openCurrentWard = (ward: number) => update({ ward, city: false, term: null, party: null });
+  const openCurrentWard = (ward: number) => update({ ward, city: false, term: null, party: null, vs: null });
   const chooseTerm = (t: Term) => {
     setPlace(null);
     update({ term: t.current ? null : t.year, ward: null });
@@ -316,6 +338,7 @@ function Main({ data }: { data: AppData }) {
               terms={allTerms}
               selected={state.compare}
               ward={term.current ? state.ward : null}
+              dark={dark}
               onSelect={(years) => update({ compare: years.length ? years : [] })}
               onClose={() => update({ compare: [] })}
             />
@@ -323,6 +346,18 @@ function Main({ data }: { data: AppData }) {
             <TrendsPanel data={data} terms={allTerms} ward={term.current ? state.ward : null} dark={dark} onClose={() => update({ trends: false })} />
           ) : panel === "party" ? (
             <PartyPanel data={data} party={state.party!} onClose={() => update({ party: null })} />
+          ) : panel === "vs" ? (
+            <WardCompare
+              data={data}
+              metrics={metrics}
+              term={term}
+              ward={state.ward!}
+              other={state.vs ?? 0}
+              dark={dark}
+              onOther={(vs) => update({ vs })}
+              onSwap={() => update({ ward: state.vs, vs: state.ward })}
+              onClose={() => update({ vs: null })}
+            />
           ) : panel === "ward" && !term.current ? (
             <PastWardPanel data={data} term={term} ward={state.ward!} onCurrentWard={openCurrentWard} onClose={() => update({ ward: null })} />
           ) : panel === "ward" ? (
@@ -332,6 +367,7 @@ function Main({ data }: { data: AppData }) {
               ward={state.ward!}
               layers={state.layers}
               onShowLayer={(c) => update({ layers: [...state.layers, c] })}
+              onCompare={() => update({ vs: 0 })}
               onClose={() => update({ ward: null })}
             />
           ) : (
