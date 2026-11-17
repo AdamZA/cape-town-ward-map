@@ -13,20 +13,23 @@ service. The layer's description text still says "2016 wards", but every feature
 one with the Municipal Demarcation Board's 2026 ward layer; the lowest per-ward
 intersection-over-union was 0.975.
 
-Older datasets use the **2021 delimitation (116 wards)**, taken from the Municipal Demarcation
-Board. Ward numbers do not mean the same place across the two.
+Earlier terms use earlier delimitations, all from the Municipal Demarcation Board: **2021 (116
+wards)**, **2016 (116 wards)** and **2011 (111 wards)**. Ward numbers do not mean the same place
+across delimitations.
 
 ## Crosswalk
 
-To relate 2021 wards to 2026 wards we overlay the two boundary sets and record, for each pair
-that overlaps, the share of each ward's area in the overlap. The crosswalk is used to:
+To relate older wards (2011, 2016, 2021) to 2026 wards we overlay each older boundary set with
+the 2026 one and record, for each pair that overlaps, the share of each ward's area in the
+overlap. The crosswalk is used to:
 
 - list the budget projects of the older wards that overlap a current ward (projects are never
   split or reassigned);
 - infer subcouncils (see below).
 
-The 2021 and 2026 boundaries come from different publishers and differ slightly at the edge of the
-metro. Where more than 2% of a 2026 ward lies outside every 2021 ward, this is recorded as a gap.
+The older and 2026 boundaries come from different publishers and differ slightly at the edge of
+the metro. Where more than 2% of a 2026 ward lies outside every older ward, this is recorded as
+a gap.
 
 ## Subcouncil
 
@@ -212,6 +215,15 @@ nothing is estimated.
 - **Turnout** is ballots cast, including spoilt ones, as a share of registered voters.
 - **Earlier ward boundaries.** An election is fought on the wards of its time. When the map shows
   newer wards, a ward's result is that of the old ward covering most of it, and the site says so.
+- **Party maps** show one party's share of each ward's party-list (PR) vote, or its change since
+  the last election. Each ward lists every party with at least 0.5% of its vote (and at least the
+  top eight); a party below that in a ward is counted as 0 there.
+- **Older elections (2011 and 2016)** come from the same IEC files. The 2011 files are in a
+  different text encoding, a few older seat sheets write numbers as text ("28,115"), and the
+  Democratic Alliance was registered as "Democratic Alliance/Demokratiese Alliansie" in 2011;
+  all three are handled when the files are read. The 2011 and 2016 ward boundaries are the
+  Municipal Demarcation Board's. Its 2011 layer lists every Cape Town ward twice with identical
+  shapes, and the copies are dropped.
 - **The national table** covers all metro and local councils. District councils are left out
   because they overlap the local councils.
 
@@ -285,6 +297,16 @@ same population grid as the population estimates, and publish only that table.
   Drug-related crime mostly measures police activity. SAPS revises figures in later releases.
 - Year-on-year percentage changes are left out where the earlier year had fewer than 10 crimes.
 
+## Trends
+
+The trends view draws each figure over every election (2011 to 2026) or financial year. Charts
+show one measure each, on one scale; crime categories get a chart each because their sizes
+differ so much. Every chart can be switched to a table of the same numbers.
+
+For a ward, each election is shown for the ward of the time that covered most of today's ward,
+and the share it covered is stated. Where that share is small, the earlier figures describe a
+partly different area.
+
 ## Comparing terms
 
 "Compare terms" puts council terms side by side. Each column only uses figures that exist for
@@ -310,9 +332,23 @@ ward.
 
 ## Colour
 
-Wards are coloured on a single-hue scale in five quantile classes: darker means a higher value,
-with no colour meaning "good" or "bad". The scale is checked for colour-blind legibility and
-contrast. Grey means there is not enough data.
+No colour on the map means "good" or "bad". There are three kinds of map colouring:
+
+- **Amounts** (most figures) use a single colour in five classes, each holding about a fifth of
+  the wards. A stronger colour means a higher value. In the light theme that's darker; in the
+  dark theme it's brighter, so low values fade into the background in both.
+- **Changes** (such as a party's change in support since the last election) use two colours
+  around a grey middle. The grey covers the smallest third of changes either way, so "little
+  change" is never coloured as a gain or a loss. The two strongest steps hold the largest third.
+- **Parties** (the winning party) get one fixed colour each, in every map and chart. Where
+  possible it's close to the party's own colour (DA blue, ANC gold, EFF red, PA green); other
+  parties share one grey. The party's name is always shown beside its colour.
+
+Wards with no figure are left almost clear, with a hatched key in the legend.
+
+You can pick the map colour (blue, green, purple, orange or grey) and a light or dark theme;
+the choice is kept in your browser and isn't part of shared links. Every colour set was checked
+with a colour-vision-deficiency simulation and against the map background in each theme.
 
 ## Provenance
 

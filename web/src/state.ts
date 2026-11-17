@@ -16,6 +16,10 @@ export interface AppState {
   party: string | null;
   /** Terms being compared, by election year (#compare=2021,2026); empty = not comparing. */
   compare: number[];
+  /** Party shown by the party maps (#vote=GOOD); null = the largest party. */
+  vote: string | null;
+  /** Trends panel open (#trends=1). */
+  trends: boolean;
 }
 
 export function parseHash(hash: string): AppState {
@@ -30,6 +34,8 @@ export function parseHash(hash: string): AppState {
     term: /^\d{4}$/.test(p.get("term") ?? "") ? Number(p.get("term")) : null,
     party: p.get("party")?.slice(0, 120) || null,
     compare: (p.get("compare") ?? "").split(",").filter((x) => /^\d{4}$/.test(x)).map(Number),
+    vote: p.get("vote")?.slice(0, 120) || null,
+    trends: p.get("trends") === "1",
   };
 }
 
@@ -42,6 +48,8 @@ export function toHash(s: AppState): string {
   if (s.term) p.set("term", String(s.term));
   if (s.party) p.set("party", s.party);
   if (s.compare.length) p.set("compare", s.compare.join(","));
+  if (s.vote) p.set("vote", s.vote);
+  if (s.trends) p.set("trends", "1");
   const str = p.toString();
   return str ? `#${str}` : "#";
 }
@@ -58,6 +66,27 @@ export function useHashState(): [AppState, (patch: Partial<AppState>) => void] {
     if (toHash(next) !== (location.hash || "#")) location.hash = toHash(next);
   };
   return [state, update];
+}
+
+/** A viewer preference kept in this browser only (never in shared links). */
+export function usePreference<T extends string>(key: string, fallback: T, valid: (v: string) => v is T): [T, (v: T) => void] {
+  const [value, setValue] = useState<T>(() => {
+    try {
+      const v = localStorage.getItem(key);
+      return v && valid(v) ? v : fallback;
+    } catch {
+      return fallback;
+    }
+  });
+  const set = (v: T) => {
+    setValue(v);
+    try {
+      localStorage.setItem(key, v);
+    } catch {
+      // storage blocked: the choice lasts for this visit only
+    }
+  };
+  return [value, set];
 }
 
 /** Link that opens a party's panel, keeping the rest of the current view. */

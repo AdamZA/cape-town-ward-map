@@ -42,7 +42,7 @@ export function CityOverview({ data, metrics, metric, term, onWard, onClose }: P
   const columns: { key: SortKey; label: string; fmt: (v: number) => string }[] = [
     { key: "ward", label: "Ward", fmt: String },
     ...(term.current ? [{ key: "population" as SortKey, label: "People (est.)", fmt: fmtInt }] : []),
-    ...METRIC_KEYS.filter((k) => k !== "pct_located" && metrics[k]).map((k) => {
+    ...METRIC_KEYS.filter((k) => k !== "pct_located" && metrics[k]?.inTable).map((k) => {
       const m = metrics[k]!;
       return { key: k as SortKey, label: m.label, fmt: (v: number) => fmtUnit(v, m.unit) };
     }),

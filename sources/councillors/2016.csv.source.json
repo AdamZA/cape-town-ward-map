@@ -1,0 +1,10 @@
+{
+  "licence": "Electoral Commission of South Africa (copyright notice: reproduction for non-commercial use; https://www.elections.org.za/pw/Copyright-Notice)",
+  "method": "aggregated",
+  "notes": "Winning ward candidate per ward, from the dashboard data file https://results.elections.org.za/dashboards/lge/MapsJason/2016/EEID402Munic9006.js (sha256 2681825bad898302e65c0ac506c1603136b7e2b749b9b314ac4b466701dda429). Names title-cased from the IEC's capitals. As elected; by-elections since are not reflected.",
+  "publisher": "Electoral Commission of South Africa (IEC)",
+  "retrieved_at": "2026-11-17",
+  "sha256": "b89ecc44adc1ec71745e5be9fbc6b44263b0ad4e14224959d21170260bb6cd93",
+  "title": "Local Government Elections 2016: elected ward councillors",
+  "url": "https://results.elections.org.za/dashboards/lge/LGEResultsDashboard.aspx"
+}

@@ -14,7 +14,7 @@ const pct = (s: number) => fmtPct(s * 100);
 /** The newest ward-ballot results that can be tied to this ward (directly or via an old ward). */
 export function wardResult(data: AppData, ward: number) {
   for (const env of data.electionWards) {
-    const [main] = predecessors(ward, data.wards.ward_vintage, env, data.crosswalk);
+    const [main] = predecessors(ward, data.wards.ward_vintage, env, data.crosswalks);
     const row = main && env.rows.find((r) => r.ward_no === main.ward);
     if (row && main) return { env, row, oldWard: env.ward_vintage === data.wards.ward_vintage ? null : main };
   }

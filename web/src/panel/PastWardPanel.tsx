@@ -16,9 +16,9 @@ interface Props {
 export function PastWardPanel({ data, term, ward, onCurrentWard, onClose }: Props) {
   const row = data.electionWards.find((e) => e.year === term.year)?.rows.find((r) => r.ward_no === ward);
   const budgets = data.allocations.filter((b) => b.ward_vintage === term.vintage);
-  const cw = data.crosswalk;
+  const cw = data.crosswalks.find((c) => c.from_vintage === term.vintage);
   const today =
-    cw && cw.from_vintage === term.vintage
+    cw
       ? cw.rows.filter((r) => r.from_ward === ward && r.share_of_from >= 0.02).sort((a, b) => b.share_of_from - a.share_of_from)
       : [];
 
@@ -69,7 +69,7 @@ export function PastWardPanel({ data, term, ward, onCurrentWard, onClose }: Prop
       <WardElection data={data} ward={ward} year={term.year} />
 
       {budgets.map((budget) => (
-        <Allocations key={budget.budget_year} ward={ward} wardVintage={term.vintage} budget={budget} crosswalk={cw} />
+        <Allocations key={budget.budget_year} ward={ward} wardVintage={term.vintage} budget={budget} crosswalk={data.crosswalks} />
       ))}
     </article>
   );

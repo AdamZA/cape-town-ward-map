@@ -32,7 +32,8 @@ export interface AppData {
   elections: ElectionsEnvelope[];
   /** Newest first. Cape Town ward-ballot results (each on its own ward vintage). */
   electionWards: ElectionWardsEnvelope[];
-  crosswalk: CrosswalkEnvelope | null;
+  /** Older ward sets -> today's wards, one per older vintage. */
+  crosswalks: CrosswalkEnvelope[];
   /** Party funding declarations (national), when published. */
   donations: DonationsEnvelope | null;
   /** Party profiles (stated priorities and positions), when published. */
@@ -59,12 +60,11 @@ export async function loadAll(): Promise<AppData> {
     return e.file;
   };
   const allocationFiles = index.datasets.filter((d) => d.dataset === "allocations");
-  const crosswalkEntry = index.datasets.find((d) => d.dataset === "crosswalk");
   const all = (dataset: string) => index.datasets.filter((d) => d.dataset === dataset);
   const donationsEntry = index.datasets.find((d) => d.dataset === "donations");
   const partiesEntry = index.datasets.find((d) => d.dataset === "parties");
   const crimeEntry = index.datasets.find((d) => d.dataset === "crime" && d.ward_vintage === vintage);
-  const [boundaries, wards, serviceRequests, outages, places, landmarks, landUse, allocations, elections, electionWards, crosswalk, donations, parties, crime] = await Promise.all([
+  const [boundaries, wards, serviceRequests, outages, places, landmarks, landUse, allocations, elections, electionWards, crosswalks, donations, parties, crime] = await Promise.all([
     get<WardFeatures>(boundary!.file),
     get<WardsEnvelope>(one("wards")),
     get<ServiceRequestsEnvelope>(one("service_requests")),
@@ -75,7 +75,7 @@ export async function loadAll(): Promise<AppData> {
     Promise.all(allocationFiles.map((d) => get<AllocationsEnvelope>(d.file))),
     Promise.all(all("elections").map((d) => get<ElectionsEnvelope>(d.file))),
     Promise.all(all("election_wards").map((d) => get<ElectionWardsEnvelope>(d.file))),
-    crosswalkEntry ? get<CrosswalkEnvelope>(crosswalkEntry.file) : Promise.resolve(null),
+    Promise.all(index.datasets.filter((d) => d.dataset === "crosswalk").map((d) => get<CrosswalkEnvelope>(d.file))),
     donationsEntry ? get<DonationsEnvelope>(donationsEntry.file) : Promise.resolve(null),
     partiesEntry ? get<PartiesEnvelope>(partiesEntry.file) : Promise.resolve(null),
     crimeEntry ? get<CrimeEnvelope>(crimeEntry.file) : Promise.resolve(null),
@@ -83,7 +83,7 @@ export async function loadAll(): Promise<AppData> {
   allocations.sort((a, b) => b.budget_year.localeCompare(a.budget_year));
   elections.sort((a, b) => b.year - a.year);
   electionWards.sort((a, b) => b.year - a.year);
-  return { index, boundaries, wards, serviceRequests, outages, places, landmarks, landUse, allocations, elections, electionWards, crosswalk, donations, parties, crime };
+  return { index, boundaries, wards, serviceRequests, outages, places, landmarks, landUse, allocations, elections, electionWards, crosswalks, donations, parties, crime };
 }
 
 const boundaryCache = new Map<number, Promise<WardFeatures>>();

@@ -1,0 +1,10 @@
+{
+  "licence": "Electoral Commission of South Africa (copyright notice: reproduction for non-commercial use; https://www.elections.org.za/pw/Copyright-Notice)",
+  "method": "aggregated",
+  "notes": "Valid votes per party per ward and ballot (Ward, PR), summed from voting districts. Built from https://results.elections.org.za/home/LGEPublicReports/197/...; upstream sha256: {\"EC.csv\": \"5b161c7e720a8f1540ed42ada0e984699be640b56c65c68452768f6c5b7691ed\", \"FS.csv\": \"2011e17f140ef0b40899b8c097490b0952d0b0a3c581b51f7bdc88c8feaed6f5\", \"GP.csv\": \"bc63e852da885b259726abe3484250af7779402cc813e3e2c84c7f8b5afd76c9\", \"KN.csv\": \"a9e8adc57a3423f34fc8fde8201c88f2890f85c447032b88b18a9b925e489183\", \"MP.csv\": \"8d79857d24adeef420d178f6f74a6bdd9a6d7fe6a95af65c342620c6a1e1ca3a\", \"NC.csv\": \"0b072ca499af6b0580bbd6838208f4684038c3a9a2a35def0c23d145c406cbbe\", \"NP.csv\": \"6941a53500f11f821b1134460e68866078148ffbf81eb9197d04cebcf659af24\", \"NW.csv\": \"4d02bd07e9071522d2c5fbd94a72f66c22d5a7ceef41b59f5fe6198997ab1630\", \"WP.csv\": \"b888dc9b9d2813ca4cfc7c26d42b45152f18e2a9158b353606590b7efd9ecad1\"}",
+  "publisher": "Electoral Commission of South Africa (IEC)",
+  "retrieved_at": "2026-11-17",
+  "sha256": "7bf2e56e714942a32339594ca8d6ee57b4dd75859a0bf9b7c89611f91e01384c",
+  "title": "Local Government Elections 2011: results",
+  "url": "https://results.elections.org.za/home/Downloads/ME-Results/"
+}

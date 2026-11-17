@@ -1,0 +1,10 @@
+{
+  "licence": "Electoral Commission of South Africa (copyright notice: reproduction for non-commercial use; https://www.elections.org.za/pw/Copyright-Notice)",
+  "method": "aggregated",
+  "notes": "2011 PR-ballot votes per voting district (IEC WP.csv), summed over the voting districts in each 2016 ward (IEC WP.csv for 2016). coverage = share of the ward's 2016 registered voters in voting districts that existed in 2011.",
+  "publisher": "Electoral Commission of South Africa (IEC)",
+  "retrieved_at": "2026-11-17",
+  "sha256": "9504eaf35b1ebdb9c5db90087ae0c5e664f6dcb94feeaf1ccb7fdd1eef7e4641",
+  "title": "Local Government Elections 2011: PR ballot on the 2016 wards",
+  "url": "https://results.elections.org.za/home/Downloads/ME-Results/"
+}

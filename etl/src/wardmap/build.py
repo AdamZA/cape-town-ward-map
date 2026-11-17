@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from wardmap.config import CURRENT_VINTAGE, DB_PATH, LGE
+from wardmap.config import CURRENT_VINTAGE, DB_PATH, LGE, VINTAGE_WARD_COUNT
 from wardmap.models import Index, IndexEntry
 from wardmap.publish import write_model
 
@@ -25,8 +25,12 @@ def build_all() -> None:
     boundary_entries = boundaries.build()
     entries = [
         IndexEntry(
-            dataset="crosswalk", file="crosswalk-2021-2026.json", ward_vintage=CURRENT_VINTAGE
+            dataset="crosswalk",
+            file=f"crosswalk-{v}-{CURRENT_VINTAGE}.json",
+            ward_vintage=CURRENT_VINTAGE,
         )
+        for v in sorted(VINTAGE_WARD_COUNT)
+        if v != CURRENT_VINTAGE
     ]
 
     wards.build(CURRENT_VINTAGE)

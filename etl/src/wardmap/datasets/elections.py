@@ -51,6 +51,9 @@ from wardmap.publish import write_model
 
 MAX_PARTIES = 12
 MAX_WARD_PARTIES = 8
+# Parties below the top 8 are still listed in a ward if they won at least this share, so party
+# maps are complete for any party that matters there (a party missing from a ward is below it).
+MIN_LISTED_SHARE = 0.005
 WARD_MUNICIPALITIES = ("CPT",)
 
 
@@ -80,14 +83,21 @@ def _province_csv(year: int, prov: str) -> Path:
     return dest
 
 
+def _encoding(path: Path) -> str:
+    """The 2011 files are UTF-16 (with a byte-order mark); later ones UTF-8."""
+    head = path.read_bytes()[:2]
+    return "utf-16" if head in (b"\xff\xfe", b"\xfe\xff") else "utf-8-sig"
+
+
 def _aggregate(path: Path, prov: str) -> tuple[pd.DataFrame, pd.DataFrame]:
-    d = pd.read_csv(path, encoding="utf-8-sig", dtype={"Ward": str})
+    d = pd.read_csv(path, encoding=_encoding(path), dtype={"Ward": str})
     d = d[d["BallotType"].isin(["Ward", "PR"])]
     muni = d["Municipality"].str.split(" - ", n=1, expand=True)
     d = d.assign(
         province=prov,
         muni=muni[0].str.strip(),
-        muni_name=muni[1].str.strip(),
+        # 2011 adds the old name in brackets: "City of Cape Town [Cape Town]".
+        muni_name=muni[1].str.replace(r"\s*\[.*\]$", "", regex=True).str.strip(),
         ward=d["Ward"].str.extract(r"(\d+)", expand=False),
         ballot=d["BallotType"],
     )
@@ -107,6 +117,15 @@ def _aggregate(path: Path, prov: str) -> tuple[pd.DataFrame, pd.DataFrame]:
     return votes, turnout
 
 
+def _int(v) -> int:
+    """A count from a seat sheet; some older sheets write "28,115" as text."""
+    return (
+        int(str(v).replace(",", "").replace(" ", "").split(".")[0])
+        if isinstance(v, str)
+        else int(v)
+    )
+
+
 def _seats(year: int, prov: str, code: str) -> pd.DataFrame:
     dest = CACHE / "iec" / str(year) / "seats" / f"{code}.xls"
     if not dest.exists():
@@ -118,7 +137,7 @@ def _seats(year: int, prov: str, code: str) -> pd.DataFrame:
     # Council size (B) includes independent ward councillors, who aren't in the party table.
     label = raw[0].astype(str).str.strip()
     b_row = raw.loc[label.str.startswith("Total Seats Available")].iloc[0]
-    council_seats = int(next(v for v in b_row.iloc[1:] if pd.notna(v)))
+    council_seats = _int(next(v for v in b_row.iloc[1:] if pd.notna(v)))
     vote_col = cols["Total Valid Votes"]
     rows = []
     # The party table can run over several printed pages: skip blank and repeated header rows,
@@ -131,14 +150,14 @@ def _seats(year: int, prov: str, code: str) -> pd.DataFrame:
         if pd.isna(r[seat_col]) or pd.isna(r[vote_col]):
             continue  # page furniture (titles, printed-on lines)
         if str(name).strip().lower() == "total":
-            total = int(r[seat_col])
+            total = _int(r[seat_col])
             break
         rows.append(
             {
                 "muni": code,
                 "party": " ".join(str(name).split()),
-                "votes": int(r[vote_col]),
-                "seats": int(r[seat_col]),
+                "votes": _int(r[vote_col]),
+                "seats": _int(r[seat_col]),
                 "council_seats": council_seats,
             }
         )
@@ -204,10 +223,11 @@ def pin_previous(year: int, code: str = "CPT", prov: str = "WP") -> None:
     """
     prev = max(y for y in LGE if y < year)
     cols = ["Municipality", "Ward", "VotingDistrict", "RegisteredVoters", "BallotType"]
-    now = pd.read_csv(_province_csv(year, prov), encoding="utf-8-sig", usecols=cols)
+    now_path, old_path = _province_csv(year, prov), _province_csv(prev, prov)
+    now = pd.read_csv(now_path, encoding=_encoding(now_path), usecols=cols)
     old = pd.read_csv(
-        _province_csv(prev, prov),
-        encoding="utf-8-sig",
+        old_path,
+        encoding=_encoding(old_path),
         usecols=[*cols[:5], "PartyName", "TotalValidVotes"],
     )
     now = now[now["Municipality"].str.startswith(f"{code} ") & (now["BallotType"] == "PR")]
@@ -253,6 +273,7 @@ def pin_previous(year: int, code: str = "CPT", prov: str = "WP") -> None:
 PARTY_SPELLING = {
     "VRYHEIDSFRONT PLUS": "Freedom Front Plus (Vryheidsfront Plus)",
     "CAPE COLOURED CONGRESS": "National Coloured Congress",  # renamed in 2023
+    "DEMOCRATIC ALLIANCE/DEMOKRATIESE ALLIANSIE": "Democratic Alliance",  # 2011 registration
     "VRYHEIDSFRONT PLUS | FREEDOM FRONT PLUS": "Freedom Front Plus (Vryheidsfront Plus)",
     "ACTIONSA": "ActionSA",
     "GOOD": "GOOD",
@@ -454,8 +475,8 @@ def build(year: int) -> None:
             total = int(by.sum())
             return [
                 PartyResult(party=str(p), votes=int(v), share=round(int(v) / total, 4))
-                for p, v in by.head(MAX_WARD_PARTIES).items()
-                if v > 0 and total
+                for i, (p, v) in enumerate(by.items())
+                if v > 0 and total and (i < MAX_WARD_PARTIES or v / total >= MIN_LISTED_SHARE)
             ]
 
         wv = votes[(votes["muni"] == code) & (votes["ballot"] == "Ward")]

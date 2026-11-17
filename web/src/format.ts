@@ -25,6 +25,10 @@ export function fmtUnit(v: number, unit: string | null | undefined): string {
       return one.format(v);
     case "share":
       return fmtPct(v * 100);
+    case "pts":
+      return `${one.format(v)} pts`;
+    case "points":
+      return `${v > 0 ? "+" : v < 0 ? "−" : "±"}${one.format(Math.abs(v))} pts`;
     case "R":
       return fmtRand(v);
     case "days":

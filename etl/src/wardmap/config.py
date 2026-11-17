@@ -12,9 +12,10 @@ SCHEMAS = REPO / "schemas"
 CACHE = RAW / "cache"
 DB_PATH = RAW / "db" / "service_requests.sqlite"
 
-# Ward vintages: the year a delimitation took effect. Cape Town: 116 wards (2021), 118 (2026).
+# Ward vintages: the year a delimitation took effect. Cape Town: 111 wards (2011), 116 (2016 and
+# 2021, redrawn in between), 118 (2026).
 CURRENT_VINTAGE = 2026
-VINTAGE_WARD_COUNT = {2021: 116, 2026: 118}
+VINTAGE_WARD_COUNT = {2011: 111, 2016: 116, 2021: 116, 2026: 118}
 
 # City of Cape Town GIS (on-prem; can be flaky, so only used by `pin`, never by CI).
 CCT_ODP5 = (
@@ -48,6 +49,8 @@ IEC_LICENCE = (
 )
 # Local government elections: year -> (IEC event id, ward vintage the election was fought on).
 LGE = {
+    2011: (197, 2011),
+    2016: (402, 2016),
     2021: (1091, 2021),
     2026: (1887, 2026),
 }
@@ -85,10 +88,21 @@ METROS = {"BUF", "CPT", "EKU", "ETH", "JHB", "MAN", "NMA", "TSH"}
 OVERPASS = "https://overpass-api.de/api/interpreter"
 OSM_LICENCE = "Open Database License (ODbL) 1.0, (c) OpenStreetMap contributors"
 
-# Municipal Demarcation Board ward layers on ArcGIS Online (CAT_B = 'CPT' for Cape Town).
-MDB_WARDS = {
-    2021: "https://services7.arcgis.com/oeoyTUJC8HEeYsRB/arcgis/rest/services/MDB_Wards_2020/FeatureServer/0",
-    2026: "https://services7.arcgis.com/oeoyTUJC8HEeYsRB/arcgis/rest/services/MDB_Wards_2026/FeatureServer/0",
+# Municipal Demarcation Board ward layers on ArcGIS Online: url, filter for Cape Town, ward field.
+MDB_SERVICES = "https://services7.arcgis.com/oeoyTUJC8HEeYsRB/arcgis/rest/services"
+MDB_WARD_LAYERS = {
+    2011: (
+        f"{MDB_SERVICES}/MDB_Wards_2011/FeatureServer/0",
+        "LocalMunicipalityCode='CPT'",
+        "WardNumber",
+    ),
+    2016: (
+        f"{MDB_SERVICES}/MDB_Wards_2016/FeatureServer/0",
+        "LocalMunicipalityCode='CPT'",
+        "WardNumber",
+    ),
+    2021: (f"{MDB_SERVICES}/MDB_Wards_2020/FeatureServer/0", "CAT_B='CPT'", "WardNo"),
+    2026: (f"{MDB_SERVICES}/MDB_Wards_2026/FeatureServer/0", "CAT_B='CPT'", "WardNo"),
 }
 
 # City of Cape Town ArcGIS Online (open data hub).

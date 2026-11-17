@@ -1,0 +1,1807 @@
+{
+ "as_of": "2026-11-16",
+ "dataset": "crosswalk",
+ "fields": {
+  "share_of_from": {
+   "description": null,
+   "label": "Share of the 2011 ward's area",
+   "method": "crosswalk",
+   "source": "from",
+   "unit": "ratio"
+  },
+  "share_of_to": {
+   "description": null,
+   "label": "Share of the 2026 ward's area",
+   "method": "crosswalk",
+   "source": "to",
+   "unit": "ratio"
+  }
+ },
+ "from_vintage": 2011,
+ "gaps": [
+  {
+   "code": "edge_mismatch",
+   "message": "2% of this ward's area lies outside every 2011 ward. The two boundary sets come from different publishers and differ slightly at the metro edge.",
+   "ward_no": 15
+  },
+  {
+   "code": "edge_mismatch",
+   "message": "2% of this ward's area lies outside every 2011 ward. The two boundary sets come from different publishers and differ slightly at the metro edge.",
+   "ward_no": 45
+  },
+  {
+   "code": "edge_mismatch",
+   "message": "3% of this ward's area lies outside every 2011 ward. The two boundary sets come from different publishers and differ slightly at the metro edge.",
+   "ward_no": 69
+  }
+ ],
+ "period": null,
+ "rows": [
+  {
+   "from_ward": 1,
+   "share_of_from": 0.8525,
+   "share_of_to": 0.5349,
+   "to_ward": 1
+  },
+  {
+   "from_ward": 1,
+   "share_of_from": 0.1412,
+   "share_of_to": 0.1832,
+   "to_ward": 27
+  },
+  {
+   "from_ward": 1,
+   "share_of_from": 0.0063,
+   "share_of_to": 0.0028,
+   "to_ward": 70
+  },
+  {
+   "from_ward": 2,
+   "share_of_from": 0.9629,
+   "share_of_to": 0.8079,
+   "to_ward": 2
+  },
+  {
+   "from_ward": 2,
+   "share_of_from": 0.0371,
+   "share_of_to": 0.022,
+   "to_ward": 10
+  },
+  {
+   "from_ward": 3,
+   "share_of_from": 0.749,
+   "share_of_to": 1.0,
+   "to_ward": 3
+  },
+  {
+   "from_ward": 3,
+   "share_of_from": 0.1038,
+   "share_of_to": 0.1356,
+   "to_ward": 9
+  },
+  {
+   "from_ward": 3,
+   "share_of_from": 0.1472,
+   "share_of_to": 0.1936,
+   "to_ward": 21
+  },
+  {
+   "from_ward": 4,
+   "share_of_from": 0.5241,
+   "share_of_to": 0.991,
+   "to_ward": 4
+  },
+  {
+   "from_ward": 4,
+   "share_of_from": 0.0919,
+   "share_of_to": 0.1524,
+   "to_ward": 55
+  },
+  {
+   "from_ward": 4,
+   "share_of_from": 0.384,
+   "share_of_to": 0.5603,
+   "to_ward": 113
+  },
+  {
+   "from_ward": 5,
+   "share_of_from": 0.9205,
+   "share_of_to": 1.0,
+   "to_ward": 5
+  },
+  {
+   "from_ward": 5,
+   "share_of_from": 0.0795,
+   "share_of_to": 0.0804,
+   "to_ward": 27
+  },
+  {
+   "from_ward": 6,
+   "share_of_from": 0.1341,
+   "share_of_to": 0.119,
+   "to_ward": 6
+  },
+  {
+   "from_ward": 6,
+   "share_of_from": 0.6463,
+   "share_of_to": 0.4501,
+   "to_ward": 7
+  },
+  {
+   "from_ward": 6,
+   "share_of_from": 0.1212,
+   "share_of_to": 0.0822,
+   "to_ward": 8
+  },
+  {
+   "from_ward": 6,
+   "share_of_from": 0.0971,
+   "share_of_to": 0.0687,
+   "to_ward": 111
+  },
+  {
+   "from_ward": 7,
+   "share_of_from": 0.6256,
+   "share_of_to": 0.2807,
+   "to_ward": 7
+  },
+  {
+   "from_ward": 7,
+   "share_of_from": 0.0432,
+   "share_of_to": 0.0347,
+   "to_ward": 101
+  },
+  {
+   "from_ward": 7,
+   "share_of_from": 0.3311,
+   "share_of_to": 0.1509,
+   "to_ward": 111
+  },
+  {
+   "from_ward": 8,
+   "share_of_from": 0.1909,
+   "share_of_to": 0.7168,
+   "to_ward": 6
+  },
+  {
+   "from_ward": 8,
+   "share_of_from": 0.0346,
+   "share_of_to": 0.102,
+   "to_ward": 7
+  },
+  {
+   "from_ward": 8,
+   "share_of_from": 0.3198,
+   "share_of_to": 0.9177,
+   "to_ward": 8
+  },
+  {
+   "from_ward": 8,
+   "share_of_from": 0.0065,
+   "share_of_to": 0.0146,
+   "to_ward": 9
+  },
+  {
+   "from_ward": 8,
+   "share_of_from": 0.4043,
+   "share_of_to": 0.6213,
+   "to_ward": 11
+  },
+  {
+   "from_ward": 8,
+   "share_of_from": 0.0425,
+   "share_of_to": 0.1272,
+   "to_ward": 111
+  },
+  {
+   "from_ward": 9,
+   "share_of_from": 1.0,
+   "share_of_to": 0.8498,
+   "to_ward": 9
+  },
+  {
+   "from_ward": 10,
+   "share_of_from": 0.0424,
+   "share_of_to": 0.0498,
+   "to_ward": 2
+  },
+  {
+   "from_ward": 10,
+   "share_of_from": 0.9253,
+   "share_of_to": 0.7698,
+   "to_ward": 10
+  },
+  {
+   "from_ward": 10,
+   "share_of_from": 0.0324,
+   "share_of_to": 0.0499,
+   "to_ward": 26
+  },
+  {
+   "from_ward": 11,
+   "share_of_from": 0.6288,
+   "share_of_to": 0.358,
+   "to_ward": 11
+  },
+  {
+   "from_ward": 11,
+   "share_of_from": 0.3712,
+   "share_of_to": 0.3236,
+   "to_ward": 19
+  },
+  {
+   "from_ward": 12,
+   "share_of_from": 0.8057,
+   "share_of_to": 0.6406,
+   "to_ward": 12
+  },
+  {
+   "from_ward": 12,
+   "share_of_from": 0.1943,
+   "share_of_to": 0.0438,
+   "to_ward": 22
+  },
+  {
+   "from_ward": 13,
+   "share_of_from": 0.3616,
+   "share_of_to": 0.2472,
+   "to_ward": 12
+  },
+  {
+   "from_ward": 13,
+   "share_of_from": 0.5341,
+   "share_of_to": 0.4554,
+   "to_ward": 20
+  },
+  {
+   "from_ward": 13,
+   "share_of_from": 0.1043,
+   "share_of_to": 0.0585,
+   "to_ward": 106
+  },
+  {
+   "from_ward": 14,
+   "share_of_from": 0.0037,
+   "share_of_to": 0.0081,
+   "to_ward": 11
+  },
+  {
+   "from_ward": 14,
+   "share_of_from": 0.9443,
+   "share_of_to": 0.9966,
+   "to_ward": 14
+  },
+  {
+   "from_ward": 14,
+   "share_of_from": 0.0111,
+   "share_of_to": 0.0569,
+   "to_ward": 16
+  },
+  {
+   "from_ward": 14,
+   "share_of_from": 0.0404,
+   "share_of_to": 0.1771,
+   "to_ward": 17
+  },
+  {
+   "from_ward": 15,
+   "share_of_from": 0.2737,
+   "share_of_to": 0.186,
+   "to_ward": 15
+  },
+  {
+   "from_ward": 15,
+   "share_of_from": 0.315,
+   "share_of_to": 0.6377,
+   "to_ward": 83
+  },
+  {
+   "from_ward": 15,
+   "share_of_from": 0.2584,
+   "share_of_to": 0.5155,
+   "to_ward": 90
+  },
+  {
+   "from_ward": 15,
+   "share_of_from": 0.1527,
+   "share_of_to": 0.2626,
+   "to_ward": 109
+  },
+  {
+   "from_ward": 16,
+   "share_of_from": 0.2744,
+   "share_of_to": 0.6247,
+   "to_ward": 16
+  },
+  {
+   "from_ward": 16,
+   "share_of_from": 0.7256,
+   "share_of_to": 0.7538,
+   "to_ward": 118
+  },
+  {
+   "from_ward": 17,
+   "share_of_from": 0.0101,
+   "share_of_to": 0.0024,
+   "to_ward": 14
+  },
+  {
+   "from_ward": 17,
+   "share_of_from": 0.2728,
+   "share_of_to": 0.3184,
+   "to_ward": 16
+  },
+  {
+   "from_ward": 17,
+   "share_of_from": 0.7171,
+   "share_of_to": 0.7141,
+   "to_ward": 17
+  },
+  {
+   "from_ward": 18,
+   "share_of_from": 0.8693,
+   "share_of_to": 0.8106,
+   "to_ward": 18
+  },
+  {
+   "from_ward": 18,
+   "share_of_from": 0.1307,
+   "share_of_to": 0.1963,
+   "to_ward": 87
+  },
+  {
+   "from_ward": 19,
+   "share_of_from": 0.4141,
+   "share_of_to": 0.6764,
+   "to_ward": 19
+  },
+  {
+   "from_ward": 19,
+   "share_of_from": 0.4642,
+   "share_of_to": 0.9643,
+   "to_ward": 108
+  },
+  {
+   "from_ward": 19,
+   "share_of_from": 0.1214,
+   "share_of_to": 0.1383,
+   "to_ward": 118
+  },
+  {
+   "from_ward": 20,
+   "share_of_from": 0.2142,
+   "share_of_to": 0.1758,
+   "to_ward": 20
+  },
+  {
+   "from_ward": 20,
+   "share_of_from": 0.3215,
+   "share_of_to": 0.2289,
+   "to_ward": 24
+  },
+  {
+   "from_ward": 20,
+   "share_of_from": 0.4643,
+   "share_of_to": 0.2506,
+   "to_ward": 106
+  },
+  {
+   "from_ward": 21,
+   "share_of_from": 0.1353,
+   "share_of_to": 0.0079,
+   "to_ward": 13
+  },
+  {
+   "from_ward": 21,
+   "share_of_from": 0.5082,
+   "share_of_to": 0.5818,
+   "to_ward": 21
+  },
+  {
+   "from_ward": 21,
+   "share_of_from": 0.3566,
+   "share_of_to": 0.3902,
+   "to_ward": 112
+  },
+  {
+   "from_ward": 22,
+   "share_of_from": 0.3536,
+   "share_of_to": 0.2082,
+   "to_ward": 10
+  },
+  {
+   "from_ward": 22,
+   "share_of_from": 0.0687,
+   "share_of_to": 0.1121,
+   "to_ward": 12
+  },
+  {
+   "from_ward": 22,
+   "share_of_from": 0.5493,
+   "share_of_to": 0.2545,
+   "to_ward": 22
+  },
+  {
+   "from_ward": 22,
+   "share_of_from": 0.0284,
+   "share_of_to": 0.0614,
+   "to_ward": 25
+  },
+  {
+   "from_ward": 23,
+   "share_of_from": 0.9119,
+   "share_of_to": 0.7576,
+   "to_ward": 23
+  },
+  {
+   "from_ward": 23,
+   "share_of_from": 0.023,
+   "share_of_to": 0.3588,
+   "to_ward": 107
+  },
+  {
+   "from_ward": 23,
+   "share_of_from": 0.012,
+   "share_of_to": 0.0695,
+   "to_ward": 113
+  },
+  {
+   "from_ward": 23,
+   "share_of_from": 0.0531,
+   "share_of_to": 0.4848,
+   "to_ward": 117
+  },
+  {
+   "from_ward": 24,
+   "share_of_from": 0.8684,
+   "share_of_to": 0.6961,
+   "to_ward": 22
+  },
+  {
+   "from_ward": 24,
+   "share_of_from": 0.0046,
+   "share_of_to": 0.0094,
+   "to_ward": 31
+  },
+  {
+   "from_ward": 24,
+   "share_of_from": 0.127,
+   "share_of_to": 0.5178,
+   "to_ward": 42
+  },
+  {
+   "from_ward": 25,
+   "share_of_from": 1.0,
+   "share_of_to": 0.9386,
+   "to_ward": 25
+  },
+  {
+   "from_ward": 26,
+   "share_of_from": 0.206,
+   "share_of_to": 0.1423,
+   "to_ward": 2
+  },
+  {
+   "from_ward": 26,
+   "share_of_from": 0.794,
+   "share_of_to": 0.7178,
+   "to_ward": 26
+  },
+  {
+   "from_ward": 27,
+   "share_of_from": 0.2796,
+   "share_of_to": 0.2324,
+   "to_ward": 26
+  },
+  {
+   "from_ward": 27,
+   "share_of_from": 0.7204,
+   "share_of_to": 0.4519,
+   "to_ward": 27
+  },
+  {
+   "from_ward": 28,
+   "share_of_from": 0.873,
+   "share_of_to": 0.2617,
+   "to_ward": 28
+  },
+  {
+   "from_ward": 28,
+   "share_of_from": 0.127,
+   "share_of_to": 0.1121,
+   "to_ward": 42
+  },
+  {
+   "from_ward": 29,
+   "share_of_from": 0.999,
+   "share_of_to": 0.9972,
+   "to_ward": 29
+  },
+  {
+   "from_ward": 30,
+   "share_of_from": 0.7724,
+   "share_of_to": 0.7383,
+   "to_ward": 28
+  },
+  {
+   "from_ward": 30,
+   "share_of_from": 0.096,
+   "share_of_to": 0.1348,
+   "to_ward": 31
+  },
+  {
+   "from_ward": 30,
+   "share_of_from": 0.1315,
+   "share_of_to": 0.3701,
+   "to_ward": 42
+  },
+  {
+   "from_ward": 31,
+   "share_of_from": 0.9754,
+   "share_of_to": 0.8558,
+   "to_ward": 31
+  },
+  {
+   "from_ward": 31,
+   "share_of_from": 0.0246,
+   "share_of_to": 0.0549,
+   "to_ward": 50
+  },
+  {
+   "from_ward": 32,
+   "share_of_from": 0.9999,
+   "share_of_to": 0.9978,
+   "to_ward": 32
+  },
+  {
+   "from_ward": 33,
+   "share_of_from": 0.3774,
+   "share_of_to": 0.568,
+   "to_ward": 33
+  },
+  {
+   "from_ward": 33,
+   "share_of_from": 0.0692,
+   "share_of_to": 0.1297,
+   "to_ward": 34
+  },
+  {
+   "from_ward": 33,
+   "share_of_from": 0.3231,
+   "share_of_to": 0.0206,
+   "to_ward": 43
+  },
+  {
+   "from_ward": 33,
+   "share_of_from": 0.0885,
+   "share_of_to": 0.148,
+   "to_ward": 80
+  },
+  {
+   "from_ward": 33,
+   "share_of_from": 0.1417,
+   "share_of_to": 0.1591,
+   "to_ward": 88
+  },
+  {
+   "from_ward": 34,
+   "share_of_from": 0.8627,
+   "share_of_to": 0.8703,
+   "to_ward": 34
+  },
+  {
+   "from_ward": 34,
+   "share_of_from": 0.1373,
+   "share_of_to": 0.1235,
+   "to_ward": 80
+  },
+  {
+   "from_ward": 35,
+   "share_of_from": 0.9118,
+   "share_of_to": 1.0,
+   "to_ward": 35
+  },
+  {
+   "from_ward": 35,
+   "share_of_from": 0.0882,
+   "share_of_to": 0.1665,
+   "to_ward": 36
+  },
+  {
+   "from_ward": 36,
+   "share_of_from": 0.9333,
+   "share_of_to": 0.8335,
+   "to_ward": 36
+  },
+  {
+   "from_ward": 36,
+   "share_of_from": 0.0667,
+   "share_of_to": 0.0941,
+   "to_ward": 37
+  },
+  {
+   "from_ward": 37,
+   "share_of_from": 0.8477,
+   "share_of_to": 0.5888,
+   "to_ward": 37
+  },
+  {
+   "from_ward": 37,
+   "share_of_from": 0.1523,
+   "share_of_to": 0.1001,
+   "to_ward": 38
+  },
+  {
+   "from_ward": 38,
+   "share_of_from": 0.1646,
+   "share_of_to": 0.1732,
+   "to_ward": 37
+  },
+  {
+   "from_ward": 38,
+   "share_of_from": 0.4363,
+   "share_of_to": 0.4345,
+   "to_ward": 38
+  },
+  {
+   "from_ward": 38,
+   "share_of_from": 0.3991,
+   "share_of_to": 0.3148,
+   "to_ward": 39
+  },
+  {
+   "from_ward": 39,
+   "share_of_from": 0.2051,
+   "share_of_to": 0.1439,
+   "to_ward": 37
+  },
+  {
+   "from_ward": 39,
+   "share_of_from": 0.7009,
+   "share_of_to": 0.4654,
+   "to_ward": 38
+  },
+  {
+   "from_ward": 39,
+   "share_of_from": 0.094,
+   "share_of_to": 0.0624,
+   "to_ward": 40
+  },
+  {
+   "from_ward": 40,
+   "share_of_from": 1.0,
+   "share_of_to": 0.9112,
+   "to_ward": 40
+  },
+  {
+   "from_ward": 41,
+   "share_of_from": 0.8028,
+   "share_of_to": 0.6202,
+   "to_ward": 39
+  },
+  {
+   "from_ward": 41,
+   "share_of_from": 0.1972,
+   "share_of_to": 0.2053,
+   "to_ward": 41
+  },
+  {
+   "from_ward": 42,
+   "share_of_from": 0.4949,
+   "share_of_to": 0.1916,
+   "to_ward": 30
+  },
+  {
+   "from_ward": 42,
+   "share_of_from": 0.0787,
+   "share_of_to": 0.0584,
+   "to_ward": 39
+  },
+  {
+   "from_ward": 42,
+   "share_of_from": 0.4264,
+   "share_of_to": 0.4264,
+   "to_ward": 41
+  },
+  {
+   "from_ward": 43,
+   "share_of_from": 0.908,
+   "share_of_to": 0.2305,
+   "to_ward": 43
+  },
+  {
+   "from_ward": 43,
+   "share_of_from": 0.0168,
+   "share_of_to": 0.0317,
+   "to_ward": 75
+  },
+  {
+   "from_ward": 43,
+   "share_of_from": 0.0752,
+   "share_of_to": 0.1876,
+   "to_ward": 79
+  },
+  {
+   "from_ward": 44,
+   "share_of_from": 0.0139,
+   "share_of_to": 0.0264,
+   "to_ward": 40
+  },
+  {
+   "from_ward": 44,
+   "share_of_from": 0.9861,
+   "share_of_to": 1.0,
+   "to_ward": 44
+  },
+  {
+   "from_ward": 45,
+   "share_of_from": 0.6595,
+   "share_of_to": 0.3392,
+   "to_ward": 30
+  },
+  {
+   "from_ward": 45,
+   "share_of_from": 0.0067,
+   "share_of_to": 0.0066,
+   "to_ward": 39
+  },
+  {
+   "from_ward": 45,
+   "share_of_from": 0.2773,
+   "share_of_to": 0.3683,
+   "to_ward": 41
+  },
+  {
+   "from_ward": 45,
+   "share_of_from": 0.0565,
+   "share_of_to": 0.024,
+   "to_ward": 46
+  },
+  {
+   "from_ward": 46,
+   "share_of_from": 0.3241,
+   "share_of_to": 0.4692,
+   "to_ward": 30
+  },
+  {
+   "from_ward": 46,
+   "share_of_from": 0.3963,
+   "share_of_to": 0.4746,
+   "to_ward": 46
+  },
+  {
+   "from_ward": 46,
+   "share_of_from": 0.1308,
+   "share_of_to": 0.2762,
+   "to_ward": 47
+  },
+  {
+   "from_ward": 46,
+   "share_of_from": 0.1487,
+   "share_of_to": 0.1752,
+   "to_ward": 48
+  },
+  {
+   "from_ward": 47,
+   "share_of_from": 1.0,
+   "share_of_to": 0.7238,
+   "to_ward": 47
+  },
+  {
+   "from_ward": 48,
+   "share_of_from": 0.4236,
+   "share_of_to": 0.5014,
+   "to_ward": 46
+  },
+  {
+   "from_ward": 48,
+   "share_of_from": 0.5764,
+   "share_of_to": 0.6711,
+   "to_ward": 48
+  },
+  {
+   "from_ward": 49,
+   "share_of_from": 0.1285,
+   "share_of_to": 0.1537,
+   "to_ward": 48
+  },
+  {
+   "from_ward": 49,
+   "share_of_from": 0.8715,
+   "share_of_to": 1.0,
+   "to_ward": 49
+  },
+  {
+   "from_ward": 50,
+   "share_of_from": 1.0,
+   "share_of_to": 0.9451,
+   "to_ward": 50
+  },
+  {
+   "from_ward": 51,
+   "share_of_from": 0.8372,
+   "share_of_to": 0.5412,
+   "to_ward": 51
+  },
+  {
+   "from_ward": 51,
+   "share_of_from": 0.1628,
+   "share_of_to": 0.2336,
+   "to_ward": 52
+  },
+  {
+   "from_ward": 52,
+   "share_of_from": 0.128,
+   "share_of_to": 0.0507,
+   "to_ward": 51
+  },
+  {
+   "from_ward": 52,
+   "share_of_from": 0.872,
+   "share_of_to": 0.7664,
+   "to_ward": 52
+  },
+  {
+   "from_ward": 53,
+   "share_of_from": 0.0647,
+   "share_of_to": 0.4081,
+   "to_ward": 51
+  },
+  {
+   "from_ward": 53,
+   "share_of_from": 0.9353,
+   "share_of_to": 0.9939,
+   "to_ward": 53
+  },
+  {
+   "from_ward": 54,
+   "share_of_from": 0.8075,
+   "share_of_to": 0.339,
+   "to_ward": 54
+  },
+  {
+   "from_ward": 54,
+   "share_of_from": 0.1916,
+   "share_of_to": 0.2623,
+   "to_ward": 115
+  },
+  {
+   "from_ward": 55,
+   "share_of_from": 0.6654,
+   "share_of_to": 0.835,
+   "to_ward": 55
+  },
+  {
+   "from_ward": 55,
+   "share_of_from": 0.1696,
+   "share_of_to": 0.2769,
+   "to_ward": 92
+  },
+  {
+   "from_ward": 55,
+   "share_of_from": 0.1627,
+   "share_of_to": 0.2734,
+   "to_ward": 115
+  },
+  {
+   "from_ward": 56,
+   "share_of_from": 0.2266,
+   "share_of_to": 0.2845,
+   "to_ward": 27
+  },
+  {
+   "from_ward": 56,
+   "share_of_from": 0.0075,
+   "share_of_to": 0.0061,
+   "to_ward": 53
+  },
+  {
+   "from_ward": 56,
+   "share_of_from": 0.7659,
+   "share_of_to": 1.0,
+   "to_ward": 56
+  },
+  {
+   "from_ward": 57,
+   "share_of_from": 0.1863,
+   "share_of_to": 0.2578,
+   "to_ward": 57
+  },
+  {
+   "from_ward": 57,
+   "share_of_from": 0.1053,
+   "share_of_to": 0.0686,
+   "to_ward": 77
+  },
+  {
+   "from_ward": 57,
+   "share_of_from": 0.6394,
+   "share_of_to": 0.7062,
+   "to_ward": 92
+  },
+  {
+   "from_ward": 57,
+   "share_of_from": 0.0691,
+   "share_of_to": 0.0785,
+   "to_ward": 115
+  },
+  {
+   "from_ward": 58,
+   "share_of_from": 0.3742,
+   "share_of_to": 0.464,
+   "to_ward": 57
+  },
+  {
+   "from_ward": 58,
+   "share_of_from": 0.5827,
+   "share_of_to": 0.7998,
+   "to_ward": 58
+  },
+  {
+   "from_ward": 58,
+   "share_of_from": 0.0431,
+   "share_of_to": 0.0611,
+   "to_ward": 60
+  },
+  {
+   "from_ward": 59,
+   "share_of_from": 0.2479,
+   "share_of_to": 0.2782,
+   "to_ward": 57
+  },
+  {
+   "from_ward": 59,
+   "share_of_from": 0.1612,
+   "share_of_to": 0.2002,
+   "to_ward": 58
+  },
+  {
+   "from_ward": 59,
+   "share_of_from": 0.5909,
+   "share_of_to": 0.9458,
+   "to_ward": 59
+  },
+  {
+   "from_ward": 60,
+   "share_of_from": 1.0,
+   "share_of_to": 0.9389,
+   "to_ward": 60
+  },
+  {
+   "from_ward": 61,
+   "share_of_from": 0.9686,
+   "share_of_to": 0.9498,
+   "to_ward": 61
+  },
+  {
+   "from_ward": 61,
+   "share_of_from": 0.0217,
+   "share_of_to": 0.2177,
+   "to_ward": 64
+  },
+  {
+   "from_ward": 61,
+   "share_of_from": 0.007,
+   "share_of_to": 0.0275,
+   "to_ward": 69
+  },
+  {
+   "from_ward": 62,
+   "share_of_from": 0.0077,
+   "share_of_to": 0.0542,
+   "to_ward": 59
+  },
+  {
+   "from_ward": 62,
+   "share_of_from": 0.8018,
+   "share_of_to": 1.0,
+   "to_ward": 62
+  },
+  {
+   "from_ward": 62,
+   "share_of_from": 0.0096,
+   "share_of_to": 0.0486,
+   "to_ward": 63
+  },
+  {
+   "from_ward": 62,
+   "share_of_from": 0.1723,
+   "share_of_to": 0.1358,
+   "to_ward": 71
+  },
+  {
+   "from_ward": 62,
+   "share_of_from": 0.0087,
+   "share_of_to": 0.0443,
+   "to_ward": 73
+  },
+  {
+   "from_ward": 63,
+   "share_of_from": 0.533,
+   "share_of_to": 0.6123,
+   "to_ward": 63
+  },
+  {
+   "from_ward": 63,
+   "share_of_from": 0.467,
+   "share_of_to": 0.5786,
+   "to_ward": 66
+  },
+  {
+   "from_ward": 64,
+   "share_of_from": 0.361,
+   "share_of_to": 0.7622,
+   "to_ward": 45
+  },
+  {
+   "from_ward": 64,
+   "share_of_from": 0.6389,
+   "share_of_to": 0.7751,
+   "to_ward": 64
+  },
+  {
+   "from_ward": 65,
+   "share_of_from": 0.6279,
+   "share_of_to": 0.5189,
+   "to_ward": 65
+  },
+  {
+   "from_ward": 65,
+   "share_of_from": 0.3721,
+   "share_of_to": 0.0641,
+   "to_ward": 67
+  },
+  {
+   "from_ward": 66,
+   "share_of_from": 0.1526,
+   "share_of_to": 0.1427,
+   "to_ward": 65
+  },
+  {
+   "from_ward": 66,
+   "share_of_from": 0.8474,
+   "share_of_to": 0.4214,
+   "to_ward": 66
+  },
+  {
+   "from_ward": 67,
+   "share_of_from": 0.0076,
+   "share_of_to": 0.0035,
+   "to_ward": 43
+  },
+  {
+   "from_ward": 67,
+   "share_of_from": 0.0941,
+   "share_of_to": 0.2132,
+   "to_ward": 45
+  },
+  {
+   "from_ward": 67,
+   "share_of_from": 0.8983,
+   "share_of_to": 0.9246,
+   "to_ward": 67
+  },
+  {
+   "from_ward": 68,
+   "share_of_from": 0.8589,
+   "share_of_to": 0.9164,
+   "to_ward": 68
+  },
+  {
+   "from_ward": 68,
+   "share_of_from": 0.1411,
+   "share_of_to": 0.1801,
+   "to_ward": 110
+  },
+  {
+   "from_ward": 69,
+   "share_of_from": 0.1609,
+   "share_of_to": 0.0455,
+   "to_ward": 61
+  },
+  {
+   "from_ward": 69,
+   "share_of_from": 0.8387,
+   "share_of_to": 0.9472,
+   "to_ward": 69
+  },
+  {
+   "from_ward": 70,
+   "share_of_from": 1.0,
+   "share_of_to": 0.9972,
+   "to_ward": 70
+  },
+  {
+   "from_ward": 71,
+   "share_of_from": 0.9281,
+   "share_of_to": 0.8642,
+   "to_ward": 71
+  },
+  {
+   "from_ward": 71,
+   "share_of_from": 0.0037,
+   "share_of_to": 0.0272,
+   "to_ward": 72
+  },
+  {
+   "from_ward": 71,
+   "share_of_from": 0.0682,
+   "share_of_to": 0.4118,
+   "to_ward": 73
+  },
+  {
+   "from_ward": 72,
+   "share_of_from": 0.039,
+   "share_of_to": 0.0793,
+   "to_ward": 68
+  },
+  {
+   "from_ward": 72,
+   "share_of_from": 0.961,
+   "share_of_to": 0.9381,
+   "to_ward": 72
+  },
+  {
+   "from_ward": 73,
+   "share_of_from": 0.3852,
+   "share_of_to": 0.3391,
+   "to_ward": 63
+  },
+  {
+   "from_ward": 73,
+   "share_of_from": 0.6148,
+   "share_of_to": 0.544,
+   "to_ward": 73
+  },
+  {
+   "from_ward": 74,
+   "share_of_from": 0.4158,
+   "share_of_to": 0.65,
+   "to_ward": 54
+  },
+  {
+   "from_ward": 74,
+   "share_of_from": 0.5835,
+   "share_of_to": 0.988,
+   "to_ward": 74
+  },
+  {
+   "from_ward": 75,
+   "share_of_from": 0.0677,
+   "share_of_to": 0.2129,
+   "to_ward": 33
+  },
+  {
+   "from_ward": 75,
+   "share_of_from": 0.2337,
+   "share_of_to": 0.0311,
+   "to_ward": 43
+  },
+  {
+   "from_ward": 75,
+   "share_of_from": 0.4532,
+   "share_of_to": 0.4465,
+   "to_ward": 75
+  },
+  {
+   "from_ward": 75,
+   "share_of_from": 0.2453,
+   "share_of_to": 0.4343,
+   "to_ward": 78
+  },
+  {
+   "from_ward": 76,
+   "share_of_from": 0.791,
+   "share_of_to": 0.7821,
+   "to_ward": 76
+  },
+  {
+   "from_ward": 76,
+   "share_of_from": 0.209,
+   "share_of_to": 0.3379,
+   "to_ward": 78
+  },
+  {
+   "from_ward": 77,
+   "share_of_from": 0.806,
+   "share_of_to": 0.9314,
+   "to_ward": 77
+  },
+  {
+   "from_ward": 77,
+   "share_of_from": 0.0086,
+   "share_of_to": 0.0168,
+   "to_ward": 92
+  },
+  {
+   "from_ward": 77,
+   "share_of_from": 0.1854,
+   "share_of_to": 0.3739,
+   "to_ward": 115
+  },
+  {
+   "from_ward": 78,
+   "share_of_from": 0.6075,
+   "share_of_to": 0.4555,
+   "to_ward": 75
+  },
+  {
+   "from_ward": 78,
+   "share_of_from": 0.2811,
+   "share_of_to": 0.3471,
+   "to_ward": 81
+  },
+  {
+   "from_ward": 78,
+   "share_of_from": 0.1114,
+   "share_of_to": 0.1835,
+   "to_ward": 116
+  },
+  {
+   "from_ward": 79,
+   "share_of_from": 0.5212,
+   "share_of_to": 0.363,
+   "to_ward": 81
+  },
+  {
+   "from_ward": 79,
+   "share_of_from": 0.4788,
+   "share_of_to": 0.4447,
+   "to_ward": 116
+  },
+  {
+   "from_ward": 80,
+   "share_of_from": 0.0124,
+   "share_of_to": 0.2192,
+   "to_ward": 33
+  },
+  {
+   "from_ward": 80,
+   "share_of_from": 0.9504,
+   "share_of_to": 0.7091,
+   "to_ward": 43
+  },
+  {
+   "from_ward": 80,
+   "share_of_from": 0.0372,
+   "share_of_to": 0.7285,
+   "to_ward": 80
+  },
+  {
+   "from_ward": 81,
+   "share_of_from": 0.1029,
+   "share_of_to": 0.0663,
+   "to_ward": 75
+  },
+  {
+   "from_ward": 81,
+   "share_of_from": 0.6239,
+   "share_of_to": 0.533,
+   "to_ward": 79
+  },
+  {
+   "from_ward": 81,
+   "share_of_from": 0.2731,
+   "share_of_to": 0.2899,
+   "to_ward": 81
+  },
+  {
+   "from_ward": 82,
+   "share_of_from": 0.302,
+   "share_of_to": 0.2673,
+   "to_ward": 79
+  },
+  {
+   "from_ward": 82,
+   "share_of_from": 0.698,
+   "share_of_to": 0.5056,
+   "to_ward": 82
+  },
+  {
+   "from_ward": 83,
+   "share_of_from": 0.893,
+   "share_of_to": 0.3149,
+   "to_ward": 83
+  },
+  {
+   "from_ward": 83,
+   "share_of_from": 0.1069,
+   "share_of_to": 0.1312,
+   "to_ward": 85
+  },
+  {
+   "from_ward": 84,
+   "share_of_from": 0.7903,
+   "share_of_to": 0.7906,
+   "to_ward": 15
+  },
+  {
+   "from_ward": 84,
+   "share_of_from": 0.201,
+   "share_of_to": 0.1017,
+   "to_ward": 84
+  },
+  {
+   "from_ward": 85,
+   "share_of_from": 0.192,
+   "share_of_to": 0.0459,
+   "to_ward": 83
+  },
+  {
+   "from_ward": 85,
+   "share_of_from": 0.6931,
+   "share_of_to": 0.5767,
+   "to_ward": 85
+  },
+  {
+   "from_ward": 85,
+   "share_of_from": 0.1148,
+   "share_of_to": 0.1915,
+   "to_ward": 86
+  },
+  {
+   "from_ward": 86,
+   "share_of_from": 0.3649,
+   "share_of_to": 0.2919,
+   "to_ward": 85
+  },
+  {
+   "from_ward": 86,
+   "share_of_from": 0.5043,
+   "share_of_to": 0.8085,
+   "to_ward": 86
+  },
+  {
+   "from_ward": 86,
+   "share_of_from": 0.1304,
+   "share_of_to": 0.0047,
+   "to_ward": 100
+  },
+  {
+   "from_ward": 87,
+   "share_of_from": 0.3205,
+   "share_of_to": 0.1894,
+   "to_ward": 18
+  },
+  {
+   "from_ward": 87,
+   "share_of_from": 0.6795,
+   "share_of_to": 0.6467,
+   "to_ward": 87
+  },
+  {
+   "from_ward": 88,
+   "share_of_from": 0.0966,
+   "share_of_to": 0.0565,
+   "to_ward": 76
+  },
+  {
+   "from_ward": 88,
+   "share_of_from": 0.2385,
+   "share_of_to": 0.2278,
+   "to_ward": 78
+  },
+  {
+   "from_ward": 88,
+   "share_of_from": 0.6649,
+   "share_of_to": 0.8409,
+   "to_ward": 88
+  },
+  {
+   "from_ward": 89,
+   "share_of_from": 0.4102,
+   "share_of_to": 0.2996,
+   "to_ward": 89
+  },
+  {
+   "from_ward": 89,
+   "share_of_from": 0.5898,
+   "share_of_to": 0.1242,
+   "to_ward": 93
+  },
+  {
+   "from_ward": 90,
+   "share_of_from": 0.2028,
+   "share_of_to": 0.157,
+   "to_ward": 87
+  },
+  {
+   "from_ward": 90,
+   "share_of_from": 0.5689,
+   "share_of_to": 0.4685,
+   "to_ward": 91
+  },
+  {
+   "from_ward": 90,
+   "share_of_from": 0.2283,
+   "share_of_to": 0.0189,
+   "to_ward": 99
+  },
+  {
+   "from_ward": 91,
+   "share_of_from": 0.3826,
+   "share_of_to": 0.2929,
+   "to_ward": 89
+  },
+  {
+   "from_ward": 91,
+   "share_of_from": 0.6174,
+   "share_of_to": 0.5315,
+   "to_ward": 91
+  },
+  {
+   "from_ward": 92,
+   "share_of_from": 0.4859,
+   "share_of_to": 0.4322,
+   "to_ward": 94
+  },
+  {
+   "from_ward": 92,
+   "share_of_from": 0.5141,
+   "share_of_to": 0.6485,
+   "to_ward": 98
+  },
+  {
+   "from_ward": 93,
+   "share_of_from": 0.2086,
+   "share_of_to": 0.4074,
+   "to_ward": 89
+  },
+  {
+   "from_ward": 93,
+   "share_of_from": 0.7914,
+   "share_of_to": 0.4454,
+   "to_ward": 93
+  },
+  {
+   "from_ward": 94,
+   "share_of_from": 0.6591,
+   "share_of_to": 0.5678,
+   "to_ward": 94
+  },
+  {
+   "from_ward": 94,
+   "share_of_from": 0.3409,
+   "share_of_to": 0.3641,
+   "to_ward": 97
+  },
+  {
+   "from_ward": 95,
+   "share_of_from": 0.7458,
+   "share_of_to": 0.998,
+   "to_ward": 95
+  },
+  {
+   "from_ward": 95,
+   "share_of_from": 0.0355,
+   "share_of_to": 0.0855,
+   "to_ward": 96
+  },
+  {
+   "from_ward": 95,
+   "share_of_from": 0.0477,
+   "share_of_to": 0.145,
+   "to_ward": 97
+  },
+  {
+   "from_ward": 95,
+   "share_of_from": 0.1711,
+   "share_of_to": 0.1489,
+   "to_ward": 99
+  },
+  {
+   "from_ward": 96,
+   "share_of_from": 1.0,
+   "share_of_to": 0.4413,
+   "to_ward": 96
+  },
+  {
+   "from_ward": 97,
+   "share_of_from": 0.3847,
+   "share_of_to": 0.4303,
+   "to_ward": 93
+  },
+  {
+   "from_ward": 97,
+   "share_of_from": 0.3903,
+   "share_of_to": 0.4732,
+   "to_ward": 96
+  },
+  {
+   "from_ward": 97,
+   "share_of_from": 0.225,
+   "share_of_to": 0.3441,
+   "to_ward": 97
+  },
+  {
+   "from_ward": 98,
+   "share_of_from": 0.5317,
+   "share_of_to": 0.3515,
+   "to_ward": 98
+  },
+  {
+   "from_ward": 98,
+   "share_of_from": 0.4661,
+   "share_of_to": 0.0771,
+   "to_ward": 99
+  },
+  {
+   "from_ward": 99,
+   "share_of_from": 0.068,
+   "share_of_to": 0.1614,
+   "to_ward": 76
+  },
+  {
+   "from_ward": 99,
+   "share_of_from": 0.2066,
+   "share_of_to": 0.4838,
+   "to_ward": 82
+  },
+  {
+   "from_ward": 99,
+   "share_of_from": 0.6469,
+   "share_of_to": 0.7534,
+   "to_ward": 99
+  },
+  {
+   "from_ward": 99,
+   "share_of_from": 0.0784,
+   "share_of_to": 0.3718,
+   "to_ward": 116
+  },
+  {
+   "from_ward": 100,
+   "share_of_from": 0.451,
+   "share_of_to": 0.8958,
+   "to_ward": 84
+  },
+  {
+   "from_ward": 100,
+   "share_of_from": 0.5468,
+   "share_of_to": 0.9933,
+   "to_ward": 100
+  },
+  {
+   "from_ward": 101,
+   "share_of_from": 0.0717,
+   "share_of_to": 0.0454,
+   "to_ward": 6
+  },
+  {
+   "from_ward": 101,
+   "share_of_from": 0.9283,
+   "share_of_to": 0.8261,
+   "to_ward": 101
+  },
+  {
+   "from_ward": 102,
+   "share_of_from": 0.1283,
+   "share_of_to": 0.1672,
+   "to_ward": 7
+  },
+  {
+   "from_ward": 102,
+   "share_of_from": 0.2392,
+   "share_of_to": 0.0595,
+   "to_ward": 102
+  },
+  {
+   "from_ward": 102,
+   "share_of_from": 0.4694,
+   "share_of_to": 0.5588,
+   "to_ward": 103
+  },
+  {
+   "from_ward": 102,
+   "share_of_from": 0.163,
+   "share_of_to": 0.2158,
+   "to_ward": 111
+  },
+  {
+   "from_ward": 103,
+   "share_of_from": 0.1285,
+   "share_of_to": 0.2247,
+   "to_ward": 21
+  },
+  {
+   "from_ward": 103,
+   "share_of_from": 0.2961,
+   "share_of_to": 0.1297,
+   "to_ward": 102
+  },
+  {
+   "from_ward": 103,
+   "share_of_from": 0.2107,
+   "share_of_to": 0.4412,
+   "to_ward": 103
+  },
+  {
+   "from_ward": 103,
+   "share_of_from": 0.3648,
+   "share_of_to": 0.6098,
+   "to_ward": 112
+  },
+  {
+   "from_ward": 104,
+   "share_of_from": 0.851,
+   "share_of_to": 0.2388,
+   "to_ward": 23
+  },
+  {
+   "from_ward": 104,
+   "share_of_from": 0.1486,
+   "share_of_to": 1.0,
+   "to_ward": 104
+  },
+  {
+   "from_ward": 105,
+   "share_of_from": 0.0188,
+   "share_of_to": 0.4651,
+   "to_ward": 1
+  },
+  {
+   "from_ward": 105,
+   "share_of_from": 0.4395,
+   "share_of_to": 0.992,
+   "to_ward": 13
+  },
+  {
+   "from_ward": 105,
+   "share_of_from": 0.0736,
+   "share_of_to": 0.8108,
+   "to_ward": 102
+  },
+  {
+   "from_ward": 105,
+   "share_of_from": 0.468,
+   "share_of_to": 0.998,
+   "to_ward": 105
+  },
+  {
+   "from_ward": 106,
+   "share_of_from": 0.1581,
+   "share_of_to": 0.3688,
+   "to_ward": 20
+  },
+  {
+   "from_ward": 106,
+   "share_of_from": 0.0105,
+   "share_of_to": 0.0056,
+   "to_ward": 22
+  },
+  {
+   "from_ward": 106,
+   "share_of_from": 0.3811,
+   "share_of_to": 0.7711,
+   "to_ward": 24
+  },
+  {
+   "from_ward": 106,
+   "share_of_from": 0.4503,
+   "share_of_to": 0.6909,
+   "to_ward": 106
+  },
+  {
+   "from_ward": 107,
+   "share_of_from": 0.2541,
+   "share_of_to": 0.6412,
+   "to_ward": 107
+  },
+  {
+   "from_ward": 107,
+   "share_of_from": 0.3962,
+   "share_of_to": 0.3701,
+   "to_ward": 113
+  },
+  {
+   "from_ward": 107,
+   "share_of_from": 0.3483,
+   "share_of_to": 0.514,
+   "to_ward": 117
+  },
+  {
+   "from_ward": 108,
+   "share_of_from": 0.1563,
+   "share_of_to": 0.1089,
+   "to_ward": 17
+  },
+  {
+   "from_ward": 108,
+   "share_of_from": 0.0525,
+   "share_of_to": 0.0357,
+   "to_ward": 108
+  },
+  {
+   "from_ward": 108,
+   "share_of_from": 0.5018,
+   "share_of_to": 0.9985,
+   "to_ward": 114
+  },
+  {
+   "from_ward": 108,
+   "share_of_from": 0.2895,
+   "share_of_to": 0.1079,
+   "to_ward": 118
+  },
+  {
+   "from_ward": 109,
+   "share_of_from": 0.3499,
+   "share_of_to": 0.474,
+   "to_ward": 90
+  },
+  {
+   "from_ward": 109,
+   "share_of_from": 0.0203,
+   "share_of_to": 0.1468,
+   "to_ward": 97
+  },
+  {
+   "from_ward": 109,
+   "share_of_from": 0.6298,
+   "share_of_to": 0.7355,
+   "to_ward": 109
+  },
+  {
+   "from_ward": 110,
+   "share_of_from": 0.3497,
+   "share_of_to": 0.3384,
+   "to_ward": 65
+  },
+  {
+   "from_ward": 110,
+   "share_of_from": 0.0288,
+   "share_of_to": 0.0058,
+   "to_ward": 67
+  },
+  {
+   "from_ward": 110,
+   "share_of_from": 0.059,
+   "share_of_to": 0.0348,
+   "to_ward": 72
+  },
+  {
+   "from_ward": 110,
+   "share_of_from": 0.559,
+   "share_of_to": 0.8199,
+   "to_ward": 110
+  },
+  {
+   "from_ward": 111,
+   "share_of_from": 0.1499,
+   "share_of_to": 0.1139,
+   "to_ward": 6
+  },
+  {
+   "from_ward": 111,
+   "share_of_from": 0.1288,
+   "share_of_to": 0.1376,
+   "to_ward": 101
+  },
+  {
+   "from_ward": 111,
+   "share_of_from": 0.7213,
+   "share_of_to": 0.4373,
+   "to_ward": 111
+  }
+ ],
+ "schema_version": 1,
+ "sources": {
+  "from": {
+   "licence": "Municipal Demarcation Board public data",
+   "notes": "The wards used for the 2011 local government elections.",
+   "publisher": "Municipal Demarcation Board",
+   "retrieved_at": "2026-11-17",
+   "title": "Wards (2011 delimitation), City of Cape Town (CPT)",
+   "url": "https://services7.arcgis.com/oeoyTUJC8HEeYsRB/arcgis/rest/services/MDB_Wards_2011/FeatureServer/0"
+  },
+  "to": {
+   "licence": "City of Cape Town Open Data Licence",
+   "notes": "Layer metadata still describes 2016 wards, but every feature has WARD_YEAR=2026 and there are 118 wards. Cross-checked against the Municipal Demarcation Board 2026 layer: per-ward intersection-over-union min 0.9746.",
+   "publisher": "City of Cape Town",
+   "retrieved_at": "2026-11-16",
+   "title": "Wards (2026 delimitation)",
+   "url": "https://citymaps.capetown.gov.za/agsext/rest/services/Theme_Based/ODP_SPLIT_5/FeatureServer/6"
+  }
+ },
+ "ward_vintage": 2026
+}

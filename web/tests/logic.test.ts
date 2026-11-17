@@ -1,11 +1,14 @@
 import { describe, expect, it } from "vitest";
 import { fmtDate, fmtRand, fmtUnit } from "../src/format";
-import { legendEntries, quantileScale, RAMP } from "../src/map/scales";
+import { categoricalPaint, divergingLegend, divergingScale, legendEntries, quantileScale, RAMP, SCHEMES, SCHEME_KEYS } from "../src/map/scales";
+import { niceTicks, spreadLabels } from "../src/charts/LineChart";
+import { topParties } from "../src/elections/Trends";
+import { partyColour, OTHER_PARTY } from "../src/elections/partyColours";
 import { predecessors } from "../src/panel/Allocations";
 import { parseHash, toHash } from "../src/state";
 import { suggest } from "../src/search/Search";
 import { bbox, inPolygon } from "../src/geo";
-import { standing, terms } from "../src/metrics";
+import { prShare, standing, terms } from "../src/metrics";
 import { characterLine } from "../src/places/places";
 import { pointsChange, wardResult } from "../src/elections/Elections";
 import { yearsInTerm } from "../src/elections/Compare";
@@ -53,15 +56,15 @@ describe("format", () => {
 describe("hash state", () => {
   it("round-trips", () => {
     const s = parseHash("#ward=57&metric=median_days");
-    expect(s).toEqual({ ward: 57, metric: "median_days", city: false, layers: [], term: null, party: null, compare: [] });
+    expect(s).toEqual({ ward: 57, metric: "median_days", city: false, layers: [], term: null, party: null, compare: [], vote: null, trends: false });
     expect(parseHash(toHash(s))).toEqual(s);
   });
   it("ignores junk", () => {
-    expect(parseHash("#ward=abc&metric=nope")).toEqual({ ward: null, metric: "pct_closed_30d", city: false, layers: [], term: null, party: null, compare: [] });
+    expect(parseHash("#ward=abc&metric=nope")).toEqual({ ward: null, metric: "pct_closed_30d", city: false, layers: [], term: null, party: null, compare: [], vote: null, trends: false });
   });
   it("keeps the city overview only when no ward is open", () => {
-    expect(parseHash(toHash({ ward: null, metric: "water_days", city: true, layers: [], term: null, party: null, compare: [] }))).toEqual({ ward: null, metric: "water_days", city: true, layers: [], term: null, party: null, compare: [] });
-    expect(toHash({ ward: 3, metric: "pct_closed_30d", city: true, layers: [], term: null, party: null, compare: [] })).toBe("#ward=3");
+    expect(parseHash(toHash({ ward: null, metric: "water_days", city: true, layers: [], term: null, party: null, compare: [], vote: null, trends: false }))).toEqual({ ward: null, metric: "water_days", city: true, layers: [], term: null, party: null, compare: [], vote: null, trends: false });
+    expect(toHash({ ward: 3, metric: "pct_closed_30d", city: true, layers: [], term: null, party: null, compare: [], vote: null, trends: false })).toBe("#ward=3");
   });
   it("keeps the council term", () => {
     expect(parseHash("#term=2021&ward=4")).toMatchObject({ term: 2021, ward: 4 });
@@ -159,7 +162,7 @@ describe("characterLine", () => {
 
 describe("wardResult", () => {
   const row = (ward_no: number) => ({ ward_no, registered: 100, turnout: 0.5, winner: "A", parties: [] });
-  const base = { wards: { ward_vintage: 2026 }, crosswalk: { from_vintage: 2021, rows: [{ from_ward: 3, to_ward: 7, share_of_from: 0.5, share_of_to: 0.7 }] } };
+  const base = { wards: { ward_vintage: 2026 }, crosswalks: [{ from_vintage: 2021, rows: [{ from_ward: 3, to_ward: 7, share_of_from: 0.5, share_of_to: 0.7 }] }] };
   it("uses the same ward when the election was on current boundaries", () => {
     const data = { ...base, electionWards: [{ year: 2026, ward_vintage: 2026, rows: [row(7)] }] } as unknown as AppData;
     expect(wardResult(data, 7)?.oldWard).toBeNull();
@@ -196,5 +199,75 @@ describe("yearsInTerm", () => {
   it("counts a financial year in the term in which it ends", () => {
     expect(yearsInTerm(years, { year: 2021, vintage: 2021, next: 2026, current: false, label: "" })).toEqual(years);
     expect(yearsInTerm(years, { year: 2026, vintage: 2026, next: null, current: true, label: "" })).toEqual([]);
+  });
+});
+
+describe("colour schemes", () => {
+  it("every scheme has five steps per ramp and a neutral middle in both themes", () => {
+    for (const k of SCHEME_KEYS) {
+      for (const mode of ["light", "dark"] as const) {
+        expect(SCHEMES[k][mode].ramp).toHaveLength(5);
+        expect(SCHEMES[k][mode].diverging).toHaveLength(5);
+      }
+    }
+  });
+});
+
+describe("divergingScale", () => {
+  const s = divergingScale([-12, -6, -1, 0, 1, 2, 6, 12, 20]);
+  it("keeps zero and small changes in the neutral middle", () => {
+    expect(s.classOf(0)).toBe(2);
+    expect(s.classOf(s.small / 2)).toBe(2);
+    expect(s.classOf(-s.small / 2)).toBe(2);
+  });
+  it("is symmetric about zero", () => {
+    expect(s.classOf(s.large)).toBe(4);
+    expect(s.classOf(-s.large)).toBe(0);
+    expect(s.classOf(s.small)).toBe(3);
+    expect(s.classOf(-s.small)).toBe(1);
+  });
+  it("treats null as no data", () => expect(s.classOf(null)).toBe(-1));
+  it("legend runs from up to down with a neutral entry", () => {
+    const l = divergingLegend(s, String, SCHEMES.blue.light.diverging);
+    expect(l[0]![1]).toMatch(/^Up /);
+    expect(l[l.length - 1]![1]).toMatch(/^Down /);
+    expect(l.some(([, t]) => /either way/.test(t))).toBe(true);
+  });
+});
+
+describe("categoricalPaint", () => {
+  it("colours by category and orders the legend by ward count", () => {
+    const p = categoricalPaint(new Map([[1, "A"], [2, "B"], [3, "B"], [4, null]]), (c) => (c === "A" ? "#a" : "#b"));
+    expect(p.colours.get(1)).toBe("#a");
+    expect(p.colours.has(4)).toBe(false);
+    expect(p.legend[0]).toEqual(["#b", "B (2 wards)"]);
+  });
+  it("party colours are fixed per party, with grey for the rest", () => {
+    expect(partyColour("Democratic Alliance")).toBe(partyColour("Democratic Alliance"));
+    expect(partyColour("Some New Party")).toBe(OTHER_PARTY);
+    expect(partyColour("Democratic Alliance", true)).not.toBe(partyColour("Democratic Alliance"));
+  });
+});
+
+describe("chart helpers", () => {
+  it("niceTicks covers the range with round steps", () => {
+    const t = niceTicks(0, 154);
+    expect(t[0]).toBe(0);
+    expect(t[t.length - 1]!).toBeGreaterThanOrEqual(154);
+    expect(t[1]! - t[0]!).toBe(50);
+  });
+  it("spreadLabels keeps labels apart and in order", () => {
+    const ys = spreadLabels([100, 101, 50], 12, 0, 200);
+    expect(ys[2]).toBe(50);
+    expect(ys[1]! - ys[0]!).toBeGreaterThanOrEqual(12);
+  });
+  it("topParties ranks by peak value and drops small ones", () => {
+    const rows = new Map<string, (number | null)[]>([["A", [1, 10]], ["B", [5, 4]], ["C", [0, 1]]]);
+    expect(topParties(rows, 2)).toEqual(["A", "B"]);
+    expect(topParties(rows, 5, 2)).toEqual(["A", "B"]);
+  });
+  it("prShare counts an unlisted party as 0", () => {
+    expect(prShare([{ party: "A", share: 0.4 }], "B")).toBe(0);
+    expect(prShare([{ party: "A", share: 0.4 }], "A")).toBe(0.4);
   });
 });

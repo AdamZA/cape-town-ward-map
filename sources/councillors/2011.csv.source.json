@@ -1,0 +1,10 @@
+{
+  "licence": "Electoral Commission of South Africa (copyright notice: reproduction for non-commercial use; https://www.elections.org.za/pw/Copyright-Notice)",
+  "method": "aggregated",
+  "notes": "Winning ward candidate per ward, from the dashboard data file https://results.elections.org.za/dashboards/lge/MapsJason/2011/EEID197Munic9006.js (sha256 735b98e43a81a8900f42a39955280908aa2228e9a3cde93ec656cbb0ca7c8800). Names title-cased from the IEC's capitals. As elected; by-elections since are not reflected.",
+  "publisher": "Electoral Commission of South Africa (IEC)",
+  "retrieved_at": "2026-11-17",
+  "sha256": "65f6bb0c2fc809e8cd3983356209e1ef1cd0b944d8d768e6cf290047d29fdaf5",
+  "title": "Local Government Elections 2011: elected ward councillors",
+  "url": "https://results.elections.org.za/dashboards/lge/LGEResultsDashboard.aspx"
+}

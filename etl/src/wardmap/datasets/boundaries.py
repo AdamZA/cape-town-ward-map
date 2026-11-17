@@ -22,8 +22,9 @@ from wardmap.config import (
     CCT_ODP5_MIRROR,
     CCT_SUBCOUNCILS_LAYER,
     CCT_WARDS_LAYER,
+    CURRENT_VINTAGE,
     MDB_LICENCE,
-    MDB_WARDS,
+    MDB_WARD_LAYERS,
     SOURCES,
     VINTAGE_WARD_COUNT,
 )
@@ -54,10 +55,41 @@ def ward_file(vintage: int):
 
 
 def _mdb_wards(vintage: int) -> dict:
-    fc = arcgis.geojson(MDB_WARDS[vintage], where="CAT_B='CPT'", out_fields="WardNo")
+    url, where, field = MDB_WARD_LAYERS[vintage]
+    fc = arcgis.geojson(url, where=where, out_fields=field)
     for f in fc["features"]:
-        f["properties"] = {"ward_no": int(f["properties"]["WardNo"])}
+        f["properties"] = {"ward_no": int(f["properties"][field])}
+    # The 2011 layer holds every ward twice. Drop exact repeats only; differing shapes for one
+    # ward number are left in, so _check_ward_set still fails on them.
+    seen: dict[int, str] = {}
+    kept = []
+    for f in fc["features"]:
+        no, shape = f["properties"]["ward_no"], json.dumps(f["geometry"], sort_keys=True)
+        if seen.get(no) == shape:
+            continue
+        seen.setdefault(no, shape)
+        kept.append(f)
+    fc["features"] = sorted(kept, key=lambda f: f["properties"]["ward_no"])
     return fc
+
+
+def pin_older() -> None:
+    """Wards of earlier terms (2011, 2016), from the Municipal Demarcation Board."""
+    for vintage in (2011, 2016):
+        fc = _mdb_wards(vintage)
+        _check_ward_set(fc, vintage, f"MDB {vintage} wards")
+        write_source_geojson(
+            ward_file(vintage),
+            fc,
+            SourceRecord(
+                title=f"Wards ({vintage} delimitation), City of Cape Town (CPT)",
+                publisher="Municipal Demarcation Board",
+                url=MDB_WARD_LAYERS[vintage][0],
+                retrieved_at=today(),
+                licence=MDB_LICENCE,
+                notes=f"The wards used for the {vintage} local government elections.",
+            ),
+        )
 
 
 def _check_ward_set(fc: dict, vintage: int, label: str) -> None:
@@ -141,7 +173,7 @@ def pin() -> None:
         SourceRecord(
             title="Wards (2021 delimitation), City of Cape Town (CPT)",
             publisher="Municipal Demarcation Board",
-            url=MDB_WARDS[2021],
+            url=MDB_WARD_LAYERS[2021][0],
             retrieved_at=today(),
             licence=MDB_LICENCE,
             notes="Service name says 2020; these are the wards used for the 2021 elections.",
@@ -201,7 +233,9 @@ def build() -> list[BoundaryEntry]:
         entries.append(
             BoundaryEntry(ward_vintage=vintage, file=name, source=source(ward_file(vintage)))
         )
-    build_crosswalk(2021, 2026)
+    for vintage in sorted(VINTAGE_WARD_COUNT):
+        if vintage != CURRENT_VINTAGE:
+            build_crosswalk(vintage, CURRENT_VINTAGE)
     return entries
 
 

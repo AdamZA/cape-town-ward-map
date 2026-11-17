@@ -4,20 +4,23 @@ import type { PlaceRow } from "./generated/places";
 import { fmtDate, fmtUnit } from "./format";
 import { wardAt } from "./geo";
 import { basemapStyle, WardMap } from "./map/map";
-import { legendEntries, NO_DATA, quantileScale } from "./map/scales";
-import { buildMetrics, METRIC_KEYS, type MetricKey, type Term, terms, topics } from "./metrics";
+import { paintMetric } from "./map/paint";
+import { isScheme, SCHEME_KEYS, SCHEMES, schemeColours } from "./map/scales";
+import { buildMetrics, mapParties, mapParty, METRIC_KEYS, type MetricKey, type Term, terms, topics } from "./metrics";
 import type { LandmarkRow } from "./generated/landmarks";
 import { Layers } from "./places/Layers";
 import { categoryMap } from "./places/places";
 import { ComparePanel } from "./elections/Compare";
 import { PartyPanel } from "./elections/PartyPanel";
 import { Timeline } from "./elections/Timeline";
+import { TrendsPanel } from "./elections/Trends";
 import { CityOverview } from "./panel/CityOverview";
 import { PastWardPanel } from "./panel/PastWardPanel";
 import { SourceLine } from "./panel/Figure";
 import { WardPanel } from "./panel/WardPanel";
 import { PlaceResult, Search } from "./search/Search";
-import { useHashState } from "./state";
+import { useHashState, usePreference } from "./state";
+import { THEMES, type ThemeChoice, useTheme } from "./theme";
 
 export function App() {
   const [data, setData] = useState<AppData | null>(null);
@@ -51,23 +54,39 @@ function Main({ data }: { data: AppData }) {
     };
   }, [term.vintage]);
 
-  const metrics = useMemo(() => buildMetrics(data, term), [data, term.year]);
+  const [scheme, setScheme] = usePreference("wardmap.scheme", "blue", isScheme);
+  const [themeChoice, setThemeChoice, dark] = useTheme();
+  const metrics = useMemo(() => buildMetrics(data, term, { party: state.vote }), [data, term.year, state.vote]);
   // A metric that doesn't exist in this term falls back to the term's first one.
   const metricKey = metrics[state.metric] ? state.metric : METRIC_KEYS.find((k) => metrics[k])!;
   const metric = metrics[metricKey]!;
   const field = metric.env.fields[metric.field]!;
-  const scale = useMemo(() => quantileScale([...metric.values.values()]), [metric]);
+  const paint = useMemo(() => paintMetric(metric, scheme, dark), [metric, scheme, dark]);
   const fmt = (v: number) => fmtUnit(v, metric.unit);
-  const panel = state.compare.length ? "compare" : state.party ? "party" : state.ward ? "ward" : state.city ? "city" : null;
+  const partyMap = metricKey === "party_share" || metricKey === "party_change";
+  const shownParty = mapParty(data, term, state.vote);
+  const hoverText = (w: number) => {
+    const v = metric.values.get(w);
+    const cat = metric.category?.get(w);
+    if (cat) return `${cat}${v != null ? ` (${fmt(v)})` : ""}`;
+    return v != null ? fmt(v) : metric.nullLabel;
+  };
+  const panel = state.compare.length ? "compare" : state.trends ? "trends" : state.party ? "party" : state.ward ? "ward" : state.city ? "city" : null;
 
   useEffect(() => {
     let cancelled = false;
-    basemapStyle().then((style) => {
+    basemapStyle(dark).then((style) => {
       if (cancelled || !mapEl.current || map.current) return;
-      map.current = new WardMap(mapEl.current, data.boundaries, style, {
-        onClick: (ward) => update({ ward, city: false, party: null }),
-        onHover: (ward, p) => setHover(ward && p ? { ward, ...p } : null),
-      });
+      map.current = new WardMap(
+        mapEl.current,
+        data.boundaries,
+        style,
+        {
+          onClick: (ward) => update({ ward, city: false, party: null }),
+          onHover: (ward, p) => setHover(ward && p ? { ward, ...p } : null),
+        },
+        dark,
+      );
       // Effects that ran before the map existed: apply their state now.
       setMapReady(true);
     });
@@ -77,12 +96,21 @@ function Main({ data }: { data: AppData }) {
   }, []);
 
   useEffect(() => {
+    if (!mapReady) return;
+    let live = true;
+    basemapStyle(dark).then((style) => live && map.current?.setTheme(dark, style));
+    return () => {
+      live = false;
+    };
+  }, [dark, mapReady]);
+
+  useEffect(() => {
     map.current?.setWards(wardShapes);
   }, [wardShapes, mapReady]);
 
   useEffect(() => {
-    map.current?.setClasses(new Map([...metric.values].map(([w, v]) => [w, scale.classOf(v)])));
-  }, [metric, scale, mapReady]);
+    map.current?.setColours(paint.colours);
+  }, [paint, mapReady]);
 
   useEffect(() => {
     if (!map.current) return;
@@ -179,7 +207,9 @@ function Main({ data }: { data: AppData }) {
           term={term}
           onTerm={chooseTerm}
           comparing={state.compare.length > 0}
-          onCompare={() => update({ compare: state.compare.length ? [] : allTerms.map((t) => t.year) })}
+          onCompare={() => update({ compare: state.compare.length ? [] : allTerms.map((t) => t.year), trends: false })}
+          trending={panel === "trends"}
+          onTrends={() => update({ trends: panel !== "trends", compare: [] })}
         />
       </header>
 
@@ -198,17 +228,29 @@ function Main({ data }: { data: AppData }) {
               </optgroup>
             ))}
           </select>
+          {partyMap && shownParty && (
+            <div class="control-row">
+              <label for="vote-party">Party</label>
+              <select id="vote-party" value={shownParty} onChange={(e) => update({ vote: e.currentTarget.value })}>
+                {mapParties(data, term).map((p) => (
+                  <option key={p} value={p}>
+                    {p}
+                  </option>
+                ))}
+              </select>
+            </div>
+          )}
           <p class="reading">{metric.reading}</p>
           {!term.current && <p class="reading term-note">Showing the {term.label} term on its own ward boundaries.</p>}
           <ul class="legend" aria-label={`Legend: ${metric.label}`}>
-            {legendEntries(scale, fmt).map(([color, label]) => (
+            {paint.legend.map(([color, label]) => (
               <li key={label}>
                 <span class="swatch" style={{ background: color }} />
                 {label}
               </li>
             ))}
             <li>
-              <span class="swatch" style={{ background: NO_DATA }} />
+              <span class="swatch swatch-none" />
               {metric.nullLabel}
             </li>
           </ul>
@@ -225,6 +267,29 @@ function Main({ data }: { data: AppData }) {
             )}
             <SourceLine env={metric.env} sourceKey={field.source} method={field.method} />
           </p>
+          <div class="control-row scheme-row">
+            <label for="scheme">Map colours</label>
+            <select id="scheme" value={scheme} onChange={(e) => isScheme(e.currentTarget.value) && setScheme(e.currentTarget.value)}>
+              {SCHEME_KEYS.map((k) => (
+                <option key={k} value={k}>
+                  {SCHEMES[k].label}
+                </option>
+              ))}
+            </select>
+            <span class="scheme-preview" aria-hidden="true">
+              {schemeColours(scheme, dark).ramp.map((c) => (
+                <span key={c} style={{ background: c }} />
+              ))}
+            </span>
+            <label for="theme">Theme</label>
+            <select id="theme" value={themeChoice} onChange={(e) => setThemeChoice(e.currentTarget.value as ThemeChoice)}>
+              {(Object.keys(THEMES) as ThemeChoice[]).map((k) => (
+                <option key={k} value={k}>
+                  {THEMES[k]}
+                </option>
+              ))}
+            </select>
+          </div>
           <Layers env={data.landmarks} on={state.layers} onChange={(layers) => update({ layers })} />
         </div>
         {(place || notice) && (
@@ -237,7 +302,7 @@ function Main({ data }: { data: AppData }) {
           <div class="tooltip" style={{ left: hover.x + 14, top: hover.y + 14 }} role="status">
             <strong>Ward {hover.ward}</strong>
             <span>
-              {metric.label}: {metric.values.get(hover.ward) != null ? fmt(metric.values.get(hover.ward)!) : metric.nullLabel}
+              {metric.label}: {hoverText(hover.ward)}
             </span>
           </div>
         )}
@@ -254,6 +319,8 @@ function Main({ data }: { data: AppData }) {
               onSelect={(years) => update({ compare: years.length ? years : [] })}
               onClose={() => update({ compare: [] })}
             />
+          ) : panel === "trends" ? (
+            <TrendsPanel data={data} terms={allTerms} ward={term.current ? state.ward : null} dark={dark} onClose={() => update({ trends: false })} />
           ) : panel === "party" ? (
             <PartyPanel data={data} party={state.party!} onClose={() => update({ party: null })} />
           ) : panel === "ward" && !term.current ? (

@@ -9,31 +9,35 @@ import type { WardFeatures } from "../data";
 import type { LandmarkRow } from "../generated/landmarks";
 import { drawIcon } from "../places/icons";
 import { bbox, type BBox } from "../geo";
-import { NO_DATA, RAMP } from "./scales";
+import { NO_DATA } from "./scales";
 
 // OpenFreeMap: free, no API key. If it is unavailable we fall back to a blank background; the
 // choropleth is our own layer and works without a basemap.
-const BASEMAP = "https://tiles.openfreemap.org/styles/positron";
-const BLANK: StyleSpecification = {
+const BASEMAP = { light: "https://tiles.openfreemap.org/styles/positron", dark: "https://tiles.openfreemap.org/styles/dark" };
+const blank = (dark: boolean): StyleSpecification => ({
   version: 8,
   sources: {},
-  layers: [{ id: "bg", type: "background", paint: { "background-color": "#f2f2ef" } }],
-};
+  layers: [{ id: "bg", type: "background", paint: { "background-color": dark ? "#15181b" : "#f2f2ef" } }],
+});
 /** How far past the metro the map may pan (degrees), and how far out it may zoom. */
 const BOUNDS_MARGIN = 0.35;
 const MIN_ZOOM = 8.5;
-const INK = "#16191d";
 const CANDIDATE = "#d9480f";
+/** Line and label colours for each theme: ink on a halo, and the gap drawn between wards. */
+const THEME = {
+  light: { ink: "#16191d", halo: "#ffffff", gap: "#ffffff" },
+  dark: { ink: "#eef0f2", halo: "#111316", gap: "#15181b" },
+};
 
 /** The basemap style, or a blank one if the basemap can't be reached (decided once, up front). */
-export async function basemapStyle(): Promise<StyleSpecification> {
+export async function basemapStyle(dark = false): Promise<StyleSpecification> {
   try {
-    const res = await fetch(BASEMAP, { signal: AbortSignal.timeout(8000) });
+    const res = await fetch(BASEMAP[dark ? "dark" : "light"], { signal: AbortSignal.timeout(8000) });
     if (res.ok) return (await res.json()) as StyleSpecification;
   } catch {
     // fall through
   }
-  return BLANK;
+  return blank(dark);
 }
 
 export interface WardMapHandlers {
@@ -58,10 +62,16 @@ export class WardMap {
   private selected: number | null = null;
   private candidates: number[] = [];
   private hovered: number | null = null;
-  private classes = new Map<number, number>();
+  private colours = new Map<number, string>();
   private extent: BBox;
 
-  constructor(container: HTMLElement, private wards: WardFeatures, style: StyleSpecification, handlers: WardMapHandlers) {
+  constructor(
+    container: HTMLElement,
+    private wards: WardFeatures,
+    style: StyleSpecification,
+    handlers: WardMapHandlers,
+    private dark = false,
+  ) {
     this.extent = bbox(wards.features.map((f) => f.geometry));
     const [x0, y0, x1, y1] = this.extent;
     this.map = new maplibregl.Map({
@@ -107,23 +117,39 @@ export class WardMap {
     });
   }
 
+  private get theme() {
+    return THEME[this.dark ? "dark" : "light"];
+  }
+
+  /** Switch between the light and dark basemap; our layers are re-added on the new style. */
+  setTheme(dark: boolean, style: StyleSpecification) {
+    if (dark === this.dark) return;
+    this.dark = dark;
+    this.popup?.remove();
+    this.hovered = null;
+    this.map.setStyle(style);
+  }
+
   private addLayers() {
     if (this.map.getSource("wards")) return;
     const style = this.map.getStyle();
+    const { ink, halo, gap } = this.theme;
     // Points of interest compete with the data for attention; keep places and roads only.
     for (const l of style.layers) {
       if (l.type === "symbol" && /poi|housenum|aerialway/i.test(l.id)) this.map.setLayoutProperty(l.id, "visibility", "none");
     }
-    const firstLabel = style.layers.find((l) => l.type === "symbol")?.id;
+    // Our layers go under the basemap's label stack: the run of label layers at the top. (Some
+    // styles put a label or two lower down; anchoring there would leave roads above the wards.)
+    let top = style.layers.length;
+    while (top > 0 && style.layers[top - 1]!.type === "symbol") top--;
+    const firstLabel = style.layers[top]?.id;
     this.map.addSource("wards", { type: "geojson", data: this.wards, promoteId: "ward_no" });
     // One label point per ward (computed in the ETL), so numbers aren't repeated per tile.
     this.map.addSource("ward-points", { type: "geojson", data: labelPoints(this.wards) });
-    const fillColor = [
-      "match",
-      ["coalesce", ["feature-state", "cls"], -1],
-      ...RAMP.flatMap((c, i) => [i, c]),
-      NO_DATA,
-    ] as unknown as maplibregl.ExpressionSpecification;
+    // Each ward's colour is set as feature state (see setColours), so any scheme or category
+    // colour works without rebuilding the layer.
+    const colour = ["feature-state", "colour"];
+    const fillColor = ["case", ["to-boolean", colour], ["to-color", colour], NO_DATA] as unknown as maplibregl.ExpressionSpecification;
     const below = (layer: maplibregl.AddLayerObject) => this.map.addLayer(layer, firstLabel);
     below({
       id: "ward-fill",
@@ -131,14 +157,22 @@ export class WardMap {
       source: "wards",
       paint: {
         "fill-color": fillColor,
-        "fill-opacity": ["case", ["boolean", ["feature-state", "hover"], false], 0.92, 0.78],
+        // Wards without data are left nearly clear, so they never read as a colour step.
+        "fill-opacity": [
+          "case",
+          ["!", ["to-boolean", ["feature-state", "colour"]]],
+          ["case", ["boolean", ["feature-state", "hover"], false], 0.35, 0.18],
+          ["boolean", ["feature-state", "hover"], false],
+          0.92,
+          0.78,
+        ],
       },
     });
     below({
       id: "ward-line",
       type: "line",
       source: "wards",
-      paint: { "line-color": "#ffffff", "line-width": ["interpolate", ["linear"], ["zoom"], 9, 0.5, 13, 1.5], "line-opacity": 0.9 },
+      paint: { "line-color": gap, "line-width": ["interpolate", ["linear"], ["zoom"], 9, 0.5, 13, 1.5], "line-opacity": 0.9 },
     });
     below({
       id: "ward-candidate",
@@ -152,14 +186,14 @@ export class WardMap {
       type: "line",
       source: "wards",
       filter: ["==", ["get", "ward_no"], -1],
-      paint: { "line-color": "#ffffff", "line-width": 6 },
+      paint: { "line-color": halo, "line-width": 6 },
     });
     below({
       id: "ward-selected",
       type: "line",
       source: "wards",
       filter: ["==", ["get", "ward_no"], -1],
-      paint: { "line-color": INK, "line-width": 3 },
+      paint: { "line-color": ink, "line-width": 3 },
     });
     if (style.glyphs) {
       // Ward numbers go on top, and take part in label collision with the basemap's names.
@@ -173,15 +207,28 @@ export class WardMap {
           "text-size": ["interpolate", ["linear"], ["zoom"], 10.5, 11, 14, 14],
           "text-font": ["Noto Sans Bold"],
         },
-        paint: { "text-color": INK, "text-halo-color": "#ffffff", "text-halo-width": 1.8 },
+        paint: { "text-color": ink, "text-halo-color": halo, "text-halo-width": 1.8 },
       });
     }
+    this.addIcons();
     this.addPlaceLayers(style.glyphs != null);
-    this.applyClasses();
+    this.applyColours();
     this.applySelection();
   }
 
+  /** Place icons belong to the style, so they're added again after a basemap switch. */
+  private addIcons() {
+    if (!this.places) return;
+    for (const [cat, group] of Object.entries(this.places.groupOf)) {
+      if (this.map.hasImage(cat)) continue;
+      const c = drawIcon(cat, group);
+      const ctx = c?.getContext("2d");
+      if (c && ctx) this.map.addImage(cat, ctx.getImageData(0, 0, c.width, c.height), { pixelRatio: 2 });
+    }
+  }
+
   private addPlaceLayers(glyphs: boolean) {
+    const { ink, halo } = this.theme;
     this.map.addSource("places", {
       type: "geojson",
       data: this.placeData(),
@@ -196,9 +243,9 @@ export class WardMap {
       filter: ["has", "point_count"],
       paint: {
         // Dark discs, so clusters never read as the (plain-text) ward numbers.
-        "circle-color": INK,
+        "circle-color": ink,
         "circle-opacity": 0.85,
-        "circle-stroke-color": "#ffffff",
+        "circle-stroke-color": halo,
         "circle-stroke-width": 1.5,
         "circle-radius": ["step", ["get", "point_count"], 11, 10, 14, 50, 18],
       },
@@ -215,7 +262,7 @@ export class WardMap {
           "text-size": 11,
           "text-allow-overlap": true,
         },
-        paint: { "text-color": "#ffffff" },
+        paint: { "text-color": halo },
       });
     }
     this.map.addLayer({
@@ -238,7 +285,7 @@ export class WardMap {
             }
           : {}),
       },
-      paint: { "text-color": INK, "text-halo-color": "#ffffff", "text-halo-width": 1.5 },
+      paint: { "text-color": ink, "text-halo-color": halo, "text-halo-width": 1.5 },
     });
   }
 
@@ -259,12 +306,7 @@ export class WardMap {
   async setPlaces(places: PlaceLayer) {
     this.places = places;
     await this.ready;
-    for (const [cat, group] of Object.entries(places.groupOf)) {
-      if (this.map.hasImage(cat)) continue;
-      const c = drawIcon(cat, group);
-      const ctx = c?.getContext("2d");
-      if (c && ctx) this.map.addImage(cat, ctx.getImageData(0, 0, c.width, c.height), { pixelRatio: 2 });
-    }
+    this.addIcons();
     this.refreshPlaces();
   }
 
@@ -311,21 +353,22 @@ export class WardMap {
     (this.map.getSource("wards") as maplibregl.GeoJSONSource | undefined)?.setData(wards);
     (this.map.getSource("ward-points") as maplibregl.GeoJSONSource | undefined)?.setData(labelPoints(wards));
     this.hovered = null;
-    this.applyClasses();
+    this.applyColours();
     this.applySelection();
   }
 
-  async setClasses(classes: Map<number, number>) {
-    this.classes = classes;
+  /** Colour each ward (wards missing from the map get the no-data colour). */
+  async setColours(colours: Map<number, string>) {
+    this.colours = colours;
     await this.ready;
-    this.applyClasses();
+    this.applyColours();
   }
 
-  private applyClasses() {
+  private applyColours() {
     if (!this.map.getSource("wards")) return;
     for (const f of this.wards.features) {
       const w = f.properties.ward_no;
-      this.map.setFeatureState({ source: "wards", id: w }, { cls: this.classes.get(w) ?? -1 });
+      this.map.setFeatureState({ source: "wards", id: w }, { colour: this.colours.get(w) ?? "" });
     }
   }
 

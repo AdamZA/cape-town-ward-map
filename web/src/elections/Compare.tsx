@@ -141,7 +141,7 @@ export function ComparePanel({ data, terms, selected, ward, onSelect, onClose }:
     ? chosen.map((t) => {
         const env = data.electionWards.find((e) => e.year === t.year);
         if (!env) return null;
-        const [main] = predecessors(ward, data.wards.ward_vintage, env, data.crosswalk);
+        const [main] = predecessors(ward, data.wards.ward_vintage, env, data.crosswalks);
         const row = main && env.rows.find((r) => r.ward_no === main.ward);
         return row ? { row, main } : null;
       })

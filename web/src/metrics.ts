@@ -15,7 +15,11 @@ export type MetricKey =
   | "water_days"
   | "power_days"
   | "turnout"
+  | "winner_party"
   | "winner_share"
+  | "margin"
+  | "party_share"
+  | "party_change"
   | "allocation_total"
   | "murder_rate"
   | "contact_rate"
@@ -41,8 +45,16 @@ export function terms(d: { elections: { year: number; ward_vintage: number }[] }
   });
 }
 
+/** How a metric is coloured: magnitude, change either way, or one colour per category. */
+export type MetricKind = "sequential" | "diverging" | "categorical";
+
 export interface Metric {
   key: MetricKey;
+  kind: MetricKind;
+  /** Categorical metrics: each ward's category (e.g. the winning party). */
+  category?: Map<number, string | null>;
+  /** Listed in the city overview's ward table. */
+  inTable: boolean;
   topic: string;
   label: string;
   unit: string | null;
@@ -60,14 +72,42 @@ export interface Metric {
 
 interface Def {
   topic: string;
+  kind?: MetricKind;
+  /** Left out of the city overview's ward table (categories, or one party's figures). */
+  noTable?: boolean;
   reading: string;
   nullLabel?: string;
   /** Label and unit, when not the field's own. */
   label?: string;
   unit?: string;
   /** Null when the metric doesn't exist for this term. */
-  build: (d: AppData, t: Term) => Pick<Metric, "env" | "field" | "values" | "city"> | null;
+  build: (d: AppData, t: Term, o: Options) => (Pick<Metric, "env" | "field" | "values" | "city"> & Partial<Pick<Metric, "category" | "label" | "reading">>) | null;
 }
+
+/** Choices that change what a metric shows (the party for party maps). */
+export interface Options {
+  party: string | null;
+}
+
+/** Parties worth a party map in a term: at least 1% of the city's votes, largest first. */
+export function mapParties(d: AppData, t: Term): string[] {
+  const m = d.elections.find((e) => e.year === t.year)?.municipalities.find((x) => x.code === "CPT");
+  return (m?.parties ?? []).filter((p) => p.share >= 0.01).map((p) => p.party);
+}
+
+/** The party a party map shows: the chosen one if it stood, else the largest. */
+export function mapParty(d: AppData, t: Term, chosen: string | null): string | null {
+  const ps = mapParties(d, t);
+  return chosen && ps.includes(chosen) ? chosen : (ps[0] ?? null);
+}
+
+/** A party's share of a ward's party-ballot votes. Parties under 0.5% in a ward aren't listed: 0. */
+export function prShare(parties: { party: string; share: number }[], party: string): number {
+  return parties.find((p) => p.party === party)?.share ?? 0;
+}
+
+/** Previous-election figures are left out where under 80% of the ward's voters can be traced. */
+export const MIN_PREVIOUS_COVERAGE = 0.8;
 
 const sr = (field: "pct_closed_30d" | "median_days" | "pct_no_completion" | "per_1000" | "pct_located") =>
   (d: AppData, t: Term) => !t.current ? null : ({
@@ -144,11 +184,95 @@ const DEFS: Record<MetricKey, Def> = {
       return e && { env: e, field: "turnout", values: new Map(e.rows.map((r) => [r.ward_no, r.turnout])), city: null };
     },
   },
+  winner_party: {
+    topic: "Elections",
+    kind: "categorical",
+    noTable: true,
+    label: "Winning party (ward councillor)",
+    unit: "share",
+    reading: "The party whose candidate won the ward seat in the election that started this term.",
+    build: (d, t) => {
+      const e = termElectionWards(d, t);
+      return (
+        e && {
+          env: e,
+          field: "parties",
+          values: new Map(e.rows.map((r) => [r.ward_no, r.parties[0]?.share ?? null])),
+          category: new Map(e.rows.map((r) => [r.ward_no, r.winner])),
+          city: null,
+        }
+      );
+    },
+  },
+  party_share: {
+    topic: "Elections",
+    noTable: true,
+    unit: "share",
+    reading: "",
+    build: (d, t, o) => {
+      const e = termElectionWards(d, t);
+      const party = mapParty(d, t, o.party);
+      if (!e || !party) return null;
+      return {
+        env: e,
+        field: "parties",
+        label: `Vote share: ${party}`,
+        reading: `${party}'s share of each ward's party-ballot (PR) votes in ${t.year}. Wards where it got under 0.5% count as 0.`,
+        values: new Map(e.rows.map((r) => [r.ward_no, prShare(r.pr_parties, party)])),
+        city: d.elections.find((x) => x.year === t.year)?.municipalities.find((m) => m.code === "CPT")?.parties.find((p) => p.party === party)?.share ?? null,
+      };
+    },
+  },
+  party_change: {
+    topic: "Elections",
+    kind: "diverging",
+    noTable: true,
+    unit: "points",
+    reading: "",
+    build: (d, t, o) => {
+      const e = termElectionWards(d, t);
+      const party = mapParty(d, t, o.party);
+      const prevYear = e?.rows.find((r) => r.previous)?.previous?.year;
+      if (!e || !party || !prevYear) return null;
+      return {
+        env: e,
+        field: "parties",
+        label: `Change since ${prevYear}: ${party}`,
+        reading: `Change in ${party}'s share of the party-ballot vote between ${prevYear} and ${t.year}, in percentage points. The ${prevYear} votes are added up over the same voting districts, so the area is the same. Left out where under 80% of the ward's voters can be traced back.`,
+        values: new Map(
+          e.rows.map((r) => [
+            r.ward_no,
+            r.previous && r.previous.coverage >= MIN_PREVIOUS_COVERAGE
+              ? Math.round((prShare(r.pr_parties, party) - prShare(r.previous.parties, party)) * 1000) / 10
+              : null,
+          ]),
+        ),
+        city: null,
+      };
+    },
+  },
+  margin: {
+    topic: "Elections",
+    label: "Winning margin",
+    unit: "pts",
+    reading: "How far the winning candidate finished ahead of the runner-up, in percentage points of the ward vote. A stronger colour means a safer seat.",
+    build: (d, t) => {
+      const e = termElectionWards(d, t);
+      return (
+        e && {
+          env: e,
+          field: "parties",
+          values: new Map(e.rows.map((r) => [r.ward_no, r.parties.length ? Math.round(((r.parties[0]?.share ?? 0) - (r.parties[1]?.share ?? 0)) * 1000) / 10 : null])),
+          city: null,
+        }
+      );
+    },
+  },
   winner_share: {
     topic: "Elections",
     label: "Winner's share of the ward vote",
     unit: "share",
-    reading: "The winning candidate's share of valid ward-ballot votes. Darker means a less contested ward, not a better one.",
+    reading: "The winning candidate's share of valid ward-ballot votes. A stronger colour means a less contested ward, not a better one.",
     build: (d, t) => {
       const e = termElectionWards(d, t);
       return e && { env: e, field: "parties", values: new Map(e.rows.map((r) => [r.ward_no, r.parties[0]?.share ?? null])), city: null };
@@ -197,21 +321,23 @@ export const isMetric = (k: string): k is MetricKey => k in DEFS;
 export type Metrics = Partial<Record<MetricKey, Metric>>;
 
 /** The metrics that exist for a term (service figures only on the current term's wards). */
-export function buildMetrics(d: AppData, t: Term): Metrics {
+export function buildMetrics(d: AppData, t: Term, o: Options = { party: null }): Metrics {
   const out: Metrics = {};
   for (const key of METRIC_KEYS) {
     const def = DEFS[key];
-    const built = def.build(d, t);
+    const built = def.build(d, t, o);
     if (!built) continue;
     const meta = built.env.fields[built.field];
     out[key] = {
       key,
+      kind: def.kind ?? "sequential",
+      inTable: !def.noTable,
       topic: def.topic,
-      label: def.label ?? meta?.label ?? key,
       unit: def.unit ?? meta?.unit ?? null,
-      reading: def.reading,
       nullLabel: def.nullLabel ?? "Not enough data",
       ...built,
+      label: built.label ?? def.label ?? meta?.label ?? key,
+      reading: built.reading ?? def.reading,
     };
   }
   return out;

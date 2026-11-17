@@ -1,6 +1,30 @@
 {
  "boundaries": [
   {
+   "file": "boundaries-2011.geojson",
+   "source": {
+    "licence": "Municipal Demarcation Board public data",
+    "notes": "The wards used for the 2011 local government elections.",
+    "publisher": "Municipal Demarcation Board",
+    "retrieved_at": "2026-11-17",
+    "title": "Wards (2011 delimitation), City of Cape Town (CPT)",
+    "url": "https://services7.arcgis.com/oeoyTUJC8HEeYsRB/arcgis/rest/services/MDB_Wards_2011/FeatureServer/0"
+   },
+   "ward_vintage": 2011
+  },
+  {
+   "file": "boundaries-2016.geojson",
+   "source": {
+    "licence": "Municipal Demarcation Board public data",
+    "notes": "The wards used for the 2016 local government elections.",
+    "publisher": "Municipal Demarcation Board",
+    "retrieved_at": "2026-11-17",
+    "title": "Wards (2016 delimitation), City of Cape Town (CPT)",
+    "url": "https://services7.arcgis.com/oeoyTUJC8HEeYsRB/arcgis/rest/services/MDB_Wards_2016/FeatureServer/0"
+   },
+   "ward_vintage": 2016
+  },
+  {
    "file": "boundaries-2021.geojson",
    "source": {
     "licence": "Municipal Demarcation Board public data",
@@ -26,6 +50,18 @@
   }
  ],
  "datasets": [
+  {
+   "budget_year": null,
+   "dataset": "crosswalk",
+   "file": "crosswalk-2011-2026.json",
+   "ward_vintage": 2026
+  },
+  {
+   "budget_year": null,
+   "dataset": "crosswalk",
+   "file": "crosswalk-2016-2026.json",
+   "ward_vintage": 2026
+  },
   {
    "budget_year": null,
    "dataset": "crosswalk",
@@ -55,6 +91,30 @@
    "dataset": "land_use",
    "file": "land_use-2026.json",
    "ward_vintage": 2026
+  },
+  {
+   "budget_year": null,
+   "dataset": "elections",
+   "file": "elections-2011.json",
+   "ward_vintage": 2011
+  },
+  {
+   "budget_year": null,
+   "dataset": "election_wards",
+   "file": "election_wards-CPT-2011.json",
+   "ward_vintage": 2011
+  },
+  {
+   "budget_year": null,
+   "dataset": "elections",
+   "file": "elections-2016.json",
+   "ward_vintage": 2016
+  },
+  {
+   "budget_year": null,
+   "dataset": "election_wards",
+   "file": "election_wards-CPT-2016.json",
+   "ward_vintage": 2016
   },
   {
    "budget_year": null,

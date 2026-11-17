@@ -1,0 +1,10 @@
+{
+  "licence": "Municipal Demarcation Board public data",
+  "method": "download",
+  "notes": "The wards used for the 2011 local government elections.",
+  "publisher": "Municipal Demarcation Board",
+  "retrieved_at": "2026-11-17",
+  "sha256": "907729c4148f1b1f5e15b4141a179d788f23ece879ecdeb3cd5567af301d36ea",
+  "title": "Wards (2011 delimitation), City of Cape Town (CPT)",
+  "url": "https://services7.arcgis.com/oeoyTUJC8HEeYsRB/arcgis/rest/services/MDB_Wards_2011/FeatureServer/0"
+}

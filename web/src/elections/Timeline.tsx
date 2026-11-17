@@ -21,9 +21,11 @@ interface Props {
   onTerm: (t: Term) => void;
   comparing: boolean;
   onCompare: () => void;
+  trending: boolean;
+  onTrends: () => void;
 }
 
-export function Timeline({ data, terms, term, onTerm, comparing, onCompare }: Props) {
+export function Timeline({ data, terms, term, onTerm, comparing, onCompare, trending, onTrends }: Props) {
   if (terms.length < 2) return null;
   return (
     <nav class="timeline" aria-label="Council terms">
@@ -38,9 +40,14 @@ export function Timeline({ data, terms, term, onTerm, comparing, onCompare }: Pr
           </li>
         ))}
       </ol>
-      <button type="button" class={`btn compare-btn ${comparing ? "btn-on" : ""}`} aria-pressed={comparing} onClick={onCompare}>
-        Compare terms
-      </button>
+      <div class="timeline-tools">
+        <button type="button" class={`btn ${trending ? "btn-on" : ""}`} aria-pressed={trending} onClick={onTrends}>
+          Trends
+        </button>
+        <button type="button" class={`btn ${comparing ? "btn-on" : ""}`} aria-pressed={comparing} onClick={onCompare}>
+          Compare terms
+        </button>
+      </div>
     </nav>
   );
 }

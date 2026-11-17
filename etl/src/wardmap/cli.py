@@ -25,6 +25,7 @@ def _pin(args) -> None:
 
     pins = {
         "boundaries": boundaries.pin,
+        "older_wards": boundaries.pin_older,
         "population": population.pin,
         "electricity": electricity.pin,
         "places": places.pin,
@@ -100,6 +101,7 @@ def main(argv: list[str] | None = None) -> None:
         "dataset",
         choices=[
             "boundaries",
+            "older_wards",
             "population",
             "electricity",
             "places",

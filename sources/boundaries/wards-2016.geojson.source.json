@@ -1,0 +1,10 @@
+{
+  "licence": "Municipal Demarcation Board public data",
+  "method": "download",
+  "notes": "The wards used for the 2016 local government elections.",
+  "publisher": "Municipal Demarcation Board",
+  "retrieved_at": "2026-11-17",
+  "sha256": "563c77fa15989304a93d44655998735ce3d5d810ef9e7e3b2f136afcad39cf3e",
+  "title": "Wards (2016 delimitation), City of Cape Town (CPT)",
+  "url": "https://services7.arcgis.com/oeoyTUJC8HEeYsRB/arcgis/rest/services/MDB_Wards_2016/FeatureServer/0"
+}

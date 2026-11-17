@@ -282,6 +282,18 @@
      "seats": null,
      "share": 0.0153,
      "votes": 207
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0145,
+     "votes": 196
+    },
+    {
+     "party": "National Coloured Congress",
+     "seats": null,
+     "share": 0.0072,
+     "votes": 97
     }
    ],
    "previous": {
@@ -334,6 +346,12 @@
       "seats": null,
       "share": 0.007,
       "votes": 79
+     },
+     {
+      "party": "National Coloured Congress",
+      "seats": null,
+      "share": 0.0067,
+      "votes": 76
      }
     ],
     "year": 2021
@@ -443,6 +461,12 @@
      "seats": null,
      "share": 0.0056,
      "votes": 68
+    },
+    {
+     "party": "National Coloured Congress",
+     "seats": null,
+     "share": 0.0052,
+     "votes": 63
     }
    ],
    "previous": {
@@ -604,6 +628,36 @@
      "seats": null,
      "share": 0.0138,
      "votes": 114
+    },
+    {
+     "party": "uMkhonto weSizwe Party",
+     "seats": null,
+     "share": 0.008,
+     "votes": 66
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0071,
+     "votes": 59
+    },
+    {
+     "party": "South African Communist Party",
+     "seats": null,
+     "share": 0.0063,
+     "votes": 52
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0062,
+     "votes": 51
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0059,
+     "votes": 49
     }
    ],
    "previous": {
@@ -656,6 +710,12 @@
       "seats": null,
       "share": 0.0084,
       "votes": 56
+     },
+     {
+      "party": "National Coloured Congress",
+      "seats": null,
+      "share": 0.0051,
+      "votes": 34
      }
     ],
     "year": 2021
@@ -926,6 +986,24 @@
      "seats": null,
      "share": 0.0238,
      "votes": 183
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0169,
+     "votes": 130
+    },
+    {
+     "party": "uMkhonto weSizwe Party",
+     "seats": null,
+     "share": 0.0145,
+     "votes": 111
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0053,
+     "votes": 41
     }
    ],
    "previous": {
@@ -1087,6 +1165,12 @@
      "seats": null,
      "share": 0.0159,
      "votes": 196
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0118,
+     "votes": 146
     }
    ],
    "previous": {
@@ -1139,6 +1223,12 @@
       "seats": null,
       "share": 0.0117,
       "votes": 100
+     },
+     {
+      "party": "United Independent Movement",
+      "seats": null,
+      "share": 0.009,
+      "votes": 77
      }
     ],
     "year": 2021
@@ -1409,6 +1499,36 @@
      "seats": null,
      "share": 0.023,
      "votes": 230
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0201,
+     "votes": 201
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0118,
+     "votes": 118
+    },
+    {
+     "party": "National Coloured Congress",
+     "seats": null,
+     "share": 0.0112,
+     "votes": 112
+    },
+    {
+     "party": "uMkhonto weSizwe Party",
+     "seats": null,
+     "share": 0.0074,
+     "votes": 74
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0071,
+     "votes": 71
     }
    ],
    "previous": {
@@ -1461,6 +1581,12 @@
       "seats": null,
       "share": 0.0106,
       "votes": 73
+     },
+     {
+      "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+      "seats": null,
+      "share": 0.0063,
+      "votes": 43
      }
     ],
     "year": 2021
@@ -1570,6 +1696,42 @@
      "seats": null,
      "share": 0.0168,
      "votes": 163
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0167,
+     "votes": 162
+    },
+    {
+     "party": "Build One South Africa",
+     "seats": null,
+     "share": 0.0101,
+     "votes": 98
+    },
+    {
+     "party": "African Transformation Movement",
+     "seats": null,
+     "share": 0.0082,
+     "votes": 80
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0079,
+     "votes": 77
+    },
+    {
+     "party": "uMkhonto weSizwe Party",
+     "seats": null,
+     "share": 0.0066,
+     "votes": 64
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0051,
+     "votes": 50
     }
    ],
    "previous": {
@@ -1622,6 +1784,18 @@
       "seats": null,
       "share": 0.0207,
       "votes": 164
+     },
+     {
+      "party": "United Independent Movement",
+      "seats": null,
+      "share": 0.0098,
+      "votes": 78
+     },
+     {
+      "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+      "seats": null,
+      "share": 0.0069,
+      "votes": 55
      }
     ],
     "year": 2021
@@ -1731,6 +1905,18 @@
      "seats": null,
      "share": 0.0079,
      "votes": 114
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0065,
+     "votes": 93
+    },
+    {
+     "party": "National Coloured Congress",
+     "seats": null,
+     "share": 0.0063,
+     "votes": 90
     }
    ],
    "previous": {
@@ -1783,6 +1969,18 @@
       "seats": null,
       "share": 0.008,
       "votes": 77
+     },
+     {
+      "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+      "seats": null,
+      "share": 0.0074,
+      "votes": 72
+     },
+     {
+      "party": "Patriotic Alliance",
+      "seats": null,
+      "share": 0.0064,
+      "votes": 62
      }
     ],
     "year": 2021
@@ -1892,6 +2090,36 @@
      "seats": null,
      "share": 0.0133,
      "votes": 146
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0096,
+     "votes": 105
+    },
+    {
+     "party": "Hopeful Leaders Democrats",
+     "seats": null,
+     "share": 0.0091,
+     "votes": 100
+    },
+    {
+     "party": "People's Movement for Change",
+     "seats": null,
+     "share": 0.0088,
+     "votes": 96
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0074,
+     "votes": 81
+    },
+    {
+     "party": "African Transformation Movement",
+     "seats": null,
+     "share": 0.006,
+     "votes": 66
     }
    ],
    "previous": {
@@ -1944,6 +2172,12 @@
       "seats": null,
       "share": 0.0076,
       "votes": 58
+     },
+     {
+      "party": "Economic Freedom Fighters",
+      "seats": null,
+      "share": 0.0057,
+      "votes": 44
      }
     ],
     "year": 2021
@@ -2214,6 +2448,30 @@
      "seats": null,
      "share": 0.0166,
      "votes": 205
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0139,
+     "votes": 172
+    },
+    {
+     "party": "National Coloured Congress",
+     "seats": null,
+     "share": 0.0115,
+     "votes": 142
+    },
+    {
+     "party": "African Transformation Movement",
+     "seats": null,
+     "share": 0.0061,
+     "votes": 75
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0056,
+     "votes": 69
     }
    ],
    "previous": {
@@ -2266,6 +2524,18 @@
       "seats": null,
       "share": 0.0134,
       "votes": 105
+     },
+     {
+      "party": "United Independent Movement",
+      "seats": null,
+      "share": 0.0086,
+      "votes": 67
+     },
+     {
+      "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+      "seats": null,
+      "share": 0.0052,
+      "votes": 41
      }
     ],
     "year": 2021
@@ -2536,6 +2806,30 @@
      "seats": null,
      "share": 0.0143,
      "votes": 158
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0115,
+     "votes": 127
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0103,
+     "votes": 114
+    },
+    {
+     "party": "African Transformation Movement",
+     "seats": null,
+     "share": 0.0089,
+     "votes": 98
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0058,
+     "votes": 64
     }
    ],
    "previous": {
@@ -2588,6 +2882,24 @@
       "seats": null,
       "share": 0.0109,
       "votes": 88
+     },
+     {
+      "party": "United Independent Movement",
+      "seats": null,
+      "share": 0.0085,
+      "votes": 69
+     },
+     {
+      "party": "Freedom Front Plus (Vryheidsfront Plus)",
+      "seats": null,
+      "share": 0.0072,
+      "votes": 58
+     },
+     {
+      "party": "Pan Africanist Congress of Azania",
+      "seats": null,
+      "share": 0.0053,
+      "votes": 43
      }
     ],
     "year": 2021
@@ -2697,6 +3009,42 @@
      "seats": null,
      "share": 0.014,
      "votes": 166
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0111,
+     "votes": 132
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0108,
+     "votes": 128
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0083,
+     "votes": 98
+    },
+    {
+     "party": "People's Movement for Change",
+     "seats": null,
+     "share": 0.0063,
+     "votes": 75
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0062,
+     "votes": 73
+    },
+    {
+     "party": "African Transformation Movement",
+     "seats": null,
+     "share": 0.0058,
+     "votes": 69
     }
    ],
    "previous": {
@@ -2749,6 +3097,18 @@
       "seats": null,
       "share": 0.0088,
       "votes": 79
+     },
+     {
+      "party": "United Independent Movement",
+      "seats": null,
+      "share": 0.0072,
+      "votes": 64
+     },
+     {
+      "party": "Africa Restoration Alliance",
+      "seats": null,
+      "share": 0.0051,
+      "votes": 46
      }
     ],
     "year": 2021
@@ -2858,6 +3218,36 @@
      "seats": null,
      "share": 0.0167,
      "votes": 112
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0121,
+     "votes": 81
+    },
+    {
+     "party": "Afrika Mayibuye Movement",
+     "seats": null,
+     "share": 0.0118,
+     "votes": 79
+    },
+    {
+     "party": "Build One South Africa",
+     "seats": null,
+     "share": 0.0115,
+     "votes": 77
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0115,
+     "votes": 77
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.006,
+     "votes": 40
     }
    ],
    "previous": {
@@ -3019,6 +3409,30 @@
      "seats": null,
      "share": 0.0223,
      "votes": 264
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0186,
+     "votes": 221
+    },
+    {
+     "party": "African Transformation Movement",
+     "seats": null,
+     "share": 0.0124,
+     "votes": 147
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0116,
+     "votes": 137
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.009,
+     "votes": 107
     }
    ],
    "previous": {
@@ -3071,6 +3485,12 @@
       "seats": null,
       "share": 0.0077,
       "votes": 62
+     },
+     {
+      "party": "Freedom Front Plus (Vryheidsfront Plus)",
+      "seats": null,
+      "share": 0.0054,
+      "votes": 44
      }
     ],
     "year": 2021
@@ -3180,6 +3600,48 @@
      "seats": null,
      "share": 0.0218,
      "votes": 208
+    },
+    {
+     "party": "African Transformation Movement",
+     "seats": null,
+     "share": 0.018,
+     "votes": 172
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0157,
+     "votes": 150
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0096,
+     "votes": 92
+    },
+    {
+     "party": "People's Movement for Change",
+     "seats": null,
+     "share": 0.0084,
+     "votes": 80
+    },
+    {
+     "party": "uMkhonto weSizwe Party",
+     "seats": null,
+     "share": 0.007,
+     "votes": 67
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0053,
+     "votes": 51
+    },
+    {
+     "party": "Hopeful Leaders Democrats",
+     "seats": null,
+     "share": 0.0052,
+     "votes": 50
     }
    ],
    "previous": {
@@ -3232,6 +3694,24 @@
       "seats": null,
       "share": 0.0088,
       "votes": 61
+     },
+     {
+      "party": "Freedom Front Plus (Vryheidsfront Plus)",
+      "seats": null,
+      "share": 0.0085,
+      "votes": 59
+     },
+     {
+      "party": "Al Jama-ah",
+      "seats": null,
+      "share": 0.0054,
+      "votes": 37
+     },
+     {
+      "party": "United Democratic Movement",
+      "seats": null,
+      "share": 0.0051,
+      "votes": 35
      }
     ],
     "year": 2021
@@ -3502,6 +3982,54 @@
      "seats": null,
      "share": 0.022,
      "votes": 221
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0182,
+     "votes": 183
+    },
+    {
+     "party": "African Transformation Movement",
+     "seats": null,
+     "share": 0.0136,
+     "votes": 137
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0125,
+     "votes": 126
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0098,
+     "votes": 99
+    },
+    {
+     "party": "Home of Independence",
+     "seats": null,
+     "share": 0.006,
+     "votes": 60
+    },
+    {
+     "party": "Cape Muslim Congress",
+     "seats": null,
+     "share": 0.0054,
+     "votes": 54
+    },
+    {
+     "party": "Africa Restoration Alliance",
+     "seats": null,
+     "share": 0.0051,
+     "votes": 51
+    },
+    {
+     "party": "People's Movement for Change",
+     "seats": null,
+     "share": 0.0051,
+     "votes": 51
     }
    ],
    "previous": {
@@ -3554,6 +4082,18 @@
       "seats": null,
       "share": 0.011,
       "votes": 89
+     },
+     {
+      "party": "United Independent Movement",
+      "seats": null,
+      "share": 0.0089,
+      "votes": 72
+     },
+     {
+      "party": "Freedom Front Plus (Vryheidsfront Plus)",
+      "seats": null,
+      "share": 0.0084,
+      "votes": 68
      }
     ],
     "year": 2021
@@ -3824,6 +4364,54 @@
      "seats": null,
      "share": 0.0214,
      "votes": 167
+    },
+    {
+     "party": "Land Party",
+     "seats": null,
+     "share": 0.0186,
+     "votes": 145
+    },
+    {
+     "party": "uMkhonto weSizwe Party",
+     "seats": null,
+     "share": 0.0174,
+     "votes": 136
+    },
+    {
+     "party": "Organic Humanity Movement",
+     "seats": null,
+     "share": 0.0141,
+     "votes": 110
+    },
+    {
+     "party": "South African Communist Party",
+     "seats": null,
+     "share": 0.0123,
+     "votes": 96
+    },
+    {
+     "party": "National Coloured Congress",
+     "seats": null,
+     "share": 0.0063,
+     "votes": 49
+    },
+    {
+     "party": "Afrika Mayibuye Movement",
+     "seats": null,
+     "share": 0.0059,
+     "votes": 46
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0051,
+     "votes": 40
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0051,
+     "votes": 40
     }
    ],
    "previous": {
@@ -3876,6 +4464,24 @@
       "seats": null,
       "share": 0.0067,
       "votes": 39
+     },
+     {
+      "party": "African Christian Democratic Party",
+      "seats": null,
+      "share": 0.0065,
+      "votes": 38
+     },
+     {
+      "party": "African Transformation Movement",
+      "seats": null,
+      "share": 0.0058,
+      "votes": 34
+     },
+     {
+      "party": "Pan Africanist Congress of Azania",
+      "seats": null,
+      "share": 0.0051,
+      "votes": 30
      }
     ],
     "year": 2021
@@ -3985,6 +4591,24 @@
      "seats": null,
      "share": 0.0156,
      "votes": 156
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0141,
+     "votes": 141
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0107,
+     "votes": 107
+    },
+    {
+     "party": "People's Movement for Change",
+     "seats": null,
+     "share": 0.0078,
+     "votes": 78
     }
    ],
    "previous": {
@@ -4146,6 +4770,36 @@
      "seats": null,
      "share": 0.0211,
      "votes": 203
+    },
+    {
+     "party": "National Coloured Congress",
+     "seats": null,
+     "share": 0.0188,
+     "votes": 181
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0187,
+     "votes": 180
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0154,
+     "votes": 148
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0054,
+     "votes": 52
+    },
+    {
+     "party": "African Transformation Movement",
+     "seats": null,
+     "share": 0.0054,
+     "votes": 52
     }
    ],
    "previous": {
@@ -4198,6 +4852,30 @@
       "seats": null,
       "share": 0.0113,
       "votes": 92
+     },
+     {
+      "party": "United Independent Movement",
+      "seats": null,
+      "share": 0.0104,
+      "votes": 84
+     },
+     {
+      "party": "Democratic People's Movement",
+      "seats": null,
+      "share": 0.0094,
+      "votes": 76
+     },
+     {
+      "party": "Al Jama-ah",
+      "seats": null,
+      "share": 0.0084,
+      "votes": 68
+     },
+     {
+      "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+      "seats": null,
+      "share": 0.0075,
+      "votes": 61
      }
     ],
     "year": 2021
@@ -4307,6 +4985,24 @@
      "seats": null,
      "share": 0.017,
      "votes": 178
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0103,
+     "votes": 108
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.01,
+     "votes": 105
+    },
+    {
+     "party": "Cape Muslim Congress",
+     "seats": null,
+     "share": 0.0061,
+     "votes": 64
     }
    ],
    "previous": {
@@ -4359,6 +5055,24 @@
       "seats": null,
       "share": 0.0136,
       "votes": 118
+     },
+     {
+      "party": "Economic Freedom Fighters",
+      "seats": null,
+      "share": 0.0131,
+      "votes": 114
+     },
+     {
+      "party": "United Independent Movement",
+      "seats": null,
+      "share": 0.0122,
+      "votes": 106
+     },
+     {
+      "party": "Cape Muslim Congress",
+      "seats": null,
+      "share": 0.0068,
+      "votes": 59
      }
     ],
     "year": 2021
@@ -4468,6 +5182,30 @@
      "seats": null,
      "share": 0.0201,
      "votes": 230
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.013,
+     "votes": 149
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0121,
+     "votes": 138
+    },
+    {
+     "party": "People's Movement for Change",
+     "seats": null,
+     "share": 0.0108,
+     "votes": 123
+    },
+    {
+     "party": "One Love Alliance",
+     "seats": null,
+     "share": 0.0073,
+     "votes": 83
     }
    ],
    "previous": {
@@ -4520,6 +5258,18 @@
       "seats": null,
       "share": 0.0085,
       "votes": 83
+     },
+     {
+      "party": "Al Jama-ah",
+      "seats": null,
+      "share": 0.0083,
+      "votes": 81
+     },
+     {
+      "party": "Economic Freedom Fighters",
+      "seats": null,
+      "share": 0.0057,
+      "votes": 55
      }
     ],
     "year": 2021
@@ -4629,6 +5379,24 @@
      "seats": null,
      "share": 0.0127,
      "votes": 123
+    },
+    {
+     "party": "Africa Restoration Alliance",
+     "seats": null,
+     "share": 0.012,
+     "votes": 116
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.007,
+     "votes": 68
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.006,
+     "votes": 58
     }
    ],
    "previous": {
@@ -4681,6 +5449,12 @@
       "seats": null,
       "share": 0.0066,
       "votes": 56
+     },
+     {
+      "party": "Freedom Front Plus (Vryheidsfront Plus)",
+      "seats": null,
+      "share": 0.0064,
+      "votes": 55
      }
     ],
     "year": 2021
@@ -4790,6 +5564,54 @@
      "seats": null,
      "share": 0.016,
      "votes": 126
+    },
+    {
+     "party": "ActionSA",
+     "seats": null,
+     "share": 0.0143,
+     "votes": 113
+    },
+    {
+     "party": "Africa Restoration Alliance",
+     "seats": null,
+     "share": 0.0138,
+     "votes": 109
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0128,
+     "votes": 101
+    },
+    {
+     "party": "Economic Liberators Forum South Africa",
+     "seats": null,
+     "share": 0.0094,
+     "votes": 74
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0091,
+     "votes": 72
+    },
+    {
+     "party": "Cape Muslim Congress",
+     "seats": null,
+     "share": 0.0086,
+     "votes": 68
+    },
+    {
+     "party": "One Love Alliance",
+     "seats": null,
+     "share": 0.0077,
+     "votes": 61
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0051,
+     "votes": 40
     }
    ],
    "previous": {
@@ -4842,6 +5664,24 @@
       "seats": null,
       "share": 0.0151,
       "votes": 108
+     },
+     {
+      "party": "Cape Muslim Congress",
+      "seats": null,
+      "share": 0.0149,
+      "votes": 106
+     },
+     {
+      "party": "Africa Restoration Alliance",
+      "seats": null,
+      "share": 0.008,
+      "votes": 57
+     },
+     {
+      "party": "Democratic Independent Party",
+      "seats": null,
+      "share": 0.005,
+      "votes": 36
      }
     ],
     "year": 2021
@@ -4951,6 +5791,42 @@
      "seats": null,
      "share": 0.0169,
      "votes": 154
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0159,
+     "votes": 145
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0148,
+     "votes": 135
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0104,
+     "votes": 95
+    },
+    {
+     "party": "Africa Restoration Alliance",
+     "seats": null,
+     "share": 0.0096,
+     "votes": 88
+    },
+    {
+     "party": "Hopeful Leaders Democrats",
+     "seats": null,
+     "share": 0.0077,
+     "votes": 70
+    },
+    {
+     "party": "People's Movement for Change",
+     "seats": null,
+     "share": 0.0056,
+     "votes": 51
     }
    ],
    "previous": {
@@ -5003,6 +5879,24 @@
       "seats": null,
       "share": 0.013,
       "votes": 108
+     },
+     {
+      "party": "Freedom Front Plus (Vryheidsfront Plus)",
+      "seats": null,
+      "share": 0.0088,
+      "votes": 73
+     },
+     {
+      "party": "Africa Restoration Alliance",
+      "seats": null,
+      "share": 0.0069,
+      "votes": 57
+     },
+     {
+      "party": "Cape Muslim Congress",
+      "seats": null,
+      "share": 0.0067,
+      "votes": 56
      }
     ],
     "year": 2021
@@ -5112,6 +6006,42 @@
      "seats": null,
      "share": 0.0124,
      "votes": 105
+    },
+    {
+     "party": "Organic Humanity Movement",
+     "seats": null,
+     "share": 0.011,
+     "votes": 93
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0096,
+     "votes": 81
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0079,
+     "votes": 67
+    },
+    {
+     "party": "uMkhonto weSizwe Party",
+     "seats": null,
+     "share": 0.007,
+     "votes": 59
+    },
+    {
+     "party": "People's Movement for Change",
+     "seats": null,
+     "share": 0.0068,
+     "votes": 58
+    },
+    {
+     "party": "Africa Restoration Alliance",
+     "seats": null,
+     "share": 0.0055,
+     "votes": 47
     }
    ],
    "previous": {
@@ -5164,6 +6094,18 @@
       "seats": null,
       "share": 0.0086,
       "votes": 59
+     },
+     {
+      "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+      "seats": null,
+      "share": 0.0057,
+      "votes": 39
+     },
+     {
+      "party": "United Independent Movement",
+      "seats": null,
+      "share": 0.0051,
+      "votes": 35
      }
     ],
     "year": 2021
@@ -5434,6 +6376,18 @@
      "seats": null,
      "share": 0.0105,
      "votes": 71
+    },
+    {
+     "party": "South African Communist Party",
+     "seats": null,
+     "share": 0.0067,
+     "votes": 45
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.005,
+     "votes": 34
     }
    ],
    "previous": {
@@ -5595,6 +6549,30 @@
      "seats": null,
      "share": 0.0145,
      "votes": 117
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.011,
+     "votes": 89
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0072,
+     "votes": 58
+    },
+    {
+     "party": "uMkhonto weSizwe Party",
+     "seats": null,
+     "share": 0.0072,
+     "votes": 58
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0064,
+     "votes": 52
     }
    ],
    "previous": {
@@ -5647,6 +6625,18 @@
       "seats": null,
       "share": 0.0098,
       "votes": 52
+     },
+     {
+      "party": "GOOD",
+      "seats": null,
+      "share": 0.0083,
+      "votes": 44
+     },
+     {
+      "party": "Pan Africanist Congress of Azania",
+      "seats": null,
+      "share": 0.0062,
+      "votes": 33
      }
     ],
     "year": 2021
@@ -5756,6 +6746,36 @@
      "seats": null,
      "share": 0.0164,
      "votes": 103
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0092,
+     "votes": 58
+    },
+    {
+     "party": "United Democratic Front Party",
+     "seats": null,
+     "share": 0.0084,
+     "votes": 53
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0083,
+     "votes": 52
+    },
+    {
+     "party": "uMkhonto weSizwe Party",
+     "seats": null,
+     "share": 0.0072,
+     "votes": 45
+    },
+    {
+     "party": "Afrika Mayibuye Movement",
+     "seats": null,
+     "share": 0.0068,
+     "votes": 43
     }
    ],
    "previous": {
@@ -5917,6 +6937,30 @@
      "seats": null,
      "share": 0.0141,
      "votes": 94
+    },
+    {
+     "party": "United Independent Movement",
+     "seats": null,
+     "share": 0.0111,
+     "votes": 74
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0098,
+     "votes": 65
+    },
+    {
+     "party": "uMkhonto weSizwe Party",
+     "seats": null,
+     "share": 0.0086,
+     "votes": 57
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0066,
+     "votes": 44
     }
    ],
    "previous": {
@@ -6078,6 +7122,36 @@
      "seats": null,
      "share": 0.0203,
      "votes": 140
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0121,
+     "votes": 83
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0099,
+     "votes": 68
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0078,
+     "votes": 54
+    },
+    {
+     "party": "Afrika Mayibuye Movement",
+     "seats": null,
+     "share": 0.0065,
+     "votes": 45
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0051,
+     "votes": 35
     }
    ],
    "previous": {
@@ -6239,6 +7313,36 @@
      "seats": null,
      "share": 0.017,
      "votes": 112
+    },
+    {
+     "party": "uMkhonto weSizwe Party",
+     "seats": null,
+     "share": 0.0123,
+     "votes": 81
+    },
+    {
+     "party": "Build One South Africa",
+     "seats": null,
+     "share": 0.0105,
+     "votes": 69
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0062,
+     "votes": 41
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0059,
+     "votes": 39
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0056,
+     "votes": 37
     }
    ],
    "previous": {
@@ -6400,6 +7504,36 @@
      "seats": null,
      "share": 0.0154,
      "votes": 99
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0154,
+     "votes": 99
+    },
+    {
+     "party": "uMkhonto weSizwe Party",
+     "seats": null,
+     "share": 0.0112,
+     "votes": 72
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0097,
+     "votes": 62
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0065,
+     "votes": 42
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0059,
+     "votes": 38
     }
    ],
    "previous": {
@@ -6561,6 +7695,36 @@
      "seats": null,
      "share": 0.019,
      "votes": 136
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0168,
+     "votes": 120
+    },
+    {
+     "party": "African Transformation Movement",
+     "seats": null,
+     "share": 0.0144,
+     "votes": 103
+    },
+    {
+     "party": "uMkhonto weSizwe Party",
+     "seats": null,
+     "share": 0.0105,
+     "votes": 75
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0078,
+     "votes": 56
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0062,
+     "votes": 44
     }
    ],
    "previous": {
@@ -6613,6 +7777,12 @@
       "seats": null,
       "share": 0.0081,
       "votes": 47
+     },
+     {
+      "party": "United Independent Movement",
+      "seats": null,
+      "share": 0.0059,
+      "votes": 34
      }
     ],
     "year": 2021
@@ -6722,6 +7892,30 @@
      "seats": null,
      "share": 0.0109,
      "votes": 103
+    },
+    {
+     "party": "People's Movement for Change",
+     "seats": null,
+     "share": 0.0101,
+     "votes": 95
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0094,
+     "votes": 89
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0082,
+     "votes": 77
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0066,
+     "votes": 62
     }
    ],
    "previous": {
@@ -6883,6 +8077,36 @@
      "seats": null,
      "share": 0.0288,
      "votes": 298
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.026,
+     "votes": 269
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0249,
+     "votes": 257
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0234,
+     "votes": 242
+    },
+    {
+     "party": "Africa Restoration Alliance",
+     "seats": null,
+     "share": 0.0119,
+     "votes": 123
+    },
+    {
+     "party": "Build One South Africa",
+     "seats": null,
+     "share": 0.0054,
+     "votes": 56
     }
    ],
    "previous": {
@@ -6935,6 +8159,30 @@
       "seats": null,
       "share": 0.0137,
       "votes": 124
+     },
+     {
+      "party": "Africa Restoration Alliance",
+      "seats": null,
+      "share": 0.0114,
+      "votes": 103
+     },
+     {
+      "party": "United Independent Movement",
+      "seats": null,
+      "share": 0.0112,
+      "votes": 101
+     },
+     {
+      "party": "Cape Muslim Congress",
+      "seats": null,
+      "share": 0.0102,
+      "votes": 92
+     },
+     {
+      "party": "Freedom Front Plus (Vryheidsfront Plus)",
+      "seats": null,
+      "share": 0.0101,
+      "votes": 91
      }
     ],
     "year": 2021
@@ -7044,6 +8292,60 @@
      "seats": null,
      "share": 0.0211,
      "votes": 180
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0161,
+     "votes": 137
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0145,
+     "votes": 124
+    },
+    {
+     "party": "Africa Restoration Alliance",
+     "seats": null,
+     "share": 0.0143,
+     "votes": 122
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0133,
+     "votes": 113
+    },
+    {
+     "party": "Build One South Africa",
+     "seats": null,
+     "share": 0.0103,
+     "votes": 88
+    },
+    {
+     "party": "Hopeful Leaders Democrats",
+     "seats": null,
+     "share": 0.008,
+     "votes": 68
+    },
+    {
+     "party": "African Transformation Movement",
+     "seats": null,
+     "share": 0.0074,
+     "votes": 63
+    },
+    {
+     "party": "Cape Muslim Congress",
+     "seats": null,
+     "share": 0.0069,
+     "votes": 59
+    },
+    {
+     "party": "uMkhonto weSizwe Party",
+     "seats": null,
+     "share": 0.0065,
+     "votes": 55
     }
    ],
    "previous": {
@@ -7096,6 +8398,42 @@
       "seats": null,
       "share": 0.0264,
       "votes": 188
+     },
+     {
+      "party": "National Coloured Congress",
+      "seats": null,
+      "share": 0.0223,
+      "votes": 159
+     },
+     {
+      "party": "Democratic People's Alternative",
+      "seats": null,
+      "share": 0.009,
+      "votes": 64
+     },
+     {
+      "party": "Sizwe Ummah Nation",
+      "seats": null,
+      "share": 0.0081,
+      "votes": 58
+     },
+     {
+      "party": "African Independent Congress",
+      "seats": null,
+      "share": 0.0066,
+      "votes": 47
+     },
+     {
+      "party": "God Save Africa",
+      "seats": null,
+      "share": 0.0053,
+      "votes": 38
+     },
+     {
+      "party": "One Movement for Cape Town",
+      "seats": null,
+      "share": 0.0051,
+      "votes": 36
      }
     ],
     "year": 2021
@@ -7205,6 +8543,48 @@
      "seats": null,
      "share": 0.0223,
      "votes": 202
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0202,
+     "votes": 183
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0178,
+     "votes": 161
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0086,
+     "votes": 78
+    },
+    {
+     "party": "African Transformation Movement",
+     "seats": null,
+     "share": 0.0063,
+     "votes": 57
+    },
+    {
+     "party": "United Democratic Front Party",
+     "seats": null,
+     "share": 0.0061,
+     "votes": 55
+    },
+    {
+     "party": "uMkhonto weSizwe Party",
+     "seats": null,
+     "share": 0.0059,
+     "votes": 53
+    },
+    {
+     "party": "Build One South Africa",
+     "seats": null,
+     "share": 0.0055,
+     "votes": 50
     }
    ],
    "previous": {
@@ -7257,6 +8637,24 @@
       "seats": null,
       "share": 0.0151,
       "votes": 112
+     },
+     {
+      "party": "Freedom Front Plus (Vryheidsfront Plus)",
+      "seats": null,
+      "share": 0.0112,
+      "votes": 83
+     },
+     {
+      "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+      "seats": null,
+      "share": 0.0089,
+      "votes": 66
+     },
+     {
+      "party": "Patriotic Alliance",
+      "seats": null,
+      "share": 0.0067,
+      "votes": 50
      }
     ],
     "year": 2021
@@ -7366,6 +8764,36 @@
      "seats": null,
      "share": 0.0217,
      "votes": 197
+    },
+    {
+     "party": "ActionSA",
+     "seats": null,
+     "share": 0.0211,
+     "votes": 191
+    },
+    {
+     "party": "Hopeful Leaders Democrats",
+     "seats": null,
+     "share": 0.0197,
+     "votes": 179
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0088,
+     "votes": 80
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0066,
+     "votes": 60
+    },
+    {
+     "party": "Africa Restoration Alliance",
+     "seats": null,
+     "share": 0.0062,
+     "votes": 56
     }
    ],
    "previous": {
@@ -7418,6 +8846,30 @@
       "seats": null,
       "share": 0.0178,
       "votes": 132
+     },
+     {
+      "party": "United Independent Movement",
+      "seats": null,
+      "share": 0.011,
+      "votes": 82
+     },
+     {
+      "party": "National Freedom Party",
+      "seats": null,
+      "share": 0.0096,
+      "votes": 71
+     },
+     {
+      "party": "Economic Freedom Fighters",
+      "seats": null,
+      "share": 0.0062,
+      "votes": 46
+     },
+     {
+      "party": "Credible Alternative 1St Movement",
+      "seats": null,
+      "share": 0.0055,
+      "votes": 41
      }
     ],
     "year": 2021
@@ -7527,6 +8979,42 @@
      "seats": null,
      "share": 0.0184,
      "votes": 146
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.016,
+     "votes": 127
+    },
+    {
+     "party": "Home of Independence",
+     "seats": null,
+     "share": 0.0134,
+     "votes": 106
+    },
+    {
+     "party": "Africa Restoration Alliance",
+     "seats": null,
+     "share": 0.0123,
+     "votes": 97
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0099,
+     "votes": 78
+    },
+    {
+     "party": "Hopeful Leaders Democrats",
+     "seats": null,
+     "share": 0.0076,
+     "votes": 60
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0073,
+     "votes": 58
     }
    ],
    "previous": {
@@ -7579,6 +9067,18 @@
       "seats": null,
       "share": 0.0143,
       "votes": 106
+     },
+     {
+      "party": "Democratic People's Movement",
+      "seats": null,
+      "share": 0.0057,
+      "votes": 42
+     },
+     {
+      "party": "Africa Restoration Alliance",
+      "seats": null,
+      "share": 0.0051,
+      "votes": 38
      }
     ],
     "year": 2021
@@ -7688,6 +9188,30 @@
      "seats": null,
      "share": 0.0201,
      "votes": 200
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0124,
+     "votes": 123
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0115,
+     "votes": 114
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0114,
+     "votes": 113
+    },
+    {
+     "party": "Truth and Solidarity Movement",
+     "seats": null,
+     "share": 0.0053,
+     "votes": 53
     }
    ],
    "previous": {
@@ -7740,6 +9264,60 @@
       "seats": null,
       "share": 0.0182,
       "votes": 139
+     },
+     {
+      "party": "African Transformation Movement",
+      "seats": null,
+      "share": 0.0173,
+      "votes": 132
+     },
+     {
+      "party": "National Freedom Party",
+      "seats": null,
+      "share": 0.0096,
+      "votes": 73
+     },
+     {
+      "party": "Freedom Front Plus (Vryheidsfront Plus)",
+      "seats": null,
+      "share": 0.0094,
+      "votes": 72
+     },
+     {
+      "party": "Patriotic Alliance",
+      "seats": null,
+      "share": 0.0084,
+      "votes": 64
+     },
+     {
+      "party": "Credible Alternative 1St Movement",
+      "seats": null,
+      "share": 0.0081,
+      "votes": 62
+     },
+     {
+      "party": "Democratic Labour Party",
+      "seats": null,
+      "share": 0.0076,
+      "votes": 58
+     },
+     {
+      "party": "Independent Civic Organisation of South Africa",
+      "seats": null,
+      "share": 0.0058,
+      "votes": 44
+     },
+     {
+      "party": "United Democratic Movement",
+      "seats": null,
+      "share": 0.0056,
+      "votes": 43
+     },
+     {
+      "party": "Economic Freedom Fighters",
+      "seats": null,
+      "share": 0.0052,
+      "votes": 40
      }
     ],
     "year": 2021
@@ -7849,6 +9427,24 @@
      "seats": null,
      "share": 0.0159,
      "votes": 149
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.013,
+     "votes": 122
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0106,
+     "votes": 100
+    },
+    {
+     "party": "Cape Muslim Congress",
+     "seats": null,
+     "share": 0.0102,
+     "votes": 96
     }
    ],
    "previous": {
@@ -7901,6 +9497,18 @@
       "seats": null,
       "share": 0.0123,
       "votes": 98
+     },
+     {
+      "party": "United Independent Movement",
+      "seats": null,
+      "share": 0.0088,
+      "votes": 70
+     },
+     {
+      "party": "Patriotic Alliance",
+      "seats": null,
+      "share": 0.0084,
+      "votes": 67
      }
     ],
     "year": 2021
@@ -8010,6 +9618,36 @@
      "seats": null,
      "share": 0.0141,
      "votes": 124
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0128,
+     "votes": 113
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0107,
+     "votes": 94
+    },
+    {
+     "party": "Cape Muslim Congress",
+     "seats": null,
+     "share": 0.0078,
+     "votes": 69
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.007,
+     "votes": 62
+    },
+    {
+     "party": "Hopeful Leaders Democrats",
+     "seats": null,
+     "share": 0.0067,
+     "votes": 59
     }
    ],
    "previous": {
@@ -8062,6 +9700,18 @@
       "seats": null,
       "share": 0.023,
       "votes": 168
+     },
+     {
+      "party": "Cape Muslim Congress",
+      "seats": null,
+      "share": 0.0103,
+      "votes": 75
+     },
+     {
+      "party": "United Independent Movement",
+      "seats": null,
+      "share": 0.0078,
+      "votes": 57
      }
     ],
     "year": 2021
@@ -8171,6 +9821,36 @@
      "seats": null,
      "share": 0.0167,
      "votes": 114
+    },
+    {
+     "party": "uMkhonto weSizwe Party",
+     "seats": null,
+     "share": 0.0122,
+     "votes": 83
+    },
+    {
+     "party": "United Independent Movement",
+     "seats": null,
+     "share": 0.0084,
+     "votes": 57
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0072,
+     "votes": 49
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0054,
+     "votes": 37
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0051,
+     "votes": 35
     }
    ],
    "previous": {
@@ -8332,6 +10012,18 @@
      "seats": null,
      "share": 0.0194,
      "votes": 122
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0126,
+     "votes": 79
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0059,
+     "votes": 37
     }
    ],
    "previous": {
@@ -8493,6 +10185,24 @@
      "seats": null,
      "share": 0.0254,
      "votes": 291
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0123,
+     "votes": 141
+    },
+    {
+     "party": "National Coloured Congress",
+     "seats": null,
+     "share": 0.0106,
+     "votes": 122
+    },
+    {
+     "party": "Build One South Africa",
+     "seats": null,
+     "share": 0.008,
+     "votes": 92
     }
    ],
    "previous": {
@@ -8545,6 +10255,24 @@
       "seats": null,
       "share": 0.0107,
       "votes": 91
+     },
+     {
+      "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+      "seats": null,
+      "share": 0.0085,
+      "votes": 72
+     },
+     {
+      "party": "Patriotic Alliance",
+      "seats": null,
+      "share": 0.007,
+      "votes": 60
+     },
+     {
+      "party": "Cape Muslim Congress",
+      "seats": null,
+      "share": 0.0059,
+      "votes": 50
      }
     ],
     "year": 2021
@@ -8815,6 +10543,24 @@
      "seats": null,
      "share": 0.0087,
      "votes": 91
+    },
+    {
+     "party": "National Coloured Congress",
+     "seats": null,
+     "share": 0.0076,
+     "votes": 79
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0075,
+     "votes": 78
+    },
+    {
+     "party": "Build One South Africa",
+     "seats": null,
+     "share": 0.0059,
+     "votes": 62
     }
    ],
    "previous": {
@@ -8867,6 +10613,12 @@
       "seats": null,
       "share": 0.0101,
       "votes": 87
+     },
+     {
+      "party": "United Independent Movement",
+      "seats": null,
+      "share": 0.008,
+      "votes": 69
      }
     ],
     "year": 2021
@@ -8976,6 +10728,30 @@
      "seats": null,
      "share": 0.0276,
      "votes": 272
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.02,
+     "votes": 197
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0137,
+     "votes": 135
+    },
+    {
+     "party": "Cape Muslim Congress",
+     "seats": null,
+     "share": 0.0125,
+     "votes": 123
+    },
+    {
+     "party": "Africa Restoration Alliance",
+     "seats": null,
+     "share": 0.0054,
+     "votes": 53
     }
    ],
    "previous": {
@@ -9028,6 +10804,36 @@
       "seats": null,
       "share": 0.0121,
       "votes": 89
+     },
+     {
+      "party": "Freedom Front Plus (Vryheidsfront Plus)",
+      "seats": null,
+      "share": 0.0106,
+      "votes": 78
+     },
+     {
+      "party": "Economic Freedom Fighters",
+      "seats": null,
+      "share": 0.0095,
+      "votes": 70
+     },
+     {
+      "party": "Patriotic Alliance",
+      "seats": null,
+      "share": 0.0077,
+      "votes": 57
+     },
+     {
+      "party": "Democratic Independent Party",
+      "seats": null,
+      "share": 0.0076,
+      "votes": 56
+     },
+     {
+      "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+      "seats": null,
+      "share": 0.006,
+      "votes": 44
      }
     ],
     "year": 2021
@@ -9137,6 +10943,30 @@
      "seats": null,
      "share": 0.0127,
      "votes": 115
+    },
+    {
+     "party": "African Transformation Movement",
+     "seats": null,
+     "share": 0.0107,
+     "votes": 97
+    },
+    {
+     "party": "uMkhonto weSizwe Party",
+     "seats": null,
+     "share": 0.0075,
+     "votes": 68
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0066,
+     "votes": 60
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0063,
+     "votes": 57
     }
    ],
    "previous": {
@@ -9189,6 +11019,18 @@
       "seats": null,
       "share": 0.0065,
       "votes": 40
+     },
+     {
+      "party": "United Democratic Movement",
+      "seats": null,
+      "share": 0.0063,
+      "votes": 39
+     },
+     {
+      "party": "The Organic Humanity Movement",
+      "seats": null,
+      "share": 0.0052,
+      "votes": 32
      }
     ],
     "year": 2021
@@ -9298,6 +11140,12 @@
      "seats": null,
      "share": 0.0106,
      "votes": 131
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0069,
+     "votes": 85
     }
    ],
    "previous": {
@@ -9620,6 +11468,24 @@
      "seats": null,
      "share": 0.0169,
      "votes": 205
+    },
+    {
+     "party": "ActionSA",
+     "seats": null,
+     "share": 0.0114,
+     "votes": 138
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0081,
+     "votes": 98
+    },
+    {
+     "party": "Build One South Africa",
+     "seats": null,
+     "share": 0.0071,
+     "votes": 86
     }
    ],
    "previous": {
@@ -9672,6 +11538,36 @@
       "seats": null,
       "share": 0.0167,
       "votes": 163
+     },
+     {
+      "party": "United Independent Movement",
+      "seats": null,
+      "share": 0.0129,
+      "votes": 126
+     },
+     {
+      "party": "Economic Freedom Fighters",
+      "seats": null,
+      "share": 0.0119,
+      "votes": 116
+     },
+     {
+      "party": "Credible Alternative 1St Movement",
+      "seats": null,
+      "share": 0.0082,
+      "votes": 80
+     },
+     {
+      "party": "Freedom Front Plus (Vryheidsfront Plus)",
+      "seats": null,
+      "share": 0.0071,
+      "votes": 69
+     },
+     {
+      "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+      "seats": null,
+      "share": 0.006,
+      "votes": 59
      }
     ],
     "year": 2021
@@ -9781,6 +11677,24 @@
      "seats": null,
      "share": 0.0121,
      "votes": 109
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0112,
+     "votes": 101
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0111,
+     "votes": 100
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0051,
+     "votes": 46
     }
    ],
    "previous": {
@@ -9833,6 +11747,24 @@
       "seats": null,
       "share": 0.0137,
       "votes": 112
+     },
+     {
+      "party": "Freedom Front Plus (Vryheidsfront Plus)",
+      "seats": null,
+      "share": 0.0087,
+      "votes": 71
+     },
+     {
+      "party": "Economic Freedom Fighters",
+      "seats": null,
+      "share": 0.0073,
+      "votes": 60
+     },
+     {
+      "party": "Al Jama-ah",
+      "seats": null,
+      "share": 0.0057,
+      "votes": 47
      }
     ],
     "year": 2021
@@ -10103,6 +12035,24 @@
      "seats": null,
      "share": 0.0165,
      "votes": 200
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0143,
+     "votes": 173
+    },
+    {
+     "party": "Build One South Africa",
+     "seats": null,
+     "share": 0.0077,
+     "votes": 94
+    },
+    {
+     "party": "Cape Muslim Congress",
+     "seats": null,
+     "share": 0.007,
+     "votes": 85
     }
    ],
    "previous": {
@@ -10155,6 +12105,36 @@
       "seats": null,
       "share": 0.0107,
       "votes": 95
+     },
+     {
+      "party": "Freedom Front Plus (Vryheidsfront Plus)",
+      "seats": null,
+      "share": 0.009,
+      "votes": 80
+     },
+     {
+      "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+      "seats": null,
+      "share": 0.0087,
+      "votes": 77
+     },
+     {
+      "party": "Africa Restoration Alliance",
+      "seats": null,
+      "share": 0.0061,
+      "votes": 54
+     },
+     {
+      "party": "Economic Freedom Fighters",
+      "seats": null,
+      "share": 0.0061,
+      "votes": 54
+     },
+     {
+      "party": "Credible Alternative 1St Movement",
+      "seats": null,
+      "share": 0.0052,
+      "votes": 46
      }
     ],
     "year": 2021
@@ -10264,6 +12244,12 @@
      "seats": null,
      "share": 0.0073,
      "votes": 77
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0054,
+     "votes": 57
     }
    ],
    "previous": {
@@ -10425,6 +12411,48 @@
      "seats": null,
      "share": 0.0199,
      "votes": 205
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0174,
+     "votes": 180
+    },
+    {
+     "party": "Africa Restoration Alliance",
+     "seats": null,
+     "share": 0.0164,
+     "votes": 169
+    },
+    {
+     "party": "Cape Muslim Congress",
+     "seats": null,
+     "share": 0.0162,
+     "votes": 167
+    },
+    {
+     "party": "Hopeful Leaders Democrats",
+     "seats": null,
+     "share": 0.0149,
+     "votes": 154
+    },
+    {
+     "party": "People's Movement for Change",
+     "seats": null,
+     "share": 0.0144,
+     "votes": 149
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0123,
+     "votes": 127
+    },
+    {
+     "party": "United South Africa",
+     "seats": null,
+     "share": 0.0095,
+     "votes": 98
     }
    ],
    "previous": {
@@ -10477,6 +12505,30 @@
       "seats": null,
       "share": 0.0239,
       "votes": 211
+     },
+     {
+      "party": "Cape Muslim Congress",
+      "seats": null,
+      "share": 0.0176,
+      "votes": 156
+     },
+     {
+      "party": "United South Africa",
+      "seats": null,
+      "share": 0.0154,
+      "votes": 136
+     },
+     {
+      "party": "Patriotic Alliance",
+      "seats": null,
+      "share": 0.0137,
+      "votes": 121
+     },
+     {
+      "party": "United Independent Movement",
+      "seats": null,
+      "share": 0.0071,
+      "votes": 63
      }
     ],
     "year": 2021
@@ -10586,6 +12638,42 @@
      "seats": null,
      "share": 0.0227,
      "votes": 224
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0212,
+     "votes": 209
+    },
+    {
+     "party": "Cape Muslim Congress",
+     "seats": null,
+     "share": 0.0181,
+     "votes": 178
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0169,
+     "votes": 167
+    },
+    {
+     "party": "People's Movement for Change",
+     "seats": null,
+     "share": 0.0101,
+     "votes": 100
+    },
+    {
+     "party": "Africa Restoration Alliance",
+     "seats": null,
+     "share": 0.0086,
+     "votes": 85
+    },
+    {
+     "party": "African Movement Congress",
+     "seats": null,
+     "share": 0.0057,
+     "votes": 56
     }
    ],
    "previous": {
@@ -10638,6 +12726,36 @@
       "seats": null,
       "share": 0.0143,
       "votes": 141
+     },
+     {
+      "party": "Africa Restoration Alliance",
+      "seats": null,
+      "share": 0.0098,
+      "votes": 96
+     },
+     {
+      "party": "Patriotic Alliance",
+      "seats": null,
+      "share": 0.0085,
+      "votes": 84
+     },
+     {
+      "party": "Freedom Front Plus (Vryheidsfront Plus)",
+      "seats": null,
+      "share": 0.0057,
+      "votes": 56
+     },
+     {
+      "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+      "seats": null,
+      "share": 0.0056,
+      "votes": 55
+     },
+     {
+      "party": "Credible Alternative 1St Movement",
+      "seats": null,
+      "share": 0.0054,
+      "votes": 53
      }
     ],
     "year": 2021
@@ -10747,6 +12865,36 @@
      "seats": null,
      "share": 0.0215,
      "votes": 222
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.017,
+     "votes": 176
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0168,
+     "votes": 174
+    },
+    {
+     "party": "Cape Muslim Congress",
+     "seats": null,
+     "share": 0.0164,
+     "votes": 170
+    },
+    {
+     "party": "Africa Restoration Alliance",
+     "seats": null,
+     "share": 0.0142,
+     "votes": 147
+    },
+    {
+     "party": "People's Movement for Change",
+     "seats": null,
+     "share": 0.0064,
+     "votes": 66
     }
    ],
    "previous": {
@@ -10799,6 +12947,30 @@
       "seats": null,
       "share": 0.0127,
       "votes": 99
+     },
+     {
+      "party": "United Independent Movement",
+      "seats": null,
+      "share": 0.0088,
+      "votes": 69
+     },
+     {
+      "party": "Cape Muslim Congress",
+      "seats": null,
+      "share": 0.0086,
+      "votes": 67
+     },
+     {
+      "party": "Economic Freedom Fighters",
+      "seats": null,
+      "share": 0.0068,
+      "votes": 53
+     },
+     {
+      "party": "United South Africa",
+      "seats": null,
+      "share": 0.0051,
+      "votes": 40
      }
     ],
     "year": 2021
@@ -10908,6 +13080,42 @@
      "seats": null,
      "share": 0.0198,
      "votes": 182
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0168,
+     "votes": 155
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0155,
+     "votes": 143
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0092,
+     "votes": 85
+    },
+    {
+     "party": "Democratic People's Alternative",
+     "seats": null,
+     "share": 0.007,
+     "votes": 64
+    },
+    {
+     "party": "Cape Muslim Congress",
+     "seats": null,
+     "share": 0.0061,
+     "votes": 56
+    },
+    {
+     "party": "United Democratic Front Party",
+     "seats": null,
+     "share": 0.0056,
+     "votes": 52
     }
    ],
    "previous": {
@@ -10960,6 +13168,24 @@
       "seats": null,
       "share": 0.0114,
       "votes": 87
+     },
+     {
+      "party": "United Independent Movement",
+      "seats": null,
+      "share": 0.0075,
+      "votes": 57
+     },
+     {
+      "party": "Cape Muslim Congress",
+      "seats": null,
+      "share": 0.0067,
+      "votes": 51
+     },
+     {
+      "party": "Freedom Front Plus (Vryheidsfront Plus)",
+      "seats": null,
+      "share": 0.0059,
+      "votes": 45
      }
     ],
     "year": 2021
@@ -11069,6 +13295,30 @@
      "seats": null,
      "share": 0.0095,
      "votes": 90
+    },
+    {
+     "party": "Build One South Africa",
+     "seats": null,
+     "share": 0.0069,
+     "votes": 66
+    },
+    {
+     "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+     "seats": null,
+     "share": 0.0063,
+     "votes": 60
+    },
+    {
+     "party": "South African Communist Party",
+     "seats": null,
+     "share": 0.0054,
+     "votes": 51
+    },
+    {
+     "party": "United Democratic Front Party",
+     "seats": null,
+     "share": 0.0053,
+     "votes": 50
     }
    ],
    "previous": {
@@ -11391,6 +13641,12 @@
      "seats": null,
      "share": 0.0069,
      "votes": 73
+    },
+    {
+     "party": "Build One South Africa",
+     "seats": null,
+     "share": 0.0067,
+     "votes": 71
     }
    ],
    "previous": {
@@ -11552,6 +13808,36 @@
      "seats": null,
      "share": 0.0209,
      "votes": 227
+    },
+    {
+     "party": "ActionSA",
+     "seats": null,
+     "share": 0.0197,
+     "votes": 214
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0187,
+     "votes": 203
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0167,
+     "votes": 182
+    },
+    {
+     "party": "Build One South Africa",
+     "seats": null,
+     "share": 0.0094,
+     "votes": 102
+    },
+    {
+     "party": "Sizwe Ummah Nation",
+     "seats": null,
+     "share": 0.008,
+     "votes": 87
     }
    ],
    "previous": {
@@ -11604,6 +13890,42 @@
       "seats": null,
       "share": 0.0107,
       "votes": 99
+     },
+     {
+      "party": "Patriotic Alliance",
+      "seats": null,
+      "share": 0.0086,
+      "votes": 79
+     },
+     {
+      "party": "Freedom Front Plus (Vryheidsfront Plus)",
+      "seats": null,
+      "share": 0.0076,
+      "votes": 70
+     },
+     {
+      "party": "Sizwe Ummah Nation",
+      "seats": null,
+      "share": 0.0071,
+      "votes": 66
+     },
+     {
+      "party": "Economic Freedom Fighters",
+      "seats": null,
+      "share": 0.007,
+      "votes": 65
+     },
+     {
+      "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+      "seats": null,
+      "share": 0.0063,
+      "votes": 58
+     },
+     {
+      "party": "Credible Alternative 1St Movement",
+      "seats": null,
+      "share": 0.0055,
+      "votes": 51
      }
     ],
     "year": 2021
@@ -11713,6 +14035,18 @@
      "seats": null,
      "share": 0.0074,
      "votes": 84
+    },
+    {
+     "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+     "seats": null,
+     "share": 0.0066,
+     "votes": 75
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.0061,
+     "votes": 69
     }
    ],
    "previous": {
@@ -11874,6 +14208,18 @@
      "seats": null,
      "share": 0.0127,
      "votes": 109
+    },
+    {
+     "party": "African Transformation Movement",
+     "seats": null,
+     "share": 0.0124,
+     "votes": 107
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0084,
+     "votes": 72
     }
    ],
    "previous": {
@@ -12035,6 +14381,30 @@
      "seats": null,
      "share": 0.0209,
      "votes": 237
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0195,
+     "votes": 221
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0172,
+     "votes": 195
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0169,
+     "votes": 192
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0155,
+     "votes": 176
     }
    ],
    "previous": {
@@ -12087,6 +14457,24 @@
       "seats": null,
       "share": 0.0197,
       "votes": 165
+     },
+     {
+      "party": "United Independent Movement",
+      "seats": null,
+      "share": 0.0118,
+      "votes": 99
+     },
+     {
+      "party": "Freedom Front Plus (Vryheidsfront Plus)",
+      "seats": null,
+      "share": 0.007,
+      "votes": 59
+     },
+     {
+      "party": "Cape Muslim Congress",
+      "seats": null,
+      "share": 0.0061,
+      "votes": 51
      }
     ],
     "year": 2021
@@ -12196,6 +14584,48 @@
      "seats": null,
      "share": 0.0199,
      "votes": 181
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.016,
+     "votes": 146
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0148,
+     "votes": 135
+    },
+    {
+     "party": "Cape Muslim Congress",
+     "seats": null,
+     "share": 0.0146,
+     "votes": 133
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0144,
+     "votes": 131
+    },
+    {
+     "party": "African Transformation Movement",
+     "seats": null,
+     "share": 0.0117,
+     "votes": 107
+    },
+    {
+     "party": "uMkhonto weSizwe Party",
+     "seats": null,
+     "share": 0.0071,
+     "votes": 65
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0058,
+     "votes": 53
     }
    ],
    "previous": {
@@ -12248,6 +14678,30 @@
       "seats": null,
       "share": 0.0124,
       "votes": 90
+     },
+     {
+      "party": "United Democratic Movement",
+      "seats": null,
+      "share": 0.0114,
+      "votes": 83
+     },
+     {
+      "party": "Cape Muslim Congress",
+      "seats": null,
+      "share": 0.0107,
+      "votes": 78
+     },
+     {
+      "party": "Pan Africanist Congress of Azania",
+      "seats": null,
+      "share": 0.0084,
+      "votes": 61
+     },
+     {
+      "party": "Africa Restoration Alliance",
+      "seats": null,
+      "share": 0.008,
+      "votes": 58
      }
     ],
     "year": 2021
@@ -12409,6 +14863,18 @@
       "seats": null,
       "share": 0.0076,
       "votes": 77
+     },
+     {
+      "party": "Economic Freedom Fighters",
+      "seats": null,
+      "share": 0.0072,
+      "votes": 73
+     },
+     {
+      "party": "Cape Muslim Congress",
+      "seats": null,
+      "share": 0.0063,
+      "votes": 64
      }
     ],
     "year": 2021
@@ -12518,6 +14984,36 @@
      "seats": null,
      "share": 0.0207,
      "votes": 211
+    },
+    {
+     "party": "Cape Muslim Congress",
+     "seats": null,
+     "share": 0.0191,
+     "votes": 195
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0182,
+     "votes": 186
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0135,
+     "votes": 138
+    },
+    {
+     "party": "Africa Restoration Alliance",
+     "seats": null,
+     "share": 0.0104,
+     "votes": 106
+    },
+    {
+     "party": "Aboriginal Gorilla Fighters",
+     "seats": null,
+     "share": 0.0068,
+     "votes": 69
     }
    ],
    "previous": {
@@ -12570,6 +15066,30 @@
       "seats": null,
       "share": 0.0093,
       "votes": 89
+     },
+     {
+      "party": "Freedom Front Plus (Vryheidsfront Plus)",
+      "seats": null,
+      "share": 0.0063,
+      "votes": 60
+     },
+     {
+      "party": "Africa Restoration Alliance",
+      "seats": null,
+      "share": 0.0062,
+      "votes": 59
+     },
+     {
+      "party": "Cape Muslim Congress",
+      "seats": null,
+      "share": 0.0058,
+      "votes": 55
+     },
+     {
+      "party": "Economic Freedom Fighters",
+      "seats": null,
+      "share": 0.0055,
+      "votes": 52
      }
     ],
     "year": 2021
@@ -12679,6 +15199,42 @@
      "seats": null,
      "share": 0.0178,
      "votes": 173
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0175,
+     "votes": 170
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0158,
+     "votes": 153
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0154,
+     "votes": 149
+    },
+    {
+     "party": "One Love Alliance",
+     "seats": null,
+     "share": 0.0098,
+     "votes": 95
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0062,
+     "votes": 60
+    },
+    {
+     "party": "United South Africa",
+     "seats": null,
+     "share": 0.0057,
+     "votes": 55
     }
    ],
    "previous": {
@@ -12731,6 +15287,24 @@
       "seats": null,
       "share": 0.0173,
       "votes": 159
+     },
+     {
+      "party": "Cape Muslim Congress",
+      "seats": null,
+      "share": 0.0088,
+      "votes": 81
+     },
+     {
+      "party": "United Independent Movement",
+      "seats": null,
+      "share": 0.0065,
+      "votes": 60
+     },
+     {
+      "party": "Freedom Front Plus (Vryheidsfront Plus)",
+      "seats": null,
+      "share": 0.0062,
+      "votes": 57
      }
     ],
     "year": 2021
@@ -12840,6 +15414,30 @@
      "seats": null,
      "share": 0.0119,
      "votes": 88
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0076,
+     "votes": 56
+    },
+    {
+     "party": "uMkhonto weSizwe Party",
+     "seats": null,
+     "share": 0.0076,
+     "votes": 56
+    },
+    {
+     "party": "Afrika Mayibuye Movement",
+     "seats": null,
+     "share": 0.006,
+     "votes": 44
+    },
+    {
+     "party": "United Independent Movement",
+     "seats": null,
+     "share": 0.005,
+     "votes": 37
     }
    ],
    "previous": {
@@ -13001,6 +15599,48 @@
      "seats": null,
      "share": 0.0202,
      "votes": 175
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0184,
+     "votes": 159
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0158,
+     "votes": 137
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0122,
+     "votes": 106
+    },
+    {
+     "party": "Africa Restoration Alliance",
+     "seats": null,
+     "share": 0.0111,
+     "votes": 96
+    },
+    {
+     "party": "People's Movement for Change",
+     "seats": null,
+     "share": 0.0087,
+     "votes": 75
+    },
+    {
+     "party": "One Love Alliance",
+     "seats": null,
+     "share": 0.0064,
+     "votes": 55
+    },
+    {
+     "party": "Build One South Africa",
+     "seats": null,
+     "share": 0.0059,
+     "votes": 51
     }
    ],
    "previous": {
@@ -13053,6 +15693,24 @@
       "seats": null,
       "share": 0.0128,
       "votes": 98
+     },
+     {
+      "party": "Africa Restoration Alliance",
+      "seats": null,
+      "share": 0.0122,
+      "votes": 94
+     },
+     {
+      "party": "Cape Muslim Congress",
+      "seats": null,
+      "share": 0.0106,
+      "votes": 81
+     },
+     {
+      "party": "Freedom Front Plus (Vryheidsfront Plus)",
+      "seats": null,
+      "share": 0.0072,
+      "votes": 55
      }
     ],
     "year": 2021
@@ -13162,6 +15820,42 @@
      "seats": null,
      "share": 0.0286,
      "votes": 257
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0188,
+     "votes": 169
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0169,
+     "votes": 152
+    },
+    {
+     "party": "Cape Muslim Congress",
+     "seats": null,
+     "share": 0.0141,
+     "votes": 127
+    },
+    {
+     "party": "One Love Alliance",
+     "seats": null,
+     "share": 0.0138,
+     "votes": 124
+    },
+    {
+     "party": "People's Movement for Change",
+     "seats": null,
+     "share": 0.0136,
+     "votes": 122
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0096,
+     "votes": 86
     }
    ],
    "previous": {
@@ -13214,6 +15908,18 @@
       "seats": null,
       "share": 0.0239,
       "votes": 186
+     },
+     {
+      "party": "Economic Freedom Fighters",
+      "seats": null,
+      "share": 0.0077,
+      "votes": 60
+     },
+     {
+      "party": "Cape Muslim Congress",
+      "seats": null,
+      "share": 0.0068,
+      "votes": 53
      }
     ],
     "year": 2021
@@ -13536,6 +16242,12 @@
       "seats": null,
       "share": 0.0071,
       "votes": 62
+     },
+     {
+      "party": "Economic Freedom Fighters",
+      "seats": null,
+      "share": 0.005,
+      "votes": 44
      }
     ],
     "year": 2021
@@ -13645,6 +16357,42 @@
      "seats": null,
      "share": 0.0246,
      "votes": 267
+    },
+    {
+     "party": "uMkhonto weSizwe Party",
+     "seats": null,
+     "share": 0.0201,
+     "votes": 218
+    },
+    {
+     "party": "National Coloured Congress",
+     "seats": null,
+     "share": 0.0179,
+     "votes": 194
+    },
+    {
+     "party": "African Transformation Movement",
+     "seats": null,
+     "share": 0.0135,
+     "votes": 146
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0091,
+     "votes": 99
+    },
+    {
+     "party": "United Independent Movement",
+     "seats": null,
+     "share": 0.0073,
+     "votes": 79
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.007,
+     "votes": 76
     }
    ],
    "previous": {
@@ -13697,6 +16445,36 @@
       "seats": null,
       "share": 0.0187,
       "votes": 138
+     },
+     {
+      "party": "Freedom Front Plus (Vryheidsfront Plus)",
+      "seats": null,
+      "share": 0.0183,
+      "votes": 135
+     },
+     {
+      "party": "African Independent Congress",
+      "seats": null,
+      "share": 0.0071,
+      "votes": 52
+     },
+     {
+      "party": "United Democratic Movement",
+      "seats": null,
+      "share": 0.0069,
+      "votes": 51
+     },
+     {
+      "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+      "seats": null,
+      "share": 0.0065,
+      "votes": 48
+     },
+     {
+      "party": "Patriotic Alliance",
+      "seats": null,
+      "share": 0.0062,
+      "votes": 46
      }
     ],
     "year": 2021
@@ -13806,6 +16584,30 @@
      "seats": null,
      "share": 0.0159,
      "votes": 138
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0129,
+     "votes": 112
+    },
+    {
+     "party": "National Coloured Congress",
+     "seats": null,
+     "share": 0.0101,
+     "votes": 88
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0055,
+     "votes": 48
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0054,
+     "votes": 47
     }
    ],
    "previous": {
@@ -13858,6 +16660,12 @@
       "seats": null,
       "share": 0.0061,
       "votes": 43
+     },
+     {
+      "party": "GOOD",
+      "seats": null,
+      "share": 0.0057,
+      "votes": 40
      }
     ],
     "year": 2021
@@ -13967,6 +16775,24 @@
      "seats": null,
      "share": 0.0067,
      "votes": 51
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0061,
+     "votes": 46
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0052,
+     "votes": 39
+    },
+    {
+     "party": "uMkhonto weSizwe Party",
+     "seats": null,
+     "share": 0.005,
+     "votes": 38
     }
    ],
    "previous": {
@@ -14128,6 +16954,36 @@
      "seats": null,
      "share": 0.0156,
      "votes": 101
+    },
+    {
+     "party": "uMkhonto weSizwe Party",
+     "seats": null,
+     "share": 0.0104,
+     "votes": 67
+    },
+    {
+     "party": "People's Movement for Change",
+     "seats": null,
+     "share": 0.0085,
+     "votes": 55
+    },
+    {
+     "party": "Afrika Mayibuye Movement",
+     "seats": null,
+     "share": 0.007,
+     "votes": 45
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.006,
+     "votes": 39
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0051,
+     "votes": 33
     }
    ],
    "previous": {
@@ -14180,6 +17036,24 @@
       "seats": null,
       "share": 0.007,
       "votes": 43
+     },
+     {
+      "party": "Pan Africanist Congress of Azania",
+      "seats": null,
+      "share": 0.006,
+      "votes": 37
+     },
+     {
+      "party": "African Independent Congress",
+      "seats": null,
+      "share": 0.0057,
+      "votes": 35
+     },
+     {
+      "party": "African Christian Democratic Party",
+      "seats": null,
+      "share": 0.005,
+      "votes": 31
      }
     ],
     "year": 2021
@@ -14289,6 +17163,30 @@
      "seats": null,
      "share": 0.0134,
      "votes": 101
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0129,
+     "votes": 97
+    },
+    {
+     "party": "Alliance of Citizens for Change",
+     "seats": null,
+     "share": 0.0089,
+     "votes": 67
+    },
+    {
+     "party": "uMkhonto weSizwe Party",
+     "seats": null,
+     "share": 0.0073,
+     "votes": 55
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0051,
+     "votes": 38
     }
    ],
    "previous": {
@@ -14611,6 +17509,30 @@
      "seats": null,
      "share": 0.0102,
      "votes": 88
+    },
+    {
+     "party": "South African Communist Party",
+     "seats": null,
+     "share": 0.0076,
+     "votes": 66
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0059,
+     "votes": 51
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0059,
+     "votes": 51
+    },
+    {
+     "party": "uMkhonto weSizwe Party",
+     "seats": null,
+     "share": 0.0057,
+     "votes": 49
     }
    ],
    "previous": {
@@ -14772,6 +17694,42 @@
      "seats": null,
      "share": 0.0166,
      "votes": 190
+    },
+    {
+     "party": "African Transformation Movement",
+     "seats": null,
+     "share": 0.0134,
+     "votes": 154
+    },
+    {
+     "party": "Build One South Africa",
+     "seats": null,
+     "share": 0.012,
+     "votes": 138
+    },
+    {
+     "party": "Cape Muslim Congress",
+     "seats": null,
+     "share": 0.0118,
+     "votes": 135
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0074,
+     "votes": 85
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0062,
+     "votes": 71
+    },
+    {
+     "party": "uMkhonto weSizwe Party",
+     "seats": null,
+     "share": 0.0057,
+     "votes": 65
     }
    ],
    "previous": {
@@ -14824,6 +17782,36 @@
       "seats": null,
       "share": 0.0107,
       "votes": 81
+     },
+     {
+      "party": "United Independent Movement",
+      "seats": null,
+      "share": 0.01,
+      "votes": 76
+     },
+     {
+      "party": "Freedom Front Plus (Vryheidsfront Plus)",
+      "seats": null,
+      "share": 0.0092,
+      "votes": 70
+     },
+     {
+      "party": "National Freedom Party",
+      "seats": null,
+      "share": 0.0079,
+      "votes": 60
+     },
+     {
+      "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+      "seats": null,
+      "share": 0.0059,
+      "votes": 45
+     },
+     {
+      "party": "Iqela Lentsango - Dagga Party",
+      "seats": null,
+      "share": 0.0059,
+      "votes": 45
      }
     ],
     "year": 2021
@@ -14933,6 +17921,42 @@
      "seats": null,
      "share": 0.0262,
      "votes": 214
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0158,
+     "votes": 129
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0136,
+     "votes": 111
+    },
+    {
+     "party": "uMkhonto weSizwe Party",
+     "seats": null,
+     "share": 0.008,
+     "votes": 65
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.007,
+     "votes": 57
+    },
+    {
+     "party": "Afrika Mayibuye Movement",
+     "seats": null,
+     "share": 0.0069,
+     "votes": 56
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0053,
+     "votes": 43
     }
    ],
    "previous": {
@@ -15094,6 +18118,30 @@
      "seats": null,
      "share": 0.0187,
      "votes": 169
+    },
+    {
+     "party": "uMkhonto weSizwe Party",
+     "seats": null,
+     "share": 0.0142,
+     "votes": 128
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0116,
+     "votes": 105
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0054,
+     "votes": 49
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0053,
+     "votes": 48
     }
    ],
    "previous": {
@@ -15255,6 +18303,24 @@
      "seats": null,
      "share": 0.0085,
      "votes": 69
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0077,
+     "votes": 62
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0072,
+     "votes": 58
+    },
+    {
+     "party": "National Coloured Congress",
+     "seats": null,
+     "share": 0.0052,
+     "votes": 42
     }
    ],
    "previous": {
@@ -15416,6 +18482,24 @@
      "seats": null,
      "share": 0.0176,
      "votes": 156
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0136,
+     "votes": 120
+    },
+    {
+     "party": "Alliance of Citizens for Change",
+     "seats": null,
+     "share": 0.0064,
+     "votes": 57
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0054,
+     "votes": 48
     }
    ],
    "previous": {
@@ -15577,6 +18661,30 @@
      "seats": null,
      "share": 0.0144,
      "votes": 129
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0116,
+     "votes": 104
+    },
+    {
+     "party": "uMkhonto weSizwe Party",
+     "seats": null,
+     "share": 0.0105,
+     "votes": 94
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0098,
+     "votes": 88
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.007,
+     "votes": 63
     }
    ],
    "previous": {
@@ -15738,6 +18846,36 @@
      "seats": null,
      "share": 0.0293,
      "votes": 257
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0157,
+     "votes": 138
+    },
+    {
+     "party": "uMkhonto weSizwe Party",
+     "seats": null,
+     "share": 0.0131,
+     "votes": 115
+    },
+    {
+     "party": "Afrika Mayibuye Movement",
+     "seats": null,
+     "share": 0.011,
+     "votes": 97
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0083,
+     "votes": 73
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0055,
+     "votes": 48
     }
    ],
    "previous": {
@@ -15790,6 +18928,12 @@
       "seats": null,
       "share": 0.007,
       "votes": 26
+     },
+     {
+      "party": "African Christian Democratic Party",
+      "seats": null,
+      "share": 0.0065,
+      "votes": 24
      }
     ],
     "year": 2021
@@ -15899,6 +19043,36 @@
      "seats": null,
      "share": 0.0154,
      "votes": 117
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0121,
+     "votes": 92
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0084,
+     "votes": 64
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0083,
+     "votes": 63
+    },
+    {
+     "party": "Patriotic Alliance",
+     "seats": null,
+     "share": 0.0064,
+     "votes": 49
+    },
+    {
+     "party": "Afrika Mayibuye Movement",
+     "seats": null,
+     "share": 0.0054,
+     "votes": 41
     }
    ],
    "previous": {
@@ -16060,6 +19234,24 @@
      "seats": null,
      "share": 0.0122,
      "votes": 146
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0111,
+     "votes": 133
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0086,
+     "votes": 103
+    },
+    {
+     "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+     "seats": null,
+     "share": 0.0053,
+     "votes": 63
     }
    ],
    "previous": {
@@ -16112,6 +19304,24 @@
       "seats": null,
       "share": 0.0166,
       "votes": 143
+     },
+     {
+      "party": "GOOD",
+      "seats": null,
+      "share": 0.0163,
+      "votes": 140
+     },
+     {
+      "party": "Patriotic Alliance",
+      "seats": null,
+      "share": 0.0099,
+      "votes": 85
+     },
+     {
+      "party": "Economic Freedom Fighters",
+      "seats": null,
+      "share": 0.0052,
+      "votes": 45
      }
     ],
     "year": 2021
@@ -16221,6 +19431,24 @@
      "seats": null,
      "share": 0.0166,
      "votes": 123
+    },
+    {
+     "party": "South African Communist Party",
+     "seats": null,
+     "share": 0.0152,
+     "votes": 113
+    },
+    {
+     "party": "uMkhonto weSizwe Party",
+     "seats": null,
+     "share": 0.0139,
+     "votes": 103
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0055,
+     "votes": 41
     }
    ],
    "previous": {
@@ -16273,6 +19501,12 @@
       "seats": null,
       "share": 0.0064,
       "votes": 40
+     },
+     {
+      "party": "Patriotic Alliance",
+      "seats": null,
+      "share": 0.0053,
+      "votes": 33
      }
     ],
     "year": 2021
@@ -16434,6 +19668,18 @@
       "seats": null,
       "share": 0.0082,
       "votes": 72
+     },
+     {
+      "party": "Patriotic Alliance",
+      "seats": null,
+      "share": 0.0056,
+      "votes": 49
+     },
+     {
+      "party": "National Coloured Congress",
+      "seats": null,
+      "share": 0.0053,
+      "votes": 47
      }
     ],
     "year": 2021
@@ -16704,6 +19950,12 @@
      "seats": null,
      "share": 0.0185,
      "votes": 129
+    },
+    {
+     "party": "uMkhonto weSizwe Party",
+     "seats": null,
+     "share": 0.015,
+     "votes": 105
     }
    ],
    "previous": {
@@ -16865,6 +20117,18 @@
      "seats": null,
      "share": 0.0064,
      "votes": 63
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.006,
+     "votes": 59
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0059,
+     "votes": 58
     }
    ],
    "previous": {
@@ -16917,6 +20181,12 @@
       "seats": null,
       "share": 0.0071,
       "votes": 51
+     },
+     {
+      "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+      "seats": null,
+      "share": 0.0058,
+      "votes": 42
      }
     ],
     "year": 2021
@@ -17026,6 +20296,48 @@
      "seats": null,
      "share": 0.022,
      "votes": 205
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0191,
+     "votes": 178
+    },
+    {
+     "party": "South African Communist Party",
+     "seats": null,
+     "share": 0.0145,
+     "votes": 135
+    },
+    {
+     "party": "People's Movement for Change",
+     "seats": null,
+     "share": 0.0133,
+     "votes": 124
+    },
+    {
+     "party": "uMkhonto weSizwe Party",
+     "seats": null,
+     "share": 0.0102,
+     "votes": 95
+    },
+    {
+     "party": "Al Jama-ah",
+     "seats": null,
+     "share": 0.01,
+     "votes": 93
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0076,
+     "votes": 71
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0058,
+     "votes": 54
     }
    ],
    "previous": {
@@ -17078,6 +20390,24 @@
       "seats": null,
       "share": 0.0066,
       "votes": 41
+     },
+     {
+      "party": "National Freedom Party",
+      "seats": null,
+      "share": 0.0064,
+      "votes": 40
+     },
+     {
+      "party": "United Democratic Movement",
+      "seats": null,
+      "share": 0.0056,
+      "votes": 35
+     },
+     {
+      "party": "Al Jama-ah",
+      "seats": null,
+      "share": 0.0055,
+      "votes": 34
      }
     ],
     "year": 2021
@@ -17348,6 +20678,36 @@
      "seats": null,
      "share": 0.0171,
      "votes": 128
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0132,
+     "votes": 99
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0124,
+     "votes": 93
+    },
+    {
+     "party": "African Christian Democratic Party",
+     "seats": null,
+     "share": 0.0106,
+     "votes": 79
+    },
+    {
+     "party": "African Transformation Movement",
+     "seats": null,
+     "share": 0.01,
+     "votes": 75
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0055,
+     "votes": 41
     }
    ],
    "previous": {
@@ -17400,6 +20760,12 @@
       "seats": null,
       "share": 0.0064,
       "votes": 35
+     },
+     {
+      "party": "Africa Restoration Alliance",
+      "seats": null,
+      "share": 0.0053,
+      "votes": 29
      }
     ],
     "year": 2021
@@ -17509,6 +20875,30 @@
      "seats": null,
      "share": 0.0131,
      "votes": 96
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0119,
+     "votes": 87
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0089,
+     "votes": 65
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0078,
+     "votes": 57
+    },
+    {
+     "party": "One Love Alliance",
+     "seats": null,
+     "share": 0.0051,
+     "votes": 37
     }
    ],
    "previous": {
@@ -17561,6 +20951,12 @@
       "seats": null,
       "share": 0.0073,
       "votes": 43
+     },
+     {
+      "party": "Freedom Front Plus (Vryheidsfront Plus)",
+      "seats": null,
+      "share": 0.0051,
+      "votes": 30
      }
     ],
     "year": 2021
@@ -17670,6 +21066,36 @@
      "seats": null,
      "share": 0.0245,
      "votes": 200
+    },
+    {
+     "party": "ActionSA",
+     "seats": null,
+     "share": 0.0191,
+     "votes": 156
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0186,
+     "votes": 152
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0137,
+     "votes": 112
+    },
+    {
+     "party": "Cape Muslim Congress",
+     "seats": null,
+     "share": 0.0093,
+     "votes": 76
+    },
+    {
+     "party": "United Democratic Front Party",
+     "seats": null,
+     "share": 0.0076,
+     "votes": 62
     }
    ],
    "previous": {
@@ -17722,6 +21148,24 @@
       "seats": null,
       "share": 0.0129,
       "votes": 93
+     },
+     {
+      "party": "Cape Muslim Congress",
+      "seats": null,
+      "share": 0.0078,
+      "votes": 56
+     },
+     {
+      "party": "United Independent Movement",
+      "seats": null,
+      "share": 0.006,
+      "votes": 43
+     },
+     {
+      "party": "Freedom Front Plus (Vryheidsfront Plus)",
+      "seats": null,
+      "share": 0.0057,
+      "votes": 41
      }
     ],
     "year": 2021
@@ -17831,6 +21275,12 @@
      "seats": null,
      "share": 0.0096,
      "votes": 106
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0079,
+     "votes": 87
     }
    ],
    "previous": {
@@ -17883,6 +21333,24 @@
       "seats": null,
       "share": 0.0097,
       "votes": 83
+     },
+     {
+      "party": "Cape Independence Party / Kaapse Onafhanklikheids Party",
+      "seats": null,
+      "share": 0.0074,
+      "votes": 63
+     },
+     {
+      "party": "Africa Restoration Alliance",
+      "seats": null,
+      "share": 0.0068,
+      "votes": 58
+     },
+     {
+      "party": "Economic Freedom Fighters",
+      "seats": null,
+      "share": 0.0052,
+      "votes": 44
      }
     ],
     "year": 2021
@@ -18314,6 +21782,24 @@
      "seats": null,
      "share": 0.0367,
      "votes": 285
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0211,
+     "votes": 164
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.0076,
+     "votes": 59
+    },
+    {
+     "party": "Alliance of Citizens for Change",
+     "seats": null,
+     "share": 0.0072,
+     "votes": 56
     }
    ],
    "previous": {
@@ -18475,6 +21961,30 @@
      "seats": null,
      "share": 0.0117,
      "votes": 109
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0115,
+     "votes": 107
+    },
+    {
+     "party": "African Movement Congress",
+     "seats": null,
+     "share": 0.0113,
+     "votes": 105
+    },
+    {
+     "party": "Build One South Africa",
+     "seats": null,
+     "share": 0.0077,
+     "votes": 72
+    },
+    {
+     "party": "Pan Africanist Congress of Azania",
+     "seats": null,
+     "share": 0.006,
+     "votes": 56
     }
    ],
    "previous": {
@@ -18636,6 +22146,48 @@
      "seats": null,
      "share": 0.0207,
      "votes": 220
+    },
+    {
+     "party": "Cape Muslim Congress",
+     "seats": null,
+     "share": 0.0186,
+     "votes": 197
+    },
+    {
+     "party": "African National Congress",
+     "seats": null,
+     "share": 0.0153,
+     "votes": 162
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0128,
+     "votes": 136
+    },
+    {
+     "party": "Economic Freedom Fighters",
+     "seats": null,
+     "share": 0.0111,
+     "votes": 118
+    },
+    {
+     "party": "African Independent Congress",
+     "seats": null,
+     "share": 0.0086,
+     "votes": 91
+    },
+    {
+     "party": "Africa Restoration Alliance",
+     "seats": null,
+     "share": 0.0075,
+     "votes": 79
+    },
+    {
+     "party": "Hopeful Leaders Democrats",
+     "seats": null,
+     "share": 0.0058,
+     "votes": 61
     }
    ],
    "previous": {
@@ -18688,6 +22240,30 @@
       "seats": null,
       "share": 0.0152,
       "votes": 138
+     },
+     {
+      "party": "Cape Muslim Congress",
+      "seats": null,
+      "share": 0.0067,
+      "votes": 61
+     },
+     {
+      "party": "Freedom Front Plus (Vryheidsfront Plus)",
+      "seats": null,
+      "share": 0.0059,
+      "votes": 53
+     },
+     {
+      "party": "United Independent Movement",
+      "seats": null,
+      "share": 0.0055,
+      "votes": 50
+     },
+     {
+      "party": "Economic Freedom Fighters",
+      "seats": null,
+      "share": 0.0051,
+      "votes": 46
      }
     ],
     "year": 2021
@@ -18797,6 +22373,30 @@
      "seats": null,
      "share": 0.0097,
      "votes": 125
+    },
+    {
+     "party": "United Democratic Movement",
+     "seats": null,
+     "share": 0.0078,
+     "votes": 101
+    },
+    {
+     "party": "uMkhonto weSizwe Party",
+     "seats": null,
+     "share": 0.0078,
+     "votes": 101
+    },
+    {
+     "party": "African Alliance Congress",
+     "seats": null,
+     "share": 0.0072,
+     "votes": 93
+    },
+    {
+     "party": "Build One South Africa",
+     "seats": null,
+     "share": 0.0063,
+     "votes": 81
     }
    ],
    "previous": {
@@ -18958,6 +22558,36 @@
      "seats": null,
      "share": 0.0222,
      "votes": 187
+    },
+    {
+     "party": "Freedom Front Plus (Vryheidsfront Plus)",
+     "seats": null,
+     "share": 0.0208,
+     "votes": 175
+    },
+    {
+     "party": "Afrika Mayibuye Movement",
+     "seats": null,
+     "share": 0.0138,
+     "votes": 116
+    },
+    {
+     "party": "GOOD",
+     "seats": null,
+     "share": 0.0122,
+     "votes": 103
+    },
+    {
+     "party": "People's Movement for Change",
+     "seats": null,
+     "share": 0.0078,
+     "votes": 66
+    },
+    {
+     "party": "South African Communist Party",
+     "seats": null,
+     "share": 0.0071,
+     "votes": 60
     }
    ],
    "previous": {
@@ -19010,6 +22640,24 @@
       "seats": null,
       "share": 0.0097,
       "votes": 61
+     },
+     {
+      "party": "Patriotic Alliance",
+      "seats": null,
+      "share": 0.0092,
+      "votes": 58
+     },
+     {
+      "party": "One Movement for Cape Town",
+      "seats": null,
+      "share": 0.009,
+      "votes": 57
+     },
+     {
+      "party": "African Christian Democratic Party",
+      "seats": null,
+      "share": 0.006,
+      "votes": 38
      }
     ],
     "year": 2021

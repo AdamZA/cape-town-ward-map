@@ -13,10 +13,11 @@ export function predecessors(
   ward: number,
   wardVintage: number,
   budget: { ward_vintage: number },
-  crosswalk: CrosswalkEnvelope | null,
+  crosswalks: CrosswalkEnvelope | CrosswalkEnvelope[] | null,
 ): { ward: number; share: number }[] {
   if (budget.ward_vintage === wardVintage) return [{ ward, share: 1 }];
-  if (!crosswalk || crosswalk.from_vintage !== budget.ward_vintage) return [];
+  const crosswalk = [crosswalks ?? []].flat().find((c) => c.from_vintage === budget.ward_vintage);
+  if (!crosswalk) return [];
   return crosswalk.rows
     .filter((r) => r.to_ward === ward && r.share_of_to >= MIN_OVERLAP)
     .sort((a, b) => b.share_of_to - a.share_of_to)
@@ -24,7 +25,7 @@ export function predecessors(
 }
 
 /** Total allocated to the old ward covering most of this ward, for the summary. */
-export function mainAllocation(ward: number, wardVintage: number, budget: AllocationsEnvelope, crosswalk: CrosswalkEnvelope | null) {
+export function mainAllocation(ward: number, wardVintage: number, budget: AllocationsEnvelope, crosswalk: CrosswalkEnvelope[] | null) {
   const main = predecessors(ward, wardVintage, budget, crosswalk)[0];
   if (!main) return null;
   const rows = budget.rows.filter((r) => r.ward_no === main.ward);
@@ -41,7 +42,7 @@ interface Props {
   ward: number;
   wardVintage: number;
   budget: AllocationsEnvelope;
-  crosswalk: CrosswalkEnvelope | null;
+  crosswalk: CrosswalkEnvelope[] | null;
 }
 
 export function Allocations({ ward, wardVintage, budget, crosswalk }: Props) {

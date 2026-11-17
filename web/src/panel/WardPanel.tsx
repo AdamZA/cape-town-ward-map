@@ -149,7 +149,7 @@ export function WardPanel({ data, metrics, ward, layers, onShowLayer, onClose }:
       )}
 
       {data.allocations.map((budget) => (
-        <Allocations key={budget.budget_year} ward={ward} wardVintage={data.wards.ward_vintage} budget={budget} crosswalk={data.crosswalk} />
+        <Allocations key={budget.budget_year} ward={ward} wardVintage={data.wards.ward_vintage} budget={budget} crosswalk={data.crosswalks} />
       ))}
     </article>
   );

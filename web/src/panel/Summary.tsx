@@ -12,7 +12,7 @@ const GLANCE: MetricKey[] = ["pct_closed_30d", "median_days", "water_days", "pow
 export function Summary({ data, metrics, ward }: { data: AppData; metrics: Metrics; ward: number }) {
   const w = data.wards.rows.find((r) => r.ward_no === ward)!;
   const budget = data.allocations[0];
-  const alloc = budget ? mainAllocation(ward, data.wards.ward_vintage, budget, data.crosswalk) : null;
+  const alloc = budget ? mainAllocation(ward, data.wards.ward_vintage, budget, data.crosswalks) : null;
   const density = w.population != null ? w.population / w.area_km2 : null;
   const densities = data.wards.rows.filter((r) => r.population != null).map((r) => r.population! / r.area_km2);
   const denser = density != null ? densities.filter((d) => d > density).length : 0;
