@@ -373,6 +373,11 @@ No colour on the map means "good" or "bad". There are three kinds of map colouri
 
 Wards with no figure are left almost clear, with a hatched key in the legend.
 
+When a figure exists for more than one council term (election results, for example), the class
+steps are worked out from every term's wards together, so a colour means the same value in each
+term. Switching terms, or pressing Play to step through them, then shows real change rather than
+each term's own spread. Party maps only share steps between terms in which that party stood.
+
 You can pick the map colour (blue, green, purple, orange or grey) and a light or dark theme;
 the choice is kept in your browser and isn't part of shared links. Every colour set was checked
 with a colour-vision-deficiency simulation and against the map background in each theme.

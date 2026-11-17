@@ -41,6 +41,9 @@ function Main({ data }: { data: AppData }) {
   const [hover, setHover] = useState<{ ward: number; x: number; y: number } | null>(null);
   const [place, setPlace] = useState<PlaceRow | null>(null);
   const [notice, setNotice] = useState<string | null>(null);
+  /** Index into the terms while playing through them, else null. */
+  const [step, setStep] = useState<number | null>(null);
+  const playing = step != null;
   const [mapReady, setMapReady] = useState(false);
 
   const allTerms = useMemo(() => terms(data), [data]);
@@ -57,14 +60,38 @@ function Main({ data }: { data: AppData }) {
 
   const [scheme, setScheme] = usePreference("wardmap.scheme", "blue", isScheme);
   const [themeChoice, setThemeChoice, dark] = useTheme();
+  // Play: show each term in turn, oldest first, ending on the current one.
+  useEffect(() => {
+    if (step == null) return;
+    const t = allTerms[step];
+    if (!t) return setStep(null);
+    update({ term: t.current ? null : t.year, ward: null, vs: null });
+    const id = setTimeout(() => setStep(step + 1 < allTerms.length ? step + 1 : null), 2200);
+    return () => clearTimeout(id);
+  }, [step]);
+  const togglePlay = () => {
+    setPlace(null);
+    setStep(playing ? null : 0);
+  };
+
   const metrics = useMemo(() => buildMetrics(data, term, { party: state.vote }), [data, term.year, state.vote]);
   // A metric that doesn't exist in this term falls back to the term's first one.
   const metricKey = metrics[state.metric] ? state.metric : METRIC_KEYS.find((k) => metrics[k])!;
   const metric = metrics[metricKey]!;
   const field = metric.env.fields[metric.field]!;
-  const paint = useMemo(() => paintMetric(metric, scheme, dark), [metric, scheme, dark]);
-  const fmt = (v: number) => fmtUnit(v, metric.unit);
   const partyMap = metricKey === "party_share" || metricKey === "party_change";
+  // Breaks shared by every term the measure exists in, so colours compare across terms.
+  const pool = useMemo(() => {
+    const party = mapParty(data, term, state.vote);
+    const per = allTerms
+      // Party maps only pool terms in which the same party stood.
+      .filter((t) => !partyMap || mapParty(data, t, state.vote) === party)
+      .map((t) => (t.year === term.year ? metric : buildMetrics(data, t, { party: state.vote })[metricKey]))
+      .filter(Boolean);
+    return per.length > 1 ? per.flatMap((m) => [...m!.values.values()]) : undefined;
+  }, [metricKey, state.vote, data, partyMap ? term.year : 0]);
+  const paint = useMemo(() => paintMetric(metric, scheme, dark, pool), [metric, scheme, dark, pool]);
+  const fmt = (v: number) => fmtUnit(v, metric.unit);
   const shownParty = mapParty(data, term, state.vote);
   const hoverText = (w: number) => {
     const v = metric.values.get(w);
@@ -166,6 +193,7 @@ function Main({ data }: { data: AppData }) {
   /** Search, location and place pins work on today's wards: switch to the current term. */
   const openCurrentWard = (ward: number) => update({ ward, city: false, term: null, party: null, vs: null });
   const chooseTerm = (t: Term) => {
+    setStep(null);
     setPlace(null);
     update({ term: t.current ? null : t.year, ward: null });
   };
@@ -232,6 +260,8 @@ function Main({ data }: { data: AppData }) {
           onCompare={() => update({ compare: state.compare.length ? [] : allTerms.map((t) => t.year), trends: false })}
           trending={panel === "trends"}
           onTrends={() => update({ trends: panel !== "trends", compare: [] })}
+          playing={playing}
+          onPlay={togglePlay}
         />
       </header>
 
@@ -264,6 +294,7 @@ function Main({ data }: { data: AppData }) {
           )}
           <p class="reading">{metric.reading}</p>
           {!term.current && <p class="reading term-note">Showing the {term.label} term on its own ward boundaries.</p>}
+          {pool && metric.kind !== "categorical" && <p class="reading">The colour steps are the same in every term, so colours compare across terms.</p>}
           <ul class="legend" aria-label={`Legend: ${metric.label}`}>
             {paint.legend.map(([color, label]) => (
               <li key={label}>

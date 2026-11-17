@@ -4,10 +4,14 @@ import { fmtUnit } from "../format";
 import type { Metric } from "../metrics";
 import { categoricalPaint, divergingLegend, divergingScale, legendEntries, type Paint, quantileScale, type SchemeKey, schemeColours } from "./scales";
 
-export function paintMetric(m: Metric, scheme: SchemeKey, dark = false): Paint {
+/**
+ * `pool`: values that set the class breaks. Passing every term's values keeps a colour meaning
+ * the same figure in every term, so switching or playing through terms shows real change.
+ */
+export function paintMetric(m: Metric, scheme: SchemeKey, dark = false, pool?: (number | null)[]): Paint {
   const { ramp, diverging } = schemeColours(scheme, dark);
   if (m.kind === "categorical" && m.category) return categoricalPaint(m.category, (p) => partyColour(p, dark));
-  const values = [...m.values.values()];
+  const values = pool ?? [...m.values.values()];
   if (m.kind === "diverging") {
     const s = divergingScale(values);
     const colours = new Map<number, string>();

@@ -23,9 +23,11 @@ interface Props {
   onCompare: () => void;
   trending: boolean;
   onTrends: () => void;
+  playing: boolean;
+  onPlay: () => void;
 }
 
-export function Timeline({ data, terms, term, onTerm, comparing, onCompare, trending, onTrends }: Props) {
+export function Timeline({ data, terms, term, onTerm, comparing, onCompare, trending, onTrends, playing, onPlay }: Props) {
   if (terms.length < 2) return null;
   return (
     <nav class="timeline" aria-label="Council terms">
@@ -41,6 +43,15 @@ export function Timeline({ data, terms, term, onTerm, comparing, onCompare, tren
         ))}
       </ol>
       <div class="timeline-tools">
+        <button
+          type="button"
+          class={`btn ${playing ? "btn-on" : ""}`}
+          aria-pressed={playing}
+          onClick={onPlay}
+          title="Step the map through each term in turn, keeping the current colouring"
+        >
+          <span aria-hidden="true">{playing ? "■" : "▶"}</span> {playing ? "Stop" : "Play"}
+        </button>
         <button type="button" class={`btn ${trending ? "btn-on" : ""}`} aria-pressed={trending} onClick={onTrends}>
           Trends
         </button>

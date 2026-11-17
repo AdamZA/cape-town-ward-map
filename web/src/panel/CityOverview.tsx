@@ -145,9 +145,32 @@ export function CityOverview({ data, metrics, metric, term, onWard, onClose }: P
           </table>
         </div>
       </section>
+
+      <section class="section" aria-labelledby="official-title">
+        <h3 id="official-title">Official updates</h3>
+        <p class="lede">For news as it happens, go to the City itself. These open the City's own pages.</p>
+        <ul class="link-list">
+          {OFFICIAL.map(([label, url, what]) => (
+            <li key={url}>
+              <a href={url} target="_blank" rel="noopener">
+                {label}
+              </a>{" "}
+              <span class="search-meta">{what}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
     </article>
   );
 }
+
+/** The City's own channels for current news (checked to resolve; no feeds are copied here). */
+const OFFICIAL: [string, string, string][] = [
+  ["Media and news", "https://www.capetown.gov.za/Media-and-news", "City media releases and notices"],
+  ["Load-shedding", "https://www.capetown.gov.za/Family%20and%20home/residential-utility-services/residential-electricity-services/load-shedding-and-outages", "Current schedules for City-supplied areas"],
+  ["Report a fault", "https://www.capetown.gov.za/servicerequests", "Log or track a service request"],
+  ["@CityofCT on X", "https://x.com/CityofCT", "Service alerts and announcements"],
+];
 
 function MedianFigure({ data, metrics, k }: { data: AppData; metrics: Metrics; k: "water_days" | "power_days" }) {
   const m = metrics[k];

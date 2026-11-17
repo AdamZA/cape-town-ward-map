@@ -417,3 +417,12 @@ div.chart-multiples { display: grid; grid-template-columns: repeat(auto-fill, mi
 .vs-table .mid-col { color: var(--ink-3); }
 .vs-table td { vertical-align: top; }
 .party-key { display: inline-flex; align-items: center; }
+.link-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; font-size: 13.5px; }
+.link-list .search-meta { display: block; }
+.layout > * { min-width: 0; }
+@media (max-width: 600px) {
+  .timeline-track { display: grid; grid-template-columns: 1fr 1fr; overflow: visible; gap: 4px; }
+  .timeline-track li { min-width: 0; }
+  .timeline-track li .term, .timeline-track li:first-child .term, .timeline-track li:last-child .term { border-width: 1px; border-radius: 8px; }
+  .timeline-track .term span { display: none; }
+}
